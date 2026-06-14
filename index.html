@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DR Prepper AI Tools Ops Dashboard</title>
+  <meta name="description" content="A living reference dashboard for AI/design/ops tools shared with DR Prepper, categorized by business use case and source post." />
+  <style>
+    :root {
+      --bg: #0d1117;
+      --panel: #141a23;
+      --panel-2: #192231;
+      --ink: #f3f7fb;
+      --muted: #9eacbd;
+      --line: rgba(255,255,255,.11);
+      --accent: #58d68d;
+      --accent-2: #6ab7ff;
+      --warn: #f6c85f;
+      --danger: #ff8a80;
+      --shadow: 0 24px 80px rgba(0,0,0,.36);
+      --radius: 22px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% -10%, rgba(88,214,141,.22), transparent 34rem),
+        radial-gradient(circle at 88% 8%, rgba(106,183,255,.22), transparent 30rem),
+        linear-gradient(180deg, #0b1017 0%, var(--bg) 48%, #090d13 100%);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    a { color: inherit; }
+    .wrap { width: min(1180px, calc(100vw - 36px)); margin: 0 auto; }
+
+    header {
+      padding: 56px 0 28px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 750;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .pulse {
+      width: 9px; height: 9px; border-radius: 99px; background: var(--accent);
+      box-shadow: 0 0 0 7px rgba(88,214,141,.13);
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 900px;
+      font-size: clamp(42px, 7vw, 88px);
+      line-height: .92;
+      letter-spacing: -.065em;
+      text-wrap: balance;
+    }
+    .subhead {
+      max-width: 780px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: clamp(17px, 2vw, 21px);
+      text-wrap: pretty;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 22px;
+      margin-top: 34px;
+      align-items: stretch;
+    }
+
+    .panel {
+      background: linear-gradient(180deg, rgba(255,255,255,.065), rgba(255,255,255,.035));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .status-panel { padding: 22px; }
+    .status-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .metric {
+      padding: 16px;
+      border-radius: 17px;
+      background: rgba(255,255,255,.045);
+      border: 1px solid rgba(255,255,255,.075);
+    }
+    .metric .num { font-size: 30px; font-weight: 850; letter-spacing: -.04em; }
+    .metric .label { color: var(--muted); font-size: 13px; margin-top: 2px; }
+
+    .note {
+      padding: 22px;
+      background:
+        linear-gradient(135deg, rgba(88,214,141,.16), transparent 52%),
+        linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.035));
+    }
+    .note h2, .status-panel h2 { margin: 0 0 8px; font-size: 19px; letter-spacing: -.02em; }
+    .note p, .status-panel p { margin: 0; color: var(--muted); }
+
+    .controls {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      background: rgba(9,13,19,.72);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      margin-top: 20px;
+    }
+    .controls-inner {
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      gap: 12px;
+      align-items: center;
+      padding: 14px 0;
+    }
+    input, select, button {
+      height: 46px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.13);
+      background: rgba(255,255,255,.06);
+      color: var(--ink);
+      padding: 0 14px;
+      font: inherit;
+      outline: none;
+    }
+    input:focus, select:focus { border-color: rgba(88,214,141,.65); box-shadow: 0 0 0 4px rgba(88,214,141,.12); }
+    select option { background: #111821; color: #fff; }
+    button { cursor: pointer; font-weight: 750; }
+
+    main { padding: 26px 0 64px; }
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 14px;
+      margin: 24px 0 16px;
+    }
+    h2 { margin: 0; font-size: 28px; letter-spacing: -.035em; }
+    .hint { color: var(--muted); font-size: 14px; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      min-height: 330px;
+      padding: 18px;
+      background: linear-gradient(180deg, rgba(255,255,255,.064), rgba(255,255,255,.034));
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+    }
+    .card:hover { transform: translateY(-2px); border-color: rgba(88,214,141,.36); background: linear-gradient(180deg, rgba(255,255,255,.085), rgba(255,255,255,.042)); }
+    .card-top { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      width: fit-content;
+      padding: 6px 9px;
+      border: 1px solid rgba(255,255,255,.11);
+      border-radius: 999px;
+      color: var(--accent);
+      background: rgba(88,214,141,.09);
+      font-size: 12px;
+      font-weight: 750;
+      white-space: nowrap;
+    }
+    .priority {
+      padding: 6px 9px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      border: 1px solid rgba(255,255,255,.12);
+      color: #06110a;
+      background: var(--accent);
+      white-space: nowrap;
+    }
+    .priority.medium { background: var(--warn); }
+    .priority.watch { background: #9aa8b8; }
+    .priority.lead { background: var(--accent-2); }
+    .card h3 { margin: 18px 0 8px; font-size: 21px; line-height: 1.15; letter-spacing: -.025em; }
+    .card p { margin: 0 0 12px; color: var(--muted); font-size: 14px; }
+    .fit { color: #d9e6f2 !important; }
+    .actions { margin-top: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 9px; padding-top: 14px; }
+    .link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      border-radius: 13px;
+      border: 1px solid rgba(255,255,255,.13);
+      background: rgba(255,255,255,.055);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 780;
+    }
+    .link.primary { background: rgba(88,214,141,.15); border-color: rgba(88,214,141,.32); }
+    .link:hover { border-color: rgba(255,255,255,.28); }
+
+    .ops-table { overflow: auto; border-radius: 20px; border: 1px solid var(--line); background: rgba(255,255,255,.035); }
+    table { width: 100%; border-collapse: collapse; min-width: 980px; }
+    th, td { padding: 14px 16px; text-align: left; border-bottom: 1px solid rgba(255,255,255,.085); vertical-align: top; font-size: 14px; }
+    th { color: #dfe9f4; background: rgba(255,255,255,.055); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+    td { color: var(--muted); }
+    td strong { color: var(--ink); }
+    tr:last-child td { border-bottom: 0; }
+
+    footer { color: var(--muted); padding: 34px 0 48px; border-top: 1px solid var(--line); }
+    footer a { color: var(--accent); }
+
+    @media (max-width: 920px) {
+      .hero-grid, .controls-inner { grid-template-columns: 1fr; }
+      .cards { grid-template-columns: 1fr; }
+      .status-row { grid-template-columns: 1fr; }
+      header { padding-top: 38px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · created Jun 14, 2026 · LA time</div>
+      <h1>AI tools worth tracking for DR Prepper operations.</h1>
+      <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
+
+      <div class="hero-grid">
+        <section class="panel status-panel" aria-label="Dashboard status">
+          <h2>Status</h2>
+          <p>This was created because we did not find evidence of an existing regularly updated tools dashboard. Use this page as the new reference point.</p>
+          <div class="status-row">
+            <div class="metric"><div class="num">12</div><div class="label">initial entries</div></div>
+            <div class="metric"><div class="num">8</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">2</div><div class="label">high priority now</div></div>
+          </div>
+        </section>
+        <section class="panel note" aria-label="Operating rule">
+          <h2>Operating rule</h2>
+          <p>Do not chase shiny AI demos blindly. Every item is scored against real business use: more qualified leads, better DR Prepper conversion, faster client portal/product work, or cleaner ops execution.</p>
+        </section>
+      </div>
+    </div>
+  </header>
+
+  <nav class="controls" aria-label="Dashboard filters">
+    <div class="wrap controls-inner">
+      <input id="search" type="search" placeholder="Search tool, source, use case, category…" aria-label="Search tools" />
+      <select id="category" aria-label="Filter by category">
+        <option value="all">All categories</option>
+      </select>
+      <select id="priority" aria-label="Filter by priority">
+        <option value="all">All priorities</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Watch">Watch</option>
+        <option value="Lead">Lead</option>
+      </select>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <div class="section-title">
+      <div>
+        <h2>Tool cards</h2>
+        <div class="hint">Each card includes both the actual tool/site link and the original post/source link when available.</div>
+      </div>
+      <div id="count" class="hint"></div>
+    </div>
+
+    <section id="cards" class="cards" aria-live="polite"></section>
+
+    <div class="section-title" style="margin-top:42px">
+      <div>
+        <h2>Ops table</h2>
+        <div class="hint">Quick scan view for prioritization.</div>
+      </div>
+    </div>
+    <section class="ops-table" aria-label="Tools operations table">
+      <table>
+        <thead>
+          <tr>
+            <th>Tool / signal</th>
+            <th>Category</th>
+            <th>DR Prepper use</th>
+            <th>Aluma / other use</th>
+            <th>Priority</th>
+            <th>Next action</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <strong>Maintenance note:</strong> this page is a starting dashboard, not yet automated. Recommended next step: update this whenever a new tool/post is shared, or turn it into a scheduled weekly refresh.
+    </div>
+  </footer>
+
+  <script>
+    const tools = [
+      {
+        name: 'MotionSites',
+        category: 'Landing page / motion prompts',
+        priority: 'High',
+        summary: 'Swipe library of animated landing pages and prompts. Useful as reference material for a DR Prepper animated fulfillment landing page.',
+        drprepper: 'Build a more compelling hero/process section: order received → picked → packed → shipped. Use as inspiration, not production code.',
+        aluma: 'Possible reference for construction project/intel landing pages, but lower priority.',
+        next: 'Collect 3–5 reference sections and convert into a DR Prepper DESIGN.md brief.',
+        toolUrl: 'https://motionsites.ai',
+        postUrl: 'https://x.com/oluwaphilemon1/status/2060286419965239663?s=46&t=ECM3Vp_m__QhqneVSomL7g'
+      },
+      {
+        name: 'Viktor Oddy — Claude Design full course',
+        category: 'AI motion-web workflow',
+        priority: 'Medium',
+        summary: 'One-hour course/reference for building interactive animated websites with Claude-style workflows.',
+        drprepper: 'Useful if we create a conversion-focused animated fulfillment page without making it feel like a gimmick.',
+        aluma: 'Could support polished sales-engineering explainers for formwork/shoring concepts.',
+        next: 'Extract workflow notes before using it on a production-facing page.',
+        toolUrl: 'https://x.com/viktoroddy/status/2046621997644616039/video/1',
+        postUrl: 'https://x.com/viktoroddy/status/2046621997644616039/video/1'
+      },
+      {
+        name: 'RoundtableSpace — AI landing pages look the same',
+        category: 'Design quality / anti-generic AI pages',
+        priority: 'High',
+        summary: 'Tutorial/signpost on avoiding generic AI-made landing pages through references, rules, typography, spacing, hierarchy, and design docs.',
+        drprepper: 'Best immediate lesson: define design rules before generating hero sections. Prevents flashy but low-trust fulfillment marketing.',
+        aluma: 'Useful for building credible lead-gen pages that do not look like generic AI SaaS.',
+        next: 'Create DR Prepper landing-page DESIGN.md and conversion checklist.',
+        toolUrl: 'https://x.com/roundtablespace/status/2062651859852988862',
+        postUrl: 'https://x.com/roundtablespace/status/2062651859852988862'
+      },
+      {
+        name: 'Higgsfield AI MCP',
+        category: 'Motion video / MCP',
+        priority: 'Medium',
+        summary: 'Claude + Higgsfield workflow for generating motion assets and scroll-driven product visuals from a brand kit and business context.',
+        drprepper: 'Potential for custom motion clips in a warehouse/fulfillment landing page or onboarding explainer.',
+        aluma: 'Could generate animated construction/formwork visuals for proposal collateral.',
+        next: 'Use only after copy, offer, and conversion flow are locked.',
+        toolUrl: 'https://x.com/higgsfield_ai/status/2062607081010864364',
+        postUrl: 'https://x.com/higgsfield_ai/status/2062607081010864364'
+      },
+      {
+        name: 'Viktor Oddy — renewable hero reference',
+        category: 'Animated hero reference',
+        priority: 'Watch',
+        summary: 'Clean nature/tech animated hero page reference built around a premium visual metaphor.',
+        drprepper: 'Adapt the structure, not the theme: floating warehouse/order-flow diorama instead of renewable energy imagery.',
+        aluma: 'Possible visual metaphor for jobsite shoring systems or project lifecycle.',
+        next: 'Use as visual reference if we prototype an animated DR Prepper hero.',
+        toolUrl: 'https://x.com/viktoroddy/status/2062918204452663767',
+        postUrl: 'https://x.com/viktoroddy/status/2062918204452663767'
+      },
+      {
+        name: 'ui-skills.com',
+        category: 'Claude/design-engineering skills',
+        priority: 'Medium',
+        summary: 'Directory of design-engineering skills: baseline UI, accessibility fixes, motion performance, frontend design, WCAG audits, React doctor, shadcn, animation principles.',
+        drprepper: 'Use as agent guidance for frontend polish, accessibility, and motion performance on DR Prepper/PrepShip surfaces.',
+        aluma: 'Useful for clean, credible lead-gen page QA.',
+        next: 'Borrow baseline-ui, frontend-design, accessibility, and motion-performance checklists.',
+        toolUrl: 'https://ui-skills.com',
+        postUrl: 'https://ui-skills.com'
+      },
+      {
+        name: 'Artificial Corner — Claude stack list',
+        category: 'Claude skills / plugins / MCP stack',
+        priority: 'Watch',
+        summary: 'Thread about things worth installing in Claude: humanizer, social-media skills, marketing skills, Google Drive/Zapier/Notion MCP, repomix, etc.',
+        drprepper: 'Potential stack for content, CRO, Google Workspace workflows, repository summaries, and marketing execution.',
+        aluma: 'Useful for prospect research and outreach automation if integrated carefully.',
+        next: 'Do not install blindly; evaluate only the pieces tied to active workflows.',
+        toolUrl: 'https://www.threads.com/@artificial.corner/post/DZYYfTLlPMm',
+        postUrl: 'https://www.threads.com/@artificial.corner/post/DZYYfTLlPMm'
+      },
+      {
+        name: 'RoundtableSpace — Claude Mythos animated websites',
+        category: 'Cinematic website workflow',
+        priority: 'Medium',
+        summary: 'Workflow: Claude strategy/copy → AI-generated visual assets → Lovable/site builder → scroll animation → polish.',
+        drprepper: 'Potential recipe for a premium fulfillment page if kept practical and trust-focused.',
+        aluma: 'Could create educational construction landing pages or proposal visuals.',
+        next: 'Use as reference after the DR Prepper conversion structure is written.',
+        toolUrl: 'https://x.com/roundtablespace/status/2064841286188994582',
+        postUrl: 'https://x.com/roundtablespace/status/2064841286188994582'
+      },
+      {
+        name: 'pulkitxm/claude-directory',
+        category: 'Prompt/code reference repo',
+        priority: 'Medium',
+        summary: 'GitHub directory of experimental landing pages, hero sections, and interactive prototypes generated with Claude Fable 5. Includes prompts and code.',
+        drprepper: 'Reference prompts and implementation patterns for cinematic hero/landing sections.',
+        aluma: 'Reference library for niche project-intel or sales pages.',
+        next: 'Inspect prompt.md files; never ship raw vibe-coded dependencies without review.',
+        toolUrl: 'https://github.com/pulkitxm/claude-directory',
+        postUrl: 'https://x.com/_pulkitxm/status/2065402277876338947'
+      },
+      {
+        name: 'Reddit r/3PL lead signal',
+        category: 'Lead source / prospecting',
+        priority: 'Lead',
+        summary: 'Screenshot showed a potential high-volume 3PL/shipping lead discussing 1,000/day campaign work and carrier rates.',
+        drprepper: 'Qualify softly: determine if they need full fulfillment, last-mile carrier rates, or campaign logistics support.',
+        aluma: 'No direct fit.',
+        next: 'If URL is available, add it here and use a soft public reply + DM.',
+        toolUrl: 'https://www.reddit.com/r/3PL/',
+        postUrl: 'https://www.reddit.com/r/3PL/'
+      },
+      {
+        name: 'Local newsletter AI-agent idea',
+        category: 'Lead-gen / newsletter automation',
+        priority: 'Medium',
+        summary: 'Idea around AI agents producing local newsletters. Better used as a lead-gen machine than a standalone side hustle.',
+        drprepper: 'Create an Ecom Fulfillment Brief to attract brands and surface fulfillment pain points.',
+        aluma: 'Create a weekly construction project/intel brief for Southern California concrete/formwork leads.',
+        next: 'Prototype one issue template before automating.',
+        toolUrl: 'https://x.com/recap_david/status/2062245966372381031',
+        postUrl: 'https://x.com/recap_david/status/2062245966372381031'
+      },
+      {
+        name: 'MotionSites source post',
+        category: 'Motion prompts',
+        priority: 'Watch',
+        summary: 'Original shared X post that surfaced MotionSites as a prompt/reference library.',
+        drprepper: 'Same as MotionSites: useful as swipe file for motion concepts, not a business strategy by itself.',
+        aluma: 'Low priority unless building a campaign landing page.',
+        next: 'Keep attached to MotionSites entry as source reference.',
+        toolUrl: 'https://motionsites.ai',
+        postUrl: 'https://x.com/oluwaphilemon1/status/2060286419965239663?s=46&t=ECM3Vp_m__QhqneVSomL7g'
+      }
+    ];
+
+    const cardsEl = document.querySelector('#cards');
+    const rowsEl = document.querySelector('#rows');
+    const searchEl = document.querySelector('#search');
+    const categoryEl = document.querySelector('#category');
+    const priorityEl = document.querySelector('#priority');
+    const countEl = document.querySelector('#count');
+
+    const categories = [...new Set(tools.map(t => t.category))].sort();
+    categories.forEach(cat => {
+      const opt = document.createElement('option');
+      opt.value = cat;
+      opt.textContent = cat;
+      categoryEl.appendChild(opt);
+    });
+
+    function priorityClass(p) {
+      if (p === 'Medium') return 'medium';
+      if (p === 'Watch') return 'watch';
+      if (p === 'Lead') return 'lead';
+      return '';
+    }
+
+    function linkOrDisabled(url, label) {
+      if (!url) return `<span class="link" aria-disabled="true">${label} unavailable</span>`;
+      return `<a class="link ${label === 'Tool' ? 'primary' : ''}" href="${url}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+    }
+
+    function render() {
+      const q = searchEl.value.trim().toLowerCase();
+      const cat = categoryEl.value;
+      const pri = priorityEl.value;
+      const filtered = tools.filter(t => {
+        const hay = `${t.name} ${t.category} ${t.summary} ${t.drprepper} ${t.aluma} ${t.next} ${t.priority}`.toLowerCase();
+        return (!q || hay.includes(q)) && (cat === 'all' || t.category === cat) && (pri === 'all' || t.priority === pri);
+      });
+
+      countEl.textContent = `${filtered.length} shown`;
+      cardsEl.innerHTML = filtered.map(t => `
+        <article class="card">
+          <div class="card-top">
+            <span class="tag">${t.category}</span>
+            <span class="priority ${priorityClass(t.priority)}">${t.priority}</span>
+          </div>
+          <h3>${t.name}</h3>
+          <p>${t.summary}</p>
+          <p class="fit"><strong>DR Prepper:</strong> ${t.drprepper}</p>
+          <p><strong>Next:</strong> ${t.next}</p>
+          <div class="actions">
+            ${linkOrDisabled(t.toolUrl, 'Tool')}
+            ${linkOrDisabled(t.postUrl, 'Source post')}
+          </div>
+        </article>
+      `).join('');
+
+      rowsEl.innerHTML = filtered.map(t => `
+        <tr>
+          <td><strong>${t.name}</strong><br><a href="${t.postUrl || t.toolUrl}" target="_blank" rel="noopener noreferrer">source</a></td>
+          <td>${t.category}</td>
+          <td>${t.drprepper}</td>
+          <td>${t.aluma}</td>
+          <td>${t.priority}</td>
+          <td>${t.next}</td>
+        </tr>
+      `).join('');
+    }
+
+    [searchEl, categoryEl, priorityEl].forEach(el => el.addEventListener('input', render));
+    render();
+  </script>
+</body>
+</html>
