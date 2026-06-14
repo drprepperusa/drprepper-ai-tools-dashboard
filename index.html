@@ -247,7 +247,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jun 14, 2026 · 5:28 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jun 14, 2026 · 6:03 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -256,9 +256,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">11</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">11</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">2</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">17</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">17</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">3</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -328,6 +328,19 @@
   <script>
     const tools = [
       {
+            "priority": "High",
+            "aluma": "Could tighten Aluma lead-gen pages if they move to a GitHub/Vercel workflow with PostHog-style analytics.",
+            "next": "Evaluate on a non-critical page only; require human PR review and confirm analytics/rollback behavior before any production use.",
+            "name": "Velyr",
+            "category": "CRO / AI site optimization",
+            "summary": "AI growth agent for React, Next.js, and Vite sites that finds conversion issues and opens GitHub pull requests with Vercel previews, human approval, and rollback checks.",
+            "drprepper": "Good candidate for DR Prepper landing-page and quote-flow CRO once analytics are wired; useful because it ships reviewable code instead of just another report.",
+            "toolUrl": "https://velyr.io/",
+            "postUrl": "https://velyr.io/",
+            "firstSeen": "2026-06-14T06:03:02-07:00",
+            "lastReviewed": "2026-06-14T06:03:02-07:00"
+      },
+      {
             "name": "RoundtableSpace — AI landing pages look the same",
             "category": "Design quality / anti-generic AI pages",
             "priority": "High",
@@ -350,6 +363,19 @@
             "postUrl": "https://x.com/oluwaphilemon1/status/2060286419965239663?s=46&t=ECM3Vp_m__QhqneVSomL7g"
       },
       {
+            "priority": "Lead",
+            "aluma": "Indirect relevance only: monitor as a freight-market signal, not an Aluma sales tool.",
+            "next": "Use in outreach to Amazon/Shopify sellers who need non-Amazon backup, local Gardena support, or exception handling that a platform freight product will not customize.",
+            "name": "Amazon Supply Chain Services — LTL expansion signal",
+            "category": "Fulfillment competitor / lead signal",
+            "summary": "Amazon opened less-than-truckload freight to businesses of all sizes, expanding its logistics pitch beyond Amazon-only sellers.",
+            "drprepper": "Sales wedge: pitch DR Prepper as the local, human alternative for inbound freight handoffs, storage, FBA prep, and exception handling when sellers compare Amazon logistics options.",
+            "toolUrl": "https://freight.amazon.com/newsroom/news-updates/2026-ltl-launch",
+            "postUrl": "https://press.aboutamazon.com/2026/6/amazon-supply-chain-services-launches-less-than-truckload-freight-offering-for-all-businesses",
+            "firstSeen": "2026-06-14T06:03:02-07:00",
+            "lastReviewed": "2026-06-14T06:03:02-07:00"
+      },
+      {
             "name": "Reddit r/3PL lead signal",
             "category": "Lead source / prospecting",
             "priority": "Lead",
@@ -359,6 +385,32 @@
             "next": "If URL is available, add it here and use a soft public reply + DM.",
             "toolUrl": "https://www.reddit.com/r/3PL/",
             "postUrl": "https://www.reddit.com/r/3PL/"
+      },
+      {
+            "priority": "Lead",
+            "aluma": "No direct fit; useful only as an example of policy-change monitoring for sales timing.",
+            "next": "Build a short prospect list of SoCal Amazon sellers advertising Prime/SFP or multichannel fulfillment before the July deadline.",
+            "name": "Seller-Fulfilled Prime speed rules — July 2026 signal",
+            "category": "Marketplace policy / fulfillment lead signal",
+            "summary": "Amazon is raising Seller-Fulfilled Prime delivery-speed thresholds starting July 6, 2026 and adding zip-code-level delivery promises later in the year.",
+            "drprepper": "Outreach trigger for Prime/SFP sellers: offer overflow storage, SLA-safe shipping, FBA prep, FBM backup, and human escalation before delivery metrics slip.",
+            "toolUrl": "https://ppc.land/amazon-tightens-seller-fulfilled-prime-speed-rules-starting-july-6/",
+            "postUrl": "https://ppc.land/amazon-tightens-seller-fulfilled-prime-speed-rules-starting-july-6/",
+            "firstSeen": "2026-06-14T06:03:02-07:00",
+            "lastReviewed": "2026-06-14T06:03:02-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could preserve project-intel research and outreach workflows if self-hosting/privacy checks pass.",
+            "next": "Verify privacy model and self-hosting path before storing anything sensitive; start with non-sensitive prompt/workflow archives.",
+            "name": "Memoriq",
+            "category": "AI memory / knowledge vault",
+            "summary": "Encrypted vault and Chrome extension for saving, searching, organizing, exporting, and importing useful ChatGPT, Claude, Gemini, and Grok conversations.",
+            "drprepper": "Useful pattern for preserving AI research, SOP drafts, pricing decisions, troubleshooting sessions, and prompt libraries in a searchable place.",
+            "toolUrl": "https://memoriq.me/",
+            "postUrl": "https://github.com/memoriqme/memoriq",
+            "firstSeen": "2026-06-14T06:03:02-07:00",
+            "lastReviewed": "2026-06-14T06:03:02-07:00"
       },
       {
             "name": "Viktor Oddy — Claude Design full course",
@@ -392,6 +444,32 @@
             "next": "Borrow baseline-ui, frontend-design, accessibility, and motion-performance checklists.",
             "toolUrl": "https://ui-skills.com",
             "postUrl": "https://ui-skills.com"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Potentially useful if Aluma tooling grows into a larger codebase that needs architecture maps or onboarding docs.",
+            "next": "Already installed for Codex skills; test on a non-production repo and review generated dashboards for accuracy before relying on them.",
+            "name": "Understand-Anything",
+            "category": "Codebase understanding / dashboards",
+            "summary": "Open-source plugin/skill set that combines LLM analysis and static analysis to build interactive dashboards and knowledge graphs for codebases.",
+            "drprepper": "Useful for onboarding into PrepShip/client-portal code, explaining diffs, and making large repos easier to audit before changing fulfillment or billing logic.",
+            "toolUrl": "https://github.com/Egonex-AI/Understand-Anything",
+            "postUrl": "https://github.com/Egonex-AI/Understand-Anything",
+            "firstSeen": "2026-06-14T06:03:02-07:00",
+            "lastReviewed": "2026-06-14T06:03:02-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could help organize bid follow-ups, prospect replies, and meeting prep for concrete/formwork outreach.",
+            "next": "Do not connect inboxes blindly; first define email permissions, approval rules, VIP handling, and no-send-without-review guardrails.",
+            "name": "Slashy",
+            "category": "Email/calendar ops automation",
+            "summary": "AI email and calendar assistant with inbox drafting, labels, automations, task tracking, meeting prep, search, and MCP access for agents.",
+            "drprepper": "Potentially useful for sales follow-up, client communication cleanup, task capture from emails, and keeping fulfillment/customer replies from slipping.",
+            "toolUrl": "https://www.slashy.com/",
+            "postUrl": "https://www.slashy.com/pricing",
+            "firstSeen": "2026-06-14T06:03:02-07:00",
+            "lastReviewed": "2026-06-14T06:03:02-07:00"
       },
       {
             "name": "Local newsletter AI-agent idea",
