@@ -247,7 +247,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jun 14, 2026 · 5:28 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated __UPDATED_LABEL__</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -256,9 +256,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">11</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">11</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">2</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">__ENTRY_COUNT__</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">__CATEGORY_COUNT__</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">__HIGH_COUNT__</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -326,129 +326,7 @@
   </footer>
 
   <script>
-    const tools = [
-      {
-            "name": "RoundtableSpace — AI landing pages look the same",
-            "category": "Design quality / anti-generic AI pages",
-            "priority": "High",
-            "summary": "Tutorial/signpost on avoiding generic AI-made landing pages through references, rules, typography, spacing, hierarchy, and design docs.",
-            "drprepper": "Best immediate lesson: define design rules before generating hero sections. Prevents flashy but low-trust fulfillment marketing.",
-            "aluma": "Useful for building credible lead-gen pages that do not look like generic AI SaaS.",
-            "next": "Create DR Prepper landing-page DESIGN.md and conversion checklist.",
-            "toolUrl": "https://x.com/roundtablespace/status/2062651859852988862",
-            "postUrl": "https://x.com/roundtablespace/status/2062651859852988862"
-      },
-      {
-            "name": "MotionSites",
-            "category": "Landing page / motion prompts",
-            "priority": "High",
-            "summary": "Swipe library of animated landing pages and prompts. Useful as reference material for a DR Prepper animated fulfillment landing page.",
-            "drprepper": "Build a more compelling hero/process section: order received → picked → packed → shipped. Use as inspiration, not production code.",
-            "aluma": "Possible reference for construction project/intel landing pages, but lower priority.",
-            "next": "Collect 3–5 reference sections and convert into a DR Prepper DESIGN.md brief.",
-            "toolUrl": "https://motionsites.ai",
-            "postUrl": "https://x.com/oluwaphilemon1/status/2060286419965239663?s=46&t=ECM3Vp_m__QhqneVSomL7g"
-      },
-      {
-            "name": "Reddit r/3PL lead signal",
-            "category": "Lead source / prospecting",
-            "priority": "Lead",
-            "summary": "Screenshot showed a potential high-volume 3PL/shipping lead discussing 1,000/day campaign work and carrier rates.",
-            "drprepper": "Qualify softly: determine if they need full fulfillment, last-mile carrier rates, or campaign logistics support.",
-            "aluma": "No direct fit.",
-            "next": "If URL is available, add it here and use a soft public reply + DM.",
-            "toolUrl": "https://www.reddit.com/r/3PL/",
-            "postUrl": "https://www.reddit.com/r/3PL/"
-      },
-      {
-            "name": "Viktor Oddy — Claude Design full course",
-            "category": "AI motion-web workflow",
-            "priority": "Medium",
-            "summary": "One-hour course/reference for building interactive animated websites with Claude-style workflows.",
-            "drprepper": "Useful if we create a conversion-focused animated fulfillment page without making it feel like a gimmick.",
-            "aluma": "Could support polished sales-engineering explainers for formwork/shoring concepts.",
-            "next": "Extract workflow notes before using it on a production-facing page.",
-            "toolUrl": "https://x.com/viktoroddy/status/2046621997644616039/video/1",
-            "postUrl": "https://x.com/viktoroddy/status/2046621997644616039/video/1"
-      },
-      {
-            "name": "RoundtableSpace — Claude Mythos animated websites",
-            "category": "Cinematic website workflow",
-            "priority": "Medium",
-            "summary": "Workflow: Claude strategy/copy → AI-generated visual assets → Lovable/site builder → scroll animation → polish.",
-            "drprepper": "Potential recipe for a premium fulfillment page if kept practical and trust-focused.",
-            "aluma": "Could create educational construction landing pages or proposal visuals.",
-            "next": "Use as reference after the DR Prepper conversion structure is written.",
-            "toolUrl": "https://x.com/roundtablespace/status/2064841286188994582",
-            "postUrl": "https://x.com/roundtablespace/status/2064841286188994582"
-      },
-      {
-            "name": "ui-skills.com",
-            "category": "Claude/design-engineering skills",
-            "priority": "Medium",
-            "summary": "Directory of design-engineering skills: baseline UI, accessibility fixes, motion performance, frontend design, WCAG audits, React doctor, shadcn, animation principles.",
-            "drprepper": "Use as agent guidance for frontend polish, accessibility, and motion performance on DR Prepper/PrepShip surfaces.",
-            "aluma": "Useful for clean, credible lead-gen page QA.",
-            "next": "Borrow baseline-ui, frontend-design, accessibility, and motion-performance checklists.",
-            "toolUrl": "https://ui-skills.com",
-            "postUrl": "https://ui-skills.com"
-      },
-      {
-            "name": "Local newsletter AI-agent idea",
-            "category": "Lead-gen / newsletter automation",
-            "priority": "Medium",
-            "summary": "Idea around AI agents producing local newsletters. Better used as a lead-gen machine than a standalone side hustle.",
-            "drprepper": "Create an Ecom Fulfillment Brief to attract brands and surface fulfillment pain points.",
-            "aluma": "Create a weekly construction project/intel brief for Southern California concrete/formwork leads.",
-            "next": "Prototype one issue template before automating.",
-            "toolUrl": "https://x.com/recap_david/status/2062245966372381031",
-            "postUrl": "https://x.com/recap_david/status/2062245966372381031"
-      },
-      {
-            "name": "Higgsfield AI MCP",
-            "category": "Motion video / MCP",
-            "priority": "Medium",
-            "summary": "Claude + Higgsfield workflow for generating motion assets and scroll-driven product visuals from a brand kit and business context.",
-            "drprepper": "Potential for custom motion clips in a warehouse/fulfillment landing page or onboarding explainer.",
-            "aluma": "Could generate animated construction/formwork visuals for proposal collateral.",
-            "next": "Use only after copy, offer, and conversion flow are locked.",
-            "toolUrl": "https://x.com/higgsfield_ai/status/2062607081010864364",
-            "postUrl": "https://x.com/higgsfield_ai/status/2062607081010864364"
-      },
-      {
-            "name": "pulkitxm/claude-directory",
-            "category": "Prompt/code reference repo",
-            "priority": "Medium",
-            "summary": "GitHub directory of experimental landing pages, hero sections, and interactive prototypes generated with Claude Fable 5. Includes prompts and code.",
-            "drprepper": "Reference prompts and implementation patterns for cinematic hero/landing sections.",
-            "aluma": "Reference library for niche project-intel or sales pages.",
-            "next": "Inspect prompt.md files; never ship raw vibe-coded dependencies without review.",
-            "toolUrl": "https://github.com/pulkitxm/claude-directory",
-            "postUrl": "https://x.com/_pulkitxm/status/2065402277876338947"
-      },
-      {
-            "name": "Viktor Oddy — renewable hero reference",
-            "category": "Animated hero reference",
-            "priority": "Watch",
-            "summary": "Clean nature/tech animated hero page reference built around a premium visual metaphor.",
-            "drprepper": "Adapt the structure, not the theme: floating warehouse/order-flow diorama instead of renewable energy imagery.",
-            "aluma": "Possible visual metaphor for jobsite shoring systems or project lifecycle.",
-            "next": "Use as visual reference if we prototype an animated DR Prepper hero.",
-            "toolUrl": "https://x.com/viktoroddy/status/2062918204452663767",
-            "postUrl": "https://x.com/viktoroddy/status/2062918204452663767"
-      },
-      {
-            "name": "Artificial Corner — Claude stack list",
-            "category": "Claude skills / plugins / MCP stack",
-            "priority": "Watch",
-            "summary": "Thread about things worth installing in Claude: humanizer, social-media skills, marketing skills, Google Drive/Zapier/Notion MCP, repomix, etc.",
-            "drprepper": "Potential stack for content, CRO, Google Workspace workflows, repository summaries, and marketing execution.",
-            "aluma": "Useful for prospect research and outreach automation if integrated carefully.",
-            "next": "Do not install blindly; evaluate only the pieces tied to active workflows.",
-            "toolUrl": "https://www.threads.com/@artificial.corner/post/DZYYfTLlPMm",
-            "postUrl": "https://www.threads.com/@artificial.corner/post/DZYYfTLlPMm"
-      }
-];
+    const tools = __TOOLS_JSON__;
 
     const cardsEl = document.querySelector('#cards');
     const rowsEl = document.querySelector('#rows');
