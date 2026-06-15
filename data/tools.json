@@ -106,6 +106,19 @@
   },
   {
     "priority": "Medium",
+    "aluma": "Could support structured outreach/nurture sequences for contractor and project-intel leads if list quality and send permissions are handled carefully.",
+    "next": "Test only with a small internal or opted-in list first; define approval rules, unsubscribe hygiene, and human review before any customer-facing sends.",
+    "name": "EmailFlow AI",
+    "category": "Email marketing / newsletter automation",
+    "summary": "AI email platform for creating, sending, and automating revenue-focused email campaigns and newsletters.",
+    "drprepper": "Useful for practical ecommerce follow-up: welcome flows, reorder reminders, 3PL lead nurturing, and newsletter experiments without starting from a blank campaign.",
+    "toolUrl": "https://emailflow.ai/",
+    "postUrl": "https://emailflow.ai/",
+    "firstSeen": "2026-06-15T06:02:43-07:00",
+    "lastReviewed": "2026-06-15T06:02:43-07:00"
+  },
+  {
+    "priority": "Medium",
     "aluma": "Could help organize bid follow-ups, prospect replies, and meeting prep for concrete/formwork outreach.",
     "next": "Do not connect inboxes blindly; first define email permissions, approval rules, VIP handling, and no-send-without-review guardrails.",
     "name": "Slashy",
@@ -129,6 +142,19 @@
     "postUrl": "https://press.aboutamazon.com/2026/6/amazon-supply-chain-services-launches-less-than-truckload-freight-offering-for-all-businesses",
     "firstSeen": "2026-06-14T06:03:02-07:00",
     "lastReviewed": "2026-06-14T06:03:02-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful only if Aluma-related spend or subcontractor paperwork starts flowing through a shared inbox that needs accounting capture.",
+    "next": "Run a privacy/security review and test on a low-risk inbox label before connecting finance mail broadly; never auto-pay or auto-send without review.",
+    "name": "DocStreamAI",
+    "category": "Invoice / receipt automation",
+    "summary": "AI workflow that watches inboxes for invoices and receipts, extracts the data, and syncs it to QuickBooks or Xero.",
+    "drprepper": "Strong fit for AP cleanup across DR Prepper, PrepShip, and KF Goodies: fewer missed receipts, faster bookkeeping handoff, and less manual invoice transcription.",
+    "toolUrl": "https://docstreamai.com/",
+    "postUrl": "https://news.ycombinator.com/item?id=48485900",
+    "firstSeen": "2026-06-15T06:02:43-07:00",
+    "lastReviewed": "2026-06-15T06:02:43-07:00"
   },
   {
     "name": "MotionSites",
@@ -186,6 +212,19 @@
     "next": "Use only after copy, offer, and conversion flow are locked.",
     "toolUrl": "https://x.com/higgsfield_ai/status/2062607081010864364",
     "postUrl": "https://x.com/higgsfield_ai/status/2062607081010864364"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could capture estimator/project conversations and turn them into follow-up tasks without exposing sensitive project details to a generic meeting bot.",
+    "next": "Verify local/private processing claims and export format before using it for sensitive customer, pricing, or project conversations.",
+    "name": "Synopsule",
+    "category": "Private meeting transcription",
+    "summary": "Private Mac/iPhone meeting transcript app for capturing call notes without relying on a cloud meeting bot.",
+    "drprepper": "Useful for vendor calls, client onboarding, warehouse SOP discussions, and PrepShip requirements capture where a visible bot would be awkward.",
+    "toolUrl": "https://synopsule.com/",
+    "postUrl": "https://synopsule.com/",
+    "firstSeen": "2026-06-15T06:02:43-07:00",
+    "lastReviewed": "2026-06-15T06:02:43-07:00"
   },
   {
     "name": "pulkitxm/claude-directory",
