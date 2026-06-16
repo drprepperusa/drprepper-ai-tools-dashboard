@@ -119,6 +119,19 @@
   },
   {
     "priority": "Medium",
+    "aluma": "Could help organize bid follow-ups, vendor replies, and project-intel emails if sensitive threads are scoped carefully.",
+    "next": "Sandbox only with a low-risk inbox or label first; require privacy review and no-send-without-review rules before customer-facing use.",
+    "name": "Dirac",
+    "category": "Email ops / AI inbox",
+    "summary": "AI inbox agent that prepares a morning brief, triages email, and drafts replies for human approval rather than sending automatically.",
+    "drprepper": "Useful candidate for DR Prepper, PrepShip, and KF Goodies sales/client inbox cleanup, follow-up drafting, and preventing important replies from slipping.",
+    "toolUrl": "https://dirac.email/",
+    "postUrl": "https://dirac.email/",
+    "firstSeen": "2026-06-16T06:05:41-07:00",
+    "lastReviewed": "2026-06-16T06:05:41-07:00"
+  },
+  {
+    "priority": "Medium",
     "aluma": "Could help organize bid follow-ups, prospect replies, and meeting prep for concrete/formwork outreach.",
     "next": "Do not connect inboxes blindly; first define email permissions, approval rules, VIP handling, and no-send-without-review guardrails.",
     "name": "Slashy",
@@ -168,6 +181,19 @@
     "postUrl": "https://x.com/oluwaphilemon1/status/2060286419965239663?s=46&t=ECM3Vp_m__QhqneVSomL7g"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could adapt the website-audit workflow for contractor, supplier, or project-intel prospecting, but lead quality needs checking.",
+    "next": "Run a small manual batch and review lead quality/outreach tone before automating; avoid generic spam pitches.",
+    "name": "ClientJam",
+    "category": "Lead gen / website audit outreach",
+    "summary": "AI lead-generation tool that audits local business websites, scores the opportunity, and drafts tailored outreach emails.",
+    "drprepper": "Useful pattern for finding DTC/ecommerce or local brands with weak websites and turning audits into practical 3PL or fulfillment outreach.",
+    "toolUrl": "https://clientjam.app/",
+    "postUrl": "https://clientjam.app/",
+    "firstSeen": "2026-06-16T06:05:41-07:00",
+    "lastReviewed": "2026-06-16T06:05:41-07:00"
+  },
+  {
     "name": "Reddit r/3PL lead signal",
     "category": "Lead source / prospecting",
     "priority": "Lead",
@@ -203,6 +229,58 @@
     "lastReviewed": "2026-06-14T06:03:02-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Possible fit for structured follow-up/reminder workflows after opt-in and compliance requirements are defined.",
+    "next": "Benchmark against Twilio on deliverability, support, carrier fees, 10DLC setup, and WhatsApp needs before choosing.",
+    "name": "Telnyx Messaging API",
+    "category": "Messaging / SMS & WhatsApp API",
+    "summary": "SMS/MMS/RCS and WhatsApp messaging API that can be a lower-cost alternative to Twilio; it does not provide normal iMessage blue texting.",
+    "drprepper": "Candidate for transactional or support messaging where cost control matters and the team can handle API setup and compliance.",
+    "toolUrl": "https://telnyx.com/products/sms-api",
+    "postUrl": "https://telnyx.com/pricing/messaging",
+    "firstSeen": "2026-06-16T06:05:41-07:00",
+    "lastReviewed": "2026-06-16T06:05:41-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Useful for opted-in prospect follow-ups or appointment reminders, not for unapproved cold outreach.",
+    "next": "Compare against Telnyx and Sendblue for channel requirements; account for A2P/10DLC, carrier fees, WhatsApp Meta fees, and human-send approval.",
+    "name": "Twilio Messaging",
+    "category": "Messaging / SMS & WhatsApp API",
+    "summary": "Mature communications API for SMS, MMS, and WhatsApp; Apple Messages for Business is not the same as normal consumer iMessage blue texting.",
+    "drprepper": "Reliable default for transactional SMS, WhatsApp support, order/status notifications, and customer follow-up once 10DLC and review rules are in place.",
+    "toolUrl": "https://www.twilio.com/en-us/messaging",
+    "postUrl": "https://www.twilio.com/en-us/sms/pricing/us",
+    "firstSeen": "2026-06-16T06:05:41-07:00",
+    "lastReviewed": "2026-06-16T06:05:41-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Could support warmer follow-up where prior context or consent exists; not appropriate for uncontrolled cold blasting.",
+    "next": "Run a controlled deliverability/compliance test; define opt-in, unsubscribe, approval, and no-auto-send rules before production use.",
+    "name": "Sendblue",
+    "category": "Messaging / iMessage API",
+    "summary": "Messaging API focused on consumer-style iMessage/blue-bubble texting with SMS/MMS/RCS fallback; distinct from Apple Messages for Business.",
+    "drprepper": "Best-fit provider to test if the goal is blue-bubble customer or prospect conversations, but only with opt-in, compliance, and deliverability guardrails.",
+    "toolUrl": "https://www.sendblue.com/",
+    "postUrl": "https://www.sendblue.com/pricing",
+    "firstSeen": "2026-06-16T06:05:41-07:00",
+    "lastReviewed": "2026-06-16T06:05:41-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Could help with multi-channel nurture sequences, but only after lead quality, consent, and outreach policy are clear.",
+    "next": "Verify channel support, contact-based pricing, carrier fees, and compliance workflow before any real send volume.",
+    "name": "Sent.dm",
+    "category": "Messaging / omnichannel routing",
+    "summary": "Omnichannel messaging platform/router for SMS, MMS, RCS, and WhatsApp; no official consumer iMessage support was found in the comparison.",
+    "drprepper": "Worth watching if DR Prepper needs routed campaigns or multichannel messaging beyond a basic SMS/WhatsApp setup.",
+    "toolUrl": "https://www.sent.dm/en",
+    "postUrl": "https://www.sent.dm/en/pricing",
+    "firstSeen": "2026-06-16T06:05:41-07:00",
+    "lastReviewed": "2026-06-16T06:05:41-07:00"
+  },
+  {
     "name": "Higgsfield AI MCP",
     "category": "Motion video / MCP",
     "priority": "Medium",
@@ -236,5 +314,18 @@
     "next": "Inspect prompt.md files; never ship raw vibe-coded dependencies without review.",
     "toolUrl": "https://github.com/pulkitxm/claude-directory",
     "postUrl": "https://x.com/_pulkitxm/status/2065402277876338947"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Strong pattern match for quote-heavy construction and supplier workflows where scope, price, capacity, and lead time need normalization.",
+    "next": "Watch or test only with non-sensitive sample RFQs; verify privacy, pricing, and supplier quality before using for real project data.",
+    "name": "Covari",
+    "category": "RFQ / supplier quote coordination",
+    "summary": "Manufacturing RFQ and sourcing workflow for uploading part packages, matching vetted suppliers, and comparing quotes by price, scope, and lead time.",
+    "drprepper": "Useful as a model for structured quote intake and supplier comparison around packaging, warehouse supplies, or operational purchasing.",
+    "toolUrl": "https://www.covari.io/",
+    "postUrl": "https://www.covari.io/pricing",
+    "firstSeen": "2026-06-16T06:05:41-07:00",
+    "lastReviewed": "2026-06-16T06:05:41-07:00"
   }
 ]
