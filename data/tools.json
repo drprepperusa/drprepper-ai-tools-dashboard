@@ -24,6 +24,32 @@
     "postUrl": "https://x.com/viktoroddy/status/2046621997644616039/video/1"
   },
   {
+    "priority": "High",
+    "aluma": "Useful pattern for guarded lead-gen, outreach, reporting, and Sheets/CRM automations where every API action needs an allowlist and traceable audit trail.",
+    "next": "Test only on a sandbox integration first; require dry-run mode, allowlisted non-destructive calls, audit logs, and human approval before any production write action.",
+    "name": "Swytchcode CLI",
+    "category": "Agent tool-calling / API guardrails",
+    "summary": "CLI and control layer for letting AI agents call production APIs with auth handling, retries, idempotency, policy controls, and audit logs across a large API catalog.",
+    "drprepper": "Strong fit for safer internal automation around CRM updates, billing/admin tasks, email/reporting workflows, and future PrepShip/client-portal tool calls without giving agents unchecked production access.",
+    "toolUrl": "https://www.swytchcode.com/",
+    "postUrl": "https://www.swytchcode.com/",
+    "firstSeen": "2026-06-17T06:03:58-07:00",
+    "lastReviewed": "2026-06-17T06:03:58-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Could support structured construction prospecting notes or proposal outlines if privacy boundaries are clear and no confidential project data is stored there.",
+    "next": "Use only with non-sensitive test documents first; verify persistence/privacy behavior and MCP access before making it part of any regular workflow.",
+    "name": "ODocs.co",
+    "category": "Agent-collaborative docs / MCP",
+    "summary": "Free, no-login collaborative docs and draw.io-style workspace with REST and MCP access so humans and AI agents can read and edit the same working document.",
+    "drprepper": "Could be a lightweight scratchpad for non-sensitive SOP drafts, project specs, lead-research templates, and task notes shared with AI workers.",
+    "toolUrl": "https://odocs.co",
+    "postUrl": "https://news.ycombinator.com/item?id=48563470",
+    "firstSeen": "2026-06-17T06:03:58-07:00",
+    "lastReviewed": "2026-06-17T06:03:58-07:00"
+  },
+  {
     "name": "Viktor Oddy — renewable hero reference",
     "category": "Animated hero reference",
     "priority": "Watch",
@@ -303,6 +329,19 @@
     "postUrl": "https://synopsule.com/",
     "firstSeen": "2026-06-15T06:02:43-07:00",
     "lastReviewed": "2026-06-15T06:02:43-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could capture estimator, vendor, and project-intel calls into reviewable notes while keeping sensitive job details off generic cloud meeting bots.",
+    "next": "Test export quality on a low-risk call; verify local storage, consent rules, and redaction workflow before using it for customer, pricing, or project conversations.",
+    "name": "Trace",
+    "category": "Private meeting transcription",
+    "summary": "Mac app for private, on-device meeting transcripts with shortcut-based flagged moments; no meeting bot, account, or cloud recording required.",
+    "drprepper": "Useful for supplier calls, client onboarding, warehouse SOP discussions, and sales follow-ups where a bot in the meeting would be awkward.",
+    "toolUrl": "https://traceapp.info",
+    "postUrl": "https://news.ycombinator.com/item?id=48521236",
+    "firstSeen": "2026-06-17T06:03:58-07:00",
+    "lastReviewed": "2026-06-17T06:03:58-07:00"
   },
   {
     "name": "pulkitxm/claude-directory",
