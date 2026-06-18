@@ -62,6 +62,32 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful for construction prospecting and public directory workflows if scraping rules, rate limits, and source quality are reviewed first.",
+    "next": "Test only on public or sandbox pages first; inspect generated scripts for credentials, rate limits, and terms-of-service risk before using on any supplier/customer portal.",
+    "name": "AutomatiQ",
+    "category": "Browser automation / scraping",
+    "summary": "Open-source tool that watches a user browse a website, then generates HTTP-based automation or scraper scripts for sites without clean APIs.",
+    "drprepper": "Strong pattern for automating repetitive portal work: supplier dashboards, carrier portals, lead-source pages, inventory checks, and marketplace admin where APIs are missing.",
+    "toolUrl": "https://github.com/StoneSteel27/AutomatiQ",
+    "postUrl": "https://news.ycombinator.com/item?id=48570588",
+    "firstSeen": "2026-06-18T06:03:26-07:00",
+    "lastReviewed": "2026-06-18T06:03:26-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Could help Aluma improve project-intel or contractor lead pages by tracking competitor pages, content gaps, and visitor intent before changing outreach pages.",
+    "next": "Verify Product Hunt launch/pricing details outside the cron environment, then test only on a non-critical page with analytics, human approval, and rollback rules before letting agents publish changes.",
+    "name": "Ploy",
+    "category": "CRO / AI growth automation",
+    "summary": "AI website growth platform that monitors traffic, competitors, SEO, ads, and conversion gaps, then uses agents to write content, fix site issues, and run experiments.",
+    "drprepper": "Strong fit for DR Prepper lead-gen and fulfillment landing pages once analytics are connected; useful because it targets measurable conversion and visitor-intent work, not just copy generation.",
+    "toolUrl": "https://ploy.ai",
+    "postUrl": "https://www.producthunt.com/products/ploy-ai",
+    "firstSeen": "2026-06-18T06:03:26-07:00",
+    "lastReviewed": "2026-06-18T06:03:26-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Could tighten Aluma lead-gen pages if they move to a GitHub/Vercel workflow with PostHog-style analytics.",
     "next": "Evaluate on a non-critical page only; require human PR review and confirm analytics/rollback behavior before any production use.",
     "name": "Velyr",
@@ -366,5 +392,18 @@
     "postUrl": "https://www.covari.io/pricing",
     "firstSeen": "2026-06-16T06:05:41-07:00",
     "lastReviewed": "2026-06-16T06:05:41-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could support field/admin follow-up capture after calls or site visits if sensitive project details stay out of unreviewed automations.",
+    "next": "Verify Product Hunt source details and test with a low-risk inbox/calendar only; require no-send-without-review and no customer-facing actions until permissions are explicit.",
+    "name": "VoiceOS",
+    "category": "Voice-driven admin automation",
+    "summary": "Voice-controlled AI assistant for Mac/Windows that turns spoken instructions into app actions, dictation, replies, scheduling, and task capture.",
+    "drprepper": "Useful candidate for hands-free admin: drafting replies, calendar scheduling, quick task capture, and repetitive email/calendar actions during warehouse or sales work.",
+    "toolUrl": "https://www.voiceos.com/",
+    "postUrl": "https://www.producthunt.com/products/voiceos",
+    "firstSeen": "2026-06-18T06:03:26-07:00",
+    "lastReviewed": "2026-06-18T06:03:26-07:00"
   }
 ]
