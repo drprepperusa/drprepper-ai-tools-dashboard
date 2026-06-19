@@ -24,6 +24,19 @@
     "postUrl": "https://x.com/viktoroddy/status/2046621997644616039/video/1"
   },
   {
+    "priority": "Watch",
+    "aluma": "Could become useful for paid lead-gen campaigns if it supports read-only reporting and clear human approval before budget or creative changes.",
+    "next": "Verification needed: find the official Google Ads/Google Ad Manager launch page and pricing/access details before connecting any ad account; start read-only only.",
+    "name": "Ask Ad Manager by Google Ads",
+    "category": "Ad reporting / PPC agent",
+    "summary": "Product Hunt-listed Gemini-powered agent for ad insights and faster campaign decisions; official Google Ads availability and pricing were not verified in this run.",
+    "drprepper": "Worth tracking as a pattern for PPC reporting: summarize what changed, which campaigns need attention, and what action to take before spending more on ads.",
+    "toolUrl": "https://www.producthunt.com/products/ask-ad-manager",
+    "postUrl": "https://www.producthunt.com/products/ask-ad-manager",
+    "firstSeen": "2026-06-19T06:02:49-07:00",
+    "lastReviewed": "2026-06-19T06:02:49-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful pattern for guarded lead-gen, outreach, reporting, and Sheets/CRM automations where every API action needs an allowlist and traceable audit trail.",
     "next": "Test only on a sandbox integration first; require dry-run mode, allowlisted non-destructive calls, audit logs, and human approval before any production write action.",
@@ -287,6 +300,19 @@
     "lastReviewed": "2026-06-14T06:03:02-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could help ask structured questions over lead lists, project pipeline, contractor outreach, and quote history once data is centralized and access controls are clear.",
+    "next": "Evaluate only after data sources, RBAC, and privacy boundaries are defined; use the free test credits or demo with non-sensitive sample data before considering paid plans.",
+    "name": "Upsolve AI",
+    "category": "Governed analytics agents",
+    "summary": "Analytics-agent platform for building governed data agents over warehouses/databases with context management, observability/evals, MCP app support, dashboards, and enterprise deployment options.",
+    "drprepper": "Relevant pattern for ops dashboards, finance questions, client reporting, and warehouse/order analytics where answers need traceable data access rather than generic chat.",
+    "toolUrl": "https://www.upsolve.ai/",
+    "postUrl": "https://www.producthunt.com/products/upsolve-ai",
+    "firstSeen": "2026-06-19T06:02:49-07:00",
+    "lastReviewed": "2026-06-19T06:02:49-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful only if Aluma-related spend or subcontractor paperwork starts flowing through a shared inbox that needs accounting capture.",
     "next": "Run a privacy/security review and test on a low-risk inbox label before connecting finance mail broadly; never auto-pay or auto-send without review.",
@@ -470,6 +496,19 @@
     "postUrl": "https://www.covari.io/pricing",
     "firstSeen": "2026-06-16T06:05:41-07:00",
     "lastReviewed": "2026-06-16T06:05:41-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful for checking Aluma project-intel, contractor lead-gen, and service pages before outreach campaigns so broken pages or weak metadata do not waste traffic.",
+    "next": "Run locally against public marketing pages only; review generated findings before making site changes and avoid crawling authenticated/customer portals.",
+    "name": "Crawlie",
+    "category": "SEO / AI-answer visibility audit",
+    "summary": "Free MIT-licensed open-source technical SEO and generative-engine-optimization crawler with CLI, desktop app, JSON/HTML reports, MCP server, and plain-English fix guidance.",
+    "drprepper": "Strong fit for auditing DR Prepper, PrepShip, and landing pages for broken links, missing metadata, answer-engine visibility, and practical fix lists agents can act on.",
+    "toolUrl": "https://github.com/spronta/crawlie",
+    "postUrl": "https://news.ycombinator.com/item?id=48592731",
+    "firstSeen": "2026-06-19T06:02:49-07:00",
+    "lastReviewed": "2026-06-19T06:02:49-07:00"
   },
   {
     "priority": "Medium",
