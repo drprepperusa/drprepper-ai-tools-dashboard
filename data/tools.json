@@ -37,6 +37,29 @@
     "lastReviewed": "2026-06-17T06:03:58-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Useful for construction/project research prompts: define goal, upload context files, require evidence, and keep outputs actionable for prospecting or proposal prep.",
+    "next": "Adapt the framework into a DR Prepper agent-task template: goal, files/context, source-of-truth, scope limits, verification evidence, and final outcome block.",
+    "name": "Ruben Hassid — Claude Fable 5 prompt anatomy",
+    "category": "Agent workflow / prompting",
+    "summary": "Prompt framework for running Claude/Fable-style agents with task framing, context files, references, effort level, act/ask rules, scope control, delegation, evidence, memory, checkpoints, and outcome-first reporting.",
+    "drprepper": "Useful as an operating prompt pattern for PrepShip/client portal implementation reviews, developer task execution, and ops research where fake progress and scope creep are costly.",
+    "toolUrl": "https://how-to-ai.guide/",
+    "postUrl": "https://www.threads.com/@rubenhassid/post/DZcXGQ0Dbbs?xmt=AQG0knxg0Fx9K6MHYXOoQUgo-_dw6KpTvvhtIlNDURTZ_6ga02LTDNN9UeMN1r0Piytm7MlA&slof=1",
+    "extraLinks": [
+      {
+        "label": "How to AI Substack",
+        "url": "https://ruben.substack.com/"
+      },
+      {
+        "label": "Canonical Threads post",
+        "url": "https://www.threads.com/@rubenhassid/post/DZcXGQ0Dbbs"
+      }
+    ],
+    "firstSeen": "2026-06-19T03:23:23-07:00",
+    "lastReviewed": "2026-06-19T03:23:23-07:00"
+  },
+  {
     "priority": "Watch",
     "aluma": "Could support structured construction prospecting notes or proposal outlines if privacy boundaries are clear and no confidential project data is stored there.",
     "next": "Use only with non-sensitive test documents first; verify persistence/privacy behavior and MCP access before making it part of any regular workflow.",
