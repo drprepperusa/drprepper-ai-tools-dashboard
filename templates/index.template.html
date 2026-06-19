@@ -205,6 +205,26 @@
     .card h3 { margin: 18px 0 8px; font-size: 21px; line-height: 1.15; letter-spacing: -.025em; }
     .card p { margin: 0 0 12px; color: var(--muted); font-size: 14px; }
     .fit { color: #d9e6f2 !important; }
+    .extra-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 0 0 12px;
+    }
+    .extra-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.1);
+      background: rgba(255,255,255,.045);
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .extra-link:hover { color: var(--ink); border-color: rgba(255,255,255,.24); }
     .actions { margin-top: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 9px; padding-top: 14px; }
     .link {
       display: inline-flex;
@@ -355,6 +375,14 @@
       return `<a class="link ${label === 'Tool' ? 'primary' : ''}" href="${url}" target="_blank" rel="noopener noreferrer">${label}</a>`;
     }
 
+    function extraLinksHtml(extraLinks) {
+      if (!Array.isArray(extraLinks) || !extraLinks.length) return '';
+      return `<div class="extra-links" aria-label="Related links">${extraLinks.map(link => {
+        const label = link.label || link.url;
+        return `<a class="extra-link" href="${link.url}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+      }).join('')}</div>`;
+    }
+
     function render() {
       const q = searchEl.value.trim().toLowerCase();
       const cat = categoryEl.value;
@@ -374,6 +402,7 @@
           <h3>${t.name}</h3>
           <p>${t.summary}</p>
           <p class="fit"><strong>DR Prepper:</strong> ${t.drprepper}</p>
+          ${extraLinksHtml(t.extraLinks)}
           <p><strong>Next:</strong> ${t.next}</p>
           <div class="actions">
             ${linkOrDisabled(t.toolUrl, 'Tool')}

@@ -158,6 +158,61 @@
   },
   {
     "priority": "Medium",
+    "aluma": "Low direct fit, but useful if building internal technical literacy around automations, scripts, and data workflows.",
+    "next": "Turn into a short onboarding checklist for Jake/new devs: Linux basics, Git, Python, then DevOps/Kubernetes only if their task scope needs it.",
+    "name": "Game-based coding training resources",
+    "category": "Developer training / onboarding",
+    "summary": "Threads post collecting game-style learning resources for Kubernetes, DevOps, Linux, Git, Python, HTML/CSS, cybersecurity, beginner coding, and multi-language practice.",
+    "drprepper": "Useful as a lightweight training path for junior/probationary developers and ops-adjacent staff who need practical technical literacy before touching PrepShip/client portal work.",
+    "toolUrl": "https://www.threads.com/@ammaryasser314/post/DZpnYBCjC-B",
+    "postUrl": "https://www.threads.com/@ammaryasser314/post/DZpnYBCjC-B?xmt=AQG0j-u4mEzgwabVsPP5DkBWyCZaVyLI28JhrYXBG8r4bx9Hy-6c_Pc8a-g1T6Je5LHw23aV&slof=1",
+    "extraLinks": [
+      {
+        "label": "Kubernetes games",
+        "url": "http://k8sgames.com/"
+      },
+      {
+        "label": "DevOps games",
+        "url": "http://devops.games/"
+      },
+      {
+        "label": "OverTheWire Linux",
+        "url": "http://overthewire.org/"
+      },
+      {
+        "label": "Oh My Git",
+        "url": "http://ohmygit.org/"
+      },
+      {
+        "label": "CodeCombat Python",
+        "url": "http://codecombat.com/"
+      },
+      {
+        "label": "Codepip HTML/CSS",
+        "url": "http://codepip.com/"
+      },
+      {
+        "label": "picoCTF cybersecurity",
+        "url": "http://picoctf.org/"
+      },
+      {
+        "label": "Sololearn mobile",
+        "url": "http://sololearn.com/"
+      },
+      {
+        "label": "Scratch beginners",
+        "url": "http://scratch.mit.edu/"
+      },
+      {
+        "label": "CodinGame",
+        "url": "https://codingame.com/"
+      }
+    ],
+    "firstSeen": "2026-06-19T03:21:33-07:00",
+    "lastReviewed": "2026-06-19T03:21:33-07:00"
+  },
+  {
+    "priority": "Medium",
     "aluma": "Could support structured outreach/nurture sequences for contractor and project-intel leads if list quality and send permissions are handled carefully.",
     "next": "Test only with a small internal or opted-in list first; define approval rules, unsubscribe hygiene, and human review before any customer-facing sends.",
     "name": "EmailFlow AI",

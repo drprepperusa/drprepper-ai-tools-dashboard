@@ -205,6 +205,26 @@
     .card h3 { margin: 18px 0 8px; font-size: 21px; line-height: 1.15; letter-spacing: -.025em; }
     .card p { margin: 0 0 12px; color: var(--muted); font-size: 14px; }
     .fit { color: #d9e6f2 !important; }
+    .extra-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 0 0 12px;
+    }
+    .extra-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.1);
+      background: rgba(255,255,255,.045);
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .extra-link:hover { color: var(--ink); border-color: rgba(255,255,255,.24); }
     .actions { margin-top: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 9px; padding-top: 14px; }
     .link {
       display: inline-flex;
@@ -247,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jun 18, 2026 · 6:03 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jun 19, 2026 · 3:21 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -256,8 +276,8 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">33</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">31</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">34</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">32</div><div class="label">categories</div></div>
             <div class="metric"><div class="num">8</div><div class="label">high priority now</div></div>
           </div>
         </section>
@@ -525,6 +545,61 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Low direct fit, but useful if building internal technical literacy around automations, scripts, and data workflows.",
+            "next": "Turn into a short onboarding checklist for Jake/new devs: Linux basics, Git, Python, then DevOps/Kubernetes only if their task scope needs it.",
+            "name": "Game-based coding training resources",
+            "category": "Developer training / onboarding",
+            "summary": "Threads post collecting game-style learning resources for Kubernetes, DevOps, Linux, Git, Python, HTML/CSS, cybersecurity, beginner coding, and multi-language practice.",
+            "drprepper": "Useful as a lightweight training path for junior/probationary developers and ops-adjacent staff who need practical technical literacy before touching PrepShip/client portal work.",
+            "toolUrl": "https://www.threads.com/@ammaryasser314/post/DZpnYBCjC-B",
+            "postUrl": "https://www.threads.com/@ammaryasser314/post/DZpnYBCjC-B?xmt=AQG0j-u4mEzgwabVsPP5DkBWyCZaVyLI28JhrYXBG8r4bx9Hy-6c_Pc8a-g1T6Je5LHw23aV&slof=1",
+            "extraLinks": [
+                  {
+                        "label": "Kubernetes games",
+                        "url": "http://k8sgames.com/"
+                  },
+                  {
+                        "label": "DevOps games",
+                        "url": "http://devops.games/"
+                  },
+                  {
+                        "label": "OverTheWire Linux",
+                        "url": "http://overthewire.org/"
+                  },
+                  {
+                        "label": "Oh My Git",
+                        "url": "http://ohmygit.org/"
+                  },
+                  {
+                        "label": "CodeCombat Python",
+                        "url": "http://codecombat.com/"
+                  },
+                  {
+                        "label": "Codepip HTML/CSS",
+                        "url": "http://codepip.com/"
+                  },
+                  {
+                        "label": "picoCTF cybersecurity",
+                        "url": "http://picoctf.org/"
+                  },
+                  {
+                        "label": "Sololearn mobile",
+                        "url": "http://sololearn.com/"
+                  },
+                  {
+                        "label": "Scratch beginners",
+                        "url": "http://scratch.mit.edu/"
+                  },
+                  {
+                        "label": "CodinGame",
+                        "url": "https://codingame.com/"
+                  }
+            ],
+            "firstSeen": "2026-06-19T03:21:33-07:00",
+            "lastReviewed": "2026-06-19T03:21:33-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Could support structured outreach/nurture sequences for contractor and project-intel leads if list quality and send permissions are handled carefully.",
             "next": "Test only with a small internal or opted-in list first; define approval rules, unsubscribe hygiene, and human review before any customer-facing sends.",
             "name": "EmailFlow AI",
@@ -763,6 +838,14 @@
       return `<a class="link ${label === 'Tool' ? 'primary' : ''}" href="${url}" target="_blank" rel="noopener noreferrer">${label}</a>`;
     }
 
+    function extraLinksHtml(extraLinks) {
+      if (!Array.isArray(extraLinks) || !extraLinks.length) return '';
+      return `<div class="extra-links" aria-label="Related links">${extraLinks.map(link => {
+        const label = link.label || link.url;
+        return `<a class="extra-link" href="${link.url}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+      }).join('')}</div>`;
+    }
+
     function render() {
       const q = searchEl.value.trim().toLowerCase();
       const cat = categoryEl.value;
@@ -782,6 +865,7 @@
           <h3>${t.name}</h3>
           <p>${t.summary}</p>
           <p class="fit"><strong>DR Prepper:</strong> ${t.drprepper}</p>
+          ${extraLinksHtml(t.extraLinks)}
           <p><strong>Next:</strong> ${t.next}</p>
           <div class="actions">
             ${linkOrDisabled(t.toolUrl, 'Tool')}
