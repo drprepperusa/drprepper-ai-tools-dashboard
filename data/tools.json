@@ -1,5 +1,18 @@
 [
   {
+    "priority": "High",
+    "aluma": "Useful for polished proposal, lead-gen, or explainer mockups when construction concepts need a visual before design resources are involved.",
+    "next": "Keep generated images as references only; pick the best operating workflow, redact all real customer data from prompts, and translate the chosen direction into concrete UI acceptance criteria before implementation.",
+    "name": "fal.ai Nano Banana Pro / Gemini Flash Image",
+    "category": "AI design mockups / image generation",
+    "summary": "fal.ai-hosted Nano Banana Pro image-generation workflow used to create multiple production-oriented wholesale admin UI mockups from detailed DR Prepper Customer View prompts.",
+    "drprepper": "Strong fit for fast visual exploration of DR Prepper wholesale/admin screens before writing specs: generate several realistic directions, then convert the best one into developer-ready UI requirements.",
+    "toolUrl": "https://fal.ai/models/fal-ai/nano-banana-pro",
+    "postUrl": "https://fal.ai/models/fal-ai/nano-banana-pro",
+    "firstSeen": "2026-06-20T06:04:27-07:00",
+    "lastReviewed": "2026-06-20T06:04:27-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could preserve project-intel research and outreach workflows if self-hosting/privacy checks pass.",
     "next": "Verify privacy model and self-hosting path before storing anything sensitive; start with non-sensitive prompt/workflow archives.",
@@ -191,6 +204,19 @@
     "next": "Create DR Prepper landing-page DESIGN.md and conversion checklist.",
     "toolUrl": "https://x.com/roundtablespace/status/2062651859852988862",
     "postUrl": "https://x.com/roundtablespace/status/2062651859852988862"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could guide credible construction lead-gen pages, proposal dashboards, and project-intel interfaces without starting from a blank design prompt.",
+    "next": "Use as a reference library, not a copy-paste theme: select one practical design direction, define DR Prepper-specific tokens/components, and verify accessibility/readability before shipping.",
+    "name": "awesome-design-md / Popular Web Designs",
+    "category": "Design-system prompt references",
+    "summary": "Open-source design-system reference collection behind the popular-web-designs workflow, with reusable visual-language specs for styles like Linear, Vercel, Stripe, Shopify-like commerce, and other polished SaaS patterns.",
+    "drprepper": "Useful for making DJR/DR Prepper admin, customer catalog, and sales portals look less generic while staying implementation-friendly and readable for operators.",
+    "toolUrl": "https://github.com/VoltAgent/awesome-design-md",
+    "postUrl": "https://github.com/VoltAgent/awesome-design-md",
+    "firstSeen": "2026-06-20T06:04:27-07:00",
+    "lastReviewed": "2026-06-20T06:04:27-07:00"
   },
   {
     "priority": "Medium",

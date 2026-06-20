@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jun 19, 2026 · 6:02 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jun 20, 2026 · 6:04 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">38</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">36</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">10</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">40</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">38</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">11</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -347,6 +347,19 @@
 
   <script>
     const tools = [
+      {
+            "priority": "High",
+            "aluma": "Useful for polished proposal, lead-gen, or explainer mockups when construction concepts need a visual before design resources are involved.",
+            "next": "Keep generated images as references only; pick the best operating workflow, redact all real customer data from prompts, and translate the chosen direction into concrete UI acceptance criteria before implementation.",
+            "name": "fal.ai Nano Banana Pro / Gemini Flash Image",
+            "category": "AI design mockups / image generation",
+            "summary": "fal.ai-hosted Nano Banana Pro image-generation workflow used to create multiple production-oriented wholesale admin UI mockups from detailed DR Prepper Customer View prompts.",
+            "drprepper": "Strong fit for fast visual exploration of DR Prepper wholesale/admin screens before writing specs: generate several realistic directions, then convert the best one into developer-ready UI requirements.",
+            "toolUrl": "https://fal.ai/models/fal-ai/nano-banana-pro",
+            "postUrl": "https://fal.ai/models/fal-ai/nano-banana-pro",
+            "firstSeen": "2026-06-20T06:04:27-07:00",
+            "lastReviewed": "2026-06-20T06:04:27-07:00"
+      },
       {
             "priority": "High",
             "aluma": "Useful pattern for guarded lead-gen, outreach, reporting, and Sheets/CRM automations where every API action needs an allowlist and traceable audit trail.",
@@ -578,6 +591,19 @@
             "postUrl": "https://github.com/Egonex-AI/Understand-Anything",
             "firstSeen": "2026-06-14T06:03:02-07:00",
             "lastReviewed": "2026-06-14T06:03:02-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could guide credible construction lead-gen pages, proposal dashboards, and project-intel interfaces without starting from a blank design prompt.",
+            "next": "Use as a reference library, not a copy-paste theme: select one practical design direction, define DR Prepper-specific tokens/components, and verify accessibility/readability before shipping.",
+            "name": "awesome-design-md / Popular Web Designs",
+            "category": "Design-system prompt references",
+            "summary": "Open-source design-system reference collection behind the popular-web-designs workflow, with reusable visual-language specs for styles like Linear, Vercel, Stripe, Shopify-like commerce, and other polished SaaS patterns.",
+            "drprepper": "Useful for making DJR/DR Prepper admin, customer catalog, and sales portals look less generic while staying implementation-friendly and readable for operators.",
+            "toolUrl": "https://github.com/VoltAgent/awesome-design-md",
+            "postUrl": "https://github.com/VoltAgent/awesome-design-md",
+            "firstSeen": "2026-06-20T06:04:27-07:00",
+            "lastReviewed": "2026-06-20T06:04:27-07:00"
       },
       {
             "priority": "Medium",
