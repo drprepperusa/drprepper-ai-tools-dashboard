@@ -51,6 +51,19 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful for construction prospecting or project-intel agents if memory is scoped to non-sensitive lead metadata and reviewed source notes.",
+    "next": "Evaluate privacy, retention, export, and access controls with non-sensitive sample memory only; do not store customer, pricing, or credential data until security is reviewed.",
+    "name": "pumaDB",
+    "category": "Agent memory / MCP infrastructure",
+    "summary": "Hosted MCP and REST memory layer for AI agents, letting agents store and query durable JSON memory without standing up a separate database project.",
+    "drprepper": "Strong fit for long-running ops, sales, admin, and dashboard agents that need to remember preferences, project state, prospect context, and workflow decisions across sessions.",
+    "toolUrl": "https://pumadb.ai",
+    "postUrl": "https://pumadb.ai",
+    "firstSeen": "2026-06-21T06:04:31-07:00",
+    "lastReviewed": "2026-06-21T06:04:31-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Useful pattern for guarded lead-gen, outreach, reporting, and Sheets/CRM automations where every API action needs an allowlist and traceable audit trail.",
     "next": "Test only on a sandbox integration first; require dry-run mode, allowlisted non-destructive calls, audit logs, and human approval before any production write action.",
     "name": "Swytchcode CLI",
@@ -86,6 +99,19 @@
     "lastReviewed": "2026-06-19T03:23:23-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could help manage agent work on lead-gen scripts, proposal dashboards, or internal admin tools when multiple repos/tasks are active.",
+    "next": "Test on a non-production repo first; confirm .grindignore/secrets behavior, review diffs manually, and keep production deploys behind normal PR review.",
+    "name": "Backgrind",
+    "category": "Agent workspace / coding operations",
+    "summary": "Always-on-top desktop overlay for running AI coding agents such as Claude Code, Cursor, or a hosted OpenCode-based model, designed to notify only when the agent needs attention.",
+    "drprepper": "Useful operating pattern for supervising agent work on PrepShip, client portal, dashboards, and internal tools without babysitting every terminal step.",
+    "toolUrl": "https://backgrind.com",
+    "postUrl": "https://backgrind.com",
+    "firstSeen": "2026-06-21T06:04:31-07:00",
+    "lastReviewed": "2026-06-21T06:04:31-07:00"
+  },
+  {
     "priority": "Watch",
     "aluma": "Could support structured construction prospecting notes or proposal outlines if privacy boundaries are clear and no confidential project data is stored there.",
     "next": "Use only with non-sensitive test documents first; verify persistence/privacy behavior and MCP access before making it part of any regular workflow.",
@@ -97,6 +123,19 @@
     "postUrl": "https://news.ycombinator.com/item?id=48563470",
     "firstSeen": "2026-06-17T06:03:58-07:00",
     "lastReviewed": "2026-06-17T06:03:58-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could support bid, vendor, and project-intel follow-up workflows if sensitive project details and send permissions are tightly scoped.",
+    "next": "Verify import/export, admin controls, retention/privacy model, and no-send-without-review guardrails before connecting any production inbox; start with a low-risk test address only.",
+    "name": "Atomic Mail Agentic",
+    "category": "Agentic email / private inbox",
+    "summary": "Private encrypted email service positioning itself for AI-agent email workflows, with alias creation, zero-access encryption, private AI assistance, and pricing starting with a free tier.",
+    "drprepper": "Useful pattern for sales/admin inbox triage, reply drafting, vendor follow-up, and customer support automation without defaulting to broad Gmail access.",
+    "toolUrl": "https://atomicmail.io",
+    "postUrl": "https://atomicmail.io",
+    "firstSeen": "2026-06-21T06:04:31-07:00",
+    "lastReviewed": "2026-06-21T06:04:31-07:00"
   },
   {
     "name": "Viktor Oddy — renewable hero reference",
@@ -374,6 +413,38 @@
     "postUrl": "https://clientjam.app/",
     "firstSeen": "2026-06-16T06:05:41-07:00",
     "lastReviewed": "2026-06-16T06:05:41-07:00"
+  },
+  {
+    "priority": "Lead",
+    "aluma": "No direct fit; keep it as a DR Prepper/KF Goodies-style lead-source example.",
+    "next": "Verify the distributor/importer footprint and active U.S. channel mix, then test a small outreach list around retail-prep and multichannel inventory control.",
+    "name": "APLB U.S. multichannel expansion signal",
+    "category": "Lead source / prospecting",
+    "summary": "K-beauty brand APLB was surfaced as expanding across Amazon, iHerb, Kroger, Ulta Beauty, and off-price retail after a Beauty Bridge partnership, a pattern that points to multichannel fulfillment complexity.",
+    "drprepper": "Useful signal for finding K-beauty importers and personal-care brands that need one warehouse for marketplace inventory, retail prep, carton labeling, replenishment, and returns.",
+    "toolUrl": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNVjdGMC1qcWE3WlE1NVNCaEZkSk1mT3ZjUzBEb3BCRGg5dWZIU2tvQjI5c3d5UHhJbWQ4NVF5WlVMUElVZ2lmQlhfek5SWlVlcFgzSWJ3WHRvTTVUdDlabXRhVjN2enVJNlotZ1Fha1JhU2V0Y1Z1LWFwUEhDMlFJd2xBbXI2LUxxVkhycUFhX0ZCTXFYaEVRdE9oeUhhdVJGY0VKam51OEhTMkRiLTVvc21WWG1KT0RQZ0dLMG5rVWZNMTZCR1NYc0xqdnNZWU5qT1hBQnRMVHlkdVJrX3RRbkd6NXhac04tb0diTVVwMkU4d1RjZ1hXbFNSdUJiTW9WaXBQZVBBZW5MbjUtWEdNNQ?oc=5",
+    "postUrl": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNVjdGMC1qcWE3WlE1NVNCaEZkSk1mT3ZjUzBEb3BCRGg5dWZIU2tvQjI5c3d5UHhJbWQ4NVF5WlVMUElVZ2lmQlhfek5SWlVlcFgzSWJ3WHRvTTVUdDlabXRhVjN2enVJNlotZ1Fha1JhU2V0Y1Z1LWFwUEhDMlFJd2xBbXI2LUxxVkhycUFhX0ZCTXFYaEVRdE9oeUhhdVJGY0VKam51OEhTMkRiLTVvc21WWG1KT0RQZ0dLMG5rVWZNMTZCR1NYc0xqdnNZWU5qT1hBQnRMVHlkdVJrX3RRbkd6NXhac04tb0diTVVwMkU4d1RjZ1hXbFNSdUJiTW9WaXBQZVBBZW5MbjUtWEdNNQ?oc=5",
+    "firstSeen": "2026-06-21T06:04:31-07:00",
+    "lastReviewed": "2026-06-21T06:04:31-07:00"
+  },
+  {
+    "priority": "Lead",
+    "aluma": "No direct fit; useful only as a model for turning public funding/distribution news into timed outreach lists.",
+    "next": "Verify each brand's fulfillment footprint, channel mix, and contact path before outreach; lead with a practical retail/DTC operations wedge rather than a generic 3PL pitch.",
+    "name": "Beauty funding prospect signals — California Naturals / REMEDY",
+    "category": "Lead source / prospecting",
+    "summary": "Recent beauty funding signals show personal-care brands raising capital to expand distribution, categories, and growth, which is a useful trigger for 3PL and retail-prep outreach.",
+    "drprepper": "Build a targeted SoCal beauty/wellness prospect lane around funded brands that may need pick/pack, marketplace inventory, wholesale prep, carton labeling, and returns support before hiring logistics staff.",
+    "toolUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPX0N1ZC14Sl9BYWhTUllFb1R1cVJQVWdWRE45eDl6OWxISGFnSGZoUzlnUTBkdnExdGdvYlVkYkJXNGdJa0RHR2I2MXYzaWROMkRDVVVJWndBRkFqbzlqX2lRUHNmbmJIa0V2Wkp1U25MVHpsbkNwczk3a3lTYTdjOS1qV25WdTNsTmZoR1drUHp4SkZpSWxvSk14OXJBdmV5ODBrVA?oc=5",
+    "postUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPX0N1ZC14Sl9BYWhTUllFb1R1cVJQVWdWRE45eDl6OWxISGFnSGZoUzlnUTBkdnExdGdvYlVkYkJXNGdJa0RHR2I2MXYzaWROMkRDVVVJWndBRkFqbzlqX2lRUHNmbmJIa0V2Wkp1U25MVHpsbkNwczk3a3lTYTdjOS1qV25WdTNsTmZoR1drUHp4SkZpSWxvSk14OXJBdmV5ODBrVA?oc=5",
+    "extraLinks": [
+      {
+        "label": "REMEDY Series A source",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOaHUyREdTZHZZXzJGMlU5RGxtcnB6OVdKM2JlUFotZ3AtbVlpVDA3MW1YNnFEUUVfQ290R3RYdWxmYVBhUnZNZjZnWXY3X25aRGowSURrbDZYenFBVloxTG1ZT3luVVN6bEV3S2ZqMklwX2xuSldBNk03cDJ3YmUwMk5MWFBxVUtubnEtZUNqX190bGN4c3lQU0V3VDl6NGRObnFzM1JiTG5yUTVkbUJveWNkNGpCV3l6MHNZeVQ5TFhzODB6a2I4TFk2cjNwQ2Vrd0RYU2RWalp6Ymgx?oc=5"
+      }
+    ],
+    "firstSeen": "2026-06-21T06:04:31-07:00",
+    "lastReviewed": "2026-06-21T06:04:31-07:00"
   },
   {
     "name": "Reddit r/3PL lead signal",
