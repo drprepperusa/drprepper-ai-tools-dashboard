@@ -402,6 +402,25 @@
     "postUrl": "https://x.com/oluwaphilemon1/status/2060286419965239663?s=46&t=ECM3Vp_m__QhqneVSomL7g"
   },
   {
+    "priority": "High",
+    "aluma": "Useful visual pattern for Aluma project pages too: swap cabin booking for project estimate/rental inquiry cards and jobsite/formwork imagery.",
+    "next": "Use this as a design reference for the DR Prepper animated fulfillment landing page: headline + warehouse background + fulfillment estimate card + accuracy/turnaround proof. Do not copy the hospitality theme.",
+    "name": "Viktor Oddy — WoodNest animated hero reference",
+    "category": "Landing page / motion reference",
+    "summary": "Animated hero section reference built with Opus 4.8 + Claude Design. The example uses a premium WoodNest cabin-booking hero with cinematic parallax, large stacked typography, trust metric, and a floating transactional card.",
+    "drprepper": "Strong reference for a DR PREPPER USA 3PL hero: replace the lodge scene with a cinematic warehouse/order-flow scene, keep the oversized headline, trust metric, parallax background, and right-side quote/fulfillment card.",
+    "toolUrl": "https://x.com/viktoroddy/status/2068352370552266822",
+    "postUrl": "https://x.com/viktoroddy/status/2068352370552266822?s=46&t=ECM3Vp_m__QhqneVSomL7g",
+    "extraLinks": [
+      {
+        "label": "Video montage analyzed locally",
+        "url": "https://x.com/viktoroddy/status/2068352370552266822/video/1"
+      }
+    ],
+    "firstSeen": "2026-06-21T09:10:30-07:00",
+    "lastReviewed": "2026-06-21T09:10:30-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could adapt the website-audit workflow for contractor, supplier, or project-intel prospecting, but lead quality needs checking.",
     "next": "Run a small manual batch and review lead quality/outreach tone before automating; avoid generic spam pitches.",
