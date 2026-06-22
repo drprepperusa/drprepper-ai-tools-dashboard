@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jun 22, 2026 · 6:03 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jun 22, 2026 · 2:22 PM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">46</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">42</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">13</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">50</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">45</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">17</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -349,6 +349,25 @@
     const tools = [
       {
             "priority": "High",
+            "aluma": "The same rapid-reference-to-prototype workflow could produce Aluma rental/proposal microsites with jobsite visuals, project metrics, and inquiry cards.",
+            "next": "Use as a structural reference for the DR Prepper landing page, but replace all Emons-style brand elements with verified DR Prepper services, real metrics only, quote CTA, and warehouse/process proof.",
+            "name": "David / Claude logistics website redesign reference",
+            "category": "3PL landing page / logistics web reference",
+            "summary": "X video showing Claude used to rapidly create a polished logistics-company website concept for Emons, including transport/warehouse visuals, service sections, company metrics, news, and CTA panels.",
+            "drprepper": "Directly relevant reference for a DR Prepper 3PL homepage because it demonstrates the right structure: logistics hero, operational credibility, service cards, real stats, and conversion CTA instead of generic AI SaaS visuals.",
+            "toolUrl": "https://x.com/marconoiz/status/2068563918923149520",
+            "postUrl": "https://x.com/marconoiz/status/2068563918923149520",
+            "extraLinks": [
+                  {
+                        "label": "X post",
+                        "url": "https://x.com/marconoiz/status/2068563918923149520"
+                  }
+            ],
+            "firstSeen": "2026-06-22T14:22:38-07:00",
+            "lastReviewed": "2026-06-22T14:22:38-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Useful for polished proposal, lead-gen, or explainer mockups when construction concepts need a visual before design resources are involved.",
             "next": "Keep generated images as references only; pick the best operating workflow, redact all real customer data from prompts, and translate the chosen direction into concrete UI acceptance criteria before implementation.",
             "name": "fal.ai Nano Banana Pro / Gemini Flash Image",
@@ -388,6 +407,33 @@
       },
       {
             "priority": "High",
+            "aluma": "Useful for construction prospecting loops: find projects, enrich contractors, score fit, draft outreach, and update tracking sheets with evidence.",
+            "next": "Translate the idea into DR Prepper-specific loop specs with trigger, source of truth, allowed actions, verification, human approval gates, and reporting format.",
+            "name": "Matt Van Horn / Matthew Berman — AI loop library",
+            "category": "Agent workflow / automation loops",
+            "summary": "X article reference about practical AI-agent loops: repeatable inspect-act-verify workflows people run to make agents perform recurring work instead of one-off prompts.",
+            "drprepper": "Strong fit for formalizing recurring ops automations: fulfillment exception checks, dashboard updates, lead-gen qualification, client billing review, customer-message drafting, and PrepShip QA loops.",
+            "toolUrl": "https://x.com/i/article/2068372607045685248",
+            "postUrl": "https://x.com/matthewberman/status/2068429571788341428",
+            "extraLinks": [
+                  {
+                        "label": "Matthew Berman post",
+                        "url": "https://x.com/matthewberman/status/2068429571788341428"
+                  },
+                  {
+                        "label": "Matt Van Horn article preview",
+                        "url": "https://x.com/i/article/2068372607045685248"
+                  },
+                  {
+                        "label": "Original Matt Van Horn post",
+                        "url": "https://x.com/mvanhorn/status/2068426104088748331"
+                  }
+            ],
+            "firstSeen": "2026-06-22T14:22:38-07:00",
+            "lastReviewed": "2026-06-22T14:22:38-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Useful for construction/project research prompts: define goal, upload context files, require evidence, and keep outputs actionable for prospecting or proposal prep.",
             "next": "Adapt the framework into a DR Prepper agent-task template: goal, files/context, source-of-truth, scope limits, verification evidence, and final outcome block.",
             "name": "Ruben Hassid — Claude Fable 5 prompt anatomy",
@@ -408,6 +454,25 @@
             ],
             "firstSeen": "2026-06-19T03:23:23-07:00",
             "lastReviewed": "2026-06-19T03:23:23-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for codifying Aluma research and proposal preferences, including project-intel format, prospect qualification rules, evidence requirements, and outreach tone.",
+            "next": "Run this as a controlled review against assistant/session history and convert durable repeated corrections into Hermes memory or a project CLAUDE.md/SOUL.md-style rules file; avoid storing secrets or stale task progress.",
+            "name": "The Wize AI — Self-Improvement Loop prompt",
+            "category": "Agent workflow / prompting",
+            "summary": "Instagram carousel slide prompt for mining the last 50 Claude sessions, extracting repeated corrections and re-explanations, and turning them into permanent rules saved as CLAUDE.md.",
+            "drprepper": "High-value pattern for building a DR Prepper/PrepShip AI operating manual from repeated corrections: SOP format, customer-message tone, QC requirements, exception handling, source-of-truth rules, and no-invented-rate/policy guardrails.",
+            "toolUrl": "https://www.instagram.com/thewizeai/",
+            "postUrl": "https://www.instagram.com/thewizeai/",
+            "extraLinks": [
+                  {
+                        "label": "The Wize AI Instagram profile",
+                        "url": "https://www.instagram.com/thewizeai/"
+                  }
+            ],
+            "firstSeen": "2026-06-22T14:22:38-07:00",
+            "lastReviewed": "2026-06-22T14:22:38-07:00"
       },
       {
             "priority": "High",
@@ -458,6 +523,25 @@
             "next": "Create DR Prepper landing-page DESIGN.md and conversion checklist.",
             "toolUrl": "https://x.com/roundtablespace/status/2062651859852988862",
             "postUrl": "https://x.com/roundtablespace/status/2062651859852988862"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for polished Aluma proposal pages, project-intel dashboards, and sales-engineering explainers where the visual style needs to feel deliberate before design resources are involved.",
+            "next": "Pick one restrained premium/logistics-compatible style and turn it into a DR Prepper DESIGN.md before building the new 3PL landing page; do not copy brands directly.",
+            "name": "Refero Styles — DESIGN.md examples for AI agents",
+            "category": "Design system / agent UI reference",
+            "summary": "Library of 2,000+ DESIGN.md-style design systems that AI agents can read directly, with tokens, type scale, spacing rhythm, component patterns, and mood guidance drawn from real product aesthetics.",
+            "drprepper": "Strong fit for producing a non-generic DR Prepper/PrepShip landing page or admin UI: choose a clean SaaS/logistics-adjacent style, convert it into project design rules, then require Claude/Codex to build against that system instead of guessing colors and spacing.",
+            "toolUrl": "https://styles.refero.design/",
+            "postUrl": "https://x.com/voxyz_ai/status/2068331748795043999",
+            "extraLinks": [
+                  {
+                        "label": "Refero Styles",
+                        "url": "https://styles.refero.design/"
+                  }
+            ],
+            "firstSeen": "2026-06-22T14:22:38-07:00",
+            "lastReviewed": "2026-06-22T14:22:38-07:00"
       },
       {
             "priority": "High",
