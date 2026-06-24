@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jun 22, 2026 · 7:38 PM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jun 24, 2026 · 6:05 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,8 +276,8 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">51</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">45</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">53</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">47</div><div class="label">categories</div></div>
             <div class="metric"><div class="num">18</div><div class="label">high priority now</div></div>
           </div>
         </section>
@@ -939,6 +939,19 @@
       },
       {
             "priority": "Medium",
+            "aluma": "No direct Aluma workflow, but the same source-check habit applies to any marketplace-style catalog copy before publishing.",
+            "next": "Use 200 characters as the maximum and treat 80–160 as the practical working range unless category-specific guidance says otherwise; verify category rules before bulk listing changes.",
+            "name": "Amazon listing title character-count guidance",
+            "category": "Marketplace listing policy / KF Goodies ops",
+            "summary": "Amazon Sell on Amazon guidance says the title character limit for Amazon listings is 200 characters, while Amazon recommends 80 characters or fewer for clearer listings.",
+            "drprepper": "Useful for KF Goodies and DR Prepper marketplace listing cleanup: count total characters including spaces, punctuation, and numbers, fix typos, and keep titles readable before upload.",
+            "toolUrl": "https://sell.amazon.com/blog/how-to-boost-amazon-listings",
+            "postUrl": "https://sell.amazon.com/blog/how-to-boost-amazon-listings",
+            "firstSeen": "2026-06-24T06:05:48-07:00",
+            "lastReviewed": "2026-06-24T06:05:48-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Possible fit for structured follow-up/reminder workflows after opt-in and compliance requirements are defined.",
             "next": "Benchmark against Twilio on deliverability, support, carrier fees, 10DLC setup, and WhatsApp needs before choosing.",
             "name": "Telnyx Messaging API",
@@ -1097,6 +1110,19 @@
             "postUrl": "https://www.sent.dm/en/pricing",
             "firstSeen": "2026-06-16T06:05:41-07:00",
             "lastReviewed": "2026-06-16T06:05:41-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Indirect fit only: could matter for occasional sample/equipment shipments, but not a core Aluma workflow unless outbound shipping volume grows.",
+            "next": "Verification needed: require written UPS/FedEx authorization, reseller terms, invoice/billing proof, and indemnity; test only low-value internal labels first and do not route customer shipments through it until tracking, voids, refunds, and account risk are proven.",
+            "name": "ShippHQ / SHIPP.TO shipping labels",
+            "category": "Shipping labels / carrier-account risk check",
+            "summary": "Public SHIPP.TO/ShippHQ shipping site reviewed as a possible discounted-label workflow; the site is reachable, but carrier authorization, account ownership, billing terms, and indemnity still need written verification before operational use.",
+            "drprepper": "Directly relevant to DR Prepper and PrepShip shipping margin work because a label source can affect rate selection, billing proof, customer-facing charges, and shipment reliability.",
+            "toolUrl": "https://shipp.to/",
+            "postUrl": "https://shipp.to/",
+            "firstSeen": "2026-06-24T06:05:48-07:00",
+            "lastReviewed": "2026-06-24T06:05:48-07:00"
       }
 ];
 

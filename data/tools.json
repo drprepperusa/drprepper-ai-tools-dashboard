@@ -599,6 +599,19 @@
     "postUrl": "https://x.com/recap_david/status/2062245966372381031"
   },
   {
+    "priority": "Medium",
+    "aluma": "No direct Aluma workflow, but the same source-check habit applies to any marketplace-style catalog copy before publishing.",
+    "next": "Use 200 characters as the maximum and treat 80–160 as the practical working range unless category-specific guidance says otherwise; verify category rules before bulk listing changes.",
+    "name": "Amazon listing title character-count guidance",
+    "category": "Marketplace listing policy / KF Goodies ops",
+    "summary": "Amazon Sell on Amazon guidance says the title character limit for Amazon listings is 200 characters, while Amazon recommends 80 characters or fewer for clearer listings.",
+    "drprepper": "Useful for KF Goodies and DR Prepper marketplace listing cleanup: count total characters including spaces, punctuation, and numbers, fix typos, and keep titles readable before upload.",
+    "toolUrl": "https://sell.amazon.com/blog/how-to-boost-amazon-listings",
+    "postUrl": "https://sell.amazon.com/blog/how-to-boost-amazon-listings",
+    "firstSeen": "2026-06-24T06:05:48-07:00",
+    "lastReviewed": "2026-06-24T06:05:48-07:00"
+  },
+  {
     "priority": "Lead",
     "aluma": "No direct fit; useful only as an example of policy-change monitoring for sales timing.",
     "next": "Build a short prospect list of SoCal Amazon sellers advertising Prime/SFP or multichannel fulfillment before the July deadline.",
@@ -736,6 +749,19 @@
     "postUrl": "https://news.ycombinator.com/item?id=48592731",
     "firstSeen": "2026-06-19T06:02:49-07:00",
     "lastReviewed": "2026-06-19T06:02:49-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Indirect fit only: could matter for occasional sample/equipment shipments, but not a core Aluma workflow unless outbound shipping volume grows.",
+    "next": "Verification needed: require written UPS/FedEx authorization, reseller terms, invoice/billing proof, and indemnity; test only low-value internal labels first and do not route customer shipments through it until tracking, voids, refunds, and account risk are proven.",
+    "name": "ShippHQ / SHIPP.TO shipping labels",
+    "category": "Shipping labels / carrier-account risk check",
+    "summary": "Public SHIPP.TO/ShippHQ shipping site reviewed as a possible discounted-label workflow; the site is reachable, but carrier authorization, account ownership, billing terms, and indemnity still need written verification before operational use.",
+    "drprepper": "Directly relevant to DR Prepper and PrepShip shipping margin work because a label source can affect rate selection, billing proof, customer-facing charges, and shipment reliability.",
+    "toolUrl": "https://shipp.to/",
+    "postUrl": "https://shipp.to/",
+    "firstSeen": "2026-06-24T06:05:48-07:00",
+    "lastReviewed": "2026-06-24T06:05:48-07:00"
   },
   {
     "priority": "Medium",
