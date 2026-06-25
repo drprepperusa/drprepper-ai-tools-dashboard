@@ -254,6 +254,19 @@
     "lastReviewed": "2026-06-18T06:03:26-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could support branded inbound sales or support chat later if Aluma needs Apple Maps/Messages presence, but only after provider and staffing requirements are clear.",
+    "next": "Have Jake verify whether Twilio can provision Apple Messages for Business for the account, then document Apple approval requirements, MSP choice, webhooks, supported rich features, test flow, and no-auto-send review rules before coding CRM channel support.",
+    "name": "Apple Business Register / Messages for Business",
+    "category": "CRM messaging / Apple business chat",
+    "summary": "Apple's business-registration portal for managing Apple Maps presence and starting Apple Messages for Business setup, including branded customer chat through approved messaging providers.",
+    "drprepper": "Relevant to DJR/DR Prepper CRM messaging because customers could reach a branded business chat in Apple Messages, but it is an approval/provider workflow rather than normal blue-bubble texting from a phone number.",
+    "toolUrl": "https://register.apple.com/",
+    "postUrl": "https://register.apple.com/",
+    "firstSeen": "2026-06-25T06:03:50-07:00",
+    "lastReviewed": "2026-06-25T06:03:50-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Could help Aluma improve project-intel or contractor lead pages by tracking competitor pages, content gaps, and visitor intent before changing outreach pages.",
     "next": "Verify Product Hunt launch/pricing details outside the cron environment, then test only on a non-critical page with analytics, human approval, and rollback rules before letting agents publish changes.",
@@ -530,6 +543,33 @@
     ],
     "firstSeen": "2026-06-21T09:10:30-07:00",
     "lastReviewed": "2026-06-21T09:10:30-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful for contractor/supplier prospecting because Google review volume and rating can help prioritize real operating businesses and spot weak-fit or low-presence leads.",
+    "next": "Start with Google Places API fields like rating, userRatingCount, googleMapsUri, and displayName; keep the Sheet review-first, avoid Gemini, log match confidence, and only use scraping providers if API coverage or cost requires it.",
+    "name": "Google review enrichment workflow — Places API plus approved providers",
+    "category": "Lead enrichment / Google reviews",
+    "summary": "Operational workflow for enriching lead lists with Google review count, rating, and Maps URL using Google Places API first, with approved providers such as SerpApi, Outscraper, or Apify as bulk-scraping fallbacks.",
+    "drprepper": "Directly useful for DJR/DR Prepper sales outreach: review count and rating help prioritize wholesale, frozen-food, 3PL, and local-business leads before a human imports or contacts them.",
+    "toolUrl": "https://developers.google.com/maps/documentation/places/web-service/place-details",
+    "postUrl": "https://developers.google.com/maps/documentation/places/web-service/place-details",
+    "extraLinks": [
+      {
+        "label": "SerpApi Google Maps API",
+        "url": "https://serpapi.com/google-maps-api"
+      },
+      {
+        "label": "Outscraper Google Maps scraper",
+        "url": "https://outscraper.com/google-maps-scraper/"
+      },
+      {
+        "label": "Apify Google Maps reviews scraper",
+        "url": "https://apify.com/compass/google-maps-reviews-scraper"
+      }
+    ],
+    "firstSeen": "2026-06-25T06:03:50-07:00",
+    "lastReviewed": "2026-06-25T06:03:50-07:00"
   },
   {
     "priority": "Medium",
