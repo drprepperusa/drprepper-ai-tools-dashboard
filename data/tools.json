@@ -150,6 +150,29 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful model for overnight construction/prospect research: collect project leads, enrich contractor data, draft outreach, and produce a morning evidence-backed prospect report without sending anything automatically.",
+    "next": "Do not treat the $3,200 claim as proof. Extract the deployment pattern: trigger, data source, allowed actions, verification, budget cap, audit log, and human approval. Prototype only on read-only or sandbox workflows first.",
+    "name": "wast3 — Claude agent that works while you sleep",
+    "category": "Agent workflow / autonomous ops",
+    "summary": "X article preview about deploying Claude as an unattended agent rather than a chatbot, framed around an agent that worked while the author slept and reportedly made $3,200 in a month. Full article required X login, so details beyond the visible title/preview were not verified.",
+    "drprepper": "High-value pattern if translated away from passive-income hype into guarded internal operations: scheduled agents for lead enrichment, fulfillment exception checks, dashboard updates, invoice/billing review, SOP drafting, and daily ops reporting with human approval gates.",
+    "toolUrl": "https://x.com/i/article/2069090953193820161",
+    "postUrl": "https://x.com/0xWast3/status/2069435397025775823",
+    "extraLinks": [
+      {
+        "label": "Source X post",
+        "url": "https://x.com/0xWast3/status/2069435397025775823"
+      },
+      {
+        "label": "X article preview",
+        "url": "https://x.com/i/article/2069090953193820161"
+      }
+    ],
+    "firstSeen": "2026-06-25T19:45:20-07:00",
+    "lastReviewed": "2026-06-25T19:45:20-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Useful for construction/project research prompts: define goal, upload context files, require evidence, and keep outputs actionable for prospecting or proposal prep.",
     "next": "Adapt the framework into a DR Prepper agent-task template: goal, files/context, source-of-truth, scope limits, verification evidence, and final outcome block.",
     "name": "Ruben Hassid — Claude Fable 5 prompt anatomy",
