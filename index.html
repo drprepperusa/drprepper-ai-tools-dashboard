@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jun 26, 2026 · 9:28 PM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jun 27, 2026 · 6:04 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">58</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">51</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">21</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">61</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">54</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">23</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -408,6 +408,29 @@
       },
       {
             "priority": "High",
+            "aluma": "Strong fit for Aluma project-intel and outreach memory if kept to non-sensitive research notes, source links, proposal references, and reusable qualification rules.",
+            "next": "Test with non-sensitive SOP/dashboard notes first; compare against Obsidian/current Hermes notes, verify export/sync behavior, and avoid storing credentials or customer-private data.",
+            "name": "OpenKnowledge",
+            "category": "AI-native knowledge base / agent docs",
+            "summary": "Open-source AI-native markdown editor and knowledge base for humans and agents, with Claude, Cursor, Codex, MCP-oriented workflows, macOS app, and CLI.",
+            "drprepper": "Useful for turning repeated DR Prepper, PrepShip, and KF Goodies research into a local-first operating wiki: SOPs, agent handoffs, prompt notes, vendor decisions, and dashboard source notes that coding agents can read without starting from scratch.",
+            "toolUrl": "https://openknowledge.ai/",
+            "postUrl": "https://news.ycombinator.com/item?id=48675435",
+            "extraLinks": [
+                  {
+                        "label": "GitHub repo",
+                        "url": "https://github.com/inkeep/open-knowledge"
+                  },
+                  {
+                        "label": "Official site",
+                        "url": "https://openknowledge.ai/"
+                  }
+            ],
+            "firstSeen": "2026-06-27T06:04:50-07:00",
+            "lastReviewed": "2026-06-27T06:04:50-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Useful for construction prospecting or project-intel agents if memory is scoped to non-sensitive lead metadata and reviewed source notes.",
             "next": "Evaluate privacy, retention, export, and access controls with non-sensitive sample memory only; do not store customer, pricing, or credential data until security is reviewed.",
             "name": "pumaDB",
@@ -418,6 +441,29 @@
             "postUrl": "https://pumadb.ai",
             "firstSeen": "2026-06-21T06:04:31-07:00",
             "lastReviewed": "2026-06-21T06:04:31-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful pattern for project-intel monitoring: watch public bid/project pages, contractor sites, supplier price pages, or permit-status pages and route changes into an evidence-backed follow-up queue.",
+            "next": "Prototype self-hosted on non-sensitive public URLs first; require BYOK/secret handling review, signed-webhook verification, rate limits, and human approval before any production workflow.",
+            "name": "Meerkat Agents",
+            "category": "Agent monitoring / webhooks",
+            "summary": "Open-source async agent task API for monitoring links, package tracking, website changes, prices, and status updates, then sending signed webhooks when something changes.",
+            "drprepper": "Directly relevant to PrepShip/3PL operations: monitor carrier tracking pages, vendor portals, client pages, competitor pricing, or exception-prone URLs and alert only when the state changes.",
+            "toolUrl": "https://meerkatagents.com/",
+            "postUrl": "https://github.com/Tiny-Bubble-Company/meerkat",
+            "extraLinks": [
+                  {
+                        "label": "GitHub repo",
+                        "url": "https://github.com/Tiny-Bubble-Company/meerkat"
+                  },
+                  {
+                        "label": "Docs",
+                        "url": "https://cloud.meerkatagents.com/docs"
+                  }
+            ],
+            "firstSeen": "2026-06-27T06:04:50-07:00",
+            "lastReviewed": "2026-06-27T06:04:50-07:00"
       },
       {
             "priority": "High",
@@ -1173,6 +1219,19 @@
             "postUrl": "https://www.covari.io/pricing",
             "firstSeen": "2026-06-16T06:05:41-07:00",
             "lastReviewed": "2026-06-16T06:05:41-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Potential fit for construction/product research only if relevant subreddits produce real contractor or supplier signals; otherwise keep it as a DR Prepper sales-prospecting experiment.",
+            "next": "Run a small manual review batch first; never auto-post, avoid spammy outreach, keep replies helpful, and measure whether threads produce qualified conversations before paying for volume.",
+            "name": "Replyt",
+            "category": "Reddit lead gen / social prospecting",
+            "summary": "Reddit customer-acquisition tool that finds high-intent threads, drafts helpful replies or DMs for approval, and tracks traffic/revenue attribution.",
+            "drprepper": "Useful for DR Prepper 3PL and KF Goodies prospecting if used carefully: surface Reddit threads where Shopify, Amazon, small-business, or ecommerce operators are asking about fulfillment, shipping, storage, or product-sourcing pain.",
+            "toolUrl": "https://replyt.co/",
+            "postUrl": "https://replyt.co/",
+            "firstSeen": "2026-06-27T06:04:50-07:00",
+            "lastReviewed": "2026-06-27T06:04:50-07:00"
       },
       {
             "priority": "Medium",
