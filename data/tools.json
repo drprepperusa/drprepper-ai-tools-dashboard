@@ -338,6 +338,33 @@
     "postUrl": "https://www.threads.com/@artificial.corner/post/DZYYfTLlPMm"
   },
   {
+    "priority": "High",
+    "aluma": "Useful for Aluma prospecting/proposal microsites and project-intel dashboards where a credible editorial, industrial, or premium B2B style matters.",
+    "next": "Install/test in a sandbox with `npx skills add anthropics/skills --skill frontend-design`; use it with a DR Prepper DESIGN.md and verify output for accessibility, performance, responsive behavior, and real copy/stats before production.",
+    "name": "Anthropic frontend-design skill",
+    "category": "Claude/design-engineering skills",
+    "summary": "Official open-source Anthropic skill for frontend design that pushes Claude to choose a deliberate aesthetic direction before writing code, avoiding generic AI UI defaults like Inter, purple gradients, and startup-template layouts.",
+    "drprepper": "Strong fit for DR Prepper/PrepShip UI and landing-page work: require a coherent visual direction, typography, color, motion, and composition before generating customer-facing pages or internal admin screens.",
+    "toolUrl": "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
+    "postUrl": "https://x.com/nicos_ai/status/2070581625151258699",
+    "extraLinks": [
+      {
+        "label": "Source X post",
+        "url": "https://x.com/nicos_ai/status/2070581625151258699"
+      },
+      {
+        "label": "Anthropic skills repo",
+        "url": "https://github.com/anthropics/skills"
+      },
+      {
+        "label": "frontend-design skill",
+        "url": "https://github.com/anthropics/skills/tree/main/skills/frontend-design"
+      }
+    ],
+    "firstSeen": "2026-06-26T21:28:22-07:00",
+    "lastReviewed": "2026-06-26T21:28:22-07:00"
+  },
+  {
     "name": "ui-skills.com",
     "category": "Claude/design-engineering skills",
     "priority": "Medium",
