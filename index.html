@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jun 27, 2026 · 6:04 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jun 28, 2026 · 6:04 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">61</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">54</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">23</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">64</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">57</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">24</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -378,6 +378,25 @@
             "postUrl": "https://fal.ai/models/fal-ai/nano-banana-pro",
             "firstSeen": "2026-06-20T06:04:27-07:00",
             "lastReviewed": "2026-06-20T06:04:27-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Could turn Aluma lead/project spreadsheets into simple review dashboards, access-review checklists, proposal trackers, or handoff workflows for sales and operations.",
+            "next": "Test only with non-sensitive sample data first; compare against building the same workflow in the canonical PrepShip/client portal backend before making Appaca a source of truth.",
+            "name": "Appaca",
+            "category": "AI internal apps / ops workspace",
+            "summary": "AI workspace for operators that turns spreadsheet-style data and plain-English workflow ideas into internal apps, dashboards, approvals, SOP assistants, CRM-style tools, and AI coworkers.",
+            "drprepper": "Good fit to prototype lightweight PrepShip/DR Prepper back-office workflows such as client onboarding, shipment exception review, SOP lookup, approval queues, and customer-health dashboards before funding custom code.",
+            "toolUrl": "https://www.appaca.ai/",
+            "postUrl": "https://news.ycombinator.com/item?id=48682461",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://www.appaca.ai/pricing"
+                  }
+            ],
+            "firstSeen": "2026-06-28T06:04:34-07:00",
+            "lastReviewed": "2026-06-28T06:04:34-07:00"
       },
       {
             "priority": "High",
@@ -857,6 +876,19 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could produce polished proposal or project-intel decks from verified project facts, photos, and rental/service scope notes.",
+            "next": "Trial it on a non-confidential DR Prepper sales deck; verify every claim, price, metric, and customer/logo before sharing externally.",
+            "name": "Folio AI",
+            "category": "AI sales decks / presentation copilot",
+            "summary": "AI copilot for PowerPoint and Google Slides that creates and edits slide decks directly for consulting, strategy, and business presentations.",
+            "drprepper": "Useful for fast 3PL sales decks, vendor capability summaries, monthly ops recaps, and client-facing onboarding material without hand-building every slide.",
+            "toolUrl": "https://get-folio.ai",
+            "postUrl": "https://www.producthunt.com/products/folio-ai",
+            "firstSeen": "2026-06-28T06:04:34-07:00",
+            "lastReviewed": "2026-06-28T06:04:34-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Could help manage agent work on lead-gen scripts, proposal dashboards, or internal admin tools when multiple repos/tasks are active.",
             "next": "Test on a non-production repo first; confirm .grindignore/secrets behavior, review diffs manually, and keep production deploys behind normal PR review.",
             "name": "Backgrind",
@@ -880,6 +912,19 @@
             "postUrl": "https://atomicmail.io",
             "firstSeen": "2026-06-21T06:04:31-07:00",
             "lastReviewed": "2026-06-21T06:04:31-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could speed contractor/source-list research and spreadsheet cleanup, but only after permission boundaries and no-autosend/no-autosubmit guardrails are clear.",
+            "next": "Use a sandbox Chrome profile and non-sensitive test sheets first; do not connect Gmail/customer accounts or let it submit forms until the browser-action audit trail is proven.",
+            "name": "Lyto",
+            "category": "Browser automation / admin agent",
+            "summary": "Chrome-based AI agent for controlling browser tabs, running research, filling forms, organizing workflow, and connecting with tools such as Google Docs, Gmail, and Google Sheets.",
+            "drprepper": "Potentially useful for repetitive admin research, lead-list cleanup, vendor/site checks, and Sheets hygiene where a human can review each action before it touches customer or email data.",
+            "toolUrl": "https://www.trylyto.com/",
+            "postUrl": "https://www.producthunt.com/products/lyto",
+            "firstSeen": "2026-06-28T06:04:34-07:00",
+            "lastReviewed": "2026-06-28T06:04:34-07:00"
       },
       {
             "priority": "Medium",

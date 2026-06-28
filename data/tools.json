@@ -32,6 +32,25 @@
     "lastReviewed": "2026-06-20T06:04:27-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Could turn Aluma lead/project spreadsheets into simple review dashboards, access-review checklists, proposal trackers, or handoff workflows for sales and operations.",
+    "next": "Test only with non-sensitive sample data first; compare against building the same workflow in the canonical PrepShip/client portal backend before making Appaca a source of truth.",
+    "name": "Appaca",
+    "category": "AI internal apps / ops workspace",
+    "summary": "AI workspace for operators that turns spreadsheet-style data and plain-English workflow ideas into internal apps, dashboards, approvals, SOP assistants, CRM-style tools, and AI coworkers.",
+    "drprepper": "Good fit to prototype lightweight PrepShip/DR Prepper back-office workflows such as client onboarding, shipment exception review, SOP lookup, approval queues, and customer-health dashboards before funding custom code.",
+    "toolUrl": "https://www.appaca.ai/",
+    "postUrl": "https://news.ycombinator.com/item?id=48682461",
+    "extraLinks": [
+      {
+        "label": "Pricing",
+        "url": "https://www.appaca.ai/pricing"
+      }
+    ],
+    "firstSeen": "2026-06-28T06:04:34-07:00",
+    "lastReviewed": "2026-06-28T06:04:34-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could preserve project-intel research and outreach workflows if self-hosting/privacy checks pass.",
     "next": "Verify privacy model and self-hosting path before storing anything sensitive; start with non-sensitive prompt/workflow archives.",
@@ -81,6 +100,19 @@
     ],
     "firstSeen": "2026-06-22T19:38:08-07:00",
     "lastReviewed": "2026-06-22T19:38:08-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could produce polished proposal or project-intel decks from verified project facts, photos, and rental/service scope notes.",
+    "next": "Trial it on a non-confidential DR Prepper sales deck; verify every claim, price, metric, and customer/logo before sharing externally.",
+    "name": "Folio AI",
+    "category": "AI sales decks / presentation copilot",
+    "summary": "AI copilot for PowerPoint and Google Slides that creates and edits slide decks directly for consulting, strategy, and business presentations.",
+    "drprepper": "Useful for fast 3PL sales decks, vendor capability summaries, monthly ops recaps, and client-facing onboarding material without hand-building every slide.",
+    "toolUrl": "https://get-folio.ai",
+    "postUrl": "https://www.producthunt.com/products/folio-ai",
+    "firstSeen": "2026-06-28T06:04:34-07:00",
+    "lastReviewed": "2026-06-28T06:04:34-07:00"
   },
   {
     "priority": "High",
@@ -308,6 +340,19 @@
     "next": "Use as visual reference if we prototype an animated DR Prepper hero.",
     "toolUrl": "https://x.com/viktoroddy/status/2062918204452663767",
     "postUrl": "https://x.com/viktoroddy/status/2062918204452663767"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could speed contractor/source-list research and spreadsheet cleanup, but only after permission boundaries and no-autosend/no-autosubmit guardrails are clear.",
+    "next": "Use a sandbox Chrome profile and non-sensitive test sheets first; do not connect Gmail/customer accounts or let it submit forms until the browser-action audit trail is proven.",
+    "name": "Lyto",
+    "category": "Browser automation / admin agent",
+    "summary": "Chrome-based AI agent for controlling browser tabs, running research, filling forms, organizing workflow, and connecting with tools such as Google Docs, Gmail, and Google Sheets.",
+    "drprepper": "Potentially useful for repetitive admin research, lead-list cleanup, vendor/site checks, and Sheets hygiene where a human can review each action before it touches customer or email data.",
+    "toolUrl": "https://www.trylyto.com/",
+    "postUrl": "https://www.producthunt.com/products/lyto",
+    "firstSeen": "2026-06-28T06:04:34-07:00",
+    "lastReviewed": "2026-06-28T06:04:34-07:00"
   },
   {
     "priority": "High",
