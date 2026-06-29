@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jun 28, 2026 · 6:04 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jun 29, 2026 · 6:04 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">64</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">57</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">24</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">67</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">59</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">26</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -447,6 +447,25 @@
             ],
             "firstSeen": "2026-06-27T06:04:50-07:00",
             "lastReviewed": "2026-06-27T06:04:50-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for Aluma lead-gen and project-research agents if they start running on schedules or against paid APIs, where budget caps and logs prevent silent runaway work.",
+            "next": "Evaluate in a sandbox agent first; require zero-data-retention review, provider-key handling, hard spend/session limits, alerts, and logs before routing any production automation through it.",
+            "name": "AgentWatch",
+            "category": "Agent budget / audit controls",
+            "summary": "Runtime budget-enforcement layer for AI agents that sits between an app and LLM providers to cap spend, block runaway loops, and keep audit trails.",
+            "drprepper": "Directly relevant before recurring internal agents touch fulfillment checks, dashboards, finance review, PPC reporting, or customer/admin workflows because it adds spending limits and traceability.",
+            "toolUrl": "https://agent-watch.dev/",
+            "postUrl": "https://news.ycombinator.com/item?id=48706317",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://agent-watch.dev/pricing"
+                  }
+            ],
+            "firstSeen": "2026-06-29T06:04:16-07:00",
+            "lastReviewed": "2026-06-29T06:04:16-07:00"
       },
       {
             "priority": "High",
@@ -697,6 +716,25 @@
             "postUrl": "https://news.ycombinator.com/item?id=48485900",
             "firstSeen": "2026-06-15T06:02:43-07:00",
             "lastReviewed": "2026-06-15T06:02:43-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful if Aluma expense receipts, subcontractor invoices, or shared inbox finance paperwork need capture into accounting with less manual chasing.",
+            "next": "Test on one low-risk receipt-only label or inbox first; verify extraction accuracy, export quality, privacy/retention, and require human review before any accounting or payment action.",
+            "name": "Receiptor AI — Agent Mode",
+            "category": "Invoice / receipt automation",
+            "summary": "AI bookkeeping agent that watches email, WhatsApp, and uploads for receipts or invoices, extracts details, categorizes them, and syncs organized data to Xero or QuickBooks.",
+            "drprepper": "Strong fit for DR Prepper, PrepShip, and KF Goodies finance cleanup: catch missing receipts, organize deductions, and reduce manual bookkeeping handoff work without giving it payment authority.",
+            "toolUrl": "https://receiptor.ai/",
+            "postUrl": "https://www.producthunt.com/products/receiptor-ai",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://receiptor.ai/pricing"
+                  }
+            ],
+            "firstSeen": "2026-06-29T06:04:16-07:00",
+            "lastReviewed": "2026-06-29T06:04:16-07:00"
       },
       {
             "name": "MotionSites",
@@ -1277,6 +1315,25 @@
             "postUrl": "https://replyt.co/",
             "firstSeen": "2026-06-27T06:04:50-07:00",
             "lastReviewed": "2026-06-27T06:04:50-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could be tested as a project-intel and contractor outreach workspace for accounts, contacts, proposal notes, follow-up tasks, and internal sales collaboration.",
+            "next": "Trial only with a small sandbox prospect list; verify export, email/calendar permissions, integrations, and no-auto-send review rules before moving any live CRM workflow.",
+            "name": "Salestrics",
+            "category": "Sales CRM / workspace",
+            "summary": "All-in-one sales workspace combining CRM, docs, email, AI, team chat, proposals, finance, analytics, and task boards with a free plan and paid team tiers.",
+            "drprepper": "Possible fit for organizing 3PL sales prospects, quote follow-ups, proposal docs, and sales tasks if the current CRM stack is too fragmented.",
+            "toolUrl": "https://www.salestrics.com/",
+            "postUrl": "https://app.salestrics.com/pricing",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://app.salestrics.com/pricing"
+                  }
+            ],
+            "firstSeen": "2026-06-29T06:04:16-07:00",
+            "lastReviewed": "2026-06-29T06:04:16-07:00"
       },
       {
             "priority": "Medium",
