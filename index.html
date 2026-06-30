@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jun 29, 2026 · 6:04 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jun 30, 2026 · 6:07 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">67</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">59</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">26</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">69</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">60</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">27</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -675,6 +675,25 @@
             "lastReviewed": "2026-06-26T21:28:22-07:00"
       },
       {
+            "priority": "High",
+            "aluma": "Useful if Aluma lead-gen or dashboard services move onto Render because the same read-only deploy/log/metric checks can catch failed workers, stale deploys, or cron/service drift.",
+            "next": "Keep credentials local, report only env names/presence and non-secret service metadata, start with read-only diagnostics, and require explicit approval before changing Render env or restarting production services.",
+            "name": "Render MCP for PrepShip production diagnostics",
+            "category": "Cloud ops / MCP observability",
+            "summary": "Render's MCP server lets an agent inspect Render workspaces, services, deploys, logs, and metrics from an approved local setup; it was used to diagnose PrepShip API/worker scheduler contention without exposing secret values.",
+            "drprepper": "Directly useful for PrepShip operations: check API/worker deploy status, service specs, logs, metrics, and stuck-production symptoms before guessing at fixes or asking developers for screenshots.",
+            "toolUrl": "https://render.com/docs/mcp-server",
+            "postUrl": "https://render.com/docs/mcp-server",
+            "extraLinks": [
+                  {
+                        "label": "Render MCP endpoint",
+                        "url": "https://mcp.render.com/mcp"
+                  }
+            ],
+            "firstSeen": "2026-06-30T06:06:36-07:00",
+            "lastReviewed": "2026-06-30T06:06:36-07:00"
+      },
+      {
             "name": "RoundtableSpace — AI landing pages look the same",
             "category": "Design quality / anti-generic AI pages",
             "priority": "High",
@@ -887,6 +906,29 @@
             "postUrl": "https://ppc.land/amazon-tightens-seller-fulfilled-prime-speed-rules-starting-july-6/",
             "firstSeen": "2026-06-14T06:03:02-07:00",
             "lastReviewed": "2026-06-14T06:03:02-07:00"
+      },
+      {
+            "priority": "Lead",
+            "aluma": "No direct Aluma fit; keep it as a marketplace-policy monitoring pattern for turning public rule changes into timed outreach lists.",
+            "next": "Build a small verified prospect batch before outreach; lead with operational proof/returns support rather than generic storage, and verify each seller's TikTok/Amazon/Shopify channel mix first.",
+            "name": "TikTok Shop dispute and fulfillment-control lead signals",
+            "category": "Marketplace policy / fulfillment lead signal",
+            "summary": "PPC Land coverage shows TikTok Shop sellers facing tighter dispute-response windows and more platform-controlled fulfillment pressure, creating a concrete outreach wedge around proof, returns, scans, and marketplace-ready operations.",
+            "drprepper": "Strong DR Prepper 3PL prospect signal: target TikTok Shop and Shopify sellers in beauty, apparel, supplements, accessories, and lightweight goods that need clean pick/pack records, fast returns evidence, and backup fulfillment discipline.",
+            "toolUrl": "https://ppc.land/tiktok-shop-forces-sellers-to-answer-disputes-in-24-hours-or-lose-refund/",
+            "postUrl": "https://ppc.land/tiktok-shop-forces-sellers-to-answer-disputes-in-24-hours-or-lose-refund/",
+            "extraLinks": [
+                  {
+                        "label": "TikTok logistics-control background",
+                        "url": "https://ppc.land/tiktok-shop-forces-sellers-into-logistics-ultimatum-that-could-destroy-3pl-businesses/"
+                  },
+                  {
+                        "label": "Shopify fulfillment-services context",
+                        "url": "https://www.shopify.com/blog/fulfillment-services"
+                  }
+            ],
+            "firstSeen": "2026-06-30T06:06:36-07:00",
+            "lastReviewed": "2026-06-30T06:06:36-07:00"
       },
       {
             "priority": "Medium",

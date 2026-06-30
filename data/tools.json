@@ -486,6 +486,25 @@
     "postUrl": "https://ui-skills.com"
   },
   {
+    "priority": "High",
+    "aluma": "Useful if Aluma lead-gen or dashboard services move onto Render because the same read-only deploy/log/metric checks can catch failed workers, stale deploys, or cron/service drift.",
+    "next": "Keep credentials local, report only env names/presence and non-secret service metadata, start with read-only diagnostics, and require explicit approval before changing Render env or restarting production services.",
+    "name": "Render MCP for PrepShip production diagnostics",
+    "category": "Cloud ops / MCP observability",
+    "summary": "Render's MCP server lets an agent inspect Render workspaces, services, deploys, logs, and metrics from an approved local setup; it was used to diagnose PrepShip API/worker scheduler contention without exposing secret values.",
+    "drprepper": "Directly useful for PrepShip operations: check API/worker deploy status, service specs, logs, metrics, and stuck-production symptoms before guessing at fixes or asking developers for screenshots.",
+    "toolUrl": "https://render.com/docs/mcp-server",
+    "postUrl": "https://render.com/docs/mcp-server",
+    "extraLinks": [
+      {
+        "label": "Render MCP endpoint",
+        "url": "https://mcp.render.com/mcp"
+      }
+    ],
+    "firstSeen": "2026-06-30T06:06:36-07:00",
+    "lastReviewed": "2026-06-30T06:06:36-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Potentially useful if Aluma tooling grows into a larger codebase that needs architecture maps or onboarding docs.",
     "next": "Already installed for Codex skills; test on a non-production repo and review generated dashboards for accuracy before relying on them.",
@@ -842,6 +861,29 @@
     "postUrl": "https://ppc.land/amazon-tightens-seller-fulfilled-prime-speed-rules-starting-july-6/",
     "firstSeen": "2026-06-14T06:03:02-07:00",
     "lastReviewed": "2026-06-14T06:03:02-07:00"
+  },
+  {
+    "priority": "Lead",
+    "aluma": "No direct Aluma fit; keep it as a marketplace-policy monitoring pattern for turning public rule changes into timed outreach lists.",
+    "next": "Build a small verified prospect batch before outreach; lead with operational proof/returns support rather than generic storage, and verify each seller's TikTok/Amazon/Shopify channel mix first.",
+    "name": "TikTok Shop dispute and fulfillment-control lead signals",
+    "category": "Marketplace policy / fulfillment lead signal",
+    "summary": "PPC Land coverage shows TikTok Shop sellers facing tighter dispute-response windows and more platform-controlled fulfillment pressure, creating a concrete outreach wedge around proof, returns, scans, and marketplace-ready operations.",
+    "drprepper": "Strong DR Prepper 3PL prospect signal: target TikTok Shop and Shopify sellers in beauty, apparel, supplements, accessories, and lightweight goods that need clean pick/pack records, fast returns evidence, and backup fulfillment discipline.",
+    "toolUrl": "https://ppc.land/tiktok-shop-forces-sellers-to-answer-disputes-in-24-hours-or-lose-refund/",
+    "postUrl": "https://ppc.land/tiktok-shop-forces-sellers-to-answer-disputes-in-24-hours-or-lose-refund/",
+    "extraLinks": [
+      {
+        "label": "TikTok logistics-control background",
+        "url": "https://ppc.land/tiktok-shop-forces-sellers-into-logistics-ultimatum-that-could-destroy-3pl-businesses/"
+      },
+      {
+        "label": "Shopify fulfillment-services context",
+        "url": "https://www.shopify.com/blog/fulfillment-services"
+      }
+    ],
+    "firstSeen": "2026-06-30T06:06:36-07:00",
+    "lastReviewed": "2026-06-30T06:06:36-07:00"
   },
   {
     "priority": "Medium",
