@@ -1,6 +1,25 @@
 [
   {
     "priority": "High",
+    "aluma": "Possible secondary fit for extracting shipment and delivery paperwork on equipment/material movements, but validate against Aluma document types before relying on it.",
+    "next": "Test with 3–5 sample or non-sensitive BOLs first, compare extracted fields against manual entry, and keep human review before any TMS/ERP/customer-facing update.",
+    "name": "Bol.ai",
+    "category": "3PL document intake / BOL extraction",
+    "summary": "AI Bill of Lading extraction service that turns BOL PDFs, scans, or photos into structured JSON/CSV/API fields such as B/L number, parties, ports, containers, and weights.",
+    "drprepper": "Strong direct fit for DR Prepper 3PL intake because BOL data is repetitive, error-prone, and tied to fulfillment paperwork; it could reduce manual entry if extraction accuracy is good enough.",
+    "toolUrl": "https://bol.ai/",
+    "postUrl": "https://news.ycombinator.com/item?id=48744342",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://bol.ai/"
+      }
+    ],
+    "firstSeen": "2026-07-01T06:05:21-07:00",
+    "lastReviewed": "2026-07-01T06:05:21-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "The same rapid-reference-to-prototype workflow could produce Aluma rental/proposal microsites with jobsite visuals, project metrics, and inquiry cards.",
     "next": "Use as a structural reference for the DR Prepper landing page, but replace all Emons-style brand elements with verified DR Prepper services, real metrics only, quote CTA, and warehouse/process proof.",
     "name": "David / Claude logistics website redesign reference",
@@ -17,6 +36,19 @@
     ],
     "firstSeen": "2026-06-22T14:22:38-07:00",
     "lastReviewed": "2026-06-22T14:22:38-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could support Aluma research and lead-gen agents by preserving source notes, project context, and reusable workflows if privacy and hosting controls check out.",
+    "next": "Treat as infrastructure, not a business source of truth; review self-hosting, access control, backup, and secret-redaction behavior before storing any sensitive project/customer context.",
+    "name": "Sibyl",
+    "category": "AI agent memory / internal automation infrastructure",
+    "summary": "Open-source, self-hostable shared memory and knowledge-graph runtime for AI coding agents, with CLI/MCP-oriented workflows for keeping parallel agents aligned on project context.",
+    "drprepper": "Relevant to PrepShip/client-portal development operations if multiple coding/review agents need durable shared project memory, task context, and auditability instead of repeatedly rediscovering the same decisions.",
+    "toolUrl": "https://github.com/hyperb1iss/sibyl",
+    "postUrl": "https://news.ycombinator.com/item?id=48741558",
+    "firstSeen": "2026-07-01T06:05:21-07:00",
+    "lastReviewed": "2026-07-01T06:05:21-07:00"
   },
   {
     "priority": "High",
@@ -100,6 +132,25 @@
     ],
     "firstSeen": "2026-06-22T19:38:08-07:00",
     "lastReviewed": "2026-06-22T19:38:08-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Good candidate for Aluma lead-gen experiments: scan contractor/project signals, enrich company lists, and prepare outreach drafts while keeping final send decisions human-owned.",
+    "next": "Prototype on a non-sensitive lead-research task; require approval gates before sending messages, changing CRM records, or using customer/private account data.",
+    "name": "Mark by Airtop",
+    "category": "AI sales / marketing browser automation",
+    "summary": "Airtop's marketer-focused AI agent for researching a business, creating GTM plans, and building web agents that automate lead research, competitor checks, and campaign workflows.",
+    "drprepper": "Useful for repeatable sales and marketing prep such as 3PL prospect research, competitor/listing scans, outreach list enrichment, and newsletter or content operations without hand-running every browser step.",
+    "toolUrl": "https://www.airtop.ai/mark",
+    "postUrl": "https://www.producthunt.com/products/airtop",
+    "extraLinks": [
+      {
+        "label": "Pricing",
+        "url": "https://www.airtop.ai/pricing"
+      }
+    ],
+    "firstSeen": "2026-07-01T06:05:21-07:00",
+    "lastReviewed": "2026-07-01T06:05:21-07:00"
   },
   {
     "priority": "Medium",
