@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 1, 2026 · 6:05 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 2, 2026 · 6:03 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">72</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">63</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">29</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">75</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">66</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">31</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -661,6 +661,29 @@
       },
       {
             "priority": "High",
+            "aluma": "Useful for Aluma lead-gen and project-intel monitoring across public contractor, bid, supplier, and project pages when the data needs regular collection.",
+            "next": "Prototype one read-only weekly competitor/service-page extraction with 5–10 public URLs; confirm rate limits, cost, robots/terms risk, and never use it against authenticated customer portals without approval.",
+            "name": "Tabstack by Mozilla",
+            "category": "Browser automation / web data API",
+            "summary": "Web-data and browser-automation API for extracting pages and automating browser workflows without hosting a browser bot yourself; Product Hunt positioned it for agent-friendly scraping and automation.",
+            "drprepper": "Strong fit for monitored market-watch and ops research: competitor service pages, pricing claims, vendor portals, lead-source pages, and other repetitive web pulls that should feed reviewable spreadsheets or reports.",
+            "toolUrl": "https://tabstack.ai/",
+            "postUrl": "https://www.producthunt.com/products/tabstack",
+            "extraLinks": [
+                  {
+                        "label": "Docs",
+                        "url": "https://docs.tabstack.ai/"
+                  },
+                  {
+                        "label": "Pricing",
+                        "url": "https://docs.tabstack.ai/pricing"
+                  }
+            ],
+            "firstSeen": "2026-07-02T06:03:51-07:00",
+            "lastReviewed": "2026-07-02T06:03:51-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Could help Aluma improve project-intel or contractor lead pages by tracking competitor pages, content gaps, and visitor intent before changing outreach pages.",
             "next": "Verify Product Hunt launch/pricing details outside the cron environment, then test only on a non-critical page with analytics, human approval, and rollback rules before letting agents publish changes.",
             "name": "Ploy",
@@ -760,6 +783,25 @@
             ],
             "firstSeen": "2026-06-22T14:22:38-07:00",
             "lastReviewed": "2026-06-22T14:22:38-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Could help Aluma keep contractor/project-intel conversations from turning into forgotten follow-ups if Slack/Teams becomes part of the sales workflow.",
+            "next": "Sandbox with non-sensitive sales notes first; require read-only access, clear approval before CRM/email actions, and review whether Slack/Teams is actually the right operating hub.",
+            "name": "Needle",
+            "category": "GTM agent / sales follow-up",
+            "summary": "Proactive GTM agent for Slack and Teams that watches team/sales conversations and surfaces follow-up actions instead of waiting for a person to ask.",
+            "drprepper": "Useful for DR Prepper sales discipline: catch missed 3PL prospect follow-ups, quote tasks, renewal nudges, and customer-context handoffs from the places the team already talks.",
+            "toolUrl": "https://needle.app/",
+            "postUrl": "https://www.producthunt.com/products/needle-3",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://needle.app/pricing"
+                  }
+            ],
+            "firstSeen": "2026-07-02T06:03:51-07:00",
+            "lastReviewed": "2026-07-02T06:03:51-07:00"
       },
       {
             "priority": "High",
@@ -1427,6 +1469,25 @@
             ],
             "firstSeen": "2026-06-29T06:04:16-07:00",
             "lastReviewed": "2026-06-29T06:04:16-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could support shared bid/vendor/project-inquiry inboxes if permission boundaries, retention, and export are acceptable.",
+            "next": "Try only with a low-risk alias or test inbox; verify Google Workspace connection, export/retention, approval-before-send behavior, and privacy terms before connecting production email.",
+            "name": "Banger Mail",
+            "category": "Shared inbox / AI email ops",
+            "summary": "Native Mac shared-inbox tool for team addresses such as sales@ or support@, positioning AI agents as helpers for triage, labeling, and drafting while humans stay in the loop.",
+            "drprepper": "Potential fit for DR Prepper, PrepShip, and KF Goodies inbox cleanup where sales, support, vendor, and customer emails need assignment and draft replies without automatic sends.",
+            "toolUrl": "https://bangermail.com/",
+            "postUrl": "https://www.producthunt.com/products/banger-mail",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://bangermail.com/pricing"
+                  }
+            ],
+            "firstSeen": "2026-07-02T06:03:51-07:00",
+            "lastReviewed": "2026-07-02T06:03:51-07:00"
       },
       {
             "priority": "Medium",
