@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 2, 2026 · 6:03 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 3, 2026 · 6:04 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">75</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">66</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">31</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">78</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">69</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">32</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -783,6 +783,19 @@
             ],
             "firstSeen": "2026-06-22T14:22:38-07:00",
             "lastReviewed": "2026-06-22T14:22:38-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Indirect fit for Aluma-facing internal tools if bugs in lead-gen or proposal dashboards need cleaner evidence before developer handoff.",
+            "next": "Try one non-sensitive public or sanitized issue first and compare its repro evidence against the current Hermes/Trello review workflow before connecting private repos.",
+            "name": "Osloq",
+            "category": "Developer QA / bug reproduction",
+            "summary": "AI bug-reproduction agent that investigates GitHub issues in an isolated sandbox and returns evidence such as repro steps, logs, and screenshots.",
+            "drprepper": "Strong fit for PrepShip and client-portal QA because it can turn vague UI/runtime bug reports into reproducible evidence before a developer spends time triaging.",
+            "toolUrl": "https://osloq.com",
+            "postUrl": "https://www.producthunt.com/products/osloq",
+            "firstSeen": "2026-07-03T06:03:56-07:00",
+            "lastReviewed": "2026-07-03T06:03:56-07:00"
       },
       {
             "priority": "High",
@@ -1293,6 +1306,25 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could help with local lead-research routines, proposal prep, calendar/reminder setup, and document organization if sensitive customer/project data stays guarded.",
+            "next": "Test on a non-sensitive Mac workflow first; require explicit human review before any email/send/calendar mutation and do not store credentials or customer data in prompts.",
+            "name": "Macuse",
+            "category": "Mac automation / AI computer use",
+            "summary": "Mac app that lets AI agents control native apps and desktop UI through MCP-style integrations, with Calendar, Mail, Notes, Reminders, browser, and general computer-use actions.",
+            "drprepper": "Useful for controlled back-office automation on DJ's Mac, such as preparing reminders, organizing notes, checking local workflows, or drafting ops handoffs without making it a production source of truth.",
+            "toolUrl": "https://macuse.app",
+            "postUrl": "https://www.producthunt.com/products/macuse",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://macuse.app/pricing"
+                  }
+            ],
+            "firstSeen": "2026-07-03T06:03:56-07:00",
+            "lastReviewed": "2026-07-03T06:03:56-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "No direct Aluma workflow, but the same source-check habit applies to any marketplace-style catalog copy before publishing.",
             "next": "Use 200 characters as the maximum and treat 80–160 as the practical working range unless category-specific guidance says otherwise; verify category rules before bulk listing changes.",
             "name": "Amazon listing title character-count guidance",
@@ -1501,6 +1533,25 @@
             "postUrl": "https://www.producthunt.com/products/voiceos",
             "firstSeen": "2026-06-18T06:03:26-07:00",
             "lastReviewed": "2026-06-18T06:03:26-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Could eventually support Aluma lead/project dashboards and automated follow-up queues if the data model and permissions are tightly controlled.",
+            "next": "Do not impulse-buy at the current startup pricing; first define one dashboard/action use case and compare against the existing client portal or a lightweight internal dashboard.",
+            "name": "Basedash Actions",
+            "category": "AI BI / ops dashboards",
+            "summary": "AI-native business intelligence platform that connects data sources, builds dashboards, answers questions from data, and can run data workflows/actions.",
+            "drprepper": "Worth watching for PrepShip, DR Prepper, and KF Goodies operations dashboards where the goal is not just charts but daily change detection and next-step workflows.",
+            "toolUrl": "https://www.basedash.com",
+            "postUrl": "https://www.producthunt.com/products/basedash",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://www.basedash.com/pricing"
+                  }
+            ],
+            "firstSeen": "2026-07-03T06:03:56-07:00",
+            "lastReviewed": "2026-07-03T06:03:56-07:00"
       },
       {
             "priority": "Watch",

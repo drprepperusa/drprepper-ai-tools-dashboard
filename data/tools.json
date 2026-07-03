@@ -38,6 +38,25 @@
     "lastReviewed": "2026-06-22T14:22:38-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Could eventually support Aluma lead/project dashboards and automated follow-up queues if the data model and permissions are tightly controlled.",
+    "next": "Do not impulse-buy at the current startup pricing; first define one dashboard/action use case and compare against the existing client portal or a lightweight internal dashboard.",
+    "name": "Basedash Actions",
+    "category": "AI BI / ops dashboards",
+    "summary": "AI-native business intelligence platform that connects data sources, builds dashboards, answers questions from data, and can run data workflows/actions.",
+    "drprepper": "Worth watching for PrepShip, DR Prepper, and KF Goodies operations dashboards where the goal is not just charts but daily change detection and next-step workflows.",
+    "toolUrl": "https://www.basedash.com",
+    "postUrl": "https://www.producthunt.com/products/basedash",
+    "extraLinks": [
+      {
+        "label": "Pricing",
+        "url": "https://www.basedash.com/pricing"
+      }
+    ],
+    "firstSeen": "2026-07-03T06:03:56-07:00",
+    "lastReviewed": "2026-07-03T06:03:56-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could support Aluma research and lead-gen agents by preserving source notes, project context, and reusable workflows if privacy and hosting controls check out.",
     "next": "Treat as infrastructure, not a business source of truth; review self-hosting, access control, backup, and secret-redaction behavior before storing any sensitive project/customer context.",
@@ -635,6 +654,19 @@
     "lastReviewed": "2026-06-20T06:04:27-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Indirect fit for Aluma-facing internal tools if bugs in lead-gen or proposal dashboards need cleaner evidence before developer handoff.",
+    "next": "Try one non-sensitive public or sanitized issue first and compare its repro evidence against the current Hermes/Trello review workflow before connecting private repos.",
+    "name": "Osloq",
+    "category": "Developer QA / bug reproduction",
+    "summary": "AI bug-reproduction agent that investigates GitHub issues in an isolated sandbox and returns evidence such as repro steps, logs, and screenshots.",
+    "drprepper": "Strong fit for PrepShip and client-portal QA because it can turn vague UI/runtime bug reports into reproducible evidence before a developer spends time triaging.",
+    "toolUrl": "https://osloq.com",
+    "postUrl": "https://www.producthunt.com/products/osloq",
+    "firstSeen": "2026-07-03T06:03:56-07:00",
+    "lastReviewed": "2026-07-03T06:03:56-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Low direct fit, but useful if building internal technical literacy around automations, scripts, and data workflows.",
     "next": "Turn into a short onboarding checklist for Jake/new devs: Linux basics, Git, Python, then DevOps/Kubernetes only if their task scope needs it.",
@@ -928,6 +960,25 @@
     "next": "Prototype one issue template before automating.",
     "toolUrl": "https://x.com/recap_david/status/2062245966372381031",
     "postUrl": "https://x.com/recap_david/status/2062245966372381031"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could help with local lead-research routines, proposal prep, calendar/reminder setup, and document organization if sensitive customer/project data stays guarded.",
+    "next": "Test on a non-sensitive Mac workflow first; require explicit human review before any email/send/calendar mutation and do not store credentials or customer data in prompts.",
+    "name": "Macuse",
+    "category": "Mac automation / AI computer use",
+    "summary": "Mac app that lets AI agents control native apps and desktop UI through MCP-style integrations, with Calendar, Mail, Notes, Reminders, browser, and general computer-use actions.",
+    "drprepper": "Useful for controlled back-office automation on DJ's Mac, such as preparing reminders, organizing notes, checking local workflows, or drafting ops handoffs without making it a production source of truth.",
+    "toolUrl": "https://macuse.app",
+    "postUrl": "https://www.producthunt.com/products/macuse",
+    "extraLinks": [
+      {
+        "label": "Pricing",
+        "url": "https://macuse.app/pricing"
+      }
+    ],
+    "firstSeen": "2026-07-03T06:03:56-07:00",
+    "lastReviewed": "2026-07-03T06:03:56-07:00"
   },
   {
     "priority": "Medium",
