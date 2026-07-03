@@ -1204,6 +1204,33 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful for Aluma local/project-intent SEO: research regional concrete/formwork/shoring keywords, compare competitor pages, draft service/location pages, and track which pages need updates for Southern California prospects.",
+    "next": "Do not copy prompts blindly. Build a DR Prepper SEO-agent brief with approved data sources, no auto-publish rule, human review, verified keywords/metrics, and a weekly report cadence before connecting analytics or editing pages.",
+    "name": "Sarvesh Shrivastava — Claude Cowork Chief of SEO prompt system",
+    "category": "SEO / AI marketing agent workflow",
+    "summary": "X article preview about using Claude Cowork with Fable 5 as a 'Chief of SEO' through a 20-part prompt system. The public preview says the author shared exact prompts for SEO workflows; full article access was blocked by X login, so details beyond the preview were not verified.",
+    "drprepper": "Strong pattern for DR Prepper lead generation: turn SEO from one-off keyword prompts into a recurring agent workflow that audits Search Console/GA4/pages, identifies quick wins, drafts content briefs, suggests internal links, and produces a weekly rank/conversion report.",
+    "toolUrl": "https://x.com/i/article/2065089505649147904",
+    "postUrl": "https://x.com/bloggersarvesh/status/2065092715289919616",
+    "extraLinks": [
+      {
+        "label": "Source X post",
+        "url": "https://x.com/bloggersarvesh/status/2065092715289919616"
+      },
+      {
+        "label": "X article preview",
+        "url": "https://x.com/i/article/2065089505649147904"
+      },
+      {
+        "label": "Related SEO workflows reference",
+        "url": "https://www.get-ryze.ai/blog/claude-ai-seo-workflows"
+      }
+    ],
+    "firstSeen": "2026-07-03T16:06:55-07:00",
+    "lastReviewed": "2026-07-03T16:06:55-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Useful for checking Aluma project-intel, contractor lead-gen, and service pages before outreach campaigns so broken pages or weak metadata do not waste traffic.",
     "next": "Run locally against public marketing pages only; review generated findings before making site changes and avoid crawling authenticated/customer portals.",
     "name": "Crawlie",
