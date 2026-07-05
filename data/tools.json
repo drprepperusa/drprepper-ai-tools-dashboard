@@ -531,6 +531,25 @@
     "lastReviewed": "2026-07-02T06:03:51-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Could support public construction lead-source monitoring or supplier research if the target sites permit automation and the workflow stores only non-sensitive business facts.",
+    "next": "Treat as dev-only until license, maintenance, and ToS/compliance risk are reviewed; do not use it on customer accounts, checkout flows, or sites that prohibit automation.",
+    "name": "Fortress",
+    "category": "Browser-agent infrastructure / lead research",
+    "summary": "Open-source stealth Chromium engine for scrapers and browser agents, positioned as a one-line browser swap to reduce automation blocking on protected websites.",
+    "drprepper": "Potentially useful infrastructure for approved lead research, competitor price/stock checks, or repetitive vendor-portal review where a normal browser agent gets blocked, but it should not become a shortcut around site rules.",
+    "toolUrl": "https://github.com/tiliondev/fortress",
+    "postUrl": "https://news.ycombinator.com/item?id=48781600",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/tiliondev/fortress"
+      }
+    ],
+    "firstSeen": "2026-07-05T06:03:39-07:00",
+    "lastReviewed": "2026-07-05T06:03:39-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could support branded inbound sales or support chat later if Aluma needs Apple Maps/Messages presence, but only after provider and staffing requirements are clear.",
     "next": "Have Jake verify whether Twilio can provision Apple Messages for Business for the account, then document Apple approval requirements, MSP choice, webhooks, supported rich features, test flow, and no-auto-send review rules before coding CRM channel support.",
@@ -1011,6 +1030,25 @@
     "next": "Prototype one issue template before automating.",
     "toolUrl": "https://x.com/recap_david/status/2062245966372381031",
     "postUrl": "https://x.com/recap_david/status/2062245966372381031"
+  },
+  {
+    "priority": "High",
+    "aluma": "Could help Aluma organize lead follow-ups, project notes, calendar reminders, and local spreadsheet/file handoffs from one assistant interface if access is kept narrow.",
+    "next": "Pilot read-only first on non-sensitive folders/accounts, inspect every permission, and require explicit human approval before any tool can send messages, modify files, or touch customer/vendor records.",
+    "name": "Local MCP",
+    "category": "Mac MCP / local ops automation",
+    "summary": "Mac-focused MCP layer that lets Claude or ChatGPT access local apps such as Mail, Calendar, iMessage, Teams, Slack, OneDrive, Google Drive, Office, and files through 183 local tools.",
+    "drprepper": "Strong fit for operator workflows on DJ's Mac: summarize local communications, assemble follow-up drafts, pull calendar/file context, and reduce manual switching across ops apps without sending data through extra SaaS APIs.",
+    "toolUrl": "https://www.local-mcp.com/en",
+    "postUrl": "https://news.ycombinator.com/item?id=48790887",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://www.local-mcp.com/en"
+      }
+    ],
+    "firstSeen": "2026-07-05T06:03:39-07:00",
+    "lastReviewed": "2026-07-05T06:03:39-07:00"
   },
   {
     "priority": "Medium",

@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 4, 2026 · 6:05 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 5, 2026 · 6:03 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">83</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">74</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">34</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">85</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">76</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">35</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -923,6 +923,25 @@
             ],
             "firstSeen": "2026-06-25T06:03:50-07:00",
             "lastReviewed": "2026-06-25T06:03:50-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Could help Aluma organize lead follow-ups, project notes, calendar reminders, and local spreadsheet/file handoffs from one assistant interface if access is kept narrow.",
+            "next": "Pilot read-only first on non-sensitive folders/accounts, inspect every permission, and require explicit human approval before any tool can send messages, modify files, or touch customer/vendor records.",
+            "name": "Local MCP",
+            "category": "Mac MCP / local ops automation",
+            "summary": "Mac-focused MCP layer that lets Claude or ChatGPT access local apps such as Mail, Calendar, iMessage, Teams, Slack, OneDrive, Google Drive, Office, and files through 183 local tools.",
+            "drprepper": "Strong fit for operator workflows on DJ's Mac: summarize local communications, assemble follow-up drafts, pull calendar/file context, and reduce manual switching across ops apps without sending data through extra SaaS APIs.",
+            "toolUrl": "https://www.local-mcp.com/en",
+            "postUrl": "https://news.ycombinator.com/item?id=48790887",
+            "extraLinks": [
+                  {
+                        "label": "Official site",
+                        "url": "https://www.local-mcp.com/en"
+                  }
+            ],
+            "firstSeen": "2026-07-05T06:03:39-07:00",
+            "lastReviewed": "2026-07-05T06:03:39-07:00"
       },
       {
             "priority": "High",
@@ -1680,6 +1699,25 @@
             "next": "Use as visual reference if we prototype an animated DR Prepper hero.",
             "toolUrl": "https://x.com/viktoroddy/status/2062918204452663767",
             "postUrl": "https://x.com/viktoroddy/status/2062918204452663767"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Could support public construction lead-source monitoring or supplier research if the target sites permit automation and the workflow stores only non-sensitive business facts.",
+            "next": "Treat as dev-only until license, maintenance, and ToS/compliance risk are reviewed; do not use it on customer accounts, checkout flows, or sites that prohibit automation.",
+            "name": "Fortress",
+            "category": "Browser-agent infrastructure / lead research",
+            "summary": "Open-source stealth Chromium engine for scrapers and browser agents, positioned as a one-line browser swap to reduce automation blocking on protected websites.",
+            "drprepper": "Potentially useful infrastructure for approved lead research, competitor price/stock checks, or repetitive vendor-portal review where a normal browser agent gets blocked, but it should not become a shortcut around site rules.",
+            "toolUrl": "https://github.com/tiliondev/fortress",
+            "postUrl": "https://news.ycombinator.com/item?id=48781600",
+            "extraLinks": [
+                  {
+                        "label": "GitHub repo",
+                        "url": "https://github.com/tiliondev/fortress"
+                  }
+            ],
+            "firstSeen": "2026-07-05T06:03:39-07:00",
+            "lastReviewed": "2026-07-05T06:03:39-07:00"
       },
       {
             "name": "Artificial Corner — Claude stack list",
