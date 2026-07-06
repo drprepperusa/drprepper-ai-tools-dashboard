@@ -218,6 +218,25 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful for Aluma lead-source monitoring around concrete contractors, project chatter, supplier mentions, and competitor/community signals if keyword scope is kept narrow enough to avoid noisy generic construction posts.",
+    "next": "Trial with 5-10 narrow keywords first, route only high/medium relevance alerts to Slack or a review queue, and validate lead quality before paying for Pro at $159/mo or Scale at $499/mo.",
+    "name": "Octolens",
+    "category": "AI social listening / lead signals",
+    "summary": "AI social-listening platform for Reddit, X, LinkedIn, Hacker News, GitHub, YouTube, TikTok, Bluesky, newsletters, podcasts, and web mentions, with AI relevance/sentiment filters plus Slack, email, API, webhook, and MCP delivery.",
+    "drprepper": "Direct fit for DR Prepper, PrepShip, and KF Goodies competitor monitoring: watch buy-intent posts, fulfillment complaints, 3PL keyword mentions, carrier/software chatter, and marketplace signals without turning every mention into inbox noise.",
+    "toolUrl": "https://octolens.com/",
+    "postUrl": "https://www.producthunt.com/products/octolens-ai",
+    "extraLinks": [
+      {
+        "label": "Pricing",
+        "url": "https://octolens.com/pricing"
+      }
+    ],
+    "firstSeen": "2026-07-06T06:03:36-07:00",
+    "lastReviewed": "2026-07-06T06:03:36-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Strong fit for Aluma project-intel and outreach memory if kept to non-sensitive research notes, source links, proposal references, and reusable qualification rules.",
     "next": "Test with non-sensitive SOP/dashboard notes first; compare against Obsidian/current Hermes notes, verify export/sync behavior, and avoid storing credentials or customer-private data.",
     "name": "OpenKnowledge",
@@ -1279,6 +1298,25 @@
     "lastReviewed": "2026-07-04T06:04:02-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Could help test Aluma internal dashboards or lead-entry workflows by capturing exact UI context when a form, filter, or upload flow behaves incorrectly.",
+    "next": "Pilot only in local/staging apps first; confirm no customer secrets are captured in logs/network payloads, and require human review before sending any generated task or fix to an agent.",
+    "name": "Heckle",
+    "category": "QA evidence / coding-agent handoff",
+    "summary": "Open-source QA co-pilot that captures browser context, DOM, console errors, network calls, and the user path when a tester says or types what looks wrong, then turns that evidence into a coding-agent task.",
+    "drprepper": "Strong fit for PrepShip, Client Portal, and DJR app QA because it can turn screenshots or vague bug reports into reproducible evidence for Codex/Claude while keeping a human approval step before fixes are sent.",
+    "toolUrl": "https://github.com/rbsriram/heckle",
+    "postUrl": "https://news.ycombinator.com/item?id=48795580",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/rbsriram/heckle"
+      }
+    ],
+    "firstSeen": "2026-07-06T06:03:36-07:00",
+    "lastReviewed": "2026-07-06T06:03:36-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Strong pattern match for quote-heavy construction and supplier workflows where scope, price, capacity, and lead time need normalization.",
     "next": "Watch or test only with non-sensitive sample RFQs; verify privacy, pricing, and supplier quality before using for real project data.",
@@ -1362,6 +1400,25 @@
     ],
     "firstSeen": "2026-06-29T06:04:16-07:00",
     "lastReviewed": "2026-06-29T06:04:16-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Could become a safer automation layer for Aluma lead intake, project follow-up, sheet updates, and scheduled checks if deployed with narrow credentials and auditable actions.",
+    "next": "Evaluate as a self-hosted sandbox before any production use: inspect integration permissions, credential proxy model, logs, and approval gates; do not give agents write access to money/customer systems until rollback and audit trails are proven.",
+    "name": "Valmis",
+    "category": "Secure work agents / back-office automation",
+    "summary": "Open-source work-agent platform with isolated containers, credential proxying, 100+ business/productivity integrations, and cron/webhook/app-event triggers for safer production automation.",
+    "drprepper": "Relevant for future DR Prepper and PrepShip back-office agents because it separates agent runtimes from raw credentials/files, which matters for inbox triage, customer follow-up, reporting, and admin workflows.",
+    "toolUrl": "https://github.com/valmishq/valmis",
+    "postUrl": "https://news.ycombinator.com/item?id=48761096",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/valmishq/valmis"
+      }
+    ],
+    "firstSeen": "2026-07-06T06:03:36-07:00",
+    "lastReviewed": "2026-07-06T06:03:36-07:00"
   },
   {
     "priority": "Medium",
