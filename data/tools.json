@@ -501,6 +501,25 @@
     "postUrl": "https://x.com/viktoroddy/status/2062918204452663767"
   },
   {
+    "priority": "High",
+    "aluma": "Useful for repeatable lead-list collection or public-project checks when a visual workflow is faster to prototype than custom scraping code.",
+    "next": "Pilot on a non-sensitive workflow such as public directory collection or a dummy portal export; review generated Playwright before scheduling anything and keep credentials out of shared flows.",
+    "name": "Orchestra",
+    "category": "Browser automation / Playwright workflow",
+    "summary": "Desktop studio for building browser automations visually, watching them run locally, and exporting plain Playwright code with no cloud lock-in.",
+    "drprepper": "Strong fit for internal portal downloads, supplier scraping, proof-of-concept browser tasks, and turning manual browser workflows into reviewable Playwright code that developers can own.",
+    "toolUrl": "https://www.orchestra-automation.com/",
+    "postUrl": "https://news.ycombinator.com/item?id=48816094",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://www.orchestra-automation.com/"
+      }
+    ],
+    "firstSeen": "2026-07-07T06:05:46-07:00",
+    "lastReviewed": "2026-07-07T06:05:46-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could speed contractor/source-list research and spreadsheet cleanup, but only after permission boundaries and no-autosend/no-autosubmit guardrails are clear.",
     "next": "Use a sandbox Chrome profile and non-sensitive test sheets first; do not connect Gmail/customer accounts or let it submit forms until the browser-action audit trail is proven.",
@@ -570,6 +589,25 @@
   },
   {
     "priority": "Medium",
+    "aluma": "Could help Aluma lead-source checks on contractor directories and construction sites that block simple scraping, with rate limits and manual review before outreach.",
+    "next": "Use only for low-risk research pilots first; document site terms, avoid login/cart/customer actions, and compare output against existing browser automation before buying credits.",
+    "name": "BrowserAct",
+    "category": "Browser-agent infrastructure / web automation",
+    "summary": "Browser layer for AI agents that provides real-browser execution for blocked pages, sessions, CAPTCHAs, and web-data collection workflows.",
+    "drprepper": "Potential fit for controlled vendor/Amazon/competitor research where normal HTTP scraping fails, but it should be kept away from account-sensitive actions and customer data until compliance is clear.",
+    "toolUrl": "https://www.browseract.com/",
+    "postUrl": "https://www.producthunt.com/products/browseract",
+    "extraLinks": [
+      {
+        "label": "Pricing",
+        "url": "https://www.browseract.com/pricing"
+      }
+    ],
+    "firstSeen": "2026-07-07T06:05:46-07:00",
+    "lastReviewed": "2026-07-07T06:05:46-07:00"
+  },
+  {
+    "priority": "Medium",
     "aluma": "Could support branded inbound sales or support chat later if Aluma needs Apple Maps/Messages presence, but only after provider and staffing requirements are clear.",
     "next": "Have Jake verify whether Twilio can provision Apple Messages for Business for the account, then document Apple approval requirements, MSP choice, webhooks, supported rich features, test flow, and no-auto-send review rules before coding CRM channel support.",
     "name": "Apple Business Register / Messages for Business",
@@ -606,6 +644,48 @@
     "postUrl": "https://velyr.io/",
     "firstSeen": "2026-06-14T06:03:02-07:00",
     "lastReviewed": "2026-06-14T06:03:02-07:00"
+  },
+  {
+    "priority": "Lead",
+    "aluma": "Low direct fit today, but the same delegated-data pattern could apply if Aluma needs customer-authorized freight/shipping cost analysis later.",
+    "next": "Prototype discovery only: verify which UPS APIs/feeds expose the required invoice or shipment billing fields after customer authorization, and keep guided CSV/XML upload as a fallback until real API/EDI access is proven.",
+    "name": "UPS OAuth Authorization Code API and billing-report workflow",
+    "category": "Carrier account linking / rate-analysis intake",
+    "summary": "UPS OAuth authorization-code documentation plus Quantum View/Billing Center export paths surfaced as the likely starting point for customer-delegated carrier account connection and standardized shipment-report intake.",
+    "drprepper": "Directly relevant to a carrier rate-analyzer or PrepShip-adjacent audit workflow because customer report collection is the bottleneck; UPS OAuth can support secure account linking, but billing/report availability still needs proof.",
+    "toolUrl": "https://raw.githubusercontent.com/UPS-API/api-documentation/main/OAuthAuthCode.yaml",
+    "postUrl": "https://github.com/UPS-API/api-documentation/blob/main/OAuthAuthCode.yaml",
+    "extraLinks": [
+      {
+        "label": "UPS API documentation repo",
+        "url": "https://github.com/UPS-API/api-documentation"
+      },
+      {
+        "label": "Quantum View OpenAPI spec",
+        "url": "https://github.com/UPS-API/api-documentation/blob/main/QuantumView.yaml"
+      }
+    ],
+    "firstSeen": "2026-07-07T06:05:46-07:00",
+    "lastReviewed": "2026-07-07T06:05:46-07:00"
+  },
+  {
+    "priority": "Lead",
+    "aluma": "No direct fit unless Aluma starts auditing parcel/freight billing; the same reporting workflow could help analyze equipment/material shipment costs.",
+    "next": "Treat this as an integration discovery lead, not an API promise: confirm whether the client can enable FedEx Billing Online reports, scheduled exports, or EDI feeds, then map fields into a canonical report schema.",
+    "name": "FedEx Billing Online reporting / EDI invoice data",
+    "category": "Carrier billing data / rate-analysis intake",
+    "summary": "FedEx billing resources for invoice reporting, download center workflows, and EDI invoice/remittance data that can standardize shipment-charge data for rate-analysis tools.",
+    "drprepper": "Relevant to PrepShip/client carrier-audit concepts because standardized FedEx invoice/report data is the hard input needed before comparing real shipping spend against negotiated rate cards.",
+    "toolUrl": "https://www.fedex.com/en-us/billing-online.html",
+    "postUrl": "https://www.fedex.com/en-us/billing-online.html",
+    "extraLinks": [
+      {
+        "label": "FedEx API catalog",
+        "url": "https://developer.fedex.com/api/en-us/catalog.html"
+      }
+    ],
+    "firstSeen": "2026-07-07T06:05:46-07:00",
+    "lastReviewed": "2026-07-07T06:05:46-07:00"
   },
   {
     "name": "RoundtableSpace — Claude Mythos animated websites",
@@ -698,6 +778,25 @@
     "postUrl": "https://github.com/Egonex-AI/Understand-Anything",
     "firstSeen": "2026-06-14T06:03:02-07:00",
     "lastReviewed": "2026-06-14T06:03:02-07:00"
+  },
+  {
+    "priority": "Lead",
+    "aluma": "No direct fit for Aluma construction work, but the integration pattern is relevant if a customer portal must sit in front of an existing vertical operations system.",
+    "next": "Ask LaceUp/client for supported API, import/export, or order-server integration docs before building; avoid making the portal an independent inventory/order truth unless LaceUp cannot integrate.",
+    "name": "LaceUp Solutions B2B Wholesale Ecommerce",
+    "category": "DSD / wholesale customer portal integration",
+    "summary": "Direct Store Delivery and warehouse/order-entry platform with a private B2B wholesale ecommerce module, customer catalogs, ordering, and accounting/ERP integrations.",
+    "drprepper": "Useful comparison point for DJR-style customer ordering portals: keep LaceUp/ERP as operational source of truth while building a customer-facing app only if supported sync/import paths exist.",
+    "toolUrl": "https://www.laceupsolutions.com/solutions/b2b-wholesale-ecommerce/",
+    "postUrl": "https://www.laceupsolutions.com/solutions/b2b-wholesale-ecommerce/",
+    "extraLinks": [
+      {
+        "label": "LaceUp integrations",
+        "url": "https://www.laceupsolutions.com/integrations/"
+      }
+    ],
+    "firstSeen": "2026-07-07T06:05:46-07:00",
+    "lastReviewed": "2026-07-07T06:05:46-07:00"
   },
   {
     "name": "RoundtableSpace — AI landing pages look the same",
@@ -822,6 +921,25 @@
     "postUrl": "https://emailflow.ai/",
     "firstSeen": "2026-06-15T06:02:43-07:00",
     "lastReviewed": "2026-06-15T06:02:43-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could support Aluma lead follow-up and bid/proposal inbox cleanup, but only after testing account permissions and keeping human approval on outbound mail.",
+    "next": "Trial on a non-critical inbox or test mailbox first; disable/avoid autopilot sending until draft quality, permission scope, logging, and no-send-without-review controls are proven.",
+    "name": "AI Emaily",
+    "category": "Email ops / AI inbox",
+    "summary": "AI-native email client with copilot/autopilot modes for triage, drafting in the user’s voice, scheduling, and provider-agnostic inbox handling.",
+    "drprepper": "Useful for DR Prepper sales and customer-service inbox triage if it stays review-first: summarize threads, draft replies, and surface follow-ups without silently sending customer-facing messages.",
+    "toolUrl": "https://aiemaily.com/",
+    "postUrl": "https://www.producthunt.com/products/ai-emaily-unified-ai-inbox",
+    "extraLinks": [
+      {
+        "label": "Pricing",
+        "url": "https://aiemaily.com/pricing"
+      }
+    ],
+    "firstSeen": "2026-07-07T06:05:46-07:00",
+    "lastReviewed": "2026-07-07T06:05:46-07:00"
   },
   {
     "priority": "Medium",
