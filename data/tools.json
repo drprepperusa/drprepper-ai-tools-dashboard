@@ -83,6 +83,44 @@
     "lastReviewed": "2026-06-20T06:04:27-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could help capture jobsite-call notes, estimator observations, or follow-up drafts, but only after checking privacy controls and where recordings/transcripts are stored.",
+    "next": "Trial with non-sensitive notes first; keep human review before sending customer/vendor messages and confirm pricing/privacy before using it for real customer details.",
+    "name": "Willow Frontier Pro",
+    "category": "AI dictation / operator notes",
+    "summary": "AI dictation app for turning spoken notes into emails, documents, chat replies, and longer drafts across desktop and mobile workflows.",
+    "drprepper": "Useful for fast capture of supplier notes, customer-reply drafts, wholesale follow-up, and internal SOP observations when typing would slow the operator down.",
+    "toolUrl": "https://willowvoice.com",
+    "postUrl": "https://www.producthunt.com/products/willow-voice",
+    "extraLinks": [
+      {
+        "label": "Pricing",
+        "url": "https://willowvoice.com/pricing"
+      }
+    ],
+    "firstSeen": "2026-07-08T06:07:06-07:00",
+    "lastReviewed": "2026-07-08T06:07:06-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful for construction-market and financing context, especially when lead-gen or proposal decisions need sourced macro, rate, or regional demand signals.",
+    "next": "Test on one non-sensitive finance brief query, verify every numeric output against the cited source, and keep it read-only before using results in pricing or lending decisions.",
+    "name": "FactIQ",
+    "category": "AI finance / market-data research",
+    "summary": "Claude Code/Codex plugin and MCP-style finance/economy database that lets agents query official statistics, SEC filings, market data, and earnings-call intelligence.",
+    "drprepper": "Strong fit for scheduled finance briefs, tariff/pricing research, carrier-cost context, and cash-flow analysis where AI needs live numeric sources instead of generic web summaries.",
+    "toolUrl": "https://github.com/defog-ai/factiq-plugin",
+    "postUrl": "https://news.ycombinator.com/item?id=48826422",
+    "extraLinks": [
+      {
+        "label": "FactIQ site",
+        "url": "https://factiq.com"
+      }
+    ],
+    "firstSeen": "2026-07-08T06:07:06-07:00",
+    "lastReviewed": "2026-07-08T06:07:06-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful reference for any Aluma lead-gen or estimating assistant that touches customer/project details, especially if prompts must be logged without storing raw sensitive content.",
     "next": "Evaluate in a dev-only spike with synthetic customer/order data; verify package maturity, redaction coverage, and how audit hashes/logs are stored before putting it near production traffic.",
@@ -1537,6 +1575,25 @@
     ],
     "firstSeen": "2026-07-06T06:03:36-07:00",
     "lastReviewed": "2026-07-06T06:03:36-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Potential fit for sales and project-inquiry call routing, but only if deployment, call recording consent, SIP costs, and maintenance burden are acceptable.",
+    "next": "Do not put production calls on it yet; evaluate with a throwaway number/server, confirm call-recording compliance, and compare against managed Twilio/Telnyx/CRM options.",
+    "name": "Comcent CE",
+    "category": "Self-hosted contact center / voice ops",
+    "summary": "Open-source contact-center stack with browser dialers, phone queues, call recording, transcription, AI summaries, sentiment, semantic search, voice bot support, webhooks, and BYO SIP trunk.",
+    "drprepper": "Worth watching for vendor/customer-call operations if DR Prepper ever needs searchable call history, AI call summaries, or a controlled voice queue without buying a full hosted contact-center suite.",
+    "toolUrl": "https://github.com/comcent-io/comcent-ce",
+    "postUrl": "https://news.ycombinator.com/item?id=48829604",
+    "extraLinks": [
+      {
+        "label": "Enterprise site",
+        "url": "https://comcent.io/enterprise"
+      }
+    ],
+    "firstSeen": "2026-07-08T06:07:06-07:00",
+    "lastReviewed": "2026-07-08T06:07:06-07:00"
   },
   {
     "priority": "Medium",
