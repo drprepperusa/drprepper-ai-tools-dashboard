@@ -516,6 +516,25 @@
   },
   {
     "priority": "Medium",
+    "aluma": "Could help turn lead-gen, bid pipeline, or job-progress metrics into simple visual reports without custom chart work for every update.",
+    "next": "Prototype one static report from sanitized dashboard data; keep the data source backend-owned and inspect the generated spec before publishing or sending any chart.",
+    "name": "Microsoft Flint",
+    "category": "Agent-generated dashboards / charting",
+    "summary": "Microsoft Research visualization language that lets AI agents create clean charts from small, human-editable specs, with npm and MCP package paths.",
+    "drprepper": "Good fit for safer AI-generated PPC, inventory, billing, and fulfillment charts because the agent can output a reviewable chart spec instead of hand-writing fragile dashboard code each time.",
+    "toolUrl": "https://microsoft.github.io/flint-chart/#/",
+    "postUrl": "https://news.ycombinator.com/item?id=48834924",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/microsoft/flint-chart"
+      }
+    ],
+    "firstSeen": "2026-07-09T06:04:14-07:00",
+    "lastReviewed": "2026-07-09T06:04:14-07:00"
+  },
+  {
+    "priority": "Medium",
     "aluma": "Could support bid, vendor, and project-intel follow-up workflows if sensitive project details and send permissions are tightly scoped.",
     "next": "Verify import/export, admin controls, retention/privacy model, and no-send-without-review guardrails before connecting any production inbox; start with a low-risk test address only.",
     "name": "Atomic Mail Agentic",
@@ -818,6 +837,19 @@
     "lastReviewed": "2026-06-14T06:03:02-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Possible fit for construction vendor portals or permit/admin workflows, but reliability and safety need proof before trusting it with operational actions.",
+    "next": "Treat as watchlist only: verify pricing/security, test on a sandbox or read-only workflow, and require approval gates before any purchase, customer message, carrier booking, or production data change.",
+    "name": "Coasty",
+    "category": "Computer-use agents / legacy software automation",
+    "summary": "Computer-use agent positioned for running legacy software like a human when there is no clean API, discovered through Product Hunt's July 2026 feed.",
+    "drprepper": "Worth watching for old vendor portals, carrier/admin systems, or 3PL tools where API access is missing and human browser/desktop steps are still the bottleneck.",
+    "toolUrl": "https://www.coasty.ai/",
+    "postUrl": "https://www.producthunt.com/products/coasty",
+    "firstSeen": "2026-07-09T06:04:14-07:00",
+    "lastReviewed": "2026-07-09T06:04:14-07:00"
+  },
+  {
     "priority": "Lead",
     "aluma": "No direct fit for Aluma construction work, but the integration pattern is relevant if a customer portal must sit in front of an existing vertical operations system.",
     "next": "Ask LaceUp/client for supported API, import/export, or order-server integration docs before building; avoid making the portal an independent inventory/order truth unless LaceUp cannot integrate.",
@@ -946,6 +978,57 @@
     ],
     "firstSeen": "2026-06-19T03:21:33-07:00",
     "lastReviewed": "2026-06-19T03:21:33-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful for Aluma proposal approvals, change-order acknowledgments, and subcontractor/customer signoffs if branding, audit trail, and mobile signing test cleanly.",
+    "next": "Spin up a test instance on a non-production subdomain, upload one real but non-sensitive DR Prepper PDF, test phone signing, completed-copy email, audit certificate, and storage/privacy controls before using live customer documents.",
+    "name": "DocuSeal",
+    "category": "Document signing / customer forms",
+    "summary": "Open-source document filling and e-signature app with PDF field setup, signing links, SMTP delivery, webhooks/API, and self-hosted Docker options.",
+    "drprepper": "Strong fit for DR Prepper customer paperwork, warehouse agreements, pickup/release forms, and vendor documents that need repeatable fields plus a signed customer copy without paying DocuSign pricing first.",
+    "toolUrl": "https://www.docuseal.com/",
+    "postUrl": "https://github.com/docusealco/docuseal",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://www.docuseal.com/"
+      }
+    ],
+    "firstSeen": "2026-07-09T06:04:14-07:00",
+    "lastReviewed": "2026-07-09T06:04:14-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Could support Aluma approvals and subcontractor signoffs, but only after verifying mobile UX, deliverability, audit output, and maintenance burden.",
+    "next": "Do not build custom signing yet; benchmark OpenSign against DocuSeal/Documenso using the same non-sensitive sample PDF and require human legal/process review before production use.",
+    "name": "OpenSign",
+    "category": "Document signing / templates",
+    "summary": "Open-source e-signature workflow with templates, multi-signer flows, drawn/typed/uploaded signatures, audit-style certificates, API access, and Docker deployment.",
+    "drprepper": "Worth keeping as an alternate if DR Prepper needs multi-signer documents, OTP-style verification, or a free/open signing stack after DocuSeal and Documenso are tested.",
+    "toolUrl": "https://www.opensignlabs.com/",
+    "postUrl": "https://github.com/OpenSignLabs/OpenSign",
+    "firstSeen": "2026-07-09T06:04:14-07:00",
+    "lastReviewed": "2026-07-09T06:04:14-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Potential fit for professional-looking Aluma proposal/contract signing workflows where templates, branding, and integrations matter more than fastest setup.",
+    "next": "Evaluate only after the DocuSeal pilot: compare template builder, mobile signing, signed-PDF output, audit trail, API/webhooks, and hosted-versus-self-hosted cost.",
+    "name": "Documenso",
+    "category": "Document signing / workflow automation",
+    "summary": "Open-source DocuSign alternative for templates, signing workflows, and deeper application integration, with hosted and self-hosted paths.",
+    "drprepper": "Good second option if DocuSeal is not polished or flexible enough for DR Prepper customer forms and future portal-driven document workflows.",
+    "toolUrl": "https://documenso.com/",
+    "postUrl": "https://github.com/documenso/documenso",
+    "extraLinks": [
+      {
+        "label": "Pricing",
+        "url": "https://documenso.com/pricing"
+      }
+    ],
+    "firstSeen": "2026-07-09T06:04:14-07:00",
+    "lastReviewed": "2026-07-09T06:04:14-07:00"
   },
   {
     "priority": "Medium",
@@ -1205,6 +1288,25 @@
     "next": "Prototype one issue template before automating.",
     "toolUrl": "https://x.com/recap_david/status/2062245966372381031",
     "postUrl": "https://x.com/recap_david/status/2062245966372381031"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Potential fit for estimator/project memory and lead follow-up context if privacy and Google-integration permissions are reviewed first.",
+    "next": "Test on non-sensitive notes only, verify exactly what data leaves the machine/API provider, and compare against Hermes/Obsidian workflows before connecting real Gmail, Drive, customer, or vendor data.",
+    "name": "Rowboat",
+    "category": "Local AI workspace / business memory",
+    "summary": "Open-source local-first AI coworker with memory, notes, browser, email/calendar-style integrations, and background agents stored as local Markdown context.",
+    "drprepper": "Useful pattern for private operator memory, recurring ops-agent work, and SOP-backed admin assistance without immediately pushing every note into a hosted SaaS workspace.",
+    "toolUrl": "https://github.com/rowboatlabs/rowboat",
+    "postUrl": "https://news.ycombinator.com/item?id=48819808",
+    "extraLinks": [
+      {
+        "label": "Downloads",
+        "url": "https://www.rowboatlabs.com/downloads"
+      }
+    ],
+    "firstSeen": "2026-07-09T06:04:14-07:00",
+    "lastReviewed": "2026-07-09T06:04:14-07:00"
   },
   {
     "priority": "High",
