@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 9, 2026 · 6:04 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 10, 2026 · 6:04 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">103</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">93</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">41</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">106</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">96</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">42</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -500,6 +500,25 @@
             ],
             "firstSeen": "2026-07-01T06:05:21-07:00",
             "lastReviewed": "2026-07-01T06:05:21-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for ranking concrete contractor and construction-project prospects if the scoring rubric reflects Aluma's geography, project type, and margin fit.",
+            "next": "Run locally against a small non-sensitive lead sample, inspect the rubric/output quality, and keep all outreach approval-gated; it requires Bun, Rust, and Claude CLI/API access.",
+            "name": "Qualify",
+            "category": "AI sales lead research / qualification",
+            "summary": "Open-source Claude Code-style sales tool that researches companies, scores leads, and helps prioritize sales opportunities from a lead list.",
+            "drprepper": "Direct fit for DR Prepper 3PL and wholesale sales prospecting: enrich buyer/company lists, flag better-fit accounts, and prep outreach notes before a human reviews them.",
+            "toolUrl": "https://github.com/chaitanyya/sales",
+            "postUrl": "https://news.ycombinator.com/item?id=48856965",
+            "extraLinks": [
+                  {
+                        "label": "GitHub repo",
+                        "url": "https://github.com/chaitanyya/sales"
+                  }
+            ],
+            "firstSeen": "2026-07-10T06:04:11-07:00",
+            "lastReviewed": "2026-07-10T06:04:11-07:00"
       },
       {
             "priority": "High",
@@ -1278,6 +1297,29 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could support Aluma lead intake, bid follow-up, and project-status agents if data sources and permissions are mapped first.",
+            "next": "Test self-hosted or free workspace with one read-only workflow before connecting live CRM, carrier, customer, or billing systems; require human approval for sends, writes, or customer-facing changes.",
+            "name": "Sim",
+            "category": "AI agent workflow orchestration",
+            "summary": "Open-source workspace for building, deploying, and monitoring AI agents and workflows across apps, files, tables, knowledge bases, schedules, and 1,000+ integrations.",
+            "drprepper": "Useful sandbox for DR Prepper and PrepShip internal automations such as scheduled billing checks, Slack/Notion summaries, CRM lead routing, and exception workflows, as long as production actions stay approval-gated.",
+            "toolUrl": "https://www.sim.ai",
+            "postUrl": "https://www.producthunt.com/products/sim-studio",
+            "extraLinks": [
+                  {
+                        "label": "GitHub repo",
+                        "url": "https://github.com/simstudioai/sim"
+                  },
+                  {
+                        "label": "Pricing",
+                        "url": "https://www.sim.ai/pricing"
+                  }
+            ],
+            "firstSeen": "2026-07-10T06:04:11-07:00",
+            "lastReviewed": "2026-07-10T06:04:11-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Could help capture jobsite-call notes, estimator observations, or follow-up drafts, but only after checking privacy controls and where recordings/transcripts are stored.",
             "next": "Trial with non-sensitive notes first; keep human review before sending customer/vendor messages and confirm pricing/privacy before using it for real customer details.",
             "name": "Willow Frontier Pro",
@@ -1977,6 +2019,25 @@
             "postUrl": "https://news.ycombinator.com/item?id=48563470",
             "firstSeen": "2026-06-17T06:03:58-07:00",
             "lastReviewed": "2026-06-17T06:03:58-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Could help structure Aluma project-change requests and proposal follow-up, but only after deciding which records belong in Notion versus the CRM/project system.",
+            "next": "Study the workflow pattern before adopting another tool; if tested, keep Notion as a coordination layer and do not let it become the authoritative source for orders, billing, customer data, or project financials.",
+            "name": "Notion Ship OS",
+            "category": "Agent-native product workflow / release operations",
+            "summary": "Notion product workflow system for turning feedback into specs, tasks, release notes, status updates, and launch coordination with embedded agents.",
+            "drprepper": "Good operating-model reference for PrepShip/client-portal work: customer feedback and bug reports should flow into tasks, status summaries, release notes, and acceptance checklists without losing owner/source-of-truth context.",
+            "toolUrl": "https://www.notion.com/product/ship-os",
+            "postUrl": "https://www.producthunt.com/products/notion",
+            "extraLinks": [
+                  {
+                        "label": "Official webinar",
+                        "url": "https://www.notion.com/webinars/shipos-how-notion-automates-product-launches-with-notion"
+                  }
+            ],
+            "firstSeen": "2026-07-10T06:04:11-07:00",
+            "lastReviewed": "2026-07-10T06:04:11-07:00"
       },
       {
             "name": "Viktor Oddy — renewable hero reference",

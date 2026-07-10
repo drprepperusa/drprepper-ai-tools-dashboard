@@ -70,6 +70,29 @@
     "lastReviewed": "2026-07-01T06:05:21-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could support Aluma lead intake, bid follow-up, and project-status agents if data sources and permissions are mapped first.",
+    "next": "Test self-hosted or free workspace with one read-only workflow before connecting live CRM, carrier, customer, or billing systems; require human approval for sends, writes, or customer-facing changes.",
+    "name": "Sim",
+    "category": "AI agent workflow orchestration",
+    "summary": "Open-source workspace for building, deploying, and monitoring AI agents and workflows across apps, files, tables, knowledge bases, schedules, and 1,000+ integrations.",
+    "drprepper": "Useful sandbox for DR Prepper and PrepShip internal automations such as scheduled billing checks, Slack/Notion summaries, CRM lead routing, and exception workflows, as long as production actions stay approval-gated.",
+    "toolUrl": "https://www.sim.ai",
+    "postUrl": "https://www.producthunt.com/products/sim-studio",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/simstudioai/sim"
+      },
+      {
+        "label": "Pricing",
+        "url": "https://www.sim.ai/pricing"
+      }
+    ],
+    "firstSeen": "2026-07-10T06:04:11-07:00",
+    "lastReviewed": "2026-07-10T06:04:11-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful for polished proposal, lead-gen, or explainer mockups when construction concepts need a visual before design resources are involved.",
     "next": "Keep generated images as references only; pick the best operating workflow, redact all real customer data from prompts, and translate the chosen direction into concrete UI acceptance criteria before implementation.",
@@ -253,6 +276,25 @@
     "postUrl": "https://www.producthunt.com/products/folio-ai",
     "firstSeen": "2026-06-28T06:04:34-07:00",
     "lastReviewed": "2026-06-28T06:04:34-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful for ranking concrete contractor and construction-project prospects if the scoring rubric reflects Aluma's geography, project type, and margin fit.",
+    "next": "Run locally against a small non-sensitive lead sample, inspect the rubric/output quality, and keep all outreach approval-gated; it requires Bun, Rust, and Claude CLI/API access.",
+    "name": "Qualify",
+    "category": "AI sales lead research / qualification",
+    "summary": "Open-source Claude Code-style sales tool that researches companies, scores leads, and helps prioritize sales opportunities from a lead list.",
+    "drprepper": "Direct fit for DR Prepper 3PL and wholesale sales prospecting: enrich buyer/company lists, flag better-fit accounts, and prep outreach notes before a human reviews them.",
+    "toolUrl": "https://github.com/chaitanyya/sales",
+    "postUrl": "https://news.ycombinator.com/item?id=48856965",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/chaitanyya/sales"
+      }
+    ],
+    "firstSeen": "2026-07-10T06:04:11-07:00",
+    "lastReviewed": "2026-07-10T06:04:11-07:00"
   },
   {
     "priority": "High",
@@ -532,6 +574,25 @@
     ],
     "firstSeen": "2026-07-09T06:04:14-07:00",
     "lastReviewed": "2026-07-09T06:04:14-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Could help structure Aluma project-change requests and proposal follow-up, but only after deciding which records belong in Notion versus the CRM/project system.",
+    "next": "Study the workflow pattern before adopting another tool; if tested, keep Notion as a coordination layer and do not let it become the authoritative source for orders, billing, customer data, or project financials.",
+    "name": "Notion Ship OS",
+    "category": "Agent-native product workflow / release operations",
+    "summary": "Notion product workflow system for turning feedback into specs, tasks, release notes, status updates, and launch coordination with embedded agents.",
+    "drprepper": "Good operating-model reference for PrepShip/client-portal work: customer feedback and bug reports should flow into tasks, status summaries, release notes, and acceptance checklists without losing owner/source-of-truth context.",
+    "toolUrl": "https://www.notion.com/product/ship-os",
+    "postUrl": "https://www.producthunt.com/products/notion",
+    "extraLinks": [
+      {
+        "label": "Official webinar",
+        "url": "https://www.notion.com/webinars/shipos-how-notion-automates-product-launches-with-notion"
+      }
+    ],
+    "firstSeen": "2026-07-10T06:04:11-07:00",
+    "lastReviewed": "2026-07-10T06:04:11-07:00"
   },
   {
     "priority": "Medium",
