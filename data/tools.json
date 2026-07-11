@@ -1,5 +1,56 @@
 [
   {
+    "priority": "Medium",
+    "aluma": "Could structure a cinematic project/rental microsite with jobsite sequencing, but performance and clarity must remain stronger than visual spectacle.",
+    "next": "Use the eight free prompts as references before considering the paid pack. Combine prompts 1, 6, 7, and 8 into one DR Prepper brief; require real copy/metrics, mobile performance, accessibility, SEO, and human QA before production.",
+    "name": "ClaudePromptsEmpire — 8-prompt 3D website workflow",
+    "category": "3D web design / prompt framework",
+    "summary": "Threads bundle of eight prompts covering a 3D website operating system, cinematic storytelling, design systems, AI-assisted development, animation/interaction, conversion, performance, and post-launch optimization. The thread also promotes a $47 FLOWSTATE Gumroad pack with 200 additional motion-web prompts.",
+    "drprepper": "Useful as a planning checklist for a DR Prepper 3PL landing page, especially the operating-system, conversion, performance, and roadmap prompts. Limit 3D to meaningful warehouse/order-flow storytelling so motion supports trust and quote conversion rather than distracting visitors.",
+    "toolUrl": "https://www.threads.com/@claudepromptsempire/post/Dao90Znkmgv",
+    "postUrl": "https://www.threads.com/@claudepromptsempire/post/Dao90Znkmgv",
+    "extraLinks": [
+      {
+        "label": "1 — 3D website operating system",
+        "url": "https://www.threads.com/@claudepromptsempire/post/Dao91KzkkVF"
+      },
+      {
+        "label": "2 — Cinematic storytelling blueprint",
+        "url": "https://www.threads.com/@claudepromptsempire/post/Dao92IqEqyK"
+      },
+      {
+        "label": "3 — Premium 3D design system",
+        "url": "https://www.threads.com/@claudepromptsempire/post/Dao9384kvQf"
+      },
+      {
+        "label": "4 — AI 3D development workflow",
+        "url": "https://www.threads.com/@claudepromptsempire/post/Dao944pks7F"
+      },
+      {
+        "label": "5 — Animation and interaction",
+        "url": "https://www.threads.com/@claudepromptsempire/post/Dao95yLkrQx"
+      },
+      {
+        "label": "6 — Conversion-driven landing page",
+        "url": "https://www.threads.com/@claudepromptsempire/post/Dao96q6kiGs"
+      },
+      {
+        "label": "7 — Performance optimization",
+        "url": "https://www.threads.com/@claudepromptsempire/post/Dao97r2ErO1"
+      },
+      {
+        "label": "8 — Agency-level roadmap",
+        "url": "https://www.threads.com/@claudepromptsempire/post/Dao98lPEoSu"
+      },
+      {
+        "label": "FLOWSTATE paid prompt pack",
+        "url": "https://theaiempire.gumroad.com/l/brizea"
+      }
+    ],
+    "firstSeen": "2026-07-11T12:03:35-07:00",
+    "lastReviewed": "2026-07-11T12:03:35-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Possible secondary fit for extracting shipment and delivery paperwork on equipment/material movements, but validate against Aluma document types before relying on it.",
     "next": "Test with 3–5 sample or non-sensitive BOLs first, compare extracted fields against manual entry, and keep human review before any TMS/ERP/customer-facing update.",
