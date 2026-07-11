@@ -70,6 +70,48 @@
     "lastReviewed": "2026-07-01T06:05:21-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Indirect fit for Aluma automation work: useful as a guardrail if lead-gen or project-status agents start using third-party MCP tools or generated dependencies.",
+    "next": "Try it against a non-sensitive repo and one local MCP/tool config; treat findings as review inputs, not automatic blockers, until false-positive rate and CI fit are understood.",
+    "name": "Agent Security Scanner MCP",
+    "category": "AI agent security / MCP safety",
+    "summary": "Open-source MCP security scanner for AI coding agents that checks code, MCP tools, prompts, skills, and suggested dependencies for prompt injection, package-hallucination, and vulnerability patterns.",
+    "drprepper": "Relevant to Hermes/Codex/Claude workflows around PrepShip and client-portal development because it can add a safety scan before agents trust new tools, dependencies, prompts, or MCP servers.",
+    "toolUrl": "https://github.com/sinewaveai/agent-security-scanner-mcp",
+    "postUrl": "https://news.ycombinator.com/item?id=48870646",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/sinewaveai/agent-security-scanner-mcp"
+      },
+      {
+        "label": "npm package",
+        "url": "https://www.npmjs.com/package/agent-security-scanner-mcp"
+      }
+    ],
+    "firstSeen": "2026-07-11T06:04:09-07:00",
+    "lastReviewed": "2026-07-11T06:04:09-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could support Aluma lead-intake and bid-follow-up automations where non-technical staff need repeatable workflows across inboxes, sheets, CRM notes, and project trackers.",
+    "next": "Test one read-only workflow first, such as summarizing new wholesale leads or Aluma project inquiries; verify pricing, permissions, audit logs, and human-approval controls before connecting production systems.",
+    "name": "QX Labs",
+    "category": "AI agent workflow automation",
+    "summary": "No-code/low-code platform for building custom AI agents, flows, and grid-style workflows connected to 1,000+ apps for sales, marketing, recruiting, and consulting teams.",
+    "drprepper": "Potential fit for DR Prepper sales/admin automations such as wholesale prospect follow-up, customer-service triage, reorder reminders, and internal ops workflows, as long as writes and customer-facing sends stay approval-gated.",
+    "toolUrl": "https://www.qxlabs.com",
+    "postUrl": "https://news.ycombinator.com/item?id=48844410",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://www.qxlabs.com"
+      }
+    ],
+    "firstSeen": "2026-07-11T06:04:09-07:00",
+    "lastReviewed": "2026-07-11T06:04:09-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could support Aluma lead intake, bid follow-up, and project-status agents if data sources and permissions are mapped first.",
     "next": "Test self-hosted or free workspace with one read-only workflow before connecting live CRM, carrier, customer, or billing systems; require human approval for sends, writes, or customer-facing changes.",
@@ -91,6 +133,25 @@
     ],
     "firstSeen": "2026-07-10T06:04:11-07:00",
     "lastReviewed": "2026-07-10T06:04:11-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Indirect fit for Aluma software/support tooling: safer agent execution helps build or maintain lead-gen and project-tracking automations without giving agents broad host access.",
+    "next": "Run a disposable trial on a throwaway repo first; verify Docker Sandbox requirements, network controls, secret handling, and commit-review workflow before using it on production-connected codebases.",
+    "name": "Code Airlock",
+    "category": "AI coding-agent sandboxing",
+    "summary": "Open-source wrapper for running Claude Code, Codex, OpenCode, or similar coding agents inside disposable Docker Sandbox microVMs, then reviewing their work as normal git commits.",
+    "drprepper": "Useful for safer PrepShip/client-portal and internal automation development because agents can install packages and run tests in an isolated environment instead of touching the host checkout directly.",
+    "toolUrl": "https://github.com/Trivo25/code-airlock",
+    "postUrl": "https://news.ycombinator.com/item?id=48870603",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/Trivo25/code-airlock"
+      }
+    ],
+    "firstSeen": "2026-07-11T06:04:09-07:00",
+    "lastReviewed": "2026-07-11T06:04:09-07:00"
   },
   {
     "priority": "High",
@@ -295,6 +356,25 @@
     ],
     "firstSeen": "2026-07-10T06:04:11-07:00",
     "lastReviewed": "2026-07-10T06:04:11-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could be useful for Aluma contractor/property-manager outreach if the team wants a structured call-and-follow-up lane rather than ad hoc spreadsheet tracking.",
+    "next": "Compare against existing CRM/outreach process and trial only with a small non-sensitive prospect list; confirm compliance, call recording rules, pricing, and export/sync options before scaling.",
+    "name": "Boilerroom",
+    "category": "AI sales outbound / calling workflow",
+    "summary": "Sales execution platform that combines prospecting, sequencing, dialing, call recording, and follow-up so reps can run more of the outbound motion from one workflow.",
+    "drprepper": "Practical fit to evaluate for DR Prepper wholesale buyer outreach because the bottleneck is not just writing emails, but keeping prospecting, calls, notes, and follow-ups moving consistently.",
+    "toolUrl": "https://boilerroom.ai",
+    "postUrl": "https://news.ycombinator.com/item?id=48808394",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://boilerroom.ai"
+      }
+    ],
+    "firstSeen": "2026-07-11T06:04:09-07:00",
+    "lastReviewed": "2026-07-11T06:04:09-07:00"
   },
   {
     "priority": "High",
