@@ -470,6 +470,25 @@
     "lastReviewed": "2026-06-27T06:04:50-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Secondary fit for Aluma outreach ads or rental landing-page copy if paid campaigns expand; treat it as a creative-risk screen, not a replacement for local-market judgment.",
+    "next": "Test with a small batch of non-sensitive historical ad headlines/descriptions. Compare verdicts against actual CTR/CVR or operator judgment before wiring it into any live ad workflow.",
+    "name": "Spendict",
+    "category": "Ad creative guardrails / MCP",
+    "summary": "MCP, CLI, skill, and REST service that gives AI-generated ad creative a deterministic run / fix_first / kill verdict before ad spend is committed. The site advertises 100 free verdicts and paid plans starting at $19/month.",
+    "drprepper": "Strong fit for DR Prepper/KF Goodies PPC and DTC ad testing: use it as a pre-spend QA gate for AI-written Amazon, Meta, or Google ad copy so weak variants get fixed or killed before budget moves.",
+    "toolUrl": "https://www.spendict.com/",
+    "postUrl": "https://news.ycombinator.com/item?id=48879848",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://www.spendict.com/"
+      }
+    ],
+    "firstSeen": "2026-07-12T06:03:59-07:00",
+    "lastReviewed": "2026-07-12T06:03:59-07:00"
+  },
+  {
     "priority": "Watch",
     "aluma": "Could become useful for paid lead-gen campaigns if it supports read-only reporting and clear human approval before budget or creative changes.",
     "next": "Verification needed: find the official Google Ads/Google Ad Manager launch page and pricing/access details before connecting any ad account; start read-only only.",
@@ -555,6 +574,29 @@
     ],
     "firstSeen": "2026-06-27T06:04:50-07:00",
     "lastReviewed": "2026-06-27T06:04:50-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful for Aluma scraper/lead-gen automations where agents should collect evidence and draft recommendations without silently mutating source data or external systems.",
+    "next": "Ask devs to spike one read-only workflow in Runeward before allowing any agent-assisted business-system mutation. Require audit logs, cost/loop limits, and explicit approval gates for writes.",
+    "name": "Runeward",
+    "category": "Agent sandboxing / policy gates",
+    "summary": "Open-source governed execution cells for AI agents, with policy gates, deny-by-default controls, audit logs, metrics, and structured logs. The project is Apache 2.0 and aimed at making autonomous agent execution safer to inspect and govern.",
+    "drprepper": "Good fit for internal automation safety before agents touch PrepShip, Client Portal, dashboards, GitHub repos, or operational scripts: it creates a place to enforce tool/network/filesystem policy and keep audit trails.",
+    "toolUrl": "https://github.com/Runewardd/runeward",
+    "postUrl": "https://news.ycombinator.com/item?id=48879713",
+    "extraLinks": [
+      {
+        "label": "Docs",
+        "url": "https://runewardd.github.io/runeward/"
+      },
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/Runewardd/runeward"
+      }
+    ],
+    "firstSeen": "2026-07-12T06:03:59-07:00",
+    "lastReviewed": "2026-07-12T06:03:59-07:00"
   },
   {
     "priority": "High",
@@ -1040,6 +1082,25 @@
     "postUrl": "https://www.producthunt.com/products/coasty",
     "firstSeen": "2026-07-09T06:04:14-07:00",
     "lastReviewed": "2026-07-09T06:04:14-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Could reduce repeated context setup for Aluma project tracking and lead-gen research, provided sensitive bid/contact details stay out until retention and export controls are understood.",
+    "next": "Review privacy/export controls first. If acceptable, test with sanitized process notes only; do not load customer, order, pricing, or credential material into shared memory by default.",
+    "name": "Inkfold",
+    "category": "Cross-AI memory / workspace",
+    "summary": "Shared memory layer across ChatGPT, Claude, Gemini, Grok, and other AI tools, with Smart, Private, and Incognito retention modes. The site positions it for power users and teams that switch between multiple AI providers.",
+    "drprepper": "Potentially useful for keeping recurring DR Prepper, PrepShip, Client Portal, and sales context consistent across AI tools, but only if privacy controls are proven safe for business data.",
+    "toolUrl": "https://www.inkfold.app/",
+    "postUrl": "https://news.ycombinator.com/item?id=48879174",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://www.inkfold.app/"
+      }
+    ],
+    "firstSeen": "2026-07-12T06:03:59-07:00",
+    "lastReviewed": "2026-07-12T06:03:59-07:00"
   },
   {
     "priority": "Lead",
