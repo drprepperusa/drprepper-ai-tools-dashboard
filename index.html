@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 12, 2026 · 6:03 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 13, 2026 · 6:04 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">114</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">104</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">44</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">117</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">107</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">45</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -384,6 +384,29 @@
             ],
             "firstSeen": "2026-06-22T14:22:38-07:00",
             "lastReviewed": "2026-06-22T14:22:38-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for Aluma reporting and lead/project analytics if AI starts drafting SQL against scraped contractor, project, or CRM data.",
+            "next": "Test against a few internal reporting queries and AI-generated dashboard SQL; add as a guardrail before allowing agents to run or propose production reporting queries.",
+            "name": "sqlsure",
+            "category": "AI SQL safety / reporting QA",
+            "summary": "Open-source deterministic semantic checker for AI-generated SQL that catches silent issues like join fan-out, bad aggregation, or exposed identifiers before a query runs.",
+            "drprepper": "Strong fit for DR Prepper, PrepShip, and finance dashboards where AI-generated queries could otherwise double-count revenue, inventory, postage, or customer metrics without throwing a SQL error.",
+            "toolUrl": "https://github.com/sqlsure/sqlsure",
+            "postUrl": "https://news.ycombinator.com/item?id=48875342",
+            "extraLinks": [
+                  {
+                        "label": "GitHub repo",
+                        "url": "https://github.com/sqlsure/sqlsure"
+                  },
+                  {
+                        "label": "PyPI",
+                        "url": "https://pypi.org/project/sqlsure/"
+                  }
+            ],
+            "firstSeen": "2026-07-13T06:04:37-07:00",
+            "lastReviewed": "2026-07-13T06:04:37-07:00"
       },
       {
             "priority": "High",
@@ -1577,6 +1600,25 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Indirect but relevant for Aluma automation builds: use it as a local audit layer when agents modify lead-scraping, CRM, or project-tracker code.",
+            "next": "Try on a recent Codex/Claude session locally; verify it reads only local logs, produces a useful repo-footprint review, and fits the pre-merge review workflow before depending on it.",
+            "name": "Mindwalk",
+            "category": "Agent/code review visibility",
+            "summary": "Local open-source visualizer that replays Claude Code and Codex coding-agent sessions on a 3D map of the codebase so the agent's search/read/edit footprint is visible before accepting work.",
+            "drprepper": "Useful for reviewing Hermes/Codex/Claude developer work on PrepShip, Client Portal, dashboards, and DR Prepper apps because it helps spot when an agent wandered into unrelated files or missed the intended scope.",
+            "toolUrl": "https://github.com/cosmtrek/mindwalk",
+            "postUrl": "https://news.ycombinator.com/item?id=48878682",
+            "extraLinks": [
+                  {
+                        "label": "GitHub repo",
+                        "url": "https://github.com/cosmtrek/mindwalk"
+                  }
+            ],
+            "firstSeen": "2026-07-13T06:04:37-07:00",
+            "lastReviewed": "2026-07-13T06:04:37-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Could support bid, vendor, and project-intel follow-up workflows if sensitive project details and send permissions are tightly scoped.",
             "next": "Verify import/export, admin controls, retention/privacy model, and no-send-without-review guardrails before connecting any production inbox; start with a low-risk test address only.",
             "name": "Atomic Mail Agentic",
@@ -2130,6 +2172,29 @@
             ],
             "firstSeen": "2026-07-03T06:03:56-07:00",
             "lastReviewed": "2026-07-03T06:03:56-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Possible fit for low-budget creative tests around concrete-contractor outreach or retargeting, but only after offer, audience, and compliance rules are clear.",
+            "next": "Do not connect ad accounts yet; review pricing and run a small non-production creative test first, then compare output against current Amazon/DTC ad workflows and approval requirements.",
+            "name": "Creatify AI Media Buyer",
+            "category": "AI ads / creative testing",
+            "summary": "AI ad creative and media-buying workflow from Creatify with video/image ad generation, AI Media Buyer features, competitor ad tracking, and Meta/TikTok/AppLovin ad-launch support.",
+            "drprepper": "Worth watching for KF Goodies, DR Prepper DTC, and Amazon/PPC creative testing because it moves beyond ad generation into competitor tracking and campaign-launch workflow.",
+            "toolUrl": "https://creatify.ai/",
+            "postUrl": "https://www.producthunt.com/products/creatify",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://creatify.ai/pricing"
+                  },
+                  {
+                        "label": "Product Hunt",
+                        "url": "https://www.producthunt.com/products/creatify"
+                  }
+            ],
+            "firstSeen": "2026-07-13T06:04:37-07:00",
+            "lastReviewed": "2026-07-13T06:04:37-07:00"
       },
       {
             "priority": "Watch",

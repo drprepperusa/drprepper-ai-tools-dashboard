@@ -108,6 +108,52 @@
     "lastReviewed": "2026-07-03T06:03:56-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Useful for Aluma reporting and lead/project analytics if AI starts drafting SQL against scraped contractor, project, or CRM data.",
+    "next": "Test against a few internal reporting queries and AI-generated dashboard SQL; add as a guardrail before allowing agents to run or propose production reporting queries.",
+    "name": "sqlsure",
+    "category": "AI SQL safety / reporting QA",
+    "summary": "Open-source deterministic semantic checker for AI-generated SQL that catches silent issues like join fan-out, bad aggregation, or exposed identifiers before a query runs.",
+    "drprepper": "Strong fit for DR Prepper, PrepShip, and finance dashboards where AI-generated queries could otherwise double-count revenue, inventory, postage, or customer metrics without throwing a SQL error.",
+    "toolUrl": "https://github.com/sqlsure/sqlsure",
+    "postUrl": "https://news.ycombinator.com/item?id=48875342",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/sqlsure/sqlsure"
+      },
+      {
+        "label": "PyPI",
+        "url": "https://pypi.org/project/sqlsure/"
+      }
+    ],
+    "firstSeen": "2026-07-13T06:04:37-07:00",
+    "lastReviewed": "2026-07-13T06:04:37-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Possible fit for low-budget creative tests around concrete-contractor outreach or retargeting, but only after offer, audience, and compliance rules are clear.",
+    "next": "Do not connect ad accounts yet; review pricing and run a small non-production creative test first, then compare output against current Amazon/DTC ad workflows and approval requirements.",
+    "name": "Creatify AI Media Buyer",
+    "category": "AI ads / creative testing",
+    "summary": "AI ad creative and media-buying workflow from Creatify with video/image ad generation, AI Media Buyer features, competitor ad tracking, and Meta/TikTok/AppLovin ad-launch support.",
+    "drprepper": "Worth watching for KF Goodies, DR Prepper DTC, and Amazon/PPC creative testing because it moves beyond ad generation into competitor tracking and campaign-launch workflow.",
+    "toolUrl": "https://creatify.ai/",
+    "postUrl": "https://www.producthunt.com/products/creatify",
+    "extraLinks": [
+      {
+        "label": "Pricing",
+        "url": "https://creatify.ai/pricing"
+      },
+      {
+        "label": "Product Hunt",
+        "url": "https://www.producthunt.com/products/creatify"
+      }
+    ],
+    "firstSeen": "2026-07-13T06:04:37-07:00",
+    "lastReviewed": "2026-07-13T06:04:37-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could support Aluma research and lead-gen agents by preserving source notes, project context, and reusable workflows if privacy and hosting controls check out.",
     "next": "Treat as infrastructure, not a business source of truth; review self-hosting, access control, backup, and secret-redaction behavior before storing any sensitive project/customer context.",
@@ -766,6 +812,25 @@
     ],
     "firstSeen": "2026-07-10T06:04:11-07:00",
     "lastReviewed": "2026-07-10T06:04:11-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Indirect but relevant for Aluma automation builds: use it as a local audit layer when agents modify lead-scraping, CRM, or project-tracker code.",
+    "next": "Try on a recent Codex/Claude session locally; verify it reads only local logs, produces a useful repo-footprint review, and fits the pre-merge review workflow before depending on it.",
+    "name": "Mindwalk",
+    "category": "Agent/code review visibility",
+    "summary": "Local open-source visualizer that replays Claude Code and Codex coding-agent sessions on a 3D map of the codebase so the agent's search/read/edit footprint is visible before accepting work.",
+    "drprepper": "Useful for reviewing Hermes/Codex/Claude developer work on PrepShip, Client Portal, dashboards, and DR Prepper apps because it helps spot when an agent wandered into unrelated files or missed the intended scope.",
+    "toolUrl": "https://github.com/cosmtrek/mindwalk",
+    "postUrl": "https://news.ycombinator.com/item?id=48878682",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/cosmtrek/mindwalk"
+      }
+    ],
+    "firstSeen": "2026-07-13T06:04:37-07:00",
+    "lastReviewed": "2026-07-13T06:04:37-07:00"
   },
   {
     "priority": "Medium",
