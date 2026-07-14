@@ -132,6 +132,25 @@
   },
   {
     "priority": "Watch",
+    "aluma": "Possible fit for concrete-contractor outreach creative or retargeting concepts, but only after offer/audience rules are defined.",
+    "next": "Verify the actual homepage/repo and pricing from the Product Hunt external link before uploading brand assets, connecting ad accounts, or using customer/product data; start with public-domain-only tests.",
+    "name": "Branda",
+    "category": "AI ads / creative testing",
+    "summary": "Product Hunt-launched tool described as turning any domain into on-brand ads, with an MIT open-source angle noted in the launch feed.",
+    "drprepper": "Potential lightweight creative-test source for KF Goodies, DR Prepper DTC, and marketplace ad variants, especially for quick first-pass copy/visual concepts from public site context.",
+    "toolUrl": "https://www.producthunt.com/products/branda-open-source-on-brand-ad-maker",
+    "postUrl": "https://www.producthunt.com/products/branda-open-source-on-brand-ad-maker",
+    "extraLinks": [
+      {
+        "label": "Product Hunt feed item",
+        "url": "https://www.producthunt.com/products/branda-open-source-on-brand-ad-maker"
+      }
+    ],
+    "firstSeen": "2026-07-14T06:20:12-07:00",
+    "lastReviewed": "2026-07-14T06:20:12-07:00"
+  },
+  {
+    "priority": "Watch",
     "aluma": "Possible fit for low-budget creative tests around concrete-contractor outreach or retargeting, but only after offer, audience, and compliance rules are clear.",
     "next": "Do not connect ad accounts yet; review pricing and run a small non-production creative test first, then compare output against current Amazon/DTC ad workflows and approval requirements.",
     "name": "Creatify AI Media Buyer",
@@ -491,6 +510,29 @@
     ],
     "firstSeen": "2026-07-06T06:03:36-07:00",
     "lastReviewed": "2026-07-06T06:03:36-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could package Aluma lead-gen, scraping, verification, and project-status update procedures for repeatable handoff across operators and agents.",
+    "next": "Test only with non-sensitive demo skills first; confirm Dropbox permissions, private-data boundaries, and repo-vs-Dropbox source-of-truth rules before using it for real DR Prepper or Aluma workflows.",
+    "name": "sx 2.0 skill server",
+    "category": "AI team workflows / skill sharing",
+    "summary": "Open-source skill-sharing system that lets a team version and distribute AI skills through a Dropbox-backed vault across tools such as Claude, Cursor, Windsurf, Gemini CLI, and MCP clients.",
+    "drprepper": "Relevant for standardizing Hermes/Codex/Claude playbooks around PrepShip, Client Portal, Trello review gates, and dashboard maintenance so agents reuse approved procedures instead of drifting.",
+    "toolUrl": "https://github.com/sleuth-io/sx",
+    "postUrl": "https://news.ycombinator.com/item?id=48900319",
+    "extraLinks": [
+      {
+        "label": "Launch/source article",
+        "url": "https://sleuth-io.github.io/sx/2026/07/10/your-dropbox-is-now-a-skill-server.html"
+      },
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/sleuth-io/sx"
+      }
+    ],
+    "firstSeen": "2026-07-14T06:20:12-07:00",
+    "lastReviewed": "2026-07-14T06:20:12-07:00"
   },
   {
     "priority": "High",
@@ -1136,6 +1178,29 @@
     "lastReviewed": "2026-06-14T06:03:02-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Useful for Aluma territory monitoring because contractor competitors, permit activity, hiring, and local project/news changes can become lead-prioritization signals.",
+    "next": "Run a free brief on one public DR Prepper/KF Goodies competitor and one Aluma market; verify source quality before paying or feeding results into outreach automation.",
+    "name": "MyIntelBrief",
+    "category": "Competitor intelligence / small business monitoring",
+    "summary": "Small-business competitor-intelligence brief generator that scans changes like pricing, reviews, hiring, permits, and local news, then turns them into a ranked action brief.",
+    "drprepper": "Strong fit for KF Goodies, DR Prepper, and PrepShip sales monitoring: weekly competitor briefs could surface price moves, new offers, review issues, or local market changes without a manual research pass.",
+    "toolUrl": "https://myintelbrief.com/",
+    "postUrl": "https://news.ycombinator.com/item?id=48902927",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://myintelbrief.com/"
+      },
+      {
+        "label": "HN source post",
+        "url": "https://news.ycombinator.com/item?id=48902927"
+      }
+    ],
+    "firstSeen": "2026-07-14T06:20:12-07:00",
+    "lastReviewed": "2026-07-14T06:20:12-07:00"
+  },
+  {
     "priority": "Watch",
     "aluma": "Possible fit for construction vendor portals or permit/admin workflows, but reliability and safety need proof before trusting it with operational actions.",
     "next": "Treat as watchlist only: verify pricing/security, test on a sandbox or read-only workflow, and require approval gates before any purchase, customer message, carrier booking, or production data change.",
@@ -1347,6 +1412,25 @@
     ],
     "firstSeen": "2026-07-09T06:04:14-07:00",
     "lastReviewed": "2026-07-09T06:04:14-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "No direct construction fit yet, but the proactive-agent pattern may inform internal outreach and follow-up automation if the tool proves controllable.",
+    "next": "Verify homepage, pricing, supported storefronts, and data permissions before any pilot; do not connect Shopify/Amazon/customer systems until there is a reviewed read-only mode and export controls.",
+    "name": "ClawTeams",
+    "category": "E-commerce AI operations",
+    "summary": "Product Hunt-launched goal-driven, proactive AI team for e-commerce operators, positioned around store workflows rather than developer tooling.",
+    "drprepper": "Worth monitoring for KF Goodies and DR Prepper store operations if it can safely help with product pages, retention, customer workflows, or merchandising without touching live customer/order data unchecked.",
+    "toolUrl": "https://www.producthunt.com/products/clawteams",
+    "postUrl": "https://www.producthunt.com/products/clawteams",
+    "extraLinks": [
+      {
+        "label": "Product Hunt feed item",
+        "url": "https://www.producthunt.com/products/clawteams"
+      }
+    ],
+    "firstSeen": "2026-07-14T06:20:12-07:00",
+    "lastReviewed": "2026-07-14T06:20:12-07:00"
   },
   {
     "priority": "Medium",
