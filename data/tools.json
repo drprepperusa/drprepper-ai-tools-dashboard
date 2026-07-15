@@ -108,6 +108,29 @@
     "lastReviewed": "2026-07-03T06:03:56-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Potential fit for contractor outreach creative, competitive-intel briefs, and lead-gen content, as long as every outbound message remains human-reviewed.",
+    "next": "Test on public competitor ads and non-sensitive product/service pages first; do not connect ad accounts, storefronts, WhatsApp, or customer lists until permissions, approval gates, and output quality are reviewed.",
+    "name": "Gooseworks / Goose Ads Remixer",
+    "category": "AI GTM coworkers / ad creative remixing",
+    "summary": "AI coworker platform for GTM workflows with skills/apps for ads, lead gen, research, content, competitive intel, SEO, and social; the Product Hunt launch highlights an Ads Remixer for turning winning niche ads into branded variants.",
+    "drprepper": "Useful watch item for KF Goodies, DR Prepper, and DJR-style sales because it could speed ad-angle research, competitor creative analysis, and first-draft campaign assets without hiring an agency.",
+    "toolUrl": "https://gooseworks.ai",
+    "postUrl": "https://www.producthunt.com/products/gooseworks",
+    "extraLinks": [
+      {
+        "label": "Product Hunt launch",
+        "url": "https://www.producthunt.com/products/gooseworks"
+      },
+      {
+        "label": "Official site",
+        "url": "https://gooseworks.ai"
+      }
+    ],
+    "firstSeen": "2026-07-15T06:04:53-07:00",
+    "lastReviewed": "2026-07-15T06:04:53-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful for Aluma reporting and lead/project analytics if AI starts drafting SQL against scraped contractor, project, or CRM data.",
     "next": "Test against a few internal reporting queries and AI-generated dashboard SQL; add as a guardrail before allowing agents to run or propose production reporting queries.",
@@ -1596,6 +1619,29 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful pattern for Aluma lead/outreach or proposal automations that need human approval and a signed record before sending messages, changing Sheets/CRM records, or committing spend.",
+    "next": "Sandbox with a fake refund/order-change workflow only; verify the exact approval payload, logs, Twilio/WhatsApp costs, failure modes, and audit-readback before connecting any real business system.",
+    "name": "Approv",
+    "category": "Human approval / AI agent audit trail",
+    "summary": "Human-in-the-loop approval service for risky AI-agent actions: an API pauses the action, asks a human to approve or reject via WhatsApp with SMS fallback, and records tamper-evident Ed25519-signed state changes.",
+    "drprepper": "Strong safety fit before any agent is allowed near PrepShip orders, refunds, billing edits, customer account changes, GitHub deploy actions, or production database writes.",
+    "toolUrl": "https://approv-app.vercel.app",
+    "postUrl": "https://news.ycombinator.com/item?id=48912351",
+    "extraLinks": [
+      {
+        "label": "HN source post",
+        "url": "https://news.ycombinator.com/item?id=48912351"
+      },
+      {
+        "label": "Demo video",
+        "url": "https://www.loom.com/share/1b286fb19b1a4730a2d5ed6e8a9c2ac3"
+      }
+    ],
+    "firstSeen": "2026-07-15T06:04:53-07:00",
+    "lastReviewed": "2026-07-15T06:04:53-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Useful only if Aluma-related spend or subcontractor paperwork starts flowing through a shared inbox that needs accounting capture.",
     "next": "Run a privacy/security review and test on a low-risk inbox label before connecting finance mail broadly; never auto-pay or auto-send without review.",
     "name": "DocStreamAI",
@@ -1918,6 +1964,29 @@
     "next": "Use only after copy, offer, and conversion flow are locked.",
     "toolUrl": "https://x.com/higgsfield_ai/status/2062607081010864364",
     "postUrl": "https://x.com/higgsfield_ai/status/2062607081010864364"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could support construction-lead monitoring and reminders by wiring public RSS/news/forms/sheets into simple alerts, but should not become the source of truth for CRM or bid data.",
+    "next": "Pilot only read-only alerts first, such as Google News/RSS to Slack/Discord/Sheets; avoid customer data, order writes, or account-changing applets until permissions and failure modes are documented.",
+    "name": "IFTTT — New AI tools",
+    "category": "No-code AI automation / alerts",
+    "summary": "Product Hunt-listed IFTTT update for automations involving AI services such as Grok, Gemini, and Perplexity, on top of IFTTT's existing no-code applet/integration platform.",
+    "drprepper": "Useful low-code layer for low-risk alerts and summaries: competitor/news monitoring, lead-source notifications, calendar/reminder handoffs, and lightweight newsletter or dashboard triggers.",
+    "toolUrl": "https://ifttt.com/explore",
+    "postUrl": "https://www.producthunt.com/products/ifttt",
+    "extraLinks": [
+      {
+        "label": "Product Hunt source",
+        "url": "https://www.producthunt.com/products/ifttt"
+      },
+      {
+        "label": "IFTTT explore",
+        "url": "https://ifttt.com/explore"
+      }
+    ],
+    "firstSeen": "2026-07-15T06:04:53-07:00",
+    "lastReviewed": "2026-07-15T06:04:53-07:00"
   },
   {
     "priority": "Medium",
