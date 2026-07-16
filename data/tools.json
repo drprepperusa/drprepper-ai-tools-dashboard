@@ -516,6 +516,19 @@
     "lastReviewed": "2026-07-11T06:04:09-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Possible future fit for Aluma lead follow-up if it can handle narrow, approved demo scripts and keep every outbound message or call human-reviewed.",
+    "next": "Verification needed: identify the official homepage, pricing, channels, data-retention terms, CRM integrations, call/email compliance posture, and approval gates before testing with any real prospect list.",
+    "name": "River",
+    "category": "AI sales outbound / calling workflow",
+    "summary": "Product Hunt-listed AI account-executive concept for demoing and closing B2B deals; the feed exposed the product pitch, but the official homepage and pricing were not verified in this run.",
+    "drprepper": "Worth monitoring as a pattern for 3PL sales qualification and demo follow-up, but not ready for live DR Prepper outreach until the vendor site, compliance model, and human-review controls are confirmed.",
+    "toolUrl": "https://www.producthunt.com/products/river-9",
+    "postUrl": "https://www.producthunt.com/products/river-9",
+    "firstSeen": "2026-07-16T06:05:52-07:00",
+    "lastReviewed": "2026-07-16T06:05:52-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful for Aluma lead-source monitoring around concrete contractors, project chatter, supplier mentions, and competitor/community signals if keyword scope is kept narrow enough to avoid noisy generic construction posts.",
     "next": "Trial with 5-10 narrow keywords first, route only high/medium relevance alerts to Slack or a review queue, and validate lead quality before paying for Pro at $159/mo or Scale at $499/mo.",
@@ -711,6 +724,19 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful for Aluma contractor/project research agents that need structured web evidence and source links before adding leads or project notes to Sheets/CRM workflows.",
+    "next": "Pilot through the free tier on public, non-sensitive research tasks only; verify retention/privacy terms, MCP/API key handling, rate limits, and source quality before using it around customer, order, or vendor-private data.",
+    "name": "AnySearch",
+    "category": "Agent search / MCP research infrastructure",
+    "summary": "Privacy-first search infrastructure for AI agents with smart routing, structured outputs, and native API, MCP, and skill integrations; the public pricing page lists a free tier at 1,000 requests/day.",
+    "drprepper": "Strong fit for internal research agents that need cleaner vendor lookup, order-support research, fulfillment-policy checks, lead enrichment, or dashboard source discovery without depending on raw search snippets.",
+    "toolUrl": "https://www.anysearch.com/home",
+    "postUrl": "https://www.producthunt.com/products/anysearch",
+    "firstSeen": "2026-07-16T06:05:52-07:00",
+    "lastReviewed": "2026-07-16T06:05:52-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Useful pattern for guarded lead-gen, outreach, reporting, and Sheets/CRM automations where every API action needs an allowlist and traceable audit trail.",
     "next": "Test only on a sandbox integration first; require dry-run mode, allowlisted non-destructive calls, audit logs, and human approval before any production write action.",
     "name": "Swytchcode CLI",
@@ -877,6 +903,19 @@
     ],
     "firstSeen": "2026-07-10T06:04:11-07:00",
     "lastReviewed": "2026-07-10T06:04:11-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Indirect fit for Aluma automation builds: a visual, inspectable coding-agent workflow can make lead-gen scripts and project-tracker changes easier to review before merging.",
+    "next": "Try on a throwaway repo first; verify AGPL implications, BYOK/provider setup, local-server exposure, secret handling, and whether the GUI review flow improves over current Hermes/Codex worktrees.",
+    "name": "Juggler",
+    "category": "Agent/code review visibility",
+    "summary": "Open-source visual GUI coding agent/workbench where sessions are inspectable documents with branching threads, editable context, visible tool calls, approvals, and local/remote clients.",
+    "drprepper": "Useful pattern for supervising AI development on PrepShip, Client Portal, dashboards, and internal tooling when terminal-only agent sessions become hard to review or audit.",
+    "toolUrl": "https://juggler.studio",
+    "postUrl": "https://news.ycombinator.com/item?id=48883305",
+    "firstSeen": "2026-07-16T06:05:52-07:00",
+    "lastReviewed": "2026-07-16T06:05:52-07:00"
   },
   {
     "priority": "Medium",

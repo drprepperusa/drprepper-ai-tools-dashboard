@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 15, 2026 · 6:04 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 16, 2026 · 6:05 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">125</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">114</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">48</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">128</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">115</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">49</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -681,6 +681,19 @@
             ],
             "firstSeen": "2026-07-12T06:03:59-07:00",
             "lastReviewed": "2026-07-12T06:03:59-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for Aluma contractor/project research agents that need structured web evidence and source links before adding leads or project notes to Sheets/CRM workflows.",
+            "next": "Pilot through the free tier on public, non-sensitive research tasks only; verify retention/privacy terms, MCP/API key handling, rate limits, and source quality before using it around customer, order, or vendor-private data.",
+            "name": "AnySearch",
+            "category": "Agent search / MCP research infrastructure",
+            "summary": "Privacy-first search infrastructure for AI agents with smart routing, structured outputs, and native API, MCP, and skill integrations; the public pricing page lists a free tier at 1,000 requests/day.",
+            "drprepper": "Strong fit for internal research agents that need cleaner vendor lookup, order-support research, fulfillment-policy checks, lead enrichment, or dashboard source discovery without depending on raw search snippets.",
+            "toolUrl": "https://www.anysearch.com/home",
+            "postUrl": "https://www.producthunt.com/products/anysearch",
+            "firstSeen": "2026-07-16T06:05:52-07:00",
+            "lastReviewed": "2026-07-16T06:05:52-07:00"
       },
       {
             "priority": "High",
@@ -1751,6 +1764,19 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Indirect fit for Aluma automation builds: a visual, inspectable coding-agent workflow can make lead-gen scripts and project-tracker changes easier to review before merging.",
+            "next": "Try on a throwaway repo first; verify AGPL implications, BYOK/provider setup, local-server exposure, secret handling, and whether the GUI review flow improves over current Hermes/Codex worktrees.",
+            "name": "Juggler",
+            "category": "Agent/code review visibility",
+            "summary": "Open-source visual GUI coding agent/workbench where sessions are inspectable documents with branching threads, editable context, visible tool calls, approvals, and local/remote clients.",
+            "drprepper": "Useful pattern for supervising AI development on PrepShip, Client Portal, dashboards, and internal tooling when terminal-only agent sessions become hard to review or audit.",
+            "toolUrl": "https://juggler.studio",
+            "postUrl": "https://news.ycombinator.com/item?id=48883305",
+            "firstSeen": "2026-07-16T06:05:52-07:00",
+            "lastReviewed": "2026-07-16T06:05:52-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Indirect but relevant for Aluma automation builds: use it as a local audit layer when agents modify lead-scraping, CRM, or project-tracker code.",
             "next": "Try on a recent Codex/Claude session locally; verify it reads only local logs, produces a useful repo-footprint review, and fits the pre-merge review workflow before depending on it.",
             "name": "Mindwalk",
@@ -2424,6 +2450,19 @@
             "postUrl": "https://news.ycombinator.com/item?id=48736812",
             "firstSeen": "2026-07-04T06:04:02-07:00",
             "lastReviewed": "2026-07-04T06:04:02-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Possible future fit for Aluma lead follow-up if it can handle narrow, approved demo scripts and keep every outbound message or call human-reviewed.",
+            "next": "Verification needed: identify the official homepage, pricing, channels, data-retention terms, CRM integrations, call/email compliance posture, and approval gates before testing with any real prospect list.",
+            "name": "River",
+            "category": "AI sales outbound / calling workflow",
+            "summary": "Product Hunt-listed AI account-executive concept for demoing and closing B2B deals; the feed exposed the product pitch, but the official homepage and pricing were not verified in this run.",
+            "drprepper": "Worth monitoring as a pattern for 3PL sales qualification and demo follow-up, but not ready for live DR Prepper outreach until the vendor site, compliance model, and human-review controls are confirmed.",
+            "toolUrl": "https://www.producthunt.com/products/river-9",
+            "postUrl": "https://www.producthunt.com/products/river-9",
+            "firstSeen": "2026-07-16T06:05:52-07:00",
+            "lastReviewed": "2026-07-16T06:05:52-07:00"
       },
       {
             "priority": "Watch",
