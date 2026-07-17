@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 16, 2026 · 6:05 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 17, 2026 · 6:04 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,8 +276,8 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">128</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">115</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">130</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">117</div><div class="label">categories</div></div>
             <div class="metric"><div class="num">49</div><div class="label">high priority now</div></div>
           </div>
         </section>
@@ -1554,6 +1554,29 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could monitor AI lead-qualification or project-intake agents for bad outreach, missed contractor context, or unsafe recommendations before those workflows touch real prospects.",
+            "next": "Do not connect customer conversations yet. First test with synthetic/internal agent transcripts, define failure categories, and compare against existing eval logs before considering the $500/month Pro tier.",
+            "name": "Agnost AI",
+            "category": "AI agent monitoring / production feedback",
+            "summary": "Production AI-agent monitoring tool that analyzes real agent conversations, catches failure patterns that normal evals miss, and turns high-impact issues into reviewed fixes. Official page says free to start, with Pro at $500/month for higher volume, 90-day retention, priority support, and Slack access.",
+            "drprepper": "Useful if DR Prepper, PrepShip, or the client portal ever exposes customer-facing or staff-facing AI agents for support, order lookup, quote triage, or SOP workflows; it targets live failure discovery instead of demo-only evals.",
+            "toolUrl": "https://agnost.ai",
+            "postUrl": "https://news.ycombinator.com/item?id=48908950",
+            "extraLinks": [
+                  {
+                        "label": "Official site",
+                        "url": "https://agnost.ai"
+                  },
+                  {
+                        "label": "HN launch metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/48908950"
+                  }
+            ],
+            "firstSeen": "2026-07-17T06:04:24-07:00",
+            "lastReviewed": "2026-07-17T06:04:24-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Could support Aluma lead-intake and bid-follow-up automations where non-technical staff need repeatable workflows across inboxes, sheets, CRM notes, and project trackers.",
             "next": "Test one read-only workflow first, such as summarizing new wholesale leads or Aluma project inquiries; verify pricing, permissions, audit logs, and human-approval controls before connecting production systems.",
             "name": "QX Labs",
@@ -2355,23 +2378,50 @@
             "lastReviewed": "2026-06-18T06:03:26-07:00"
       },
       {
+            "priority": "Medium",
+            "aluma": "Could organize Aluma contractor/project research, rental playbooks, proposal references, and lead-source notes for retrieval by sales or research agents.",
+            "next": "Trial only with non-sensitive SOPs and public/vendor docs first. Verify privacy, retention, workspace isolation, MCP permissions, and export/delete controls before storing client data, pricing contracts, or customer/order details.",
+            "name": "Kit for AI",
+            "category": "agent memory / RAG infrastructure",
+            "summary": "Memory and grounded-knowledge layer for AI agents with native MCP/API access so agents can search documents, files, URLs, videos, and knowledge bases without building a custom RAG stack. Official site describes a free tier and higher-scale request paths.",
+            "drprepper": "Good fit for internal agents that need SOPs, vendor policies, pricing rules, carrier docs, client-portal notes, or dashboard research context without repeatedly pasting documents into chats.",
+            "toolUrl": "https://kitforai.com",
+            "postUrl": "https://www.producthunt.com/products/kit-for-ai",
+            "extraLinks": [
+                  {
+                        "label": "Official site",
+                        "url": "https://kitforai.com"
+                  },
+                  {
+                        "label": "Product Hunt feed/source",
+                        "url": "https://www.producthunt.com/feed"
+                  }
+            ],
+            "firstSeen": "2026-07-17T06:04:24-07:00",
+            "lastReviewed": "2026-07-17T06:04:24-07:00"
+      },
+      {
             "priority": "Watch",
-            "aluma": "Could eventually support Aluma lead/project dashboards and automated follow-up queues if the data model and permissions are tightly controlled.",
-            "next": "Do not impulse-buy at the current startup pricing; first define one dashboard/action use case and compare against the existing client portal or a lightweight internal dashboard.",
-            "name": "Basedash Actions",
+            "aluma": "Could support Aluma lead/project dashboards and follow-up queues if data permissions, source-of-truth ownership, and action approvals are tightly controlled.",
+            "next": "Do not buy at $1,000/month without a defined dashboard/action use case. First prototype the same reporting questions with existing Sheets/Postgres/dashboard data and require human approval for any write/action workflow.",
+            "name": "Basedash Suggestions / Actions",
             "category": "AI BI / ops dashboards",
-            "summary": "AI-native business intelligence platform that connects data sources, builds dashboards, answers questions from data, and can run data workflows/actions.",
-            "drprepper": "Worth watching for PrepShip, DR Prepper, and KF Goodies operations dashboards where the goal is not just charts but daily change detection and next-step workflows.",
+            "summary": "AI-native BI/data analyst platform that can suggest useful reporting questions, build dashboards, answer data questions, and run data workflows/actions. Official pricing page lists a 14-day free trial, Startup at $1,000/month up to 25 users plus AI usage, and custom Enterprise.",
+            "drprepper": "Relevant for PrepShip, DR Prepper, KF Goodies, and sales dashboards where the need is daily KPI discovery, margin/reporting questions, and action queues rather than another static chart page.",
             "toolUrl": "https://www.basedash.com",
             "postUrl": "https://www.producthunt.com/products/basedash",
             "extraLinks": [
                   {
                         "label": "Pricing",
                         "url": "https://www.basedash.com/pricing"
+                  },
+                  {
+                        "label": "Product Hunt feed/source",
+                        "url": "https://www.producthunt.com/feed"
                   }
             ],
             "firstSeen": "2026-07-03T06:03:56-07:00",
-            "lastReviewed": "2026-07-03T06:03:56-07:00"
+            "lastReviewed": "2026-07-17T06:04:24-07:00"
       },
       {
             "priority": "Watch",
