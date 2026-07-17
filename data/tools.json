@@ -763,6 +763,89 @@
     "lastReviewed": "2026-07-16T06:05:52-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Marketing, social, design, and documentation skills could support project research, proposal pages, and outreach; legal/finance outputs must remain draft analysis with human review.",
+    "next": "Build a minimal department-by-department shortlist and test each skill with non-sensitive data. Do not grant finance/legal plugins autonomous authority, and do not let agent bundles become the source of truth for billing, contracts, compliance, or production writes.",
+    "name": "Rahul — Claude company skill org chart",
+    "category": "Agent skill catalog / business functions",
+    "summary": "Curated X post organizing installable Claude/agent resources into developer, designer, marketing, social-media, finance, small-business, and legal departments. Links include skill frameworks, documentation context, memory, UI/design tools, marketing/social bundles, and official Claude business plugins.",
+    "drprepper": "Useful as an organizational map for a lean AI operating stack, not as an instruction to install everything. Best candidates are Context7 and webapp-testing for development, frontend-design/taste for UI, marketingskills for CRO/SEO, and carefully sandboxed finance/small-business plugins for analysis only.",
+    "toolUrl": "https://x.com/sairahul1/status/2077733367358079309",
+    "postUrl": "https://x.com/sairahul1/status/2077733367358079309",
+    "extraLinks": [
+      {
+        "label": "Developer — Superpowers",
+        "url": "https://github.com/obra/superpowers"
+      },
+      {
+        "label": "Developer — Context7",
+        "url": "https://github.com/upstash/context7"
+      },
+      {
+        "label": "Developer — Skill Creator",
+        "url": "https://github.com/anthropics/skills/tree/main/skills/skill-creator"
+      },
+      {
+        "label": "Developer — MCP Builder",
+        "url": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder"
+      },
+      {
+        "label": "Developer — Webapp Testing",
+        "url": "https://github.com/anthropics/skills/tree/main/skills/webapp-testing"
+      },
+      {
+        "label": "Developer — Claude-Mem",
+        "url": "https://github.com/thedotmack/claude-mem"
+      },
+      {
+        "label": "Design — UI UX Pro Max",
+        "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
+      },
+      {
+        "label": "Design — Taste",
+        "url": "https://github.com/Leonxlnx/taste-skill"
+      },
+      {
+        "label": "Design — Transitions",
+        "url": "https://github.com/Jakubantalik/transitions.dev"
+      },
+      {
+        "label": "Design — Web Artifacts",
+        "url": "https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder"
+      },
+      {
+        "label": "Design — Brand Guidelines",
+        "url": "https://github.com/anthropics/skills/tree/main/skills/brand-guidelines"
+      },
+      {
+        "label": "Marketing skills",
+        "url": "https://github.com/coreyhaines31/marketingskills"
+      },
+      {
+        "label": "Social media skills",
+        "url": "https://github.com/charlie947/social-media-skills"
+      },
+      {
+        "label": "Claude Finance plugin",
+        "url": "https://claude.com/plugins/finance"
+      },
+      {
+        "label": "Claude Small Business plugin",
+        "url": "https://claude.com/plugins/small-business"
+      },
+      {
+        "label": "Claude Legal plugin",
+        "url": "https://claude.com/plugins/legal"
+      },
+      {
+        "label": "Related multi-model team article",
+        "url": "https://x.com/i/article/2077642699608584192"
+      }
+    ],
+    "firstSeen": "2026-07-17T13:10:16-07:00",
+    "lastReviewed": "2026-07-17T13:10:16-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful pattern for guarded lead-gen, outreach, reporting, and Sheets/CRM automations where every API action needs an allowlist and traceable audit trail.",
     "next": "Test only on a sandbox integration first; require dry-run mode, allowlisted non-destructive calls, audit logs, and human approval before any production write action.",
