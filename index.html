@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 17, 2026 · 1:10 PM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 18, 2026 · 6:04 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">131</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">118</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">49</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">134</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">121</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">50</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -1292,6 +1292,29 @@
             "postUrl": "https://news.ycombinator.com/item?id=48592731",
             "firstSeen": "2026-06-19T06:02:49-07:00",
             "lastReviewed": "2026-06-19T06:02:49-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for monitoring Aluma landing pages, contractor/rental SEO pages, and project-lead content after publishing; keep it read-only and use findings to decide which pages need human content updates.",
+            "next": "Install only with a read-only Google service account, grant access to the intended Search Console properties, and start with weekly assistant summaries of pages/queries that need attention. Do not give agents Search Console write/admin permissions.",
+            "name": "Google Search Console MCP",
+            "category": "SEO analytics / MCP connector",
+            "summary": "Open-source MCP server that gives Claude Code, Claude Desktop, Cursor, or another MCP-capable assistant read access to Google Search Console properties, including clicks, impressions, CTR, average position, index status, and submitted sitemap data.",
+            "drprepper": "Strong fit for making DR Prepper, PrepShip/client portal docs, and landing-page SEO checks askable from an assistant: top queries, pages losing impressions, indexed/not-indexed URLs, and sitemap coverage without giving the agent write access.",
+            "toolUrl": "https://github.com/AkashRajpurohit/gsc-mcp",
+            "postUrl": "https://news.ycombinator.com/item?id=48955509",
+            "extraLinks": [
+                  {
+                        "label": "GitHub repo",
+                        "url": "https://github.com/AkashRajpurohit/gsc-mcp"
+                  },
+                  {
+                        "label": "HN source post",
+                        "url": "https://news.ycombinator.com/item?id=48955509"
+                  }
+            ],
+            "firstSeen": "2026-07-18T06:04:50-07:00",
+            "lastReviewed": "2026-07-18T06:04:50-07:00"
       },
       {
             "priority": "High",
@@ -2430,6 +2453,29 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could support contractor/project outreach if Aluma lead lists are qualified first and messaging stays human-approved; do not let an AI GTM tool invent project facts or pricing claims.",
+            "next": "Sandbox with non-sensitive lead lists only. Verify CRM/export integrations, data retention, outbound-channel compliance, pricing, and an approval gate before using it for DR Prepper or Aluma outreach.",
+            "name": "Pebbles AI",
+            "category": "Sales prospecting / GTM automation",
+            "summary": "AI sales/GTM operating system for B2B teams, positioning itself around lead generation, outreach, analytics, productivity, and sales workflow automation. Product Hunt described it as an AI sales platform for modern B2B teams; the official site emphasizes a free start path, Microsoft 365/Google Workspace signals, and GTM workflow consolidation.",
+            "drprepper": "Potential fit for 3PL, wholesale, and local-business prospecting if it can enrich leads, sequence outreach, and keep rep activity visible without creating unreviewed customer messages.",
+            "toolUrl": "https://www.trypebbles.ai/",
+            "postUrl": "https://www.producthunt.com/products/pebbles-ai",
+            "extraLinks": [
+                  {
+                        "label": "Official site",
+                        "url": "https://www.trypebbles.ai/"
+                  },
+                  {
+                        "label": "Product Hunt source",
+                        "url": "https://www.producthunt.com/products/pebbles-ai"
+                  }
+            ],
+            "firstSeen": "2026-07-18T06:04:50-07:00",
+            "lastReviewed": "2026-07-18T06:04:50-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Could support shared bid/vendor/project-inquiry inboxes if permission boundaries, retention, and export are acceptable.",
             "next": "Try only with a low-risk alias or test inbox; verify Google Workspace connection, export/retention, approval-before-send behavior, and privacy terms before connecting production email.",
             "name": "Banger Mail",
@@ -2459,6 +2505,33 @@
             "postUrl": "https://www.producthunt.com/products/voiceos",
             "firstSeen": "2026-06-18T06:03:26-07:00",
             "lastReviewed": "2026-06-18T06:03:26-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Possible low-risk use for shop/yard labels, material movement tickets, or rental-return receipts if a local printer workflow exists, but Aluma needs less immediate thermal-print automation than DR Prepper.",
+            "next": "Treat as a lab-only self-hosted prototype. Verify printer compatibility, local-network exposure, queue/error behavior, and licensing before any warehouse use; keep customer/shipping-label production flows on approved systems.",
+            "name": "PrintBlocks",
+            "category": "Warehouse printing / MCP automation",
+            "summary": "Self-hosted service for composing ESC/POS thermal-printer output from reusable blocks via a conventional HTTP API or MCP server, aimed at letting apps and agents print structured receipts, labels, notes, and tickets.",
+            "drprepper": "Interesting 3PL ops watchlist item for internal warehouse slips: pick notes, packing instructions, receiving labels, exception tickets, or counter receipts triggered by PrepShip workflows. It should not touch shipping labels or customer paperwork until printing formats and permissions are proven.",
+            "toolUrl": "https://gian-reto.github.io/print-blocks/",
+            "postUrl": "https://news.ycombinator.com/item?id=48952726",
+            "extraLinks": [
+                  {
+                        "label": "Docs/site",
+                        "url": "https://gian-reto.github.io/print-blocks/"
+                  },
+                  {
+                        "label": "GitHub repo",
+                        "url": "https://github.com/gian-reto/print-blocks"
+                  },
+                  {
+                        "label": "HN source post",
+                        "url": "https://news.ycombinator.com/item?id=48952726"
+                  }
+            ],
+            "firstSeen": "2026-07-18T06:04:50-07:00",
+            "lastReviewed": "2026-07-18T06:04:50-07:00"
       },
       {
             "priority": "Medium",
