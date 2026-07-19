@@ -301,6 +301,25 @@
     "lastReviewed": "2026-07-10T06:04:11-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Indirect fit for Aluma automation and landing-page experiments where several agent-built variants need side-by-side comparison; not a fit for direct customer/prospect actions.",
+    "next": "Verify the official beta/download, then test on a throwaway repo with no secrets. Require one clean branch/worktree per agent, explicit diffs, and normal CI/review gates before considering it for business repos.",
+    "name": "Shikigami",
+    "category": "AI coding agents / multi-worktree orchestration",
+    "summary": "Mac/Linux beta tool for running Claude and Codex coding agents in parallel, each isolated in its own git worktree so competing implementations can be reviewed separately instead of becoming one tangled local checkout.",
+    "drprepper": "Useful watchlist item for PrepShip/client-portal development only if it improves reviewable parallel work without bypassing Trello acceptance, clean-worktree verification, or human approval before merges.",
+    "toolUrl": "https://shikigami.dev/",
+    "postUrl": "https://news.ycombinator.com/item?id=48966140",
+    "extraLinks": [
+      {
+        "label": "HN source post",
+        "url": "https://news.ycombinator.com/item?id=48966140"
+      }
+    ],
+    "firstSeen": "2026-07-19T06:04:36-07:00",
+    "lastReviewed": "2026-07-19T06:04:36-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Indirect fit for Aluma software/support tooling: safer agent execution helps build or maintain lead-gen and project-tracking automations without giving agents broad host access.",
     "next": "Run a disposable trial on a throwaway repo first; verify Docker Sandbox requirements, network controls, secret handling, and commit-review workflow before using it on production-connected codebases.",
@@ -388,6 +407,25 @@
     ],
     "firstSeen": "2026-07-04T06:04:02-07:00",
     "lastReviewed": "2026-07-04T06:04:02-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could reduce costs for Aluma lead scraping/classification or proposal-drafting agents if those workflows become high-volume, but only after provider behavior and latency are tested on non-critical jobs.",
+    "next": "Run a small sandbox with non-sensitive prompts and compare cost, latency, model output, logging, and failure behavior against direct provider calls before routing any production/customer-impacting agent traffic.",
+    "name": "FlexInference",
+    "category": "AI inference routing / API cost control",
+    "summary": "Deadline-aware, OpenAI-compatible LLM router for OpenAI, Gemini, Anthropic, Bedrock, and Vertex-style provider routing. The homepage describes bring-your-own-key routing, no standard per-request fee, and flex routing that charges only a share of actual savings.",
+    "drprepper": "Potential fit once PrepShip, dashboards, research agents, or lead-gen jobs produce meaningful AI API spend; routing could lower inference cost without rewriting every model call.",
+    "toolUrl": "https://www.flexinference.com",
+    "postUrl": "https://news.ycombinator.com/item?id=48965552",
+    "extraLinks": [
+      {
+        "label": "HN source post",
+        "url": "https://news.ycombinator.com/item?id=48965552"
+      }
+    ],
+    "firstSeen": "2026-07-19T06:04:36-07:00",
+    "lastReviewed": "2026-07-19T06:04:36-07:00"
   },
   {
     "priority": "High",
@@ -1963,6 +2001,25 @@
     ],
     "firstSeen": "2026-07-09T06:04:14-07:00",
     "lastReviewed": "2026-07-09T06:04:14-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Relevant if Aluma lead-gen or project-intel agents gain write access to CRMs, sheets, email, or outreach systems; tool verification should come before automated external actions.",
+    "next": "Use as a due-diligence layer for any new MCP/server that can read sensitive files or mutate orders, ads, CRMs, or messages. Verify pricing/site details and keep human approval gates for writes even after a server passes.",
+    "name": "Throne MCP Verification",
+    "category": "MCP security / agent tool verification",
+    "summary": "Verification service for MCP/tool servers that runs real execution checks in isolated environments and produces evidence around behavior, security, policy decisions, and production readiness.",
+    "drprepper": "Strong fit before connecting AI agents to PrepShip, fulfillment, sales, files, or customer-message tools because the risky part is not chat quality; it is whether tools behave safely under real execution.",
+    "toolUrl": "https://usethrone.dev",
+    "postUrl": "https://news.ycombinator.com/item?id=48966591",
+    "extraLinks": [
+      {
+        "label": "HN source post",
+        "url": "https://news.ycombinator.com/item?id=48966591"
+      }
+    ],
+    "firstSeen": "2026-07-19T06:04:36-07:00",
+    "lastReviewed": "2026-07-19T06:04:36-07:00"
   },
   {
     "priority": "High",
