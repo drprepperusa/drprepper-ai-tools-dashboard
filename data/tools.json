@@ -236,6 +236,29 @@
     "lastReviewed": "2026-07-17T06:04:24-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Helpful for hardening Aluma research/scraper agents before they receive spreadsheet, CRM, or outreach access; choose isolation defaults before scaling autonomous collectors.",
+    "next": "Use the catalog to compare sandbox options for Hermes/Codex/Claude workflows. Favor least-privilege file mounts, blocked network by default, secret redaction, and no external writes without approval.",
+    "name": "please do not escape / AI agent sandboxes",
+    "category": "AI agent sandboxing / automation safety",
+    "summary": "Evidence-linked catalog of sandboxing and isolation approaches for AI coding agents, covering network control, credential mediation, and constrained execution environments with primary-source references.",
+    "drprepper": "Useful as a safety checklist before giving coding or ops agents access to PrepShip/client-portal repos, local files, credentials, or production-adjacent tools.",
+    "toolUrl": "https://pleasedonotescape.com/",
+    "postUrl": "https://news.ycombinator.com/item?id=48976989",
+    "extraLinks": [
+      {
+        "label": "Source data repo",
+        "url": "https://github.com/pjlsergeant/ai-sandboxes"
+      },
+      {
+        "label": "Raw YAML catalog",
+        "url": "https://github.com/pjlsergeant/ai-sandboxes/blob/main/ai-sandboxes.yaml"
+      }
+    ],
+    "firstSeen": "2026-07-20T06:06:03-07:00",
+    "lastReviewed": "2026-07-20T06:06:03-07:00"
+  },
+  {
     "priority": "Watch",
     "aluma": "Indirect fit for Aluma automation work: useful as a guardrail if lead-gen or project-status agents start using third-party MCP tools or generated dependencies.",
     "next": "Try it against a non-sensitive repo and one local MCP/tool config; treat findings as review inputs, not automatic blockers, until false-positive rate and CI fit are understood.",
@@ -257,6 +280,25 @@
     ],
     "firstSeen": "2026-07-11T06:04:09-07:00",
     "lastReviewed": "2026-07-11T06:04:09-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful governance layer for Aluma lead-gen and project-tracker agents: scrape/research/classify automatically, then request approval before CRM/sheet updates or outreach.",
+    "next": "Prototype with a non-production task queue first. Require role permissions, audit logs, and explicit human approval gates before connecting to Trello, Sheets, email, customer messages, or order systems.",
+    "name": "AgentRQ",
+    "category": "AI agent task orchestration / human approval",
+    "summary": "Open-source human-in-the-loop task manager for AI agents. Agents can pull tasks, update status, and request approvals through an MCP-aware workflow instead of running business actions with no operator checkpoint.",
+    "drprepper": "Strong fit for PrepShip, DR Prepper ops, and internal automation where agents need to handle queues, invoices, customer follow-up, or developer tasks but must stop for approval before writes/messages/production-impacting actions.",
+    "toolUrl": "https://github.com/agentrq/agentrq",
+    "postUrl": "https://news.ycombinator.com/item?id=48976998",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/agentrq/agentrq"
+      }
+    ],
+    "firstSeen": "2026-07-20T06:06:03-07:00",
+    "lastReviewed": "2026-07-20T06:06:03-07:00"
   },
   {
     "priority": "Medium",
@@ -2193,6 +2235,25 @@
     ],
     "firstSeen": "2026-07-15T06:04:53-07:00",
     "lastReviewed": "2026-07-15T06:04:53-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Possible fit for proposal, billing, and AR follow-up once Aluma lead/project data is structured, but only after verifying source-of-truth integrations and approval controls.",
+    "next": "Verification needed: identify the official product site/pricing from Product Hunt, then test only on sample/non-sensitive invoice workflows. Require grounded source reads and human approval before any customer/vendor communication.",
+    "name": "Rex",
+    "category": "Order-to-cash automation / back-office agents",
+    "summary": "Product Hunt-launched AI-agent product described as running order-to-cash operations: invoices, collections, payment follow-up, and related back-office handoffs. Only the Product Hunt feed was accessible, so vendor/pricing details still need verification.",
+    "drprepper": "Direct workflow fit for wholesale invoice follow-up, 3PL billing exceptions, and customer payment/status handoffs if it can ground actions in real order/invoice data and keep sends approval-gated.",
+    "toolUrl": "https://www.producthunt.com/products/rex-7",
+    "postUrl": "https://www.producthunt.com/products/rex-7",
+    "extraLinks": [
+      {
+        "label": "Product Hunt feed source",
+        "url": "https://www.producthunt.com/feed"
+      }
+    ],
+    "firstSeen": "2026-07-20T06:06:03-07:00",
+    "lastReviewed": "2026-07-20T06:06:03-07:00"
   },
   {
     "priority": "Medium",
