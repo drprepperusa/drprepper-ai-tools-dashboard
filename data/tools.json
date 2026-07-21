@@ -89,6 +89,58 @@
     "lastReviewed": "2026-06-22T14:22:38-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Indirect fit only: useful as a model for benchmark-based sales sheets when Aluma packages rental/service pricing against local competitors.",
+    "next": "Use the ranges as reference points, not a rate card. Validate DR Prepper's own cost/margin assumptions, then create a buyer-facing comparison sheet for 100–500 monthly DTC orders and 5–20 SKU brands.",
+    "name": "Fulfill.com 3PL pricing benchmark",
+    "category": "3PL pricing / sales positioning",
+    "summary": "Fulfill.com's 2026 benchmark describes common ecommerce 3PL pricing ranges, including roughly $2–$3 B2C pick/pack, $18–$25 pallet/month storage, and an average monthly minimum around $517 for brands shopping 3PLs.",
+    "drprepper": "Strong pricing-positioning input for DR Prepper's 100–500 order/month challenger lane; it helps compare low-minimum service against marketplace/FBA/self-fulfillment alternatives.",
+    "toolUrl": "https://www.fulfill.com/3pl-pricing",
+    "postUrl": "https://www.fulfill.com/3pl-pricing",
+    "firstSeen": "2026-07-21T06:07:22-07:00",
+    "lastReviewed": "2026-07-21T06:07:22-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Checklist structure can be adapted for Aluma project intake software reviews, but it is mainly a DR Prepper sales-enablement source.",
+    "next": "Turn the guide into a one-page qualification script: ask Shopify prospects about split shipments, routing, returns, reporting, onboarding, and peak-season failure points before pitching services.",
+    "name": "Shopify fulfillment-software checklist",
+    "category": "3PL sales enablement / merchant ops checklist",
+    "summary": "Shopify's 2026 fulfillment-software guide frames buyer questions around split shipments, configurable routing, returns sync, peak-volume handling, reporting, and onboarding support.",
+    "drprepper": "Useful as a consultative discovery checklist when selling DR Prepper to Shopify brands whose current warehouse/app stack is messy before peak season.",
+    "toolUrl": "https://www.shopify.com/blog/ecommerce-fulfillment-software",
+    "postUrl": "https://www.shopify.com/blog/ecommerce-fulfillment-software",
+    "firstSeen": "2026-07-21T06:07:22-07:00",
+    "lastReviewed": "2026-07-21T06:07:22-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "No direct Aluma operations fit, but the same deadline-driven outreach pattern can be reused for construction/rental compliance or bid-timing lead lists.",
+    "next": "Create an SFP-focused prospect lane: Amazon/Shopify sellers with standard-size products, self-fulfilled or mixed FBA/SFP operations, and Q4 risk from the 40%/75% speed thresholds.",
+    "name": "Amazon Seller Fulfilled Prime speed-rule signal",
+    "category": "3PL sales signal / Amazon logistics",
+    "summary": "PPC Land reported Amazon's July 2026 Seller Fulfilled Prime update requires standard-size offers to show one-day delivery on 40% of Prime page views and two-day delivery on 75%, with more zip-code promise tooling coming in September.",
+    "drprepper": "Direct DR Prepper lead signal: target sellers that want Prime-speed coverage without moving all inventory to FBA and need a Gardena/SoCal fulfillment partner for cutoff, weekend, and carrier-performance proof.",
+    "toolUrl": "https://ppc.land/amazon-tightens-seller-fulfilled-prime-speed-rules-starting-july-6/",
+    "postUrl": "https://ppc.land/amazon-tightens-seller-fulfilled-prime-speed-rules-starting-july-6/",
+    "firstSeen": "2026-06-14T06:03:02-07:00",
+    "lastReviewed": "2026-07-21T06:07:22-07:00"
+  },
+  {
+    "priority": "Lead",
+    "aluma": "No direct Aluma fit beyond monitoring platform-managed-service models for lead-gen lessons and channel-risk framing.",
+    "next": "Build a small outreach list of TikTok Shop sellers that still need local fulfillment control, sample handling, returns, or overflow support before platform-managed programs absorb the relationship.",
+    "name": "TikTok Shop managed-services pilot signal",
+    "category": "3PL sales signal / marketplace operations",
+    "summary": "Business Insider reported TikTok Shop is testing a U.S. managed-services pilot that can handle creator hiring, ads, content, listings, and samples for sellers for a flat fee plus commission.",
+    "drprepper": "Useful sales angle for TikTok-first brands: DR Prepper can position itself as the independent fulfillment-control layer so merchants do not hand both demand generation and operational execution to the marketplace.",
+    "toolUrl": "https://www.businessinsider.com/tiktok-shop-is-testing-a-managed-services-business-in-us-2026-7",
+    "postUrl": "https://www.businessinsider.com/tiktok-shop-is-testing-a-managed-services-business-in-us-2026-7",
+    "firstSeen": "2026-07-21T06:07:22-07:00",
+    "lastReviewed": "2026-07-21T06:07:22-07:00"
+  },
+  {
     "priority": "Watch",
     "aluma": "Could support Aluma lead/project dashboards and follow-up queues if data permissions, source-of-truth ownership, and action approvals are tightly controlled.",
     "next": "Do not buy at $1,000/month without a defined dashboard/action use case. First prototype the same reporting questions with existing Sheets/Postgres/dashboard data and require human approval for any write/action workflow.",
@@ -198,6 +250,25 @@
     ],
     "firstSeen": "2026-07-13T06:04:37-07:00",
     "lastReviewed": "2026-07-13T06:04:37-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful for Aluma lead-gen and project-tracker agents so scraping/classification can run automatically while CRM updates, outreach, and spend-bearing actions stay approval-gated.",
+    "next": "Pilot on a non-production Hermes/Codex workflow first. Require audit logs, per-tool policies, budget caps, and human approval before connecting to order systems, messages, production DBs, or outreach.",
+    "name": "SteerPlane",
+    "category": "AI agent guardrails / runtime controls",
+    "summary": "Open-source runtime guardrail layer for AI agents, including cost limits, loop detection, kill switches, tool-policy rules, approvals, and monitoring before agents can run uncontrolled workflows.",
+    "drprepper": "Strong fit for PrepShip, DR Prepper ops, and dashboard/cron automation where agents touch orders, customer messages, Trello, GitHub, or billing-adjacent systems and need hard stops before risky actions.",
+    "toolUrl": "https://github.com/vijaym2k6/SteerPlane",
+    "postUrl": "https://news.ycombinator.com/item?id=48988992",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://www.steerplane.com/"
+      }
+    ],
+    "firstSeen": "2026-07-21T06:07:22-07:00",
+    "lastReviewed": "2026-07-21T06:07:22-07:00"
   },
   {
     "priority": "Medium",
@@ -1505,6 +1576,19 @@
   },
   {
     "priority": "High",
+    "aluma": "Can help keep Aluma CRM/project dashboards responsive as lead, contractor, permit, and project records grow, especially if query tuning is handled from real workload evidence.",
+    "next": "Run against a staging or read-only replica first. Treat recommendations as review items, not automatic migrations; require developer review before applying indexes or query rewrites.",
+    "name": "DeepSQL",
+    "category": "Database operations / AI DBA",
+    "summary": "Self-hostable AI DBA for Postgres and MySQL that monitors workloads, finds slow queries, recommends indexes/materialized views, and exposes CLI, Slack, MCP, and web UI workflows.",
+    "drprepper": "Direct fit for PrepShip/client-portal performance work: use it to surface slow order, billing, dashboard, and sync queries before they become operator-facing timeouts or expensive manual debugging.",
+    "toolUrl": "https://deepsql.ai/",
+    "postUrl": "https://news.ycombinator.com/item?id=48980286",
+    "firstSeen": "2026-07-21T06:07:22-07:00",
+    "lastReviewed": "2026-07-21T06:07:22-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Design-polish and accessibility skills can improve Aluma proposal/lead-gen pages; testing tools are useful if those surfaces become maintained applications rather than one-off mockups.",
     "next": "Do not install all ten blindly. Prioritize fixing-accessibility, vercel-react-best-practices, react-doctor, vitest, and playwright-cli for production QA; add make-interfaces-feel-better and animation guidance when polishing the DR Prepper landing page.",
     "name": "Dhruv — 10 standout UI Skills shortlist",
@@ -2045,6 +2129,29 @@
     "lastReviewed": "2026-07-09T06:04:14-07:00"
   },
   {
+    "priority": "Lead",
+    "aluma": "Same local-event monitoring pattern can identify property, construction, and commercial-service gatherings for Aluma prospecting if the event taxonomy is adjusted.",
+    "next": "Build a weekly 25-account list from upcoming LA ecommerce/pop-up/fashion events, enrich vendors through Instagram/Shopify signals, and prioritize brands shipping 100–500 DTC orders/month.",
+    "name": "Eventbrite LA ecommerce and pop-up lead pages",
+    "category": "Local lead-source signal / 3PL sales",
+    "summary": "Eventbrite Los Angeles ecommerce, pop-up-shop, and fashion-pop-up pages surface operator-heavy events where local brands, vendors, and DTC sellers can be found before they need fulfillment help.",
+    "drprepper": "Practical local lead source for DR Prepper: scrape or manually review LA/OC ecommerce, fashion, beauty, wellness, toy, and home-goods event vendors that may need Gardena-based storage, kitting, shipping, or overflow support.",
+    "toolUrl": "https://www.eventbrite.com/d/ca--los-angeles/ecommerce/",
+    "postUrl": "https://www.eventbrite.com/d/ca--los-angeles/ecommerce/",
+    "extraLinks": [
+      {
+        "label": "LA pop-up shop events",
+        "url": "https://www.eventbrite.com/d/ca--los-angeles/pop-up-shop/"
+      },
+      {
+        "label": "LA fashion pop-up events",
+        "url": "https://www.eventbrite.com/d/ca--los-angeles/fashion-pop-up/"
+      }
+    ],
+    "firstSeen": "2026-07-21T06:07:22-07:00",
+    "lastReviewed": "2026-07-21T06:07:22-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Relevant if Aluma lead-gen or project-intel agents gain write access to CRMs, sheets, email, or outreach systems; tool verification should come before automated external actions.",
     "next": "Use as a due-diligence layer for any new MCP/server that can read sensitive files or mutate orders, ads, CRMs, or messages. Verify pricing/site details and keep human approval gates for writes even after a server passes.",
@@ -2113,19 +2220,6 @@
     "postUrl": "https://sell.amazon.com/blog/how-to-boost-amazon-listings",
     "firstSeen": "2026-06-24T06:05:48-07:00",
     "lastReviewed": "2026-06-24T06:05:48-07:00"
-  },
-  {
-    "priority": "Lead",
-    "aluma": "No direct fit; useful only as an example of policy-change monitoring for sales timing.",
-    "next": "Build a short prospect list of SoCal Amazon sellers advertising Prime/SFP or multichannel fulfillment before the July deadline.",
-    "name": "Seller-Fulfilled Prime speed rules — July 2026 signal",
-    "category": "Marketplace policy / fulfillment lead signal",
-    "summary": "Amazon is raising Seller-Fulfilled Prime delivery-speed thresholds starting July 6, 2026 and adding zip-code-level delivery promises later in the year.",
-    "drprepper": "Outreach trigger for Prime/SFP sellers: offer overflow storage, SLA-safe shipping, FBA prep, FBM backup, and human escalation before delivery metrics slip.",
-    "toolUrl": "https://ppc.land/amazon-tightens-seller-fulfilled-prime-speed-rules-starting-july-6/",
-    "postUrl": "https://ppc.land/amazon-tightens-seller-fulfilled-prime-speed-rules-starting-july-6/",
-    "firstSeen": "2026-06-14T06:03:02-07:00",
-    "lastReviewed": "2026-06-14T06:03:02-07:00"
   },
   {
     "priority": "Lead",
@@ -2571,6 +2665,29 @@
     "postUrl": "https://shipp.to/",
     "firstSeen": "2026-06-24T06:05:48-07:00",
     "lastReviewed": "2026-06-24T06:05:48-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could pre-qualify contractor/property-manager leads or follow up on project information, but only after a narrow script, consent rules, and no-spam outreach policy are defined.",
+    "next": "Verify compliance, call recording/consent, number reputation, and handoff behavior before any live use. Test only on internal/sample numbers and require human review before outbound campaigns.",
+    "name": "Bolna Agent Studio",
+    "category": "Voice AI agents / call automation",
+    "summary": "Voice-agent studio for building inbound/outbound AI call agents, with Product Hunt launch positioning around creating a voice AI agent quickly and vendor pricing pages showing free credits plus usage-based plans.",
+    "drprepper": "Potential fit for low-risk call workflows such as lead qualification, appointment reminders, vendor chasing, and post-delivery follow-up, as long as customer calls stay logged and approval-gated.",
+    "toolUrl": "https://www.bolna.ai/",
+    "postUrl": "https://www.producthunt.com/products/bolna-2",
+    "extraLinks": [
+      {
+        "label": "Pricing",
+        "url": "https://www.bolna.ai/pricing"
+      },
+      {
+        "label": "Product Hunt feed source",
+        "url": "https://www.producthunt.com/feed?category=artificial-intelligence"
+      }
+    ],
+    "firstSeen": "2026-07-21T06:07:22-07:00",
+    "lastReviewed": "2026-07-21T06:07:22-07:00"
   },
   {
     "priority": "Medium",
