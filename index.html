@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 21, 2026 · 6:07 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 22, 2026 · 6:04 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">147</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">135</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">56</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">150</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">138</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">57</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -410,6 +410,25 @@
             "postUrl": "https://ppc.land/amazon-tightens-seller-fulfilled-prime-speed-rules-starting-july-6/",
             "firstSeen": "2026-06-14T06:03:02-07:00",
             "lastReviewed": "2026-07-21T06:07:22-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Potential fit for contractor/developer lead follow-up and bid-stage reminders if sources, contacts, and outreach approvals are controlled by Aluma's sales process rather than left to autonomous sending.",
+            "next": "Pilot one narrow workflow: enrich 25 public 3PL or DJR prospects, draft follow-ups, and log suggested tasks. Do not connect live mailboxes or auto-send outreach until consent/compliance rules, CRM field ownership, and human review gates are documented.",
+            "name": "Clarify + Seam AI",
+            "category": "AI CRM / sales operations",
+            "summary": "Clarify is an autonomous CRM for founder-led revenue teams with prospecting, enrichment, meeting prep, follow-ups, deal intelligence, and AI sales-agent workflows; GeekWire reported Clarify acquired Seam AI to add stronger sales signals. Official pricing shows a free 1k-credit plan and Starter at $50/month with 5k credits.",
+            "drprepper": "Strong fit for DR Prepper, DJR, and KF Goodies sales motions where the goal is qualified prospecting, meeting prep, follow-up drafts, and task creation without manually maintaining every CRM field.",
+            "toolUrl": "https://www.clarify.ai/",
+            "postUrl": "https://www.geekwire.com/2026/seattles-clarify-acquires-s-f-startup-seam-ai-joining-forces-to-challenge-crm-stalwarts/",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://www.clarify.ai/pricing"
+                  }
+            ],
+            "firstSeen": "2026-07-22T06:04:37-07:00",
+            "lastReviewed": "2026-07-22T06:04:37-07:00"
       },
       {
             "priority": "High",
@@ -1910,6 +1929,19 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could centralize public project-research rules, bid-screening criteria, and contractor-outreach lessons for Aluma agents, but sensitive prospect/customer details need privacy review first.",
+            "next": "Test with non-sensitive SOPs only, verify MCP auth, retention, export/delete controls, and team access boundaries, and avoid storing credentials, customer data, pricing secrets, or private order details until privacy terms are reviewed.",
+            "name": "memsprout",
+            "category": "AI team memory / MCP context",
+            "summary": "Shared AI-context layer for teams that exposes Spaces, Topics, and Memories through MCP so Claude Code, Cursor, GitHub Copilot, ChatGPT, and other MCP clients can reuse the same operational context instead of relearning it in every session.",
+            "drprepper": "Relevant for preserving PrepShip, Client Portal, dashboard, and fulfillment SOP context across multiple coding and operations agents without pasting the same rules into every chat.",
+            "toolUrl": "https://memsprout.com",
+            "postUrl": "https://news.ycombinator.com/item?id=49000003",
+            "firstSeen": "2026-07-22T06:04:37-07:00",
+            "lastReviewed": "2026-07-22T06:04:37-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Could package Aluma lead-gen, scraping, verification, and project-status update procedures for repeatable handoff across operators and agents.",
             "next": "Test only with non-sensitive demo skills first; confirm Dropbox permissions, private-data boundaries, and repo-vs-Dropbox source-of-truth rules before using it for real DR Prepper or Aluma workflows.",
             "name": "sx 2.0 skill server",
@@ -3099,6 +3131,25 @@
             "postUrl": "https://shipp.to/",
             "firstSeen": "2026-06-24T06:05:48-07:00",
             "lastReviewed": "2026-06-24T06:05:48-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Could assist with public contractor/project research and local document organization, but only inside a fenced local test with no CRM/customer writes until approval gates and audit logs are proven.",
+            "next": "Clone only in a disposable local sandbox, use non-sensitive sample data, require bring-your-own model/API-key controls, and verify every outbound action remains click-to-approve before connecting email, GitHub, Trello, CRM, or order tools.",
+            "name": "Ami by NanoNets",
+            "category": "local AI agent / personal automation",
+            "summary": "Open-source local AI clone/agent harness from NanoNets that connects to apps, files, repos, tools, memory, and to-dos so it can perform routine work with user approval. GitHub API verification shows MIT license and a fresh July 22, 2026 repository description.",
+            "drprepper": "Useful as a cautious sandbox candidate for internal busy-work automation such as SOP lookup, local file organization, lead-research prep, or dashboard maintenance experiments before allowing any agent near customer messages, order systems, billing, or production tools.",
+            "toolUrl": "https://github.com/NanoNets/ami",
+            "postUrl": "https://news.ycombinator.com/item?id=49002822",
+            "extraLinks": [
+                  {
+                        "label": "GitHub repo",
+                        "url": "https://github.com/NanoNets/ami"
+                  }
+            ],
+            "firstSeen": "2026-07-22T06:04:37-07:00",
+            "lastReviewed": "2026-07-22T06:04:37-07:00"
       }
 ];
 
