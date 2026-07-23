@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 22, 2026 · 6:04 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 23, 2026 · 6:08 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">150</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">138</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">57</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">153</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">141</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">58</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -1449,6 +1449,29 @@
             ],
             "firstSeen": "2026-07-06T06:03:36-07:00",
             "lastReviewed": "2026-07-06T06:03:36-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Could help manage contractor/vendor email threads, quote follow-ups, and CRM updates from jobsite leads, but only after testing privacy, channel permissions, and human-review flows.",
+            "next": "Trial with a non-sensitive inbox or sample email set first. Map one workflow from inbound prospect email to CRM update plus drafted follow-up; require human approval before any send, CRM write, or customer/order action.",
+            "name": "Housecat",
+            "category": "email ops / CRM workflow automation",
+            "summary": "AI inbox workspace that connects email to CRM updates, attachment/document handling, Slack/SMS/LinkedIn, and background workflows in a hosted sandbox rather than just drafting replies.",
+            "drprepper": "Strong fit for sales follow-up, prospect replies, attachment capture, and CRM cleanup from inbox traffic, as long as customer messages and order-affecting actions stay approval-gated.",
+            "toolUrl": "https://housecat.com/",
+            "postUrl": "https://news.ycombinator.com/item?id=49006149",
+            "extraLinks": [
+                  {
+                        "label": "Official site",
+                        "url": "https://housecat.com/"
+                  },
+                  {
+                        "label": "HN Algolia source metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49006149"
+                  }
+            ],
+            "firstSeen": "2026-07-23T06:08:29-07:00",
+            "lastReviewed": "2026-07-23T06:08:29-07:00"
       },
       {
             "priority": "Lead",
@@ -2786,6 +2809,29 @@
             "lastReviewed": "2026-07-17T06:04:24-07:00"
       },
       {
+            "priority": "Medium",
+            "aluma": "Could support Aluma estimator/operator SOPs and customer-facing process notes, especially if project intake, rental, or installation docs change often.",
+            "next": "Test against a small non-sensitive docs folder or demo knowledge base. Verify source-control integration, approval workflow, export options, and permissions before pointing it at internal SOPs.",
+            "name": "DocCharm",
+            "category": "knowledge base / SOP maintenance",
+            "summary": "Self-updating help-center tool that watches product or process changes and drafts new, refreshed, or retired help articles for a person to review and approve.",
+            "drprepper": "Useful pattern for keeping PrepShip/client-portal FAQs, warehouse SOPs, onboarding docs, and customer-facing process notes aligned with changing operations without publishing blindly.",
+            "toolUrl": "https://doccharm.com/",
+            "postUrl": "https://news.ycombinator.com/item?id=48995507",
+            "extraLinks": [
+                  {
+                        "label": "Official site",
+                        "url": "https://doccharm.com/"
+                  },
+                  {
+                        "label": "HN Algolia source metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/48995507"
+                  }
+            ],
+            "firstSeen": "2026-07-23T06:08:29-07:00",
+            "lastReviewed": "2026-07-23T06:08:29-07:00"
+      },
+      {
             "priority": "Watch",
             "aluma": "Could support Aluma lead/project dashboards and follow-up queues if data permissions, source-of-truth ownership, and action approvals are tightly controlled.",
             "next": "Do not buy at $1,000/month without a defined dashboard/action use case. First prototype the same reporting questions with existing Sheets/Postgres/dashboard data and require human approval for any write/action workflow.",
@@ -2973,6 +3019,25 @@
             "next": "Use as visual reference if we prototype an animated DR Prepper hero.",
             "toolUrl": "https://x.com/viktoroddy/status/2062918204452663767",
             "postUrl": "https://x.com/viktoroddy/status/2062918204452663767"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Similar signal for contractor/customer quote intake: text-first guided ordering or quote requests could reduce friction, but real pricing/availability still needs approval and source-of-truth controls.",
+            "next": "Use as a benchmark, not an adoption decision. Sketch a lightweight approved reorder/quote-intake flow for DR Prepper/DJR/KF Goodies before considering enterprise commerce tooling; keep all order creation and pricing changes behind human approval.",
+            "name": "Salesforce B2B Commerce AI Buying Agent signal",
+            "category": "B2B commerce / AI ordering signal",
+            "summary": "MarketScale coverage of Salesforce pushing B2B Commerce toward an AI-powered buying agent over WhatsApp/SMS, intent-driven AI search, headless APIs, and assisted quote-to-cart flows.",
+            "drprepper": "Important buyer-experience signal for wholesale and recurring reorder workflows: customers may increasingly expect text-message ordering, guided replenishment, and quote-to-cart help, even if Salesforce itself is too heavy for current ops.",
+            "toolUrl": "https://www.salesforce.com/products/commerce-cloud/b2b-commerce/",
+            "postUrl": "https://www.marketscale.com/industries/marketing-tech/salesforces-new-b2b-commerce-suite-puts-an-ai-buying-agent-on-whatsapp-and-sms",
+            "extraLinks": [
+                  {
+                        "label": "Salesforce B2B Commerce platform",
+                        "url": "https://www.salesforce.com/products/commerce-cloud/b2b-commerce/"
+                  }
+            ],
+            "firstSeen": "2026-07-23T06:08:29-07:00",
+            "lastReviewed": "2026-07-23T06:08:29-07:00"
       },
       {
             "priority": "Watch",
