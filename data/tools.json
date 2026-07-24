@@ -745,6 +745,29 @@
     "lastReviewed": "2026-07-06T06:03:36-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Useful for contractor lead tracking, project pipelines, bid/status dashboards, and repeatable estimator/vendor research workflows if ownership and permissions are kept clear.",
+    "next": "Sandbox with non-sensitive lead/vendor data first. Compare against Airtable/Sheets for import/export, permissions, self-host/cloud tradeoffs, and whether AI-generated workflows stay reviewable before using it for customer, pricing, or order truth.",
+    "name": "Teable 3.0",
+    "category": "AI spreadsheet / operations database",
+    "summary": "AI spreadsheet for business that combines spreadsheet-style data work with app/workflow building. Verified official site describes turning business data into AI workflows and custom apps; GitHub repo describes it as an AI Spreadsheet for Business.",
+    "drprepper": "Strong fit for prospect lists, vendor trackers, 3PL ops dashboards, lightweight inventory/order review sheets, and internal admin workflows that need more structure than plain Google Sheets but less overhead than a custom app.",
+    "toolUrl": "https://teable.io/",
+    "postUrl": "https://www.producthunt.com/products/teable-4",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/teableio/teable"
+      },
+      {
+        "label": "Product Hunt source",
+        "url": "https://www.producthunt.com/products/teable-4"
+      }
+    ],
+    "firstSeen": "2026-07-24T06:08:02-07:00",
+    "lastReviewed": "2026-07-24T06:08:02-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could centralize public project-research rules, bid-screening criteria, and contractor-outreach lessons for Aluma agents, but sensitive prospect/customer details need privacy review first.",
     "next": "Test with non-sensitive SOPs only, verify MCP auth, retention, export/delete controls, and team access boundaries, and avoid storing credentials, customer data, pricing secrets, or private order details until privacy terms are reviewed.",
@@ -1377,6 +1400,37 @@
     ],
     "firstSeen": "2026-07-07T06:05:46-07:00",
     "lastReviewed": "2026-07-07T06:05:46-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could support future estimator/vendor messaging consoles or lead-reply dashboards if messaging channels are backend-owned and sends stay approval-gated.",
+    "next": "Prototype only the UI shell first. Keep Apple Business Messages/SMS/email transport, consent, audit logs, and send permissions in backend-owned services; never let the component library become the messaging source of truth.",
+    "name": "Chatscope Chat UI Kit React",
+    "category": "CRM chat UI / React component kit",
+    "summary": "MIT-licensed open-source React chat UI component kit for building web chat interfaces. GitHub API verification describes it as an open-source UI toolkit for developing web chat applications.",
+    "drprepper": "Useful starting point for the DJR/DR Prepper CRM inbox concept: channel-aware message panes, thread lists, and operator reply UI without pretending to be an official Apple iMessage web component.",
+    "toolUrl": "https://github.com/chatscope/chat-ui-kit-react",
+    "postUrl": "https://github.com/chatscope/chat-ui-kit-react",
+    "extraLinks": [
+      {
+        "label": "Apple Business Register",
+        "url": "https://register.apple.com/messages-business/"
+      },
+      {
+        "label": "React chat elements alternative",
+        "url": "https://github.com/Detaysoft/react-chat-elements"
+      },
+      {
+        "label": "Sendbird UIKit alternative",
+        "url": "https://github.com/sendbird/sendbird-uikit-react"
+      },
+      {
+        "label": "Stream Chat React alternative",
+        "url": "https://github.com/GetStream/stream-chat-react"
+      }
+    ],
+    "firstSeen": "2026-07-24T06:08:02-07:00",
+    "lastReviewed": "2026-07-24T06:08:02-07:00"
   },
   {
     "priority": "Medium",
@@ -2606,6 +2660,25 @@
     "lastReviewed": "2026-07-18T06:04:50-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Could help monitor local construction/company search results and AI/search-answer visibility around contractor or project targets, but it needs verification before operational use.",
+    "next": "Verification needed: test the official site/API docs, pricing, terms, retention, and output quality on public-only queries before using it in any recurring lead-gen or market-watch cron.",
+    "name": "Cloro",
+    "category": "SERP / AI web-scraping API",
+    "summary": "HN-launched API for extracting structured data from Google Search, Google News, AI Overviews, ChatGPT, Perplexity, Grok, Gemini, and Copilot. The HN post advertises a recurring free tier with 500 monthly credits.",
+    "drprepper": "Potential low-cost source layer for 3PL lead scraping, weekly market-watch automations, Amazon/search visibility checks, and AI-answer monitoring if the API proves reliable and compliant.",
+    "toolUrl": "https://cloro.dev/",
+    "postUrl": "https://news.ycombinator.com/item?id=49031260",
+    "extraLinks": [
+      {
+        "label": "HN Algolia source metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49031260"
+      }
+    ],
+    "firstSeen": "2026-07-24T06:08:02-07:00",
+    "lastReviewed": "2026-07-24T06:08:02-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could be tested as a project-intel and contractor outreach workspace for accounts, contacts, proposal notes, follow-up tasks, and internal sales collaboration.",
     "next": "Trial only with a small sandbox prospect list; verify export, email/calendar permissions, integrations, and no-auto-send review rules before moving any live CRM workflow.",
@@ -2851,6 +2924,25 @@
   },
   {
     "priority": "Watch",
+    "aluma": "Could help map project docs, contractor research folders, permit notes, and estimate artifacts into reusable knowledge, if a real tool URL and privacy model are verified.",
+    "next": "Verification needed: identify the official Graphify product/repo, check local vs hosted processing, image/PDF handling, export format, and privacy terms before putting any business or customer documents into it.",
+    "name": "Graphify knowledge-graph vault signal",
+    "category": "knowledge graph / code and document Q&A",
+    "summary": "Instagram-surfaced tool claim for turning folders into a navigable knowledge graph: Obsidian-style backlinked articles, concept clusters, and plain-English Q&A across code, PDFs, images, and Markdown. Actual product homepage/repo was not verified in this run.",
+    "drprepper": "Relevant as a pattern for making PrepShip/client-portal code, SOP folders, vendor docs, PDFs, and dashboard notes easier to query without stuffing raw files into an LLM context window.",
+    "toolUrl": "https://www.instagram.com/p/DbJGRmYFXmx/",
+    "postUrl": "https://www.instagram.com/p/DbJGRmYFXmx/",
+    "extraLinks": [
+      {
+        "label": "Instagram source post",
+        "url": "https://www.instagram.com/p/DbJGRmYFXmx/"
+      }
+    ],
+    "firstSeen": "2026-07-24T06:08:02-07:00",
+    "lastReviewed": "2026-07-24T06:08:02-07:00"
+  },
+  {
+    "priority": "Watch",
     "aluma": "Could assist with public contractor/project research and local document organization, but only inside a fenced local test with no CRM/customer writes until approval gates and audit logs are proven.",
     "next": "Clone only in a disposable local sandbox, use non-sensitive sample data, require bring-your-own model/API-key controls, and verify every outbound action remains click-to-approve before connecting email, GitHub, Trello, CRM, or order tools.",
     "name": "Ami by NanoNets",
@@ -2867,5 +2959,28 @@
     ],
     "firstSeen": "2026-07-22T06:04:37-07:00",
     "lastReviewed": "2026-07-22T06:04:37-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Can support contractor/company enrichment, public project discovery, permit/news scanning, and source-backed outreach lists when rate limits, source quality, and anti-spam rules are enforced.",
+    "next": "Run a small benchmark against current no-agent scrapers on public-only targets. Measure cost, token savings, extraction quality, robots/compliance constraints, and require review before any outreach or CRM writes.",
+    "name": "Firecrawl /search",
+    "category": "web search / scraping API",
+    "summary": "Firecrawl's Product Hunt launch for a more token-efficient /search endpoint, with GitHub API verification of the open-source Firecrawl repo as a web search, scrape, and interaction API.",
+    "drprepper": "High-fit infrastructure for sales prospecting, supplier research, Amazon competitor scans, carrier/policy monitoring, and dashboard sourcing where agents need structured public web data instead of manually browsing pages.",
+    "toolUrl": "https://github.com/firecrawl/firecrawl",
+    "postUrl": "https://www.producthunt.com/products/extract-by-firecrawl",
+    "extraLinks": [
+      {
+        "label": "Product Hunt source",
+        "url": "https://www.producthunt.com/products/extract-by-firecrawl"
+      },
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/firecrawl/firecrawl"
+      }
+    ],
+    "firstSeen": "2026-07-24T06:08:02-07:00",
+    "lastReviewed": "2026-07-24T06:08:02-07:00"
   }
 ]
