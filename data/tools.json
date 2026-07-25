@@ -2854,6 +2854,25 @@
     "lastReviewed": "2026-07-18T06:04:50-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Could be useful for routing lead-research or project-intake agents through one controlled API, but only after terms, logging, and data-boundary behavior are clear.",
+    "next": "Verification needed: confirm the official tool/docs, pricing, supported agent providers, data retention, rate limits, and approval/audit controls before evaluating it for any customer-facing or write-capable workflow.",
+    "name": "HarnessRouter",
+    "category": "agent API / orchestration router",
+    "summary": "Product Hunt launch under Epsilla for bringing multiple AI agents into an app through one API. The feed verified the source claim, but direct product docs/pricing were not verified in this run.",
+    "drprepper": "Potentially relevant if internal apps need a single governed backend layer for agent calls across quote support, lead research, support drafting, or dashboard workflows, instead of letting frontends call providers directly.",
+    "toolUrl": "https://www.producthunt.com/products/epsilla",
+    "postUrl": "https://www.producthunt.com/products/epsilla",
+    "extraLinks": [
+      {
+        "label": "Product Hunt redirect/source id",
+        "url": "https://www.producthunt.com/r/p/1203163?app_id=339"
+      }
+    ],
+    "firstSeen": "2026-07-25T06:13:25-07:00",
+    "lastReviewed": "2026-07-25T06:13:25-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could organize Aluma contractor/project research, rental playbooks, proposal references, and lead-source notes for retrieval by sales or research agents.",
     "next": "Trial only with non-sensitive SOPs and public/vendor docs first. Verify privacy, retention, workspace isolation, MCP permissions, and export/delete controls before storing client data, pricing contracts, or customer/order details.",
@@ -2875,6 +2894,25 @@
     ],
     "firstSeen": "2026-07-17T06:04:24-07:00",
     "lastReviewed": "2026-07-17T06:04:24-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Could help coordinate small internal automation builds for Aluma lead tracking or project dashboards, but only with private-repo and credential boundaries proven first.",
+    "next": "Verification needed: identify the official homepage/repo/docs, confirm how it stores code/context, check provider-key handling, and require branch/PR review gates before connecting business repositories.",
+    "name": "ADE — Agentic Development Environment",
+    "category": "coding agent workspace",
+    "summary": "Product Hunt launch for a coding-agent environment pitched as syncing all coding agents everywhere and being free forever. Treat as a tooling signal for multi-agent development, not a verified production dependency yet.",
+    "drprepper": "Relevant to supervising Codex/Claude-style work on the AI Tools dashboard, PrepShip, Client Portal, and DJR tooling if it improves visibility into agent context, branches, and review handoffs.",
+    "toolUrl": "https://www.producthunt.com/products/ade-agentic-development-environment",
+    "postUrl": "https://www.producthunt.com/products/ade-agentic-development-environment",
+    "extraLinks": [
+      {
+        "label": "Product Hunt redirect/source id",
+        "url": "https://www.producthunt.com/r/p/1205327?app_id=339"
+      }
+    ],
+    "firstSeen": "2026-07-25T06:13:25-07:00",
+    "lastReviewed": "2026-07-25T06:13:25-07:00"
   },
   {
     "priority": "High",
@@ -2961,6 +2999,25 @@
     "lastReviewed": "2026-07-22T06:04:37-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Could eventually support contractor/project lead-monitoring agents, but only after source quality, approval gates, and data-retention behavior are verified.",
+    "next": "Verification needed: find the official tool URL, pricing, runtime model, credential/network controls, audit logs, and human-approval options before using it for any DR Prepper, PrepShip, or Aluma workflow.",
+    "name": "OpenComputer",
+    "category": "managed AI agents",
+    "summary": "Product Hunt-surfaced managed-agent product described as the easiest way to deploy a managed agent. The accessible feed verified the launch and claim, but the actual homepage/pricing were not available from this run.",
+    "drprepper": "Relevant as a pattern for future read-only 3PL exception monitors, lead-enrichment workers, vendor/source checks, and dashboard maintenance agents if permissions and logging are mature.",
+    "toolUrl": "https://www.producthunt.com/products/opencomputer",
+    "postUrl": "https://www.producthunt.com/products/opencomputer",
+    "extraLinks": [
+      {
+        "label": "Product Hunt redirect/source id",
+        "url": "https://www.producthunt.com/r/p/1205923?app_id=339"
+      }
+    ],
+    "firstSeen": "2026-07-25T06:13:25-07:00",
+    "lastReviewed": "2026-07-25T06:13:25-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Can support contractor/company enrichment, public project discovery, permit/news scanning, and source-backed outreach lists when rate limits, source quality, and anti-spam rules are enforced.",
     "next": "Run a small benchmark against current no-agent scrapers on public-only targets. Measure cost, token savings, extraction quality, robots/compliance constraints, and require review before any outreach or CRM writes.",
@@ -2982,5 +3039,24 @@
     ],
     "firstSeen": "2026-07-24T06:08:02-07:00",
     "lastReviewed": "2026-07-24T06:08:02-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Could help record estimator, contractor-research, and project-tracking workflows into reusable SOPs for batch lead/project processing if private job/customer screens are excluded or redacted.",
+    "next": "Pilot on non-sensitive workflows only. Verify local storage, retention, recording consent, redaction, export format, and approval gates before using it around customer records, credentials, orders, pricing, or messages.",
+    "name": "Screenpipe",
+    "category": "workflow memory / SOP capture",
+    "summary": "Launch HN tool that records screen and audio locally and gives AI agents searchable context for what an operator has seen, said, and done so repetitive work can be turned into SOPs or automations.",
+    "drprepper": "Strong fit for capturing VA/customer-support, fulfillment exception triage, PrepShip review, and sales-research workflows before automating them. It is useful as an observation/SOP layer, not as an order, pricing, or customer source of truth.",
+    "toolUrl": "https://screenpipe.com",
+    "postUrl": "https://news.ycombinator.com/item?id=49024620",
+    "extraLinks": [
+      {
+        "label": "HN Algolia source metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49024620"
+      }
+    ],
+    "firstSeen": "2026-07-25T06:13:25-07:00",
+    "lastReviewed": "2026-07-25T06:13:25-07:00"
   }
 ]
