@@ -2117,6 +2117,37 @@
     "lastReviewed": "2026-06-19T06:02:49-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could connect project documents, contractors, locations, competitors, contacts, and relationship history for research and opportunity mapping, with provenance back to each source document.",
+    "next": "Treat the $1.2M bonus, +42% productivity, 18% accuracy improvement, 85% cost reduction, zero-duplicate, and zero-hallucination statements as unverified marketing claims. Pilot on a sanitized corpus and measure answer accuracy, provenance, update/delete handling, retrieval cost, and latency against ordinary hybrid RAG. Keep the graph as a derived index—never the source of truth for shipping, billing, inventory, contracts, or accounting.",
+    "name": "Sprytix — 8-step graph-engineering agent pipeline",
+    "category": "GraphRAG / knowledge-agent architecture",
+    "summary": "Infographic workflow for turning documents, code, and Slack into a self-updating knowledge graph: Load → Extract → Graph → Index → Query → Memory → Swarm → Update. The proposed stack combines entity extraction, Neo4j, vector/keyword/graph retrieval, GraphRAG, agent memory, orchestration, and nightly refreshes.",
+    "drprepper": "Potentially useful as a derived knowledge layer across PrepShip code, operating SOPs, requirements, and support history. It could improve multi-hop questions such as which business rule owns a screen, API, test, and client-facing behavior, provided every answer cites canonical source files or records.",
+    "toolUrl": "https://x.com/i/article/2078778799064584535",
+    "postUrl": "https://x.com/Sprytixl/status/2081393802359505153",
+    "extraLinks": [
+      {
+        "label": "Graph-engineering article",
+        "url": "https://x.com/i/article/2078778799064584535"
+      },
+      {
+        "label": "Microsoft GraphRAG",
+        "url": "https://github.com/microsoft/graphrag"
+      },
+      {
+        "label": "Neo4j GraphRAG Python",
+        "url": "https://neo4j.com/labs/genai-ecosystem/graphrag-python/"
+      },
+      {
+        "label": "Source X post",
+        "url": "https://x.com/Sprytixl/status/2081393802359505153"
+      }
+    ],
+    "firstSeen": "2026-07-26T15:37:26-07:00",
+    "lastReviewed": "2026-07-26T15:37:26-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful pattern for Aluma lead/outreach or proposal automations that need human approval and a signed record before sending messages, changing Sheets/CRM records, or committing spend.",
     "next": "Sandbox with a fake refund/order-change workflow only; verify the exact approval payload, logs, Twilio/WhatsApp costs, failure modes, and audit-readback before connecting any real business system.",
