@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 25, 2026 · 6:13 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 26, 2026 · 6:18 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">162</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">150</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">61</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">168</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">155</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">65</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -400,6 +400,19 @@
       },
       {
             "priority": "High",
+            "aluma": "No direct fit, but the deadline-risk framing can inform other compliance/deadline-driven outreach playbooks.",
+            "next": "Build a Q4 list of SoCal sellers with Prime/marketplace exposure and ask whether inbound deadlines, carrier cutoff, retail replenishment, and DTC continuity all rely on the same warehouse plan.",
+            "name": "Amazon 2026 holiday inbound-window signal",
+            "category": "3PL sales signal / Amazon logistics",
+            "summary": "PPC Land reports Amazon kept 2026 holiday seller fees flat, including a $100 upfront fee and roughly $0.32/unit peak rates, but moved inbound shipment deadlines earlier; late stock can lose Prime eligibility.",
+            "drprepper": "Strong Q4 prospecting signal for Shopify/Amazon sellers that need local receiving, overflow storage, prep, and replenishment discipline before earlier inbound deadlines create Prime or stockout risk.",
+            "toolUrl": "https://ppc.land/amazon-freezes-2026-holiday-seller-fees-cuts-inbound-windows-shorter/",
+            "postUrl": "https://ppc.land/amazon-freezes-2026-holiday-seller-fees-cuts-inbound-windows-shorter/",
+            "firstSeen": "2026-07-26T06:17:57-07:00",
+            "lastReviewed": "2026-07-26T06:17:57-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "No direct Aluma operations fit, but the same deadline-driven outreach pattern can be reused for construction/rental compliance or bid-timing lead lists.",
             "next": "Create an SFP-focused prospect lane: Amazon/Shopify sellers with standard-size products, self-fulfilled or mixed FBA/SFP operations, and Q4 risk from the 40%/75% speed thresholds.",
             "name": "Amazon Seller Fulfilled Prime speed-rule signal",
@@ -410,6 +423,19 @@
             "postUrl": "https://ppc.land/amazon-tightens-seller-fulfilled-prime-speed-rules-starting-july-6/",
             "firstSeen": "2026-06-14T06:03:02-07:00",
             "lastReviewed": "2026-07-21T06:07:22-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "No direct Aluma fit beyond the pattern of compliance-triggered operations demand.",
+            "next": "Create a compliance-risk prospect lane for TikTok Shop sellers importing regulated/inspection-prone products; position DR Prepper as overflow, prep, and paperwork-aware fulfillment support while avoiding legal/compliance advice claims.",
+            "name": "TikTok Shop CPSC eFiling seizure-risk signal",
+            "category": "3PL sales signal / marketplace compliance",
+            "summary": "PPC Land reports TikTok Shop's June policy update folds CPSC import-certificate/eFiling compliance into seller operations, with missing paperwork risking shipment delays or seizures.",
+            "drprepper": "Useful outreach angle for TikTok-first import sellers in snacks, toys, beauty, apparel, and home goods: fulfillment control now includes paperwork timing, inventory staging, and platform compliance, not just creator demand.",
+            "toolUrl": "https://ppc.land/tiktok-shop-sellers-face-shipment-seizure-risk-under-new-cpsc-filing-rule/",
+            "postUrl": "https://ppc.land/tiktok-shop-sellers-face-shipment-seizure-risk-under-new-cpsc-filing-rule/",
+            "firstSeen": "2026-07-26T06:17:57-07:00",
+            "lastReviewed": "2026-07-26T06:17:57-07:00"
       },
       {
             "priority": "High",
@@ -455,6 +481,25 @@
       },
       {
             "priority": "High",
+            "aluma": "Useful pattern for Aluma lead/project agents: research can be automated, but CRM/sheet updates, outreach, and project-status changes should be grounded against the current source of truth first.",
+            "next": "Pilot against one non-production agent workflow. Require explicit SOT adapters, denial-before-side-effect behavior, audit logs, and human approval for customer, money, inventory, or outreach mutations.",
+            "name": "ActionRail by ToolJet",
+            "category": "AI agent action grounding / SOT verification",
+            "summary": "Open-source runtime action-grounding framework for AI agents. The GitHub repo describes verifying proposed actions against live systems of record before execution.",
+            "drprepper": "Strong fit for PrepShip, client portal, DR Prepper ops, and internal agents where proposed refunds, labels, inventory updates, CRM writes, or customer messages need a deterministic check before anything changes.",
+            "toolUrl": "https://github.com/ToolJet/ActionRail/",
+            "postUrl": "https://news.ycombinator.com/item?id=49051411",
+            "extraLinks": [
+                  {
+                        "label": "HN Algolia source metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49051411"
+                  }
+            ],
+            "firstSeen": "2026-07-26T06:17:57-07:00",
+            "lastReviewed": "2026-07-26T06:17:57-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Useful for Aluma lead-gen and project-tracker agents so scraping/classification can run automatically while CRM updates, outreach, and spend-bearing actions stay approval-gated.",
             "next": "Pilot on a non-production Hermes/Codex workflow first. Require audit logs, per-tool policies, budget caps, and human approval before connecting to order systems, messages, production DBs, or outreach.",
             "name": "SteerPlane",
@@ -490,6 +535,29 @@
             ],
             "firstSeen": "2026-07-20T06:06:03-07:00",
             "lastReviewed": "2026-07-20T06:06:03-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "No direct Aluma fit, but the preview-before-change pattern is useful for any future project/order ops agent that proposes mutations against business records.",
+            "next": "Track as a pattern, not a source of truth. If Shoplazza storefront work appears, test only in a sandbox store first and require backend-owned approvals/audit logs before product, discount, shipping, or order changes.",
+            "name": "Athena by Shoplazza",
+            "category": "AI commerce operations agent",
+            "summary": "Shoplazza's Athena is an AI operations agent for commerce teams: the verified Athena page says operators can manage products, orders, discounts, and shipping by conversation with a preview before changes are applied.",
+            "drprepper": "Relevant watch item for DR Prepper/DJR ecommerce operations because it shows storefront platforms moving from passive dashboards to agent-assisted catalog, discount, order, and shipping workflows.",
+            "toolUrl": "https://www.shoplazza.com/athena",
+            "postUrl": "https://www.producthunt.com/products/athena-by-shoplazza",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt feed redirect/source id",
+                        "url": "https://www.producthunt.com/r/p/1198766?app_id=339"
+                  },
+                  {
+                        "label": "Shoplazza homepage",
+                        "url": "https://www.shoplazza.com/"
+                  }
+            ],
+            "firstSeen": "2026-07-26T06:17:57-07:00",
+            "lastReviewed": "2026-07-26T06:17:57-07:00"
       },
       {
             "priority": "High",
@@ -1550,6 +1618,19 @@
             "postUrl": "https://www.businessinsider.com/tiktok-shop-is-testing-a-managed-services-business-in-us-2026-7",
             "firstSeen": "2026-07-21T06:07:22-07:00",
             "lastReviewed": "2026-07-21T06:07:22-07:00"
+      },
+      {
+            "priority": "Lead",
+            "aluma": "No direct Aluma fit beyond the broader lesson that transition subsidies can reveal high-intent churn windows in service markets.",
+            "next": "Verification needed because Business Wire timed out during this cron. Re-check the source, then build a small list of brands publicly complaining about 3PL lock-in, migration delays, or Q4 transition risk before outreach.",
+            "name": "Flowspace Fulfillment Freedom Fund signal",
+            "category": "3PL sales signal / switching pain",
+            "summary": "Business Wire/Yahoo-sourced 3PL Sales Intelligence signal: Flowspace launched a Fulfillment Freedom Fund offering up to $50,000 in transition support for brands leaving restrictive 3PL contracts, proving switching pain is visible enough for competitors to subsidize churn.",
+            "drprepper": "Direct outreach angle for DR Prepper USA: target ecommerce brands unhappy with minimums, transition friction, restrictive contracts, or national-provider rigidity and position Gardena as the local overflow/replenishment layer.",
+            "toolUrl": "https://www.businesswire.com/news/home/20260723042058/en/Flowspace-Launches-Fulfillment-Freedom-Fund-to-Help-Brands-Break-Free-from-Restrictive-3PL-Contracts",
+            "postUrl": "https://www.businesswire.com/news/home/20260723042058/en/Flowspace-Launches-Fulfillment-Freedom-Fund-to-Help-Brands-Break-Free-from-Restrictive-3PL-Contracts",
+            "firstSeen": "2026-07-26T06:17:57-07:00",
+            "lastReviewed": "2026-07-26T06:17:57-07:00"
       },
       {
             "priority": "Lead",
@@ -2928,6 +3009,48 @@
             "lastReviewed": "2026-07-23T06:08:29-07:00"
       },
       {
+            "priority": "Medium",
+            "aluma": "Could help map project docs, contractor research folders, permit notes, estimates, and proposal artifacts into reusable knowledge if privacy/model-upload behavior is verified first.",
+            "next": "Pilot on a sanitized folder only. Check local vs hosted processing, source citations, hallucination rate, PDF/image behavior, export format, and do not ingest customer data, rates, invoices, credentials, or proprietary repos until privacy is reviewed.",
+            "name": "Graphify knowledge-graph vault signal",
+            "category": "knowledge graph / code and document Q&A",
+            "summary": "Instagram-surfaced Graphify tool, now matched to the Graphify-Labs GitHub repo, that claims to turn folders into Obsidian-style vaults, concept graphs, backlinks, and Q&A over code, PDFs, Markdown, and images.",
+            "drprepper": "Relevant for PrepShip/client-portal codebase documentation, SOP folders, vendor docs, and dashboard notes when the goal is cited navigation through source material rather than stuffing raw files into an LLM prompt.",
+            "toolUrl": "https://github.com/Graphify-Labs/graphify",
+            "postUrl": "https://www.instagram.com/p/DbJGRmYFXmx/",
+            "extraLinks": [
+                  {
+                        "label": "GitHub repo",
+                        "url": "https://github.com/Graphify-Labs/graphify"
+                  },
+                  {
+                        "label": "Instagram source post",
+                        "url": "https://www.instagram.com/p/DbJGRmYFXmx/"
+                  }
+            ],
+            "firstSeen": "2026-07-24T06:08:02-07:00",
+            "lastReviewed": "2026-07-26T06:17:57-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could help organize project notes, lead research, bid checklists, and reporting if local-first/data-boundary claims hold up under testing.",
+            "next": "Verification needed before real data: test private-beta access with non-sensitive docs, inspect storage/export/model-routing behavior, and require no customer/order/credential data until privacy and backup controls are proven.",
+            "name": "Demios",
+            "category": "local-first AI workspace / private agents",
+            "summary": "Local-first AI workspace for private documents, specialist agents, structured docs/forms/tables/boards, reporting, and a personal AI Twin. Official site says users bring their own models and keep data under control; current status is private beta.",
+            "drprepper": "Useful watch item for private VA workflows, SOP capture, internal reporting, and document/query automation where sensitive business context should stay controlled rather than dumped into random hosted tools.",
+            "toolUrl": "https://demios.io/",
+            "postUrl": "https://news.ycombinator.com/item?id=49041032",
+            "extraLinks": [
+                  {
+                        "label": "HN Algolia source metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49041032"
+                  }
+            ],
+            "firstSeen": "2026-07-26T06:17:57-07:00",
+            "lastReviewed": "2026-07-26T06:17:57-07:00"
+      },
+      {
             "priority": "Watch",
             "aluma": "Could support Aluma lead/project dashboards and follow-up queues if data permissions, source-of-truth ownership, and action approvals are tightly controlled.",
             "next": "Do not buy at $1,000/month without a defined dashboard/action use case. First prototype the same reporting questions with existing Sheets/Postgres/dashboard data and require human approval for any write/action workflow.",
@@ -3349,25 +3472,6 @@
             ],
             "firstSeen": "2026-07-25T06:13:25-07:00",
             "lastReviewed": "2026-07-25T06:13:25-07:00"
-      },
-      {
-            "priority": "Watch",
-            "aluma": "Could help map project docs, contractor research folders, permit notes, and estimate artifacts into reusable knowledge, if a real tool URL and privacy model are verified.",
-            "next": "Verification needed: identify the official Graphify product/repo, check local vs hosted processing, image/PDF handling, export format, and privacy terms before putting any business or customer documents into it.",
-            "name": "Graphify knowledge-graph vault signal",
-            "category": "knowledge graph / code and document Q&A",
-            "summary": "Instagram-surfaced tool claim for turning folders into a navigable knowledge graph: Obsidian-style backlinked articles, concept clusters, and plain-English Q&A across code, PDFs, images, and Markdown. Actual product homepage/repo was not verified in this run.",
-            "drprepper": "Relevant as a pattern for making PrepShip/client-portal code, SOP folders, vendor docs, PDFs, and dashboard notes easier to query without stuffing raw files into an LLM context window.",
-            "toolUrl": "https://www.instagram.com/p/DbJGRmYFXmx/",
-            "postUrl": "https://www.instagram.com/p/DbJGRmYFXmx/",
-            "extraLinks": [
-                  {
-                        "label": "Instagram source post",
-                        "url": "https://www.instagram.com/p/DbJGRmYFXmx/"
-                  }
-            ],
-            "firstSeen": "2026-07-24T06:08:02-07:00",
-            "lastReviewed": "2026-07-24T06:08:02-07:00"
       },
       {
             "priority": "Watch",
