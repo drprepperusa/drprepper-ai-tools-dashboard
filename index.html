@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 26, 2026 · 3:37 PM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 27, 2026 · 6:13 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">169</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">156</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">65</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">172</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">159</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">68</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -780,6 +780,25 @@
       },
       {
             "priority": "High",
+            "aluma": "Could protect Aluma outreach and project-research automations by requiring approval for exact emails/messages, CRM writes, and scraping/account actions while still allowing routine read-only work.",
+            "next": "Request access or watch the public docs/pricing. If piloted, start with approval-required GitHub/Slack actions and verify payload-hash binding, audit logs, and MCP/tool coverage before connecting production systems.",
+            "name": "Axtary",
+            "category": "Agent action authorization / approval gates",
+            "summary": "Content-authorization layer for AI agents that checks the exact tool call, payload, policy, and approval before an agent touches GitHub, Slack, MCP tools, or production APIs.",
+            "drprepper": "Strong fit for making internal agents safer: risky diffs, customer messages, refunds, inventory/order actions, and production API calls should be approved against the exact payload rather than broad agent trust.",
+            "toolUrl": "https://axtary.com",
+            "postUrl": "https://news.ycombinator.com/item?id=49053543",
+            "extraLinks": [
+                  {
+                        "label": "HN Algolia search result",
+                        "url": "https://hn.algolia.com/api/v1/items/49053543"
+                  }
+            ],
+            "firstSeen": "2026-07-27T06:13:42-07:00",
+            "lastReviewed": "2026-07-27T06:13:42-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Useful for Aluma lead-gen and project-research agents if they start running on schedules or against paid APIs, where budget caps and logs prevent silent runaway work.",
             "next": "Evaluate in a sandbox agent first; require zero-data-retention review, provider-key handling, hard spend/session limits, alerts, and logs before routing any production automation through it.",
             "name": "AgentWatch",
@@ -796,6 +815,29 @@
             ],
             "firstSeen": "2026-06-29T06:04:16-07:00",
             "lastReviewed": "2026-06-29T06:04:16-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Relevant if Aluma lead-gen or project-monitoring agents need controlled access to CRM, email, sheets, or scraping accounts without handing credentials directly to automation.",
+            "next": "Evaluate locally with fake credentials first. Require approval gates for messages, repo writes, billing/order mutations, and customer data access before considering real DR Prepper or Aluma integrations.",
+            "name": "OneCLI",
+            "category": "Agent credential gateway / secrets safety",
+            "summary": "Open-source credential gateway and vault that sits between AI agents and services, matching requests by host/path, enforcing policy, and swapping placeholders for real credentials without exposing raw keys to the agent.",
+            "drprepper": "Useful guardrail for future PrepShip/client-portal, Slack, GitHub, Gmail, and ops agents that need service access while keeping API keys out of prompts, transcripts, and generated files.",
+            "toolUrl": "https://github.com/onecli/onecli",
+            "postUrl": "https://news.ycombinator.com/item?id=49023427",
+            "extraLinks": [
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49023427"
+                  },
+                  {
+                        "label": "OneCLI site",
+                        "url": "https://onecli.sh/"
+                  }
+            ],
+            "firstSeen": "2026-07-27T06:13:42-07:00",
+            "lastReviewed": "2026-07-27T06:13:42-07:00"
       },
       {
             "priority": "High",
@@ -1521,6 +1563,19 @@
             ],
             "firstSeen": "2026-07-18T06:04:50-07:00",
             "lastReviewed": "2026-07-18T06:04:50-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Could turn Aluma rental/proposal workflows into guided demos for contractors, but only after the copy and project examples are grounded in real offers and photos.",
+            "next": "Have a VA make one non-sensitive demo called “How DR PREPPER USA 3PL onboarding works”; test whether a prospect understands the process without a call, then add it to outreach/landing pages if it improves replies.",
+            "name": "LiveDemo.ai",
+            "category": "Sales demo / product walkthrough automation",
+            "summary": "Product-experience platform for turning a product or service flow into a clickable interactive demo that can be embedded on a site or sent to prospects.",
+            "drprepper": "Strong fit for DR Prepper 3PL sales: build a short onboarding, receiving, storage, fulfillment, and billing walkthrough so cold prospects can understand the service before booking a call.",
+            "toolUrl": "https://livedemo.ai/",
+            "postUrl": "https://livedemo.ai/",
+            "firstSeen": "2026-07-27T06:13:42-07:00",
+            "lastReviewed": "2026-07-27T06:13:42-07:00"
       },
       {
             "priority": "High",
