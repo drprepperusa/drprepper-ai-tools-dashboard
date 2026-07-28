@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 27, 2026 · 6:13 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Jul 28, 2026 · 6:16 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">172</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">159</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">68</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">175</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">162</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">69</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -735,6 +735,29 @@
             ],
             "firstSeen": "2026-07-24T06:08:02-07:00",
             "lastReviewed": "2026-07-24T06:08:02-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for Aluma contractor/project lead-source checks on public directories, permit/project pages, supplier lists, and contractor sites that block simple HTTP scraping, with rate limits and manual review before outreach.",
+            "next": "Run one public-pages-only pilot: gather 25 SoCal DTC/food brands or contractor prospects with source URLs, category, shipping/warehouse clues, and contact page. No logins, carts, customer data, or auto-outreach until terms, rate limits, and review gates are documented.",
+            "name": "BrowserAct",
+            "category": "AI web scraping / lead research automation",
+            "summary": "Prompt-to-reusable-web-scraper platform: describe the public web data needed and BrowserAct builds, tests, runs, and maintains a bot with browser sessions, proxies, CAPTCHA handling, structured outputs, run logs, and Make/n8n/Zapier integrations. Current pricing page lists a 7-day trial and pay-as-you-go credits, including workflow steps as low as $0.0032/step.",
+            "drprepper": "Strong fit for controlled DR Prepper 3PL and DJR/KF Goodies lead research: collect public company, product, contact-page, review, price, and competitor signals into a VA-reviewed prospect queue without hand-running every site.",
+            "toolUrl": "https://www.browseract.com/",
+            "postUrl": "https://www.producthunt.com/products/browseract",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://www.browseract.com/pricing"
+                  },
+                  {
+                        "label": "Official site",
+                        "url": "https://www.browseract.com/"
+                  }
+            ],
+            "firstSeen": "2026-07-07T06:05:46-07:00",
+            "lastReviewed": "2026-07-28T06:16:20-07:00"
       },
       {
             "priority": "High",
@@ -2078,6 +2101,33 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Potentially useful for proposal or equipment/material visuals when a background needs to be isolated, but less central than lead-gen or ops tooling.",
+            "next": "Test on 10 non-sensitive product photos with difficult edges, packaging glare, and frozen-food imagery; compare against current manual/photo workflow before using it in bulk or overwriting source assets.",
+            "name": "FeyNoBg / NoBg",
+            "category": "AI image cleanup / product photo tooling",
+            "summary": "Open-source automatic background-removal model plus the NoBg Python library for image/video matting. The HN launch links to a Hugging Face demo and GitHub repo and claims strong benchmark results for the released model/library.",
+            "drprepper": "Useful for cleaning product photos for DJR Foods, KF Goodies, Amazon/eBay listings, sell sheets, catalog pages, and quick ad creative without outsourcing every cutout.",
+            "toolUrl": "https://github.com/feyninc/nobg",
+            "postUrl": "https://news.ycombinator.com/item?id=49072462",
+            "extraLinks": [
+                  {
+                        "label": "Hugging Face demo",
+                        "url": "https://huggingface.co/spaces/feyninc/feynobg"
+                  },
+                  {
+                        "label": "Launch/source blog",
+                        "url": "https://usefeyn.com/blog/feynobg/"
+                  },
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49072462"
+                  }
+            ],
+            "firstSeen": "2026-07-28T06:16:20-07:00",
+            "lastReviewed": "2026-07-28T06:16:20-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Could reduce costs for Aluma lead scraping/classification or proposal-drafting agents if those workflows become high-volume, but only after provider behavior and latency are tested on non-critical jobs.",
             "next": "Run a small sandbox with non-sensitive prompts and compare cost, latency, model output, logging, and failure behavior against direct provider calls before routing any production/customer-impacting agent traffic.",
             "name": "FlexInference",
@@ -2094,6 +2144,29 @@
             ],
             "firstSeen": "2026-07-19T06:04:36-07:00",
             "lastReviewed": "2026-07-19T06:04:36-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could centralize project questions, contractor/vendor follow-ups, and issue discussions across email/Discord/GitHub-style workstreams if source ownership and approvals are clear.",
+            "next": "Trial only with internal/non-sensitive issues first. Keep customer replies human-approved, verify export/delete controls, and do not let SeaTicket become the source of truth for orders, billing, rates, or customer status.",
+            "name": "SeaTicket",
+            "category": "AI issue triage / support-ticket consolidation",
+            "summary": "AI-native issue-management workspace that connects GitHub, Discord, email, Discourse, Notion, Confluence, Linear, Jira, and more; it groups related issues, builds context from past cases/docs, suggests next actions for approval, and syncs approved replies back to the source. Pricing page lists a free tier up to 1,000 issues and 100 AI credits, then paid plans from $25/month.",
+            "drprepper": "Useful pattern for PrepShip/client-portal support and development intake if bug reports, Discord notes, GitHub issues, and customer emails start scattering across channels.",
+            "toolUrl": "https://seaticket.ai/",
+            "postUrl": "https://news.ycombinator.com/item?id=49078625",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://seaticket.ai/pricing"
+                  },
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49078625"
+                  }
+            ],
+            "firstSeen": "2026-07-28T06:16:20-07:00",
+            "lastReviewed": "2026-07-28T06:16:20-07:00"
       },
       {
             "priority": "Medium",
@@ -2186,6 +2259,29 @@
             ],
             "firstSeen": "2026-07-14T06:20:12-07:00",
             "lastReviewed": "2026-07-14T06:20:12-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Helpful for Aluma public-project/contractor research agents or dashboard QA when the task needs a real browser and source-backed evidence rather than static snippets.",
+            "next": "Pilot on a throwaway public-page browser task and one dashboard smoke check; keep it read-only at first, review generated Playwright actions, and require normal approval before any authenticated or production-impacting browser workflow.",
+            "name": "Browser Tools SDK by Libretto",
+            "category": "Agent browser tooling / Playwright harness",
+            "summary": "Open-source browser-tool SDK that gives AI agents a real browser through six tools, including compact page snapshots and Playwright execution, with adapters for AI SDK, Pi, MCP, local browsers, Kernel, and Browserbase. The official page reports lower token/cost overhead versus several browser-agent alternatives in its benchmark.",
+            "drprepper": "Useful for internal agent QA and browser automation around PrepShip/client-portal flows, dashboard checks, public lead-source scraping, and reproducible browser investigations without relying on fragile raw HTML scraping.",
+            "toolUrl": "https://libretto.sh/browser-tools",
+            "postUrl": "https://news.ycombinator.com/item?id=48998262",
+            "extraLinks": [
+                  {
+                        "label": "GitHub repo",
+                        "url": "https://github.com/saffron-health/libretto"
+                  },
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/48998262"
+                  }
+            ],
+            "firstSeen": "2026-07-28T06:16:20-07:00",
+            "lastReviewed": "2026-07-28T06:16:20-07:00"
       },
       {
             "priority": "Medium",
@@ -2378,25 +2474,6 @@
             "postUrl": "https://www.producthunt.com/products/lyto",
             "firstSeen": "2026-06-28T06:04:34-07:00",
             "lastReviewed": "2026-06-28T06:04:34-07:00"
-      },
-      {
-            "priority": "Medium",
-            "aluma": "Could help Aluma lead-source checks on contractor directories and construction sites that block simple scraping, with rate limits and manual review before outreach.",
-            "next": "Use only for low-risk research pilots first; document site terms, avoid login/cart/customer actions, and compare output against existing browser automation before buying credits.",
-            "name": "BrowserAct",
-            "category": "Browser-agent infrastructure / web automation",
-            "summary": "Browser layer for AI agents that provides real-browser execution for blocked pages, sessions, CAPTCHAs, and web-data collection workflows.",
-            "drprepper": "Potential fit for controlled vendor/Amazon/competitor research where normal HTTP scraping fails, but it should be kept away from account-sensitive actions and customer data until compliance is clear.",
-            "toolUrl": "https://www.browseract.com/",
-            "postUrl": "https://www.producthunt.com/products/browseract",
-            "extraLinks": [
-                  {
-                        "label": "Pricing",
-                        "url": "https://www.browseract.com/pricing"
-                  }
-            ],
-            "firstSeen": "2026-07-07T06:05:46-07:00",
-            "lastReviewed": "2026-07-07T06:05:46-07:00"
       },
       {
             "priority": "Medium",
