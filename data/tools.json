@@ -3099,6 +3099,29 @@
   },
   {
     "priority": "Watch",
+    "aluma": "Could inform future job-costing or rental/proposal audit tooling, but only as a sandbox pattern until accounting scope, integrations, and professional review are mature.",
+    "next": "Do not connect to live books. Clone in a disposable sandbox with fake transactions, test rejected bad journals/invoices, and compare the guardrail model against DJR/PrepShip accounting workflows before considering any QuickBooks, bank, tax, or customer-financial integration.",
+    "name": "Magpie",
+    "category": "accounting CLI / agent bookkeeping guardrail",
+    "summary": "Pre-1.0 accounting CLI for humans and AI agents. The README says it provides one guarded path for chart-of-accounts management, double-entry journals, customers, invoices, payouts, notes, snapshots, and audit reads, with RBAC and accounting-invariant checks before appending encrypted immutable events to Jaybase.",
+    "drprepper": "Relevant as a safety pattern for future AI bookkeeping, invoice, payout, and audit helpers: agents should write through a constrained accounting domain engine, not raw spreadsheets, databases, or QuickBooks sessions.",
+    "toolUrl": "https://github.com/kyle-visner/magpie",
+    "postUrl": "https://news.ycombinator.com/item?id=49091292",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/kyle-visner/magpie"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49091292"
+      }
+    ],
+    "firstSeen": "2026-07-29T06:11:26-07:00",
+    "lastReviewed": "2026-07-29T06:11:26-07:00"
+  },
+  {
+    "priority": "Watch",
     "aluma": "Could be useful for routing lead-research or project-intake agents through one controlled API, but only after terms, logging, and data-boundary behavior are clear.",
     "next": "Verification needed: confirm the official tool/docs, pricing, supported agent providers, data retention, rate limits, and approval/audit controls before evaluating it for any customer-facing or write-capable workflow.",
     "name": "HarnessRouter",
@@ -3247,6 +3270,29 @@
     "lastReviewed": "2026-07-22T06:04:37-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Useful for estimator, contractor, supplier, and project-owner calls if participants consent and summaries are reviewed before being treated as commitments or CRM/project facts.",
+    "next": "Run one low-risk internal call on DJ's Mac, compare the transcript/action items against manual notes, and define a consent/redaction rule before recording vendor, employee, customer, or sensitive pricing conversations.",
+    "name": "Minute",
+    "category": "local meeting notes / private transcription",
+    "summary": "Open-source macOS meeting notetaker that records, transcribes with Whisper, and summarizes with a local LLM on-device. The README states meeting notes stay on the Mac, with no account, no cloud, no server, and only optional model-download network traffic.",
+    "drprepper": "Strong fit for private vendor calls, VA meetings, PrepShip/client-portal ops reviews, sales calls, and Jake/Lawrence task follow-ups where decisions, owners, due dates, and blockers should be captured without a cloud meeting bot.",
+    "toolUrl": "https://github.com/mraza007/minute",
+    "postUrl": "https://news.ycombinator.com/item?id=49088771",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/mraza007/minute"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49088771"
+      }
+    ],
+    "firstSeen": "2026-07-29T06:11:26-07:00",
+    "lastReviewed": "2026-07-29T06:11:26-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could help organize project notes, lead research, bid checklists, and reporting if local-first/data-boundary claims hold up under testing.",
     "next": "Verification needed before real data: test private-beta access with non-sensitive docs, inspect storage/export/model-routing behavior, and require no customer/order/credential data until privacy and backup controls are proven.",
@@ -3266,6 +3312,29 @@
     "lastReviewed": "2026-07-26T06:17:57-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could help debug scraper/cron runs for Aluma lead gen by turning repeated fetch, parsing, rate-limit, or form errors into countable patterns before spending tokens on detailed investigation.",
+    "next": "Pilot on one redacted PrepShip or dashboard log export; verify PII/token redaction first, compare detected patterns against the original log, and only then use summarized patterns as input to an LLM root-cause review.",
+    "name": "ctrlb-decompose",
+    "category": "log compression / incident debugging",
+    "summary": "Open-source CLI/browser/Rust library that compresses raw log lines into structural patterns with typed variables, statistics, anomalies, correlations, and severity scoring. The README example reduces 1.2M+ log lines to 43 patterns for LLM-ready incident analysis.",
+    "drprepper": "Useful for PrepShip, Client Portal, DJR, Warehouse, and dashboard incident triage when Render/GitHub/app logs are too noisy to paste into an LLM or manually inspect line by line.",
+    "toolUrl": "https://github.com/ctrlb-hq/ctrlb-decompose",
+    "postUrl": "https://news.ycombinator.com/item?id=49083336",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/ctrlb-hq/ctrlb-decompose"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49083336"
+      }
+    ],
+    "firstSeen": "2026-07-29T06:11:26-07:00",
+    "lastReviewed": "2026-07-29T06:11:26-07:00"
+  },
+  {
     "priority": "Watch",
     "aluma": "Could eventually support contractor/project lead-monitoring agents, but only after source quality, approval gates, and data-retention behavior are verified.",
     "next": "Verification needed: find the official tool URL, pricing, runtime model, credential/network controls, audit logs, and human-approval options before using it for any DR Prepper, PrepShip, or Aluma workflow.",
@@ -3283,6 +3352,25 @@
     ],
     "firstSeen": "2026-07-25T06:13:25-07:00",
     "lastReviewed": "2026-07-25T06:13:25-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could help prototype contractor lead-intake, project research handoffs, quote follow-up checklists, or formwork/rental reporting without asking a developer to build every small workflow first.",
+    "next": "Trial with one non-sensitive workflow only, such as summarizing public lead-source rows into review-ready fields. Verify pricing, data retention, integration permissions, audit logs, and human-approval gates before connecting Gmail, Slack, CRM, Sheets, order systems, or customer data.",
+    "name": "NoClick",
+    "category": "no-code AI app / workflow automation",
+    "summary": "No-code platform for building AI apps, workflows, and always-on agents. The verified homepage describes an agentic layer for business with scalable AI agents and automations, while the Daily AI Intel run found examples like support-email replies, Slack summaries, Postgres KPI reports, and 150+ integrations.",
+    "drprepper": "Useful candidate for quick internal automations: daily ops summaries, support-draft preparation, lead workflow glue, dashboard update helpers, and simple report agents that still require human review before sending messages or touching order/billing data.",
+    "toolUrl": "https://www.noclick.com/",
+    "postUrl": "https://www.noclick.com/",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://www.noclick.com/"
+      }
+    ],
+    "firstSeen": "2026-07-29T06:11:26-07:00",
+    "lastReviewed": "2026-07-29T06:11:26-07:00"
   },
   {
     "priority": "High",
