@@ -510,6 +510,52 @@
     "lastReviewed": "2026-07-19T06:04:36-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Helpful if Aluma scraper, outreach, or project-research agents start running unattended; local reports can separate cheap extraction work from expensive reasoning/review loops.",
+    "next": "Install locally on DJ's Mac and run `npx tokimeter report` against recent Claude/Codex/Hermes coding sessions; compare totals to Hermes insights and keep prompts/customer data local unless the Pro/Team cloud terms are reviewed.",
+    "name": "Tokimeter",
+    "category": "AI coding cost / usage monitoring",
+    "summary": "Local-first usage and cost meter for Claude Code, Codex, Cursor, Grok Build, Hermes, opencode, Cline, and Copilot CLI. The verified site/repo say it reads local records, requires no account, sends no telemetry, and provides free local CLI reports; Pro/Team add hosted history and alerts.",
+    "drprepper": "Useful for spotting runaway AI coding-agent spend across PrepShip, Client Portal, DJR, Warehouse, and dashboard work before it becomes a hidden software bill or quota surprise.",
+    "toolUrl": "https://tokimeter.com",
+    "postUrl": "https://news.ycombinator.com/item?id=49098981",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/toshipepe/tokimeter"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49098981"
+      }
+    ],
+    "firstSeen": "2026-07-30T06:13:07-07:00",
+    "lastReviewed": "2026-07-30T06:13:07-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could coordinate future Aluma scraper/dashboard/code-agent lanes so one lane's dependency install, local server, or test run does not corrupt another lane's result.",
+    "next": "Trial only in a disposable/non-production repo first. Keep PR review, branch protection, clean worktrees, and CI as the source of truth; do not use it as permission for agents to push directly to main or bypass human review.",
+    "name": "Claude Code Merge Queue",
+    "category": "AI coding-agent merge/test coordination",
+    "summary": "Open-source local merge queue for parallel Claude Code agents. The verified GitHub README/API describe a MIT-licensed package that serializes agent land/build/test/push steps to reduce branch collisions, redundant heavy builds, and shared-resource test flakiness on one developer machine.",
+    "drprepper": "Useful pattern for supervising multiple coding lanes on PrepShip, Client Portal, DJR, Warehouse, and this dashboard when agents would otherwise push, build, or mutate shared dependencies at the same time.",
+    "toolUrl": "https://github.com/funador/claude-code-merge-queue",
+    "postUrl": "https://news.ycombinator.com/item?id=49104747",
+    "extraLinks": [
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49104747"
+      },
+      {
+        "label": "npm package",
+        "url": "https://www.npmjs.com/package/claude-code-merge-queue"
+      }
+    ],
+    "firstSeen": "2026-07-30T06:13:07-07:00",
+    "lastReviewed": "2026-07-30T06:13:07-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Indirect fit for Aluma software/support tooling: safer agent execution helps build or maintain lead-gen and project-tracking automations without giving agents broad host access.",
     "next": "Run a disposable trial on a throwaway repo first; verify Docker Sandbox requirements, network controls, secret handling, and commit-review workflow before using it on production-connected codebases.",
@@ -708,6 +754,29 @@
     ],
     "firstSeen": "2026-07-28T06:16:20-07:00",
     "lastReviewed": "2026-07-28T06:16:20-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful for contractor/project prospecting around shoring, formwork, concrete, rental equipment, and bid-help discussions across public communities, but keyword scope must be narrow to avoid generic construction noise.",
+    "next": "Run one no-send pilot with public keywords only; export leads into a review sheet, verify each source manually, and do not auto-reply or import into CRM until pricing, data retention, community rules, compliance, and approval gates are reviewed.",
+    "name": "Agenmatic.ai",
+    "category": "AI lead generation / intent monitoring",
+    "summary": "AI sales-prospecting platform that monitors Reddit, IndieHackers, Hacker News, and 40+ communities for buying-intent posts, scores urgency/service fit, drafts AI replies, and tracks conversations in a lightweight CRM-style workflow. Verified feature/pricing pages show a 14-day free trial and a paid Studio plan at $149/month.",
+    "drprepper": "Strong fit for DR PREPPER 3PL, DJR wholesale, and KF Goodies lead discovery if used as a public-signal collector: watch terms like 3PL, FBA prep, cold storage, frozen distributor, Shopify fulfillment, Amazon/TikTok fulfillment, and wholesale buyers before routing leads to a human review sheet.",
+    "toolUrl": "https://agenmatic.ai/features",
+    "postUrl": "https://news.ycombinator.com/item?id=49107516",
+    "extraLinks": [
+      {
+        "label": "Pricing",
+        "url": "https://agenmatic.ai/pricing"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49107516"
+      }
+    ],
+    "firstSeen": "2026-07-30T06:13:07-07:00",
+    "lastReviewed": "2026-07-30T06:13:07-07:00"
   },
   {
     "priority": "Medium",
