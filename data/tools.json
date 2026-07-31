@@ -491,6 +491,25 @@
     "lastReviewed": "2026-07-10T06:04:11-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Could help structure Aluma lead-gen or project-research agents so contractor lists, source links, notes, and next actions are inspectable before outreach.",
+    "next": "Try the beta/demo only with fake or public-source tasks first, such as a 3PL competitor scan. Do not connect private orders, customer data, credentials, or production systems until local storage, auth, and data-retention behavior are reviewed.",
+    "name": "MarbleOS",
+    "category": "AI agent workspace / operations visibility",
+    "summary": "GUI/workspace concept for AI agents where files, tools, tasks, and outputs are visible instead of buried inside a chat thread; the demo page offers onboarding and a beta download.",
+    "drprepper": "Strong reference for supervising internal agents that research competitors, shape Trello tickets, audit PrepShip/Client Portal work, or maintain dashboards. The useful pattern is visible work artifacts and correction points, not a mystery-chat workflow.",
+    "toolUrl": "https://marbleos.com/demo",
+    "postUrl": "https://news.ycombinator.com/item?id=49119274",
+    "extraLinks": [
+      {
+        "label": "Official demo",
+        "url": "https://marbleos.com/demo"
+      }
+    ],
+    "firstSeen": "2026-07-31T06:12:26-07:00",
+    "lastReviewed": "2026-07-31T06:12:26-07:00"
+  },
+  {
     "priority": "Watch",
     "aluma": "Indirect fit for Aluma automation and landing-page experiments where several agent-built variants need side-by-side comparison; not a fit for direct customer/prospect actions.",
     "next": "Verify the official beta/download, then test on a throwaway repo with no secrets. Require one clean branch/worktree per agent, explicit diffs, and normal CI/review gates before considering it for business repos.",
@@ -596,6 +615,25 @@
     ],
     "firstSeen": "2026-07-26T06:17:57-07:00",
     "lastReviewed": "2026-07-26T06:17:57-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Could support aggregate lead/project analytics while reducing leakage risk if contractor or bid data is later exposed to agents.",
+    "next": "Treat as a research prototype first. Test only with synthetic data, verify the privacy budget model, and do not use it as permission to expose production PII or customer/order rows to autonomous agents.",
+    "name": "Noisegate",
+    "category": "AI data-access privacy gateway / MCP security",
+    "summary": "Apache-2.0 open-source differential-privacy gateway for untrusted AI agents querying sensitive data over MCP, with privacy budgets and a runnable attack gallery that keeps enforcement below the model.",
+    "drprepper": "Relevant safety pattern for letting agents answer aggregate questions from customer, order, billing, or health-like operational data without exposing individual records directly to the model.",
+    "toolUrl": "https://github.com/yashmahajan10/llm-differential-privacy-gateway",
+    "postUrl": "https://news.ycombinator.com/item?id=49113543",
+    "extraLinks": [
+      {
+        "label": "README",
+        "url": "https://raw.githubusercontent.com/yashmahajan10/llm-differential-privacy-gateway/main/README.md"
+      }
+    ],
+    "firstSeen": "2026-07-31T06:12:26-07:00",
+    "lastReviewed": "2026-07-31T06:12:26-07:00"
   },
   {
     "priority": "High",
@@ -1876,6 +1914,25 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful if Aluma lead-gen or project tools later use Supabase and need isolated test databases for agent-built changes.",
+    "next": "Trial only on a toy Supabase project or disposable branch. Confirm credential injection, cleanup, billing/beta limits, network isolation, and migration parity before adding it to developer verification packets.",
+    "name": "Supapool",
+    "category": "Coding-agent database sandbox / Supabase testing",
+    "summary": "Service that gives each coding agent a full isolated Supabase instance in about a second, including Postgres, Auth, and Storage, so migrations and database operations run against a real stack instead of mocks.",
+    "drprepper": "Strong fit for reducing PrepShip/Client Portal/DJR false confidence when multiple coding agents need database-backed tests without sharing or wiping the same dev database.",
+    "toolUrl": "https://supapool.io/",
+    "postUrl": "https://news.ycombinator.com/item?id=49100518",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://supapool.io/"
+      }
+    ],
+    "firstSeen": "2026-07-31T06:12:26-07:00",
+    "lastReviewed": "2026-07-31T06:12:26-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Useful for Aluma territory monitoring because contractor competitors, permit activity, hiring, and local project/news changes can become lead-prioritization signals.",
     "next": "Run a free brief on one public DR Prepper/KF Goodies competitor and one Aluma market; verify source quality before paying or feeding results into outreach automation.",
     "name": "MyIntelBrief",
@@ -1947,6 +2004,29 @@
     ],
     "firstSeen": "2026-07-07T06:05:46-07:00",
     "lastReviewed": "2026-07-07T06:05:46-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Possible fit for Aluma operational databases or lead/research stores when nontechnical review needs SQL answers without granting write authority.",
+    "next": "Evaluate on a throwaway or read-only database role first. Keep write access disabled, require query review before execution, and confirm where schema metadata/results are stored in local vs cloud mode.",
+    "name": "Widen",
+    "category": "Database GUI / text-to-SQL safety",
+    "summary": "Free MIT/open-source native macOS Postgres GUI whose agents search schema, draft SQL, and verify queries against PostgreSQL before they reach the editor; cloud mode can use the operator's own OpenRouter key.",
+    "drprepper": "Useful for safer read-only questions against PrepShip, DJR, Warehouse, and dashboard Postgres data because query drafting and verification stay visible before execution.",
+    "toolUrl": "https://widen.dev/",
+    "postUrl": "https://news.ycombinator.com/item?id=49117989",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://widen.dev/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/betocmn/widen"
+      }
+    ],
+    "firstSeen": "2026-07-31T06:12:26-07:00",
+    "lastReviewed": "2026-07-31T06:12:26-07:00"
   },
   {
     "priority": "High",
@@ -2532,6 +2612,25 @@
     ],
     "firstSeen": "2026-07-09T06:04:14-07:00",
     "lastReviewed": "2026-07-09T06:04:14-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Low direct fit today; could become useful for private/offline research drafts if performance and quality are acceptable on available Macs.",
+    "next": "Only test as an offline experiment. Confirm macOS/Metal/Xcode requirements, model download size, answer quality, and lack of tool execution before using it for any operational decision support.",
+    "name": "TurboFieldfare",
+    "category": "Local LLM runtime / Apple Silicon inference",
+    "summary": "Open-source Swift/Metal runtime that runs instruction-tuned Gemma 4 26B-A4B on Apple Silicon by streaming experts from SSD, targeting roughly 2 GB of RAM; experimental, model-specific, and text-only.",
+    "drprepper": "Interesting for private local AI experiments on DJ's Mac where prompts should stay off hosted APIs, but it is not a drop-in replacement for tool-using Hermes or production business automation.",
+    "toolUrl": "https://github.com/drumih/turbo-fieldfare",
+    "postUrl": "https://news.ycombinator.com/item?id=49098510",
+    "extraLinks": [
+      {
+        "label": "README",
+        "url": "https://raw.githubusercontent.com/drumih/turbo-fieldfare/main/README.md"
+      }
+    ],
+    "firstSeen": "2026-07-31T06:12:26-07:00",
+    "lastReviewed": "2026-07-31T06:12:26-07:00"
   },
   {
     "priority": "Lead",
@@ -3128,6 +3227,25 @@
   },
   {
     "priority": "Medium",
+    "aluma": "Indirect fit for dictating research or implementation instructions, but it is mainly an internal developer-productivity tool rather than an Aluma customer-facing system.",
+    "next": "Test with a non-sensitive local coding task. Verify approve-before-send, microphone permissions, transcript storage, and whether any meeting/AgentCall feature changes the privacy model before using it around business data.",
+    "name": "SKI",
+    "category": "Voice interface for coding agents",
+    "summary": "Mac/Windows voice assistant for Claude Code, Codex, Cursor, Gemini CLI, OpenClaw, and similar coding agents; official page says speech/voice runs on-device, nothing leaves the machine, and messages require approve-before-send.",
+    "drprepper": "Could make long coding-agent sessions easier to direct while working through PrepShip, Client Portal, DJR, or dashboard fixes, especially when hands-free review is useful.",
+    "toolUrl": "https://heyski.io/",
+    "postUrl": "https://news.ycombinator.com/item?id=49113559",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://heyski.io/"
+      }
+    ],
+    "firstSeen": "2026-07-31T06:12:26-07:00",
+    "lastReviewed": "2026-07-31T06:12:26-07:00"
+  },
+  {
+    "priority": "Medium",
     "aluma": "Could support field/admin follow-up capture after calls or site visits if sensitive project details stay out of unreviewed automations.",
     "next": "Verify Product Hunt source details and test with a low-risk inbox/calendar only; require no-send-without-review and no customer-facing actions until permissions are explicit.",
     "name": "VoiceOS",
@@ -3165,6 +3283,25 @@
     ],
     "firstSeen": "2026-07-18T06:04:50-07:00",
     "lastReviewed": "2026-07-18T06:04:50-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Potential fit for controlled Aluma lead-routing or project-intake automations if integrations and cost justify it.",
+    "next": "Review pricing, supported integrations, audit logs, approval gates, and data-retention terms before considering it for any workflow that touches customers, orders, vendors, or outbound messages.",
+    "name": "Tines 3B / secure AI automation environment",
+    "category": "Workflow automation / AI governance",
+    "summary": "Tines positions its 3B environment as secure AI agents, apps, and automation with visibility, governance, and control for IT/security-led workflows.",
+    "drprepper": "Worth watching for approval-gated automations around alerts, vendor intake, support triage, fulfillment exceptions, and internal ops workflows where auditability matters more than free-form agent autonomy.",
+    "toolUrl": "https://www.tines.com/",
+    "postUrl": "https://news.ycombinator.com/item?id=49084371",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://www.tines.com/"
+      }
+    ],
+    "firstSeen": "2026-07-31T06:12:26-07:00",
+    "lastReviewed": "2026-07-31T06:12:26-07:00"
   },
   {
     "priority": "Watch",
