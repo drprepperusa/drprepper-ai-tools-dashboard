@@ -530,6 +530,29 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful for keeping Aluma automation/dev-agent spend accountable when lead-gen, scraping, or dashboard workflows move from experiments into recurring work.",
+    "next": "Run locally on a small sanitized session set first. Keep transcripts on-machine, verify what enrichment sends to an LLM or local model, map results to merged PRs/business outcomes, and use findings to prune expensive low-value agent loops.",
+    "name": "Tuneloop",
+    "category": "AI coding analytics / cost governance",
+    "summary": "Local analytics dashboard for Claude Code, Codex, OpenCode, Pi, and similar coding-agent transcripts; README describes outcome links, granular cost attribution, task complexity, autonomy, tool-error categories, and rework themes.",
+    "drprepper": "Strong internal-ops fit for measuring which Hermes/Claude/Codex work on PrepShip, Client Portal, DJR, Warehouse, and dashboard maintenance actually ships value versus burning tokens on retries and setup failures.",
+    "toolUrl": "https://github.com/tuneloop/tuneloop",
+    "postUrl": "https://github.com/tuneloop/tuneloop",
+    "extraLinks": [
+      {
+        "label": "README",
+        "url": "https://raw.githubusercontent.com/tuneloop/tuneloop/main/README.md"
+      },
+      {
+        "label": "Website",
+        "url": "https://tuneloop.io"
+      }
+    ],
+    "firstSeen": "2026-08-01T06:12:17-07:00",
+    "lastReviewed": "2026-08-01T06:12:17-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Helpful if Aluma scraper, outreach, or project-research agents start running unattended; local reports can separate cheap extraction work from expensive reasoning/review loops.",
     "next": "Install locally on DJ's Mac and run `npx tokimeter report` against recent Claude/Codex/Hermes coding sessions; compare totals to Hermes insights and keep prompts/customer data local unless the Pro/Team cloud terms are reviewed.",
     "name": "Tokimeter",
@@ -2213,6 +2236,29 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful for Aluma project files, bids, contractor notes, insurance docs, and site paperwork where AI summaries are valuable but client/vendor identities and credentials should be masked first.",
+    "next": "Test on fake or non-sensitive files first. Verify Windows-only installer/signing behavior, redaction reversibility, local vault storage, and whether sanitized Markdown is good enough before using it on real customer/order/vendor documents.",
+    "name": "Sanitizer by Provexar",
+    "category": "Document sanitization / private AI intake",
+    "summary": "Local-first document prep tool that converts, sanitizes, and indexes PDFs/Word files before they reach an LLM; the page emphasizes removing names, contacts, client identities, credentials, and keys from AI-ready workspaces.",
+    "drprepper": "Strong fit before using AI on invoices, SOPs, BOLs, customer notes, support exports, or PrepShip/DJR operational documents because it creates a cleaner evidence pack without giving raw sensitive files to the model.",
+    "toolUrl": "https://provexar.ai/sanitizer",
+    "postUrl": "https://news.ycombinator.com/item?id=49130329",
+    "extraLinks": [
+      {
+        "label": "Official page",
+        "url": "https://provexar.ai/sanitizer"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49130329"
+      }
+    ],
+    "firstSeen": "2026-08-01T06:12:17-07:00",
+    "lastReviewed": "2026-08-01T06:12:17-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Useful for Aluma proposal approvals, change-order acknowledgments, and subcontractor/customer signoffs if branding, audit trail, and mobile signing test cleanly.",
     "next": "Spin up a test instance on a non-production subdomain, upload one real but non-sensitive DR Prepper PDF, test phone signing, completed-copy email, audit certificate, and storage/privacy controls before using live customer documents.",
     "name": "DocuSeal",
@@ -2936,6 +2982,29 @@
     "next": "Inspect prompt.md files; never ship raw vibe-coded dependencies without review.",
     "toolUrl": "https://github.com/pulkitxm/claude-directory",
     "postUrl": "https://x.com/_pulkitxm/status/2065402277876338947"
+  },
+  {
+    "priority": "High",
+    "aluma": "Could package Aluma jobsite/rental proposals, construction project summaries, and lead follow-up briefs into mobile-friendly links while preserving a printable/exportable version.",
+    "next": "Try with a non-sensitive rate-sheet mockup. Confirm link access controls, edit history, export fidelity, retention/deletion controls, and whether customer-facing links can be revoked before using it for real quotes or private reports.",
+    "name": "SendPage",
+    "category": "Proposal/document delivery",
+    "summary": "Turns AI-generated HTML documents into professional share links that open on phones and can export to PDF, image, or Word; homepage lists 5 free documents per month and a $5 Pro plan.",
+    "drprepper": "Practical delivery layer for 3PL proposals, rate sheets, buyer one-pagers, supplier recaps, and operational reports when an AI-made HTML document needs to be customer-readable instead of awkwardly attached.",
+    "toolUrl": "https://sendpageapp.com",
+    "postUrl": "https://news.ycombinator.com/item?id=49132412",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://sendpageapp.com"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49132412"
+      }
+    ],
+    "firstSeen": "2026-08-01T06:12:17-07:00",
+    "lastReviewed": "2026-08-01T06:12:17-07:00"
   },
   {
     "priority": "Medium",
