@@ -1937,6 +1937,29 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful when building or modifying Aluma prospecting tools, project trackers, proposal systems, and research automations: investigate the current workflow and data shape first, state assumptions about sources and update behavior, and identify blocking questions before implementation.",
+    "next": "Keep as a prompt reference and fold only its strongest non-duplicative rules into existing coding governance when those skills are next revised: investigate before asking discoverable questions, cap blocking questions at three with recommended defaults, require falsifiable assumptions, and stop when an approved plan becomes invalid. Do not create a redundant standalone skill.",
+    "name": "Min Choi — investigate-before-implementing coding prompt",
+    "category": "Coding workflow / pre-implementation contract",
+    "summary": "A Claude Code checkpoint prompt that requires repo investigation before questions, then a goal restatement, zero-to-three genuinely blocking questions with recommended defaults, falsifiable assumptions, and a file/signature-level plan before implementation begins. It scales the ceremony by blast radius and tells the agent to stop rather than silently improvise when an approved assumption later proves wrong. The '$300/hr senior engineer' headline is marketing; the useful part is the research-first planning contract.",
+    "drprepper": "Immediately useful for PrepShip and DR Prepper engineering because it makes cheap misunderstandings visible before code is touched. It substantially overlaps with our installed architecture-first-coding and karpathy-coding-discipline skills, so it should be used as a compact checkpoint rather than duplicated as another standalone skill. Apply the full version to auth, money, inventory, rates, migrations, deletions, and cross-platform source-of-truth changes; keep the proportionality clause for obvious cosmetic or tiny changes.",
+    "toolUrl": "https://x.com/minchoi/status/2083400558023438731",
+    "postUrl": "https://x.com/minchoi/status/2083394791652688208",
+    "extraLinks": [
+      {
+        "label": "Full prompt reply",
+        "url": "https://x.com/minchoi/status/2083400558023438731"
+      },
+      {
+        "label": "Claude Code documentation",
+        "url": "https://code.claude.com/docs/en/overview"
+      }
+    ],
+    "firstSeen": "2026-08-01T14:13:27-07:00",
+    "lastReviewed": "2026-08-01T14:13:27-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Useful if Aluma lead-gen or project tools later use Supabase and need isolated test databases for agent-built changes.",
     "next": "Trial only on a toy Supabase project or disposable branch. Confirm credential injection, cleanup, billing/beta limits, network isolation, and migration parity before adding it to developer verification packets.",
     "name": "Supapool",

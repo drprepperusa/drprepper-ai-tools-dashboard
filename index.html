@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 1, 2026 · 6:12 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 1, 2026 · 2:13 PM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">192</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">179</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">78</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">193</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">180</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">79</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -1253,6 +1253,29 @@
             ],
             "firstSeen": "2026-06-30T06:06:36-07:00",
             "lastReviewed": "2026-06-30T06:06:36-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful when building or modifying Aluma prospecting tools, project trackers, proposal systems, and research automations: investigate the current workflow and data shape first, state assumptions about sources and update behavior, and identify blocking questions before implementation.",
+            "next": "Keep as a prompt reference and fold only its strongest non-duplicative rules into existing coding governance when those skills are next revised: investigate before asking discoverable questions, cap blocking questions at three with recommended defaults, require falsifiable assumptions, and stop when an approved plan becomes invalid. Do not create a redundant standalone skill.",
+            "name": "Min Choi — investigate-before-implementing coding prompt",
+            "category": "Coding workflow / pre-implementation contract",
+            "summary": "A Claude Code checkpoint prompt that requires repo investigation before questions, then a goal restatement, zero-to-three genuinely blocking questions with recommended defaults, falsifiable assumptions, and a file/signature-level plan before implementation begins. It scales the ceremony by blast radius and tells the agent to stop rather than silently improvise when an approved assumption later proves wrong. The '$300/hr senior engineer' headline is marketing; the useful part is the research-first planning contract.",
+            "drprepper": "Immediately useful for PrepShip and DR Prepper engineering because it makes cheap misunderstandings visible before code is touched. It substantially overlaps with our installed architecture-first-coding and karpathy-coding-discipline skills, so it should be used as a compact checkpoint rather than duplicated as another standalone skill. Apply the full version to auth, money, inventory, rates, migrations, deletions, and cross-platform source-of-truth changes; keep the proportionality clause for obvious cosmetic or tiny changes.",
+            "toolUrl": "https://x.com/minchoi/status/2083400558023438731",
+            "postUrl": "https://x.com/minchoi/status/2083394791652688208",
+            "extraLinks": [
+                  {
+                        "label": "Full prompt reply",
+                        "url": "https://x.com/minchoi/status/2083400558023438731"
+                  },
+                  {
+                        "label": "Claude Code documentation",
+                        "url": "https://code.claude.com/docs/en/overview"
+                  }
+            ],
+            "firstSeen": "2026-08-01T14:13:27-07:00",
+            "lastReviewed": "2026-08-01T14:13:27-07:00"
       },
       {
             "priority": "High",
