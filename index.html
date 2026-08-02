@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 1, 2026 · 2:13 PM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 2, 2026 · 6:11 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">193</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">180</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">79</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">196</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">183</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">81</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -823,6 +823,29 @@
             ],
             "firstSeen": "2026-07-24T06:08:02-07:00",
             "lastReviewed": "2026-07-24T06:08:02-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for contractor/project lead sheets where company names, addresses, trade categories, phone numbers, and bid-fit flags need cleanup before review or outreach.",
+            "next": "Test on one non-sensitive messy VA lead CSV: normalize phones/addresses, categorize business type, flag likely 3PL or contractor fit, and export the replay recipe. Keep human review before any CRM import or outreach.",
+            "name": "TamedTable",
+            "category": "AI spreadsheet ETL / lead data cleanup",
+            "summary": "Source-available browser/CLI AI ETL tool for CSV, JSONL, Parquet, and Arrow files. It lets an operator clean, enrich, classify, validate, and export tabular data with natural-language steps that can be replayed on new files, using the operator's own API keys.",
+            "drprepper": "Strong fit for messy VA lead lists, supplier catalogs, wholesale prospect sheets, customer/product import prep, and 3PL-fit classification before rows are loaded into a CRM or dashboard.",
+            "toolUrl": "https://www.tamedtable.com/",
+            "postUrl": "https://www.tamedtable.com/",
+            "extraLinks": [
+                  {
+                        "label": "Open web app",
+                        "url": "https://www.tamedtable.com/app/"
+                  },
+                  {
+                        "label": "GitHub repo",
+                        "url": "https://github.com/ZSvedic/TamedTable"
+                  }
+            ],
+            "firstSeen": "2026-08-02T06:11:42-07:00",
+            "lastReviewed": "2026-08-02T06:11:42-07:00"
       },
       {
             "priority": "High",
@@ -1572,6 +1595,29 @@
             ],
             "firstSeen": "2026-06-29T06:04:16-07:00",
             "lastReviewed": "2026-06-29T06:04:16-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for scrubbing project notes, contractor contact lists, bid files, and customer/vendor references before AI-assisted summarization or proposal drafting.",
+            "next": "Run it on synthetic and non-sensitive examples first, review the threat-model docs, and treat it as one privacy layer — not permission to send raw customer, credential, billing, or order data to an LLM.",
+            "name": "Prompt-scrub",
+            "category": "LLM prompt privacy / local redaction",
+            "summary": "MIT-licensed local-first npm utility that detects identifiers in prompts or chat messages — emails, secrets, file paths, phone numbers, URLs, postal addresses, and opt-in categories — replaces them with stable placeholders, then rehydrates the model response locally.",
+            "drprepper": "Useful safety layer before asking cloud AI to read invoices, SOPs, BOLs, supplier notes, sales lists, or customer-support drafts that may contain private identifiers.",
+            "toolUrl": "https://github.com/Nano-Collective/prompt-scrubber",
+            "postUrl": "https://nanocollective.org/blog/prompt-scrub-v100-a-local-first-scrubber-for-prompts-and-their-responses-76",
+            "extraLinks": [
+                  {
+                        "label": "npm package metadata",
+                        "url": "https://registry.npmjs.org/@nanocollective%2fprompt-scrub/latest"
+                  },
+                  {
+                        "label": "Threat model docs",
+                        "url": "https://github.com/Nano-Collective/prompt-scrubber/blob/main/docs/features/threat-model.md"
+                  }
+            ],
+            "firstSeen": "2026-08-02T06:11:42-07:00",
+            "lastReviewed": "2026-08-02T06:11:42-07:00"
       },
       {
             "name": "MotionSites",
@@ -2343,6 +2389,29 @@
             ],
             "firstSeen": "2026-07-08T06:07:06-07:00",
             "lastReviewed": "2026-07-08T06:07:06-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could reduce fragility for high-volume lead-gen or project-research automations by routing through one governed gateway instead of hardcoding provider clients per script.",
+            "next": "Sandbox only with test keys and non-sensitive prompts. Review auth, logging, secret handling, rate limits, budget controls, and failure behavior before routing any production/customer-impacting automation through it.",
+            "name": "Aurora AI Gateway",
+            "category": "AI gateway / provider routing",
+            "summary": "Apache-2.0 self-hosted AI gateway that exposes OpenAI/Anthropic-compatible APIs and routes traffic across providers such as OpenAI, Anthropic, Gemini, Groq, DeepSeek, OpenRouter, xAI, Azure OpenAI, Ollama, vLLM, and others, with provider pools, aliases, failover, retries, circuit breakers, and usage/budget-oriented workflow controls.",
+            "drprepper": "Relevant if Hermes, PrepShip, dashboards, research agents, or sales automations start making enough LLM calls that provider failover, spend visibility, and one central routing layer matter.",
+            "toolUrl": "https://github.com/aurorallm/aurora",
+            "postUrl": "https://github.com/aurorallm/aurora",
+            "extraLinks": [
+                  {
+                        "label": "README",
+                        "url": "https://raw.githubusercontent.com/aurorallm/aurora/main/README.md"
+                  },
+                  {
+                        "label": "Homepage from repo metadata",
+                        "url": "http://aurorallm.online"
+                  }
+            ],
+            "firstSeen": "2026-08-02T06:11:42-07:00",
+            "lastReviewed": "2026-08-02T06:11:42-07:00"
       },
       {
             "priority": "Medium",
