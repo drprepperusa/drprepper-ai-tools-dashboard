@@ -431,6 +431,25 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful pattern for Aluma lead-gen or estimating agents that may need paid data/API access, but only with strict merchant rules, low dollar caps, and human approval above tiny thresholds.",
+    "next": "Do not connect real payment methods yet. Track as an approval-gated spend-control candidate; test only with a sandbox/tiny prepaid card and require logs, merchant allowlists, dollar caps, and no autonomous production purchases.",
+    "name": "Authoryze",
+    "category": "AI agent spend controls / MCP payments",
+    "summary": "MCP-native payment-control layer that lets AI agents request purchases through single-use virtual cards while operators enforce spend limits, approvals, merchant allowlists, idempotency keys, and audit trails.",
+    "drprepper": "Strong future guardrail before any DR Prepper, PrepShip, dashboard, or lead-gen agent is allowed to buy labels, API credits, ads, data, software seats, or marketplace services.",
+    "toolUrl": "https://authoryze.ai",
+    "postUrl": "https://authoryze.ai",
+    "extraLinks": [
+      {
+        "label": "MCP integration docs",
+        "url": "https://authoryze.ai/docs"
+      }
+    ],
+    "firstSeen": "2026-08-03T06:10:18-07:00",
+    "lastReviewed": "2026-08-03T06:10:18-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Useful governance layer for Aluma lead-gen and project-tracker agents: scrape/research/classify automatically, then request approval before CRM/sheet updates or outreach.",
     "next": "Prototype with a non-production task queue first. Require role permissions, audit logs, and explicit human approval gates before connecting to Trello, Sheets, email, customer messages, or order systems.",
     "name": "AgentRQ",
@@ -2552,6 +2571,25 @@
     ],
     "firstSeen": "2026-07-15T06:04:53-07:00",
     "lastReviewed": "2026-07-15T06:04:53-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful for Aluma research and lead-generation workflows because sessions, skills, and cron jobs stay in one controlled Hermes installation rather than fragmenting across computers.",
+    "next": "If using from Windows, prefer remote-gateway mode over a second independent install; put the Mac gateway behind Tailscale/VPN, avoid exposing it publicly, and keep credentialed actions approval-gated.",
+    "name": "Hermes Agent Desktop + remote gateway",
+    "category": "Internal automation / multi-surface AI agent",
+    "summary": "Nous Research's open-source Hermes Agent desktop/CLI stack for persistent skills, scheduled automation, subagents, messaging surfaces, and a desktop client that can connect to an existing remote gateway.",
+    "drprepper": "Direct internal-ops fit: keeps DR Prepper/PrepShip/DJR automation, scheduled reports, Trello review support, and project memory centralized while letting DJ use another machine as the interface instead of duplicating agent state.",
+    "toolUrl": "https://hermes-agent.nousresearch.com/",
+    "postUrl": "https://hermes-agent.nousresearch.com/docs/",
+    "extraLinks": [
+      {
+        "label": "Documentation",
+        "url": "https://hermes-agent.nousresearch.com/docs/"
+      }
+    ],
+    "firstSeen": "2026-08-03T06:10:18-07:00",
+    "lastReviewed": "2026-08-03T06:10:18-07:00"
   },
   {
     "priority": "High",
