@@ -245,6 +245,25 @@
     "lastReviewed": "2026-07-15T06:04:53-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Potential fit for contractor/prospect outreach once Aluma lead lists are qualified, with the same approval gate before any message leaves the system.",
+    "next": "Watch and test only with fake/internal prospects first. Verify deliverability, mailbox safety, compliance controls, reply handling, pricing/credits, CRM export, and mandatory human approval before real outreach.",
+    "name": "Stynar",
+    "category": "AI SDR / outbound sales automation",
+    "summary": "AI SDR/outbound platform that researches prospects, writes personalized email sequences, follows up, routes replies to one inbox, and books meetings into a calendar.",
+    "drprepper": "Relevant to DR PREPPER 3PL lead-gen as a possible outbound execution layer after Hermes/Sheets qualification, but it must not autonomously email prospects without DJ-approved copy, audience, cadence, and unsubscribe/compliance rules.",
+    "toolUrl": "https://stynar.com/",
+    "postUrl": "https://www.producthunt.com/products/stynar",
+    "extraLinks": [
+      {
+        "label": "Product Hunt source",
+        "url": "https://www.producthunt.com/products/stynar"
+      }
+    ],
+    "firstSeen": "2026-08-04T06:09:46-07:00",
+    "lastReviewed": "2026-08-04T06:09:46-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful for Aluma reporting and lead/project analytics if AI starts drafting SQL against scraped contractor, project, or CRM data.",
     "next": "Test against a few internal reporting queries and AI-generated dashboard SQL; add as a guardrail before allowing agents to run or propose production reporting queries.",
@@ -2417,6 +2436,25 @@
   },
   {
     "priority": "Medium",
+    "aluma": "No direct Aluma fit; treat it as an e-commerce operations benchmark rather than a construction lead-gen tool.",
+    "next": "Use as product-intelligence input only. Compare Doba Pilot's fulfillment/order-follow-up language against PrepShip/Client Portal roadmap ideas; do not rely on dropshipping automation for DR PREPPER operational truth.",
+    "name": "Doba Pilot",
+    "category": "E-commerce operations / dropshipping AI agent",
+    "summary": "Doba's AI dropshipping agent covers product research, store setup, listing creation, scheduled tasks, order fulfillment follow-up, support context, and marketplace channels including eBay.",
+    "drprepper": "Useful competitive signal for PrepShip/DR PREPPER: e-commerce sellers are being trained to expect agent-assisted sourcing, listing, fulfillment tracking, and issue follow-up from their ops platforms.",
+    "toolUrl": "https://www.doba.com/doba-pilot",
+    "postUrl": "https://markets.businessinsider.com/news/stocks/doba-expands-doba-pilot-into-order-fulfillment-and-ebay-listing-1036399738",
+    "extraLinks": [
+      {
+        "label": "Doba AI hub",
+        "url": "https://www.doba.com/ai"
+      }
+    ],
+    "firstSeen": "2026-08-04T06:09:46-07:00",
+    "lastReviewed": "2026-08-04T06:09:46-07:00"
+  },
+  {
+    "priority": "Medium",
     "aluma": "Could support structured outreach/nurture sequences for contractor and project-intel leads if list quality and send permissions are handled carefully.",
     "next": "Test only with a small internal or opted-in list first; define approval rules, unsubscribe hygiene, and human review before any customer-facing sends.",
     "name": "EmailFlow AI",
@@ -2887,6 +2925,29 @@
     ],
     "firstSeen": "2026-07-03T06:03:56-07:00",
     "lastReviewed": "2026-07-03T06:03:56-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Could support Aluma lead-gen campaign reporting if paid ads or outreach dashboards become active, but only from read-only reporting credentials.",
+    "next": "Pilot read-only with non-sensitive marketing data first. Confirm supported connectors, MCP auth boundaries, retention, pricing, and approval gates before connecting live ad accounts or letting agents change campaigns.",
+    "name": "ZapDigits MCP",
+    "category": "Marketing analytics / MCP reporting",
+    "summary": "Marketing-dashboard platform with an MCP/AI layer for asking questions of connected ad and reporting data, generating reports, and surfacing insights from 30+ marketing data sources.",
+    "drprepper": "Useful pattern for DR PREPPER Google/Meta/TikTok ad reporting: agents can read campaign performance and summarize spend, lead quality, and quote-flow issues instead of waiting on manual spreadsheet exports.",
+    "toolUrl": "https://zapdigits.com/",
+    "postUrl": "https://www.producthunt.com/products/zapdigits",
+    "extraLinks": [
+      {
+        "label": "Product Hunt source",
+        "url": "https://www.producthunt.com/products/zapdigits"
+      },
+      {
+        "label": "Alternate official site",
+        "url": "https://www.zapdigits.ai/"
+      }
+    ],
+    "firstSeen": "2026-08-04T06:09:46-07:00",
+    "lastReviewed": "2026-08-04T06:09:46-07:00"
   },
   {
     "priority": "Medium",
