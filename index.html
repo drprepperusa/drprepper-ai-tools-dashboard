@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 4, 2026 · 6:09 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 5, 2026 · 6:09 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">202</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">189</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">85</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">205</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">192</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">86</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -1735,6 +1735,29 @@
       },
       {
             "priority": "High",
+            "aluma": "Useful for Aluma scraping/outreach agents when tool calls need evidence-backed approval boundaries before emails, form submissions, paid data access, or CRM mutations.",
+            "next": "Evaluate in a local sandbox with dummy MCP tools first: block a payment/order/email-style call, capture the signed receipt, and compare it with existing Hermes approval logs. Check maturity, attestation requirements, and whether it fits current MCP server topology before operational use.",
+            "name": "cMCP",
+            "category": "MCP security / agent tool-call governance",
+            "summary": "Open-source Confidential MCP Gateway from agentrust-io. The HN launch frames it as a way to deny an AI agent's tool call and get a signed receipt; the GitHub repo describes hardware-attested policy enforcement for MCP tool calls.",
+            "drprepper": "Strong fit for internal Hermes/agent governance around Trello, email, orders, fulfillment, billing, inventory, and dashboards: prove when a dangerous tool call was blocked instead of relying on chat memory.",
+            "toolUrl": "https://github.com/agentrust-io/cmcp",
+            "postUrl": "https://news.ycombinator.com/item?id=49172545",
+            "extraLinks": [
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49172545"
+                  },
+                  {
+                        "label": "GitHub API metadata",
+                        "url": "https://api.github.com/repos/agentrust-io/cmcp"
+                  }
+            ],
+            "firstSeen": "2026-08-05T06:09:39-07:00",
+            "lastReviewed": "2026-08-05T06:09:39-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Could help Aluma organize lead follow-ups, project notes, calendar reminders, and local spreadsheet/file handoffs from one assistant interface if access is kept narrow.",
             "next": "Pilot read-only first on non-sensitive folders/accounts, inspect every permission, and require explicit human approval before any tool can send messages, modify files, or touch customer/vendor records.",
             "name": "Local MCP",
@@ -2657,6 +2680,29 @@
             ],
             "firstSeen": "2026-07-14T06:20:12-07:00",
             "lastReviewed": "2026-07-14T06:20:12-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Possible fit for quick jobsite/rental promo videos or before/after project ads, but only after replacing AI-generated claims with verified project facts, locations, and service constraints.",
+            "next": "Test with one non-sensitive product or 3PL offer page, compare generated scripts/hooks against real margins and claims, and require human approval before any paid ad spend or public post. Verify pricing and usage rights before uploading customer/product assets.",
+            "name": "AdAnt AI",
+            "category": "AI video ads / social creative",
+            "summary": "AI video-ad workflow for turning a product URL or inspiration video into short-form social ad variants. Product Hunt framed it as “Claude for viral, high-converting social ads,” and the official site positions it around planning, recreating, and generating winning social video ads at scale.",
+            "drprepper": "Useful for DR Prepper/KF Goodies ad tests where the bottleneck is producing enough Meta, TikTok, Instagram, or YouTube creative variations without overusing staff time. Keep it as creative-draft support, not an auto-publish system.",
+            "toolUrl": "https://adant.ai/",
+            "postUrl": "https://www.producthunt.com/products/adant-ai",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt launch/feed source",
+                        "url": "https://www.producthunt.com/products/adant-ai"
+                  },
+                  {
+                        "label": "Pricing page",
+                        "url": "https://adant.ai/pricing"
+                  }
+            ],
+            "firstSeen": "2026-08-05T06:09:39-07:00",
+            "lastReviewed": "2026-08-05T06:09:39-07:00"
       },
       {
             "priority": "Medium",
@@ -4193,6 +4239,29 @@
             ],
             "firstSeen": "2026-07-25T06:13:25-07:00",
             "lastReviewed": "2026-07-25T06:13:25-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Could eventually support bounded paid source access for Aluma lead research or permit/project data, but only with strict per-run budgets, approval logs, and vendor scope limits.",
+            "next": "Track only for now. Before any use, define allowlisted vendors, dollar caps, approval/reversal policy, audit exports, and no-customer-data rules. Do not connect to real payments until Cloudflare docs, pricing, and controls are proven in a sandbox.",
+            "name": "Cloudflare Wallets",
+            "category": "agent payments / identity guardrails",
+            "summary": "Cloudflare announcement for programmable wallets that give AI agents native payments and verifiable identity on the web using x402-style payment flows and explicit safety guardrails.",
+            "drprepper": "Relevant long-term if agents ever buy labels, APIs, data, software seats, or ad credits for DR Prepper/PrepShip. The business value is controlled spend and identity, not letting agents freely transact.",
+            "toolUrl": "https://blog.cloudflare.com/wallets/",
+            "postUrl": "https://www.producthunt.com/products/cloudflare",
+            "extraLinks": [
+                  {
+                        "label": "Cloudflare press release",
+                        "url": "https://www.cloudflare.com/press/press-releases/2026/cloudflare-gives-ai-agents-an-identity-and-a-wallet/"
+                  },
+                  {
+                        "label": "Product Hunt launch/feed source",
+                        "url": "https://www.producthunt.com/products/cloudflare"
+                  }
+            ],
+            "firstSeen": "2026-08-05T06:09:39-07:00",
+            "lastReviewed": "2026-08-05T06:09:39-07:00"
       },
       {
             "priority": "Watch",
