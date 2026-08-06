@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 5, 2026 · 6:09 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 6, 2026 · 6:10 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">205</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">192</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">86</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">208</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">195</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">87</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -949,6 +949,29 @@
             ],
             "firstSeen": "2026-07-27T06:13:42-07:00",
             "lastReviewed": "2026-07-27T06:13:42-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Could provide lightweight evidence on Aluma lead-gen and project-research agents: what users ask, which tools run, where failures recur, and which workflows need approval gates.",
+            "next": "Prototype on a non-sensitive internal MCP/dev agent first. Review SDK data capture, retention, PII handling, and export/delete controls before any customer/order/vendor sessions are logged.",
+            "name": "Armature",
+            "category": "Agent analytics / MCP evals",
+            "summary": "Analytics, session replay, and evaluation tooling for MCP servers, Claude Connectors, ChatGPT apps, Claude Code, and CLI agent workflows. It reconstructs user intent and tool-call sessions, scores outcomes, groups use cases, and turns workflows into regression evals.",
+            "drprepper": "Strong fit for measuring whether Hermes/business agents are actually saving time across PrepShip, Client Portal, DJR, dashboards, and cron jobs instead of quietly creating rework or risky tool actions.",
+            "toolUrl": "https://armature.tech/",
+            "postUrl": "https://news.ycombinator.com/item?id=49157807",
+            "extraLinks": [
+                  {
+                        "label": "HN Algolia item",
+                        "url": "https://hn.algolia.com/api/v1/items/49157807"
+                  },
+                  {
+                        "label": "Official site",
+                        "url": "https://armature.tech/"
+                  }
+            ],
+            "firstSeen": "2026-08-06T06:10:48-07:00",
+            "lastReviewed": "2026-08-06T06:10:48-07:00"
       },
       {
             "priority": "High",
@@ -2480,6 +2503,29 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could support rental/project inquiry triage or FAQ intake if Aluma has repeat customer questions, but only after data boundaries and escalation rules are defined.",
+            "next": "Evaluate only in a sandbox with canned FAQs and non-customer data. Require no-send/human-approval defaults for billing, refunds, shipment promises, rate quotes, inventory claims, and customer communications.",
+            "name": "Ticketdesk AI",
+            "category": "AI customer support / helpdesk automation",
+            "summary": "AI customer-support platform for chat/email tickets, autonomous agent responses, routing, training-source ingestion, support analytics, and helpdesk workflows. Public pricing shows a Basic plan at $29/month with higher tiers for more agents, credits, team members, and training sources.",
+            "drprepper": "Potential future support layer for 3PL onboarding questions, shipping-status FAQs, billing-document handoff, and customer triage — but money/order-impacting answers need human review and source-grounded backend reads.",
+            "toolUrl": "https://ticketdesk.ai/",
+            "postUrl": "https://www.producthunt.com/products/ticketdesk-ai",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt source",
+                        "url": "https://www.producthunt.com/products/ticketdesk-ai"
+                  },
+                  {
+                        "label": "Pricing",
+                        "url": "https://ticketdesk.ai/pricing"
+                  }
+            ],
+            "firstSeen": "2026-08-06T06:10:48-07:00",
+            "lastReviewed": "2026-08-06T06:10:48-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Could help capture jobsite-call notes, estimator observations, or follow-up drafts, but only after checking privacy controls and where recordings/transcripts are stored.",
             "next": "Trial with non-sensitive notes first; keep human review before sending customer/vendor messages and confirm pricing/privacy before using it for real customer details.",
             "name": "Willow Frontier Pro",
@@ -2644,6 +2690,29 @@
             ],
             "firstSeen": "2026-07-11T06:04:09-07:00",
             "lastReviewed": "2026-07-11T06:04:09-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Indirect fit: the same feed-quality discipline can inform Aluma equipment/service listings, but only if there is a real catalog or marketplace surface to optimize.",
+            "next": "Trial with non-sensitive sample product data first. Compare recommendations against current Google Merchant/product-feed requirements, verify no unsupported SEO/ROAS claims, and keep pricing/approval gates before any live feed changes.",
+            "name": "UCP Radar",
+            "category": "AI shopping feed optimization",
+            "summary": "AI-powered product feed validator and optimizer for Google Shopping, Performance Max, and emerging AI shopping agents. It checks product feed readiness, titles, descriptions, tags, GTINs, schema/JSON-LD, and visibility signals so products are easier for AI shopping surfaces to recommend.",
+            "drprepper": "Useful watch item for DR PREPPER, DJR, and KF Goodies ecommerce/product feeds as buying shifts from keyword search into AI-assisted product discovery. It could help identify missing feed fields before ad spend or AI-shopping visibility is wasted.",
+            "toolUrl": "https://ucpradar.com/",
+            "postUrl": "https://www.producthunt.com/products/ucp-radar",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt source",
+                        "url": "https://www.producthunt.com/products/ucp-radar"
+                  },
+                  {
+                        "label": "Official site",
+                        "url": "https://ucpradar.com/"
+                  }
+            ],
+            "firstSeen": "2026-08-06T06:10:48-07:00",
+            "lastReviewed": "2026-08-06T06:10:48-07:00"
       },
       {
             "priority": "Medium",
