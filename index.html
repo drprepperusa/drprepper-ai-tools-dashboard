@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 6, 2026 · 6:10 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 8, 2026 · 6:09 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">208</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">195</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">87</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">211</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">198</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">88</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -1318,6 +1318,29 @@
             ],
             "firstSeen": "2026-06-30T06:06:36-07:00",
             "lastReviewed": "2026-06-30T06:06:36-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Could make Aluma scraper/lead-gen and project-status coding work easier to inspect, especially if agent outputs are pinned as evidence cards rather than buried in logs.",
+            "next": "Pilot on a non-sensitive repository first. Verify local/open-source mode, GitHub repo/license, provider-key handling, session storage, and whether generated UI can be exported as review evidence before using on private customer/order code.",
+            "name": "Mirafold",
+            "category": "Coding agent UI / generative dashboards",
+            "summary": "Browser UI for Claude Code, Codex, and Gemini CLI that renders coding-agent sessions as live cards, charts, dashboards, and pinned views instead of only terminal text. The official site says local use is free/open-source with BYO key or fully local mode, with Pro pricing shown at $12/month after trial.",
+            "drprepper": "Strong fit for supervising PrepShip, Client Portal, DJR, and dashboard coding-agent work: use it to make repo analysis, test results, diffs, and long-running agent decisions easier to review before merge or Trello audit.",
+            "toolUrl": "https://mirafold.com/",
+            "postUrl": "https://news.ycombinator.com/item?id=49209747",
+            "extraLinks": [
+                  {
+                        "label": "HN Algolia item",
+                        "url": "https://hn.algolia.com/api/v1/items/49209747"
+                  },
+                  {
+                        "label": "Official site",
+                        "url": "https://mirafold.com/"
+                  }
+            ],
+            "firstSeen": "2026-08-08T06:09:19-07:00",
+            "lastReviewed": "2026-08-08T06:09:19-07:00"
       },
       {
             "priority": "High",
@@ -2542,6 +2565,29 @@
             ],
             "firstSeen": "2026-07-08T06:07:06-07:00",
             "lastReviewed": "2026-07-08T06:07:06-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could support construction-project and contractor-market prioritization by turning uncertain research signals into explicit probability estimates, but should never replace source-grounded due diligence.",
+            "next": "Try the $20 free-credit lane on a few historical business questions with known outcomes. Compare forecast reasoning against actual source evidence, and keep any automated use read-only until accuracy, cost, and citation quality are proven.",
+            "name": "FutureSearch",
+            "category": "AI forecasting / decision support",
+            "summary": "AI forecasting service for probability, numeric, date, categorical, conditional, and decision questions, with a public forecasting track record and integrations for Claude, Codex, ChatGPT, API, and MCP workflows.",
+            "drprepper": "Useful as a disciplined odds layer for business questions where a rough probability beats a vibe: inventory timing, carrier or marketplace policy risk, price-move scenarios, supplier expansion, and whether an operational change is worth testing.",
+            "toolUrl": "https://futuresearch.ai/",
+            "postUrl": "https://news.ycombinator.com/item?id=49157941",
+            "extraLinks": [
+                  {
+                        "label": "HN Algolia item",
+                        "url": "https://hn.algolia.com/api/v1/items/49157941"
+                  },
+                  {
+                        "label": "Official site",
+                        "url": "https://futuresearch.ai/"
+                  }
+            ],
+            "firstSeen": "2026-08-08T06:09:19-07:00",
+            "lastReviewed": "2026-08-08T06:09:19-07:00"
       },
       {
             "priority": "Medium",
@@ -4266,6 +4312,25 @@
             "postUrl": "https://shipp.to/",
             "firstSeen": "2026-06-24T06:05:48-07:00",
             "lastReviewed": "2026-06-24T06:05:48-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Could help document estimator/research workflows for Aluma project tracking and contractor outreach if it can capture steps without exposing private job/customer data.",
+            "next": "Verification needed: find the official homepage, pricing, data-retention policy, capture method, export formats, and redaction controls before using it on any sensitive DR Prepper, PrepShip, DJR, or Aluma workflow.",
+            "name": "StepShot",
+            "category": "Workflow capture / SOP automation",
+            "summary": "Product Hunt-surfaced AI tool described as turning real workflows into step-by-step guides. The Product Hunt Atom feed verified the listing and tagline, but the official homepage and pricing were not clearly verified in this run.",
+            "drprepper": "Relevant pattern for turning warehouse tasks, VA lead-cleanup routines, billing checks, onboarding flows, and customer-support procedures into repeatable SOPs and training checklists.",
+            "toolUrl": "https://www.producthunt.com/products/stepshot-2",
+            "postUrl": "https://www.producthunt.com/products/stepshot-2",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt redirect/source id",
+                        "url": "https://www.producthunt.com/r/p/1215451?app_id=339"
+                  }
+            ],
+            "firstSeen": "2026-08-08T06:09:19-07:00",
+            "lastReviewed": "2026-08-08T06:09:19-07:00"
       },
       {
             "priority": "Watch",
