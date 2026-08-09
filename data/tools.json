@@ -636,6 +636,33 @@
     "lastReviewed": "2026-07-30T06:13:07-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Useful for Aluma scraper/dashboard/dev-agent workflows if it can reduce repeated context/tool-call overhead while keeping evidence logs and human review intact.",
+    "next": "Test only in a disposable repo first. Compare Tura logs, patches, test evidence, token counts, and failure modes against the current Hermes/Codex workflow before trusting it on production-connected repos.",
+    "name": "Tura",
+    "category": "AI coding-agent runtime / token efficiency",
+    "summary": "Open-source agent runtime harness for coding-agent workflows. Its published benchmark claims Tura Direct used 77.5% fewer aggregate tokens than Codex CLI with comparable verifier success, while Tura Balanced reached 80.0% success with 31.1% fewer tokens on the cited DeepSWE task set.",
+    "drprepper": "Strong internal-ops fit for PrepShip, Client Portal, DJR, Warehouse, and dashboard coding-agent work where long review/build/test loops can burn millions of tokens before producing verified changes.",
+    "toolUrl": "https://github.com/Tura-AI/tura",
+    "postUrl": "https://news.ycombinator.com/item?id=49227119",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://turaai.net/"
+      },
+      {
+        "label": "Benchmark",
+        "url": "https://turaai.net/benchmark"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49227119"
+      }
+    ],
+    "firstSeen": "2026-08-09T06:06:12-07:00",
+    "lastReviewed": "2026-08-09T06:06:12-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Indirect fit for Aluma software/support tooling: safer agent execution helps build or maintain lead-gen and project-tracking automations without giving agents broad host access.",
     "next": "Run a disposable trial on a throwaway repo first; verify Docker Sandbox requirements, network controls, secret handling, and commit-review workflow before using it on production-connected codebases.",
@@ -3009,6 +3036,33 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful for Aluma lead-gen and project-research agents that need many public-data and workflow tools, as long as tool policies and approval gates remain explicit.",
+    "next": "Pilot locally with non-sensitive MCP servers first. Verify token savings, keychain behavior, client compatibility, tool-quarantine behavior, and human approval for destructive calls before connecting business systems.",
+    "name": "Toolport",
+    "category": "MCP gateway / agent tool management",
+    "summary": "Local-first MCP gateway that lets multiple AI clients share one authenticated tool-server setup, with lazy tool discovery, tool-integrity checks, quarantine, and secrets in the OS keychain. The README claims around 90% token savings by avoiding full tool-definition dumps on every request.",
+    "drprepper": "Strong fit for Hermes/Codex/Claude operations if tool lists keep growing across Gmail, Sheets, Trello, GitHub, fulfillment, and dashboard workflows; it could reduce token waste and centralize tool setup without giving agents more authority by default.",
+    "toolUrl": "https://github.com/tsouth89/toolport",
+    "postUrl": "https://news.ycombinator.com/item?id=48919431",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://toolport.app"
+      },
+      {
+        "label": "Product Hunt source",
+        "url": "https://www.producthunt.com/products/conduit-12"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/48919431"
+      }
+    ],
+    "firstSeen": "2026-08-09T06:06:12-07:00",
+    "lastReviewed": "2026-08-09T06:06:12-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Relevant if Aluma lead-gen or project-intel agents gain write access to CRMs, sheets, email, or outreach systems; tool verification should come before automated external actions.",
     "next": "Use as a due-diligence layer for any new MCP/server that can read sensitive files or mutate orders, ads, CRMs, or messages. Verify pricing/site details and keep human approval gates for writes even after a server passes.",
     "name": "Throne MCP Verification",
@@ -3522,23 +3576,31 @@
     "lastReviewed": "2026-07-24T06:08:02-07:00"
   },
   {
-    "priority": "Medium",
-    "aluma": "Could be tested as a project-intel and contractor outreach workspace for accounts, contacts, proposal notes, follow-up tasks, and internal sales collaboration.",
-    "next": "Trial only with a small sandbox prospect list; verify export, email/calendar permissions, integrations, and no-auto-send review rules before moving any live CRM workflow.",
+    "priority": "High",
+    "aluma": "Could be tested as an Aluma contractor/project outreach workspace where agents draft research notes and follow-ups against live account records, with final send and CRM writes approval-gated.",
+    "next": "Trial only with a sandbox prospect list. Verify MCP permissions, export controls, email/calendar access, audit logs, pricing, and no-auto-send rules before moving live lead or customer workflows.",
     "name": "Salestrics",
-    "category": "Sales CRM / workspace",
-    "summary": "All-in-one sales workspace combining CRM, docs, email, AI, team chat, proposals, finance, analytics, and task boards with a free plan and paid team tiers.",
-    "drprepper": "Possible fit for organizing 3PL sales prospects, quote follow-ups, proposal docs, and sales tasks if the current CRM stack is too fragmented.",
+    "category": "Sales CRM / MCP revenue workspace",
+    "summary": "All-in-one CRM and revenue workspace for startups that now exposes live CRM, mail, docs, meetings, support, and AI workflows through a hosted MCP server. The verified homepage advertises 163 MCP tools and a free-start CRM lane.",
+    "drprepper": "Relevant for DR Prepper, DJR, and KF Goodies sales prospecting because AI agents could work against live CRM/mail records instead of stale CSV exports — but any outbound email, pricing promise, or customer-facing action still needs human approval.",
     "toolUrl": "https://www.salestrics.com/",
     "postUrl": "https://app.salestrics.com/pricing",
     "extraLinks": [
+      {
+        "label": "Show HN source",
+        "url": "https://news.ycombinator.com/item?id=49218097"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49218097"
+      },
       {
         "label": "Pricing",
         "url": "https://app.salestrics.com/pricing"
       }
     ],
     "firstSeen": "2026-06-29T06:04:16-07:00",
-    "lastReviewed": "2026-06-29T06:04:16-07:00"
+    "lastReviewed": "2026-08-09T06:06:12-07:00"
   },
   {
     "priority": "High",
