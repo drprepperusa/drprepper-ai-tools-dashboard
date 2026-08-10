@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 9, 2026 · 6:06 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 10, 2026 · 6:12 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">213</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">200</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">91</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">216</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">203</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">93</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -622,6 +622,29 @@
       },
       {
             "priority": "High",
+            "aluma": "Could help Aluma scraper/dashboard automation code retain project conventions and prior troubleshooting without pasting the same repo context into every coding session.",
+            "next": "Test only in a disposable or non-production repo first. Compare `.memcode` state, secret handling, hosted-vs-local model routing, diff quality, and test evidence against the current Hermes/Codex workflow before using it on production-connected repos.",
+            "name": "Memcode AI",
+            "category": "AI coding-agent memory / repo context",
+            "summary": "MIT/self-hostable coding agent that keeps persistent repo memory in `.memcode`, including subsystems, prior work, failed approaches, preferences, and searchable session history. The README describes a Go CLI/TUI, MCP, skills, hooks, LSP, sandboxed shell, delegation, and support for hosted gateway, BYOK, or local OpenAI-compatible endpoints.",
+            "drprepper": "Useful for PrepShip, Client Portal, DJR, Warehouse, and dashboard coding loops where agents repeatedly lose repo context, rediscover architecture rules, or repeat failed fixes across sessions.",
+            "toolUrl": "https://github.com/memcode-ai/memcode",
+            "postUrl": "https://github.com/memcode-ai/memcode",
+            "extraLinks": [
+                  {
+                        "label": "Official site",
+                        "url": "https://memcode.ai"
+                  },
+                  {
+                        "label": "README",
+                        "url": "https://raw.githubusercontent.com/memcode-ai/memcode/main/README.md"
+                  }
+            ],
+            "firstSeen": "2026-08-10T06:12:17-07:00",
+            "lastReviewed": "2026-08-10T06:12:17-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Useful for Aluma scraper/dashboard/dev-agent workflows if it can reduce repeated context/tool-call overhead while keeping evidence logs and human review intact.",
             "next": "Test only in a disposable repo first. Compare Tura logs, patches, test evidence, token counts, and failure modes against the current Hermes/Codex workflow before trusting it on production-connected repos.",
             "name": "Tura",
@@ -827,6 +850,29 @@
             ],
             "firstSeen": "2026-07-10T06:04:11-07:00",
             "lastReviewed": "2026-07-10T06:04:11-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for Aluma service/project pages where AI-search visibility depends on clear entity grounding, FAQs, structured service details, and crawlable project/proposal content.",
+            "next": "Run the free demo against one DR Prepper service page and one DJR category/product page. Fix crawlability, schema, FAQ, citation, and accessibility issues before funding broader content or AI-search work.",
+            "name": "OptiQra",
+            "category": "AI search / website optimization",
+            "summary": "Open-source website audit and optimization platform for SEO, performance, accessibility, security, conversion, plus GEO/AEO readiness for AI answers. The verified README says it checks crawler access, citation-friendly structure, Q&A content, llms.txt generation, and offers a free no-signup live demo plus desktop/offline audits.",
+            "drprepper": "Strong fit for DR Prepper 3PL lead pages, DJR product/category hubs, and KF Goodies pages that need to be easy for Google, ChatGPT, Claude, Perplexity, and AI Overviews to crawl, cite, and answer from.",
+            "toolUrl": "https://optiqra.vercel.app",
+            "postUrl": "https://github.com/armin5872/OptiQra",
+            "extraLinks": [
+                  {
+                        "label": "GitHub repo",
+                        "url": "https://github.com/armin5872/OptiQra"
+                  },
+                  {
+                        "label": "README",
+                        "url": "https://raw.githubusercontent.com/armin5872/OptiQra/master/README.md"
+                  }
+            ],
+            "firstSeen": "2026-08-10T06:12:17-07:00",
+            "lastReviewed": "2026-08-10T06:12:17-07:00"
       },
       {
             "priority": "High",
@@ -4077,6 +4123,29 @@
             ],
             "firstSeen": "2026-07-31T06:12:26-07:00",
             "lastReviewed": "2026-07-31T06:12:26-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Could capture estimator/jobsite call notes and turn them into follow-up tasks, but only if recording rules and customer/project privacy are handled correctly.",
+            "next": "Verification needed: confirm official hardware/app page, pricing, transcription storage, consent controls, export format, and whether actions can be reviewed before connecting to calendar, CRM, or customer workflows.",
+            "name": "SecondBrain Note by GenSpark",
+            "category": "AI meeting notes / action recorder",
+            "summary": "Product Hunt-listed MagSafe AI recorder described as capturing notes and turning them into actions. The Product Hunt Atom feed verified the listing/tagline, but direct product-page and pricing details were not accessible in this run.",
+            "drprepper": "Potential fit for meeting notes, warehouse SOP capture, sales-call follow-ups, vendor conversations, and operator reminders if recording consent, privacy, and action-review controls are strict.",
+            "toolUrl": "https://www.producthunt.com/products/genspark",
+            "postUrl": "https://www.producthunt.com/products/genspark",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt feed source",
+                        "url": "https://www.producthunt.com/feed"
+                  },
+                  {
+                        "label": "Product Hunt redirect/source id",
+                        "url": "https://www.producthunt.com/r/p/1218939?app_id=339"
+                  }
+            ],
+            "firstSeen": "2026-08-10T06:12:17-07:00",
+            "lastReviewed": "2026-08-10T06:12:17-07:00"
       },
       {
             "priority": "Watch",
