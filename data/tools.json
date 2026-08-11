@@ -330,6 +330,25 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful for Aluma lead-gen or project-status agents if future workflows need proof of which source was read, what action was proposed, and whether a human approved a CRM/sheet/outreach change.",
+    "next": "Evaluate as a dev-only proof pattern first. Require no secrets in receipts, stable storage, easy replay/readback, and human approval markers before using it around production-impacting automations.",
+    "name": "Traceseal",
+    "category": "AI agent accountability / verifiable receipts",
+    "summary": "Agent-accountability platform that creates signed, offline-verifiable receipts for agent invocations, including skill identity, manifest, input/output hashes, sandbox profile, operator signature, and replayable governance evidence.",
+    "drprepper": "Strong fit as a pattern for PrepShip, DR Prepper, and DJR automations where agents might touch orders, labels, inventory, billing, refunds, or customer communications and need tamper-evident proof of what happened.",
+    "toolUrl": "https://traceseal.io/",
+    "postUrl": "https://news.ycombinator.com/item?id=49254245",
+    "extraLinks": [
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49254245"
+      }
+    ],
+    "firstSeen": "2026-08-11T06:04:38-07:00",
+    "lastReviewed": "2026-08-11T06:04:38-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Useful pattern for Aluma lead/project agents: research can be automated, but CRM/sheet updates, outreach, and project-status changes should be grounded against the current source of truth first.",
     "next": "Pilot against one non-production agent workflow. Require explicit SOT adapters, denial-before-side-effect behavior, audit logs, and human approval for customer, money, inventory, or outreach mutations.",
     "name": "ActionRail by ToolJet",
@@ -546,6 +565,25 @@
     ],
     "firstSeen": "2026-07-31T06:12:26-07:00",
     "lastReviewed": "2026-07-31T06:12:26-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could help harden Aluma scraper/dashboard repositories if code-agent output starts flowing through PRs, but normal architecture review and CI must remain the source of truth.",
+    "next": "Test on a disposable or low-risk repository first. Compare findings against Hermes/Codex review quality, verify false positives, CI integration, permissions, audit logs, and whether auto-fixes remain reviewable before enabling on business repos.",
+    "name": "Gitar",
+    "category": "AI code review / automated fixes",
+    "summary": "AI code-review platform that reviews pull requests, analyzes CI failures, and can apply fixes through PR comments or auto-apply flows. Official pricing shows a 14-day free trial, Core at $20/user/month, Pro at $40/user/month, and free access for open-source projects.",
+    "drprepper": "Useful watch item for PrepShip, Client Portal, DJR, Warehouse, and dashboard development as an additional PR QA layer, especially when it can connect findings to CI instead of just leaving generic comments.",
+    "toolUrl": "https://gitar.ai",
+    "postUrl": "https://www.producthunt.com/products/gitar",
+    "extraLinks": [
+      {
+        "label": "Pricing",
+        "url": "https://gitar.ai/pricing"
+      }
+    ],
+    "firstSeen": "2026-08-11T06:04:38-07:00",
+    "lastReviewed": "2026-08-11T06:04:38-07:00"
   },
   {
     "priority": "Watch",
@@ -1358,6 +1396,29 @@
     ],
     "firstSeen": "2026-07-07T06:05:46-07:00",
     "lastReviewed": "2026-07-28T06:16:20-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could support Aluma lead/project research workflows where shared prompts, source files, and repeatable agents need team visibility and citations.",
+    "next": "Trial only with non-sensitive files and one read-only workflow first; verify workspace permissions, data retention, citations, model routing, export controls, and approval gates before connecting business systems.",
+    "name": "Langkast",
+    "category": "AI workspace / model and agent hub",
+    "summary": "AI workspace for using multiple leading models, chatting with files, building reusable agents, automating workflows, and connecting tools from one shared environment. Official pricing shows a 7-day free trial with Pro launch pricing around $20/month before discounts.",
+    "drprepper": "Useful watch item for DR Prepper, DJR, and PrepShip teams if VAs/operators need one governed place for model comparison, file-grounded answers, and repeatable internal agents instead of scattered AI tabs.",
+    "toolUrl": "https://langkast.com",
+    "postUrl": "https://news.ycombinator.com/item?id=49254309",
+    "extraLinks": [
+      {
+        "label": "Pricing",
+        "url": "https://langkast.com/pricing"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49254309"
+      }
+    ],
+    "firstSeen": "2026-08-11T06:04:38-07:00",
+    "lastReviewed": "2026-08-11T06:04:38-07:00"
   },
   {
     "priority": "High",
