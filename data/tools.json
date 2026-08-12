@@ -3629,6 +3629,33 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful for resilient project-intelligence, CRM, proposal, and integration services, especially where external bid portals, mapping, email, document processing, or supplier systems can fail independently. Apply patterns only where the current architecture and failure modes justify them; do not introduce microservice ceremony into a simpler system without evidence.",
+    "next": "Use as an audit checklist rather than an implementation mandate. For PrepShip, inspect current order/shipment/inventory event publication for dual-write risk, external integration isolation, retry/idempotency behavior, and whether client/admin APIs delegate to canonical domain owners. Produce evidence-backed gaps before creating tasks. Prioritize Transactional Outbox and failure containment only where runtime incidents or code inspection prove a need.",
+    "name": "CodeWithAyaan — 7 advanced backend architecture patterns",
+    "category": "Reference / backend architecture patterns",
+    "summary": "A seven-pattern engineering reference covering API Gateway, Backend-for-Frontend (BFF), Circuit Breaker, Bulkhead, Transactional Outbox, Sidecar, and Hexagonal Architecture. It is not an AI tool; its durable value is as an architecture and reliability checklist. Social-post examples and company attributions are educational publisher claims, not evidence that any specific implementation is correct for our systems.",
+    "drprepper": "High relevance to PrepShip and DR PREPPER's shared operational stack. Transactional Outbox can prevent order, shipment, inventory, billing, and marketplace events from being lost between a database commit and message publication. Circuit Breaker and Bulkhead patterns can contain carrier, marketplace, payment, and external-API failures. API Gateway/BFF may shape client/admin/partner read surfaces, but must not duplicate business logic or become a second source of truth. Hexagonal architecture supports keeping fulfillment, rates, labels, billing, and inventory rules in canonical domain services while adapters remain thin.",
+    "toolUrl": "https://microservices.io/patterns/data/transactional-outbox.html",
+    "postUrl": "https://www.instagram.com/p/DbJIEzEAdm1/",
+    "extraLinks": [
+      {
+        "label": "Circuit Breaker pattern",
+        "url": "https://microservices.io/patterns/reliability/circuit-breaker.html"
+      },
+      {
+        "label": "Backend for Frontend pattern",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends"
+      },
+      {
+        "label": "Bulkhead pattern",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead"
+      }
+    ],
+    "firstSeen": "2026-08-12T04:11:27-07:00",
+    "lastReviewed": "2026-08-12T04:11:27-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Strong fit for Aluma's formwork, shoring, reshoring, engineering-support, rental, and Southern California city/service pages. Surface queries already receiving impressions, add direct technically accurate answers, and strengthen links between systems, applications, project types, and regional service pages. Engineering and safety claims require subject-matter review before publishing.",
     "next": "Run a controlled pilot on five existing pages: export GSC page/query data for the last 90 days; prioritize non-branded queries with meaningful impressions, average position 8–30, and commercial relevance; map each query to an existing or missing answer block; review AI drafts for accuracy and duplication; add deliberate internal links from sitemap/crawl data; publish only material updates; then compare 28-day and 90-day clicks, impressions, CTR, position, quote conversions, and assisted conversions. Do not use rigid link-density formulas, keyword-stuff literal headings, or change the visible date without substantive edits.",
     "name": "Charles Floate — Search Console query-gap content refresh workflow",
@@ -3946,6 +3973,33 @@
     ],
     "firstSeen": "2026-07-18T06:04:50-07:00",
     "lastReviewed": "2026-07-18T06:04:50-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Strong fit for Aluma system, application, project, and regional landing pages. Add clear contact/quote paths, case studies with approved project facts, local directions where useful, descriptive titles and metadata, accessible images, and technically reviewed FAQs. Engineering, capacity, safety, schedule, and performance claims require approval before publication.",
+    "next": "Convert the visible checklist into a reusable acceptance-test pack rather than a one-click prompt. Add deterministic checks for 404 behavior, unique titles/descriptions, robots directives, canonical URLs, social metadata, valid structured data, keyboard/mobile usability, alt text quality, form success/thank-you flow, analytics events, performance, broken links, and truthful review/response-time claims. Manually inspect the reel before adopting its unavailable items 18–20.",
+    "name": "Yates — Claude website pre-launch QA checklist",
+    "category": "Website launch QA / Claude prompt workflow",
+    "summary": "A Claude-oriented pre-launch website checklist. Publicly visible items include a custom 404 page, above-the-fold CTA, internal links, thank-you page, breadcrumbs, case studies, five FAQs, response-time promise, sticky mobile CTA, robots.txt, unique page titles, meta descriptions, social-share image, maps/directions, real reviews, image alt text, and local structured data. The accessible public frame did not expose the complete items 18–20, so this dashboard entry does not invent them. Claude can help implement and audit these items, but its output still requires engineering, accessibility, SEO, legal/claims, and visual QA.",
+    "drprepper": "Strong fit for DR PREPPER USA service, location, product-hub, and quote-request pages. The checklist improves conversion readiness, crawlability, local discovery, social sharing, and mobile lead capture. Use verified customer reviews and operational promises only; keep customer shipping rates and internal operational data out of public structured content. A thank-you page and CTA events should feed measured quote-conversion analytics.",
+    "toolUrl": "https://docs.anthropic.com/",
+    "postUrl": "https://www.instagram.com/reel/Db15Zn0hSmH/",
+    "extraLinks": [
+      {
+        "label": "Google robots.txt guidance",
+        "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro"
+      },
+      {
+        "label": "Google structured-data guidance",
+        "url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data"
+      },
+      {
+        "label": "Web Content Accessibility Guidelines",
+        "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+      }
+    ],
+    "firstSeen": "2026-08-12T04:11:27-07:00",
+    "lastReviewed": "2026-08-12T04:11:27-07:00"
   },
   {
     "priority": "Medium",
