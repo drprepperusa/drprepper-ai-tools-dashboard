@@ -386,6 +386,25 @@
     "lastReviewed": "2026-07-21T06:07:22-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Could support Aluma lead/project research jobs that need to keep crawling, deduplicating, and preparing review packets after the initial request ends, provided writes/outreach stay approval-gated.",
+    "next": "Verification needed before adoption: confirm Trigger.dev docs/pricing, persistence model, retries, logs, auth, and human-approval checkpoints. Prototype only a read-only long-running report job first.",
+    "name": "Chat Agent by Trigger.dev",
+    "category": "AI agent infrastructure / long-running chat jobs",
+    "summary": "Product Hunt-launched Trigger.dev workflow for AI chat jobs that keep running after the browser tab closes. The source feed exposed the core positioning but not pricing or implementation details in this run.",
+    "drprepper": "Useful pattern for DR Prepper, PrepShip, client portal, and dashboard automations where an agent needs to continue a quote intake, billing check, lead search, or report generation without depending on an operator keeping a tab open.",
+    "toolUrl": "https://www.producthunt.com/products/trigger-dev",
+    "postUrl": "https://www.producthunt.com/products/trigger-dev",
+    "extraLinks": [
+      {
+        "label": "Product Hunt feed source",
+        "url": "https://www.producthunt.com/feed"
+      }
+    ],
+    "firstSeen": "2026-08-12T06:06:25-07:00",
+    "lastReviewed": "2026-08-12T06:06:25-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could support Aluma research and lead-gen agents by preserving source notes, project context, and reusable workflows if privacy and hosting controls check out.",
     "next": "Treat as infrastructure, not a business source of truth; review self-hosting, access control, backup, and secret-redaction behavior before storing any sensitive project/customer context.",
@@ -626,6 +645,25 @@
     ],
     "firstSeen": "2026-08-01T06:12:17-07:00",
     "lastReviewed": "2026-08-01T06:12:17-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Could help measure whether Aluma scraper/dashboard agent work is producing useful leads and fixes versus burning tokens on repeated discovery or failed setup.",
+    "next": "Verification needed: confirm official homepage, supported agent tools, local-vs-cloud transcript handling, pricing, privacy, and whether costs can be mapped to commits/PRs/business outcomes before connecting real sessions.",
+    "name": "CodeBurn",
+    "category": "AI coding cost / spend attribution",
+    "summary": "Product Hunt-launched tool positioned as showing where AI coding spend actually goes. The feed verified the product and value proposition, but pricing and detailed data-source behavior were not captured in this run.",
+    "drprepper": "Useful watch item for Hermes/Codex/Claude work on PrepShip, Client Portal, DJR, Warehouse, and this dashboard because agent spend needs to be tied to shipped outcomes, retries, setup failures, and review loops.",
+    "toolUrl": "https://www.producthunt.com/products/codeburn",
+    "postUrl": "https://www.producthunt.com/products/codeburn",
+    "extraLinks": [
+      {
+        "label": "Product Hunt feed source",
+        "url": "https://www.producthunt.com/feed"
+      }
+    ],
+    "firstSeen": "2026-08-12T06:06:25-07:00",
+    "lastReviewed": "2026-08-12T06:06:25-07:00"
   },
   {
     "priority": "High",
@@ -1107,6 +1145,25 @@
     ],
     "firstSeen": "2026-06-22T19:38:08-07:00",
     "lastReviewed": "2026-06-22T19:38:08-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could inspire an Aluma project/contractor-market digest that deduplicates construction news, bid signals, and lead-source updates into a short review queue.",
+    "next": "Use as a product pattern rather than adopting blindly. Compare against existing Hermes scheduled briefs, require original-source links for business claims, and keep any outreach or CRM actions separate from the digest.",
+    "name": "Cutthroat News",
+    "category": "AI news digest / business monitoring",
+    "summary": "Show HN-launched AI news digest that deduplicates articles across topics and produces tight personalized editions. The founder described a Python editorial pipeline using OpenAI, Anthropic, and Google models, a model-fallback stack, no tracking, and no cookies until consent.",
+    "drprepper": "Relevant pattern for supplier, carrier, marketplace, finance, competitor, and 3PL-sales monitoring: reduce noisy feeds into short evidence-backed editions with topics DJ actually cares about.",
+    "toolUrl": "https://cutthroat.news/",
+    "postUrl": "https://news.ycombinator.com/item?id=49269702",
+    "extraLinks": [
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49269702"
+      }
+    ],
+    "firstSeen": "2026-08-12T06:06:25-07:00",
+    "lastReviewed": "2026-08-12T06:06:25-07:00"
   },
   {
     "priority": "Watch",
