@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 12, 2026 · 6:06 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 13, 2026 · 6:05 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">225</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">212</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">99</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">227</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">214</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">100</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -516,6 +516,29 @@
             ],
             "firstSeen": "2026-07-26T06:17:57-07:00",
             "lastReviewed": "2026-07-26T06:17:57-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for Aluma lead-gen and project research agents that need to browse contractor/project pages while preserving operator oversight and approval gates for outreach or CRM updates.",
+            "next": "Test on a read-only workflow such as extracting public 3PL prospect pages or competitor listings. Verify download/signing, MCP behavior, logs, local-vs-hosted model routing, and approval prompts before using it with logged-in accounts or customer/order data.",
+            "name": "Pickle Browser",
+            "category": "AI agent browser / local automation visibility",
+            "summary": "Local visible browser for AI agents that opens real pages in a window the operator can watch, exposes compact page data instead of raw HTML, supports MCP connections from Claude/Codex-style tools, and keeps purchases/sends/irreversible actions behind approval gates.",
+            "drprepper": "Strong fit for Hermes-style research, dashboard maintenance, lead-gen, and marketplace checks where agents need browser access but DJ still needs visibility, local session context, and a stop button before risky actions.",
+            "toolUrl": "https://picklebrowser.com/",
+            "postUrl": "https://news.ycombinator.com/item?id=49260102",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt source",
+                        "url": "https://www.producthunt.com/products/pickle-browser"
+                  },
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49260102"
+                  }
+            ],
+            "firstSeen": "2026-08-13T06:05:42-07:00",
+            "lastReviewed": "2026-08-13T06:05:42-07:00"
       },
       {
             "priority": "High",
@@ -4261,6 +4284,29 @@
             ],
             "firstSeen": "2026-07-13T06:04:37-07:00",
             "lastReviewed": "2026-07-13T06:04:37-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Could protect Aluma lead-gen or project-tracker agents if it provides concrete approval policies, action blocking, and logs, but current evidence is too thin for operational use.",
+            "next": "Verification needed: identify the actual vendor site/docs, supported agent frameworks, policy model, approval workflow, audit logs, pricing, and failure behavior before testing with anything beyond synthetic tasks.",
+            "name": "Phinq",
+            "category": "AI agent safety / action guardrails",
+            "summary": "Product Hunt-listed safety layer positioned as stopping AI agents before they break something. The feed verified the product/tagline, but the official homepage, docs, pricing, and implementation details were not accessible in this run.",
+            "drprepper": "Relevant as a guardrail pattern for PrepShip, DR Prepper ops, and dashboard agents that may propose production writes, sends, purchases, or billing/order changes; verification is needed before adoption.",
+            "toolUrl": "https://www.producthunt.com/products/phinq",
+            "postUrl": "https://www.producthunt.com/products/phinq",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt feed source",
+                        "url": "https://www.producthunt.com/feed"
+                  },
+                  {
+                        "label": "Product Hunt redirect/source id",
+                        "url": "https://www.producthunt.com/r/p/1221712?app_id=339"
+                  }
+            ],
+            "firstSeen": "2026-08-13T06:05:42-07:00",
+            "lastReviewed": "2026-08-13T06:05:42-07:00"
       },
       {
             "priority": "Watch",
