@@ -633,6 +633,29 @@
   },
   {
     "priority": "Medium",
+    "aluma": "Possible fit for proposal/explainer video drafts, but less central than lead-gen, dashboard, or operations tooling.",
+    "next": "Use only with non-sensitive/public creative prompts, confirm commercial-rights terms under the active Suno plan, and keep human review before using generated audio in ads or customer-facing content.",
+    "name": "Suno Studio 2.0",
+    "category": "AI audio / content production",
+    "summary": "Browser-based generative music/audio workstation from Suno. The Product Hunt feed surfaced Studio 2.0 as a generative DAW, and the official Suno Studio page says Studio is for Premium subscribers who want greater creative control over Suno songs, with plugin-style experimentation and access through suno.com/studio.",
+    "drprepper": "Useful mainly for KF Goodies, DR Prepper, and DJR marketing experiments: quick background music, ad audio concepts, short-form social variants, or internal explainer audio before paying for production music.",
+    "toolUrl": "https://suno.com/studio",
+    "postUrl": "https://www.producthunt.com/products/suno",
+    "extraLinks": [
+      {
+        "label": "Official Suno pricing",
+        "url": "https://suno.com/pricing"
+      },
+      {
+        "label": "Product Hunt feed source",
+        "url": "https://www.producthunt.com/feed"
+      }
+    ],
+    "firstSeen": "2026-08-14T06:07:16-07:00",
+    "lastReviewed": "2026-08-14T06:07:16-07:00"
+  },
+  {
+    "priority": "Medium",
     "aluma": "Could help harden Aluma scraper/dashboard repositories if code-agent output starts flowing through PRs, but normal architecture review and CI must remain the source of truth.",
     "next": "Test on a disposable or low-risk repository first. Compare findings against Hermes/Codex review quality, verify false positives, CI integration, permissions, audit logs, and whether auto-fixes remain reviewable before enabling on business repos.",
     "name": "Gitar",
@@ -649,6 +672,25 @@
     ],
     "firstSeen": "2026-08-11T06:04:38-07:00",
     "lastReviewed": "2026-08-11T06:04:38-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Could help monitor Aluma scraper/dashboard coding work remotely, but it should not become a way to approve risky repo or production changes without normal evidence gates.",
+    "next": "Verification needed: identify the official app/site, auth model, repo permissions, supported agents, log visibility, pricing, and whether every code change still lands as a reviewable branch/PR.",
+    "name": "Port22",
+    "category": "AI coding agents / mobile supervision",
+    "summary": "Product Hunt-listed mobile control surface for Claude Code, Codex, and similar coding agents, positioned as managing AI development work from a phone. The Product Hunt feed verified the launch/tagline, but this cron did not verify the official homepage, pricing, security model, or repository integration details.",
+    "drprepper": "Potential watch item for supervising PrepShip, Client Portal, DJR, Warehouse, and dashboard coding-agent runs away from the desk, but only if it preserves clean PR review, logs, permissions, and no direct-to-main shortcuts.",
+    "toolUrl": "https://www.producthunt.com/products/port22",
+    "postUrl": "https://www.producthunt.com/products/port22",
+    "extraLinks": [
+      {
+        "label": "Product Hunt feed source",
+        "url": "https://www.producthunt.com/feed"
+      }
+    ],
+    "firstSeen": "2026-08-14T06:07:16-07:00",
+    "lastReviewed": "2026-08-14T06:07:16-07:00"
   },
   {
     "priority": "Watch",
@@ -1417,6 +1459,19 @@
     ],
     "firstSeen": "2026-08-02T06:11:42-07:00",
     "lastReviewed": "2026-08-02T06:11:42-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful for Aluma lead and project trackers if the team needs fast visual summaries from spreadsheet rows without funding a custom dashboard first.",
+    "next": "Verification needed: open the official Workspace article/account UI, confirm rollout/availability, and test on a copy of a non-sensitive lead or operations sheet before making it a source of truth.",
+    "name": "Google Sheets canvas",
+    "category": "AI spreadsheets / ops dashboards",
+    "summary": "Google Workspace feature surfaced in the Aug. 14 Daily AI Intel brief: prompt-built spreadsheet canvases for turning Sheets data into lightweight dashboards, trackers, and visual summaries. The official Workspace blog URL was reachable, but this cron could not cleanly extract article body text from the JavaScript-heavy page, so details need operator verification before relying on it for a production workflow.",
+    "drprepper": "Strong fit for quick DR Prepper, PrepShip, KF Goodies, and sales ops review boards where source data already lives in Sheets: lead queues, fulfillment exceptions, supplier follow-ups, price checks, and weekly KPI trackers.",
+    "toolUrl": "https://workspace.google.com/blog/product-announcements/sheets-canvas",
+    "postUrl": "https://workspace.google.com/blog/product-announcements/sheets-canvas",
+    "firstSeen": "2026-08-14T06:07:16-07:00",
+    "lastReviewed": "2026-08-14T06:07:16-07:00"
   },
   {
     "priority": "Medium",
