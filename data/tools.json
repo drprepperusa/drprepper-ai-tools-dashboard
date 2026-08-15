@@ -1286,6 +1286,25 @@
     "lastReviewed": "2026-07-01T06:05:21-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Could help qualify contractor or GC prospects for formwork/rental needs after a human-owned outreach list exists; do not let it auto-call prospects until scripts, compliance, and brand voice are reviewed.",
+    "next": "Treat as a watch item: verify call consent rules, calendar/CRM integrations, objection scripts, data retention, demo quality, pricing, and a human takeover path before any real prospect use.",
+    "name": "SalesCloser.ai",
+    "category": "AI sales agents / demo automation",
+    "summary": "AI sales agent surfaced in the Aug. 15 Daily AI Intel brief and Product Hunt: handles outreach, qualification, booking, live video demos, screen sharing, objections, follow-up, and support-style call flows in multiple languages. The official site was reachable and describes live demo agents with pricing shown as from $600/month on the current landing page.",
+    "drprepper": "Potential future fit for DR Prepper 3PL, DJR wholesale, and Aluma B2B lead follow-up where repetitive qualification calls or demo walkthroughs consume sales time, but only after scripts, handoff rules, recording/consent, CRM logging, and human approval are tight.",
+    "toolUrl": "https://salescloser.ai/",
+    "postUrl": "https://www.producthunt.com/products/salescloser-ai",
+    "extraLinks": [
+      {
+        "label": "Current landing page",
+        "url": "https://www.salescloser.ai/"
+      }
+    ],
+    "firstSeen": "2026-08-15T06:06:26-07:00",
+    "lastReviewed": "2026-08-15T06:06:26-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could produce polished proposal or project-intel decks from verified project facts, photos, and rental/service scope notes.",
     "next": "Trial it on a non-confidential DR Prepper sales deck; verify every claim, price, metric, and customer/logo before sharing externally.",
@@ -1581,6 +1600,29 @@
     ],
     "firstSeen": "2026-07-07T06:05:46-07:00",
     "lastReviewed": "2026-07-28T06:16:20-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could help map Aluma project research, contractor relationships, bid/no-bid reasoning, and source-backed lead qualification without losing which evidence supported which conclusion.",
+    "next": "Try locally with non-sensitive notes from one completed taskup or lead-research session; verify export, local storage, model-key handling, and whether it complements or duplicates Obsidian/Hermes notes before using it for active business truth.",
+    "name": "ThoughtDAG",
+    "category": "AI workspace / context mapping",
+    "summary": "Open-source local canvas where LLM conversations become an editable thought graph: wires define the context each node sees, and editing the graph edits the model memory. HN surfaced it as a canvas for LLM chats; the GitHub repo describes a React/TypeScript desktop app under MIT license.",
+    "drprepper": "Useful pattern for long, messy DR Prepper / PrepShip / DJR conversations where requirements, evidence, blockers, and decisions need to stay visible as a map instead of disappearing in a linear chat thread.",
+    "toolUrl": "https://github.com/chenxiachan/thoughtdag",
+    "postUrl": "https://news.ycombinator.com/item?id=49057101",
+    "extraLinks": [
+      {
+        "label": "Project site",
+        "url": "https://chenxiachan.github.io/thoughtdag/"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49057101"
+      }
+    ],
+    "firstSeen": "2026-08-15T06:06:26-07:00",
+    "lastReviewed": "2026-08-15T06:06:26-07:00"
   },
   {
     "priority": "Medium",
@@ -3140,6 +3182,29 @@
     ],
     "firstSeen": "2026-06-29T06:04:16-07:00",
     "lastReviewed": "2026-06-29T06:04:16-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful if Aluma lead-gen or project-intel jobs keep using LLM-heavy scraping/classification; receipts can separate useful research from quota-burn, retries, and failed source reads.",
+    "next": "Pilot on non-secret API calls only: run one dashboard or lead-classification workflow through the proxy, compare reported tokens/cost/failures to Hermes insights, and verify no prompts/customer data are retained beyond acceptable logs.",
+    "name": "Inferock Bench",
+    "category": "LLM observability / API receipts",
+    "summary": "LLM inference accountability tool surfaced in Product Hunt and the Aug. 15 Daily AI Intel brief. The official Inferock site describes per-call receipts, loss/failure reporting, token usage, billing-integrity proof, and a local cost-tracking proxy for OpenAI, Anthropic, Gemini, and pinned OpenRouter calls.",
+    "drprepper": "Strong fit for Hermes/Codex/Claude operational cost governance: attach receipts to expensive agent runs, dashboard updates, Trello audits, lead research, and billing/fulfillment checks so model, tokens, failures, and costs are auditable instead of anecdotal.",
+    "toolUrl": "https://inferock.ai/bench",
+    "postUrl": "https://www.producthunt.com/products/inferock-bench",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/inferock/inferock-bench"
+      },
+      {
+        "label": "NPM package",
+        "url": "https://www.npmjs.com/package/inferock-bench"
+      }
+    ],
+    "firstSeen": "2026-08-15T06:06:26-07:00",
+    "lastReviewed": "2026-08-15T06:06:26-07:00"
   },
   {
     "priority": "High",
