@@ -204,6 +204,29 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful for construction-project and contractor relationship follow-up if meeting/email/calendar access is scoped and every outreach action remains human-approved.",
+    "next": "Pilot only with internal or non-sensitive sales notes first. Verify email/calendar permissions, action logging, follow-up draft quality, data export/delete behavior, and pricing before connecting real prospect/customer history.",
+    "name": "min.",
+    "category": "AI CRM / relationship intelligence",
+    "summary": "CRM that builds itself from meetings, email, and calendar activity. The official site says it records meetings without a bot, reads email/calendar, creates relationship capsules, drafts follow-ups, and can chase owed actions.",
+    "drprepper": "Strong fit for DR Prepper, DJR, KF Goodies, and 3PL sales follow-up because the current bottleneck is remembering who needs a reply, what was promised, and which relationship is warming up without manual CRM upkeep.",
+    "toolUrl": "https://getmin.ai/",
+    "postUrl": "https://www.producthunt.com/products/min-4",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://getmin.ai/"
+      },
+      {
+        "label": "Product Hunt feed source",
+        "url": "https://www.producthunt.com/feed"
+      }
+    ],
+    "firstSeen": "2026-08-16T06:03:43-07:00",
+    "lastReviewed": "2026-08-16T06:05:20-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Potential fit for contractor/developer lead follow-up and bid-stage reminders if sources, contacts, and outreach approvals are controlled by Aluma's sales process rather than left to autonomous sending.",
     "next": "Pilot one narrow workflow: enrich 25 public 3PL or DJR prospects, draft follow-ups, and log suggested tasks. Do not connect live mailboxes or auto-send outreach until consent/compliance rules, CRM field ownership, and human review gates are documented.",
     "name": "Clarify + Seam AI",
@@ -890,6 +913,29 @@
     ],
     "firstSeen": "2026-07-26T06:17:57-07:00",
     "lastReviewed": "2026-07-26T06:17:57-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Directly relevant to Aluma estimating/proposal workflows if Australian-market assumptions are treated as non-authoritative and only the takeoff/estimate workflow pattern is reused.",
+    "next": "Test with one non-sensitive Aluma-style estimate or sample plan set. Verify outputs against human estimator math, local cost assumptions, exclusions, and proposal wording before using it with real bids or customer quotes.",
+    "name": "CostLogic",
+    "category": "AI construction estimating / takeoffs",
+    "summary": "AI-powered construction takeoff, estimate, and invoice platform. Product Hunt described it as AI-powered construction takeoffs, estimates, and invoices; the official site positions it for construction cost estimation with detailed breakdowns and reports.",
+    "drprepper": "Indirect fit for DR Prepper, but strong operational pattern for quote-building: estimates should produce reviewable assumptions, cost breakdowns, and report artifacts rather than loose chatbot answers.",
+    "toolUrl": "https://costlogic.ai/",
+    "postUrl": "https://www.producthunt.com/products/costlogic",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://costlogic.ai/"
+      },
+      {
+        "label": "Product Hunt feed source",
+        "url": "https://www.producthunt.com/feed"
+      }
+    ],
+    "firstSeen": "2026-08-16T06:03:43-07:00",
+    "lastReviewed": "2026-08-16T06:05:20-07:00"
   },
   {
     "priority": "Medium",
