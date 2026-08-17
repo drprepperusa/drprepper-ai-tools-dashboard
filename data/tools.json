@@ -1648,6 +1648,29 @@
     "lastReviewed": "2026-07-28T06:16:20-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Useful for Aluma lead-gen and project-intel sweeps across contractor, permit, plan-room, and supplier websites if the workflow stays source-cited and avoids unauthorized scraping or account actions.",
+    "next": "Test first on public, read-only pages such as competitor listings or supplier catalogs. Verify auth handling, logs, rate limits, data retention, and approval gates before connecting private portals or customer/order data.",
+    "name": "TinyFish",
+    "category": "AI web-agent infrastructure / browser automation",
+    "summary": "Enterprise infrastructure for AI web agents that can navigate, authenticate, extract data, and automate workflows across many websites with a serverless architecture. Surfaced in the Aug. 17 Daily AI Intel brief via Product Hunt; the official site describes scalable web-agent runs rather than one-off browser scripting.",
+    "drprepper": "Strong fit for DR Prepper and PrepShip research/ops automations where agents need to read supplier portals, competitor pages, carrier/status pages, or marketplace listings, but any logged-in/customer/order workflow needs strict read-only scopes and human approval before writes.",
+    "toolUrl": "https://www.tinyfish.ai/",
+    "postUrl": "https://www.producthunt.com/products/tinyfish-2",
+    "extraLinks": [
+      {
+        "label": "Product Hunt feed source",
+        "url": "https://www.producthunt.com/feed"
+      },
+      {
+        "label": "Official site",
+        "url": "https://www.tinyfish.ai/"
+      }
+    ],
+    "firstSeen": "2026-08-17T06:02:46-07:00",
+    "lastReviewed": "2026-08-17T06:05:48-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could help map Aluma project research, contractor relationships, bid/no-bid reasoning, and source-backed lead qualification without losing which evidence supported which conclusion.",
     "next": "Try locally with non-sensitive notes from one completed taskup or lead-research session; verify export, local storage, model-key handling, and whether it complements or duplicates Obsidian/Hermes notes before using it for active business truth.",
@@ -2842,6 +2865,33 @@
     "lastReviewed": "2026-06-20T06:04:27-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could help with desktop-only estimating, PDF, or portal workflows if there is no API path, but Aluma quote/proposal truth should remain in canonical files/systems rather than GUI state.",
+    "next": "Evaluate only in a local sandbox first. Check macOS Accessibility/Screen Recording permissions, deterministic waits, audit logs, failure modes, and a hard approval gate before using it near billing, postage, CRM, or customer data.",
+    "name": "Winuse",
+    "category": "Desktop GUI automation / agent app control",
+    "summary": "Open-source native GUI automation project with a Rust core, Python API, and agent-oriented CLI. The README says it supports macOS Accessibility and Windows UI Automation behind the same backend trait, with primitives for windows, clipboard, waits, clicks, forms, and keyboard shortcuts.",
+    "drprepper": "Useful pattern for internal automation where Hermes/Codex needs to operate desktop-only tools, carrier utilities, legacy apps, or browser windows that lack reliable APIs. It should stay behind local permissions, visible execution, and no irreversible unattended actions.",
+    "toolUrl": "https://github.com/lgxz/winuse",
+    "postUrl": "https://news.ycombinator.com/item?id=49327992",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/lgxz/winuse"
+      },
+      {
+        "label": "README raw verification",
+        "url": "https://raw.githubusercontent.com/lgxz/winuse/main/README.md"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49327992"
+      }
+    ],
+    "firstSeen": "2026-08-17T06:02:46-07:00",
+    "lastReviewed": "2026-08-17T06:05:48-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Indirect fit for Aluma-facing internal tools if bugs in lead-gen or proposal dashboards need cleaner evidence before developer handoff.",
     "next": "Try one non-sensitive public or sanitized issue first and compare its repro evidence against the current Hermes/Trello review workflow before connecting private repos.",
@@ -3711,6 +3761,33 @@
     ],
     "firstSeen": "2026-07-15T06:04:53-07:00",
     "lastReviewed": "2026-07-15T06:04:53-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Strong fit for Aluma contractor/GC outreach: nightly sourcing and dossier drafting could reduce manual list building while preserving human approval before any email leaves the company.",
+    "next": "Pilot self-hosted on a narrow non-sensitive list, such as SoCal concrete subcontractors or Shopify 3PL prospects. Require source links for every claim, unsubscribe/compliance review, CRM logging, and human approval before sending.",
+    "name": "Tanchi",
+    "category": "Open-source AI prospecting / human-approved outreach",
+    "summary": "Open-source, self-hostable B2B prospecting engine that sources, researches, drafts, and follows up while keeping humans in control of what gets sent. The README emphasizes sourced prospect intelligence, email-first automation, reply/meeting measurement, Docker quickstart, and AGPL licensing.",
+    "drprepper": "Direct fit for DJR, DR Prepper 3PL, and wholesale lead-gen if configured as a draft-and-approve pipeline: AI finds prospects, cites evidence, drafts the angle, then a human approves outreach and CRM updates.",
+    "toolUrl": "https://github.com/tanchihq/tanchi",
+    "postUrl": "https://news.ycombinator.com/item?id=49274973",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/tanchihq/tanchi"
+      },
+      {
+        "label": "README raw verification",
+        "url": "https://raw.githubusercontent.com/tanchihq/tanchi/main/README.md"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49274973"
+      }
+    ],
+    "firstSeen": "2026-08-17T06:02:46-07:00",
+    "lastReviewed": "2026-08-17T06:05:48-07:00"
   },
   {
     "priority": "Watch",
