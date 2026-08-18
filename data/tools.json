@@ -4409,23 +4409,39 @@
     "lastReviewed": "2026-07-29T06:11:26-07:00"
   },
   {
-    "priority": "Watch",
-    "aluma": "Could be useful for routing lead-research or project-intake agents through one controlled API, but only after terms, logging, and data-boundary behavior are clear.",
-    "next": "Verification needed: confirm the official tool/docs, pricing, supported agent providers, data retention, rate limits, and approval/audit controls before evaluating it for any customer-facing or write-capable workflow.",
+    "priority": "Medium",
+    "aluma": "Could route Aluma lead-research, project-intake, or proposal agents through a controlled API with auditable sessions, but only after key handling, logging, and approval boundaries are reviewed.",
+    "next": "Update from watchlist to evaluated medium priority: run the Community Edition locally with fake tasks, confirm no cloud/telemetry path for local runs, test Hermes/Codex/Claude harness behavior, and compare its governance with existing Hermes cron/subagent workflows before connecting any real business data.",
     "name": "HarnessRouter",
     "category": "agent API / orchestration router",
-    "summary": "Product Hunt launch under Epsilla for bringing multiple AI agents into an app through one API. The feed verified the source claim, but direct product docs/pricing were not verified in this run.",
-    "drprepper": "Potentially relevant if internal apps need a single governed backend layer for agent calls across quote support, lead research, support drafting, or dashboard workflows, instead of letting frontends call providers directly.",
+    "summary": "Self-hosted/open-source Community Edition and hosted API for running agent harnesses such as Codex, Claude Code, and Hermes through one interface with sessions, streaming, files, cancellation, and failure handling. The repo is Apache-2.0 and implements the Unified Harness Protocol.",
+    "drprepper": "Relevant if DR Prepper internal apps need a governed backend layer for agent work across quote support, lead research, dashboard maintenance, or developer automation instead of every frontend or script talking directly to providers.",
     "toolUrl": "https://www.producthunt.com/products/epsilla",
     "postUrl": "https://www.producthunt.com/products/epsilla",
     "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://harnessrouter.ai"
+      },
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/HarnessRouter/harnessrouter"
+      },
+      {
+        "label": "HN source",
+        "url": "https://news.ycombinator.com/item?id=49335595"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49335595"
+      },
       {
         "label": "Product Hunt redirect/source id",
         "url": "https://www.producthunt.com/r/p/1203163?app_id=339"
       }
     ],
     "firstSeen": "2026-07-25T06:13:25-07:00",
-    "lastReviewed": "2026-07-25T06:13:25-07:00"
+    "lastReviewed": "2026-08-18T06:06:30-07:00"
   },
   {
     "priority": "Medium",
@@ -4451,6 +4467,29 @@
     "lastReviewed": "2026-07-17T06:04:24-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could organize Aluma contractor research, project notes, bid context, and follow-up history for sales agents, but access controls and retention/export behavior need review before adding private lead notes or customer communications.",
+    "next": "Trial only with non-sensitive public/vendor docs and synthetic project notes. Verify workspace isolation, role permissions, MCP scopes, retention/export/delete controls, and whether agents can be constrained to read-only before storing business-critical context.",
+    "name": "Slaunt",
+    "category": "agent memory / access control",
+    "summary": "Work-intelligence and organizational-memory platform for AI agents, positioned around controlling what agents can access, do, and execute. The site describes structured work memory, MCP/API access, governance features, a free starter tier, and a professional tier around $29/user/month.",
+    "drprepper": "Relevant for making internal SOPs, decisions, project history, and operational context queryable while keeping agent permissions scoped. This matters for PrepShip/Client Portal/DJR work where agents need context but should not automatically gain full customer, billing, or credential access.",
+    "toolUrl": "https://slaunt.ai",
+    "postUrl": "https://news.ycombinator.com/item?id=49337228",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://slaunt.ai"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49337228"
+      }
+    ],
+    "firstSeen": "2026-08-18T06:06:30-07:00",
+    "lastReviewed": "2026-08-18T06:06:30-07:00"
+  },
+  {
     "priority": "Watch",
     "aluma": "Could eventually support bounded paid source access for Aluma lead research or permit/project data, but only with strict per-run budgets, approval logs, and vendor scope limits.",
     "next": "Track only for now. Before any use, define allowlisted vendors, dollar caps, approval/reversal policy, audit exports, and no-customer-data rules. Do not connect to real payments until Cloudflare docs, pricing, and controls are proven in a sandbox.",
@@ -4472,6 +4511,29 @@
     ],
     "firstSeen": "2026-08-05T06:09:39-07:00",
     "lastReviewed": "2026-08-05T06:09:39-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful for future Aluma lead-research or project-intake agents if they gain file, browser, CRM, or messaging access; approvals should gate anything that changes prospect records, sends outreach, or touches paid sources.",
+    "next": "Evaluate in a disposable repo first: route one low-risk coding-agent workflow through the MCP proxy, test deny/approve behavior for .env reads, rm -rf, protected-branch pushes, outbound secret egress, and database commands, then decide whether to adapt similar guardrails for internal Hermes/coding-agent runs.",
+    "name": "Doberman",
+    "category": "agent safety / runtime guardrails",
+    "summary": "Open-source runtime guardrail layer for AI coding agents. Doberman sits between an agent and its tools through an MCP proxy or host hook, classifies each action before execution, and returns PASS, AUTH, or BLOCK for risky file, shell, repo, secret, and network operations.",
+    "drprepper": "Strong fit as a safety pattern before letting agents touch PrepShip, Client Portal, DJR, warehouse, billing, inventory, postage, or deployment workflows. The practical value is blocking destructive or secret-leaking tool calls before they execute, not just reviewing logs afterward.",
+    "toolUrl": "https://github.com/fu351/Doberman-Core",
+    "postUrl": "https://news.ycombinator.com/item?id=49336757",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/fu351/Doberman-Core"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49336757"
+      }
+    ],
+    "firstSeen": "2026-08-18T06:06:30-07:00",
+    "lastReviewed": "2026-08-18T06:06:30-07:00"
   },
   {
     "priority": "Watch",
