@@ -414,6 +414,29 @@
   },
   {
     "priority": "High",
+    "aluma": "Relevant for Aluma contractor/prospect CRM automation if it can enforce per-field permissions, cite evidence for each change, and keep human approval for outreach, status changes, or deal ownership.",
+    "next": "Verification needed before connecting any real CRM: use a sandbox Salesforce/HubSpot account, test blocked fields, approval logs, schema validation, rollback/export, and whether human approval can be mandatory for customer-impacting updates.",
+    "name": "Archron",
+    "category": "AI agent governance / CRM write controls",
+    "summary": "Show HN launch for execution governance that lets AI agents write to CRMs while preserving immutable audit logs. The founder post says the initial integrations target Salesforce and HubSpot and offers a free three-month test period.",
+    "drprepper": "Strong pattern before allowing AI to touch leads, CRM stages, customer records, quote follow-ups, or sales ownership. DR Prepper should start with AI preparing changes for approval, then only allow tightly logged writes after schema, permission, and rollback behavior are proven.",
+    "toolUrl": "https://www.archron.app/",
+    "postUrl": "https://news.ycombinator.com/item?id=49369982",
+    "extraLinks": [
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49369982"
+      },
+      {
+        "label": "Founder demo link from HN",
+        "url": "https://youtu.be/uUTWGwJjpdA"
+      }
+    ],
+    "firstSeen": "2026-08-20T04:02:23-07:00",
+    "lastReviewed": "2026-08-20T06:08:27-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Useful for Aluma lead-gen and project-tracker agents so scraping/classification can run automatically while CRM updates, outreach, and spend-bearing actions stay approval-gated.",
     "next": "Pilot on a non-production Hermes/Codex workflow first. Require audit logs, per-tool policies, budget caps, and human approval before connecting to order systems, messages, production DBs, or outreach.",
     "name": "SteerPlane",
@@ -676,6 +699,29 @@
     ],
     "firstSeen": "2026-08-14T06:07:16-07:00",
     "lastReviewed": "2026-08-14T06:07:16-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful if Aluma app/site work starts using agent-heavy pull requests; require scoped rules for safety, accessibility, SEO, and source-of-truth placement before letting AI review become a merge signal.",
+    "next": "Evaluate in one non-critical repo first. Configure project rules, run on a few closed PRs, measure duplicate/noise rate, and keep Hermes/final human arbitration for money, inventory, billing, auth, or deployment changes.",
+    "name": "pr-sage",
+    "category": "AI code review / GitHub PR guardrails",
+    "summary": "Open-source AI pull-request reviewer built to reduce review noise. The README emphasizes incremental reviews, duplicate-finding suppression, finding lifecycle tracking, inline comments, summary output, and team-specific rules via `.pr-sage.json`.",
+    "drprepper": "Strong fit as a pattern for DR Prepper, PrepShip, Client Portal, DJR, and Warehouse code review gates: focus the AI on real regressions, avoid duplicate comments, and keep review evidence tied to changed commits instead of noisy full-repo re-review.",
+    "toolUrl": "https://github.com/Kyeom1997/pr-sage",
+    "postUrl": "https://news.ycombinator.com/item?id=49358609",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/Kyeom1997/pr-sage"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49358609"
+      }
+    ],
+    "firstSeen": "2026-08-19T04:01:40-07:00",
+    "lastReviewed": "2026-08-20T06:08:27-07:00"
   },
   {
     "priority": "Medium",
@@ -2961,6 +3007,33 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful for extracting project packets, quotes, permits, equipment docs, supplier PDFs, and bid paperwork into reviewable fields, with human approval for engineering, schedule, capacity, price, or compliance claims.",
+    "next": "Run a small benchmark on redacted/sample BOLs, invoices, and rate sheets against current PDF/OCR tooling. Track field accuracy, confidence usefulness, layout recovery, cost per batch, and whether output can feed existing exception-review workflows.",
+    "name": "Mistral OCR 4.1",
+    "category": "Document AI / OCR extraction",
+    "summary": "Mistral document-OCR model documented with native paragraph-level bounding-box extraction, structural block labels, block-level confidence scores, batching support, and listed pricing around $4 per 1,000 pages or $5 per 1,000 annotated pages.",
+    "drprepper": "Strong direct fit for invoices, BOLs, rate sheets, supplier docs, intake forms, proofs of delivery, and billing-support paperwork. The practical workflow is extract fields, validate against business rules, flag exceptions, then require human approval before money or inventory changes.",
+    "toolUrl": "https://docs.mistral.ai/models/ocr-4-1",
+    "postUrl": "https://news.ycombinator.com/item?id=49288889",
+    "extraLinks": [
+      {
+        "label": "Mistral docs",
+        "url": "https://docs.mistral.ai/models/ocr-4-1"
+      },
+      {
+        "label": "HN discussion",
+        "url": "https://news.ycombinator.com/item?id=49288889"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49288889"
+      }
+    ],
+    "firstSeen": "2026-08-19T04:01:40-07:00",
+    "lastReviewed": "2026-08-20T06:08:27-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Useful for Aluma project files, bids, contractor notes, insurance docs, and site paperwork where AI summaries are valuable but client/vendor identities and credentials should be masked first.",
     "next": "Test on fake or non-sensitive files first. Verify Windows-only installer/signing behavior, redaction reversibility, local vault storage, and whether sanitized Markdown is good enough before using it on real customer/order/vendor documents.",
     "name": "Sanitizer by Provexar",
@@ -3540,6 +3613,25 @@
     ],
     "firstSeen": "2026-07-21T06:07:22-07:00",
     "lastReviewed": "2026-07-21T06:07:22-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could help preserve contractor/project/prospect context for Aluma lead work, but only after retention, export, delete, workspace isolation, and read-only access behavior are verified.",
+    "next": "Verification needed before use: test with synthetic/non-sensitive notes only, inspect MCP scopes and storage location, confirm delete/export controls, and do not load customer, billing, credential, or private lead data until access boundaries are proven.",
+    "name": "Knownbase",
+    "category": "MCP agent memory / persistent business context",
+    "summary": "Show HN launch for an MCP server positioned as persistent AI agent memory. The public HN title and URL identify it as an agent-memory layer; deeper product details still need direct-site verification before business data is stored.",
+    "drprepper": "Relevant pattern for keeping repeatable DR Prepper/PrepShip/DJR context available to agents without relying only on chat history. The important question is permissioning: what agents can remember, retrieve, delete, or expose.",
+    "toolUrl": "https://knownbase.dev/",
+    "postUrl": "https://news.ycombinator.com/item?id=49359680",
+    "extraLinks": [
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49359680"
+      }
+    ],
+    "firstSeen": "2026-08-19T04:01:40-07:00",
+    "lastReviewed": "2026-08-20T06:08:27-07:00"
   },
   {
     "priority": "High",
@@ -4268,6 +4360,52 @@
     "postUrl": "https://shipp.to/",
     "firstSeen": "2026-06-24T06:05:48-07:00",
     "lastReviewed": "2026-06-24T06:05:48-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Good fit for classifying contractor lists, project leads, city/permit snippets, and supplier tables into priority, trade, region, or follow-up categories, with source columns preserved for auditability.",
+    "next": "Test on a small exported CSV with non-sensitive lead/review data. Require source columns, deterministic prompts, manual spot-checking, and a no-write workflow before using enriched labels in CRM or outreach decisions.",
+    "name": "MLJAR Enrichment",
+    "category": "Spreadsheet/dataframe enrichment / AI data tagging",
+    "summary": "Apache-2.0 Python package that adds AI-generated columns to pandas DataFrames from normal-English instructions, such as sentiment, industry, or review classification. The README positions it as row-by-row AI enrichment for tabular data.",
+    "drprepper": "Useful for quick lead, customer, review, SKU, supplier, or issue-list triage: classify industries, summarize notes, flag fit, or detect exceptions in CSVs before importing to Sheets/CRM. Keep it read-only until outputs are reviewed.",
+    "toolUrl": "https://github.com/mljar/enrichment",
+    "postUrl": "https://news.ycombinator.com/item?id=49372451",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/mljar/enrichment"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49372451"
+      }
+    ],
+    "firstSeen": "2026-08-20T04:02:23-07:00",
+    "lastReviewed": "2026-08-20T06:08:27-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Could model Aluma prospects, contractors, projects, regions, materials, applications, and follow-up history so agents can answer or research with consistent context instead of repeatedly rediscovering relationships.",
+    "next": "Pilot with public/non-sensitive SOPs and synthetic order/project examples. Verify import/export, source citations, update workflow, deletion behavior, permissions, and how stale facts are corrected before adding private records.",
+    "name": "OpenIndex",
+    "category": "Structured context graph / agent knowledge layer",
+    "summary": "Open-source MIT project for building domain-specific structured data that agents can operate on. The README describes searchable, continuously improving context graphs for support, sales, infrastructure, or other business domains.",
+    "drprepper": "Strong fit for turning SOPs, customers, products, order workflows, issue histories, carrier rules, and dev decisions into a structured context layer instead of relying on loose chat memory. Useful for RAG if the graph remains source-cited and permission-scoped.",
+    "toolUrl": "https://github.com/DrDroidLab/open-index",
+    "postUrl": "https://news.ycombinator.com/item?id=49371703",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/DrDroidLab/open-index"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49371703"
+      }
+    ],
+    "firstSeen": "2026-08-20T04:02:23-07:00",
+    "lastReviewed": "2026-08-20T06:08:27-07:00"
   },
   {
     "priority": "Medium",
