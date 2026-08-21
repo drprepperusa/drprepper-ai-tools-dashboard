@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 20, 2026 · 6:08 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 21, 2026 · 6:05 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">247</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">234</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">111</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">250</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">237</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">112</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -957,6 +957,29 @@
             ],
             "firstSeen": "2026-07-30T06:13:07-07:00",
             "lastReviewed": "2026-07-30T06:13:07-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for Aluma lead-gen, scraper, and project-research jobs if recurring extraction/classification volume grows; cost routing should stay behind quality checks and never bypass approval gates for CRM, outreach, or customer/project decisions.",
+            "next": "Verification needed before adoption: identify official docs/pricing, supported providers/models, logs, privacy, budget caps, fallback behavior, and whether routing decisions can be audited against business outcomes. Prototype only on non-sensitive, read-only batch work first.",
+            "name": "Router by Ramp",
+            "category": "AI model routing / token-cost control",
+            "summary": "Product Hunt-launched AI model router positioned around reducing token spend by routing work across models. The Product Hunt feed verified the launch/tagline, but direct homepage/pricing details were not accessible in this run.",
+            "drprepper": "Strong cost-control pattern for DR Prepper, PrepShip, Client Portal, DJR, Warehouse, and dashboard jobs where cheap classification/extraction should not burn premium model calls. The useful workflow is route cheap mechanical tasks low, escalate risky decisions high, and log outcome/cost.",
+            "toolUrl": "https://www.producthunt.com/products/ramp-router",
+            "postUrl": "https://www.producthunt.com/products/ramp-router",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt feed source",
+                        "url": "https://www.producthunt.com/feed"
+                  },
+                  {
+                        "label": "Product Hunt redirect/source id",
+                        "url": "https://www.producthunt.com/r/p/1227732?app_id=339"
+                  }
+            ],
+            "firstSeen": "2026-08-21T04:01:29-07:00",
+            "lastReviewed": "2026-08-21T06:05:14-07:00"
       },
       {
             "priority": "High",
@@ -4788,6 +4811,29 @@
       },
       {
             "priority": "Watch",
+            "aluma": "Could help run isolated Aluma scraper/dashboard coding tasks remotely, but only after repository permissions, secret handling, network access, logs, and branch protections are proven.",
+            "next": "Do not connect business repos yet. Verify official site/pricing, GitHub app scopes, data retention, environment/secret isolation, logs, branch/PR workflow, and whether Claude/Codex/Opencode sessions remain reproducible before testing on a disposable repo.",
+            "name": "Epho",
+            "category": "AI coding agents / cloud repo workspaces",
+            "summary": "Product Hunt-launched cloud workspace for running Claude Code, Codex, or Opencode against a repository. The feed verified the product/tagline; official homepage, pricing, security model, and repo-permission details still need verification.",
+            "drprepper": "Potential watch item for PrepShip, Client Portal, DJR, Warehouse, and dashboard development when local machine setup or long-running agent sessions become a bottleneck. It should only be useful if every change remains branch/PR-based with logs, tests, and no direct production access.",
+            "toolUrl": "https://www.producthunt.com/products/epho-claude-code-in-the-cloud",
+            "postUrl": "https://www.producthunt.com/products/epho-claude-code-in-the-cloud",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt feed source",
+                        "url": "https://www.producthunt.com/feed"
+                  },
+                  {
+                        "label": "Product Hunt redirect/source id",
+                        "url": "https://www.producthunt.com/r/p/1227815?app_id=339"
+                  }
+            ],
+            "firstSeen": "2026-08-21T04:01:29-07:00",
+            "lastReviewed": "2026-08-21T06:05:14-07:00"
+      },
+      {
+            "priority": "Watch",
             "aluma": "Could help monitor Aluma scraper/dashboard coding work remotely, but it should not become a way to approve risky repo or production changes without normal evidence gates.",
             "next": "Verification needed: identify the official app/site, auth model, repo permissions, supported agents, log visibility, pricing, and whether every code change still lands as a reviewable branch/PR.",
             "name": "Port22",
@@ -4842,6 +4888,29 @@
             ],
             "firstSeen": "2026-07-31T06:12:26-07:00",
             "lastReviewed": "2026-07-31T06:12:26-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Possible future fit for browser-only contractor/project portals or estimating admin chores, but only if local permissions, session recording, credential isolation, and no-send/no-write approvals are strong.",
+            "next": "Verification needed: find the official product page, supported OS/apps, permission model, credential handling, audit logs, pricing, and human-approval/kill-switch behavior. Test only with fake accounts or public pages first.",
+            "name": "ShogunAI",
+            "category": "AI desktop agents / PC workflow automation",
+            "summary": "Product Hunt-launched desktop-agent product described as a personal AGI on your PC built to finish real work. The feed verified the launch/tagline, but official site, pricing, local permissions, and safety controls were not accessible in this run.",
+            "drprepper": "Worth watching for back-office workflows where portals lack APIs, such as browser-only vendor portals, download/upload chores, report pulls, or repetitive admin checks. It should not touch orders, payments, messages, labels, or customer data without visible logs and approval gates.",
+            "toolUrl": "https://www.producthunt.com/products/shogunai",
+            "postUrl": "https://www.producthunt.com/products/shogunai",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt feed source",
+                        "url": "https://www.producthunt.com/feed"
+                  },
+                  {
+                        "label": "Product Hunt redirect/source id",
+                        "url": "https://www.producthunt.com/r/p/1228269?app_id=339"
+                  }
+            ],
+            "firstSeen": "2026-08-21T04:01:29-07:00",
+            "lastReviewed": "2026-08-21T06:05:14-07:00"
       },
       {
             "priority": "Watch",
