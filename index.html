@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 21, 2026 · 6:05 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 22, 2026 · 6:05 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">250</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">237</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">112</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">253</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">240</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">114</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -1947,6 +1947,29 @@
       },
       {
             "priority": "High",
+            "aluma": "Useful for Aluma website/lead-capture UI and project dashboards where visuals matter but accessibility, mobile clarity, and conversion copy still need guardrails. Keep business rules and pricing/workflow truth outside the frontend skill pack.",
+            "next": "Pilot on a non-critical dashboard or landing-page component. Borrow the gate structure for accessibility, mobile, empty states, loading/error handling, and source-of-truth checks before using it on client/customer-facing portals.",
+            "name": "frontend-design-pro",
+            "category": "Frontend AI-agent skill pack / UI quality gates",
+            "summary": "Show HN launch for a frontend skill pack that AI coding agents load while writing UI code. The project site says it routes one of 19 skills per request, enforces 60 machine-checkable constraints, and ships only when 11 gates pass.",
+            "drprepper": "Strong practical pattern for DR Prepper landing pages, Client Portal screens, dashboards, and admin workflow UI: pair AI-generated frontend work with explicit design, accessibility, responsiveness, motion, and QA gates instead of accepting pretty but brittle screens.",
+            "toolUrl": "https://krishna-modi12.github.io/frontend-design-pro/",
+            "postUrl": "https://news.ycombinator.com/item?id=49396937",
+            "extraLinks": [
+                  {
+                        "label": "GitHub repo",
+                        "url": "https://github.com/Krishna-Modi12/frontend-design-pro"
+                  },
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49396937"
+                  }
+            ],
+            "firstSeen": "2026-08-22T04:02:00-07:00",
+            "lastReviewed": "2026-08-22T06:05:53-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Could help Aluma keep contractor/project-intel conversations from turning into forgotten follow-ups if Slack/Teams becomes part of the sales workflow.",
             "next": "Sandbox with non-sensitive sales notes first; require read-only access, clear approval before CRM/email actions, and review whether Slack/Teams is actually the right operating hub.",
             "name": "Needle",
@@ -2528,6 +2551,29 @@
             ],
             "firstSeen": "2026-08-20T04:02:23-07:00",
             "lastReviewed": "2026-08-20T06:08:27-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful pattern for Aluma project/lead automation if knowledge can be kept source-cited and stale-aware across scrapers, trackers, docs, and outreach notes. Do not store private customer/project data until retention and deletion behavior are proven.",
+            "next": "Prototype on public/sample repositories first. Verify installation, storage location, lock/concurrency behavior, stale-path handling, export/delete controls, and whether trust verdicts reduce bad file/path assumptions in real coding sessions.",
+            "name": "Heimdall",
+            "category": "Verified agent memory / coding knowledge graph",
+            "summary": "MIT-licensed knowledge layer for AI coding agents that watches project work, maintains a semantic memory graph, and labels search hits with trust verdicts such as STRONG, WEAK, REBUILT, STALE, or REMOVED before agents act on them.",
+            "drprepper": "Strong fit as a design pattern for reducing stale-context mistakes across PrepShip, Client Portal, DJR, Warehouse, and dashboard work. The valuable part is not just memory—it is trust labeling so agents know whether a file/path/fact is current enough to act on.",
+            "toolUrl": "https://github.com/ArihantDeva/heimdall",
+            "postUrl": "https://news.ycombinator.com/item?id=49395883",
+            "extraLinks": [
+                  {
+                        "label": "README",
+                        "url": "https://github.com/ArihantDeva/heimdall/blob/main/README.md"
+                  },
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49395883"
+                  }
+            ],
+            "firstSeen": "2026-08-22T04:02:00-07:00",
+            "lastReviewed": "2026-08-22T06:05:53-07:00"
       },
       {
             "priority": "High",
@@ -4979,6 +5025,25 @@
             "postUrl": "https://www.producthunt.com/products/river-9",
             "firstSeen": "2026-07-16T06:05:52-07:00",
             "lastReviewed": "2026-07-16T06:05:52-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Potential future fit for small internal prototypes or lead-gen tools only after the language/tooling is stable and easy to audit. Aluma production workflows still need conventional source-of-truth ownership, tests, and maintainable handoff docs.",
+            "next": "Verification needed: find official Vercel docs/repo, language semantics, package/deploy story, security model, test tooling, license, and examples. Treat as research only until a disposable prototype proves it is maintainable.",
+            "name": "Zero by Vercel",
+            "category": "AI-first programming language / agent development",
+            "summary": "Product Hunt launch for Vercel's programming language built for AI agents. The Product Hunt feed verified the product name and positioning, but the direct Product Hunt page was blocked in this run, so deeper docs, pricing, and maturity still need verification.",
+            "drprepper": "Useful as a watch item for future PrepShip, Client Portal, DJR, Warehouse, and dashboard code paths if AI-native languages/toolchains start reducing agent implementation friction. Do not adopt for production business systems until runtime, ecosystem, debugging, security, and deployment behavior are proven.",
+            "toolUrl": "https://www.producthunt.com/products/zero-15",
+            "postUrl": "https://www.producthunt.com/products/zero-15",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt feed source",
+                        "url": "https://www.producthunt.com/feed"
+                  }
+            ],
+            "firstSeen": "2026-08-22T04:02:00-07:00",
+            "lastReviewed": "2026-08-22T06:05:53-07:00"
       },
       {
             "priority": "Watch",
