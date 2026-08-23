@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 22, 2026 · 6:05 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 23, 2026 · 6:05 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">253</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">240</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">114</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">256</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">243</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">116</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -504,6 +504,33 @@
       },
       {
             "priority": "High",
+            "aluma": "Useful for Aluma lead-capture pages, proposal microsites, and project dashboards where visual polish matters but accessibility/mobile issues need deterministic gates before publishing.",
+            "next": "Pilot on one dashboard or landing-page HTML build in keyless deterministic mode first; wire axe/layout checks into CI before using optional LLM vision review, and keep human review for business-critical workflows.",
+            "name": "LayoutLens",
+            "category": "AI UI testing / accessibility QA",
+            "summary": "Open-source/PyPI visual UI testing library that combines deterministic axe-core WCAG checks, geometry/contrast/occlusion scoring, and optional vision-LLM review. The README emphasizes keyless CI checks where measured accessibility/layout violations can overrule the model.",
+            "drprepper": "Strong practical fit for Client Portal, Warehouse, admin dashboards, and landing-page QA because it can catch broken mobile layouts, accessibility regressions, hidden CTAs, and visual issues without trusting screenshots or LLM opinion alone.",
+            "toolUrl": "https://github.com/gojiplus/layoutlens",
+            "postUrl": "https://news.ycombinator.com/item?id=49405683",
+            "extraLinks": [
+                  {
+                        "label": "PyPI",
+                        "url": "https://pypi.org/project/layoutlens/"
+                  },
+                  {
+                        "label": "Docs",
+                        "url": "https://gojiplus.github.io/layoutlens/"
+                  },
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49405683"
+                  }
+            ],
+            "firstSeen": "2026-08-23T04:00:27-07:00",
+            "lastReviewed": "2026-08-23T06:05:04-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Useful for Aluma lead-gen or project-status agents if future workflows need proof of which source was read, what action was proposed, and whether a human approved a CRM/sheet/outreach change.",
             "next": "Evaluate as a dev-only proof pattern first. Require no secrets in receipts, stable storage, easy replay/readback, and human approval markers before using it around production-impacting automations.",
             "name": "Traceseal",
@@ -604,6 +631,33 @@
             ],
             "firstSeen": "2026-07-21T06:07:22-07:00",
             "lastReviewed": "2026-07-21T06:07:22-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for Aluma lead-gen/project-research agents if future workflows need durable sessions, MCP tooling, approval checkpoints, and a visible operator UI before CRM/sheet/outreach writes.",
+            "next": "Evaluate in local mode only with a non-sensitive read-only workflow. Verify auth, logs, sandbox isolation, MCP credential handling, approval gates, hosted-mode security, and benchmark claims before connecting business systems.",
+            "name": "TrueForge by TrueFoundry",
+            "category": "AI agent harness / operations runtime",
+            "summary": "MIT open-source agent harness that runs model calls, MCP tools, skills, sandboxing, approvals, context management, session state, chat UI, HTTP API, TypeScript SDK, and embeddable UI. The README supports local SQLite mode plus hosted Postgres/Redis deployments and links benchmark docs for lower-cost agent execution.",
+            "drprepper": "Strong pattern for PrepShip, Client Portal, dashboard, and internal ops agents because it packages the boring but necessary runtime pieces: approvals, sandboxing, tool catalogs, session state, UI, and SDK access instead of one-off scripts.",
+            "toolUrl": "https://github.com/truefoundry/trueforge",
+            "postUrl": "https://news.ycombinator.com/item?id=49378419",
+            "extraLinks": [
+                  {
+                        "label": "Docs",
+                        "url": "https://trueforge.dev"
+                  },
+                  {
+                        "label": "Quickstart",
+                        "url": "https://trueforge.dev/quickstart"
+                  },
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49378419"
+                  }
+            ],
+            "firstSeen": "2026-08-23T04:00:27-07:00",
+            "lastReviewed": "2026-08-23T06:05:04-07:00"
       },
       {
             "priority": "High",
@@ -3173,6 +3227,25 @@
             ],
             "firstSeen": "2026-07-11T06:04:09-07:00",
             "lastReviewed": "2026-07-11T06:04:09-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could help package Aluma-specific lead-gen, scraper, proposal, and dashboard engineering conventions into portable procedures that new agents can load without rediscovering the workflow.",
+            "next": "Review the frontend/backend skill structure and borrow only the reusable patterns that fit Hermes skills. Add project-specific gates for source-of-truth ownership, tests, accessibility, and no direct production/customer writes.",
+            "name": "TechSkills",
+            "category": "AI coding-agent skill library / engineering procedures",
+            "summary": "Open-source library of reusable SKILL.md modules for AI coding agents, currently covering frontend engineering and backend engineering with references, assets, eval cases, progressive disclosure, and framework-neutral quality gates.",
+            "drprepper": "Useful as a template for standardizing how coding agents approach PrepShip, Client Portal, DJR, Warehouse, and dashboard work: frontend polish, backend safety, source-of-truth discipline, and eval-backed procedures should live in reusable skills rather than ad hoc prompts.",
+            "toolUrl": "https://github.com/debabratasaha-dev/techskills",
+            "postUrl": "https://news.ycombinator.com/item?id=49401893",
+            "extraLinks": [
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49401893"
+                  }
+            ],
+            "firstSeen": "2026-08-23T04:00:27-07:00",
+            "lastReviewed": "2026-08-23T06:05:04-07:00"
       },
       {
             "priority": "Medium",
