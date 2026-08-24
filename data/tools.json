@@ -1859,6 +1859,19 @@
     "lastReviewed": "2026-08-17T06:05:48-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Could become useful for project-research, bid follow-up, lead tracking, and contractor/customer lookup across work apps if it supports scoped read-only search and auditable human-approved actions.",
+    "next": "Verification needed: open the product outside the blocked Product Hunt feed path, identify the real homepage/app, confirm supported integrations, pricing, SOC/privacy posture, data-retention terms, and whether actions can be run in read-only/draft mode before any pilot.",
+    "name": "Contrive",
+    "category": "AI work-app command bar / operations assistant",
+    "summary": "Product Hunt-launched tool described as searching and acting across work apps. Public feed verification supports the high-level positioning only; pricing, integrations, permissions, audit logs, and the actual product destination were not visible from the unattended feed scan.",
+    "drprepper": "Potentially relevant as an operations command-bar pattern for looking up sales prospects, customers, tasks, documents, and internal follow-ups across work apps. It should not touch real customer, billing, inventory, or messaging systems until permissions, logging, approval gates, and data-retention terms are verified.",
+    "toolUrl": "https://www.producthunt.com/products/contrive",
+    "postUrl": "https://www.producthunt.com/products/contrive",
+    "firstSeen": "2026-08-24T06:07:40-07:00",
+    "lastReviewed": "2026-08-24T06:07:40-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could help map Aluma project research, contractor relationships, bid/no-bid reasoning, and source-backed lead qualification without losing which evidence supported which conclusion.",
     "next": "Try locally with non-sensitive notes from one completed taskup or lead-research session; verify export, local storage, model-key handling, and whether it complements or duplicates Obsidian/Hermes notes before using it for active business truth.",
@@ -1903,6 +1916,25 @@
     ],
     "firstSeen": "2026-08-11T06:04:38-07:00",
     "lastReviewed": "2026-08-11T06:04:38-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could standardize Aluma scraper/research/project-agent setup across machines and repos so lead-gen and project-status agents run from the same locked skill/config inputs rather than ad hoc local state.",
+    "next": "Pilot in a disposable repo first: define one harmless shared skill source, run `enozunu summon`, commit the lock file, then test `enozunu summon --frozen` plus clean git status in CI. Do not replace Hermes skills or repo AGENTS rules until the generated-output boundaries are fully understood.",
+    "name": "Enozunu",
+    "category": "AI-agent configuration / skill reproducibility",
+    "summary": "Apache-2.0 declarative configuration materializer for AI-agent tooling. It lets teams declare reusable skills/agents and source selections in `enozunu.kdl`, lock mutable refs in `enozunu.lock.json`, and materialize the same configuration into Claude and Codex native project paths with frozen CI verification.",
+    "drprepper": "Useful pattern for keeping Codex/Claude agent skills, project instructions, and reusable workflows consistent across PrepShip, Client Portal, DJR, Warehouse, and dashboard repos without manually copying stale files between projects.",
+    "toolUrl": "https://github.com/tooppoo/enozunu",
+    "postUrl": "https://news.ycombinator.com/item?id=49408038",
+    "extraLinks": [
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49408038"
+      }
+    ],
+    "firstSeen": "2026-08-24T06:07:40-07:00",
+    "lastReviewed": "2026-08-24T06:07:40-07:00"
   },
   {
     "priority": "Watch",
@@ -3797,6 +3829,29 @@
     ],
     "firstSeen": "2026-07-21T06:07:22-07:00",
     "lastReviewed": "2026-07-21T06:07:22-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could capture jobsite notes, rental/project updates, estimator notes, or GC call recaps locally without sending raw audio to a cloud dictation service, then route cleaned text into Aluma task/project records after human review.",
+    "next": "Run a sandbox test on a Windows machine only: record a fake warehouse issue, transcribe locally, apply a cleanup prompt, and verify audio/text storage, export path, license, model requirements, and whether any LLM cleanup endpoint remains local before using real business notes.",
+    "name": "Dictata",
+    "category": "Local voice dictation / transcription",
+    "summary": "Windows-native Rust dictation app that runs transcription locally with whisper.cpp by default and optional ONNX backends such as Parakeet, SenseVoice, Moonshine, and Zipformer. It supports global hotkey dictation, continuous streaming, silence skipping, microphone/system-audio/meeting mode, file transcription, vocabulary/replacements, and optional cleanup through a local OpenAI-compatible LLM.",
+    "drprepper": "Useful as a privacy-first voice-to-action capture tool for warehouse notes, SOP drafts, sales-call recaps, vendor conversations, and internal issue reports before turning them into Trello tasks or CRM follow-ups. It is Windows-focused, so treat it as a pattern/tool for Windows stations rather than DJ's Mac until platform fit is confirmed.",
+    "toolUrl": "https://github.com/AntoineChatry/Dictata",
+    "postUrl": "https://news.ycombinator.com/item?id=49405912",
+    "extraLinks": [
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49405912"
+      },
+      {
+        "label": "Dictata Engine",
+        "url": "https://github.com/AntoineChatry/DictataEngine"
+      }
+    ],
+    "firstSeen": "2026-08-24T06:07:40-07:00",
+    "lastReviewed": "2026-08-24T06:07:40-07:00"
   },
   {
     "priority": "Medium",
