@@ -440,6 +440,33 @@
     "lastReviewed": "2026-08-13T06:05:42-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Potential fit for Aluma lead/project research pipelines where scrape, classify, enrich, and review agents need to claim public leads without duplicating work or overwriting each other.",
+    "next": "Treat as infrastructure to evaluate, not a business SOT. Test on a synthetic queue first; verify idempotency, conflict logs, auth, storage model, and human-approval boundaries before using it with real orders, billing, inventory, or outreach.",
+    "name": "Ablo",
+    "category": "AI agent collaboration / shared-state coordination",
+    "summary": "Apache-2.0 collaboration infrastructure for AI agents. The verified README positions Ablo as one API for agents, apps, and services to claim, change, and confirm the same rows, with authority, idempotency, conflict handling, and ordering around writes.",
+    "drprepper": "Useful pattern for multi-agent PrepShip, dashboard, Trello, and operations workflows where several workers may touch the same task rows, queue items, leads, or review packets and need conflict-safe coordination instead of ad hoc locks.",
+    "toolUrl": "https://github.com/Abloatai/ablo",
+    "postUrl": "https://github.com/Abloatai/ablo",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://www.abloatai.com/"
+      },
+      {
+        "label": "Docs",
+        "url": "https://docs.abloatai.com"
+      },
+      {
+        "label": "npm package",
+        "url": "https://www.npmjs.com/package/@abloatai/ablo"
+      }
+    ],
+    "firstSeen": "2026-08-25T06:05:47-07:00",
+    "lastReviewed": "2026-08-25T06:05:47-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Relevant for Aluma contractor/prospect CRM automation if it can enforce per-field permissions, cite evidence for each change, and keep human approval for outreach, status changes, or deal ownership.",
     "next": "Verification needed before connecting any real CRM: use a sandbox Salesforce/HubSpot account, test blocked fields, approval logs, schema validation, rollback/export, and whether human approval can be mandatory for customer-impacting updates.",
@@ -732,6 +759,29 @@
     "lastReviewed": "2026-07-31T06:12:26-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Useful to harden Aluma lead-gen or proposal agents before they summarize public pages, draft outreach, or read internal sheets/CRM notes.",
+    "next": "Run against one internal non-production AI workflow first, record failures, and add a recurring security check before connecting agents to messages, CRM writes, order data, or billing/postage actions.",
+    "name": "Sentinel Scan CLI",
+    "category": "AI app security / prompt-injection testing",
+    "summary": "Free MIT-licensed CLI from Ventrova for OWASP LLM Top 10 style prompt-injection and jailbreak testing of LLM apps, plus MCP configuration security scanning. The verified repo describes attack suites, security badges, and an optional vendor audit service.",
+    "drprepper": "Direct fit before any DR Prepper, PrepShip, Client Portal, sales, support, or billing-adjacent AI workflow touches customer data or business actions. It gives a cheap adversarial test before trusting prompts around refunds, inventory, labels, messages, or billing rules.",
+    "toolUrl": "https://github.com/Ventrova/sentinel-scan-cli",
+    "postUrl": "https://news.ycombinator.com/item?id=49431289",
+    "extraLinks": [
+      {
+        "label": "Vendor audit page",
+        "url": "https://ventrova.dev/audit"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49431289"
+      }
+    ],
+    "firstSeen": "2026-08-25T06:05:47-07:00",
+    "lastReviewed": "2026-08-25T06:05:47-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Possible fit for proposal/explainer video drafts, but less central than lead-gen, dashboard, or operations tooling.",
     "next": "Use only with non-sensitive/public creative prompts, confirm commercial-rights terms under the active Suno plan, and keep human review before using generated audio in ads or customer-facing content.",
@@ -879,6 +929,33 @@
     ],
     "firstSeen": "2026-08-01T06:12:17-07:00",
     "lastReviewed": "2026-08-01T06:12:17-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful for Aluma scraper/dashboard repos if future coding agents need project rules, impact checks, and focused file discovery before editing lead-gen or project-tracker code.",
+    "next": "Pilot on this dashboard or a non-production repo first. Compare Cortex search/impact results against current Hermes/Codex file discovery, check what it writes to AGENTS.md/hooks, and keep normal git diff/test review as the authority.",
+    "name": "Cortex",
+    "category": "AI coding context / repo retrieval",
+    "summary": "Local repository context map for AI coding agents. The verified README says Cortex indexes code, symbols, relationships, and project rules, then exposes CLI/MCP-style search, related-entity, impact, and rule queries so agents can retrieve relevant code without reading the whole repo or guessing.",
+    "drprepper": "Strong fit for PrepShip, Client Portal, DJR, Warehouse, and dashboard development because most costly agent failures come from missing the right source-of-truth file or repeating broad repo scans. Local indexing also keeps code on DJ's machine.",
+    "toolUrl": "https://github.com/DanielBlomma/cortex",
+    "postUrl": "https://news.ycombinator.com/item?id=49431653",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/DanielBlomma/cortex"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49431653"
+      },
+      {
+        "label": "npm package",
+        "url": "https://www.npmjs.com/package/@danielblomma/cortex-mcp"
+      }
+    ],
+    "firstSeen": "2026-08-25T06:05:47-07:00",
+    "lastReviewed": "2026-08-25T06:05:47-07:00"
   },
   {
     "priority": "High",
