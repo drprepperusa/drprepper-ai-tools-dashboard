@@ -1254,6 +1254,25 @@
     "lastReviewed": "2026-07-08T06:07:06-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Could help draft bid notes, project summaries, contractor outreach, and rental/proposal language while preserving an editable human-owned document instead of a transient chat answer.",
+    "next": "Verify privacy, export formats, pricing, collaboration model, and whether documents are stored locally or in the vendor cloud before using any real business, customer, proposal, or financial text.",
+    "name": "HandWrought",
+    "category": "AI document editor / writing companion",
+    "summary": "AI writing companion embedded inside the document surface rather than a separate chat tab. The site describes writing by hand and shaping with AI; the HN source frames it as an AI editor inside the document.",
+    "drprepper": "Useful as a pattern for SOP drafts, vendor letters, quote follow-ups, policy notes, and customer-safe copy where the work should stay in the document and still require human approval before sending.",
+    "toolUrl": "https://handwrought.online/",
+    "postUrl": "https://news.ycombinator.com/item?id=49444067",
+    "extraLinks": [
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49444067"
+      }
+    ],
+    "firstSeen": "2026-08-26T06:05:04-07:00",
+    "lastReviewed": "2026-08-26T06:05:04-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful for construction-market and financing context, especially when lead-gen or proposal decisions need sourced macro, rate, or regional demand signals.",
     "next": "Test on one non-sensitive finance brief query, verify every numeric output against the cited source, and keep it read-only before using results in pricing or lending decisions.",
@@ -1576,6 +1595,25 @@
     "postUrl": "https://news.ycombinator.com/item?id=48736812",
     "firstSeen": "2026-07-04T06:04:02-07:00",
     "lastReviewed": "2026-07-04T06:04:02-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "More directly relevant for Aluma-style bid/RFQ tracking: it could inform a workflow for qualifying public jobs, estimating fit, drafting proposal packets, and keeping bid evidence organized.",
+    "next": "Verification needed before any pilot: confirm pricing, supported bid sources, data retention, proposal-export format, human-review controls, and whether it can run in research/draft mode without submitting anything.",
+    "name": "CaptureAgent",
+    "category": "AI proposal / government-contract capture",
+    "summary": "AI capture and proposal manager for government contractors. The public site describes finding and qualifying federal opportunities, then preparing proposals faster; the HN source post describes find, price, draft, grade, run, and fund federal work.",
+    "drprepper": "Potential fit only if DR PREPPER USA explores government or institutional fulfillment/supply bids; otherwise treat it as a proposal-workflow reference for qualification, drafting, review, and submission controls.",
+    "toolUrl": "https://captureagent.us/",
+    "postUrl": "https://news.ycombinator.com/item?id=49442327",
+    "extraLinks": [
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49442327"
+      }
+    ],
+    "firstSeen": "2026-08-26T06:05:04-07:00",
+    "lastReviewed": "2026-08-26T06:05:04-07:00"
   },
   {
     "priority": "High",
@@ -2611,6 +2649,25 @@
     ],
     "firstSeen": "2026-07-23T06:08:29-07:00",
     "lastReviewed": "2026-07-23T06:08:29-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful for collecting concrete contractor, GC, project, permit, and supplier signals across messy public directories and websites before a human reviews outreach targets.",
+    "next": "Pilot on a harmless read-only task: collect 20 public Orange County concrete subcontractor or DTC fulfillment prospects, export sources, and compare accuracy/cost against the existing scraper. Do not connect money, customer messaging, inventory, billing, or account-changing actions until approval gates and audit logs are verified.",
+    "name": "Retriever AI / rtrvr.ai",
+    "category": "Browser agent / web automation",
+    "summary": "Browser and cloud web-agent platform that works across open websites and signed-in pages, with extension, API, MCP, CLI/SDK, templates, and use cases such as lead enrichment, web monitoring, form filling, and repeated browser runs. The August 26 Daily AI Intel session flagged it as the most practical browser-agent candidate because the site claims task-scale runs and the HN launch positioned it as a free browser agent.",
+    "drprepper": "Strong fit for low-risk DR PREPPER USA 3PL lead research, competitor checks, vendor-page monitoring, marketplace scrape prefilters, and repetitive portal data collection where no clean API exists. Keep it read-only/draft-only until permissions, logs, and account boundaries are proven.",
+    "toolUrl": "https://rtrvr.ai",
+    "postUrl": "https://news.ycombinator.com/item?id=49444628",
+    "extraLinks": [
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49444628"
+      }
+    ],
+    "firstSeen": "2026-08-26T06:05:04-07:00",
+    "lastReviewed": "2026-08-26T06:05:04-07:00"
   },
   {
     "priority": "High",
