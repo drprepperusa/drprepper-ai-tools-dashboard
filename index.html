@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 26, 2026 · 6:05 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 27, 2026 · 6:06 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">265</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">252</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">119</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">269</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">256</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">121</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -875,6 +875,19 @@
       },
       {
             "priority": "High",
+            "aluma": "Useful for Aluma scraper/dashboard projects where agents need local project memory without uploading repo context broadly; it could reduce repeated file rediscovery in lead-gen and proposal tooling.",
+            "next": "Try on this dashboard or another non-production repo first. Verify local storage, indexing footprint, secret handling, MCP/CLI behavior, pricing, and whether retrieved context cites exact files before using it on production-connected codebases.",
+            "name": "Contextual by Contextual Labs",
+            "category": "AI coding memory / local repo context",
+            "summary": "Local-first context engine for AI coding agents with semantic search, temporal recall, on-device indexing, and repository-change awareness. The verified site positions it as beta software with docs, GitHub, and pricing links.",
+            "drprepper": "Strong fit for PrepShip, Client Portal, DJR, Warehouse, and dashboard development because recurring agent failures often come from forgetting source-of-truth files, prior fixes, and why a repo changed over time.",
+            "toolUrl": "https://contextuallabs.dev",
+            "postUrl": "https://news.ycombinator.com/item?id=49460693",
+            "firstSeen": "2026-08-27T06:06:50-07:00",
+            "lastReviewed": "2026-08-27T06:06:50-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Could help Aluma scraper/dashboard automation code retain project conventions and prior troubleshooting without pasting the same repo context into every coding session.",
             "next": "Test only in a disposable or non-production repo first. Compare `.memcode` state, secret handling, hosted-vs-local model routing, diff quality, and test evidence against the current Hermes/Codex workflow before using it on production-connected repos.",
             "name": "Memcode AI",
@@ -981,6 +994,25 @@
             "postUrl": "https://fal.ai/models/fal-ai/nano-banana-pro",
             "firstSeen": "2026-06-20T06:04:27-07:00",
             "lastReviewed": "2026-06-20T06:04:27-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for pulling vendor, materials, rental, and subcontractor invoices into a clean monthly archive before estimate/cost review, provided mailbox access is scoped to the right account.",
+            "next": "Test with a read-only Gmail/OAuth or IMAP account on a small safe date range; verify sender/vendor grouping, duplicate handling, and that no sensitive mail content leaves the machine before using it in a recurring accounting workflow.",
+            "name": "invoice-fetcher",
+            "category": "AI document intake / invoice collection",
+            "summary": "MIT-licensed local CLI that searches configured IMAP or Gmail accounts for invoices and receipts over a date range and saves the attachments into month/vendor folders. The README says processing is local and no data is sent to third parties.",
+            "drprepper": "Direct fit for supplier invoices, software receipts, carrier bills, and accounting cleanup where the high-friction step is simply collecting documents into a reviewable folder before bookkeeping or reconciliation.",
+            "toolUrl": "https://github.com/visnia-ai/invoice-fetcher",
+            "postUrl": "https://news.ycombinator.com/item?id=49462709",
+            "extraLinks": [
+                  {
+                        "label": "GitHub repo",
+                        "url": "https://github.com/visnia-ai/invoice-fetcher"
+                  }
+            ],
+            "firstSeen": "2026-08-27T06:06:50-07:00",
+            "lastReviewed": "2026-08-27T06:06:50-07:00"
       },
       {
             "priority": "High",
@@ -3200,6 +3232,19 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could coordinate Aluma lead-gen, scraper, and project-follow-up tasks if permissions and source-of-truth boundaries keep CRM/sheet/outreach changes approval-gated.",
+            "next": "Evaluate with a synthetic internal task list first. Check MCP permissions, export/backups, audit history, pricing, and whether it can mirror existing Trello/cron tasks without becoming a second competing source of truth.",
+            "name": "TaskShell",
+            "category": "AI agent task management / MCP productivity",
+            "summary": "Agent-first task-management platform that connects with ChatGPT, Claude, Cursor, OpenCode, Hermes, and other agents through MCP so task context can stay synchronized where agents work.",
+            "drprepper": "Relevant for internal automation and developer-review workflows where multiple agents and cron jobs need a shared task surface instead of scattered chat notes, Trello comments, and local scratch files.",
+            "toolUrl": "https://www.taskshell.app/",
+            "postUrl": "https://news.ycombinator.com/item?id=49461578",
+            "firstSeen": "2026-08-27T06:06:50-07:00",
+            "lastReviewed": "2026-08-27T06:06:50-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Could support Aluma lead-intake and bid-follow-up automations where non-technical staff need repeatable workflows across inboxes, sheets, CRM notes, and project trackers.",
             "next": "Test one read-only workflow first, such as summarizing new wholesale leads or Aluma project inquiries; verify pricing, permissions, audit logs, and human-approval controls before connecting production systems.",
             "name": "QX Labs",
@@ -3574,6 +3619,19 @@
             ],
             "firstSeen": "2026-07-11T06:04:09-07:00",
             "lastReviewed": "2026-07-11T06:04:09-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Possible contractor/developer outreach helper after public prospects are qualified, but message sending should remain manual or approval-gated and compliant with LinkedIn limits.",
+            "next": "Pilot with 10 non-sensitive public prospects and compare AI-personalized copy against DJ-approved outreach. Do not connect or automate real LinkedIn sending until cadence, unsubscribe/stop rules, and account-risk limits are clear.",
+            "name": "Bindago AI Personalisation",
+            "category": "AI sales outreach / LinkedIn personalization",
+            "summary": "LinkedIn outreach tool that personalizes connection requests and follow-up messages from a base message using each lead's profile data. The verified page advertises a free trial and $9.99/month pricing.",
+            "drprepper": "Potential fit for 3PL, DJR, and KF Goodies prospecting once Hermes or a VA produces a qualified lead list; useful only if copy stays human-reviewed so outreach does not become generic LinkedIn spam.",
+            "toolUrl": "https://bindago.com/features/ai-personalisation",
+            "postUrl": "https://news.ycombinator.com/item?id=49462478",
+            "firstSeen": "2026-08-27T06:06:50-07:00",
+            "lastReviewed": "2026-08-27T06:06:50-07:00"
       },
       {
             "priority": "Medium",
