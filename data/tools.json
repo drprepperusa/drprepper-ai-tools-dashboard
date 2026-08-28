@@ -711,6 +711,33 @@
     "lastReviewed": "2026-07-20T06:06:03-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Useful for Aluma scraper, lead-gen, and project-follow-up agents where the risk is not just a wrong answer but a wrong browse/write/outreach action.",
+    "next": "Add a small scenario pack for one non-production Hermes workflow: expected source reads, forbidden sends/writes, approval checkpoints, and final report shape. Treat green scenario tests as preflight evidence, not permission to skip human review.",
+    "name": "Understudy",
+    "category": "AI agent testing / scenario trace evaluation",
+    "summary": "MIT-licensed scenario-testing framework for AI agents. The verified GitHub repo and docs describe testing agent behavior, including tool-call traces, through reusable scenarios rather than judging only final natural-language answers.",
+    "drprepper": "Strong fit before agents touch PrepShip, Client Portal, billing, inventory, labels, refunds, support, or CRM workflows because tests should prove the agent makes safe tool calls and stops at approval gates.",
+    "toolUrl": "https://github.com/gojiplus/understudy",
+    "postUrl": "https://news.ycombinator.com/item?id=49474156",
+    "extraLinks": [
+      {
+        "label": "Docs",
+        "url": "https://gojiplus.github.io/understudy/"
+      },
+      {
+        "label": "PyPI",
+        "url": "https://pypi.org/project/understudy/"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49474156"
+      }
+    ],
+    "firstSeen": "2026-08-28T06:08:22-07:00",
+    "lastReviewed": "2026-08-28T06:08:22-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could support Aluma lead-intake and bid-follow-up automations where non-technical staff need repeatable workflows across inboxes, sheets, CRM notes, and project trackers.",
     "next": "Test one read-only workflow first, such as summarizing new wholesale leads or Aluma project inquiries; verify pricing, permissions, audit logs, and human-approval controls before connecting production systems.",
@@ -816,6 +843,33 @@
     ],
     "firstSeen": "2026-08-14T06:07:16-07:00",
     "lastReviewed": "2026-08-14T06:07:16-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful for public contractor/project-page monitoring and lead-source scraping if runs stay read-only, logged, and isolated from CRM/outreach writes.",
+    "next": "Prototype one harmless no-login workflow that watches 10 public supplier or competitor pages and writes a change report. Do not connect logins, customer/order data, or action-taking flows until secrets, audit logs, browser profiles, and approval gates are reviewed.",
+    "name": "Puppetflow",
+    "category": "AI browser automation / self-hosted ops workflows",
+    "summary": "Self-hosted browser automation platform for building, running, scheduling, monitoring, and taking over JavaScript/Puppeteer workflows. The verified GitHub README emphasizes live session watch/control, run history, logs, secrets/browser-profile management, Docker self-hosting, and an n8n integration.",
+    "drprepper": "Strong fit for read-only DR Prepper and PrepShip chores where sites lack APIs: supplier/product-page monitoring, vendor portal checks, competitor price snapshots, shipment-status checks, and daily change reports before any human action.",
+    "toolUrl": "https://github.com/puppetflow/puppetflow",
+    "postUrl": "https://news.ycombinator.com/item?id=49476246",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://puppetflow.com"
+      },
+      {
+        "label": "Docs",
+        "url": "https://docs.puppetflow.com"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49476246"
+      }
+    ],
+    "firstSeen": "2026-08-28T06:08:22-07:00",
+    "lastReviewed": "2026-08-28T06:08:22-07:00"
   },
   {
     "priority": "High",
@@ -1911,6 +1965,29 @@
     "postUrl": "https://news.ycombinator.com/item?id=49000003",
     "firstSeen": "2026-07-22T06:04:37-07:00",
     "lastReviewed": "2026-07-22T06:04:37-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could preserve Aluma lead-gen, bid-follow-up, and project-tracker procedures across operators if source-of-truth boundaries and approval requirements are explicit.",
+    "next": "Evaluate with non-sensitive SOPs only. Verify pricing, data retention, connected-app permissions, export/delete behavior, and whether customer-impacting actions can require human approval before storing real business memory.",
+    "name": "Rafter",
+    "category": "AI team memory / MCP skills and agents",
+    "summary": "MCP-connected team memory and ways-of-working product for ChatGPT, Claude, Claude Code, Cursor, and Codex. The verified site positions it around shared firm knowledge, connected tools such as Jira/Confluence/SharePoint/Drive, repeatable skills, agents, approvals, and a public pricing page.",
+    "drprepper": "Relevant to DR Prepper, PrepShip, DJR, and KF Goodies when repeated SOPs, onboarding steps, month-end routines, and support workflows need to be reused by multiple agents without becoming tribal chat memory.",
+    "toolUrl": "https://heyrafter.xyz/",
+    "postUrl": "https://news.ycombinator.com/item?id=49476048",
+    "extraLinks": [
+      {
+        "label": "MCP endpoint shown by site",
+        "url": "https://app.heyrafter.xyz/api/mcp"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49476048"
+      }
+    ],
+    "firstSeen": "2026-08-28T06:08:22-07:00",
+    "lastReviewed": "2026-08-28T06:08:22-07:00"
   },
   {
     "priority": "Medium",
