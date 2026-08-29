@@ -568,6 +568,25 @@
     "lastReviewed": "2026-07-01T06:05:21-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Useful for Aluma lead-gen and project-tracker agents if shared memory can preserve estimating assumptions, contractor outreach rules, and source-of-truth boundaries without re-pasting SOPs into every session.",
+    "next": "Pilot with 10 non-sensitive internal rules only. Verify Cloudflare-hosted storage, export/delete behavior, access controls, MCP key scope, retention, and source-link auditability before adding customer, order, billing, lead, or confidential project context.",
+    "name": "Itsuki",
+    "category": "AI agent memory / shared business rules",
+    "summary": "Open-source memory layer for AI tools and agents. The verified site says one Itsuki key connects through MCP, Node, Python, and REST, extracts structured source-linked memories from 26 connected assistants/agents/workflows, versions them, and serves them back across tools. It is free during early access; HN discussion says memories are stored on Itsuki's Cloudflare servers with export/delete controls and no training use.",
+    "drprepper": "Strong fit for DR Prepper, PrepShip, DJR, and KF Goodies agent workflows where repeated rules like SKU matching, billing approvals, lead qualification, and no-auto-refund/no-auto-send policies need to follow Claude, ChatGPT, Codex, Cursor, Hermes, and other tools.",
+    "toolUrl": "https://itsuki.app/",
+    "postUrl": "https://news.ycombinator.com/item?id=49487838",
+    "extraLinks": [
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49487838"
+      }
+    ],
+    "firstSeen": "2026-08-29T06:07:43-07:00",
+    "lastReviewed": "2026-08-29T06:07:43-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could monitor AI lead-qualification or project-intake agents for bad outreach, missed contractor context, or unsafe recommendations before those workflows touch real prospects.",
     "next": "Do not connect customer conversations yet. First test with synthetic/internal agent transcripts, define failure categories, and compare against existing eval logs before considering the $500/month Pro tier.",
@@ -1126,6 +1145,29 @@
     "lastReviewed": "2026-07-30T06:13:07-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could help Aluma scraper/dashboard development by letting a stronger reasoning tool produce compact implementation plans while the local agent performs reviewable edits in a controlled repo.",
+    "next": "Evaluate only on a disposable or low-risk repo. Verify MCP permissions, local file exposure, logs, plan provenance, no secret leakage, and whether the executor still runs tests and creates reviewable commits before using it on production-connected codebases.",
+    "name": "AgentBridge",
+    "category": "AI coding-agent orchestration / brain-executor split",
+    "summary": "MIT/Rust MCP bridge that lets one AI reasoning environment inspect and plan while a local coding agent executes file edits, commands, and tests. The README frames it as separating reasoning from execution, not bypassing provider limits, and keeping implementation in the local workspace.",
+    "drprepper": "Useful internal-ops pattern for PrepShip, Client Portal, DJR, Warehouse, and dashboard development when expensive coding-agent quota is burned on exploration instead of changes, provided every resulting edit still lands through normal branch, diff, test, and PR review gates.",
+    "toolUrl": "https://github.com/IndexFlowing/AgentBridge",
+    "postUrl": "https://news.ycombinator.com/item?id=49488074",
+    "extraLinks": [
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49488074"
+      },
+      {
+        "label": "Crates.io package",
+        "url": "https://crates.io/crates/agentbridge"
+      }
+    ],
+    "firstSeen": "2026-08-29T06:07:43-07:00",
+    "lastReviewed": "2026-08-29T06:07:43-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful for Aluma scraper/dashboard/dev-agent workflows if it can reduce repeated context/tool-call overhead while keeping evidence logs and human review intact.",
     "next": "Test only in a disposable repo first. Compare Tura logs, patches, test evidence, token counts, and failure modes against the current Hermes/Codex workflow before trusting it on production-connected repos.",
@@ -1681,6 +1723,25 @@
     ],
     "firstSeen": "2026-08-12T06:06:25-07:00",
     "lastReviewed": "2026-08-12T06:06:25-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful template for Aluma construction-project, contractor, bid-timing, and permitting/news watchlists where the value is a concise daily source-linked brief instead of another broad scrape dump.",
+    "next": "Fork or test locally in dry-run mode with no email send first. Start with read-only topics, verify source quality and dedupe behavior, keep secrets in GitHub Actions only if approved, and require human review before forwarding summaries externally.",
+    "name": "Daily Briefing Agent",
+    "category": "AI news monitoring / scheduled research automation",
+    "summary": "MIT/open-source GitHub Actions agent that researches live web sources on configured topics, writes a source-linked email briefing, deduplicates previously sent articles, and can run serverlessly with free Groq and Tavily keys. The README supports dry-run preview before sending and GitHub Actions scheduling.",
+    "drprepper": "Direct pattern for cheap recurring competitor, supplier, carrier, marketplace, finance, product, and 3PL lead-signal monitoring without maintaining a server or hand-running the same searches every morning.",
+    "toolUrl": "https://github.com/tballochi/daily-briefing",
+    "postUrl": "https://news.ycombinator.com/item?id=49487904",
+    "extraLinks": [
+      {
+        "label": "README",
+        "url": "https://raw.githubusercontent.com/tballochi/daily-briefing/main/README.md"
+      }
+    ],
+    "firstSeen": "2026-08-29T06:07:43-07:00",
+    "lastReviewed": "2026-08-29T06:07:43-07:00"
   },
   {
     "priority": "Watch",
