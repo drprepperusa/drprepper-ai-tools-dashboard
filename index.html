@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 29, 2026 · 6:07 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 29, 2026 · 11:13 PM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">275</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">262</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">125</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">276</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">263</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">126</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -1750,6 +1750,37 @@
             ],
             "firstSeen": "2026-06-22T14:22:38-07:00",
             "lastReviewed": "2026-06-22T14:22:38-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for mapping Aluma lead-research, CRM/outreach, quotation, project-intelligence, and approval workflows, especially when a clear sequence or lifecycle diagram will improve handoff quality. Keep customer/project details sanitized and use diagrams as explanatory artifacts rather than operational authority.",
+            "next": "Run one sandbox pilot against a sanitized repository or system description: create an 8–12-node architecture diagram with one primary path, validate and deliver it, inspect the generated HTML and light/dark screenshots, and compare it with the currently installed simpler architecture-diagram skill. If Archify is adopted, use repository evidence pinned to an exact commit and set ARCHIFY_UPDATE_CHECK_DISABLED=1 when network update checks are not desired. Do not install it merely because of GitHub stars.",
+            "name": "Archify — validated interactive system-diagram skill",
+            "category": "Architecture / workflow visualization skill",
+            "summary": "Open-source MIT agent skill and Node.js rendering system that turns a codebase or system description into typed JSON IR, validates it, and deterministically compiles self-contained interactive HTML/SVG. It supports architecture, workflow, sequence, data-flow, and lifecycle diagrams; search and authored upstream/downstream route tracing; dark/light themes; revision-pinned source evidence when requested; architecture snapshot comparison; and PNG, SVG, WebM, and share-card export. The official repository was inspected and its doctor/demo commands passed locally. The X post's '29K+' claim was conservative at review time: GitHub's API reported more than 31K stars, although stars measure popularity rather than correctness.",
+            "drprepper": "Strong fit for PrepShip and DR PREPPER architecture handoffs: map the canonical shipping/rates/billing/inventory owners, client/admin callers, external carrier and marketplace boundaries, queue/outbox paths, failure handling, and order/fulfillment lifecycles. Its typed source and validation receipts are materially stronger than a one-off diagram. The diagram remains derived documentation—not the source of truth—and code/repository claims need exact-revision evidence. Do not place secrets, customer data, rates, invoices, or production payloads in generated artifacts.",
+            "toolUrl": "https://github.com/tt-a1i/archify",
+            "postUrl": "https://x.com/voxyz_ai/status/2093677504179400946",
+            "extraLinks": [
+                  {
+                        "label": "Archify project page",
+                        "url": "https://tt-a1i.github.io/archify/"
+                  },
+                  {
+                        "label": "Scenario guide",
+                        "url": "https://tt-a1i.github.io/archify/guide.html"
+                  },
+                  {
+                        "label": "Proof Lab",
+                        "url": "https://tt-a1i.github.io/archify/gallery.html"
+                  },
+                  {
+                        "label": "Source X post",
+                        "url": "https://x.com/voxyz_ai/status/2093677504179400946"
+                  }
+            ],
+            "firstSeen": "2026-08-29T23:13:24-07:00",
+            "lastReviewed": "2026-08-29T23:13:24-07:00"
       },
       {
             "priority": "High",
