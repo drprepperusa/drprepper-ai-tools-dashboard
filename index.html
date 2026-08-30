@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 29, 2026 · 11:13 PM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 30, 2026 · 6:04 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">276</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">263</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">126</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">280</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">267</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">127</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -696,6 +696,25 @@
             ],
             "firstSeen": "2026-08-29T06:07:43-07:00",
             "lastReviewed": "2026-08-29T06:07:43-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for monitoring Aluma lead-gen or project-research agents when they begin reading public pages, drafting CRM changes, or proposing outreach actions.",
+            "next": "Pilot with synthetic/internal agent traces first. Verify local OpenTelemetry export, PII redaction, policy blocking, hosted-platform pricing, retention, and alert noise before connecting customer, billing, inventory, or outreach workflows.",
+            "name": "Traccia",
+            "category": "AI agent observability / governance",
+            "summary": "Agent observability, evaluation, governance, and policy-enforcement platform. The verified site describes OpenTelemetry-native tracing, cost/token attribution, PII/sensitive-data detection, policy violations, evals, local open-source SDK export, and a hosted dashboard.",
+            "drprepper": "Strong fit before PrepShip, Client Portal, DR PREPPER, or DJR agents touch customer data, billing, inventory, labels, CRM writes, or support workflows because it can expose cost spikes, unsafe data exposure, and policy violations.",
+            "toolUrl": "https://traccia.ai/",
+            "postUrl": "https://news.ycombinator.com/item?id=49391995",
+            "extraLinks": [
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49391995"
+                  }
+            ],
+            "firstSeen": "2026-08-30T06:04:05-07:00",
+            "lastReviewed": "2026-08-30T06:04:05-07:00"
       },
       {
             "priority": "High",
@@ -1784,12 +1803,12 @@
       },
       {
             "priority": "High",
-            "aluma": "Useful for collecting concrete contractor, GC, project, permit, and supplier signals across messy public directories and websites before a human reviews outreach targets.",
-            "next": "Pilot on a harmless read-only task: collect 20 public Orange County concrete subcontractor or DTC fulfillment prospects, export sources, and compare accuracy/cost against the existing scraper. Do not connect money, customer messaging, inventory, billing, or account-changing actions until approval gates and audit logs are verified.",
+            "aluma": "Useful for collecting public concrete-subcontractor, GC, project, permit, supplier, and competitor-page signals when the first step is repetitive browser research rather than a custom scraper.",
+            "next": "Run the current narrow test from the August 30 AI brief: collect 25 Orange County concrete subcontractors with company, website, email/contact page, and source notes. Keep it read-only, review every row, and do not connect money, customer messaging, inventory, billing, or account-changing actions until approval gates and audit logs are proven.",
             "name": "Retriever AI / rtrvr.ai",
             "category": "Browser agent / web automation",
-            "summary": "Browser and cloud web-agent platform that works across open websites and signed-in pages, with extension, API, MCP, CLI/SDK, templates, and use cases such as lead enrichment, web monitoring, form filling, and repeated browser runs. The August 26 Daily AI Intel session flagged it as the most practical browser-agent candidate because the site claims task-scale runs and the HN launch positioned it as a free browser agent.",
-            "drprepper": "Strong fit for low-risk DR PREPPER USA 3PL lead research, competitor checks, vendor-page monitoring, marketplace scrape prefilters, and repetitive portal data collection where no clean API exists. Keep it read-only/draft-only until permissions, logs, and account boundaries are proven.",
+            "summary": "Browser and cloud web-agent platform for scraping, lead enrichment, web monitoring, form filling, and repeated site workflows. The verified site exposes a Chrome extension plus cloud/API/MCP/CLI access and claims about 0.9 minute average tasks at roughly $0.005 average cost; HN positioned it as a free browser agent.",
+            "drprepper": "Strong fit for low-risk DR PREPPER USA 3PL lead research, supplier monitoring, competitor price checks, marketplace scrape prefilters, and repetitive portal data collection where no clean API exists. Keep it read-only/draft-only until permissions, logs, and account boundaries are proven.",
             "toolUrl": "https://rtrvr.ai",
             "postUrl": "https://news.ycombinator.com/item?id=49444628",
             "extraLinks": [
@@ -1799,7 +1818,7 @@
                   }
             ],
             "firstSeen": "2026-08-26T06:05:04-07:00",
-            "lastReviewed": "2026-08-26T06:05:04-07:00"
+            "lastReviewed": "2026-08-30T06:04:05-07:00"
       },
       {
             "priority": "High",
@@ -3368,6 +3387,25 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Useful if Aluma lead-gen or project-tracker agents need simple regression tests for tool behavior before being trusted with real prospects or CRM updates.",
+            "next": "Try on a toy agent and one harmless read-only workflow first. Verify test syntax, CI fit, false positives, logs, and whether failures catch bad tool calls before using it around customer/order/billing/outreach systems.",
+            "name": "Weir",
+            "category": "AI agent testing / no-LLM unit tests",
+            "summary": "Open-source GitHub project described as unit tests for AI agents without using another LLM as the judge. The HN launch and repo framing make it a lightweight candidate for deterministic agent-behavior checks.",
+            "drprepper": "Useful pattern for PrepShip, Client Portal, dashboard, and operations agents where basic safety behavior — read the source, avoid writes, stop for approval, produce required artifacts — should be tested before live business use.",
+            "toolUrl": "https://github.com/IdoGol24/weir",
+            "postUrl": "https://news.ycombinator.com/item?id=49480942",
+            "extraLinks": [
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49480942"
+                  }
+            ],
+            "firstSeen": "2026-08-30T06:04:05-07:00",
+            "lastReviewed": "2026-08-30T06:04:05-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Could support Aluma lead-intake and bid-follow-up automations where non-technical staff need repeatable workflows across inboxes, sheets, CRM notes, and project trackers.",
             "next": "Test one read-only workflow first, such as summarizing new wholesale leads or Aluma project inquiries; verify pricing, permissions, audit logs, and human-approval controls before connecting production systems.",
             "name": "QX Labs",
@@ -3736,6 +3774,25 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could help capture jobsite-call notes, estimator observations, source snippets, and follow-up drafts if local-first storage and export behavior fit Aluma's privacy needs.",
+            "next": "Test with non-sensitive operating notes only: 10 SOP snippets, a sample voice note, and a CLI search/export. Verify local model/storage behavior, lifetime pricing, sync terms, and no customer/order/lead secrets before using it as business memory.",
+            "name": "VelocityNote",
+            "category": "AI notes / local-first business memory",
+            "summary": "Markdown notebook with local AI, local voice transcription, search, and a CLI. The verified site says AI runs on the user's machine, the free tier supports up to 50 local notes, lifetime unlock covers unlimited local notes, and cloud sync is waitlisted.",
+            "drprepper": "Useful for DJR/DR PREPPER operating notes, SOP drafts, meeting/action capture, and sensitive workflow notes where local-first AI is preferable to uploading raw business context into another cloud tool.",
+            "toolUrl": "https://velocitynote.app/",
+            "postUrl": "https://news.ycombinator.com/item?id=49496137",
+            "extraLinks": [
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49496137"
+                  }
+            ],
+            "firstSeen": "2026-08-30T06:04:05-07:00",
+            "lastReviewed": "2026-08-30T06:04:05-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Could produce polished proposal or project-intel decks from verified project facts, photos, and rental/service scope notes.",
             "next": "Trial it on a non-confidential DR Prepper sales deck; verify every claim, price, metric, and customer/logo before sharing externally.",
             "name": "Folio AI",
@@ -3837,6 +3894,25 @@
             ],
             "firstSeen": "2026-08-28T06:08:22-07:00",
             "lastReviewed": "2026-08-28T06:08:22-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could preserve Aluma lead-gen, project-tracker, estimating, and bid-follow-up knowledge for agents and teammates if storage, sharing, and export rules are acceptable.",
+            "next": "Compare against Itsuki and Rafter before adopting another memory layer. Test only with non-sensitive SOPs, verify Markdown export, article limits, team sharing, permissions, deletion behavior, and whether source links remain auditable.",
+            "name": "OzBrain",
+            "category": "AI team memory / shared knowledge base",
+            "summary": "Shared brain for knowledge between AI agents and teammates. The verified site positions it as a brain that every AI agent can read/write, with free, Pro, and Max tiers, Markdown export, unlimited brains/reads/writes/connections, and article limits by plan.",
+            "drprepper": "Relevant to DR PREPPER, PrepShip, DJR, and KF Goodies if repeated business rules, SOPs, handoffs, and source notes need to follow multiple agents and teammates instead of living in scattered chats.",
+            "toolUrl": "https://ozbrain.com",
+            "postUrl": "https://news.ycombinator.com/item?id=49394827",
+            "extraLinks": [
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49394827"
+                  }
+            ],
+            "firstSeen": "2026-08-30T06:04:05-07:00",
+            "lastReviewed": "2026-08-30T06:04:05-07:00"
       },
       {
             "priority": "Medium",
