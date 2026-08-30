@@ -4219,7 +4219,7 @@
     "next": "Pilot only the evidence-safe pieces on one business profile: export current profile facts; compare three real competitors; produce a no-write category/services/review/post audit with source URLs and confidence; then have a human approve any change. Apply Google's current guidance: complete and accurate information, genuine reviews with no incentives or coached content, helpful conversational replies rather than keyword stuffing, and accurate posts. Measure 90-day profile actions and qualified leads. Do not auto-publish or expose credentials/customer data to the agent.",
     "name": "Sarvesh — Grok Bot local-SEO prompt stack",
     "category": "Local SEO / AI research workflow",
-    "summary": "A full X article proposing a reusable Grok-based local-SEO workspace containing business facts, service areas, target keywords, competitor Google Business Profile URLs, current profile details, and one prompt file per task. The visible stack covers competitor category comparison, review/review-response analysis, Business Profile post planning, and service-section audits, with spreadsheet outputs prioritized by impact. Its '$100k/month in 90 days,' guaranteed outranking, and revenue claims are promotional and unverified. Several tactical assertions also overstate Google's public guidance, so this is a research-and-planning framework—not an authoritative ranking recipe.",
+    "summary": "Two full X articles describe a reusable Grok-based local-SEO workspace containing approved business facts, service areas, target keywords, competitor Google Business Profile URLs, current profile details, and one prompt file per task. The expanded 20-prompt stack covers Business Profile categories, attributes, reviews, responses, posts, services, description and photos; keyword/page gaps, city pages, Search Console and sentiment; backlinks, citations and intent mapping; content gaps, entity/schema work, posting patterns and monthly reporting. Its '$10,000/month agency in four minutes,' '$100k/month in 90 days,' guaranteed outranking, ranking-causation, traffic and revenue claims are promotional or unsupported. Several tactics conflict with evidence and policy discipline, so this is a research-and-planning framework—not an authoritative or autonomous SEO operator.",
     "drprepper": "Useful for DR PREPPER USA's local 3PL discovery: audit profile completeness/categories/services, compare legitimate competitors, maintain accurate NAP/service-area facts, analyze genuine review themes, and plan customer-useful profile updates. Grok or another agent should prepare evidence-backed drafts only. Do not auto-edit the Business Profile, manufacture location relevance, coach customers to insert keywords, mass-produce promotional review replies, or promise ranking/revenue outcomes. Track qualified calls, quote submissions, and attributed customers instead of Ahrefs traffic value alone.",
     "toolUrl": "https://x.com/i/article/2088976836755865600",
     "postUrl": "https://x.com/bloggersarvesh/status/2088983373859725755",
@@ -4239,10 +4239,18 @@
       {
         "label": "Grok",
         "url": "https://grok.com/"
+      },
+      {
+        "label": "Expanded 20-prompt X article",
+        "url": "https://x.com/i/article/2090065939446550528"
+      },
+      {
+        "label": "Source X post for 20-prompt stack",
+        "url": "https://x.com/bloggersarvesh/status/2094054953103073487"
       }
     ],
     "firstSeen": "2026-08-18T14:19:40-07:00",
-    "lastReviewed": "2026-08-18T14:19:40-07:00"
+    "lastReviewed": "2026-08-30T13:17:26-07:00"
   },
   {
     "priority": "Lead",
