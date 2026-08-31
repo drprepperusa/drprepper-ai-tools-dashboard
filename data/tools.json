@@ -1056,6 +1056,25 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful for Aluma scraper/dashboard repos if coding agents need exact symbol/caller context before changing lead-gen, project-tracker, or proposal tooling.",
+    "next": "Pilot on a non-production repo first. Compare Sonde answers against existing source-of-truth file discovery, require cited files/callers before edits, and keep normal diffs/tests/PR review as authority.",
+    "name": "Sonde",
+    "category": "AI coding context / local code graph",
+    "summary": "Open-source local code-context engine for AI coding agents. The verified GitHub repo describes structural repository answers within a token budget so agents can inspect code graph facts instead of guessing from broad chat context.",
+    "drprepper": "Strong fit for PrepShip, Client Portal, DJR, Warehouse, and dashboard coding work where agent failures often come from missing the canonical owner, callers, or type-level relationships before editing.",
+    "toolUrl": "https://github.com/anishmoncivarghese/sonde",
+    "postUrl": "https://news.ycombinator.com/item?id=49507034",
+    "extraLinks": [
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49507034"
+      }
+    ],
+    "firstSeen": "2026-08-31T06:04:36-07:00",
+    "lastReviewed": "2026-08-31T06:06:46-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Useful for Aluma scraper/dashboard repos if future coding agents need project rules, impact checks, and focused file discovery before editing lead-gen or project-tracker code.",
     "next": "Pilot on this dashboard or a non-production repo first. Compare Cortex search/impact results against current Hermes/Codex file discovery, check what it writes to AGENTS.md/hooks, and keep normal git diff/test review as the authority.",
     "name": "Cortex",
@@ -2150,6 +2169,29 @@
     "lastReviewed": "2026-07-14T06:20:12-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could turn estimating concepts, jobsite sequencing, safety basics, or onboarding SOPs into internal visual explainers, but it should not become authoritative estimating/training content without review.",
+    "next": "Try the free monthly generation on one internal topic such as billing-line SOT, return workflow, or concrete-formwork basics. Human-review all facts, safety claims, and business rules before sharing with staff or customers.",
+    "name": "Academa",
+    "category": "AI training content / technical lecture videos",
+    "summary": "AI service for generating visual long-form STEM/technical lecture videos from prompts. The verified site says users can ask for something technical and receive a lecture video in about 25 minutes; pricing shows a free tier with one video/month and Plus at $20/month for 10 video generations.",
+    "drprepper": "Useful for internal education around PrepShip, Client Portal, DJR operations, billing concepts, fulfillment workflows, and AI basics where a short visual explainer beats another written SOP.",
+    "toolUrl": "https://academa.ai/",
+    "postUrl": "https://news.ycombinator.com/item?id=49503421",
+    "extraLinks": [
+      {
+        "label": "Pricing",
+        "url": "https://academa.ai/pricing"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49503421"
+      }
+    ],
+    "firstSeen": "2026-08-31T06:04:36-07:00",
+    "lastReviewed": "2026-08-31T06:06:46-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful for Aluma proposal and project media: shoring/formwork sequence explainers, regional project maps, animated engineering diagrams, quantity/schedule callouts, before/after transitions, and sales-presentation clips. Technical dimensions, capacities, schedules, and safety statements must come from approved engineering/project sources and receive human review.",
     "next": "Do not install blindly from the social carousel. Pilot HyperFrames in a sandbox using the official repository and core-skill update path; create three reusable branded templates—10-second DR PREPPER service intro, fulfillment-flow explainer, and KPI/data card—then verify brand consistency, deterministic rerenders, legibility, captions/audio rights, render time, file size, and mobile page performance. If adopted, install only the core/router and needed workflow skills rather than all 19.",
@@ -2198,6 +2240,25 @@
     ],
     "firstSeen": "2026-08-05T06:09:39-07:00",
     "lastReviewed": "2026-08-05T06:09:39-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful for Aluma landing pages, lead-capture pages, and proposal microsites if it can expose visitor behavior and growth tasks without leaking sensitive prospect data.",
+    "next": "Test on one public, non-sensitive landing page first. Verify analytics privacy, session-replay masking, MCP/API permissions, pricing tiers, and human approval before any automated site/content changes.",
+    "name": "Growtics",
+    "category": "AI web analytics / growth operations",
+    "summary": "Privacy web analytics platform with an AI growth agent. The verified site combines real-time analytics, session replays, growth actions, uptime/SSL monitoring, SEO/AEO checks, widgets, an AI SEO writer, and MCP/API access.",
+    "drprepper": "Strong fit for DR PREPPER 3PL and KF Goodies conversion work: one dashboard could monitor landing-page traffic, form friction, SEO gaps, uptime, and next growth actions without treating the AI as an unchecked publisher.",
+    "toolUrl": "https://growtics.io",
+    "postUrl": "https://news.ycombinator.com/item?id=49505111",
+    "extraLinks": [
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49505111"
+      }
+    ],
+    "firstSeen": "2026-08-31T06:04:36-07:00",
+    "lastReviewed": "2026-08-31T06:06:46-07:00"
   },
   {
     "priority": "High",
