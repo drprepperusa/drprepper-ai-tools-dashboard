@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Aug 31, 2026 · 6:06 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 1, 2026 · 6:08 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">283</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">270</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">129</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">286</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">273</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">130</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -1838,6 +1838,19 @@
             ],
             "firstSeen": "2026-08-29T23:13:24-07:00",
             "lastReviewed": "2026-08-29T23:13:24-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful only for Aluma web forms or internal dashboards, not field operations. Could still protect lead-entry or project-tracker screens if those workflows become repetitive.",
+            "next": "Pilot on 2-3 non-sensitive staging workflows: portal login, order detail, and billing invoice export. Compare failure screenshots against current Playwright/Cypress coverage before using it as a real release gate.",
+            "name": "CueCast",
+            "category": "Browser QA / no-code regression testing",
+            "summary": "No-code web testing tool that records real user flows, replays them in a browser, and captures screenshots and failure context. The September 1 Show HN pitch highlights multi-locator replay and Chrome DevTools Protocol fallback; the official pricing page shows a free tier plus intro paid plans around $9-$49/month.",
+            "drprepper": "Direct fit for DR Prepper, DJR, PrepShip, and Client Portal smoke coverage: record checkout, billing, order-detail, sourcing, and admin portal workflows once, then rerun them after developer changes instead of relying only on manual clicking.",
+            "toolUrl": "https://www.icuecast.ai/",
+            "postUrl": "https://news.ycombinator.com/item?id=49519927",
+            "firstSeen": "2026-09-01T06:08:49-07:00",
+            "lastReviewed": "2026-09-01T06:08:49-07:00"
       },
       {
             "priority": "High",
@@ -5044,6 +5057,19 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could help capture jobsite notes, bid context, and lead follow-ups faster, but only if sensitive project/customer details are handled under the right account and privacy settings.",
+            "next": "Test with non-sensitive supplier/warehouse notes first. Keep it as input assistance only; do not let dictated text post to customers, vendors, or Trello without human review.",
+            "name": "Wispr Flow",
+            "category": "Voice dictation / operator input",
+            "summary": "Cross-app voice dictation app for turning spoken notes into written text. The official site describes it as fast voice typing, and the pricing page shows a free tier plus Pro/team pricing around $12-$23/month depending on billing and plan.",
+            "drprepper": "Practical operator accelerator for supplier notes, receiving exceptions, warehouse instructions, customer follow-ups, and quick task-card context when typing slows the workflow down.",
+            "toolUrl": "https://wisprflow.ai/",
+            "postUrl": "https://wisprflow.ai/",
+            "firstSeen": "2026-09-01T06:08:49-07:00",
+            "lastReviewed": "2026-09-01T06:08:49-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Indirect fit for dictating research or implementation instructions, but it is mainly an internal developer-productivity tool rather than an Aluma customer-facing system.",
             "next": "Test with a non-sensitive local coding task. Verify approve-before-send, microphone permissions, transcript storage, and whether any meeting/AgentCall feature changes the privacy model before using it around business data.",
             "name": "SKI",
@@ -5879,6 +5905,19 @@
             "postUrl": "https://www.sent.dm/en/pricing",
             "firstSeen": "2026-06-16T06:05:41-07:00",
             "lastReviewed": "2026-06-16T06:05:41-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Possible fit for lead-source and project-tracker automation if browser evidence is required, but it should stay experimental until reliability and credential boundaries are proven.",
+            "next": "Review the repo and run a local toy workflow before connecting any DR Prepper credentials. Treat it as a development pattern, not production automation, until logging, screenshots, retry limits, and no-write safety are clear.",
+            "name": "Saccade",
+            "category": "Open-source browser agent runtime",
+            "summary": "Open-source closed-loop browser-control runtime for AI agents. The September 1 Show HN item points to the nanlogic/saccade GitHub repo, which describes live semantic browser truth for AI agents.",
+            "drprepper": "Relevant as an architecture pattern for future internal automations that need to inspect the actual browser state before acting, especially admin workflows where blind scraping or DOM assumptions create bad decisions.",
+            "toolUrl": "https://github.com/nanlogic/saccade",
+            "postUrl": "https://news.ycombinator.com/item?id=49516118",
+            "firstSeen": "2026-09-01T06:08:49-07:00",
+            "lastReviewed": "2026-09-01T06:08:49-07:00"
       },
       {
             "priority": "Watch",
