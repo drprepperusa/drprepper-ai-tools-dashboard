@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 2, 2026 · 6:08 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 3, 2026 · 6:06 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">290</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">277</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">132</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">293</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">280</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">135</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -825,6 +825,29 @@
       },
       {
             "priority": "High",
+            "aluma": "Useful for Aluma lead-gen and project-research workflows where public contractor pages, permit portals, or vendor sites lack clean APIs; keep runs read-only until sheet/CRM/outreach writes have explicit approval gates.",
+            "next": "Prototype one read-only workflow: describe a 3PL or Aluma prospect-enrichment task, run it against public pages only, and verify logs, credential vault behavior, schedules/triggers, pricing credits, and human approval before any CRM/email/write action.",
+            "name": "Airtop Agent Builder",
+            "category": "AI browser automation / agent builder",
+            "summary": "Airtop product for building browser/API/web automations from plain English; the verified Agent Builder page says it compiles descriptions into reusable tested agents, can authenticate behind logins through a secure vault, run on schedule/trigger/on demand, and draft fixes when workflows break. Pricing page shows a free tier and paid credit plans.",
+            "drprepper": "Strong practical fit for DR Prepper, PrepShip, Client Portal, and lead-gen chores where APIs are missing: portal checks, invoice reconciliation, public prospect enrichment, competitor page monitoring, and routine web extraction before a human approves any business-impacting change.",
+            "toolUrl": "https://www.airtop.ai/agent-builder",
+            "postUrl": "https://www.airtop.ai/agent-builder",
+            "extraLinks": [
+                  {
+                        "label": "Airtop pricing",
+                        "url": "https://www.airtop.ai/pricing"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260903_040053"
+                  }
+            ],
+            "firstSeen": "2026-09-03T06:06:55-07:00",
+            "lastReviewed": "2026-09-03T06:06:55-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Useful for public contractor/project-page monitoring and lead-source scraping if runs stay read-only, logged, and isolated from CRM/outreach writes.",
             "next": "Prototype one harmless no-login workflow that watches 10 public supplier or competitor pages and writes a change report. Do not connect logins, customer/order data, or action-taking flows until secrets, audit logs, browser profiles, and approval gates are reviewed.",
             "name": "Puppetflow",
@@ -1022,6 +1045,37 @@
       },
       {
             "priority": "High",
+            "aluma": "Useful for Aluma scraper/dashboard repos if coding agents need durable project rules, architecture notes, and prior decisions without rereading the whole codebase every session.",
+            "next": "Pilot in this dashboard or another non-production repo first. Verify what Mex writes to the repo, `.gitignore` safety, Codex/Claude skill install behavior, drift checks, MCP exposure, and whether generated notes cite exact symbols before using it on production-connected codebases.",
+            "name": "Mex",
+            "category": "AI coding-agent memory / repo wiki",
+            "summary": "Open-source repo-local living wiki for coding agents. The verified README says Mex maps a codebase, turns agent-learned context into structured Markdown, connects notes to exact symbols, routes task-relevant context, checks drift, and in v0.8.0 installs Claude Code and Codex skills through setup.",
+            "drprepper": "Strong fit for PrepShip, Client Portal, DJR, Warehouse, and dashboard development because repeated agent failures often come from forgetting source-of-truth files, project conventions, and past fixes between sessions.",
+            "toolUrl": "https://github.com/mex-memory/mex",
+            "postUrl": "https://news.ycombinator.com/item?id=49547372",
+            "extraLinks": [
+                  {
+                        "label": "README",
+                        "url": "https://raw.githubusercontent.com/mex-memory/mex/main/README.md"
+                  },
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49547372"
+                  },
+                  {
+                        "label": "Website",
+                        "url": "https://mexmemory.com"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260903_040053"
+                  }
+            ],
+            "firstSeen": "2026-09-03T06:06:55-07:00",
+            "lastReviewed": "2026-09-03T06:06:55-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Useful for Aluma scraper/dashboard/dev-agent workflows if it can reduce repeated context/tool-call overhead while keeping evidence logs and human review intact.",
             "next": "Test only in a disposable repo first. Compare Tura logs, patches, test evidence, token counts, and failure modes against the current Hermes/Codex workflow before trusting it on production-connected repos.",
             "name": "Tura",
@@ -1092,6 +1146,29 @@
             ],
             "firstSeen": "2026-08-16T06:03:43-07:00",
             "lastReviewed": "2026-08-16T06:05:20-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful if Aluma lead-gen, scraper, or proposal-agent work starts producing recurring AI costs; the same routing audit can separate cheap extraction/sorting from expensive judgment work.",
+            "next": "Use as a model-routing audit pattern before buying services: export recent Hermes/Claude/Codex usage, classify routine vs judgment-heavy tasks, move only low-risk mechanical work to cheaper models, and keep acceptance, customer-sensitive writing, money, inventory, and architecture on stronger models.",
+            "name": "Femail AI spend audit",
+            "category": "AI cost optimization / model routing",
+            "summary": "AI spend-audit service surfaced on Show HN. The verified site says it looks at current AI work and bills, moves routine tasks like sorting, summarizing, formatting, and drafting to cheaper models without changing tools, and guarantees at least 30% savings or the audit is free.",
+            "drprepper": "Direct fit for DR Prepper/Hermes operations because current cron, coding-agent, and review workloads need model routing: cheap models for mechanical scans and summaries, premium models only for audits, architecture, risky decisions, and customer-sensitive content.",
+            "toolUrl": "https://www.getfemail.com",
+            "postUrl": "https://news.ycombinator.com/item?id=49548428",
+            "extraLinks": [
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49548428"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260903_040053"
+                  }
+            ],
+            "firstSeen": "2026-09-03T06:06:55-07:00",
+            "lastReviewed": "2026-09-03T06:06:55-07:00"
       },
       {
             "priority": "High",
