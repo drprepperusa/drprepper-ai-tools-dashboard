@@ -624,6 +624,25 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful for Aluma lead-gen/project-research MCP tools if DJ needs to see which source tools are used, where scrapes fail, and whether agents are repeatedly calling the wrong workflow before updating trackers or drafting outreach.",
+    "next": "Evaluate on one non-production MCP server first. Confirm captured payload redaction, retention, team access, Slack/webhook noise, and whether sensitive order/customer data can be excluded before adding any production-adjacent tools.",
+    "name": "TrackMCP",
+    "category": "AI agent observability / MCP analytics",
+    "summary": "Analytics platform for MCP servers that tracks who uses a server, which tools they call, completion/reliability, workflow outcomes, and where usage fails. Verified pricing shows a free Hobby tier with 1,000 captured tool calls/month and Pro at $49/month for 50,000 calls, alerts, and longer retention.",
+    "drprepper": "Strong fit for Hermes/PrepShip/client-portal automation once internal MCP tools handle orders, billing, labels, Trello, or dashboard updates, because tool-call observability can expose broken workflows, runaway calls, and risky usage before business damage.",
+    "toolUrl": "https://www.trackmcp.com/",
+    "postUrl": "https://www.trackmcp.com/pricing",
+    "extraLinks": [
+      {
+        "label": "Pricing",
+        "url": "https://www.trackmcp.com/pricing"
+      }
+    ],
+    "firstSeen": "2026-09-04T06:06:10-07:00",
+    "lastReviewed": "2026-09-04T06:06:10-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Useful for monitoring Aluma lead-gen or project-research agents when they begin reading public pages, drafting CRM changes, or proposing outreach actions.",
     "next": "Pilot with synthetic/internal agent traces first. Verify local OpenTelemetry export, PII redaction, policy blocking, hosted-platform pricing, retention, and alert noise before connecting customer, billing, inventory, or outreach workflows.",
     "name": "Traccia",
@@ -2364,6 +2383,25 @@
     "lastReviewed": "2026-08-05T06:09:39-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Indirect fit only: could review jobsite/training footage against simple safety or process rules, but Aluma would need explicit consent, retention, and liability limits before using AI video review operationally.",
+    "next": "Do not connect real warehouse/jobsite footage yet. First test with public or synthetic clips, confirm pricing, retention/privacy, rule accuracy, redaction options, and whether results remain advisory rather than an automatic personnel or customer decision.",
+    "name": "Compliance by TwelveLabs",
+    "category": "AI video compliance / SOP review",
+    "summary": "TwelveLabs video-intelligence workflow for rule-driven video compliance review. The verified blog/page identifies it as AI video compliance review, and TwelveLabs pricing exposes API/free-plan details for video indexing/search/understanding workloads.",
+    "drprepper": "Potential future fit for warehouse SOP, packing-line, safety, or exception-review QA where video evidence needs rule-based review, but this should stay exploratory until camera/privacy policy, retention, and human-review boundaries are clear.",
+    "toolUrl": "https://www.twelvelabs.io/blog/compliance",
+    "postUrl": "https://www.twelvelabs.io/blog/compliance",
+    "extraLinks": [
+      {
+        "label": "TwelveLabs pricing",
+        "url": "https://www.twelvelabs.io/pricing"
+      }
+    ],
+    "firstSeen": "2026-09-04T06:06:10-07:00",
+    "lastReviewed": "2026-09-04T06:06:10-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could speed field notes, prospect-research notes, and follow-up drafts if voice capture is accurate and all outbound copy remains human-reviewed.",
     "next": "Test with internal notes only: supplier call recap, warehouse instruction draft, and Trello task dictation. Verify pricing, privacy, screen-reading permissions, export behavior, and no automatic sends before using it around customer or prospect communications.",
@@ -2453,6 +2491,25 @@
     "postUrl": "https://www.producthunt.com/products/contrive",
     "firstSeen": "2026-08-24T06:07:40-07:00",
     "lastReviewed": "2026-08-24T06:07:40-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful for Aluma public-lead follow-up and project-tracker notifications if source reads, CRM/sheet updates, and outreach drafts stay tied to the canonical tracker and require human approval before any external send.",
+    "next": "Prototype one read-only workflow first: watch a public lead/source sheet or supplier page and produce an internal alert. Verify connector permissions, audit logs, retry behavior, pricing limits, and human-approval gates before connecting mailboxes, Shopify, orders, CRM, or customer messages.",
+    "name": "viaSocket",
+    "category": "AI workflow automation / MCP integrations",
+    "summary": "Workflow automation platform for connecting apps and building AI-assisted automations. The verified site positions viaSocket around 2,200+ app integrations, audit logs, alerts, error handling, and an MCP angle; pricing page says the free plan includes 10,000 tasks and 500 AI credits monthly.",
+    "drprepper": "Strong practical fit for DR Prepper, PrepShip, KF Goodies, and internal ops workflows such as supplier follow-ups, order/status alerts, Shopify/Sheets handoffs, lead-routing, and exception notifications, as long as writes and customer-facing sends stay approval-gated.",
+    "toolUrl": "https://viasocket.com/",
+    "postUrl": "https://viasocket.com/pricing",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://viasocket.com/"
+      }
+    ],
+    "firstSeen": "2026-09-04T06:06:10-07:00",
+    "lastReviewed": "2026-09-04T06:06:10-07:00"
   },
   {
     "priority": "Medium",

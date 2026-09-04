@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 3, 2026 · 6:06 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 4, 2026 · 6:06 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">293</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">280</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">135</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">296</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">283</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">137</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -696,6 +696,25 @@
             ],
             "firstSeen": "2026-08-29T06:07:43-07:00",
             "lastReviewed": "2026-08-29T06:07:43-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for Aluma lead-gen/project-research MCP tools if DJ needs to see which source tools are used, where scrapes fail, and whether agents are repeatedly calling the wrong workflow before updating trackers or drafting outreach.",
+            "next": "Evaluate on one non-production MCP server first. Confirm captured payload redaction, retention, team access, Slack/webhook noise, and whether sensitive order/customer data can be excluded before adding any production-adjacent tools.",
+            "name": "TrackMCP",
+            "category": "AI agent observability / MCP analytics",
+            "summary": "Analytics platform for MCP servers that tracks who uses a server, which tools they call, completion/reliability, workflow outcomes, and where usage fails. Verified pricing shows a free Hobby tier with 1,000 captured tool calls/month and Pro at $49/month for 50,000 calls, alerts, and longer retention.",
+            "drprepper": "Strong fit for Hermes/PrepShip/client-portal automation once internal MCP tools handle orders, billing, labels, Trello, or dashboard updates, because tool-call observability can expose broken workflows, runaway calls, and risky usage before business damage.",
+            "toolUrl": "https://www.trackmcp.com/",
+            "postUrl": "https://www.trackmcp.com/pricing",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://www.trackmcp.com/pricing"
+                  }
+            ],
+            "firstSeen": "2026-09-04T06:06:10-07:00",
+            "lastReviewed": "2026-09-04T06:06:10-07:00"
       },
       {
             "priority": "High",
@@ -1613,6 +1632,25 @@
             ],
             "firstSeen": "2026-08-17T06:02:46-07:00",
             "lastReviewed": "2026-08-17T06:05:48-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for Aluma public-lead follow-up and project-tracker notifications if source reads, CRM/sheet updates, and outreach drafts stay tied to the canonical tracker and require human approval before any external send.",
+            "next": "Prototype one read-only workflow first: watch a public lead/source sheet or supplier page and produce an internal alert. Verify connector permissions, audit logs, retry behavior, pricing limits, and human-approval gates before connecting mailboxes, Shopify, orders, CRM, or customer messages.",
+            "name": "viaSocket",
+            "category": "AI workflow automation / MCP integrations",
+            "summary": "Workflow automation platform for connecting apps and building AI-assisted automations. The verified site positions viaSocket around 2,200+ app integrations, audit logs, alerts, error handling, and an MCP angle; pricing page says the free plan includes 10,000 tasks and 500 AI credits monthly.",
+            "drprepper": "Strong practical fit for DR Prepper, PrepShip, KF Goodies, and internal ops workflows such as supplier follow-ups, order/status alerts, Shopify/Sheets handoffs, lead-routing, and exception notifications, as long as writes and customer-facing sends stay approval-gated.",
+            "toolUrl": "https://viasocket.com/",
+            "postUrl": "https://viasocket.com/pricing",
+            "extraLinks": [
+                  {
+                        "label": "Official site",
+                        "url": "https://viasocket.com/"
+                  }
+            ],
+            "firstSeen": "2026-09-04T06:06:10-07:00",
+            "lastReviewed": "2026-09-04T06:06:10-07:00"
       },
       {
             "priority": "High",
@@ -5807,6 +5845,25 @@
             "postUrl": "https://www.producthunt.com/products/river-9",
             "firstSeen": "2026-07-16T06:05:52-07:00",
             "lastReviewed": "2026-07-16T06:05:52-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Indirect fit only: could review jobsite/training footage against simple safety or process rules, but Aluma would need explicit consent, retention, and liability limits before using AI video review operationally.",
+            "next": "Do not connect real warehouse/jobsite footage yet. First test with public or synthetic clips, confirm pricing, retention/privacy, rule accuracy, redaction options, and whether results remain advisory rather than an automatic personnel or customer decision.",
+            "name": "Compliance by TwelveLabs",
+            "category": "AI video compliance / SOP review",
+            "summary": "TwelveLabs video-intelligence workflow for rule-driven video compliance review. The verified blog/page identifies it as AI video compliance review, and TwelveLabs pricing exposes API/free-plan details for video indexing/search/understanding workloads.",
+            "drprepper": "Potential future fit for warehouse SOP, packing-line, safety, or exception-review QA where video evidence needs rule-based review, but this should stay exploratory until camera/privacy policy, retention, and human-review boundaries are clear.",
+            "toolUrl": "https://www.twelvelabs.io/blog/compliance",
+            "postUrl": "https://www.twelvelabs.io/blog/compliance",
+            "extraLinks": [
+                  {
+                        "label": "TwelveLabs pricing",
+                        "url": "https://www.twelvelabs.io/pricing"
+                  }
+            ],
+            "firstSeen": "2026-09-04T06:06:10-07:00",
+            "lastReviewed": "2026-09-04T06:06:10-07:00"
       },
       {
             "priority": "Watch",
