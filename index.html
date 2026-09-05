@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 4, 2026 · 6:06 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 5, 2026 · 6:06 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">296</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">283</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">137</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">299</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">286</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">139</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -734,6 +734,29 @@
             ],
             "firstSeen": "2026-08-30T06:04:05-07:00",
             "lastReviewed": "2026-08-30T06:04:05-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for scheduled Aluma lead-gen, contractor/project monitoring, and tracker-review loops if every CRM/sheet/outreach write stays approval-gated and source-grounded.",
+            "next": "Prototype only one read-only loop first, such as a public lead-page or dashboard-candidate check. Verify local install, tmux/launchd behavior, logs, watchdog exits, repo isolation, and human approval boundaries before allowing business-system writes or external sends.",
+            "name": "Moadim",
+            "category": "AI agent scheduling / cron loops",
+            "summary": "Open-source MIT loop engine for scheduled AI-agent routines. The verified site says a loop combines a prompt, schedule, and agent, then runs Claude, Codex, Hermes, NanoClaw, or Pi in an isolated workbench with watchdogs, REST endpoints, OpenAPI, and MCP support.",
+            "drprepper": "Strong fit for DR Prepper, PrepShip, dashboard, and DJR automation where recurring agents should check leads, inventory, orders, PPC, supplier pages, or follow-ups on a schedule instead of waiting for manual prompts.",
+            "toolUrl": "https://moadim.io/",
+            "postUrl": "https://news.ycombinator.com/item?id=49571537",
+            "extraLinks": [
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49571537"
+                  },
+                  {
+                        "label": "Official site",
+                        "url": "https://moadim.io/"
+                  }
+            ],
+            "firstSeen": "2026-09-05T06:06:08-07:00",
+            "lastReviewed": "2026-09-05T06:06:08-07:00"
       },
       {
             "priority": "High",
@@ -1201,6 +1224,29 @@
             "postUrl": "https://fal.ai/models/fal-ai/nano-banana-pro",
             "firstSeen": "2026-06-20T06:04:27-07:00",
             "lastReviewed": "2026-06-20T06:04:27-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for extracting public bid docs, equipment paperwork, jobsite photos, and supplier documents, but only with source retention, privacy, and human review rules before any estimate/tracker changes.",
+            "next": "Test with non-sensitive sample PDFs/images first. Compare OCR fields against manual entry, record page-level cost, and keep extracted values advisory until schema validation and human approval gates are wired.",
+            "name": "VLM Run Gateway",
+            "category": "AI document OCR / visual-model API",
+            "summary": "OpenAI-compatible gateway for visual AI models covering document OCR, markdown extraction, image/video reasoning, structured outputs, BYOK, MCP access, and per-token/per-image pricing. The verified page listed 20+ visual models and OCR pricing bands for high-volume document workloads.",
+            "drprepper": "Strong practical fit for PrepShip, DR Prepper, and DJR document workflows such as BOLs, invoices, rate sheets, supplier paperwork, labels, screenshots, and warehouse exception images that need structured extraction before a human approves downstream actions.",
+            "toolUrl": "https://www.vlmrun.com/gateway",
+            "postUrl": "https://news.ycombinator.com/item?id=49568379",
+            "extraLinks": [
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49568379"
+                  },
+                  {
+                        "label": "Gateway page",
+                        "url": "https://www.vlmrun.com/gateway"
+                  }
+            ],
+            "firstSeen": "2026-09-05T06:06:08-07:00",
+            "lastReviewed": "2026-09-05T06:06:08-07:00"
       },
       {
             "priority": "High",
@@ -3824,6 +3870,29 @@
             ],
             "firstSeen": "2026-07-08T06:07:06-07:00",
             "lastReviewed": "2026-07-08T06:07:06-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Useful as lightweight AI literacy for Aluma automation and lead-gen decisions, especially when reviewing proposals that mention agents, RAG, computer vision, or model routing.",
+            "next": "Use as training material, not an operations system. Pick 3-5 lessons around embeddings, RAG, agents, and VLMs, then translate the terms into DR Prepper/Aluma SOP examples before buying any subscription.",
+            "name": "μ by Vizuara",
+            "category": "AI education / micro-lessons",
+            "summary": "Short visual AI lessons with quick quizzes for concepts like LLMs, agents, RAG, LoRA, KV cache, reasoning models, and vision transformers. The verified site describes two-minute lessons, first lessons/free courses, weekly additions, and a subscription library.",
+            "drprepper": "Useful for fast operator/staff learning so DJ and managers can understand AI terms behind search, RAG, OCR, evals, and agent workflows before approving tools or developer scope.",
+            "toolUrl": "https://mu.vizuara.ai/",
+            "postUrl": "https://news.ycombinator.com/item?id=49573645",
+            "extraLinks": [
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49573645"
+                  },
+                  {
+                        "label": "Official site",
+                        "url": "https://mu.vizuara.ai/"
+                  }
+            ],
+            "firstSeen": "2026-09-05T06:06:08-07:00",
+            "lastReviewed": "2026-09-05T06:06:08-07:00"
       },
       {
             "priority": "Medium",
