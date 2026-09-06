@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 5, 2026 · 6:06 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 6, 2026 · 6:05 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">299</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">286</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">139</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">302</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">289</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">140</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -914,6 +914,29 @@
             ],
             "firstSeen": "2026-08-28T06:08:22-07:00",
             "lastReviewed": "2026-08-28T06:08:22-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for preserving Aluma lead-research prompts, contractor/outreach notes, and recurring search workflows, as long as sensitive customer/vendor context stays out or remains local-only.",
+            "next": "Pilot on non-sensitive assistant sessions first. Export a few high-value workflows to Markdown, verify where browser/local data is stored, and do not treat exports as authoritative business records until reviewed and filed in the right source-of-truth system.",
+            "name": "AI Toolbox 3.0",
+            "category": "AI chat knowledge management",
+            "summary": "Chrome extension for organizing, searching, chaining, and exporting AI chats across ChatGPT, Claude, Gemini, and Grok. Product Hunt and the verified homepage describe local-first browser storage, free options, 40,000+ users, folders, tags, prompt chains, PDF/Markdown/text exports, and team plans.",
+            "drprepper": "Useful for turning scattered DR Prepper, PrepShip, DJR, and dashboard AI sessions into searchable SOPs, task notes, prompts, and training snippets instead of losing operational decisions in chat history.",
+            "toolUrl": "https://www.ai-toolbox.co/?ref=producthunt",
+            "postUrl": "https://www.producthunt.com/products/chatgpt-toolbox",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt launch",
+                        "url": "https://www.producthunt.com/products/chatgpt-toolbox"
+                  },
+                  {
+                        "label": "Official site",
+                        "url": "https://www.ai-toolbox.co/?ref=producthunt"
+                  }
+            ],
+            "firstSeen": "2026-09-06T06:05:28-07:00",
+            "lastReviewed": "2026-09-06T06:05:28-07:00"
       },
       {
             "priority": "High",
@@ -5114,6 +5137,29 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Lower direct fit for Aluma unless custom lead-gen or dashboard services grow enough to need production incident debugging; still relevant for safer internal automation uptime.",
+            "next": "Treat as developer infrastructure, not a routine ops tool. Test on a non-sensitive staging service first, confirm probes are truly read-only, scrub captured values for secrets/customer data, and require incident approval before any production install.",
+            "name": "HyperProbe",
+            "category": "Production debugging / AI incident probes",
+            "summary": "AI-native production debugger that lets coding agents place read-only probes or virtual breakpoints on suspect production lines without redeploying, then capture variable state missing from logs. Product Hunt lists it as paid; the verified homepage shows a free one-service plan and a $99/month professional plan.",
+            "drprepper": "Useful for Lawrence/dev incidents where PrepShip, Client Portal, DJR, or dashboard bugs cannot be reproduced from existing logs, especially sync, billing, label, inventory, or portal edge cases.",
+            "toolUrl": "https://www.hyperprobe.co/?ref=producthunt",
+            "postUrl": "https://www.producthunt.com/products/hyperprobe",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt launch",
+                        "url": "https://www.producthunt.com/products/hyperprobe"
+                  },
+                  {
+                        "label": "Official site",
+                        "url": "https://www.hyperprobe.co/?ref=producthunt"
+                  }
+            ],
+            "firstSeen": "2026-09-06T06:05:28-07:00",
+            "lastReviewed": "2026-09-06T06:05:28-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "make.design and Selected can help produce quick proposal/landing-page visuals; Aside may help project/prospect research; Mac productivity tools are optional personal workflow improvements.",
             "next": "Do not install everything. Shortlist make.design for DR Prepper landing-page mockups and Supaste only if local clipboard history would save operator time; treat Aside as sandbox-only until privacy/data access behavior is reviewed.",
             "name": "Solt Wagner — useful apps/resources bundle",
@@ -5250,6 +5296,29 @@
             ],
             "firstSeen": "2026-07-02T06:03:51-07:00",
             "lastReviewed": "2026-07-02T06:03:51-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could support contractor/project follow-up research and Slack-based reminders for Aluma leads, but CRM/sheet writes and outreach should remain approval-gated until connectors and permissions are reviewed.",
+            "next": "Evaluate only in a sandbox Slack channel first. Verify connector scopes, data retention, export controls, and human-approval gates before letting it read production systems, update records, or send customer/vendor messages.",
+            "name": "Tadata",
+            "category": "Slack AI employee / GTM ops automation",
+            "summary": "AI employee that lives in Slack, connects to company tools, learns team context/preferences, and handles research or repetitive work. Product Hunt lists it as free; the verified homepage offers $50 free credits and emphasizes Slack, sales/GTM ops, connectors, exportable recipes, credential isolation, and data privacy controls.",
+            "drprepper": "Potential fit for internal exception triage, sales/admin reminders, meeting prep, account research, and follow-up nudges around DR Prepper 3PL, DJR wholesale, and PrepShip operations.",
+            "toolUrl": "https://www.tadata.com/?ref=producthunt",
+            "postUrl": "https://www.producthunt.com/products/tadata",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt launch",
+                        "url": "https://www.producthunt.com/products/tadata"
+                  },
+                  {
+                        "label": "Official site",
+                        "url": "https://www.tadata.com/?ref=producthunt"
+                  }
+            ],
+            "firstSeen": "2026-09-06T06:05:28-07:00",
+            "lastReviewed": "2026-09-06T06:05:28-07:00"
       },
       {
             "priority": "Medium",
