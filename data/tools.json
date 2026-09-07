@@ -1072,6 +1072,33 @@
     "lastReviewed": "2026-08-11T06:04:38-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Relevant for Aluma scraper/dashboard development if JetBrains is the working IDE; keep repo permissions, source-of-truth rules, tests, and PR review as the authority.",
+    "next": "Test in a disposable or low-risk repo first. Verify plugin permissions, local-vs-hosted model routing, worktree isolation, GitHub PR behavior, logs, and whether it respects AGENTS/CLAUDE architecture rules before using it on production-connected codebases.",
+    "name": "Kilo Code for JetBrains",
+    "category": "AI coding agents / JetBrains IDE workflow",
+    "summary": "Open-source Kilo Code launch for JetBrains IDEs, covering IntelliJ IDEA, WebStorm, PyCharm, GoLand, Rider, PhpStorm, CLion, RubyMine, and related local/remote dev workflows. Product Hunt and the verified Kilo site describe an agentic coding platform with 500+ models, BYOK/local-model options, isolated worktrees, GitHub PR/diff workflow, VS Code, JetBrains, CLI, and cloud agents.",
+    "drprepper": "Useful if Lawrence, Jake, or future DR Prepper/PrepShip developers prefer JetBrains IDEs but still need AI coding help that lands as reviewable diffs and PRs instead of direct production changes.",
+    "toolUrl": "https://kilo.ai/",
+    "postUrl": "https://www.producthunt.com/products/kilocode?launch=kilo-code-for-jetbrains",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/Kilo-Org/kilocode"
+      },
+      {
+        "label": "JetBrains plugin",
+        "url": "https://plugins.jetbrains.com/plugin/28350-kilo-code"
+      },
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260907_040007"
+      }
+    ],
+    "firstSeen": "2026-09-07T06:08:01-07:00",
+    "lastReviewed": "2026-09-07T06:08:01-07:00"
+  },
+  {
     "priority": "Watch",
     "aluma": "Could help run isolated Aluma scraper/dashboard coding tasks remotely, but only after repository permissions, secret handling, network access, logs, and branch protections are proven.",
     "next": "Do not connect business repos yet. Verify official site/pricing, GitHub app scopes, data retention, environment/secret isolation, logs, branch/PR workflow, and whether Claude/Codex/Opencode sessions remain reproducible before testing on a disposable repo.",
@@ -4131,6 +4158,33 @@
     ],
     "firstSeen": "2026-08-04T06:09:46-07:00",
     "lastReviewed": "2026-08-04T06:09:46-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful if Aluma has old project, contractor, bid, or vendor correspondence trapped in PST/OST archives; use it only for lookup/export into the proper source-of-truth system, not as a new records database.",
+    "next": "Pilot with one non-sensitive archive first. Confirm local-only behavior, export formats, search quality, attachment handling, and retention before opening customer/vendor mail archives; do not upload private mail to third-party converters.",
+    "name": "Mailward",
+    "category": "Email archive recovery / local PST-OST viewer",
+    "summary": "Browser-based PST/OST archive viewer for opening, reading, and searching Outlook mail archives without Outlook or Exchange. The verified site says files are parsed locally in the browser, nothing is uploaded, it works on Mac/PC/Chromebook, and pricing includes a free viewer plus a $19 one-time Pro license.",
+    "drprepper": "Strong practical fit for recovering old supplier, customer, carrier, or wholesale correspondence from archived Outlook files without uploading sensitive mailboxes to a cloud conversion service.",
+    "toolUrl": "https://pst.aivismonitor.com/",
+    "postUrl": "https://news.ycombinator.com/item?id=49595211",
+    "extraLinks": [
+      {
+        "label": "Product Hunt source",
+        "url": "https://www.producthunt.com/products/mailward?launch=mailward"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49595211"
+      },
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260907_040007"
+      }
+    ],
+    "firstSeen": "2026-09-07T06:08:01-07:00",
+    "lastReviewed": "2026-09-07T06:08:01-07:00"
   },
   {
     "priority": "Medium",
