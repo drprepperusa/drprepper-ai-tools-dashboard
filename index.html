@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 7, 2026 · 6:08 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 8, 2026 · 6:07 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">304</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">291</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">141</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">307</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">294</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">143</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -589,6 +589,29 @@
             ],
             "firstSeen": "2026-08-13T06:05:42-07:00",
             "lastReviewed": "2026-08-13T06:05:42-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for Aluma lead-gen and project-status channels where an agent can watch context and prepare research or tracker updates, while actual outreach or CRM/sheet writes remain human-approved.",
+            "next": "Pilot only in a non-sensitive internal Discord/Slack room first. Verify self-hosting, bot permissions, transcript retention, MCP/tool access, logs, and approval gates before connecting customer, order, billing, or outreach workflows.",
+            "name": "Switch",
+            "category": "AI agent collaboration / team-channel MCP workflow",
+            "summary": "Open-source, self-hostable bridge that brings AI agents into Slack, Microsoft Teams, Discord, and Telegram as named room participants with shared channel context. Product Hunt and the verified GitHub repo position it as a way to use agents inside existing team conversations instead of isolated chatbot tabs.",
+            "drprepper": "Strong fit for DR Prepper, PrepShip, DJR, and internal ops channels if agents need room-specific context, visible participation, and approval-aware workflows around orders, Trello, dashboards, and support handoffs.",
+            "toolUrl": "https://github.com/sandbox-quantum/switch",
+            "postUrl": "https://www.producthunt.com/products/switch-11",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt feed source",
+                        "url": "https://www.producthunt.com/feed"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260908_040015"
+                  }
+            ],
+            "firstSeen": "2026-09-08T06:02:52-07:00",
+            "lastReviewed": "2026-09-08T06:07:09-07:00"
       },
       {
             "priority": "High",
@@ -1378,6 +1401,29 @@
             ],
             "firstSeen": "2026-06-28T06:04:34-07:00",
             "lastReviewed": "2026-06-28T06:04:34-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Strong fit for Aluma contractor, GC, developer, and supplier prospecting if source filters and enrichment can be audited before outreach.",
+            "next": "Test with a small non-sensitive prospect segment first. Verify data freshness, source links, export fields, CRM ownership, pricing, opt-out/compliance support, and human-approved outreach before using it for real campaigns.",
+            "name": "Tables.so",
+            "category": "AI lead generation / B2B prospect enrichment",
+            "summary": "AI lead-sourcing platform for finding, qualifying, enriching, scoring, and syncing B2B prospects. Product Hunt and the verified homepage describe a large contact database, waterfall enrichment, AI prospecting, CRM sync, and high stated contact accuracy.",
+            "drprepper": "Direct fit for DR Prepper 3PL, DJR, KF Goodies, and wholesale prospecting if data quality is real: it could turn plain-language target criteria into qualified lead lists and CRM-ready records.",
+            "toolUrl": "https://www.tables.so",
+            "postUrl": "https://www.producthunt.com/products/tables-so",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt feed source",
+                        "url": "https://www.producthunt.com/feed"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260908_040015"
+                  }
+            ],
+            "firstSeen": "2026-09-08T06:02:52-07:00",
+            "lastReviewed": "2026-09-08T06:07:09-07:00"
       },
       {
             "priority": "High",
@@ -5740,6 +5786,29 @@
             ],
             "firstSeen": "2026-08-04T06:09:46-07:00",
             "lastReviewed": "2026-08-04T06:09:46-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Possible future fit for Aluma lead-generation campaigns if Google Ads becomes material, but only after conversion tracking and offer quality are already clean.",
+            "next": "Verification needed before use: the official site was network-blocked during this cron, so re-check homepage/pricing/security, supported Google Ads permissions, approval logs, rollback behavior, and reporting export before connecting any ad account.",
+            "name": "GoodLads",
+            "category": "AI ad operations / Google Ads optimization",
+            "summary": "Product Hunt-launched AI growth manager for Google Ads accounts spending roughly €10K–€250K/month. The launch describes AI-generated hypotheses to improve ROAS or CPA, one-click human-approved changes, and kanban tracking to a verdict.",
+            "drprepper": "Potential fit for KF Goodies or DR Prepper paid acquisition once ad spend is large enough: the useful pattern is AI proposing measurable Google Ads experiments while a human approves every account change.",
+            "toolUrl": "https://goodlads.cc",
+            "postUrl": "https://www.producthunt.com/products/good-lads-1-0",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt feed source",
+                        "url": "https://www.producthunt.com/feed"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260908_040015"
+                  }
+            ],
+            "firstSeen": "2026-09-08T06:02:52-07:00",
+            "lastReviewed": "2026-09-08T06:07:09-07:00"
       },
       {
             "priority": "Watch",
