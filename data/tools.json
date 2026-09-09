@@ -1888,6 +1888,29 @@
     "lastReviewed": "2026-09-02T06:07:42-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Could help Aluma internal dashboards or client-facing intake flows explain which jobsite/project fields matter, but only after the workflow source of truth is stable.",
+    "next": "Prototype on one low-risk internal screen first. Verify React/app integration, what UI data is sent to Frigade, permission boundaries, pricing, logs, and human approval for any action-taking workflow before exposing it to customers.",
+    "name": "Frigade Assist API",
+    "category": "AI in-app guidance / product onboarding",
+    "summary": "AI-native product adoption API that lets an existing agent guide users through real workflows by drawing step-by-step help on the page and showing where to click. Product Hunt and the verified Frigade site describe Assistant, Assist API, and React onboarding components.",
+    "drprepper": "Strong fit for PrepShip, Client Portal, Warehouse, and admin screens where staff or customers need guided workflows for orders, returns, billing, onboarding, or setup instead of another wall of help text.",
+    "toolUrl": "https://frigade.com/assist-api",
+    "postUrl": "https://www.producthunt.com/products/frigade",
+    "extraLinks": [
+      {
+        "label": "Frigade homepage",
+        "url": "https://frigade.com/"
+      },
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260909_040059"
+      }
+    ],
+    "firstSeen": "2026-09-09T04:01:00-07:00",
+    "lastReviewed": "2026-09-09T06:05:26-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could reduce costs for Aluma lead scraping/classification or proposal-drafting agents if those workflows become high-volume, but only after provider behavior and latency are tested on non-critical jobs.",
     "next": "Run a small sandbox with non-sensitive prompts and compare cost, latency, model output, logging, and failure behavior against direct provider calls before routing any production/customer-impacting agent traffic.",
@@ -2179,6 +2202,29 @@
     ],
     "firstSeen": "2026-08-26T06:05:04-07:00",
     "lastReviewed": "2026-08-26T06:05:04-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Useful for proposal drafts, marketing images, and exported documents, with the same caution not to strip required provenance or compliance metadata from files that should retain it.",
+    "next": "Use only on files DJ is allowed to edit and treat it as QA, not a way to misrepresent authorship. Verify upload/privacy behavior before using sensitive docs; prefer local metadata checks for customer, financial, legal, or vendor-private files.",
+    "name": "AI Watermark Checker & Remover",
+    "category": "AI provenance / document metadata QA",
+    "summary": "Free web tool for checking hidden Unicode, C2PA/content credentials, EXIF, and AI metadata in text, images, PDFs, Word files, and other documents. HN surfaced it as a Show HN tool for AI watermark/provenance cleanup.",
+    "drprepper": "Useful before sharing AI-assisted customer-facing docs, PDFs, website copy, images, or vendor files because invisible characters and metadata can create messy diffs, CMS issues, or accidental provenance leakage.",
+    "toolUrl": "https://remove-ai-watermark.com/",
+    "postUrl": "https://news.ycombinator.com/item?id=49624208",
+    "extraLinks": [
+      {
+        "label": "Tool site",
+        "url": "https://remove-ai-watermark.com/"
+      },
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260909_040059"
+      }
+    ],
+    "firstSeen": "2026-09-09T04:01:00-07:00",
+    "lastReviewed": "2026-09-09T06:05:26-07:00"
   },
   {
     "priority": "High",
@@ -2496,6 +2542,29 @@
     ],
     "firstSeen": "2026-07-14T06:20:12-07:00",
     "lastReviewed": "2026-07-14T06:20:12-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful for Aluma lead-gen and project-research workflows if contractor/source notes, proposal drafts, and follow-up context need shared review before CRM, sheet, or outreach changes.",
+    "next": "Pilot with non-sensitive SOPs and dashboard notes first. Verify workspace permissions, model/subscription routing, export/delete behavior, tool access, pricing, and approval rules before storing customer, billing, order, or prospect-private data.",
+    "name": "Type.com",
+    "category": "AI team workspace / shared company brain",
+    "summary": "Shared workspace for Claude, Codex, files, tools, skills, team threads, custom apps, and automations. Product Hunt and the verified homepage position it as a place for a team’s AI work to compound instead of staying trapped in private chat tabs.",
+    "drprepper": "Strong fit for DR Prepper, PrepShip, DJR, and dashboard operations if SOPs, task evidence, operator handoffs, and AI-assisted work need to stay visible to the team rather than scattered across individual chats.",
+    "toolUrl": "https://type.com/",
+    "postUrl": "https://www.producthunt.com/products/type-com",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://type.com/"
+      },
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260909_040059"
+      }
+    ],
+    "firstSeen": "2026-09-09T04:01:00-07:00",
+    "lastReviewed": "2026-09-09T06:05:26-07:00"
   },
   {
     "priority": "Medium",
