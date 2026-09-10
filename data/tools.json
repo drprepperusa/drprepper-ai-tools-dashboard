@@ -527,6 +527,25 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful for Aluma lead-gen/scraper agents because public contractor pages and directories can contain hostile or misleading instructions; block write/send/credential actions after tainted reads.",
+    "next": "Test in a disposable repo and one read-only web-research workflow first. Verify supported clients, policy defaults, false positives, logs, MCP/proxy behavior, and that it cannot be bypassed before production-adjacent use.",
+    "name": "Stroq",
+    "category": "AI agent firewall / prompt-injection safety",
+    "summary": "Open-source local action firewall for AI coding agents. The verified GitHub repo says Stroq scans content an agent reads, taints risky sessions, and blocks dangerous follow-up actions before untrusted web/file/tool output can steer shell, repo, credential, or network behavior.",
+    "drprepper": "Strong guardrail candidate for Hermes/Codex/Claude work around PrepShip, Client Portal, DJR, Warehouse, and dashboard repos, where agents often read untrusted pages, logs, files, and tool output before running commands.",
+    "toolUrl": "https://github.com/AGGIB/Stroq",
+    "postUrl": "https://news.ycombinator.com/item?id=49640660",
+    "extraLinks": [
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260910_040011"
+      }
+    ],
+    "firstSeen": "2026-09-10T06:11:33-07:00",
+    "lastReviewed": "2026-09-10T06:11:33-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Relevant for Aluma contractor/prospect CRM automation if it can enforce per-field permissions, cite evidence for each change, and keep human approval for outreach, status changes, or deal ownership.",
     "next": "Verification needed before connecting any real CRM: use a sandbox Salesforce/HubSpot account, test blocked fields, approval logs, schema validation, rollback/export, and whether human approval can be mandatory for customer-impacting updates.",
     "name": "Archron",
@@ -705,6 +724,25 @@
     ],
     "firstSeen": "2026-08-30T06:04:05-07:00",
     "lastReviewed": "2026-08-30T06:04:05-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful for Aluma scraper and lead-gen jobs if recurring agents start reading public sources or updating trackers; trace cost, source reads, and failures before trusting unattended runs.",
+    "next": "Pilot on one non-production Hermes/agent workflow first. Verify self-hosting vs cloud, OpenTelemetry ingestion, PII redaction, retention, pricing, and whether traces can be tied to approvals before sending customer/order/prospect data.",
+    "name": "OpenObserve AI Observability",
+    "category": "AI agent observability / logs and traces",
+    "summary": "AI-native launch from OpenObserve for tracing LLM and agent sessions across models, tool calls, services, datastores, cost, latency, loops, evals, and failures. The verified OpenObserve site positions the broader platform as open-source unified observability with lower storage cost than Elastic/Datadog-style stacks.",
+    "drprepper": "Strong fit for Hermes, PrepShip, Client Portal, DJR, and dashboard automations because agent errors need traceable tool/model/cost evidence before workflows touch orders, billing, labels, inventory, support, or lead-gen outputs.",
+    "toolUrl": "https://openobserve.ai/",
+    "postUrl": "https://www.producthunt.com/products/openobserve",
+    "extraLinks": [
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260910_040011"
+      }
+    ],
+    "firstSeen": "2026-09-10T06:11:33-07:00",
+    "lastReviewed": "2026-09-10T06:11:33-07:00"
   },
   {
     "priority": "Watch",
@@ -1143,6 +1181,48 @@
     ],
     "firstSeen": "2026-09-07T06:08:01-07:00",
     "lastReviewed": "2026-09-07T06:08:01-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Potential fit for Aluma development/research workflows if local visibility improves review discipline; avoid using it as a shortcut around PRs, source-of-truth checks, or human approval for outreach/data writes.",
+    "next": "Test only with non-sensitive local repos first. Verify app permissions, local server auth, OpenAI voice/dictation data flow, logs, pricing/license terms, and branch/PR discipline before business-repo use.",
+    "name": "Starkomand",
+    "category": "AI coding agents / Mac mission-control workspace",
+    "summary": "Mac workspace for running Claude Code, Codex, Cursor, Grok, GLM, and other CLI agents side by side on one canvas with diagrams, GitHub issues, previews, local loopback controls, optional voice, and launch pricing for a Pro license.",
+    "drprepper": "Useful watch item for supervising local coding-agent work on PrepShip, Client Portal, DJR, Warehouse, and dashboard tasks when the bottleneck is keeping agents, previews, issues, and evidence visible on DJ's Mac.",
+    "toolUrl": "https://starkomand.com/",
+    "postUrl": "https://news.ycombinator.com/item?id=49640659",
+    "extraLinks": [
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260910_040011"
+      }
+    ],
+    "firstSeen": "2026-09-10T06:11:33-07:00",
+    "lastReviewed": "2026-09-10T06:11:33-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Potential fit for Aluma scraper/dashboard development if multiple agent worktrees or machines need visible coordination, but normal PR review and acceptance gates must remain authoritative.",
+    "next": "Try only on a low-risk repo first. Verify GitHub/repo permissions, local machine exposure, logs, worktree isolation, self-hosting setup, and that changes still land as reviewable branches with CI evidence.",
+    "name": "49Agents IDE",
+    "category": "AI coding agents / canvas supervision",
+    "summary": "Open-source/self-hostable 2D canvas IDE for managing many AI coding agents, terminals, repositories, issues, files, and machines from one map. The verified site and Product Hunt page emphasize reducing agent tab fatigue, local/self-hosted setup, and free individual use with paid business options.",
+    "drprepper": "Useful pattern for supervising parallel PrepShip, Client Portal, DJR, Warehouse, and dashboard coding/review work without losing which agent, repo, terminal, or issue owns each thread.",
+    "toolUrl": "https://49agents.com/",
+    "postUrl": "https://www.producthunt.com/products/49agents-ide",
+    "extraLinks": [
+      {
+        "label": "GitHub repo",
+        "url": "https://github.com/alpbahadur/49-IDE"
+      },
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260910_040011"
+      }
+    ],
+    "firstSeen": "2026-09-10T06:11:33-07:00",
+    "lastReviewed": "2026-09-10T06:11:33-07:00"
   },
   {
     "priority": "Watch",
