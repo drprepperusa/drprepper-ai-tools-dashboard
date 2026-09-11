@@ -2817,6 +2817,25 @@
     "lastReviewed": "2026-08-17T06:05:48-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Useful for Aluma lead-gen and construction-project research if scraper/source decisions, qualification rules, and follow-up notes need searchable continuity across agents while keeping sensitive prospect data controlled.",
+    "next": "Pilot self-hosted with non-sensitive agent logs first. Verify redaction, retention, source-available license limits, export/delete behavior, and whether leaked-key checks can run locally before indexing customer, billing, or credential-adjacent history.",
+    "name": "chat-recall",
+    "category": "AI work memory / cross-assistant search",
+    "summary": "Searchable history layer for Claude Code, Codex, Cursor, OpenCode, and other assistant logs. Product Hunt describes one command that reads local assistant records, redacts passwords before hosted sync, lets assistants search prior decisions, and can surface leaked keys in old chats.",
+    "drprepper": "Strong fit for PrepShip, Client Portal, DJR, Warehouse, and dashboard review work because the team regularly needs exact prior decisions, blockers, evidence packets, and task context without re-litigating old chats.",
+    "toolUrl": "https://chatrecall.dev/",
+    "postUrl": "https://www.producthunt.com/products/chat-recall",
+    "extraLinks": [
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260911_040055"
+      }
+    ],
+    "firstSeen": "2026-09-11T04:00:55-07:00",
+    "lastReviewed": "2026-09-11T06:06:51-07:00"
+  },
+  {
     "priority": "Watch",
     "aluma": "Could become useful for project-research, bid follow-up, lead tracking, and contractor/customer lookup across work apps if it supports scoped read-only search and auditable human-approved actions.",
     "next": "Verification needed: open the product outside the blocked Product Hunt feed path, identify the real homepage/app, confirm supported integrations, pricing, SOC/privacy posture, data-retention terms, and whether actions can be run in read-only/draft mode before any pilot.",
@@ -3797,6 +3816,29 @@
     "postUrl": "https://www.threads.com/@artificial.corner/post/DZYYfTLlPMm"
   },
   {
+    "priority": "Watch",
+    "aluma": "Potential fit for Aluma proposal/contract drafting and time tracking if every draft is reviewed before sending and financial/customer records stay in the canonical system.",
+    "next": "Use only for non-customer test drafts first. Verify OAuth scopes, MCP tool permissions, invoice/contract approval flow, data retention, payment-provider behavior, and no-send/no-charge guardrails before connecting real clients or finance workflows.",
+    "name": "Accordio AI",
+    "category": "Claude/MCP back-office admin tools",
+    "summary": "Back-office toolset for Claude-style agents covering time tracking, invoices, contracts, proposals, clients, and payments, with a free MCP connector for Claude, Claude Code, ChatGPT, Codex, and other agent clients. Verified homepage says it uses scoped OAuth and can be revoked.",
+    "drprepper": "Worth watching for internal admin workflows around proposals, contractor hours, simple invoices, or agent-generated drafts, but not a replacement for PrepShip/DJR billing source-of-truth systems.",
+    "toolUrl": "https://accordio.ai/mcp",
+    "postUrl": "https://www.producthunt.com/products/accordio",
+    "extraLinks": [
+      {
+        "label": "Open-source tracker",
+        "url": "https://github.com/accordio-ai/accordio-tracker"
+      },
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260911_040055"
+      }
+    ],
+    "firstSeen": "2026-09-11T04:00:55-07:00",
+    "lastReviewed": "2026-09-11T06:06:51-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful for Aluma prospecting/proposal microsites and project-intel dashboards where a credible editorial, industrial, or premium B2B style matters.",
     "next": "Install/test in a sandbox with `npx skills add anthropics/skills --skill frontend-design`; use it with a DR Prepper DESIGN.md and verify output for accessibility, performance, responsive behavior, and real copy/stats before production.",
@@ -4562,6 +4604,25 @@
     "lastReviewed": "2026-07-26T15:37:26-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Potential fit for Aluma intake or lead-research agents if source reads, CRM/sheet writes, and outreach steps can be separated into audited approval gates.",
+    "next": "Do not use on production-adjacent workflows yet. First verify security model, data retention, approval logs, MCP/OpenAPI tool scoping, pricing, exportability, and whether it can run only approved OpenAI models before exposing customer, order, billing, or prospect data.",
+    "name": "Cadenya",
+    "category": "Hosted AI agent runtime / approvals and tools",
+    "summary": "Hosted agent runtime for connecting tools via OpenAPI/MCP-style specs and running the agent loop with context compaction, tool approvals, webhooks, SSE streaming, embeddable widgets, SDKs, and OpenAI-compatible inference endpoints. Product Hunt lists payment required and a free-month launch offer.",
+    "drprepper": "Useful watch item for future PrepShip/client-portal support or operations agents where approval checkpoints, tool boundaries, webhooks, and embedded workflow widgets matter more than raw chatbot answers.",
+    "toolUrl": "https://www.cadenya.com/",
+    "postUrl": "https://www.producthunt.com/products/cadenya-the-agent-runtime",
+    "extraLinks": [
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260911_040055"
+      }
+    ],
+    "firstSeen": "2026-09-11T04:00:55-07:00",
+    "lastReviewed": "2026-09-11T06:06:51-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful pattern for Aluma lead/outreach or proposal automations that need human approval and a signed record before sending messages, changing Sheets/CRM records, or committing spend.",
     "next": "Sandbox with a fake refund/order-change workflow only; verify the exact approval payload, logs, Twilio/WhatsApp costs, failure modes, and audit-readback before connecting any real business system.",
@@ -5053,6 +5114,29 @@
     ],
     "firstSeen": "2026-07-03T06:03:56-07:00",
     "lastReviewed": "2026-07-03T06:03:56-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Could speed Aluma research/admin routines such as opening tracker sheets, running approved lead-source checks, and collecting source notes, as long as outreach/write actions remain approval-gated.",
+    "next": "Try with read-only/internal shortcuts first. Verify extension permissions, AI account routing, logs, clipboard/screen data exposure, team pricing, and no-send/no-write approval gates before tying it to orders, billing, customer messages, or CRM/prospect changes.",
+    "name": "Raycast 2.0 AI",
+    "category": "Mac launcher / AI operator shortcuts",
+    "summary": "Raycast's Product Hunt launch and verified pricing/home pages describe a Mac productivity launcher with AI actions, automations, projects, extensions, ChatGPT/Claude account connections, AI commands, screen awareness, memory, and model management. Free plan exists; Pro starts at about $10/month.",
+    "drprepper": "Useful on DJ's Mac for controlled operator shortcuts: pulling daily tasks, opening PrepShip/DJR dashboards, summarizing safe context, or running approved local automations without hunting through browser tabs.",
+    "toolUrl": "https://www.raycast.com/",
+    "postUrl": "https://www.producthunt.com/products/raycast",
+    "extraLinks": [
+      {
+        "label": "Pricing",
+        "url": "https://www.raycast.com/pricing"
+      },
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260911_040055"
+      }
+    ],
+    "firstSeen": "2026-09-11T04:00:55-07:00",
+    "lastReviewed": "2026-09-11T06:06:51-07:00"
   },
   {
     "priority": "High",
