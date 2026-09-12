@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 11, 2026 · 6:06 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 12, 2026 · 6:07 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">318</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">305</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">149</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">322</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">309</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">152</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -1465,6 +1465,52 @@
       },
       {
             "priority": "High",
+            "aluma": "Useful for Aluma project/lead research if public sources, proposal notes, and contractor history need searchable retrieval with source links before a human updates CRM, sheets, or outreach drafts.",
+            "next": "Prototype locally on sanitized SOPs or public docs only. Verify connector scope, storage, citations, self-hosting/security, model routing, and approval gates before indexing customer, billing, order, or prospect-private records.",
+            "name": "RagLeap Core",
+            "category": "AI knowledge/RAG infrastructure",
+            "summary": "MIT open-source RAG and AI-agent framework. The verified GitHub repo describes Graph RAG with Neo4j, pluggable vector stores, document ingestion, BYOK generation across multiple model providers, raw connectors for databases/business apps, and role-based AI employees/workflows.",
+            "drprepper": "Strong fit as a reference architecture for searchable SOPs, order/customer-document lookup, support notes, and internal knowledge assistants around PrepShip, DJR, and fulfillment operations, provided canonical systems still own business facts.",
+            "toolUrl": "https://github.com/antonyrag/ragleap-core",
+            "postUrl": "https://github.com/antonyrag/ragleap-core",
+            "extraLinks": [
+                  {
+                        "label": "RagLeap site",
+                        "url": "https://ragleap.com"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260912_040040"
+                  }
+            ],
+            "firstSeen": "2026-09-12T06:07:37-07:00",
+            "lastReviewed": "2026-09-12T06:07:37-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for Aluma lead-gen and contractor/project monitoring if public pages, job posts, news, permits, or competitor pages need recurring extraction into a review queue before CRM/sheet updates.",
+            "next": "Run a 25-lead read-only test against public 3PL or Aluma prospects. Verify source citations, email accuracy, pricing/credits, export format, duplicate handling, PII/compliance posture, and keep outreach/write actions human-approved.",
+            "name": "Anysite",
+            "category": "AI lead data / live web enrichment",
+            "summary": "Live web-data layer for GTM and marketing teams. The verified homepage says agents can build and enrich B2B lists by company geography, industry, size, people, current titles, emails, buying signals, competitor changes, and market data over MCP or API, with flat MCP plans from $30/month and API from $49/month.",
+            "drprepper": "Strong prospecting fit for DR Prepper 3PL, DJR, and KF Goodies because it can turn public web signals into fresher lead lists, account notes, competitor monitoring, and outreach research instead of relying only on stale purchased databases.",
+            "toolUrl": "https://anysite.io/",
+            "postUrl": "https://www.producthunt.com/products/anysite",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt redirect/source id",
+                        "url": "https://www.producthunt.com/r/p/1220456?app_id=339"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260912_040040"
+                  }
+            ],
+            "firstSeen": "2026-09-12T06:07:37-07:00",
+            "lastReviewed": "2026-09-12T06:07:37-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Strong fit for Aluma contractor, GC, developer, and supplier prospecting if source filters and enrichment can be audited before outreach.",
             "next": "Test with a small non-sensitive prospect segment first. Verify data freshness, source links, export fields, CRM ownership, pricing, opt-out/compliance support, and human-approved outreach before using it for real campaigns.",
             "name": "Tables.so",
@@ -1596,6 +1642,29 @@
             ],
             "firstSeen": "2026-07-01T06:05:21-07:00",
             "lastReviewed": "2026-07-01T06:05:21-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for Aluma contractor/project follow-up if public company signals and relationship history can identify which prospects need a call, bid follow-up, or proposal reminder before the opportunity goes cold.",
+            "next": "Test on a small public/sandbox prospect list first. Verify pricing, data sources, contact accuracy, CRM/sequencer permissions, exports, unsubscribe/compliance controls, and require human approval before any email/LinkedIn outreach is sent.",
+            "name": "Youkti",
+            "category": "AI sales intelligence / revenue actions",
+            "summary": "Revenue-action platform that keeps account/deal memory, watches company and relationship signals, prioritizes at-risk or high-intent accounts, suggests next actions, enriches contacts, and can push personalized sequences to sales tools.",
+            "drprepper": "Strong fit for DR Prepper 3PL, DJR, and KF Goodies prospecting where timing matters: new funding, hiring, stale deal follow-up, competitor triggers, and sequence drafts can turn lead lists into actual outreach priorities.",
+            "toolUrl": "https://youkti.ai/",
+            "postUrl": "https://www.producthunt.com/products/youkti",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt redirect/source id",
+                        "url": "https://www.producthunt.com/r/p/1222670?app_id=339"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260912_040040"
+                  }
+            ],
+            "firstSeen": "2026-09-12T06:07:37-07:00",
+            "lastReviewed": "2026-09-12T06:07:37-07:00"
       },
       {
             "priority": "High",
@@ -4312,6 +4381,29 @@
             "postUrl": "https://github.com/memoriqme/memoriq",
             "firstSeen": "2026-06-14T06:03:02-07:00",
             "lastReviewed": "2026-06-14T06:03:02-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Indirect fit for any future Aluma field/mobile workflow, especially jobsite intake or project-status screens, but only after there is an Android surface worth testing.",
+            "next": "Do not adopt until a real Android workflow exists. Then test with a disposable emulator and non-production account, verify Appium/device permissions, screenshot/log retention, CI fit, and no production orders/messages/payments are touched.",
+            "name": "QApilot MCP for Android",
+            "category": "AI mobile QA / MCP device testing",
+            "summary": "MCP CLI that lets Claude, Cursor, Codex, and other MCP clients automate real Android devices or emulators with plain-English test flows. The verified guide describes local Android/Appium setup, recording steps, live preview, executing tests, and reports.",
+            "drprepper": "Useful watch item if PrepShip, Client Portal, Warehouse, or DJR workflows get Android/tablet apps or staff mobile surfaces; it could reduce manual regression testing on receiving, orders, returns, scanning, or customer portal flows.",
+            "toolUrl": "https://qapilot.io/mcp/guide",
+            "postUrl": "https://www.producthunt.com/products/qapilot",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt redirect/source id",
+                        "url": "https://www.producthunt.com/r/p/1239880?app_id=339"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260912_040040"
+                  }
+            ],
+            "firstSeen": "2026-09-12T06:07:37-07:00",
+            "lastReviewed": "2026-09-12T06:07:37-07:00"
       },
       {
             "name": "Viktor Oddy — Claude Design full course",
