@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 12, 2026 · 6:07 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 13, 2026 · 6:06 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">322</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">309</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">152</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">325</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">312</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">155</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -928,6 +928,29 @@
       },
       {
             "priority": "High",
+            "aluma": "Useful for Aluma lead-gen dashboards or internal web tools if recurring UI flows need scheduled browser checks, screenshots, and run history before data or outreach workflows are trusted.",
+            "next": "Pilot on one read-only staging flow first. Verify self-hosting, MCP permissions, cookie/session handling, CI webhooks, logs, and whether generated tests remain reviewable before connecting logged-in production workflows.",
+            "name": "Sorify",
+            "category": "AI browser QA / Playwright automation",
+            "summary": "Open-source AI-first browser testing and automation platform for Playwright workflows, test suites, schedules, run history, CI/webhook triggers, Chrome Extension capture, and MCP/Claude/Codex control. The GitHub repo describes low-token MCP controls for creating, managing, running, and observing browser tests.",
+            "drprepper": "Strong fit for PrepShip, Client Portal, DJR, Warehouse, and dashboard QA where recurring browser workflows need automated proof before staff hit production bugs. Most useful as a self-hosted test runner/recorder, not as a substitute for source-of-truth code review.",
+            "toolUrl": "https://github.com/rakutentech/sorify",
+            "postUrl": "https://news.ycombinator.com/item?id=49677653",
+            "extraLinks": [
+                  {
+                        "label": "GitHub repo",
+                        "url": "https://github.com/rakutentech/sorify"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260913_040025"
+                  }
+            ],
+            "firstSeen": "2026-09-13T06:06:09-07:00",
+            "lastReviewed": "2026-09-13T06:06:09-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Useful for Aluma lead-gen and project-research workflows where public contractor pages, permit portals, or vendor sites lack clean APIs; keep runs read-only until sheet/CRM/outreach writes have explicit approval gates.",
             "next": "Prototype one read-only workflow: describe a 3PL or Aluma prospect-enrichment task, run it against public pages only, and verify logs, credential vault behavior, schedules/triggers, pricing credits, and human approval before any CRM/email/write action.",
             "name": "Airtop Agent Builder",
@@ -1298,6 +1321,29 @@
       },
       {
             "priority": "High",
+            "aluma": "Good candidate for Aluma lead/project data cleanup if scraped contractor lists, project notes, and CRM exports need repeatable transformation before review.",
+            "next": "Trial only on exported non-sensitive CSVs first. Compare output to current Sheets/Postgres truth, document transformation rules, and keep writebacks/manual imports approval-gated until lineage and pricing are clear.",
+            "name": "Prophecy AI Data Prep",
+            "category": "AI data prep / business analytics workflows",
+            "summary": "AI data-prep and analysis platform for building inspectable data workflows across files, SaaS apps, databases, Databricks, Snowflake, and BigQuery. The verified official pages describe natural-language workflow generation, visual low-code review, managed Git connection, and pricing from a free Starter tier to paid team/enterprise plans.",
+            "drprepper": "Relevant for messy sales, inventory, purchase-order, billing, and lead-gen spreadsheets where the goal is repeatable, inspectable cleanup rather than one-off spreadsheet formulas. It should not become an authority over inventory, billing, or financial truth without source-system reconciliation.",
+            "toolUrl": "https://www.prophecy.ai/",
+            "postUrl": "https://www.prophecy.ai/",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://www.prophecy.ai/pricing"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260913_040025"
+                  }
+            ],
+            "firstSeen": "2026-09-13T06:06:09-07:00",
+            "lastReviewed": "2026-09-13T06:06:09-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Useful for polished proposal, lead-gen, or explainer mockups when construction concepts need a visual before design resources are involved.",
             "next": "Keep generated images as references only; pick the best operating workflow, redact all real customer data from prompts, and translate the chosen direction into concrete UI acceptance criteria before implementation.",
             "name": "fal.ai Nano Banana Pro / Gemini Flash Image",
@@ -1350,6 +1396,33 @@
             ],
             "firstSeen": "2026-08-27T06:06:50-07:00",
             "lastReviewed": "2026-08-27T06:06:50-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Could structure contractor/prospect feedback or internal app complaints into issues, but only after data retention, source links, and approval rules are reviewed.",
+            "next": "Test with synthetic/internal feedback first. Verify retention/export/delete controls, GitHub/Linear permissions, PR creation behavior, pricing limits, and mandatory human approval before ingesting customer or operational feedback.",
+            "name": "Usero MCP",
+            "category": "AI feedback triage / MCP product ops",
+            "summary": "Remote MCP server for Usero that lets Claude Code, Cursor, Claude Desktop, OpenCode, or Codex read a feedback inbox, pull clustered user quotes, file feedback, create GitHub/Linear issues, and request AI-written pull requests from inside the development tool.",
+            "drprepper": "Strong fit for Client Portal, PrepShip, DJR, and DR Prepper support feedback if customer/staff issues need to become prioritized dev tickets with evidence quotes instead of scattered chat notes. Human review must gate any ticket wording or PR creation touching customer, billing, label, or inventory workflows.",
+            "toolUrl": "https://usero.io/docs/mcp",
+            "postUrl": "https://news.ycombinator.com/item?id=49658898",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://usero.io/pricing"
+                  },
+                  {
+                        "label": "MCP markdown docs",
+                        "url": "https://usero.io/docs/mcp.md"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260913_040025"
+                  }
+            ],
+            "firstSeen": "2026-09-13T06:06:09-07:00",
+            "lastReviewed": "2026-09-13T06:06:09-07:00"
       },
       {
             "priority": "High",
