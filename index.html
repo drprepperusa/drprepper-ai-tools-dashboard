@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 13, 2026 · 6:06 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 14, 2026 · 6:06 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">325</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">312</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">155</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">331</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">318</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">156</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -1927,6 +1927,29 @@
             ],
             "firstSeen": "2026-08-31T06:04:36-07:00",
             "lastReviewed": "2026-08-31T06:06:46-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for contractor, permit, project, and supplier research lanes if public-source crawling stays read-only and tracker/outreach writes remain human-approved.",
+            "next": "Prototype one read-only workflow: enrich 25 public 3PL prospects or Aluma contractors, log exact source URLs, and compare output against manual review before connecting CRM, email, order, or customer data.",
+            "name": "Web Search Agents by Nimble",
+            "category": "AI web research / agent search infrastructure",
+            "summary": "Domain-specific web crawling and research agents for company enrichment, regulatory research, market data, and structured retrieval. Product Hunt source and Nimble docs position it as self-learning web research for AI agents, with MCP/CLI-oriented setup and live search/extract/map/crawl workflows.",
+            "drprepper": "Strong fit for DR Prepper 3PL lead discovery, Amazon/TikTok seller monitoring, competitor research, vendor-policy checks, and dashboard sourcing where the agent needs fresher public web context than a static model can provide.",
+            "toolUrl": "https://nimbleway.com/",
+            "postUrl": "https://www.producthunt.com/products/nimbleway",
+            "extraLinks": [
+                  {
+                        "label": "Agent setup docs",
+                        "url": "https://docs.nimbleway.com/agent-onboarding.md"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260914_040011"
+                  }
+            ],
+            "firstSeen": "2026-09-14T06:06:51-07:00",
+            "lastReviewed": "2026-09-14T06:06:51-07:00"
       },
       {
             "priority": "High",
@@ -3646,6 +3669,63 @@
       },
       {
             "priority": "Lead",
+            "aluma": "No direct Aluma fit, though the compliance-checklist framing can be reused for regulated construction/rental documentation.",
+            "next": "Create a TikTok Shop prospect checklist for categories with fragile/heavy goods; pitch DR Prepper as compliant pack-out support while avoiding legal/compliance-advice claims.",
+            "name": "TikTok Shop packing-rule compliance signal",
+            "category": "3PL sales signal / marketplace packaging compliance",
+            "summary": "PPC Land reports TikTok Shop's U.S. packing rules now ban review-bait inserts and define category-specific cushion, crate, label, and weight-threshold requirements across ten packing areas.",
+            "drprepper": "Useful DR Prepper sales wedge for TikTok-first sellers: fulfillment now includes compliant packaging execution, insert discipline, labeling, and audit-ready warehouse process — not just storage and postage.",
+            "toolUrl": "https://www.ppc.land/tiktok-shop-bans-review-bait-inserts-in-10-packing-rules/",
+            "postUrl": "https://www.ppc.land/tiktok-shop-bans-review-bait-inserts-in-10-packing-rules/",
+            "extraLinks": [
+                  {
+                        "label": "3PL Sales source session",
+                        "url": "@session:default/cron_3c304a44bbfa_20260913_215144"
+                  }
+            ],
+            "firstSeen": "2026-09-14T06:06:51-07:00",
+            "lastReviewed": "2026-09-14T06:06:51-07:00"
+      },
+      {
+            "priority": "Lead",
+            "aluma": "No direct Aluma fit beyond the general pattern of policy-triggered operational urgency.",
+            "next": "Target Amazon FBM/SFP sellers with many SKUs or inconsistent ship times; lead with listing-level revenue protection, not generic cheaper fulfillment.",
+            "name": "Amazon FBM offer-level block signal",
+            "category": "3PL sales signal / merchant-fulfilled performance risk",
+            "summary": "PPC Land reports Amazon's Aug. 31 policy can block the failing merchant-fulfilled offer rather than the whole account, with individual listings judged on four metrics after a warning email.",
+            "drprepper": "Strong prospecting angle for sellers with uneven warehouse discipline: a single weak SKU or listing can now become immediate revenue risk, making reliable pick/pack SLAs and local overflow support easier to sell.",
+            "toolUrl": "https://www.ppc.land/amazon-blocks-the-failing-fbm-offer-not-the-account-from-august-31/",
+            "postUrl": "https://www.ppc.land/amazon-blocks-the-failing-fbm-offer-not-the-account-from-august-31/",
+            "extraLinks": [
+                  {
+                        "label": "3PL Sales source session",
+                        "url": "@session:default/cron_3c304a44bbfa_20260913_215144"
+                  }
+            ],
+            "firstSeen": "2026-09-14T06:06:51-07:00",
+            "lastReviewed": "2026-09-14T06:06:51-07:00"
+      },
+      {
+            "priority": "Lead",
+            "aluma": "No direct operations fit, but the same deadline/cost-pressure framing can inform time-sensitive outreach around construction/rental logistics.",
+            "next": "Build a short outreach lane for SoCal Shopify/Amazon/TikTok sellers: ask whether peak surcharges, earlier cutoffs, overflow storage, returns, and carrier mix have been modeled before October.",
+            "name": "2026 peak parcel surcharge signal",
+            "category": "3PL sales signal / peak-season shipping costs",
+            "summary": "Supply Chain Dive reports 2026 holiday delivery surcharges across USPS, FedEx, UPS, and Amazon are pricier than 2025, increasing pressure on shippers already dealing with fuel fees and peak-season cutoff complexity.",
+            "drprepper": "Direct Q4 sales signal: sellers need a plan for FBA/FBM/3PL split, surcharge exposure, cutoff dates, and SKU-level fulfillment discipline before peak fees hit margins.",
+            "toolUrl": "https://www.supplychaindive.com/news/2026-holiday-delivery-fees-comparing-usps-fedex-ups-and-amazon/829910/",
+            "postUrl": "https://www.supplychaindive.com/news/2026-holiday-delivery-fees-comparing-usps-fedex-ups-and-amazon/829910/",
+            "extraLinks": [
+                  {
+                        "label": "3PL Sales source session",
+                        "url": "@session:default/cron_3c304a44bbfa_20260913_215144"
+                  }
+            ],
+            "firstSeen": "2026-09-14T06:06:51-07:00",
+            "lastReviewed": "2026-09-14T06:06:51-07:00"
+      },
+      {
+            "priority": "Lead",
             "aluma": "No direct Aluma fit beyond the broader lesson that transition subsidies can reveal high-intent churn windows in service markets.",
             "next": "Verification needed because Business Wire timed out during this cron. Re-check the source, then build a small list of brands publicly complaining about 3PL lock-in, migration delays, or Q4 transition risk before outreach.",
             "name": "Flowspace Fulfillment Freedom Fund signal",
@@ -4284,6 +4364,29 @@
             ],
             "firstSeen": "2026-08-06T06:10:48-07:00",
             "lastReviewed": "2026-08-06T06:10:48-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could help with quick OCR, notes, snippets, and project/lead research on DJ's Mac, but it is a personal productivity layer rather than an Aluma source of truth.",
+            "next": "Try only on non-sensitive workflows first; verify app permissions, local-vs-cloud model routing, clipboard/OCR privacy, logs, and export behavior before using it around customer, billing, or credential material.",
+            "name": "Vehla",
+            "category": "AI desktop productivity / Mac command center",
+            "summary": "Native macOS command center with launcher, clipboard search/intelligence, OCR, dictation, window tools, shelf/notes, and local/BYOK AI workflows. Verified homepage lists a free tier and Pro at $29.99 one-time for two Macs.",
+            "drprepper": "Useful for DJ's daily Mac admin work: rewriting snippets, OCR from screenshots/PDFs, dictating notes, moving between tools, and speeding repetitive non-production tasks without another cloud chatbot tab.",
+            "toolUrl": "https://vehla.app/",
+            "postUrl": "https://news.ycombinator.com/item?id=49688359",
+            "extraLinks": [
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49688359"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260914_040011"
+                  }
+            ],
+            "firstSeen": "2026-09-14T06:06:51-07:00",
+            "lastReviewed": "2026-09-14T06:06:51-07:00"
       },
       {
             "priority": "Medium",
@@ -6468,6 +6571,29 @@
             ],
             "firstSeen": "2026-08-15T06:06:26-07:00",
             "lastReviewed": "2026-08-15T06:06:26-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Could become a guided quote/proposal demo for Aluma rental or project-intake pages, but only after offers, pricing boundaries, and handoff rules are clear.",
+            "next": "Watch for now. Verify Naoma homepage/pricing/security and test with a generic non-sensitive demo script before connecting CRM, calendars, checkout, customer data, or any auto-booking flow.",
+            "name": "Naoma AI Demo Agent",
+            "category": "AI sales demos / lead qualification",
+            "summary": "Product Hunt-launched video AI demo agent for B2B SaaS that delivers live personalized in-browser product demos, answers questions, qualifies prospects, and routes them to CRM, a sales calendar, or checkout.",
+            "drprepper": "Useful pattern for DR Prepper 3PL onboarding, PrepShip/client-portal walkthroughs, and wholesale buyer demos: answer basic fit questions and show workflows before a human call, without pretending it replaces sales judgment.",
+            "toolUrl": "https://naoma.ai",
+            "postUrl": "https://www.producthunt.com/products/naoma",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt feed source",
+                        "url": "https://www.producthunt.com/feed"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260914_040011"
+                  }
+            ],
+            "firstSeen": "2026-09-14T06:06:51-07:00",
+            "lastReviewed": "2026-09-14T06:06:51-07:00"
       },
       {
             "priority": "Watch",
