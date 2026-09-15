@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 14, 2026 · 6:06 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 15, 2026 · 6:04 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">331</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">318</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">156</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">334</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">321</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">158</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -1321,6 +1321,25 @@
       },
       {
             "priority": "High",
+            "aluma": "Could support guided rental/project intake or contractor quote qualification if the workflow is tightly scoped and all pricing/commitment boundaries stay human-approved.",
+            "next": "Watch as a design/reference pattern before buying. Prototype the intake flow internally first: issue type, order/SKU/client facts, photos, deadline, and escalation rule. Require human approval before customer promises, refunds, postage, billing, inventory, or schedule commitments.",
+            "name": "Multimodal Agents by Sierra",
+            "category": "AI customer support / multimodal intake agents",
+            "summary": "Sierra launch for customer-service AI agents that can shift within one conversation between voice, text, and hosted visual UI components such as product cards, comparison tables, calendars, and forms. Product Hunt source describes MCP UI integration; Sierra's homepage positions the platform around customer-experience agents, unified channels, and outcome-based pricing.",
+            "drprepper": "Strong pattern for DR Prepper 3PL intake, PrepShip/client-portal support, quote qualification, and exception triage: collect facts by voice/text, show the right form or option visually, then hand off a clean internal task instead of replacing human approval.",
+            "toolUrl": "https://sierra.ai/",
+            "postUrl": "https://www.producthunt.com/products/sierra",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260915_040006"
+                  }
+            ],
+            "firstSeen": "2026-09-15T06:04:28-07:00",
+            "lastReviewed": "2026-09-15T06:04:28-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Good candidate for Aluma lead/project data cleanup if scraped contractor lists, project notes, and CRM exports need repeatable transformation before review.",
             "next": "Trial only on exported non-sensitive CSVs first. Compare output to current Sheets/Postgres truth, document transformation rules, and keep writebacks/manual imports approval-gated until lineage and pricing are clear.",
             "name": "Prophecy AI Data Prep",
@@ -2337,6 +2356,29 @@
             ],
             "firstSeen": "2026-06-22T14:22:38-07:00",
             "lastReviewed": "2026-06-22T14:22:38-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Could help future Aluma web/internal-tool deployments if agents need controlled access to build logs, previews, domains, and deploy status while mutations remain permission-gated.",
+            "next": "Pilot on a low-risk dashboard or staging app first. Scope MCP permissions read-only where possible, test log/artifact visibility, require manual approvals for deploys/domain changes, and keep production secrets, billing, order, postage, and customer-data actions outside agent autonomy.",
+            "name": "Buddy AI Access (MCP)",
+            "category": "Agentic DevOps / MCP infrastructure access",
+            "summary": "Buddy Works launch that lets Claude Code, Cursor, Codex, Copilot, and other MCP clients operate Buddy infrastructure with scoped access to pipelines, deployment logs, sandboxes, artifacts, domains, and deployments. Official pricing page shows a free tier and Pro from €29/month.",
+            "drprepper": "Useful model for giving coding agents read/diagnostic access to PrepShip, Client Portal, DJR, dashboard, and internal automation deployments without handing over uncontrolled production credentials or asking devs to paste logs manually.",
+            "toolUrl": "https://buddy.works/",
+            "postUrl": "https://www.producthunt.com/products/buddy",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://buddy.works/pricing"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260915_040006"
+                  }
+            ],
+            "firstSeen": "2026-09-15T06:04:28-07:00",
+            "lastReviewed": "2026-09-15T06:04:28-07:00"
       },
       {
             "priority": "High",
@@ -4697,6 +4739,25 @@
             ],
             "firstSeen": "2026-08-06T06:10:48-07:00",
             "lastReviewed": "2026-08-06T06:10:48-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Can capture field/project reminders or contractor follow-ups on the go, then later turn them into the proper tracker/task system after review.",
+            "next": "Try only for non-sensitive personal capture first. Verify calendar/task integrations, export behavior, retention/privacy, and whether it can reliably produce owner/date/action triples before using around customer, billing, credential, or operational incident details.",
+            "name": "Grimo AI",
+            "category": "AI task capture / calendar and notes",
+            "summary": "iOS-first personal operations app that turns a spoken or typed sentence into tasks, calendar events, and notes without form switching. Product Hunt lists free start and a $4.99/month Premium tier; official homepage says it converts ordinary sentences into tasks, calendar events, and notes.",
+            "drprepper": "Useful for quick capture after calls, warehouse issues, supplier notes, sales ideas, and owner/action items before they disappear. It is personal capture, not a source of truth for orders, billing, inventory, or customer promises.",
+            "toolUrl": "https://grimoai.com/",
+            "postUrl": "https://www.producthunt.com/products/grimo-ai",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260915_040006"
+                  }
+            ],
+            "firstSeen": "2026-09-15T06:04:28-07:00",
+            "lastReviewed": "2026-09-15T06:04:28-07:00"
       },
       {
             "priority": "Medium",
