@@ -1724,6 +1724,25 @@
     "lastReviewed": "2026-09-03T06:06:55-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Can check whether Aluma rental/project pages and lead-gen landing pages are legible to AI assistants before spending on content or outreach.",
+    "next": "Run the main DR PREPPER, PrepShip, DJR, and Aluma pages through it. Fix blocked content, missing service facts, weak structured copy, or crawler-invisible pricing/CTA context; do not submit private portals or customer/order pages.",
+    "name": "AgentReady",
+    "category": "AI crawler visibility / website QA",
+    "summary": "Free site-check tool that requests a page as Chrome and as AI crawlers, then shows what ChatGPT, Claude, Perplexity, and Gemini can actually read. Useful for testing whether AI assistants can understand a business website, not just whether Google can index it.",
+    "drprepper": "Direct fit for DR PREPPER 3PL, PrepShip, DJR, and client-portal public pages because prospects may ask AI assistants for vendors instead of searching manually. Pages that AI crawlers cannot read may disappear from AI-driven buying research.",
+    "toolUrl": "https://shop.lumnika.com/lab/agentready/?src=hackernews-showhn",
+    "postUrl": "https://shop.lumnika.com/lab/agentready/?src=hackernews-showhn",
+    "extraLinks": [
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260916_040044"
+      }
+    ],
+    "firstSeen": "2026-09-16T06:05:53-07:00",
+    "lastReviewed": "2026-09-16T06:05:53-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could support rental/project inquiry triage or FAQ intake if Aluma has repeat customer questions, but only after data boundaries and escalation rules are defined.",
     "next": "Evaluate only in a sandbox with canned FAQs and non-customer data. Require no-send/human-approval defaults for billing, refunds, shipment promises, rate quotes, inventory claims, and customer communications.",
@@ -2340,6 +2359,29 @@
   },
   {
     "priority": "Medium",
+    "aluma": "Could turn contractor, GC, and project calls into follow-up tasks and deadline lists, especially when details are easy to lose after site calls.",
+    "next": "Run a low-risk trial on internal calls. Verify recording consent, retention/deletion, export format, encryption limits, and whether tasks can be moved into the real tracker without exposing customer or credential data.",
+    "name": "Jottoo",
+    "category": "AI meeting notes / task capture",
+    "summary": "AI meeting-notes tool that turns conversations into summaries, action items, and tracked tasks. Product Hunt describes it as AI meeting notes that become tracked tasks; the official site mentions audio or text capture, task automation, no ads, no selling customer data, and optional encryption.",
+    "drprepper": "Useful for converting supplier, warehouse, sales, and ops calls into owner/date/action items without relying on memory. It is task capture only; operational systems remain the source of truth for orders, billing, inventory, and customer commitments.",
+    "toolUrl": "https://jottoo.com",
+    "postUrl": "https://www.producthunt.com/products/jottoo",
+    "extraLinks": [
+      {
+        "label": "Product Hunt launch redirect",
+        "url": "https://www.producthunt.com/r/p/1250047?app_id=339"
+      },
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260916_040044"
+      }
+    ],
+    "firstSeen": "2026-09-16T06:05:53-07:00",
+    "lastReviewed": "2026-09-16T06:05:53-07:00"
+  },
+  {
+    "priority": "Medium",
     "aluma": "Could preserve project-intel research and outreach workflows if self-hosting/privacy checks pass.",
     "next": "Verify privacy model and self-hosting path before storing anything sensitive; start with non-sensitive prompt/workflow archives.",
     "name": "Memoriq",
@@ -2707,6 +2749,29 @@
     "postUrl": "https://news.ycombinator.com/item?id=49462478",
     "firstSeen": "2026-08-27T06:06:50-07:00",
     "lastReviewed": "2026-08-27T06:06:50-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could help rental/project sales calls capture contractor needs, deadlines, and decision criteria, then turn them into reviewed follow-up tasks.",
+    "next": "Verify privacy, call-recording consent, CRM/export behavior, and pricing before use. Test on internal/mock calls first; require human review before any outbound message, quote, contract term, or customer promise.",
+    "name": "Convo",
+    "category": "AI sales-call copilot",
+    "summary": "AI copilot for sales conversations. Product Hunt describes it as a tool for people who sell; the discussed use case is catching objections, buying signals, risks, next steps, and follow-ups during calls rather than only summarizing afterward.",
+    "drprepper": "Potential fit for DR PREPPER 3PL discovery calls so qualification, objections, promised follow-ups, and next actions are not missed. It should support humans on calls, not make pricing, service, contract, or fulfillment commitments automatically.",
+    "toolUrl": "https://www.itsconvo.com/",
+    "postUrl": "https://www.producthunt.com/products/convo-7",
+    "extraLinks": [
+      {
+        "label": "Product Hunt launch redirect",
+        "url": "https://www.producthunt.com/r/p/1250753?app_id=339"
+      },
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260916_040044"
+      }
+    ],
+    "firstSeen": "2026-09-16T06:05:53-07:00",
+    "lastReviewed": "2026-09-16T06:05:53-07:00"
   },
   {
     "priority": "High",
@@ -5049,6 +5114,29 @@
     "lastReviewed": "2026-06-29T06:04:16-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could help future Aluma lead-gen or project-intake agents keep scoped conversation history without scattering project context across model providers.",
+    "next": "Watch rather than integrate immediately. If piloted, use a non-production workflow first and verify retention controls, export/deletion behavior, provider routing, cost logs, and no autonomous writes to orders, billing, inventory, customer messages, or credentials.",
+    "name": "Twigg",
+    "category": "LLM context API / model routing",
+    "summary": "Stateful LLM API that keeps conversation context, tool schemas, prompts, usage, and billing outside the model provider. Product Hunt describes it as the context layer you do not have to build; the official site positions it as a hosted context store, assembler, and model router with no provider lock-in.",
+    "drprepper": "Relevant for internal agents that handle PrepShip, Client Portal, DJR, or dashboard workflows where repeated context assembly is expensive and brittle. It could centralize conversation state, model switching, and usage accounting, but business actions still need explicit approval gates.",
+    "toolUrl": "https://twigg.ai",
+    "postUrl": "https://www.producthunt.com/products/twigg",
+    "extraLinks": [
+      {
+        "label": "Product Hunt launch redirect",
+        "url": "https://www.producthunt.com/r/p/1250484?app_id=339"
+      },
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260916_040044"
+      }
+    ],
+    "firstSeen": "2026-09-16T06:05:53-07:00",
+    "lastReviewed": "2026-09-16T06:05:53-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful if Aluma lead-gen or project-intel jobs keep using LLM-heavy scraping/classification; receipts can separate useful research from quota-burn, retries, and failed source reads.",
     "next": "Pilot on non-secret API calls only: run one dashboard or lead-classification workflow through the proxy, compare reported tokens/cost/failures to Hermes insights, and verify no prompts/customer data are retained beyond acceptable logs.",
@@ -6590,6 +6678,33 @@
     ],
     "firstSeen": "2026-07-23T06:08:29-07:00",
     "lastReviewed": "2026-07-23T06:08:29-07:00"
+  },
+  {
+    "priority": "Lead",
+    "aluma": "Selective fit for shoring/formwork equipment rental or support on government-linked contractor projects, subject to technical specs, insurance, sourcing rules, and realistic delivery costs.",
+    "next": "Explore as a controlled pilot, not a debt-funded flip. Pick one business/category, review real solicitations and prior awards, get written supplier pricing, include freight/labor/taxes/financing, and never bid until cash-flow, acceptance, and delivery obligations are clear.",
+    "name": "SAM.gov + FAR micro-purchase channel",
+    "category": "government procurement / lead-source signal",
+    "summary": "Government-supply resale workflow surfaced from a user-shared X post and checked against official SAM.gov registration and FAR micro-purchase guidance. The business model is real, but the viral chair-profit story was unverified and oversimplified; SAM registration is free, activation takes time, and pricing/payment rules still create cash-flow and execution risk.",
+    "drprepper": "Potential lead/source channel for DR PREPPER storage, kitting, packing, local delivery, and distribution services where the business is selling capabilities it already operates rather than financing random retail resale.",
+    "toolUrl": "https://sam.gov/content/entity-registration",
+    "postUrl": "https://x.com/hxxntrr/status/2099845816408232427",
+    "extraLinks": [
+      {
+        "label": "FAR 13.203 micro-purchase guidance",
+        "url": "https://www.acquisition.gov/far/13.203"
+      },
+      {
+        "label": "Prompt Payment guidance",
+        "url": "https://www.fiscal.treasury.gov/prompt-payment/"
+      },
+      {
+        "label": "Source analysis session",
+        "url": "@session:default/20260621_091546_4059b2"
+      }
+    ],
+    "firstSeen": "2026-09-16T06:05:53-07:00",
+    "lastReviewed": "2026-09-16T06:05:53-07:00"
   },
   {
     "priority": "Medium",
