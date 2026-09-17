@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 16, 2026 · 6:05 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 17, 2026 · 6:04 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">339</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">326</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">159</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">342</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">329</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">161</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -528,6 +528,25 @@
             ],
             "firstSeen": "2026-08-23T04:00:27-07:00",
             "lastReviewed": "2026-08-23T06:05:04-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Could regression-test future Aluma intake or lead-response agents so project facts, rental constraints, and follow-up commitments stay grounded in approved rules.",
+            "next": "Pilot with a non-production support agent and a small suite of refund, billing, order-status, quote, and prompt-injection cases. Keep evaluations read-only first; require human approval before any agent can write to orders, billing, inventory, customer messages, or credentials.",
+            "name": "QAgent",
+            "category": "AI agent QA / evaluation",
+            "summary": "Automated QA platform for AI agents. It connects to an agent by webhook, runs evaluation cases, scores correctness, hallucination rate, instruction following, policy adherence, and RAG citations, and produces quality scorecards before bad responses reach customers.",
+            "drprepper": "Strong fit for testing DR PREPPER, PrepShip, Client Portal, and DJR support/ops agents before they touch refunds, storage billing, order status, customer replies, inventory, or supplier-policy questions.",
+            "toolUrl": "https://qagent.in/",
+            "postUrl": "https://www.producthunt.com/products/qagent-2",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260917_040023"
+                  }
+            ],
+            "firstSeen": "2026-09-17T06:04:46-07:00",
+            "lastReviewed": "2026-09-17T06:04:46-07:00"
       },
       {
             "priority": "High",
@@ -2676,6 +2695,25 @@
             ],
             "firstSeen": "2026-07-14T06:20:12-07:00",
             "lastReviewed": "2026-07-14T06:20:12-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Can watch local rental/formwork/shoring competitors, new pages, ads, and AI recommendation visibility so Aluma outreach and landing pages respond to what rivals are actually pushing.",
+            "next": "Consider a short trial for three closest 3PL competitors. Define buyer questions first, review weekly briefings manually, and use findings for copy/outreach priorities rather than automated pricing, ad spend, or public claims.",
+            "name": "Figo",
+            "category": "Competitor monitoring / AI visibility",
+            "summary": "Competitor-monitoring software for marketing teams. It tracks rankings, new pages, blog posts, Google/Meta/TikTok ads, social posts, reviews, traffic signals, and how ChatGPT, Claude, Gemini, and Perplexity answer buyer recommendation questions.",
+            "drprepper": "Direct fit for DR PREPPER 3PL competitor tracking: monitor rival landing pages, ads, keywords, Reddit/social mentions, and whether AI assistants recommend DR PREPPER or competitors for 3PL/fulfillment searches.",
+            "toolUrl": "https://tryfigo.com/",
+            "postUrl": "https://www.producthunt.com/products/figo-3",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260917_040023"
+                  }
+            ],
+            "firstSeen": "2026-09-17T06:04:46-07:00",
+            "lastReviewed": "2026-09-17T06:04:46-07:00"
       },
       {
             "priority": "High",
@@ -6128,6 +6166,25 @@
             ],
             "firstSeen": "2026-07-31T06:12:26-07:00",
             "lastReviewed": "2026-07-31T06:12:26-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could test future rental/project phone intake agents against noisy jobsite calls, confused contractors, language switches, and deadline-pressure scenarios before any live customer deployment.",
+            "next": "Watch until there is an actual voice-agent project. If piloted, use synthetic/non-customer scenarios first, sandbox writes, replay reads, and require human approval for quotes, refunds, schedule commitments, billing, inventory, or customer follow-up.",
+            "name": "NovaSynth by Noveum",
+            "category": "Voice-agent testing / synthetic callers",
+            "summary": "Synthetic-user testing platform for voice/chat agents. It sends realistic callers over SIP, LiveKit audio, and chat with personas, accents, interruptions, background noise, adversarial behavior, and prompt-injection attempts, then scores traces across voice-agent metrics.",
+            "drprepper": "Useful reference if DR PREPPER ever tests AI phone intake, customer-service voice agents, or call-center triage. It is for breaking agents safely in rehearsal, not for production customer calls.",
+            "toolUrl": "https://noveum.ai/en/novasynth",
+            "postUrl": "https://www.producthunt.com/products/novasynth-by-noveum",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260917_040023"
+                  }
+            ],
+            "firstSeen": "2026-09-17T06:04:46-07:00",
+            "lastReviewed": "2026-09-17T06:04:46-07:00"
       },
       {
             "priority": "Medium",
