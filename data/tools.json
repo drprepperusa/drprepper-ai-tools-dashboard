@@ -315,6 +315,29 @@
     "lastReviewed": "2026-07-22T06:04:37-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Possible fit for contractor/developer outreach if public lead lists are already qualified and every generated sequence is reviewed by a person before sending.",
+    "next": "Verification needed: re-check the vendor homepage/pricing/security when accessible, then test with fake/internal prospects before connecting email, CRM, or live lead data.",
+    "name": "Ami AI",
+    "category": "AI GTM / outbound sales automation",
+    "summary": "Product Hunt-launched AI GTM agent positioned as \"Lovable for getting customers.\" The Daily AI Intel run described it as reading a site, choosing target buyers, building campaigns, and adjusting stalled outreach, with self-serve pricing shown from $250/month; the vendor page redirected from Product Hunt but returned 403 during this dashboard run.",
+    "drprepper": "Potential fit for DR Prepper 3PL and KF Goodies prospecting once the offer, audience, unsubscribe/compliance rules, and human review gates are defined. Useful as a sales-ops pattern, not something to connect to real mailboxes without approval.",
+    "toolUrl": "https://aisdr.com/ai-gtm-agent-ami/?ref=producthunt",
+    "postUrl": "https://www.producthunt.com/products/ami-ai",
+    "extraLinks": [
+      {
+        "label": "Product Hunt redirect/source",
+        "url": "https://www.producthunt.com/r/p/1252325?app_id=339"
+      },
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260918_040032"
+      }
+    ],
+    "firstSeen": "2026-09-18T06:05:30-07:00",
+    "lastReviewed": "2026-09-18T06:05:30-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Potential fit for contractor outreach creative, competitive-intel briefs, and lead-gen content, as long as every outbound message remains human-reviewed.",
     "next": "Test on public competitor ads and non-sensitive product/service pages first; do not connect ad accounts, storefronts, WhatsApp, or customer lists until permissions, approval gates, and output quality are reviewed.",
@@ -707,6 +730,29 @@
     ],
     "firstSeen": "2026-08-12T06:06:25-07:00",
     "lastReviewed": "2026-08-12T06:06:25-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful for Aluma scraper/dashboard work if project rules and lead-source constraints need to persist across Claude/Codex/Cursor sessions without re-pasting the same context.",
+    "next": "Try on one low-risk repo or documentation-only project first. Keep exact-SHA tests, PR review, and live business systems authoritative; do not let memory notes replace current source-of-truth evidence.",
+    "name": "ContextsBase",
+    "category": "AI agent memory / coding-agent project context",
+    "summary": "Memory/context layer for coding agents. The verified site says teams write specs, rules, data models, and tests once, then Claude Code, Cursor, Copilot, or other MCP agents read that context every session. Pricing copy says free for one project, with Premium coming soon at $5/month.",
+    "drprepper": "Relevant to PrepShip, Client Portal, DJR, Warehouse, and dashboard coding workflows where agents repeatedly need the same source-of-truth rules, tests, and data-model constraints before making PRs.",
+    "toolUrl": "https://www.contextsbase.com/",
+    "postUrl": "https://www.producthunt.com/r/p/1253873?app_id=339",
+    "extraLinks": [
+      {
+        "label": "Official site",
+        "url": "https://www.contextsbase.com/"
+      },
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260918_040032"
+      }
+    ],
+    "firstSeen": "2026-09-18T06:05:30-07:00",
+    "lastReviewed": "2026-09-18T06:05:30-07:00"
   },
   {
     "priority": "Medium",
@@ -1760,6 +1806,29 @@
     ],
     "firstSeen": "2026-09-16T06:05:53-07:00",
     "lastReviewed": "2026-09-16T06:05:53-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful for Aluma project/client feedback if it can capture requests, support threads, and roadmap decisions without becoming a competing source of truth for CRM or project status.",
+    "next": "Pilot only with non-sensitive/internal feedback first. Verify data export, permissions, MCP tool scope, notification noise, and whether support/roadmap records can be mirrored back to the existing operational source of truth.",
+    "name": "ProductBridge",
+    "category": "AI customer support / feedback and roadmap ops",
+    "summary": "AI-native customer support and feedback platform that combines live chat, help center, surveys, feedback boards, roadmap, changelog, customer records, duplicate merging, impact scoring, and MCP tools. Verified pricing copy says there is a free plan, Starter from $29/month, and Growth from $59/month billed annually.",
+    "drprepper": "Strong fit as a model for PrepShip/client portal support intake: customer questions, bug reports, feature requests, changelog updates, and roadmap evidence should stay tied to one customer record instead of scattered chats and Trello notes.",
+    "toolUrl": "https://productbridge.io?ref=producthunt",
+    "postUrl": "https://www.producthunt.com/products/productbridge",
+    "extraLinks": [
+      {
+        "label": "Product Hunt redirect/source",
+        "url": "https://www.producthunt.com/r/p/1253553?app_id=339"
+      },
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260918_040032"
+      }
+    ],
+    "firstSeen": "2026-09-18T06:05:30-07:00",
+    "lastReviewed": "2026-09-18T06:05:30-07:00"
   },
   {
     "priority": "Medium",
