@@ -626,6 +626,29 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful for Aluma lead-gen and project-research automations if recurring agents start running many web/search/tool calls; it can help attribute spend and catch billing/reporting drift before scaling scheduled work.",
+    "next": "Pilot on one non-production Hermes/agent workflow first. Capture local usage traces, compare reported token/tool costs against provider/session evidence, and keep raw logs local/redacted before any vendor or customer data is included.",
+    "name": "AgentMeasure",
+    "category": "AI agent cost measurement / billing audit",
+    "summary": "Open measurement infrastructure for AI-agent usage and billing. The verified GitHub repo says its audit of 124 usage tools found 45+ verified billing/token-counting bugs, with conformance fixtures, local dashboard support, OpenTelemetry/Prometheus exports, trend reporting, and settlement-bundle concepts for outcome-based AI billing.",
+    "drprepper": "Strong fit for Hermes, PrepShip, Client Portal, DR Prepper, and DJR automation because hidden token, tool-call, and outcome-billing errors can quietly turn agent workflows into margin leaks. Useful as a measurement/audit layer before trusting AI cost reports or outcome-based vendor bills.",
+    "toolUrl": "https://github.com/roy-tong/AgentMeasure",
+    "postUrl": "https://github.com/roy-tong/AgentMeasure",
+    "extraLinks": [
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260919_040004"
+      },
+      {
+        "label": "Project docs",
+        "url": "https://roy-tong.github.io/AgentMeasure/"
+      }
+    ],
+    "firstSeen": "2026-09-19T06:04:16-07:00",
+    "lastReviewed": "2026-09-19T06:04:16-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Useful for Aluma lead-gen/scraper agents because public contractor pages and directories can contain hostile or misleading instructions; block write/send/credential actions after tainted reads.",
     "next": "Test in a disposable repo and one read-only web-research workflow first. Verify supported clients, policy defaults, false positives, logs, MCP/proxy behavior, and that it cannot be bypassed before production-adjacent use.",
     "name": "Stroq",
@@ -1115,6 +1138,29 @@
     ],
     "firstSeen": "2026-07-31T06:12:26-07:00",
     "lastReviewed": "2026-07-31T06:12:26-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could speed Aluma landing-page, lead-intake, or project-dashboard prototypes when the goal is visual/flow exploration rather than production business logic.",
+    "next": "Use only for disposable prototypes or UI exploration. Export code into a normal repo, then require source-of-truth placement, tests, security review, and PR workflow before anything reaches production-connected systems.",
+    "name": "Bolt Forge",
+    "category": "AI app builder / prototype generation",
+    "summary": "Bolt.new coding-agent launch that uses open-source models inside Bolt and gives Pro plans up to 50x more usage with no daily caps. Product Hunt describes it as scoring 91% of Bolt's top paid model on Bolt's internal benchmark and being available as a payment-required Bolt feature.",
+    "drprepper": "Useful for fast first-pass dashboards, landing-page mockups, internal admin prototypes, and non-production UI sketches. Not suitable as final authority for PrepShip, billing, inventory, or customer-facing workflows without architecture review, tests, and human acceptance.",
+    "toolUrl": "https://bolt.new/blog/what-is-bolt-forge",
+    "postUrl": "https://www.producthunt.com/posts/bolt-forge-2",
+    "extraLinks": [
+      {
+        "label": "Bolt official site",
+        "url": "https://bolt.new"
+      },
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260919_040004"
+      }
+    ],
+    "firstSeen": "2026-09-19T06:04:16-07:00",
+    "lastReviewed": "2026-09-19T06:04:16-07:00"
   },
   {
     "priority": "High",
@@ -2444,6 +2490,25 @@
     ],
     "firstSeen": "2026-08-10T06:12:17-07:00",
     "lastReviewed": "2026-08-10T06:12:17-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Useful for contractor, GC, supplier, and project calls where bilingual/multilingual notes, action items, and searchable decisions would reduce missed follow-ups.",
+    "next": "Test on one non-sensitive internal or vendor call first. Verify consent/recording workflow, transcript quality for English/Korean/Spanish if needed, export format, MCP permissions, retention, and whether action items can feed Trello/CRM only after human review.",
+    "name": "VoiceCap",
+    "category": "AI meeting notes / multilingual ops memory",
+    "summary": "AI meeting notetaker for in-room, uploaded, Zoom, Meet, and Teams meetings. The verified Product Hunt launch and homepage describe transcription in 100+ languages, same-language summaries/action items/decisions, searchable team records, Claude/ChatGPT access through MCP, EU company/storage, and 300 free minutes with no card.",
+    "drprepper": "Strong fit for turning supplier, customer, vendor, 3PL, and internal ops calls into decision records, owners, due dates, and searchable follow-up context without relying on memory or scattered chat notes.",
+    "toolUrl": "https://voicecap.ai",
+    "postUrl": "https://www.producthunt.com/posts/voicecap",
+    "extraLinks": [
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260919_040004"
+      }
+    ],
+    "firstSeen": "2026-09-19T06:04:16-07:00",
+    "lastReviewed": "2026-09-19T06:04:16-07:00"
   },
   {
     "priority": "Medium",
