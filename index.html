@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 19, 2026 · 6:04 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 20, 2026 · 6:04 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">348</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">335</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">165</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">351</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">338</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">167</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -1317,6 +1317,25 @@
       },
       {
             "priority": "High",
+            "aluma": "Useful for preserving Aluma lead-gen/project decisions across Claude, ChatGPT, Cursor, and human review so the next pass can inherit evidence, open questions, and approval status instead of restarting.",
+            "next": "Evaluate with non-sensitive developer-review or lead-research cases first. Verify export/retention, access control, pricing, source evidence handling, and whether Auto Review complements rather than replaces exact-source tests and human acceptance.",
+            "name": "Epismo OS",
+            "category": "AI collaboration OS / cross-tool work memory",
+            "summary": "Collaboration OS that keeps AI work inside a Case: the result, purpose, constraints, decisions, reviews, and next step. Product Hunt and the official site say teams can switch between Claude, ChatGPT, Cursor, other AIs, and people without re-briefing; Auto Review flags issues while leaving the original unchanged.",
+            "drprepper": "Strong pattern for PrepShip, Client Portal, DJR, Trello review gates, and dashboard maintenance where losing why a decision was made causes repeated audits, stale handoffs, and unsafe task restarts.",
+            "toolUrl": "https://about.epismo.ai",
+            "postUrl": "https://www.producthunt.com/products/epismo",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260920_040034"
+                  }
+            ],
+            "firstSeen": "2026-09-20T06:02:36-07:00",
+            "lastReviewed": "2026-09-20T06:04:17-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "No direct Aluma fit, but the preview-before-change pattern is useful for any future project/order ops agent that proposes mutations against business records.",
             "next": "Track as a pattern, not a source of truth. If Shoplazza storefront work appears, test only in a sandbox store first and require backend-owned approvals/audit logs before product, discount, shipping, or order changes.",
             "name": "Athena by Shoplazza",
@@ -1860,6 +1879,25 @@
             ],
             "firstSeen": "2026-07-01T06:05:21-07:00",
             "lastReviewed": "2026-07-01T06:05:21-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for Aluma contractor/project prospecting if public lead lists are pre-qualified and every outbound sequence stays reviewed, consent-aware, and human-approved before sending.",
+            "next": "Pilot with 25 public DR Prepper or Aluma prospects only after defining ICP, unsubscribe/compliance rules, inbox/domain limits, and a mandatory human approval step for every email. Do not connect real mailboxes for autonomous sending yet.",
+            "name": "ManyPI",
+            "category": "AI sales agent / lead generation and cold outreach",
+            "summary": "AI sales agent that takes an ideal-customer description, finds matching companies on the live web, verifies email addresses, validates pain points/buying triggers, and drafts or runs cold outreach. Product Hunt lists free options; the official site says there is a free plan and paid plans from about $25/month.",
+            "drprepper": "Strong fit for DR Prepper 3PL prospecting and KF Goodies/DJR sales research once guardrails are defined: it combines lead discovery, enrichment, email verification, and outreach copy instead of just generating generic emails.",
+            "toolUrl": "https://manypi.com",
+            "postUrl": "https://www.producthunt.com/products/manypi",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260920_040034"
+                  }
+            ],
+            "firstSeen": "2026-09-20T06:02:36-07:00",
+            "lastReviewed": "2026-09-20T06:04:17-07:00"
       },
       {
             "priority": "High",
@@ -4643,6 +4681,25 @@
             ],
             "firstSeen": "2026-07-08T06:07:06-07:00",
             "lastReviewed": "2026-07-08T06:07:06-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Indirect fit as a pattern for small-business storefront/ops automation, but not a construction lead-gen priority unless Aluma needs a quick merch or project-microsite experiment.",
+            "next": "Treat as a pattern to study before giving AI store agents business authority: require human approval for price, inventory, promotions, shipping promises, tax settings, and customer replies; test only with dummy products or non-sensitive SKUs first.",
+            "name": "Minicart",
+            "category": "AI ecommerce operations / store builder",
+            "summary": "AI ecommerce store builder for makers, creators, and resellers. Product Hunt and the official site describe an AI team that helps run storefront updates, marketing, logistics, shipping, tax tasks, customer replies, promotions, inventory updates, and product listings through chat.",
+            "drprepper": "Relevant to KF Goodies and small DR Prepper ecommerce clients because it shows where store operations are heading: AI can draft repetitive catalog/support/shipping work, but humans must approve anything affecting stock, price, tax, delivery, or customer promises.",
+            "toolUrl": "https://minicart.com/?promo=PH2026&utm_source=producthunt&ref=producthunt",
+            "postUrl": "https://www.producthunt.com/products/minicart",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260920_040034"
+                  }
+            ],
+            "firstSeen": "2026-09-20T06:02:36-07:00",
+            "lastReviewed": "2026-09-20T06:04:17-07:00"
       },
       {
             "priority": "Medium",
