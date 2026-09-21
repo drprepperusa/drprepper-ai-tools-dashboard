@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 20, 2026 · 6:04 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 21, 2026 · 6:04 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">351</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">338</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">167</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">354</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">341</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">170</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -860,6 +860,56 @@
             ],
             "firstSeen": "2026-09-10T06:11:33-07:00",
             "lastReviewed": "2026-09-10T06:11:33-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for Aluma lead-gen and project-tracker agents if they begin calling browser, spreadsheet, CRM, or outreach tools and need traceable failures instead of silent bad actions.",
+            "next": "Evaluate in a synthetic/non-production agent workflow first. Verify payload redaction, local vs hosted storage, schema repair boundaries, logs, and whether failed repairs stop safely before connecting order, billing, inventory, customer, CRM, or outreach systems.",
+            "name": "AgentTrace",
+            "category": "AI agent observability / runtime self-healing",
+            "summary": "Open-source observability SDK and dashboard for autonomous agent pipelines. The README describes tracing multi-step tool calls, visualizing latency, validating Pydantic schemas, and repairing malformed LLM tool arguments at runtime before workflows crash.",
+            "drprepper": "Strong pattern for PrepShip, Client Portal, DJR, and DR Prepper ops agents where bad tool arguments can become failed label, billing, order, ticket, or inventory workflows. Useful as trace visibility before trusting unattended agents with business tools.",
+            "toolUrl": "https://github.com/mohitkumar188/AgentTrace",
+            "postUrl": "https://news.ycombinator.com/item?id=49780222",
+            "extraLinks": [
+                  {
+                        "label": "Live dashboard demo",
+                        "url": "https://agent-trace-zeta.vercel.app/"
+                  },
+                  {
+                        "label": "Collector API docs",
+                        "url": "https://agenttrace-api-cdav.onrender.com/docs"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260921_040002"
+                  }
+            ],
+            "firstSeen": "2026-09-21T06:02:09-07:00",
+            "lastReviewed": "2026-09-21T06:03:56-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for Aluma contractor/project lead research and weekly sales follow-up if scraping and outreach remain source-grounded, logged, and human-approved before CRM/sheet/message changes.",
+            "next": "Pilot only one read-only employee first: Sales or Chief of Staff for 3PL/Aluma prospect research. Keep sends, CRM writes, ad changes, and customer replies behind explicit approval gates; compare its run logs against existing Hermes cron output before scaling.",
+            "name": "Open Source AI Employees",
+            "category": "AI agent playbooks / scheduled business routines",
+            "summary": "MIT open-source repo of eight AI employee kits with 60 scheduled routines for roles such as GTM, SEO/AEO, web dev, social media, ads, sales, customer satisfaction, and chief of staff. The README says the kits run on Claude Code, Hermes, Codex, OpenCode, and other agent harnesses from local folders.",
+            "drprepper": "Strong fit as a pattern for DR Prepper 3PL lead-gen, competitor checks, follow-up drafts, ops briefings, and customer-satisfaction sweeps because it packages recurring agent work as visible scheduled routines instead of one-off chat requests.",
+            "toolUrl": "https://github.com/markfulton/ai-employees",
+            "postUrl": "https://news.ycombinator.com/item?id=49785402",
+            "extraLinks": [
+                  {
+                        "label": "Agent Ops Club / employee descriptions",
+                        "url": "https://club.reinventing.ai/ai-employees"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260921_040002"
+                  }
+            ],
+            "firstSeen": "2026-09-21T06:02:09-07:00",
+            "lastReviewed": "2026-09-21T06:03:56-07:00"
       },
       {
             "priority": "High",
@@ -1963,6 +2013,29 @@
             ],
             "firstSeen": "2026-08-10T06:12:17-07:00",
             "lastReviewed": "2026-08-10T06:12:17-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for checking whether Aluma pages explain concrete/formwork services, project types, geography, and proof well enough for AI-assisted vendor shortlists.",
+            "next": "Run DR Prepper, PrepShip, and Aluma public pages through the free check, then turn failures into specific page fixes: clearer service pages, FAQs, location proof, case studies, pricing/discovery language, and crawlable content.",
+            "name": "CiteGraph Live Check",
+            "category": "AI search visibility / AEO site audit",
+            "summary": "Website readiness checker that crawls a domain, writes buyer-style AI-search questions, and scores pages for whether assistants such as ChatGPT, Claude, Gemini, and Perplexity would understand and cite them. The verified page advertises a free readiness check and a 7-day trial for $1.",
+            "drprepper": "Direct fit for DR Prepper and PrepShip marketing pages because buyers may ask AI assistants for fulfillment, 3PL, storage, prep, or client-portal vendors; pages need clear service facts, comparisons, and FAQ-style answers that AI can cite.",
+            "toolUrl": "https://www.citegraph.app/live",
+            "postUrl": "https://news.ycombinator.com/item?id=49784671",
+            "extraLinks": [
+                  {
+                        "label": "CiteGraph homepage",
+                        "url": "https://www.citegraph.app/"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260921_040002"
+                  }
+            ],
+            "firstSeen": "2026-09-21T06:02:09-07:00",
+            "lastReviewed": "2026-09-21T06:03:56-07:00"
       },
       {
             "priority": "High",
