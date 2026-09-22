@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 21, 2026 · 6:04 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 22, 2026 · 6:06 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">354</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">341</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">170</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">358</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">345</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">172</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -1913,6 +1913,33 @@
       },
       {
             "priority": "High",
+            "aluma": "Useful for Aluma lead intake, proposal dashboards, and project-tracker prototypes where staff need to inspect and adjust the UI without waiting on a full custom-code cycle.",
+            "next": "Prototype one read-only dashboard or lead-intake form with fake data first. Keep PrepShip/billing/inventory/customer SOT in backend-owned systems and require architecture review before any production-connected app or write workflow.",
+            "name": "WeWeb MCP",
+            "category": "AI no-code app builder / visual internal tools",
+            "summary": "MCP server for WeWeb that lets Claude Code, Cursor, Codex, ChatGPT, Antigravity, or any MCP-compatible agent build pages, workflows, data structures, integrations, and design systems inside a visual app builder where every change stays reviewable and manually editable.",
+            "drprepper": "Strong fit for quick internal dashboards, quote forms, client-portal prototypes, approval flows, and operations tools when the goal is a controlled visual builder rather than an unreviewed vibe-coded app.",
+            "toolUrl": "https://www.weweb.io/product/mcp?ref=producthunt",
+            "postUrl": "https://www.producthunt.com/products/weweb-io",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt redirect/source",
+                        "url": "https://www.producthunt.com/r/p/1189198?app_id=339"
+                  },
+                  {
+                        "label": "Pricing",
+                        "url": "https://www.weweb.io/pricing"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260922_040033"
+                  }
+            ],
+            "firstSeen": "2026-09-22T06:06:50-07:00",
+            "lastReviewed": "2026-09-22T06:06:50-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Good candidate for Aluma lead-gen experiments: scan contractor/project signals, enrich company lists, and prepare outreach drafts while keeping final send decisions human-owned.",
             "next": "Prototype on a non-sensitive lead-research task; require approval gates before sending messages, changing CRM records, or using customer/private account data.",
             "name": "Mark by Airtop",
@@ -2137,6 +2164,33 @@
             ],
             "firstSeen": "2026-09-09T04:01:00-07:00",
             "lastReviewed": "2026-09-09T06:05:26-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for Aluma proposal/process explainers, onboarding subcontractors, and documenting recurring estimating or field workflows, provided all project/customer details are reviewed before publishing.",
+            "next": "Pilot with one non-sensitive PrepShip or PO workflow screen recording. Verify export quality, captions, redaction, editable source files, permissions, and pricing before uploading sensitive customer, order, or employee content.",
+            "name": "Clueso MCP",
+            "category": "AI video / SOP and training automation",
+            "summary": "MCP-enabled video workflow from Clueso that lets Claude, ChatGPT, Gemini, Cursor, Codex-style agents, or other MCP clients create and edit product videos, SOPs, tutorials, support explainers, sales recaps, translations, and onboarding content from recordings, tickets, releases, transcripts, and prompts while leaving outputs editable.",
+            "drprepper": "Strong fit for DR Prepper, PrepShip, DJR, and warehouse operations because repeated screen walkthroughs and exception-handling explanations can become reusable training videos and help articles instead of one-off Discord replies.",
+            "toolUrl": "https://www.clueso.io/mcp?ref=producthunt",
+            "postUrl": "https://www.producthunt.com/products/clueso",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt redirect/source",
+                        "url": "https://www.producthunt.com/r/p/1252189?app_id=339"
+                  },
+                  {
+                        "label": "Pricing",
+                        "url": "https://clueso.io/pricing"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260922_040033"
+                  }
+            ],
+            "firstSeen": "2026-09-22T06:06:50-07:00",
+            "lastReviewed": "2026-09-22T06:06:50-07:00"
       },
       {
             "priority": "High",
@@ -4354,6 +4408,33 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could help Aluma lead-gen and project-tracker work resume from prior browser/research context, especially for recurring contractor/project scans, if sensitive material and retention settings are controlled.",
+            "next": "Test only with non-sensitive local work first. Review privacy, app exclusions, retention, export/delete controls, local-vs-cloud model routing, and MCP access before recording customer/order/billing/prospect screens.",
+            "name": "Contextberg",
+            "category": "AI agent memory / local work context",
+            "summary": "Local memory app for macOS and Windows that captures screen activity, browser history, inputs, and AI-agent conversations, distills daily/activity/long-term context, and serves relevant work memory to Codex, Claude Code, Cursor, OpenClaw, GitHub Copilot, and other agents via MCP. Pricing page shows a free local plan and Lite at $8/month.",
+            "drprepper": "Relevant for Hermes/Codex/Claude work on PrepShip, Client Portal, DJR, dashboards, and recurring operations where lost context causes repeated rediscovery, but it must not become an unchecked source of business truth.",
+            "toolUrl": "https://contextberg.com/ja?ref=producthunt",
+            "postUrl": "https://www.producthunt.com/products/contextberg",
+            "extraLinks": [
+                  {
+                        "label": "Product Hunt redirect/source",
+                        "url": "https://www.producthunt.com/r/p/1219603?app_id=339"
+                  },
+                  {
+                        "label": "Pricing",
+                        "url": "https://contextberg.com/pricing"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260922_040033"
+                  }
+            ],
+            "firstSeen": "2026-09-22T06:06:50-07:00",
+            "lastReviewed": "2026-09-22T06:06:50-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Could monitor AI lead-qualification or project-intake agents for bad outreach, missed contractor context, or unsafe recommendations before those workflows touch real prospects.",
             "next": "Do not connect customer conversations yet. First test with synthetic/internal agent transcripts, define failure categories, and compare against existing eval logs before considering the $500/month Pro tier.",
             "name": "Agnost AI",
@@ -4517,6 +4598,33 @@
             ],
             "firstSeen": "2026-08-14T06:07:16-07:00",
             "lastReviewed": "2026-08-14T06:07:16-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Potential fit for classifying contractor/project leads by geography, trade, intent, and urgency, or prioritizing Search Console/content issues, as long as confidence thresholds route uncertain items to human review.",
+            "next": "Do not add another provider blindly. Build a small human-labeled comparison set and test accuracy, high-confidence errors, abstentions, privacy, data retention, and cost against the approved OpenAI stack before any business-data upload or automated action.",
+            "name": "TypeSafe AI Jev / MotherDuck prompt_jev",
+            "category": "AI classification / structured decisions in SQL",
+            "summary": "TypeSafe AI's Jev is a System One model for typed decisions with confidence estimates rather than chat responses. MotherDuck's prompt_jev integration exposes text classification in SQL; its published AG News benchmark reported 100,000 rows classified in 40 seconds for $0.50 at 89% accuracy, with reproducible SQL, but that benchmark is not SEO or DR Prepper data.",
+            "drprepper": "Useful research candidate for classifying inbound inquiries, support transcripts, search queries, lead intent, and content-audit queues at low cost, while keeping live order, billing, inventory, and shipment facts in canonical backend systems.",
+            "toolUrl": "https://typesafe.ai",
+            "postUrl": "https://x.com/thecoolestcool/status/2102131767809564882",
+            "extraLinks": [
+                  {
+                        "label": "MotherDuck prompt_jev integration",
+                        "url": "https://motherduck.com/blog/motherduck-supports-jev/"
+                  },
+                  {
+                        "label": "TypeSafe console",
+                        "url": "https://console.typesafe.ai"
+                  },
+                  {
+                        "label": "Assistant analysis source session",
+                        "url": "@session:default/20260621_091546_4059b2"
+                  }
+            ],
+            "firstSeen": "2026-09-22T06:06:50-07:00",
+            "lastReviewed": "2026-09-22T06:06:50-07:00"
       },
       {
             "priority": "Medium",
