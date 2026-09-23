@@ -2436,6 +2436,29 @@
   },
   {
     "priority": "High",
+    "aluma": "Useful for proposal decks, project explainers, construction-service pages, and social/website visuals when images need traceable license and attribution before publishing.",
+    "next": "Pilot with one non-sensitive DR Prepper or Aluma asset. Verify image relevance, attribution text, license terms, export/download behavior, and whether results meet brand quality before using in customer-facing materials.",
+    "name": "Lightdrift",
+    "category": "AI image search / license-safe creative sourcing",
+    "summary": "License-aware image search for AI agents through MCP or API. The verified homepage says it indexes hosted Creative Commons/public-domain images and returns file URLs, source/provenance, license details, and attribution requirements; pricing is usage-based at about $5 per 1,000 searches after starter/free credit.",
+    "drprepper": "Strong fit for DR Prepper newsletters, SOP decks, product/service pages, sales PDFs, and client-facing marketing where agents need real images without grabbing unlicensed random web assets.",
+    "toolUrl": "https://lightdrift.ai",
+    "postUrl": "https://lightdrift.ai",
+    "extraLinks": [
+      {
+        "label": "Pricing",
+        "url": "https://lightdrift.ai/pricing"
+      },
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260923_040006"
+      }
+    ],
+    "firstSeen": "2026-09-23T06:05:53-07:00",
+    "lastReviewed": "2026-09-23T06:05:53-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Could help Aluma internal dashboards or client-facing intake flows explain which jobsite/project fields matter, but only after the workflow source of truth is stable.",
     "next": "Prototype on one low-risk internal screen first. Verify React/app integration, what UI data is sent to Frigade, permission boundaries, pricing, logs, and human approval for any action-taking workflow before exposing it to customers.",
     "name": "Frigade Assist API",
@@ -5841,6 +5864,25 @@
   },
   {
     "priority": "Medium",
+    "aluma": "Could help structure repeatable Aluma research or proposal workflows if each lane, source, approval gate, and output artifact is explicit instead of buried in terminal logs.",
+    "next": "Evaluate only in a local non-production workflow first. Confirm macOS setup, repo safety, policy enforcement, log retention, model/API routing, and whether it complements Hermes rather than creating a parallel uncontrolled source of truth.",
+    "name": "RondoFlow",
+    "category": "Local-first AI agent orchestration / Claude Code workflow canvas",
+    "summary": "Open-source local-first platform for visually orchestrating Claude Code agents. The verified GitHub repo describes a drag-and-drop canvas for creating agents, attaching skills, defining security policies, and running multi-agent workflows while gating risky actions through a layered safety model.",
+    "drprepper": "Relevant for managing internal developer-agent workflows across PrepShip, Client Portal, DJR, and dashboard maintenance where multiple agents can otherwise lose context, duplicate work, or make risky tool calls invisibly.",
+    "toolUrl": "https://github.com/rondoflow/rondoflow",
+    "postUrl": "https://github.com/rondoflow/rondoflow",
+    "extraLinks": [
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260923_040006"
+      }
+    ],
+    "firstSeen": "2026-09-23T06:05:53-07:00",
+    "lastReviewed": "2026-09-23T06:05:53-07:00"
+  },
+  {
+    "priority": "Medium",
     "aluma": "Could help preserve contractor/project/prospect context for Aluma lead work, but only after retention, export, delete, workspace isolation, and read-only access behavior are verified.",
     "next": "Verification needed before use: test with synthetic/non-sensitive notes only, inspect MCP scopes and storage location, confirm delete/export controls, and do not load customer, billing, credential, or private lead data until access boundaries are proven.",
     "name": "Knownbase",
@@ -5926,6 +5968,25 @@
     ],
     "firstSeen": "2026-08-05T06:09:39-07:00",
     "lastReviewed": "2026-08-05T06:09:39-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Useful as a watchlist for construction/vendor/research websites if agent-readable tools appear for directories, maps, bids, CRM, or lead-source platforms.",
+    "next": "Use as a discovery index only for now. Before connecting any agent to a vendor/customer account, verify permissions, audit logs, data boundaries, and human approval gates for every write, purchase, message, or account action.",
+    "name": "WebMCP Registry",
+    "category": "MCP/WebMCP directory / agent-readable websites",
+    "summary": "Public registry of websites exposing WebMCP tools that AI agents can use directly, such as search, checkout, docs, and account actions. The verified site says tools are found live and re-checked daily, with entries including Cloudflare Docs, OpenAI, Sentry, Target, DoorDash, Zapier, Flexport, CircleCI, and many Shopify storefronts.",
+    "drprepper": "Useful trend monitor for vendor, shipping, marketplace, ecommerce, support, and docs sites becoming agent-readable. It can help decide which external platforms may eventually support safer agent workflows than brittle browser scraping.",
+    "toolUrl": "https://www.wmcp.ai/",
+    "postUrl": "https://www.wmcp.ai/",
+    "extraLinks": [
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260923_040006"
+      }
+    ],
+    "firstSeen": "2026-09-23T06:05:53-07:00",
+    "lastReviewed": "2026-09-23T06:05:53-07:00"
   },
   {
     "priority": "High",
