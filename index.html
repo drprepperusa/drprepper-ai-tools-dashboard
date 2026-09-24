@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 23, 2026 · 6:05 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 24, 2026 · 6:07 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">361</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">348</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">173</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">365</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">352</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">175</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -1089,6 +1089,25 @@
       },
       {
             "priority": "High",
+            "aluma": "Useful for read-only public contractor/project-page monitoring or portal checks when APIs are missing, but CRM/sheet/outreach writes must stay human-approved.",
+            "next": "Prototype one read-only workflow first: public prospect enrichment, supplier portal status lookup, or marketplace check. Verify cloud-browser credential handling, run logs, pricing, failure behavior, and explicit approval gates before logged-in business workflows.",
+            "name": "AI Browser",
+            "category": "AI browser automation / cloud web agents",
+            "summary": "Product Hunt-launched cloud browser-agent tool for automating online workflows from a prompt. The Product Hunt page says agents can log into accounts, click buttons, generate a sequence of actions, and run them in a cloud-based web browser.",
+            "drprepper": "Strong watch item for repetitive DR Prepper, PrepShip, Client Portal, supplier, shipment-lookup, marketplace, and lead-scraping chores where normal websites lack APIs. Treat it as read-only until credential scope and action approvals are proven.",
+            "toolUrl": "https://aibrowser.surf/",
+            "postUrl": "https://www.producthunt.com/products/ai-browser",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260924_040042"
+                  }
+            ],
+            "firstSeen": "2026-09-24T06:03:56-07:00",
+            "lastReviewed": "2026-09-24T06:07:09-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Useful for public contractor/project-page monitoring and lead-source scraping if runs stay read-only, logged, and isolated from CRM/outreach writes.",
             "next": "Prototype one harmless no-login workflow that watches 10 public supplier or competitor pages and writes a change report. Do not connect logins, customer/order data, or action-taking flows until secrets, audit logs, browser profiles, and approval gates are reviewed.",
             "name": "Puppetflow",
@@ -1452,6 +1471,25 @@
             ],
             "firstSeen": "2026-09-03T06:06:55-07:00",
             "lastReviewed": "2026-09-03T06:06:55-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for estimating the cost of recurring Aluma lead-gen, scraper, and reporting prompts before scaling them across regions or daily schedules.",
+            "next": "Paste 3 real automation prompts — 3PL lead enrichment, order exception review, and Aluma project scan — then compare monthly costs across approved models. Use it as a planning/audit aid, not as the sole billing source of truth.",
+            "name": "PromptSpend",
+            "category": "AI cost planning / LLM pricing calculator",
+            "summary": "Free/open-source LLM API cost calculator for GPT, Claude, and many other models. Product Hunt and the official site say it re-checks vendor pricing daily, shows source URLs/confirmation dates, and lets users paste a prompt or set scale to compare monthly cost, including chat-history and hidden-reasoning-token effects.",
+            "drprepper": "Strong fit for Hermes, PrepShip, Client Portal, DR Prepper, DJR, and dashboard automation because recurring agents need cost-per-task estimates before daily crons, lead-gen, customer triage, or order-review workflows scale up.",
+            "toolUrl": "https://promptspend.com/",
+            "postUrl": "https://www.producthunt.com/products/promptspend",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260924_040042"
+                  }
+            ],
+            "firstSeen": "2026-09-24T06:03:56-07:00",
+            "lastReviewed": "2026-09-24T06:07:09-07:00"
       },
       {
             "priority": "High",
@@ -4578,6 +4616,25 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Useful for quick Aluma lead-intake, quote-request, or project-dashboard prototypes when the goal is a disposable internal tool before committing developer time.",
+            "next": "Pilot only on a non-production internal helper such as a quote-intake form or KPI dashboard. Export/inspect the generated app, verify data ownership, auth, logs, pricing, and human approval gates before connecting orders, billing, inventory, CRM, or customer-facing workflows.",
+            "name": "Floot MCP",
+            "category": "AI app builder / MCP full-stack prototyping",
+            "summary": "Product Hunt-launched MCP connector that lets Claude, ChatGPT, Cursor, and similar agents build full-stack web/mobile apps with database, user logins, hosting, and live URLs from chat. The official site says Floot uses flat plans rather than per-token build credits.",
+            "drprepper": "Useful for fast DR Prepper, PrepShip, Client Portal, and DJR internal-tool prototypes where a simple app, form, or dashboard needs to be tried quickly before normal architecture review and custom development.",
+            "toolUrl": "https://floot.com/",
+            "postUrl": "https://www.producthunt.com/products/floot",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260924_040042"
+                  }
+            ],
+            "firstSeen": "2026-09-24T06:03:56-07:00",
+            "lastReviewed": "2026-09-24T06:07:09-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Could speed Aluma landing-page, lead-intake, or project-dashboard prototypes when the goal is visual/flow exploration rather than production business logic.",
             "next": "Use only for disposable prototypes or UI exploration. Export code into a normal repo, then require source-of-truth placement, tests, security review, and PR workflow before anything reaches production-connected systems.",
             "name": "Bolt Forge",
@@ -5361,6 +5418,25 @@
             ],
             "firstSeen": "2026-08-31T06:04:36-07:00",
             "lastReviewed": "2026-08-31T06:06:46-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Possible fit for quick social/video ad concepts around concrete services or project explainers, but only with public/non-sensitive copy and human creative review.",
+            "next": "Test with one KF Goodies or DR Prepper product/service script using public assets only. Verify pricing, commercial rights, brand safety, captions, and output quality before using in ads or uploading customer/product-sensitive material.",
+            "name": "CastTake AI UGC Video Generator",
+            "category": "AI video ads / UGC creative testing",
+            "summary": "AI UGC-style ad generator that takes a product/script workflow and produces short ad videos. The verified page says the dialogue is generated in the same pass as the picture so there is no separate voiceover sync step, with pricing/free-trial signals on the site.",
+            "drprepper": "Useful for cheap first-pass KF Goodies, DR Prepper, and marketplace creative tests before hiring a creator or agency. Best suited for ad-angle exploration, not final brand/compliance approval.",
+            "toolUrl": "https://casttake.com/ai-ugc-ad-generator",
+            "postUrl": "https://casttake.com/ai-ugc-ad-generator",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260924_040042"
+                  }
+            ],
+            "firstSeen": "2026-09-24T06:03:56-07:00",
+            "lastReviewed": "2026-09-24T06:07:09-07:00"
       },
       {
             "priority": "Medium",
