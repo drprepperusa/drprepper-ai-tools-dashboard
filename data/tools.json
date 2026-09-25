@@ -250,6 +250,29 @@
     "lastReviewed": "2026-07-26T06:17:57-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Useful for keeping Aluma scraper, lead-enrichment, and project-monitoring jobs inside budget as regional scans or daily outreach workflows expand.",
+    "next": "Evaluate as a read-only spend-monitoring layer around one non-production automation first. Confirm provider integrations, alert thresholds, data retention, pricing after beta, and whether it can separate useful agent spend from retry/runaway waste before connecting business-critical workflows.",
+    "name": "AtlasBurn",
+    "category": "AI API cost intelligence / runaway spend guardrails",
+    "summary": "Real-time AI API cost monitoring and guardrail platform for AI-native apps and agent workflows. The verified homepage says it monitors usage, forecasts burn, and helps prevent runaway costs from retry storms, overpowered models, and chained agent calls; beta access is free with no credit card required.",
+    "drprepper": "Strong fit for Hermes, PrepShip, Client Portal, dashboard, lead-gen, and customer-triage automations before recurring agents scale up. It targets the exact risk where a useful workflow silently becomes expensive because of retries, long chains, or using premium models for low-value steps.",
+    "toolUrl": "https://atlasburn.com/",
+    "postUrl": "https://atlasburn.com/",
+    "extraLinks": [
+      {
+        "label": "AtlasBurn docs",
+        "url": "https://docs.atlasburn.com"
+      },
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260925_040013"
+      }
+    ],
+    "firstSeen": "2026-09-25T06:04:57-07:00",
+    "lastReviewed": "2026-09-25T06:07:18-07:00"
+  },
+  {
     "priority": "Watch",
     "aluma": "Could support Aluma lead/project dashboards and follow-up queues if data permissions, source-of-truth ownership, and action approvals are tightly controlled.",
     "next": "Do not buy at $1,000/month without a defined dashboard/action use case. First prototype the same reporting questions with existing Sheets/Postgres/dashboard data and require human approval for any write/action workflow.",
@@ -3460,6 +3483,25 @@
     ],
     "firstSeen": "2026-09-09T04:01:00-07:00",
     "lastReviewed": "2026-09-09T06:05:26-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Useful before testing lead-gen, scraper, marketplace, or contractor-research SaaS so Aluma does not accidentally accept risky data-use, renewal, or rights terms.",
+    "next": "Use it as a first-pass legal/data-rights smoke test, not a lawyer replacement. Test on the next new SaaS signup and still verify pricing, cancellation, data retention, export/deletion, account sharing, and customer-data clauses manually before connecting sensitive systems.",
+    "name": "AgreeGuard",
+    "category": "AI terms/privacy analyzer / SaaS signup risk check",
+    "summary": "Free Chrome extension that reads terms and privacy policies before clicking I Agree. The Product Hunt page says it returns a plain-English summary in under 15 seconds and flags auto-renewals, data selling, hidden fees, waived legal rights, and privacy concerns; the listing says it works on any website with no account needed.",
+    "drprepper": "Useful as a quick safety check before signing up for AI, browser-agent, sourcing, CRM, shipping, finance, or spreadsheet tools that may touch business data, Gmail, Sheets, Shopify, customer records, or payment workflows.",
+    "toolUrl": "https://agreeguard.app/",
+    "postUrl": "https://www.producthunt.com/products/agreeguard-ai-terms-privacy-analyzer",
+    "extraLinks": [
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260925_040013"
+      }
+    ],
+    "firstSeen": "2026-09-25T06:04:57-07:00",
+    "lastReviewed": "2026-09-25T06:07:18-07:00"
   },
   {
     "priority": "Medium",
