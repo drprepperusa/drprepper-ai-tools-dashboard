@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 25, 2026 · 6:07 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 26, 2026 · 6:04 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">367</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">354</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">176</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">370</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">357</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">177</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -1086,6 +1086,25 @@
             ],
             "firstSeen": "2026-09-13T06:06:09-07:00",
             "lastReviewed": "2026-09-13T06:06:09-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Could test future Aluma portals or shared lead/project workflows where multiple users interact with forms, dashboards, or approval states.",
+            "next": "Pilot against a staging/demo app only. Create synthetic admin/customer accounts, run one non-production Client Portal scenario, and verify screenshots/logs, data isolation, MCP permissions, pricing, and no production writes before broader use.",
+            "name": "Jango",
+            "category": "AI browser QA / multi-user app testing",
+            "summary": "AI participants for testing multi-user apps through separate browser accounts. Verified homepage describes giving AI cast members accounts and goals to test social feeds, marketplaces, order books, and collaborative workflows, with dashboard, CLI, MCP, workspace, and API access.",
+            "drprepper": "Strong fit for Client Portal and PrepShip QA where bugs often depend on multiple roles, accounts, or workflow handoffs — for example customer vs admin views, shipment-modal behavior, order status, and collaborative queue actions.",
+            "toolUrl": "https://usejango.com",
+            "postUrl": "https://usejango.com",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260926_040007"
+                  }
+            ],
+            "firstSeen": "2026-09-26T06:04:51-07:00",
+            "lastReviewed": "2026-09-26T06:04:51-07:00"
       },
       {
             "priority": "High",
@@ -5324,6 +5343,25 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could support Aluma relationship marketing by drafting posts about project wins, rental lessons, or jobsite operations, but only from approved/public material and with manual review before publishing.",
+            "next": "Trial only with public/non-sensitive source material and require approval for every post. Test two weekly DR Prepper posts about 3PL pain points before connecting private data or committing to the $100/month plan.",
+            "name": "GoodSocials",
+            "category": "AI social media / founder-led LinkedIn content",
+            "summary": "AI LinkedIn social media manager that writes posts from research or connected data, places drafts on an approval board, and schedules approved posts. Verified homepage says it offers a 7-day free trial and costs $100/month for one LinkedIn profile.",
+            "drprepper": "Useful for DR Prepper 3PL, DJR, and KF Goodies thought-leadership/content tests where the bottleneck is turning operational knowledge into consistent founder-led posts without letting AI publish unreviewed copy.",
+            "toolUrl": "https://goodsocials.co",
+            "postUrl": "https://goodsocials.co",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260926_040007"
+                  }
+            ],
+            "firstSeen": "2026-09-26T06:04:51-07:00",
+            "lastReviewed": "2026-09-26T06:04:51-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Can capture field/project reminders or contractor follow-ups on the go, then later turn them into the proper tracker/task system after review.",
             "next": "Try only for non-sensitive personal capture first. Verify calendar/task integrations, export behavior, retention/privacy, and whether it can reliably produce owner/date/action triples before using around customer, billing, credential, or operational incident details.",
             "name": "Grimo AI",
@@ -7749,6 +7787,25 @@
             "postUrl": "https://shipp.to/",
             "firstSeen": "2026-06-24T06:05:48-07:00",
             "lastReviewed": "2026-06-24T06:05:48-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Possible contractor/vendor follow-up channel if Aluma prospects actually use WhatsApp, with strict human approval before outreach or project-status messages.",
+            "next": "Do not connect live customer/supplier contacts yet. First test one sandbox WhatsApp instance and verify opt-in handling, logs, webhook reliability, MCP permissions, pricing, and mandatory human approval for every outbound message.",
+            "name": "WapiSender",
+            "category": "WhatsApp automation / AI messaging workflows",
+            "summary": "WhatsApp automation platform with AI agents, visual flow builder, APIs, webhooks, and an official MCP server for Claude Code. Verified homepage describes a 7-day free trial, APIs for sending messages, contact/flow tools, and automation around customer conversations and campaigns.",
+            "drprepper": "Potential fit for international buyer communication, supplier reminders, order-status follow-ups, or internal operator notifications, but WhatsApp sends must remain approval-gated and compliant.",
+            "toolUrl": "https://wapisender.com",
+            "postUrl": "https://wapisender.com",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260926_040007"
+                  }
+            ],
+            "firstSeen": "2026-09-26T06:04:51-07:00",
+            "lastReviewed": "2026-09-26T06:04:51-07:00"
       },
       {
             "priority": "Watch",
