@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 26, 2026 · 6:04 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 27, 2026 · 6:05 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">370</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">357</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">177</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">373</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">360</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">179</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -807,6 +807,25 @@
             ],
             "firstSeen": "2026-09-18T06:05:30-07:00",
             "lastReviewed": "2026-09-18T06:05:30-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for Aluma bid/project calls and contractor follow-ups if only non-sensitive meetings are captured first and any prospect/customer records remain source-grounded in the CRM or tracker.",
+            "next": "Pilot with one non-sensitive internal planning conversation. Verify recording consent, retention, export/delete controls, MCP key scope, self-host roadmap, and whether summaries include source links before using it around customer, employee, finance, or order data.",
+            "name": "Hemory",
+            "category": "AI agent memory / meeting and conversation recall",
+            "summary": "Always-on conversation memory for AI agents. The verified site and Product Hunt listing describe phone/Apple Watch listening, speaker-labeled moments, private searchable memory, and MCP access for Claude, Codex, Cursor, Hermes/OpenClaw-style clients, with a 10-hour free trial and paid plans from $10/month.",
+            "drprepper": "Strong fit for DR Prepper, PrepShip, DJR, and KF Goodies planning because recurring decisions, SOPs, vendor/customer follow-ups, and 'what did we agree to?' context are easy to lose between meetings and agent sessions. Use only after privacy boundaries are clear.",
+            "toolUrl": "https://www.hemory.com/",
+            "postUrl": "https://www.producthunt.com/products/hemory",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260927_040058"
+                  }
+            ],
+            "firstSeen": "2026-09-27T06:05:22-07:00",
+            "lastReviewed": "2026-09-27T06:05:22-07:00"
       },
       {
             "priority": "High",
@@ -1344,6 +1363,25 @@
             "postUrl": "https://news.ycombinator.com/item?id=49460693",
             "firstSeen": "2026-08-27T06:06:50-07:00",
             "lastReviewed": "2026-08-27T06:06:50-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for Aluma scraper, lead-gen, and dashboard code changes if contractors or agents need a lightweight proof packet before workflow changes reach production-adjacent trackers or outreach systems.",
+            "next": "Try on a disposable coding task first. Compare Keel's proof bundle against existing Hermes/Trello review packets, require local tests and exact diff capture, and avoid using it as a substitute for human review on money, inventory, postage, billing, or customer-message changes.",
+            "name": "Keel harness",
+            "category": "AI coding-agent delivery gates / audit evidence",
+            "summary": "Open-source gated harness for AI-assisted delivery. The verified GitHub repo describes writing testable specs, approving plans, enforcing checks, stopping when sign-off is missing, and packing approvals/gate verdicts/diffs into a tamper-evident record that can be verified offline.",
+            "drprepper": "Strong fit for PrepShip, Client Portal, DJR, Warehouse, and dashboard PR discipline because the recurring failure mode is status claims without exact proof. Keel's spec/plan/gate/record model matches the need for executable acceptance evidence before work is treated as Done.",
+            "toolUrl": "https://github.com/daneb/keel",
+            "postUrl": "https://github.com/daneb/keel",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260927_040058"
+                  }
+            ],
+            "firstSeen": "2026-09-27T06:05:22-07:00",
+            "lastReviewed": "2026-09-27T06:05:22-07:00"
       },
       {
             "priority": "High",
@@ -4468,6 +4506,25 @@
             ],
             "firstSeen": "2026-07-15T06:04:53-07:00",
             "lastReviewed": "2026-07-15T06:04:53-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could support Aluma internal request handling as the team grows, especially access, device, onboarding, and process questions, but not as a source of truth for project/customer commitments.",
+            "next": "Watch rather than adopt immediately. If internal ticket volume grows, test in a small Slack/Teams sandbox with fake users first; verify pricing, admin permissions, audit logs, human escalation, and whether business-system writes can be approval-gated.",
+            "name": "Harmony",
+            "category": "AI IT/HR helpdesk automation",
+            "summary": "AI-native ITSM/ESM platform where employees ask inside Slack or Teams and agents handle IT/HR requests such as password resets, app access, onboarding, device issues, ticketing, asset inventory, SaaS management, and workflows, escalating to humans when needed.",
+            "drprepper": "Useful pattern for internal ops support at DR Prepper, PrepShip, DJR, and the client portal: routine access requests, onboarding, app/account questions, and internal tickets can be triaged without turning customer/order/billing actions loose autonomously.",
+            "toolUrl": "https://harmony.io",
+            "postUrl": "https://www.producthunt.com/products/harmony-it",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260927_040058"
+                  }
+            ],
+            "firstSeen": "2026-09-27T06:05:22-07:00",
+            "lastReviewed": "2026-09-27T06:05:22-07:00"
       },
       {
             "priority": "Medium",
