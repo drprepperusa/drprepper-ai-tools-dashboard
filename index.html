@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 27, 2026 · 6:05 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 28, 2026 · 6:06 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">373</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">360</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">179</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">376</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">363</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">181</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -1463,6 +1463,25 @@
             ],
             "firstSeen": "2026-08-09T06:06:12-07:00",
             "lastReviewed": "2026-08-09T06:06:12-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful if Aluma lead-gen scrapers, dashboards, or outreach tools become agent-maintained; especially for preventing credential leaks and unsafe automation changes.",
+            "next": "Test on a disposable branch first. Compare findings against existing static guards and Trello audit packets, verify no secrets are uploaded unexpectedly, and keep human review mandatory for money, inventory, postage, billing, auth, CRM, and customer-message changes.",
+            "name": "VibeDefend by CybeDefend",
+            "category": "AI coding-agent security guardrails",
+            "summary": "Security guardrail layer for AI-written code. The verified CybeDefend site says VibeDefend installs for Claude Code, Cursor, Windsurf, Copilot, and OpenAI Codex; injects project/business/security rules; scans diffs for reachable issues; flags secrets, dependency risk, license risk, CI/IaC/container issues, and risky agent actions.",
+            "drprepper": "High fit for Jake/Lawrence/Hermes coding workflows because AI coding speed creates risk around secrets, SQL injection, tenant scoping, destructive shell commands, and unreviewed business-rule drift. Use as an additional safety net, not as a replacement for exact-SHA acceptance proof.",
+            "toolUrl": "https://www.cybedefend.com/",
+            "postUrl": "https://www.producthunt.com/products/vibedefend",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260928_040047"
+                  }
+            ],
+            "firstSeen": "2026-09-28T06:06:00-07:00",
+            "lastReviewed": "2026-09-28T06:06:00-07:00"
       },
       {
             "priority": "High",
@@ -4045,6 +4064,29 @@
             ],
             "firstSeen": "2026-08-18T06:06:30-07:00",
             "lastReviewed": "2026-08-18T06:06:30-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful model for Aluma project/lead dashboards where AI can explain bid pipeline, project status, and outreach performance while the tracker remains the source of truth.",
+            "next": "Watch and possibly pilot against non-sensitive dashboard data first. Verify Databox plan requirements, API-key scope, MCP read/write permissions, audit logs, and whether actions can be disabled before connecting money, inventory, shipping, customer, or ad-spend workflows.",
+            "name": "Databox MCP",
+            "category": "business-metrics MCP / AI analytics",
+            "summary": "Databox MCP connects governed Databox metrics, dashboards, semantic definitions, and business context into AI tools such as Claude, ChatGPT, Cursor, n8n, and other MCP clients. The verified Databox page positions it as a way to ask questions about trusted metrics, analyze dashboards, compare accounts, and trigger follow-up actions without copy/pasting analytics data.",
+            "drprepper": "Strong pattern for DR Prepper, PrepShip, DJR, KF Goodies, and internal dashboards: sales, warehouse, lead-gen, Amazon/PPC, finance, and fulfillment metrics should be queryable by AI only through governed metric definitions and approval-gated actions, not raw spreadsheet guesses.",
+            "toolUrl": "https://databox.com/mcp",
+            "postUrl": "https://www.producthunt.com/products/mcp-connectors-by-databox",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://databox.com/pricing"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260928_040047"
+                  }
+            ],
+            "firstSeen": "2026-09-28T06:06:00-07:00",
+            "lastReviewed": "2026-09-28T06:06:00-07:00"
       },
       {
             "priority": "High",
@@ -7055,6 +7097,29 @@
             ],
             "firstSeen": "2026-07-29T06:11:26-07:00",
             "lastReviewed": "2026-07-29T06:11:26-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could help Aluma handle web/social lead inquiries and contractor follow-ups if all outbound messaging remains human-approved and CRM/tracker records stay canonical.",
+            "next": "Watch, not immediate rollout. If tested, start with inbound triage only, fake/test contacts, no production customer lists, no automated outbound broadcasts, and explicit approval gates for every external message.",
+            "name": "SaleSmartly",
+            "category": "omnichannel customer messaging / AI CRM",
+            "summary": "AI-powered omnichannel customer engagement platform that unifies website chat, WhatsApp, WhatsApp Business API, Instagram, Facebook Messenger, TikTok, Telegram, LINE, CRM, targeted broadcasts, conversation APIs, AI chatbots, routing, and follow-up workflows. The verified pricing page shows a free tier and Pro pricing starting around $12.72/month on annual-style pricing.",
+            "drprepper": "Worth watching for approved supplier/customer follow-up, DR Prepper 3PL lead conversations, KF Goodies social-commerce inquiries, and multi-channel support. It should not autonomously send customer, vendor, billing, order, or shipping messages without approval and logging.",
+            "toolUrl": "https://www.salesmartly.com/en/",
+            "postUrl": "https://www.producthunt.com/products/salesmartly",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://www.salesmartly.com/en/pricing/"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260928_040047"
+                  }
+            ],
+            "firstSeen": "2026-09-28T06:06:00-07:00",
+            "lastReviewed": "2026-09-28T06:06:00-07:00"
       },
       {
             "priority": "Watch",
