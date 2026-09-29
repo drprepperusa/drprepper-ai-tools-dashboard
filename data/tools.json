@@ -595,6 +595,25 @@
   },
   {
     "priority": "High",
+    "aluma": "Could audit Aluma lead-generation or outreach agents for unsafe messaging, hallucinated project facts, duplicate contacts, and source-grounding failures before any external outreach automation scales.",
+    "next": "Evaluate as an external audit option for high-risk agent workflows. Ask for sample reports, data-handling terms, reproducible test artifacts, pricing, and whether sensitive repos/customer data can be tested with redaction or synthetic fixtures.",
+    "name": "iFixAi",
+    "category": "AI agent audit / red-team assurance",
+    "summary": "Independent auditing service for AI agents. Product Hunt describes 250 inspections across 69 categories of misalignment, combining red teaming, operational assurance, and ethical/sociological review to surface failures, business implications, and evidence engineers can investigate.",
+    "drprepper": "Good category fit before trusting agents with PrepShip, DJR, DR PREPPER, inventory, customer messages, billing, postage, refunds, code deployments, or ad spend. It should complement—not replace—exact-SHA tests, source-of-truth audits, permission gates, and human sign-off.",
+    "toolUrl": "https://www.ifixai.ai/",
+    "postUrl": "https://www.producthunt.com/products/ifixai",
+    "extraLinks": [
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260929_040034"
+      }
+    ],
+    "firstSeen": "2026-09-29T06:06:57-07:00",
+    "lastReviewed": "2026-09-29T06:06:57-07:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Useful for Aluma lead-gen and project research agents that need to browse contractor/project pages while preserving operator oversight and approval gates for outreach or CRM updates.",
     "next": "Test on a read-only workflow such as extracting public 3PL prospect pages or competitor listings. Verify download/signing, MCP behavior, logs, local-vs-hosted model routing, and approval prompts before using it with logged-in accounts or customer/order data.",
     "name": "Pickle Browser",
@@ -4607,6 +4626,25 @@
     "lastReviewed": "2026-08-29T23:13:24-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Potential fit for Aluma contractor/developer outreach campaigns and retargeting around active project opportunities if the source lead tracker remains canonical and budget changes require human approval.",
+    "next": "Watch before spending. Verify LinkedIn account permissions, budget caps, campaign-draft review, attribution accuracy, MCP write controls, and reporting exports. If piloted, start with read-only/reporting or draft-only campaigns; no autonomous ad launch or budget changes.",
+    "name": "ZenABM / Zena LinkedIn Ads AI",
+    "category": "B2B ads automation / MCP ad-ops",
+    "summary": "Product Hunt launch for ZenABM's Zena agent and MCP server, which create, launch, optimize, analyze, and report on LinkedIn Ads from AI tools such as Claude, ChatGPT, and Perplexity. The launch describes 20+ expert skills, 96 tools, account/company engagement reporting, and revenue-attribution reports.",
+    "drprepper": "Relevant to DR PREPPER 3PL and B2B outreach because LinkedIn campaigns could target e-commerce, DTC, and wholesale accounts, but ad spend and audience definitions must remain approval-gated and measured against qualified-lead quality, not vanity clicks.",
+    "toolUrl": "https://zenabm.com/ai",
+    "postUrl": "https://www.producthunt.com/products/zena-by-zenabm-linkedin-ads-ai-chatbot",
+    "extraLinks": [
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260929_040034"
+      }
+    ],
+    "firstSeen": "2026-09-29T06:06:57-07:00",
+    "lastReviewed": "2026-09-29T06:06:57-07:00"
+  },
+  {
     "priority": "Watch",
     "aluma": "Similar signal for contractor/customer quote intake: text-first guided ordering or quote requests could reduce friction, but real pricing/availability still needs approval and source-of-truth controls.",
     "next": "Use as a benchmark, not an adoption decision. Sketch a lightweight approved reorder/quote-intake flow for DR Prepper/DJR/KF Goodies before considering enterprise commerce tooling; keep all order creation and pricing changes behind human approval.",
@@ -7534,6 +7572,25 @@
     ],
     "firstSeen": "2026-07-22T06:04:37-07:00",
     "lastReviewed": "2026-07-22T06:04:37-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could help capture project-research browsing and contractor/vendor conversations for later lead qualification, as long as sensitive bid/customer details stay out until privacy controls are proven.",
+    "next": "Pilot on a sanitized machine/work profile only. Verify local-vs-cloud processing, retention/deletion controls, transcript export, model access, and whether AI tools can read memory without explicit approval before using it around operations, money, customer, or code contexts.",
+    "name": "LUCI Desktop",
+    "category": "local AI memory / screen-history recall",
+    "summary": "Product Hunt launch for a local desktop memory tool that saves screen history and meeting transcripts so agents such as Claude Code, Cursor, and Codex can recover pages, calls, and decisions without wiring every app through a connector. Product Hunt describes on-device transcription, daily summaries, and free Mac/Windows availability.",
+    "drprepper": "Useful for recalling vendor calls, PrepShip/client-portal decisions, supplier pages, fulfillment troubleshooting context, and pages that were not bookmarked. Treat it as private-memory infrastructure; do not store customer data, credentials, rates, invoices, or proprietary repo details until privacy and retention behavior are verified.",
+    "toolUrl": "https://luci.memories.ai/",
+    "postUrl": "https://www.producthunt.com/products/luci-desktop",
+    "extraLinks": [
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20260929_040034"
+      }
+    ],
+    "firstSeen": "2026-09-29T06:06:57-07:00",
+    "lastReviewed": "2026-09-29T06:06:57-07:00"
   },
   {
     "priority": "High",
