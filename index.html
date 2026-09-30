@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 29, 2026 · 6:06 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Sep 30, 2026 · 6:03 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">379</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">366</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">182</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">382</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">369</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">183</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -501,6 +501,29 @@
             ],
             "firstSeen": "2026-07-22T06:04:37-07:00",
             "lastReviewed": "2026-07-22T06:04:37-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for Aluma SEO and lead-generation pages if Search Console/GA4 data can identify which contractor, rental, or project pages are losing impressions, clicks, or conversions.",
+            "next": "Pilot read-only on one non-sensitive site first. Connect only Search Console/GA4 scopes, ask it for declining pages and action priorities, then compare recommendations against existing analytics before letting an agent draft page changes.",
+            "name": "CrawlRaven MCP",
+            "category": "AI SEO operations / MCP analytics",
+            "summary": "MCP server that gives Claude, ChatGPT, Cursor, and other AI clients typed read-only access to Search Console, linked GA4, ranked SEO opportunities, and content timelines. The verified site lists a free preview, OAuth, 13 scoped tools, and lifetime pricing from $39 for one site.",
+            "drprepper": "Strong fit for DR Prepper and Aluma SEO workflows: an agent could answer practical questions like which service pages lost clicks, which landing pages convert, and what to refresh next from live analytics instead of guessing.",
+            "toolUrl": "https://crawlraven.com/mcp",
+            "postUrl": "https://www.producthunt.com/products/crawlraven-mcp",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://crawlraven.com/pricing"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260930_040019"
+                  }
+            ],
+            "firstSeen": "2026-09-30T06:03:42-07:00",
+            "lastReviewed": "2026-09-30T06:03:42-07:00"
       },
       {
             "priority": "High",
@@ -5193,6 +5216,29 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could keep Aluma internal SOPs, rental/process docs, and lead-response help pages current as forms, pricing, or project workflows change.",
+            "next": "Watch pricing before adoption. If PrepShip or Client Portal docs become a bottleneck, test on a small non-sensitive help-center section and require approval before any article is published or customer-facing claims change.",
+            "name": "Ferndesk",
+            "category": "AI help center / stale-doc maintenance",
+            "summary": "AI-maintained help center where an agent checks articles against the product, catches changed flows, broken links, renamed buttons, pricing or feature drift, and drafts fixes. The verified pricing page shows a 7-day free trial and Pro at $149/month.",
+            "drprepper": "Relevant for PrepShip, Client Portal, and internal ops documentation where stale SOPs and customer help articles create support drag; useful if docs can be kept source-grounded and human-approved.",
+            "toolUrl": "https://ferndesk.com",
+            "postUrl": "https://www.producthunt.com/products/ferndesk",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://ferndesk.com/pricing"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260930_040019"
+                  }
+            ],
+            "firstSeen": "2026-09-30T06:03:42-07:00",
+            "lastReviewed": "2026-09-30T06:03:42-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Potentially useful for proposal or equipment/material visuals when a background needs to be isolated, but less central than lead-gen or ops tooling.",
             "next": "Test on 10 non-sensitive product photos with difficult edges, packaging glare, and frozen-food imagery; compare against current manual/photo workflow before using it in bulk or overwriting source assets.",
             "name": "FeyNoBg / NoBg",
@@ -5658,6 +5704,29 @@
             ],
             "firstSeen": "2026-08-05T06:09:39-07:00",
             "lastReviewed": "2026-08-05T06:09:39-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could help make quick Aluma explainer or project-update videos from public pages and approved assets, but visual output still needs human review for accuracy and brand fit.",
+            "next": "Test with one public DR Prepper or Aluma landing page and approved imagery only. Use it for draft launch/explainer videos, then manually review claims, captions, music, licensing, and brand voice before publishing.",
+            "name": "Pexo",
+            "category": "AI video agent / marketing creative",
+            "summary": "AI video agent that turns a URL, PDF, image, audio clip, reference, or idea into a publish-ready video through conversation, including script, scenes, shots, motion graphics, captions, and edits. The verified site includes CLI/MCP positioning and pricing-page credit plans.",
+            "drprepper": "Useful for fast 3PL, KF Goodies, supplier/customer explainer, product-page, or ad-creative drafts when DJ needs a video concept quickly without starting with an editor or agency workflow.",
+            "toolUrl": "https://pexo.ai",
+            "postUrl": "https://www.producthunt.com/products/pexo-2",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://pexo.ai/pricing"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20260930_040019"
+                  }
+            ],
+            "firstSeen": "2026-09-30T06:03:42-07:00",
+            "lastReviewed": "2026-09-30T06:03:42-07:00"
       },
       {
             "priority": "Medium",
