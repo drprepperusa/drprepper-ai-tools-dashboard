@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 1, 2026 · 6:05 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 2, 2026 · 6:11 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">385</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">372</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">186</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">389</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">376</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">188</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -2480,6 +2480,29 @@
       },
       {
             "priority": "High",
+            "aluma": "Could answer missed contractor calls, qualify basic rental/project inquiries, book follow-ups, and hand complex requests to staff, with explicit consent and human control over outbound campaigns.",
+            "next": "Run a controlled trial on a dedicated non-critical number using scripted FAQs and human handoff. Verify call recording/consent, TCPA and WhatsApp rules, escalation, transcript retention, opt-out handling, and require DJ approval before any outbound campaign.",
+            "name": "Famulor",
+            "category": "AI voice agent / multichannel lead qualification",
+            "summary": "No-code AI voice-agent platform for inbound and outbound calls with follow-up through WhatsApp, email, and SMS, plus booking, memory, analytics, and human handoff. The verified pricing page lists pay-as-you-go from €0 with 800 starting credits, then €0.18 per minute.",
+            "drprepper": "Strong pilot candidate for missed 3PL sales calls and routine prospect qualification because it can carry one lead across phone and messaging, but customer promises, quotes, and outbound campaigns must stay approval-gated.",
+            "toolUrl": "https://www.famulor.io/",
+            "postUrl": "https://www.producthunt.com/products/famulor-telephony-ai",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://www.famulor.io/pricing"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20261002_040011"
+                  }
+            ],
+            "firstSeen": "2026-10-02T06:10:15-07:00",
+            "lastReviewed": "2026-10-02T06:11:32-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Useful for Aluma landing pages, lead-capture pages, and proposal microsites if it can expose visitor behavior and growth tasks without leaking sensitive prospect data.",
             "next": "Test on one public, non-sensitive landing page first. Verify analytics privacy, session-replay masking, MCP/API permissions, pricing tiers, and human approval before any automated site/content changes.",
             "name": "Growtics",
@@ -3483,6 +3506,25 @@
             ],
             "firstSeen": "2026-08-22T04:02:00-07:00",
             "lastReviewed": "2026-08-22T06:05:53-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful as a conversion reference for an Aluma equipment-rental or surplus-equipment intake page: clear eligibility, quantity handling, pickup/shipping expectations, inspection, and payment terms should be visible before a long form.",
+            "next": "Use the reviewed page as a competitor benchmark for the Nvidis GPU-buying build, not as a template to copy. Keep Bitpro's clear single-or-bulk offer and trust proof, but move the quote experience above the fold, eliminate mobile overflow, show deterministic prices before contact capture, and document certification/revised-offer terms.",
+            "name": "Bitpro RTX 4090 seller-page reference",
+            "category": "GPU procurement / conversion benchmark",
+            "summary": "Live competitor landing page for buying one or bulk RTX 4090 GPUs. It clearly explains fair-market offers, pickup or shipping, inspection, wire/Zelle payment, value factors, FAQs, and trust signals, but the assistant's desktop/mobile review found a buried form, generic template styling, and serious mobile overflow/clipping.",
+            "drprepper": "Directly useful to DJ's GPU procurement operation as a concrete benchmark for seller messaging, intake fields, bulk-lot handling, free-shipping expectations, inspection timing, and trust proof while building the Nvidis quote flow.",
+            "toolUrl": "https://bitproit.com/sell-used-nvidia-rtx-4090-gpus/",
+            "postUrl": "https://bitproit.com/sell-used-nvidia-rtx-4090-gpus/",
+            "extraLinks": [
+                  {
+                        "label": "Assistant design review session",
+                        "url": "@session:default/20261002_031441_8a9541df"
+                  }
+            ],
+            "firstSeen": "2026-10-02T06:10:15-07:00",
+            "lastReviewed": "2026-10-02T06:11:32-07:00"
       },
       {
             "priority": "High",
@@ -5182,6 +5224,29 @@
             ],
             "firstSeen": "2026-07-08T06:07:06-07:00",
             "lastReviewed": "2026-07-08T06:07:06-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could centralize Aluma lead-research runbooks, rental workflows, onboarding, and internal operating knowledge if permissions and document ownership are defined.",
+            "next": "Pilot the free tier or desktop workspace with one non-sensitive PrepShip or DJR runbook set. Verify offline behavior, Git/source sync, export, access control, and whether updates can be reviewed before replacing existing documentation workflows.",
+            "name": "Mintlify Desktop",
+            "category": "AI documentation / internal knowledge operations",
+            "summary": "AI-native documentation and knowledge workspace for writing and maintaining internal runbooks, onboarding guides, and public docs. The October launch highlights a desktop workspace with offline writing; the verified platform pricing lists Starter at $0 and Pro at $450 per month.",
+            "drprepper": "Useful if PrepShip, Client Portal, DJR, and DR Prepper operating knowledge keeps fragmenting across repos and chats; it could give teams a cleaner documentation home without making prose the authority over live systems.",
+            "toolUrl": "https://www.mintlify.com/",
+            "postUrl": "https://www.producthunt.com/products/mintlify",
+            "extraLinks": [
+                  {
+                        "label": "Pricing",
+                        "url": "https://www.mintlify.com/pricing"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20261002_040011"
+                  }
+            ],
+            "firstSeen": "2026-10-02T06:10:15-07:00",
+            "lastReviewed": "2026-10-02T06:11:32-07:00"
       },
       {
             "priority": "Medium",
@@ -7601,6 +7666,25 @@
             ],
             "firstSeen": "2026-08-26T06:05:04-07:00",
             "lastReviewed": "2026-08-26T06:05:04-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Could combine project, CRM, estimate, and marketing data for read-only margin or pipeline questions, but only if source definitions and access scopes are controlled.",
+            "next": "Test the free business health check with sanitized or read-only ecommerce data first. Reconcile every claimed margin, customer, and marketing insight against QuickBooks/store source records before using it for spend, pricing, or inventory decisions.",
+            "name": "Veltrix AI",
+            "category": "AI ecommerce finance / business intelligence",
+            "summary": "AI finance and ecommerce analysis product that connects business tools such as QuickBooks and HubSpot, then answers plain-English questions about revenue, cash flow, margins, customers, and marketing. Product Hunt lists a free first health check and a launch offer.",
+            "drprepper": "Potential fit for KF Goodies and DR Prepper ecommerce margin analysis, especially to connect sales, customer, and marketing signals, but it must remain an advisory layer rather than a financial source of truth.",
+            "toolUrl": "https://veltrix.com/",
+            "postUrl": "https://www.producthunt.com/products/veltrix-ai",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20261002_040011"
+                  }
+            ],
+            "firstSeen": "2026-10-02T06:10:15-07:00",
+            "lastReviewed": "2026-10-02T06:11:32-07:00"
       },
       {
             "priority": "Watch",
