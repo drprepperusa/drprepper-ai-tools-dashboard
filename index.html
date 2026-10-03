@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 2, 2026 · 6:11 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 3, 2026 · 6:07 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">389</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">376</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">188</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">391</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">378</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">190</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -993,6 +993,25 @@
       },
       {
             "priority": "High",
+            "aluma": "Could support controlled contractor or project-research agents, but CRM updates and outreach should remain source-grounded and approval-gated.",
+            "next": "Pilot one read-only exception workflow using sanitized operational data. Verify tool permissions, approval logs, failure handling, data retention, and pricing before connecting orders, inventory, billing, customer messages, or production credentials.",
+            "name": "ZooWork",
+            "category": "AI agent platform / approval-gated operations",
+            "summary": "Platform for building, deploying, and managing business agents that use company knowledge, tools, and workflows. Its official positioning emphasizes approvals, security, and operational control rather than unrestricted autonomous actions.",
+            "drprepper": "Strong pattern for PrepShip and DR Prepper exception handling, inventory monitoring, internal research, and SOP-driven operations where an agent can prepare work but must pause before money, inventory, customer, or production changes.",
+            "toolUrl": "https://zoowork.ai/",
+            "postUrl": "https://www.producthunt.com/products/zoowork",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20261003_040004"
+                  }
+            ],
+            "firstSeen": "2026-10-03T06:07:10-07:00",
+            "lastReviewed": "2026-10-03T06:07:10-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Useful for Aluma contractor/project lead research and weekly sales follow-up if scraping and outreach remain source-grounded, logged, and human-approved before CRM/sheet/message changes.",
             "next": "Pilot only one read-only employee first: Sales or Chief of Staff for 3PL/Aluma prospect research. Keep sends, CRM writes, ad changes, and customer replies behind explicit approval gates; compare its run logs against existing Hermes cron output before scaling.",
             "name": "Open Source AI Employees",
@@ -1143,6 +1162,29 @@
             ],
             "firstSeen": "2026-08-25T06:05:47-07:00",
             "lastReviewed": "2026-08-25T06:05:47-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for scanning any internal lead-gen or project-automation code and agent/MCP configuration before deployment, while treating findings as leads rather than confirmed defects.",
+            "next": "Run Rowan offline with `--no-sca` against a disposable checkout of one non-production repo, review High/Critical findings manually, and compare its signal quality with existing security checks before adding it to CI. Keep reports private because they may contain source snippets or secrets.",
+            "name": "Rowan",
+            "category": "AI application security / static analysis",
+            "summary": "MIT-licensed alpha static scanner for source code, AI/ML model files, dependencies, agent tools, prompt files, and MCP configuration. It reports evidence without executing the target project; the current catalog contains 591 rules, and the project warns that findings require review and a clean scan is not proof of security.",
+            "drprepper": "Strong second-pass security check for PrepShip, Client Portal, Warehouse, DJR, and Hermes-related repos because it targets injection, secret leakage, unsafe model loading, risky agent tools, and MCP configuration before deployment.",
+            "toolUrl": "https://github.com/hedgerow-dev/rowan",
+            "postUrl": "https://news.ycombinator.com/item?id=49941569",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20261003_040004"
+                  },
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49941569"
+                  }
+            ],
+            "firstSeen": "2026-10-03T06:07:10-07:00",
+            "lastReviewed": "2026-10-03T06:07:10-07:00"
       },
       {
             "priority": "High",
