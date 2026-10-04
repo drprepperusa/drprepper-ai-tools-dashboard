@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 3, 2026 · 6:07 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 4, 2026 · 6:05 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">391</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">378</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">190</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">394</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">381</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">191</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -3589,6 +3589,25 @@
       },
       {
             "priority": "High",
+            "aluma": "Not a current priority, but the governed connector pattern could support read-only research with explicit approval before CRM or outreach changes.",
+            "next": "Pilot CoreSpeed only with a non-production account and read-only research task. Verify credential custody, per-tool permissions, budget limits, logs, retention, approval behavior, and revocation before connecting Shopify, Trello, Gmail, customer data, or production systems.",
+            "name": "CoreSpeed",
+            "category": "Governed MCP integrations / agent operations",
+            "summary": "Agent integration layer that exposes connected apps, shared or private memory, web research, and other tools through one MCP endpoint. Its published controls include budgets, activity logs, multiple accounts, and a beta approval feature; CoreSpeed holds connected-app credentials.",
+            "drprepper": "Potentially useful for consolidating read-only sales research and internal operations across Sheets, Gmail, HubSpot, Shopify, and Trello, but it should not become a parallel business-rules owner or gain unsupervised write access to orders, inventory, billing, or customer messages.",
+            "toolUrl": "https://corespeed.io/",
+            "postUrl": "https://www.producthunt.com/products/corespeed",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20261004_040046"
+                  }
+            ],
+            "firstSeen": "2026-10-04T06:05:47-07:00",
+            "lastReviewed": "2026-10-04T06:05:47-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Useful pattern for Aluma lead/outreach or proposal automations that need human approval and a signed record before sending messages, changing Sheets/CRM records, or committing spend.",
             "next": "Sandbox with a fake refund/order-change workflow only; verify the exact approval payload, logs, Twilio/WhatsApp costs, failure modes, and audit-readback before connecting any real business system.",
             "name": "Approv",
@@ -6539,6 +6558,25 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Not a current priority; the review-first contradiction workflow could still be reused for any future internal SOP library.",
+            "next": "Use WikiFix as a workflow reference first: run a read-only contradiction and orphan-page audit over a small non-sensitive Confluence space, measure useful findings versus false positives, and require a named owner to approve every correction. Do not auto-rewrite operational policy.",
+            "name": "WikiFix for Confluence",
+            "category": "Knowledge-base quality / SOP governance",
+            "summary": "Confluence app that detects contradictory, duplicate, orphaned, and abandoned knowledge-base content, presents source claims side by side, and proposes reviewable fixes. Published behavior says content writes require approval and can be reverted, with pricing based on changed-page scan credits.",
+            "drprepper": "A practical model for reducing conflicting PrepShip, DJR, Warehouse, and Client Portal procedures before assistants rely on them. The strongest use is surfacing disagreements for an accountable human owner, not letting AI decide operating policy.",
+            "toolUrl": "https://wikifix.ai/",
+            "postUrl": "https://www.producthunt.com/products/wikifix",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20261004_040046"
+                  }
+            ],
+            "firstSeen": "2026-10-04T06:05:47-07:00",
+            "lastReviewed": "2026-10-04T06:05:47-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Could help future Aluma lead-gen or project-intake agents keep scoped conversation history without scattering project context across model providers.",
             "next": "Watch rather than integrate immediately. If piloted, use a non-production workflow first and verify retention controls, export/deletion behavior, provider routing, cost logs, and no autonomous writes to orders, billing, inventory, customer messages, or credentials.",
             "name": "Twigg",
@@ -6641,6 +6679,29 @@
             ],
             "firstSeen": "2026-08-18T14:19:40-07:00",
             "lastReviewed": "2026-08-30T13:17:26-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Not a current priority, though local scene and OCR search could organize approved project media without uploading it to a cloud service.",
+            "next": "Test SCM on a small disposable folder of non-customer warehouse or product media. Confirm local storage paths, disk/model footprint, search quality, deletion behavior, and macOS permissions before indexing any operational screenshots, invoices, labels, customer media, or confidential recordings.",
+            "name": "SCM — Screen Memories",
+            "category": "Local media search / visual knowledge retrieval",
+            "summary": "MIT-licensed macOS app for local semantic search across photos and video scenes, plus OCR and exact dialogue search. The repository states that media and inference remain on the Mac after one-time model downloads; optional local chat answers from extracted evidence with citations.",
+            "drprepper": "Could make approved warehouse walkthroughs, product photography, training clips, screenshots, and recorded demonstrations searchable by scene, visible text, or spoken phrase without a cloud upload. Sensitive operational media still needs a deliberately scoped library and retention policy.",
+            "toolUrl": "https://github.com/allenv0/SCM",
+            "postUrl": "https://news.ycombinator.com/item?id=49952111",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20261004_040046"
+                  },
+                  {
+                        "label": "HN Algolia metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/49952111"
+                  }
+            ],
+            "firstSeen": "2026-10-04T06:05:47-07:00",
+            "lastReviewed": "2026-10-04T06:05:47-07:00"
       },
       {
             "priority": "Medium",

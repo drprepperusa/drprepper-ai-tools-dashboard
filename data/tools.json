@@ -5932,6 +5932,25 @@
     "lastReviewed": "2026-07-02T06:03:51-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Not a current priority, but the governed connector pattern could support read-only research with explicit approval before CRM or outreach changes.",
+    "next": "Pilot CoreSpeed only with a non-production account and read-only research task. Verify credential custody, per-tool permissions, budget limits, logs, retention, approval behavior, and revocation before connecting Shopify, Trello, Gmail, customer data, or production systems.",
+    "name": "CoreSpeed",
+    "category": "Governed MCP integrations / agent operations",
+    "summary": "Agent integration layer that exposes connected apps, shared or private memory, web research, and other tools through one MCP endpoint. Its published controls include budgets, activity logs, multiple accounts, and a beta approval feature; CoreSpeed holds connected-app credentials.",
+    "drprepper": "Potentially useful for consolidating read-only sales research and internal operations across Sheets, Gmail, HubSpot, Shopify, and Trello, but it should not become a parallel business-rules owner or gain unsupervised write access to orders, inventory, billing, or customer messages.",
+    "toolUrl": "https://corespeed.io/",
+    "postUrl": "https://www.producthunt.com/products/corespeed",
+    "extraLinks": [
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20261004_040046"
+      }
+    ],
+    "firstSeen": "2026-10-04T06:05:47-07:00",
+    "lastReviewed": "2026-10-04T06:05:47-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could help ask structured questions over lead lists, project pipeline, contractor outreach, and quote history once data is centralized and access controls are clear.",
     "next": "Evaluate only after data sources, RBAC, and privacy boundaries are defined; use the free test credits or demo with non-sensitive sample data before considering paid plans.",
@@ -6067,6 +6086,25 @@
     ],
     "firstSeen": "2026-06-29T06:04:16-07:00",
     "lastReviewed": "2026-06-29T06:04:16-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Not a current priority; the review-first contradiction workflow could still be reused for any future internal SOP library.",
+    "next": "Use WikiFix as a workflow reference first: run a read-only contradiction and orphan-page audit over a small non-sensitive Confluence space, measure useful findings versus false positives, and require a named owner to approve every correction. Do not auto-rewrite operational policy.",
+    "name": "WikiFix for Confluence",
+    "category": "Knowledge-base quality / SOP governance",
+    "summary": "Confluence app that detects contradictory, duplicate, orphaned, and abandoned knowledge-base content, presents source claims side by side, and proposes reviewable fixes. Published behavior says content writes require approval and can be reverted, with pricing based on changed-page scan credits.",
+    "drprepper": "A practical model for reducing conflicting PrepShip, DJR, Warehouse, and Client Portal procedures before assistants rely on them. The strongest use is surfacing disagreements for an accountable human owner, not letting AI decide operating policy.",
+    "toolUrl": "https://wikifix.ai/",
+    "postUrl": "https://www.producthunt.com/products/wikifix",
+    "extraLinks": [
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20261004_040046"
+      }
+    ],
+    "firstSeen": "2026-10-04T06:05:47-07:00",
+    "lastReviewed": "2026-10-04T06:05:47-07:00"
   },
   {
     "priority": "Medium",
@@ -6360,6 +6398,29 @@
     ],
     "firstSeen": "2026-07-21T06:07:22-07:00",
     "lastReviewed": "2026-07-21T06:07:22-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Not a current priority, though local scene and OCR search could organize approved project media without uploading it to a cloud service.",
+    "next": "Test SCM on a small disposable folder of non-customer warehouse or product media. Confirm local storage paths, disk/model footprint, search quality, deletion behavior, and macOS permissions before indexing any operational screenshots, invoices, labels, customer media, or confidential recordings.",
+    "name": "SCM — Screen Memories",
+    "category": "Local media search / visual knowledge retrieval",
+    "summary": "MIT-licensed macOS app for local semantic search across photos and video scenes, plus OCR and exact dialogue search. The repository states that media and inference remain on the Mac after one-time model downloads; optional local chat answers from extracted evidence with citations.",
+    "drprepper": "Could make approved warehouse walkthroughs, product photography, training clips, screenshots, and recorded demonstrations searchable by scene, visible text, or spoken phrase without a cloud upload. Sensitive operational media still needs a deliberately scoped library and retention policy.",
+    "toolUrl": "https://github.com/allenv0/SCM",
+    "postUrl": "https://news.ycombinator.com/item?id=49952111",
+    "extraLinks": [
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20261004_040046"
+      },
+      {
+        "label": "HN Algolia metadata",
+        "url": "https://hn.algolia.com/api/v1/items/49952111"
+      }
+    ],
+    "firstSeen": "2026-10-04T06:05:47-07:00",
+    "lastReviewed": "2026-10-04T06:05:47-07:00"
   },
   {
     "priority": "Medium",
