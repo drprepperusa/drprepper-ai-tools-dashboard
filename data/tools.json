@@ -154,6 +154,44 @@
     "lastReviewed": "2026-09-02T06:07:42-07:00"
   },
   {
+    "priority": "Lead",
+    "aluma": "No direct Aluma fit beyond the reusable pattern of treating funded expansion and a specific production ramp as high-intent sales timing.",
+    "next": "Qualify Sensori for a Southern California overflow proposal tied to its 160,000-can run: pallet receiving, case and parcel fulfillment, variety-pack assembly, creator/event kits, retail replenishment, lot/expiry controls, and daily inventory reporting. Confirm warehouse location, product handling requirements, and current 3PL before outreach.",
+    "name": "Sensori 160,000-can production-run signal",
+    "category": "3PL sales signal / beverage expansion",
+    "summary": "BevNET reports functional non-alcoholic beverage brand Sensori closed a nearly $1 million pre-seed round after five sold-out production runs and more than 7,000 fulfilled orders. It is preparing a 160,000-can run, variety-pack launch, retail expansion, and fall activations.",
+    "drprepper": "Direct DR PREPPER USA prospect signal: the combination of fresh capital, a defined production run, TikTok Shop growth, creator activations, DTC orders, and retail expansion creates concrete demand for receiving, storage, case pick, kitting, replenishment, and Q4 overflow.",
+    "toolUrl": "https://drinksensori.com/",
+    "postUrl": "https://bevnet.com/pr/2026/10/05/sensori-closes-oversubscribed-preseed-round-of-nearly-1m-funded-by-creators-community-and-pro-athletes",
+    "extraLinks": [
+      {
+        "label": "3PL Sales source session",
+        "url": "@session:default/cron_3c304a44bbfa_20261005_231533"
+      }
+    ],
+    "firstSeen": "2026-10-06T06:03:28-07:00",
+    "lastReviewed": "2026-10-06T06:04:41-07:00"
+  },
+  {
+    "priority": "Lead",
+    "aluma": "No direct Aluma operations fit beyond using funded U.S.-entry announcements as time-sensitive prospecting triggers.",
+    "next": "Monitor GLORIAH's U.S. distributor and Amazon launch timing, then qualify whether it needs West Coast import receiving, lot-aware storage, DTC/Amazon prep, retailer-ready cartons, and returns quarantine. Do not make regulatory or medical-handling claims without verified requirements.",
+    "name": "GLORIAH U.S. market-entry signal",
+    "category": "3PL sales signal / health and beauty expansion",
+    "summary": "Scottish Enterprise reports women's intimate-health brand GLORIAH raised £600,000 for UK retail growth, regulatory work, marketing, and U.S. market entry. The company has attracted U.S. distributor interest and is preparing an Amazon US launch.",
+    "drprepper": "Direct prospecting signal for DR PREPPER USA because an imported health-and-beauty brand entering Amazon and U.S. distribution may need receiving, traceable storage, compliant pick/pack, marketplace prep, retailer replenishment, and controlled returns handling.",
+    "toolUrl": "https://hellogloriah.com/",
+    "postUrl": "https://www.scottish-enterprise-mediacentre.com/news/female-focused-brand-gloriah-hits-gbp-600-000-funding-target-to-support-uk-and-us-growth",
+    "extraLinks": [
+      {
+        "label": "3PL Sales source session",
+        "url": "@session:default/cron_3c304a44bbfa_20261005_231533"
+      }
+    ],
+    "firstSeen": "2026-10-06T06:03:28-07:00",
+    "lastReviewed": "2026-10-06T06:04:41-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "No direct Aluma fit beyond the pattern of compliance-triggered operations demand.",
     "next": "Create a compliance-risk prospect lane for TikTok Shop sellers importing regulated/inspection-prone products; position DR Prepper as overflow, prep, and paperwork-aware fulfillment support while avoiding legal/compliance advice claims.",
@@ -165,6 +203,48 @@
     "postUrl": "https://ppc.land/tiktok-shop-sellers-face-shipment-seizure-risk-under-new-cpsc-filing-rule/",
     "firstSeen": "2026-07-26T06:17:57-07:00",
     "lastReviewed": "2026-07-26T06:17:57-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "No direct Aluma fit beyond the general lesson that measurable service-level rules create stronger sales and operations requirements than vague promises.",
+    "next": "Turn the policy into a TikTok Shop prospect checklist and operating SLA: inventory accuracy, two-business-day carrier scan, five-day tracking/collection deadline, six-day delivery target, exception escalation, and seller-fault cancellation monitoring. Confirm each seller's current Seller Center deadlines before making commitments.",
+    "name": "TikTok Shop 2026 fulfillment-SLA signal",
+    "category": "3PL sales signal / marketplace fulfillment compliance",
+    "summary": "TikTok Shop's official U.S. Fulfillment Policy says regular orders must reach In Transit within two business days, can auto-cancel if tracking is not added within five business days, must be delivered within six business days, and require seller-fault cancellation rate at or below 2.5%.",
+    "drprepper": "Strong DR PREPPER USA sales and process signal: accurate stock, fast carrier scans, documented exception handling, and cancellation prevention can be sold as measurable marketplace-revenue protection instead of generic warehouse service.",
+    "toolUrl": "https://seller-us.tiktok.com/university/essay?knowledge_id=3995852763301633",
+    "postUrl": "https://seller-us.tiktok.com/university/essay?knowledge_id=3995852763301633",
+    "extraLinks": [
+      {
+        "label": "3PL Sales source session",
+        "url": "@session:default/cron_3c304a44bbfa_20261005_231533"
+      }
+    ],
+    "firstSeen": "2026-10-06T06:03:28-07:00",
+    "lastReviewed": "2026-10-06T06:04:41-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "No direct Aluma fit, but the same peak-fee comparison method can be reused whenever a dominant platform or carrier changes project logistics costs.",
+    "next": "Build a simple landed-cost comparison for representative DR PREPPER prospect baskets before October 15: Amazon MCF peak fulfillment plus the 3.5% surcharge versus DR PREPPER pick/pack, storage, packaging, and postage. Use exact SKU dimensions, weights, zones, and volumes rather than a generic cheaper-than-Amazon claim.",
+    "name": "Amazon MCF 2026 peak-fee signal",
+    "category": "3PL sales signal / marketplace fulfillment costs",
+    "summary": "Amazon's official 2026 MCF rate card says peak fulfillment fees apply October 15, 2026 through January 14, 2027, with a 3.5% fuel-and-logistics surcharge layered onto U.S. MCF fulfillment fees.",
+    "drprepper": "Direct Q4 sales-enablement signal: merchants need an apples-to-apples cost model before peak fees hit, and DR PREPPER can compete on channel-neutral inventory, direct operator support, custom packaging, wholesale handling, and local overflow rather than postage alone.",
+    "toolUrl": "https://supplychain.amazon.com/mcf/pricing",
+    "postUrl": "https://supplychain.amazon.com/docs/2026-peak-card",
+    "extraLinks": [
+      {
+        "label": "Amazon peak-readiness guide",
+        "url": "https://supplychain.amazon.com/blog/mcf-peak-season-readiness"
+      },
+      {
+        "label": "3PL Sales source session",
+        "url": "@session:default/cron_3c304a44bbfa_20261005_231533"
+      }
+    ],
+    "firstSeen": "2026-10-06T06:03:28-07:00",
+    "lastReviewed": "2026-10-06T06:04:41-07:00"
   },
   {
     "priority": "Lead",
@@ -2541,6 +2621,25 @@
     ],
     "firstSeen": "2026-10-02T06:10:15-07:00",
     "lastReviewed": "2026-10-02T06:11:32-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Could consolidate Search Console, ads, site analytics, and cloud-cost issues for Aluma into one ranked operator brief, but its recommendations should remain advisory until the underlying data and economics are checked.",
+    "next": "Use the 7-day trial on one business with read-only connectors only. Compare its top five recommendations against GA4, Search Console, ad-platform, Shopify, and cost-source evidence; keep ad, site, pricing, and code changes human-approved before deciding whether the $99/month starting price saves enough operator time.",
+    "name": "DailyHelm",
+    "category": "AI ecommerce analytics / daily revenue review",
+    "summary": "AI business reviewer that checks analytics, ads, SEO, store performance, site/code, and costs overnight, then produces a prioritized morning list ranked by likely revenue impact. The verified homepage describes read-only OAuth connectors for services including GA4, Google Ads, Search Console, Shopify, GitHub, and GCP billing; pricing starts at $99/month after a 7-day trial.",
+    "drprepper": "Strong fit for KF Goodies, DR PREPPER, and ecommerce operations where the bottleneck is turning many dashboards into a short daily fix list. It could surface wasted ad spend, conversion drops, SEO losses, store issues, and cloud-cost anomalies without granting autonomous write access.",
+    "toolUrl": "https://dailyhelm.com/",
+    "postUrl": "https://www.producthunt.com/products/dailyhelm",
+    "extraLinks": [
+      {
+        "label": "Daily AI Intel source session",
+        "url": "@session:default/cron_5ae0b334a2d4_20261006_040033"
+      }
+    ],
+    "firstSeen": "2026-10-06T06:03:28-07:00",
+    "lastReviewed": "2026-10-06T06:04:41-07:00"
   },
   {
     "priority": "Watch",
