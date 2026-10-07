@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 6, 2026 · 6:04 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 7, 2026 · 6:04 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">399</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">386</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">194</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">405</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">392</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">196</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -780,6 +780,25 @@
             ],
             "firstSeen": "2026-09-19T06:04:16-07:00",
             "lastReviewed": "2026-09-19T06:04:16-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for finding unnecessary model calls and repeated orchestration in scheduled contractor, project, and lead-generation agents before those workflows consume excessive tokens.",
+            "next": "Export one sanitized AUDR-compatible trace from a high-token recurring job, run KORA Doctor read-only, and compare its waste findings against Hermes session evidence before changing model or workflow routing.",
+            "name": "KORA Doctor",
+            "category": "AI agent cost optimization / trace audit",
+            "summary": "Open-source CLI that analyzes AUDR JSON/JSONL traces for execution waste across tool usage, context growth, deterministic work, repeated inference, orchestration, and model choice. Its methodology labels observed versus inferred findings and avoids stacking overlapping savings estimates.",
+            "drprepper": "Strong fit for Hermes cron-cost cleanup because current recurring work can consume large token volumes through repeated reads, model calls, or broad scans. It can provide a deterministic review layer before changing production automations.",
+            "toolUrl": "https://github.com/Krako-Labs/kora-doctor",
+            "postUrl": "https://news.ycombinator.com/item?id=49988380",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20261007_040003"
+                  }
+            ],
+            "firstSeen": "2026-10-07T06:03:39-07:00",
+            "lastReviewed": "2026-10-07T06:04:59-07:00"
       },
       {
             "priority": "High",
@@ -2694,6 +2713,25 @@
       },
       {
             "priority": "High",
+            "aluma": "Useful for checking whether contractor-facing landing pages and lead forms are navigable by web agents without exposing private project or CRM data.",
+            "next": "Review the published readiness scores and transcripts, then run a read-only test against DR Prepper, Client Portal public surfaces, and selected DJR pages. Turn bot-wall, form, navigation, and structured-data failures into specific accessibility or site-architecture tasks.",
+            "name": "Agentability",
+            "category": "AI web-agent readiness / public-site QA",
+            "summary": "Open weekly experiment where a real AI agent attempts ten ordinary web errands, publishes every transcript, and scores 113 sites for AI-agent readiness. The verified site reported eight of ten errands completed and ten bot-wall encounters in its current run.",
+            "drprepper": "Useful for testing whether DR Prepper, DJR, KF Goodies, and client-facing sites can be discovered and used by AI shopping or research agents, with concrete transcripts instead of vague GEO claims.",
+            "toolUrl": "https://agentability.org/",
+            "postUrl": "https://news.ycombinator.com/item?id=49984736",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20261007_040003"
+                  }
+            ],
+            "firstSeen": "2026-10-07T06:03:39-07:00",
+            "lastReviewed": "2026-10-07T06:04:59-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Useful for Aluma lead-gen and construction-project research if scraper/source decisions, qualification rules, and follow-up notes need searchable continuity across agents while keeping sensitive prospect data controlled.",
             "next": "Pilot self-hosted with non-sensitive agent logs first. Verify redaction, retention, source-available license limits, export/delete behavior, and whether leaked-key checks can run locally before indexing customer, billing, or credential-adjacent history.",
             "name": "chat-recall",
@@ -4441,6 +4479,25 @@
       },
       {
             "priority": "Lead",
+            "aluma": "No direct Aluma fit beyond using local funding and retail-growth news as a high-intent prospecting trigger.",
+            "next": "Prioritize local qualification because Arey is Los Angeles-based. Offer a Gardena fulfillment review for subscription orders, DTC parcels, Credo/Erewhon replenishment, beauty-product lot controls, influencer kits, and larger-retail readiness; confirm incumbent operations and product-handling requirements first.",
+            "name": "Arey Los Angeles Series A signal",
+            "category": "3PL sales signal / beauty subscriptions and retail",
+            "summary": "Beauty Independent reports Los Angeles hair-longevity brand Arey raised a Series A led by Unilever Ventures. The brand plans R&D and distribution growth, is carried by Credo and Erewhon, and generates a significant share of online business from subscriptions.",
+            "drprepper": "Direct local prospect signal for DR PREPPER USA: an LA-based beauty brand preparing for larger retail partnerships may need nearby DTC and subscription fulfillment, retailer replenishment, lot-aware storage, kits, samples, and overflow capacity.",
+            "toolUrl": "https://arey.com/",
+            "postUrl": "https://www.beautyindependent.com/unilever-ventures-backs-anti-gray-arey-hair-longevity-vision-series-a/",
+            "extraLinks": [
+                  {
+                        "label": "3PL Sales source session",
+                        "url": "@session:default/cron_3c304a44bbfa_20261006_231934"
+                  }
+            ],
+            "firstSeen": "2026-10-07T06:03:39-07:00",
+            "lastReviewed": "2026-10-07T06:04:59-07:00"
+      },
+      {
+            "priority": "Lead",
             "aluma": "No direct Aluma fit beyond the general pattern: funding/news events can reveal companies about to scale operations and need logistics or supplier support.",
             "next": "Add PATH-style beverage and CPG funding/news alerts to the 3PL prospecting lane. Start with reusable/shelf-stable beverage brands in California or the West Coast, then check DTC/Amazon/TikTok presence before outreach.",
             "name": "PATH reusable bottled-water funding signal",
@@ -4489,6 +4546,25 @@
             ],
             "firstSeen": "2026-10-06T06:03:28-07:00",
             "lastReviewed": "2026-10-06T06:04:41-07:00"
+      },
+      {
+            "priority": "Lead",
+            "aluma": "No direct Aluma operations fit beyond the reusable pattern of treating subscription growth and national retail expansion as a high-intent logistics signal.",
+            "next": "Qualify Bird&Be for subscription fulfillment, lot/expiry control, fertility-test and supplement kitting, Ulta replenishment, returns quarantine, and West Coast overflow. Confirm U.S. inventory location, regulatory handling requirements, parcel volume, and current 3PL before outreach.",
+            "name": "Bird&Be subscription and Ulta expansion signal",
+            "category": "3PL sales signal / health and wellness subscriptions",
+            "summary": "Beauty-industry reporting says Bird&Be raised $13 million after reaching eight-figure revenue and nearly 100% year-over-year growth. About 85% of sales are DTC, close to 75% of DTC sales are subscriptions, and its Ulta footprint expanded to nearly 1,000 locations.",
+            "drprepper": "Direct DR PREPPER USA prospect signal: recurring supplement orders, at-home tests, national retail replenishment, fast growth, and healthcare referrals create concrete needs for accurate subscriptions, traceable inventory, kitting, retailer cartons, and controlled returns.",
+            "toolUrl": "https://birdandbe.com/",
+            "postUrl": "https://www.beautymatter.com/articles/fertility-brand-bird-be-raises-13-million",
+            "extraLinks": [
+                  {
+                        "label": "3PL Sales source session",
+                        "url": "@session:default/cron_3c304a44bbfa_20261006_231934"
+                  }
+            ],
+            "firstSeen": "2026-10-07T06:03:39-07:00",
+            "lastReviewed": "2026-10-07T06:04:59-07:00"
       },
       {
             "priority": "Lead",
@@ -4559,6 +4635,25 @@
             ],
             "firstSeen": "2026-09-14T06:06:51-07:00",
             "lastReviewed": "2026-09-14T06:06:51-07:00"
+      },
+      {
+            "priority": "Lead",
+            "aluma": "No direct Aluma fit beyond using funding and retail-expansion announcements as time-sensitive prospecting triggers.",
+            "next": "Qualify SuperMush for a Southern California omnichannel proposal covering lot-aware receiving, Amazon/DTC fulfillment, Target and Sprouts replenishment, bundles, returns, and Q4 overflow. Confirm current warehouse footprint, handling rules, order volume, and incumbent 3PL before outreach.",
+            "name": "SuperMush retail-expansion funding signal",
+            "category": "3PL sales signal / supplements and wellness",
+            "summary": "ETRetail reports functional-wellness brand SuperMush raised a $3 million Series A after expanding into more than 2,000 U.S. stores, including over 1,000 Target locations and Sprouts, while also selling DTC and through Amazon.",
+            "drprepper": "Direct DR PREPPER USA prospect signal: fresh capital plus mass retail, DTC, Amazon, and an expanding gummy/supplement catalog create needs for receiving, lot-aware storage, marketplace prep, retail replenishment, kitting, and peak overflow.",
+            "toolUrl": "https://supermush.com/",
+            "postUrl": "https://retail.economictimes.indiatimes.com/news/health-and-beauty/ndude-labs-invests-usd-3-million-in-supermush-in-series-a-funding-round/134726410",
+            "extraLinks": [
+                  {
+                        "label": "3PL Sales source session",
+                        "url": "@session:default/cron_3c304a44bbfa_20261006_231934"
+                  }
+            ],
+            "firstSeen": "2026-10-07T06:03:39-07:00",
+            "lastReviewed": "2026-10-07T06:04:59-07:00"
       },
       {
             "priority": "Lead",
@@ -7923,6 +8018,25 @@
             "postUrl": "https://news.ycombinator.com/item?id=48736812",
             "firstSeen": "2026-07-04T06:04:02-07:00",
             "lastReviewed": "2026-07-04T06:04:02-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Could support visible cross-device contractor and project research, but it overlaps with Hermes and would need strict isolation from CRM, outreach, and confidential project data.",
+            "next": "Evaluate only if Hermes lacks a required mobile or desktop workflow. Start with a non-sensitive read-only task; verify self-hosting, model routing, device permissions, memory retention, logs, and approval prompts before connecting business accounts.",
+            "name": "nanoMuse",
+            "category": "AI personal agent / cross-device automation",
+            "summary": "GPL-3.0-or-later open-source personal agent for phone, desktop, and web. Its repo describes one persistent agent that can operate device interfaces, continue work after the app closes, retain context, and ask before irreversible actions.",
+            "drprepper": "Worth watching for mobile-to-desktop DR Prepper research or operator workflows, but it is not an immediate replacement for Hermes and should not receive order, inventory, billing, customer-message, or production access without least-privilege controls.",
+            "toolUrl": "https://github.com/nano-muse/nanoMuse",
+            "postUrl": "https://news.ycombinator.com/item?id=49987765",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20261007_040003"
+                  }
+            ],
+            "firstSeen": "2026-10-07T06:03:39-07:00",
+            "lastReviewed": "2026-10-07T06:04:59-07:00"
       },
       {
             "priority": "Watch",
