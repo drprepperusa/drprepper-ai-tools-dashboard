@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 7, 2026 · 6:04 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 8, 2026 · 6:04 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">405</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">392</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">196</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">411</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">398</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">197</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -3884,6 +3884,29 @@
       },
       {
             "priority": "High",
+            "aluma": "Could supervise long-running lead and project research from the field, with outreach and tracker writes still held behind explicit approvals.",
+            "next": "Test in a disposable local repo with one Codex task. Verify release signing, relay/self-host options, transcript storage, approval semantics, ACP compatibility, and mobile notification behavior before connecting production repos, credentials, or business systems.",
+            "name": "Codync",
+            "category": "Local AI agent control / phone approvals",
+            "summary": "MIT-licensed control plane for running Claude Code, Codex, Cursor, Gemini, and 40-plus ACP agents as persistent bots on a local Mac, Windows, or Linux host. It supports phone/desktop chat, approval cards, schedules, memory, and end-to-end encrypted remote access.",
+            "drprepper": "Strong fit for supervising long-running Hermes and coding-agent work from a phone while keeping repositories, transcripts, and agent state on DJ's own computer and surfacing allow-once or deny decisions.",
+            "toolUrl": "https://github.com/leepokai/Codync",
+            "postUrl": "https://www.producthunt.com/products/codync",
+            "extraLinks": [
+                  {
+                        "label": "Official site",
+                        "url": "https://www.codync.dev"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20261008_040050"
+                  }
+            ],
+            "firstSeen": "2026-10-08T06:04:11-07:00",
+            "lastReviewed": "2026-10-08T06:04:11-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Useful for Aluma lead-gen and project-research agents that need many public-data and workflow tools, as long as tool policies and approval gates remain explicit.",
             "next": "Pilot locally with non-sensitive MCP servers first. Verify token savings, keychain behavior, client compatibility, tool-quarantine behavior, and human approval for destructive calls before connecting business systems.",
             "name": "Toolport",
@@ -4479,6 +4502,29 @@
       },
       {
             "priority": "Lead",
+            "aluma": "No direct Aluma operations fit beyond using founder marketplaces and trade events as concentrated prospecting surfaces.",
+            "next": "Use the L-Beauty directory and Velocity event roster to build a permission-aware prospect list. Prioritize Southern California brands with DTC growth, many SKUs, creator seeding, or retailer expansion; verify each brand's current fulfillment setup before outreach.",
+            "name": "L-Beauty founder-brand marketplace signal",
+            "category": "3PL sales signal / beauty marketplace",
+            "summary": "Business of Fashion reports the Latinas in Beauty nonprofit launched L-Beauty with 30 Latin-founded beauty brands, plans to reach 40 by December, and currently leaves participating brands to fulfill and ship their own orders.",
+            "drprepper": "Strong concentrated lead-source signal: self-fulfilling beauty founders entering a shared marketplace may need founder-friendly storage, Shopify fulfillment, influencer kitting, retailer cartons, lot controls, and a local Los Angeles overflow partner.",
+            "toolUrl": "https://latinasinbeauty.org/",
+            "postUrl": "https://www.businessoffashion.com/articles/beauty/latinas-in-beauty-marketplace/",
+            "extraLinks": [
+                  {
+                        "label": "Velocity marketplace source",
+                        "url": "https://velocityxp.com/velocity-2026/summits/"
+                  },
+                  {
+                        "label": "3PL Sales source session",
+                        "url": "@session:default/cron_3c304a44bbfa_20261007_232250"
+                  }
+            ],
+            "firstSeen": "2026-10-08T06:04:11-07:00",
+            "lastReviewed": "2026-10-08T06:04:11-07:00"
+      },
+      {
+            "priority": "Lead",
             "aluma": "No direct Aluma fit beyond using local funding and retail-growth news as a high-intent prospecting trigger.",
             "next": "Prioritize local qualification because Arey is Los Angeles-based. Offer a Gardena fulfillment review for subscription orders, DTC parcels, Credo/Erewhon replenishment, beauty-product lot controls, influencer kits, and larger-retail readiness; confirm incumbent operations and product-handling requirements first.",
             "name": "Arey Los Angeles Series A signal",
@@ -4527,6 +4573,25 @@
             ],
             "firstSeen": "2026-10-06T06:03:28-07:00",
             "lastReviewed": "2026-10-06T06:04:41-07:00"
+      },
+      {
+            "priority": "Lead",
+            "aluma": "No direct Aluma operations fit beyond using launch and expansion announcements as time-sensitive prospecting triggers.",
+            "next": "Qualify GoKafé with a launch-specific Gardena proposal covering pallet receiving, case and DTC fulfillment, store replenishment, sample kits, lot controls, and overflow. Confirm current warehouse, order volume, carton configuration, and incumbent 3PL before outreach.",
+            "name": "GoKafé Los Angeles retail-and-DTC launch signal",
+            "category": "3PL sales signal / beverage launch",
+            "summary": "PR Newswire reports GoKafé launched in 150 Los Angeles-area retail doors plus DTC, has two more flavors planned for early 2027, and is in discussions with national retailers.",
+            "drprepper": "Direct local DR PREPPER USA prospect signal: a new beverage brand balancing retail, DTC, future flavors, samples, and national expansion may need reserve inventory, case fulfillment, store replenishment, influencer kits, and overflow capacity near Los Angeles.",
+            "toolUrl": "https://drinkgokafe.com/",
+            "postUrl": "https://www.prnewswire.com/news-releases/gokafe-launches-in-los-angeles-bringing-sparkling-coffee-and-real-fruit-together-in-one-can-302900650.html",
+            "extraLinks": [
+                  {
+                        "label": "3PL Sales source session",
+                        "url": "@session:default/cron_3c304a44bbfa_20261007_232250"
+                  }
+            ],
+            "firstSeen": "2026-10-08T06:04:11-07:00",
+            "lastReviewed": "2026-10-08T06:04:11-07:00"
       },
       {
             "priority": "Lead",
@@ -4635,6 +4700,25 @@
             ],
             "firstSeen": "2026-09-14T06:06:51-07:00",
             "lastReviewed": "2026-09-14T06:06:51-07:00"
+      },
+      {
+            "priority": "Lead",
+            "aluma": "No direct Aluma operations fit beyond the reusable pattern of treating rapid SKU and channel expansion as a high-intent service signal.",
+            "next": "Qualify StripIt for a multichannel workflow covering lot/expiry controls, channel allocations, subscriptions, Amazon/Walmart/TikTok prep, creator kits, and returns quarantine. Confirm regulatory handling, current 3PL, volumes, and inventory location before outreach.",
+            "name": "StripIt multichannel supplement expansion signal",
+            "category": "3PL sales signal / supplements and marketplace growth",
+            "summary": "Fitt Insider reports Los Angeles supplement brand StripIt expanded from two to five dissolvable-strip SKUs less than three months after launch and now sells through its own site, Amazon, Walmart.com, and TikTok Shop.",
+            "drprepper": "Direct local prospect signal: fast SKU growth across four channels creates needs for lot-aware receiving, one inventory view, marketplace prep, subscriptions, creator seeding, replenishment, and controlled returns.",
+            "toolUrl": "https://getstripit.com/",
+            "postUrl": "https://insider.fitt.co/press-release/stripit-expands-dissolvable-supplement-line-with-three-new-products/",
+            "extraLinks": [
+                  {
+                        "label": "3PL Sales source session",
+                        "url": "@session:default/cron_3c304a44bbfa_20261007_232250"
+                  }
+            ],
+            "firstSeen": "2026-10-08T06:04:11-07:00",
+            "lastReviewed": "2026-10-08T06:04:11-07:00"
       },
       {
             "priority": "Lead",
@@ -6419,6 +6503,25 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could prepare proposal, project, and rental-marketing visuals without uploading jobsite images to a separate cloud editor, subject to privacy verification.",
+            "next": "Verification needed: the official HTTPS endpoint had a TLS failure during this run, although the Product Hunt page and HTTP site were reachable. Re-check HTTPS/privacy claims, then test with public sample images and compare PSD fidelity, export quality, and browser performance before using business assets.",
+            "name": "ImageFlow",
+            "category": "Browser image editing / local AI creative workflow",
+            "summary": "Browser-based image editor presented on Product Hunt with layers, PSD support, and on-device AI selection. The launch positions it as a free, local-first alternative for Photoshop-style editing.",
+            "drprepper": "Useful for quick KF Goodies and DR PREPPER product-image cleanup, marketplace crops, background selections, and campaign assets when files should remain on the operator's device.",
+            "toolUrl": "https://imageflow.dev",
+            "postUrl": "https://www.producthunt.com/products/imageflow-6",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20261008_040050"
+                  }
+            ],
+            "firstSeen": "2026-10-08T06:04:11-07:00",
+            "lastReviewed": "2026-10-08T06:04:11-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Could support future estimator/vendor messaging consoles or lead-reply dashboards if messaging channels are backend-owned and sends stay approval-gated.",
             "next": "Prototype only the UI shell first. Keep Apple Business Messages/SMS/email transport, consent, audit logs, and send permissions in backend-owned services; never let the component library become the messaging source of truth.",
             "name": "Chatscope Chat UI Kit React",
@@ -7944,6 +8047,25 @@
             ],
             "firstSeen": "2026-08-21T04:01:29-07:00",
             "lastReviewed": "2026-08-21T06:05:14-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Could prepare project and prospect follow-up briefs from approved public or internal sources, but should not autonomously send outreach or update project truth.",
+            "next": "Pilot with one non-sensitive read-only workflow. Verify local/cloud processing, mailbox and calendar permissions, logs, data retention, and require human approval before any send, CRM update, order action, or customer commitment.",
+            "name": "IrisGo for Solopreneurs",
+            "category": "AI desktop workflow automation / executive assistant",
+            "summary": "Desktop automation assistant that learns a demonstrated workflow and can handle recurring admin such as inbox triage, daily briefs, and to-do follow-up. The verified official page lists a free beta for Windows and Mac.",
+            "drprepper": "Potential fit for repetitive DR PREPPER, KF Goodies, and sales back-office work such as sorting non-sensitive inbox items, assembling daily briefs, and tracking follow-ups without adding another manual queue.",
+            "toolUrl": "https://irisgo.ai/solopreneur",
+            "postUrl": "https://www.producthunt.com/products/irisgo-public-beta?launch=irisgo-for-solopreneurs",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20261008_040050"
+                  }
+            ],
+            "firstSeen": "2026-10-08T06:04:11-07:00",
+            "lastReviewed": "2026-10-08T06:04:11-07:00"
       },
       {
             "priority": "Watch",
