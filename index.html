@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 8, 2026 · 6:04 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 9, 2026 · 6:02 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,8 +276,8 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">411</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">398</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">414</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">401</div><div class="label">categories</div></div>
             <div class="metric"><div class="num">197</div><div class="label">high priority now</div></div>
           </div>
         </section>
@@ -6126,6 +6126,25 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could produce short visual explainers for formwork, shoring, rental workflows, and project case studies, but jobsite accuracy and brand review matter more than viral styling.",
+            "next": "Run one non-sensitive 20–30 second test from an approved DR PREPPER script and compare the finished output, captions, product accuracy, and cost against the existing video workflow before scaling. Keep claims, brand assets, and publishing human-approved.",
+            "name": "Spira Maxima 1.0",
+            "category": "AI video / short-form content production",
+            "summary": "Script-to-finished-short-video model that can assemble a presenter, B-roll, captions, motion graphics, typography, and music in one generation. The verified launch page supports videos up to 90 seconds and lists a launch rate of $0.075 per finished second, then $0.15 per second.",
+            "drprepper": "Useful for DR PREPPER service explainers, 3PL lead magnets, warehouse-process education, and KF Goodies product content when a full editing workflow would be too slow.",
+            "toolUrl": "https://spira.ai/spira-maxima",
+            "postUrl": "https://spira.ai/spira-maxima",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20261009_040051"
+                  }
+            ],
+            "firstSeen": "2026-10-09T06:02:45-07:00",
+            "lastReviewed": "2026-10-09T06:02:45-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Possible fit for quick social/video ad concepts around concrete services or project explainers, but only with public/non-sensitive copy and human creative review.",
             "next": "Test with one KF Goodies or DR Prepper product/service script using public assets only. Verify pricing, commercial rights, brand safety, captions, and output quality before using in ads or uploading customer/product-sensitive material.",
             "name": "CastTake AI UGC Video Generator",
@@ -7947,6 +7966,29 @@
       },
       {
             "priority": "Watch",
+            "aluma": "Useful mainly as a secondary signal when selecting software for scraper, lead-enrichment, or project-research agents; ratings should not override a controlled test on Aluma's actual workflow.",
+            "next": "Use read-only review lookup for one tool evaluation, then compare the reports against official docs and a local trial. Do not install automatic review submission until the payload, privacy filters, authentication flow, and no-code/no-prompt guarantees are independently checked.",
+            "name": "Agent.reviews",
+            "category": "AI agent tool reviews / vendor selection",
+            "summary": "Review directory where coding agents report usefulness, ease, reliability, connection method, task, and outcome after real jobs. Reviews are free to read and submit, but they are agent-declared experience rather than independently verified performance evidence.",
+            "drprepper": "Potentially useful when comparing MCP servers, APIs, hosting tools, and coding-agent integrations for Hermes, PrepShip, Client Portal, DJR, and dashboard automation, especially for surfacing repeated setup or reliability problems before adoption.",
+            "toolUrl": "https://agent.reviews/",
+            "postUrl": "https://news.ycombinator.com/item?id=49995539",
+            "extraLinks": [
+                  {
+                        "label": "How reviews work",
+                        "url": "https://agent.reviews/how-it-works"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20261009_040051"
+                  }
+            ],
+            "firstSeen": "2026-10-09T06:02:45-07:00",
+            "lastReviewed": "2026-10-09T06:02:45-07:00"
+      },
+      {
+            "priority": "Watch",
             "aluma": "Could help run isolated Aluma scraper/dashboard coding tasks remotely, but only after repository permissions, secret handling, network access, logs, and branch protections are proven.",
             "next": "Do not connect business repos yet. Verify official site/pricing, GitHub app scopes, data retention, environment/secret isolation, logs, branch/PR workflow, and whether Claude/Codex/Opencode sessions remain reproducible before testing on a disposable repo.",
             "name": "Epho",
@@ -8499,6 +8541,29 @@
             ],
             "firstSeen": "2026-07-14T06:20:12-07:00",
             "lastReviewed": "2026-07-14T06:20:12-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Possible future fit for consolidating model access in Aluma research and lead-generation workflows, but the current OpenAI-only operating policy means this is evaluation material rather than an active routing recommendation.",
+            "next": "Do not replace the current OpenAI-only Hermes routing. If multi-provider requirements emerge, test FastRouter in a synthetic non-production workload and verify logging, retention, key custody, budget caps, failover semantics, data residency, and total cost before any business data is routed through it.",
+            "name": "FastRouter.ai",
+            "category": "LLM gateway / model routing governance",
+            "summary": "OpenAI-compatible gateway for 200+ models with automatic routing, failover, retries, budget and rate limits, logs, tracing, guardrails, evaluations, and BYOK support. Official pricing lists a free Starter tier plus model usage, Pro at $199/month, Business at $799/month, and enterprise self-hosting.",
+            "drprepper": "Relevant as a future control-plane option if PrepShip, DR PREPPER, or internal agents need provider failover, cost attribution, and centralized policies across multiple model APIs; it is not needed for the current OpenAI-only setup.",
+            "toolUrl": "https://fastrouter.ai/",
+            "postUrl": "https://fastrouter.ai/pricing",
+            "extraLinks": [
+                  {
+                        "label": "Documentation",
+                        "url": "https://docs.fastrouter.ai/"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20261009_040051"
+                  }
+            ],
+            "firstSeen": "2026-10-09T06:02:45-07:00",
+            "lastReviewed": "2026-10-09T06:02:45-07:00"
       },
       {
             "priority": "Watch",
