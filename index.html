@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 9, 2026 · 6:02 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 10, 2026 · 6:03 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">414</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">401</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">197</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">417</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">404</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">199</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -906,6 +906,29 @@
             ],
             "firstSeen": "2026-08-12T06:06:25-07:00",
             "lastReviewed": "2026-08-12T06:06:25-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Useful for preserving cited estimating assumptions, project-research decisions, and lead-qualification rules across coding and research agents without trapping them in one vendor.",
+            "next": "Pilot in a non-sensitive repo with a small set of architecture or workflow decisions. Verify content-hash behavior, merge/conflict handling, MCP permissions, backup/restore, and never treat memory notes as a replacement for current repo, database, or live operational truth.",
+            "name": "Rutter",
+            "category": "AI agent memory / cited decision records",
+            "summary": "MIT-licensed, self-hosted MCP memory tool that stores dated decision records in a user-owned Markdown folder and hashes the notes cited by each record. It is designed to share auditable decision context across Codex, Claude Code, Grok, and other MCP clients.",
+            "drprepper": "Strong fit for PrepShip, Client Portal, DJR, dashboard, and internal automation work where architecture decisions and operational rules need durable citations across agent sessions while live systems remain authoritative.",
+            "toolUrl": "https://ruttermemory.com/",
+            "postUrl": "https://news.ycombinator.com/item?id=50029798",
+            "extraLinks": [
+                  {
+                        "label": "GitHub repo",
+                        "url": "https://github.com/shinytoyrobots/rutter"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20261010_040051"
+                  }
+            ],
+            "firstSeen": "2026-10-10T06:03:03-07:00",
+            "lastReviewed": "2026-10-10T06:03:03-07:00"
       },
       {
             "priority": "High",
@@ -4318,6 +4341,29 @@
       },
       {
             "priority": "High",
+            "aluma": "Useful as a quality checklist for contractor-facing lead forms, project dashboards, proposal microsites, and reusable components built by people or coding agents.",
+            "next": "Apply the specification to one Client Portal or dashboard component and turn the relevant accessibility, developer-experience, and agent-verification requirements into executable tests before broader adoption.",
+            "name": "Open Components",
+            "category": "UI component standard / agent-verifiable design",
+            "summary": "Open specification for UI components that targets user experience, developer experience, accessibility, and agentic experience so both humans and AI agents can understand, generate, and verify components consistently.",
+            "drprepper": "Strong fit for PrepShip, Client Portal, admin dashboards, and DR PREPPER landing pages because it provides a reusable standard for accessible components and makes AI-generated interface work easier to review and test.",
+            "toolUrl": "https://opencomponents.dev/",
+            "postUrl": "https://news.ycombinator.com/item?id=50030849",
+            "extraLinks": [
+                  {
+                        "label": "GitHub repo",
+                        "url": "https://github.com/uxfront-com/open-components"
+                  },
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20261010_040051"
+                  }
+            ],
+            "firstSeen": "2026-10-10T06:03:03-07:00",
+            "lastReviewed": "2026-10-10T06:03:03-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Useful pattern for Aluma project/lead automation if knowledge can be kept source-cited and stale-aware across scrapers, trackers, docs, and outreach notes. Do not store private customer/project data until retention and deletion behavior are proven.",
             "next": "Prototype on public/sample repositories first. Verify installation, storage location, lock/concurrency behavior, stale-path handling, export/delete controls, and whether trust verdicts reduce bad file/path assumptions in real coding sessions.",
             "name": "Heimdall",
@@ -5628,6 +5674,25 @@
             ],
             "firstSeen": "2026-09-05T06:06:08-07:00",
             "lastReviewed": "2026-09-05T06:06:08-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could speed branded contractor updates, project newsletters, and proposal follow-ups, provided every recipient list and outbound send remains human-approved.",
+            "next": "Test the Mac app with one internal newsletter using public or non-sensitive content. Verify export/provider integrations, brand-kit fidelity, local/cloud data handling, and require human approval before any customer or prospect send.",
+            "name": "Maildun for Mac",
+            "category": "AI email design / MCP-assisted marketing",
+            "summary": "Mac email builder with drag-and-drop editing, brand kits, reusable sections, AI-assisted design, and a built-in MCP server for Claude Code, Codex, or Cursor. Agent edits are presented as proposals that a person accepts or rejects.",
+            "drprepper": "Useful for DR PREPPER 3PL sales newsletters, customer updates, KF Goodies campaigns, and polished operational announcements without rebuilding branded email layouts from scratch.",
+            "toolUrl": "https://maildun.com/",
+            "postUrl": "https://www.producthunt.com/products/maildun-for-mac",
+            "extraLinks": [
+                  {
+                        "label": "Daily AI Intel source session",
+                        "url": "@session:default/cron_5ae0b334a2d4_20261010_040051"
+                  }
+            ],
+            "firstSeen": "2026-10-10T06:03:03-07:00",
+            "lastReviewed": "2026-10-10T06:03:03-07:00"
       },
       {
             "priority": "Medium",
