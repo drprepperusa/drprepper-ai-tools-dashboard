@@ -3791,6 +3791,19 @@
   },
   {
     "priority": "Medium",
+    "aluma": "Could prepare cited contractor account briefs and draft rental outreach from public project and company signals.",
+    "next": "Benchmark a small public-only prospect list against current research. Check citations, duplicates, export support, privacy, and cost; require human review before outreach and approval before CRM writes or uploading private documents.",
+    "name": "kōdlo",
+    "category": "AI sales lead research / qualification",
+    "summary": "Sales workspace combining prospect discovery, source-cited account research, outreach drafts, and pipeline tasks. The official site lists a seven-day trial and Starter at $49/month plus VAT; effectiveness and integrations still need a pilot.",
+    "drprepper": "Potential research-and-drafting layer for DR PREPPER USA 3PL prospecting and supplier outreach. Keep existing CRM records canonical and keep DJR wholesale buyer campaigns separate from 3PL prospecting.",
+    "toolUrl": "https://kodlo.ai",
+    "postUrl": "https://www.producthunt.com/products/kodlo",
+    "firstSeen": "2026-10-11T06:01:57-07:00",
+    "lastReviewed": "2026-10-11T06:01:57-07:00"
+  },
+  {
+    "priority": "Medium",
     "aluma": "Could be useful for Aluma contractor/property-manager outreach if the team wants a structured call-and-follow-up lane rather than ad hoc spreadsheet tracking.",
     "next": "Compare against existing CRM/outreach process and trial only with a small non-sensitive prospect list; confirm compliance, call recording rules, pricing, and export/sync options before scaling.",
     "name": "Boilerroom",
@@ -4364,6 +4377,19 @@
     ],
     "firstSeen": "2026-10-02T06:10:15-07:00",
     "lastReviewed": "2026-10-02T06:11:32-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Could capture site-visit follow-ups and rental reminders for later review and transfer into the existing project tracker.",
+    "next": "Pilot with non-sensitive reminders. Verify speech accuracy, retention, sync privacy, and export/integration support; review captured dates and tasks before copying to canonical trackers. No automatic order changes or external messages.",
+    "name": "Foley",
+    "category": "AI voice productivity / task capture",
+    "summary": "Voice task capture and daily planning app with clarification prompts, capture history, and undo. Official pricing lists free local desktop task management with optional personal-key AI and managed AI at $8/month; provider usage is separate for personal keys.",
+    "drprepper": "Could capture warehouse observations, fulfillment follow-ups, and operator reminders hands-free. Treat it as an intake scratchpad rather than a replacement for Trello, PrepShip order state, or inventory records.",
+    "toolUrl": "https://foleyapp.com",
+    "postUrl": "https://www.producthunt.com/products/foley",
+    "firstSeen": "2026-10-11T06:01:57-07:00",
+    "lastReviewed": "2026-10-11T06:01:57-07:00"
   },
   {
     "priority": "Medium",
@@ -6275,6 +6301,19 @@
     ],
     "firstSeen": "2026-08-22T04:02:00-07:00",
     "lastReviewed": "2026-08-22T06:05:53-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Potential address-entry aid for rental delivery destinations, while jobsite access and equipment delivery constraints still need separate confirmation.",
+    "next": "Evaluate API billing, key restrictions, and regional coverage using synthetic addresses. Preserve suite/unit entry, show inline errors and confirmation for changed addresses, and test timeout, unverified, and customer-override paths without silently labeling them verified. No bulk customer-address uploads or production writes during evaluation.",
+    "name": "Google Places Autocomplete + Address Validation checkout workflow",
+    "category": "Fulfillment / checkout address quality",
+    "summary": "Google's checkout integration guide separates address suggestions from Address Validation API results and describes Fix, Confirm, and Accept flows. Autocomplete alone does not prove deliverability; suggested corrections should remain reviewable.",
+    "drprepper": "Relevant to customer address entry and shipping exception prevention across wholesale ordering and PrepShip/client portal. Capture suggestions in the UI, but keep validation decisions and confirmed address persistence in the canonical backend; address data does not establish liftgate or loading-dock requirements.",
+    "toolUrl": "https://developers.google.com/maps/documentation/address-validation/overview",
+    "postUrl": "https://developers.google.com/maps/architecture/ecommerce-checkout-address-validation",
+    "firstSeen": "2026-10-11T06:01:57-07:00",
+    "lastReviewed": "2026-10-11T06:01:57-07:00"
   },
   {
     "priority": "Lead",
