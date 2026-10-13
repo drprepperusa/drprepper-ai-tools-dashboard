@@ -4239,6 +4239,25 @@
     "lastReviewed": "2026-09-22T06:06:50-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could turn approved equipment or project-tracking procedures into short internal training clips without exposing private project or customer information.",
+    "next": "Pilot one approved receiving SOP with non-sensitive assets. Have a warehouse lead check every instruction against the canonical SOP, verify upload retention and pricing, and require approval before sharing or publishing.",
+    "name": "ngram 2.0",
+    "category": "AI video / SOP training",
+    "summary": "AI video editor that turns prompts, documents, and screen recordings into training, onboarding, demo, and explainer videos. The official site describes storyboard approval before generation and editable scenes afterward.",
+    "drprepper": "Candidate for warehouse receiving SOPs, staff onboarding, and PrepShip/client-portal walkthroughs using approved procedures and redacted demo screens. Generated video is training material, not the operational source of truth.",
+    "toolUrl": "https://www.ngram.com",
+    "postUrl": "https://www.producthunt.com/products/ngram",
+    "extraLinks": [
+      {
+        "label": "Official pricing",
+        "url": "https://www.ngram.com/pricing"
+      }
+    ],
+    "firstSeen": "2026-10-13T06:02:10-07:00",
+    "lastReviewed": "2026-10-13T06:02:10-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful for Aluma proposal and project media: shoring/formwork sequence explainers, regional project maps, animated engineering diagrams, quantity/schedule callouts, before/after transitions, and sales-presentation clips. Technical dimensions, capacities, schedules, and safety statements must come from approved engineering/project sources and receive human review.",
     "next": "Do not install blindly from the social carousel. Pilot HyperFrames in a sandbox using the official repository and core-skill update path; create three reusable branded templates—10-second DR PREPPER service intro, fulfillment-flow explainer, and KPI/data card—then verify brand consistency, deterministic rerenders, legibility, captions/audio rights, render time, file size, and mobile page performance. If adopted, install only the core/router and needed workflow skills rather than all 19.",
@@ -8518,6 +8537,19 @@
     ],
     "firstSeen": "2026-07-25T06:13:25-07:00",
     "lastReviewed": "2026-07-25T06:13:25-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Potential public contractor/company research and competitor-monitoring aid, subject to source validation and outreach compliance.",
+    "next": "Benchmark a small public-only research query against existing sources. Check source freshness, credit limits, data retention, and MCP permissions; dedupe and verify prospects before approved CRM/Sheet imports. Keep outbound messages, publishing, and order/billing writes human-gated.",
+    "name": "Manifold MCP",
+    "category": "marketing research / prospecting MCP",
+    "summary": "Hosted MCP server supplying marketing research data for SEO, AI-answer visibility, social posts, competitor ads, and prospect research. Its official FAQ distinguishes research and draft preparation from scheduling or automatic posting.",
+    "drprepper": "Could support DR PREPPER USA 3PL prospect discovery, KF Goodies competitor-ad research, and website visibility checks. Research results remain evidence to review, not verified customer records or permission to contact prospects.",
+    "toolUrl": "https://www.manifoldmcp.com",
+    "postUrl": "https://www.manifoldmcp.com",
+    "firstSeen": "2026-10-13T06:02:10-07:00",
+    "lastReviewed": "2026-10-13T06:02:10-07:00"
   },
   {
     "priority": "Medium",
