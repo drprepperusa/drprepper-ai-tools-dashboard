@@ -3394,6 +3394,19 @@
     "lastReviewed": "2026-06-14T06:03:02-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Possible reuse of non-sensitive rental terminology and proposal preferences, subject to privacy review.",
+    "next": "Verify pricing, retention, deletion, access controls, hosting, and MCP permissions before a synthetic-context trial. Do not upload credentials, customer records, or private operational data; retain live backend truth for business decisions and approved OpenAI-only execution.",
+    "name": "Make0 Brain",
+    "category": "AI memory / portable business context",
+    "summary": "Personal AI memory service advertising editable, persistent context across ChatGPT, Claude, Cursor, the Make0 Agent, and MCP-compatible apps. The verified public page does not list pricing.",
+    "drprepper": "Potential place for reusable non-sensitive operating preferences and business background across approved assistants. Stored memories must not substitute for fresh inventory, pricing, shipping, or customer-balance reads from canonical systems.",
+    "toolUrl": "https://make0.ai/",
+    "postUrl": "https://www.producthunt.com/r/p/1275818?app_id=339",
+    "firstSeen": "2026-10-14T06:02:02-07:00",
+    "lastReviewed": "2026-10-14T06:02:02-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Indirect fit for any future Aluma field/mobile workflow, especially jobsite intake or project-status screens, but only after there is an Android surface worth testing.",
     "next": "Do not adopt until a real Android workflow exists. Then test with a disposable emulator and non-production account, verify Appium/device permissions, screenshot/log retention, CI fit, and no production orders/messages/payments are touched.",
@@ -7724,6 +7737,19 @@
   },
   {
     "priority": "Medium",
+    "aluma": "Potential fit for reactivating existing contractor relationships through reviewed, permission-appropriate outreach.",
+    "next": "Explore the sample inbox first. Verify Gmail scopes, privacy, pricing, unsubscribe handling, and suppression-list behavior before connecting an account. Reconcile candidates with canonical CRM contacts; require human recipient/copy approval and never auto-send or import private inbox data into the public dashboard.",
+    "name": "Blade — warm-network outreach",
+    "category": "Sales outreach / dormant-contact reactivation",
+    "summary": "Gmail-connected contact discovery and personalized campaign workflow. The official site says contact mining reads headers rather than message bodies, filters contacts into lists, previews messages, and requires send approval. Free to start; full pricing was not verified.",
+    "drprepper": "Could help identify dormant 3PL inquiries or prior business contacts before purchasing cold leads. Use as a reviewed outreach aid, not a replacement for canonical CRM identity, suppression history, or approved recipient lists.",
+    "toolUrl": "https://blade.net/",
+    "postUrl": "https://www.producthunt.com/r/p/1279161?app_id=339",
+    "firstSeen": "2026-10-14T06:02:02-07:00",
+    "lastReviewed": "2026-10-14T06:02:02-07:00"
+  },
+  {
+    "priority": "Medium",
     "aluma": "Could support contractor/project outreach if Aluma lead lists are qualified first and messaging stays human-approved; do not let an AI GTM tool invent project facts or pricing claims.",
     "next": "Sandbox with non-sensitive lead lists only. Verify CRM/export integrations, data retention, outbound-channel compliance, pricing, and an approval gate before using it for DR Prepper or Aluma outreach.",
     "name": "Pebbles AI",
@@ -7906,6 +7932,19 @@
     ],
     "firstSeen": "2026-10-10T06:03:03-07:00",
     "lastReviewed": "2026-10-10T06:03:03-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Could collect actionable feedback on rental landing pages and quote forms.",
+    "next": "Try on a local screen with synthetic data, review extension permissions, and redact customer information before copying context. Keep edits in the existing developer workflow with canonical backend ownership and tests; use only the approved OpenAI coding lane.",
+    "name": "EditUI",
+    "category": "UI review / coding-agent handoff",
+    "summary": "Free Chrome extension for clicking elements in a running app, collecting requested changes, and copying a batch review to a coding agent. Captures element text, DOM classes, surrounding elements, URL, viewport, and computed styles; no repository setup is advertised.",
+    "drprepper": "Useful for precise PrepShip and client-portal screen reviews: collect layout and wording fixes with page context instead of ambiguous screenshot-only instructions. It supplies review context, not business rules or acceptance proof.",
+    "toolUrl": "https://www.editui.app/",
+    "postUrl": "https://www.producthunt.com/r/p/1278703?app_id=339",
+    "firstSeen": "2026-10-14T06:02:02-07:00",
+    "lastReviewed": "2026-10-14T06:02:02-07:00"
   },
   {
     "priority": "High",
