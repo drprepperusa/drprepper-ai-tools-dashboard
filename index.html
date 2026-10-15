@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 14, 2026 · 6:02 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 15, 2026 · 6:02 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">427</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">412</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">201</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">429</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">414</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">203</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -2919,6 +2919,25 @@
       },
       {
             "priority": "High",
+            "aluma": "Could gate outreach sends and quote commitments while allowing read-only research and draft preparation.",
+            "next": "Prototype with synthetic tool calls only. Verify fail-closed behavior, timeout/denial handling, delegated-agent coverage, audit retention and self-hosting privacy before connecting credentials. Keep refunds, postage, inventory writes and external sends human-approved.",
+            "name": "withHuman",
+            "category": "Agent governance / approval gates",
+            "summary": "Open-source, self-hostable approval layer that intercepts agent tool calls, applies policy rules, routes exceptions to human reviewers, and records decisions. The official site documents MCP and agent-framework integrations.",
+            "drprepper": "Evaluate as an enforcement layer for operational agents proposing customer messages, refunds, inventory changes, or deployments. Approval routing must not replace PrepShip or Client Portal backend authorization and canonical business rules.",
+            "toolUrl": "https://withhuman.ai/",
+            "postUrl": "https://www.producthunt.com/products/withhuman",
+            "extraLinks": [
+                  {
+                        "label": "Official repository",
+                        "url": "https://github.com/withHumanAI/withHuman"
+                  }
+            ],
+            "firstSeen": "2026-10-15T06:02:20-07:00",
+            "lastReviewed": "2026-10-15T06:02:20-07:00"
+      },
+      {
+            "priority": "High",
             "aluma": "Useful for construction prospecting or project-intel agents if memory is scoped to non-sensitive lead metadata and reviewed source notes.",
             "next": "Evaluate privacy, retention, export, and access controls with non-sensitive sample memory only; do not store customer, pricing, or credential data until security is reviewed.",
             "name": "pumaDB",
@@ -3147,6 +3166,19 @@
             ],
             "firstSeen": "2026-08-29T23:13:24-07:00",
             "lastReviewed": "2026-08-29T23:13:24-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Potential fit for drafting rental quotes and processing supplier paperwork, subject to a demonstration using equipment-rental document types.",
+            "next": "Request a scoped demonstration with redacted sample documents; measure field accuracy, exception handling and review time. Verify integration fit, pricing, data residency and access controls. Start draft-only with human approval before posting records or sending confirmations; do not treat vendor case-study metrics as expected results.",
+            "name": "Lleverage",
+            "category": "Back-office automation / order intake",
+            "summary": "AI back-office platform for businesses that make, move and sell physical products. Its official site describes order intake, purchasing, invoice matching, ERP integrations, approval checkpoints and audit trails. Demo-led; no public pricing observed on the reviewed homepage.",
+            "drprepper": "Relevant comparison for converting emailed orders and PDFs into reviewed draft records and matching supplier invoices to purchase orders and receipts. Existing backend stock, pricing, accounting and fulfillment owners must remain authoritative.",
+            "toolUrl": "https://www.lleverage.ai",
+            "postUrl": "https://www.lleverage.ai",
+            "firstSeen": "2026-10-15T06:02:20-07:00",
+            "lastReviewed": "2026-10-15T06:02:20-07:00"
       },
       {
             "priority": "High",
