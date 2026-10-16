@@ -4941,6 +4941,19 @@
     "lastReviewed": "2026-06-27T06:04:50-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Could help measure repeated research work if a compatible, privacy-reviewed integration exists; not a lead database or project-truth owner.",
+    "next": "Verify Codex OAuth/framework compatibility, data retention, credential handling, and observation-only architecture before connecting anything. Compare a sanitized workload baseline with existing usage reports. Do not redirect production traffic, enable caching/routing, change the OpenAI-only policy, or authorize spend without explicit approval and behavior-parity evidence.",
+    "name": "Navige — agent spend monitoring",
+    "category": "Agent observability / cost governance",
+    "summary": "Agent monitoring and optimization service advertising answer reuse, context trimming, loop controls, and model routing. Free Watchtower mode is described as observation-only; active optimization is listed at $9/month or 20% of savings, whichever is higher. Savings and unchanged-quality claims need independent testing.",
+    "drprepper": "Potential reference for auditing repeated calls and runaway research jobs. Subscription-included model usage should be measured as quota consumption rather than assumed cash savings; money, inventory, and shipping truth must always remain freshly verified with their canonical owners.",
+    "toolUrl": "https://navige.ai/",
+    "postUrl": "https://navige.ai/pricing",
+    "firstSeen": "2026-10-16T06:02:03-07:00",
+    "lastReviewed": "2026-10-16T06:02:03-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful for Aluma scraper/lead-gen automations where agents should collect evidence and draft recommendations without silently mutating source data or external systems.",
     "next": "Ask devs to spike one read-only workflow in Runeward before allowing any agent-assisted business-system mutation. Require audit logs, cost/loop limits, and explicit approval gates for writes.",
@@ -7804,6 +7817,19 @@
     "lastReviewed": "2026-07-18T06:04:50-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Potential secondary use for researching company expansion signals; construction-project coverage needs validation before replacing established project sources.",
+    "next": "Review a small set of public-company prospects against DR PREPPER USA's 3PL criteria. Verify data provenance, opt-out/compliance controls, connector permissions, and actual lead quality. Keep campaigns disabled and require human approval of recipients and message drafts before any send; do not connect customer data or purchase a plan automatically.",
+    "name": "Pancake — signal-based prospecting",
+    "category": "Sales prospecting / outreach automation",
+    "summary": "Prospecting platform with app and MCP access that builds recurring lead searches from signals such as funding, hiring, and technology usage. Its official site describes source-backed fit explanations and lead approval before outreach. Listed from $99/month per workspace; performance claims are vendor claims, not tested results.",
+    "drprepper": "Evaluate for finding growing ecommerce brands that may need fulfillment or prep services, using sourced signals rather than generic contact lists. It is a prospecting candidate, not an approved outbound channel or a CRM source of truth.",
+    "toolUrl": "https://pancake.ai",
+    "postUrl": "https://pancake.ai",
+    "firstSeen": "2026-10-16T06:02:03-07:00",
+    "lastReviewed": "2026-10-16T06:02:03-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Could become a safer automation layer for Aluma lead intake, project follow-up, sheet updates, and scheduled checks if deployed with narrow credentials and auditable actions.",
     "next": "Evaluate as a self-hosted sandbox before any production use: inspect integration permissions, credential proxy model, logs, and approval gates; do not give agents write access to money/customer systems until rollback and audit trails are proven.",
@@ -8114,6 +8140,29 @@
     ],
     "firstSeen": "2026-07-18T06:04:50-07:00",
     "lastReviewed": "2026-07-18T06:04:50-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Useful for project-led formwork/shoring marketing pages with clear service navigation and an availability or quote action, using real project photography.",
+    "next": "Start with Navbar Gallery and CTA Gallery for one marketing-page wireframe. Validate mobile performance, keyboard access, reduced-motion behavior, original copy/assets, and licensing. Do not purchase Scrolltide or install animation libraries unless a specific approved concept needs them; gallery examples are not conversion evidence.",
+    "name": "Scrolltide / Navbar Gallery / CTA Gallery — website reference bundle",
+    "category": "Website design / conversion references",
+    "summary": "User-shared design-reference post promoting Scrolltide and related website galleries. Official checks confirm Scrolltide offers scroll-driven templates and components, Navbar Gallery catalogs navigation patterns, and CTA Gallery catalogs call-to-action examples. Scrolltide advertises $299 lifetime access; the post's 600+ prompt claim was not independently established, and gated code/licensing were not inspected.",
+    "drprepper": "Use navigation and CTA references for clear fulfillment/storage/kitting service paths and a prominent Request a Quote action. Keep marketing effects out of dense PrepShip operational screens and preserve existing backend-owned business behavior.",
+    "toolUrl": "https://www.scrolltide.co/",
+    "postUrl": "https://x.com/amananimates/status/2110584646794887669?s=46&t=ECM3Vp_m__QhqneVSomL7g",
+    "extraLinks": [
+      {
+        "label": "Navbar Gallery",
+        "url": "https://navbar.gallery/"
+      },
+      {
+        "label": "CTA Gallery",
+        "url": "https://www.cta.gallery/"
+      }
+    ],
+    "firstSeen": "2026-10-16T06:02:03-07:00",
+    "lastReviewed": "2026-10-16T06:02:03-07:00"
   },
   {
     "priority": "High",
