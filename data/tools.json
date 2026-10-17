@@ -5191,6 +5191,25 @@
     "lastReviewed": "2026-06-21T06:04:31-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could organize project documents and draft quote comparisons in a separate workspace with narrowly scoped source access.",
+    "next": "Evaluate with sample documents in Explore mode and an approved OpenAI connection. Verify privacy, credential storage, and permission enforcement before connecting business systems; require human approval for sends, edits, purchases, or production writes. Keep canonical backend owners authoritative.",
+    "name": "Craft Agents",
+    "category": "Agent workspace / document operations",
+    "summary": "Apache-2.0 open-source agent workspace for documents, local files, MCP servers, and REST APIs. Explore is read-only; Ask to Edit requests approval, while Auto permits autonomous actions. Model subscriptions or API usage are separate from the software.",
+    "drprepper": "Potential desktop review interface for supplier PDFs, operational research, and draft internal reports without granting agents authority over PrepShip shipping, billing, or inventory truth.",
+    "toolUrl": "https://agents.craft.do/",
+    "postUrl": "https://www.craft.do/blog/introducing-craft-agents",
+    "extraLinks": [
+      {
+        "label": "Open-source repository",
+        "url": "https://github.com/lukilabs/craft-agents-oss"
+      }
+    ],
+    "firstSeen": "2026-10-17T06:01:18-07:00",
+    "lastReviewed": "2026-10-17T06:01:18-07:00"
+  },
+  {
     "priority": "Watch",
     "aluma": "Could support structured construction prospecting notes or proposal outlines if privacy boundaries are clear and no confidential project data is stored there.",
     "next": "Use only with non-sensitive test documents first; verify persistence/privacy behavior and MCP access before making it part of any regular workflow.",
@@ -5539,6 +5558,19 @@
     ],
     "firstSeen": "2026-07-05T06:03:39-07:00",
     "lastReviewed": "2026-07-05T06:03:39-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Potential planning reference for testing a new rental-service offer, although the vendor primarily targets product-based businesses.",
+    "next": "Try the free workshops with a non-confidential offer brief. Independently check market evidence and unit economics; require approval before publishing a site, collecting customer data, launching ads, or buying inventory.",
+    "name": "Draper",
+    "category": "Business validation / product launch",
+    "summary": "Guided product-business workflow covering idea validation, business planning, branding, landing pages, and first-customer ads. Official site lists $9/month with the first two workshops free; outcomes are vendor claims, not verified sales results.",
+    "drprepper": "Could help structure a small KF Goodies product-line test or clarify a new offer before spending on stock, web development, or advertising.",
+    "toolUrl": "https://draper.chat/",
+    "postUrl": "https://draper.chat/",
+    "firstSeen": "2026-10-17T06:01:18-07:00",
+    "lastReviewed": "2026-10-17T06:01:18-07:00"
   },
   {
     "priority": "Medium",
