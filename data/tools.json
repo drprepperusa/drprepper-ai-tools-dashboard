@@ -1241,6 +1241,19 @@
     "lastReviewed": "2026-09-04T06:06:10-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Limited direct fit; possible reference for monitoring internal research and lead-processing services.",
+    "next": "Inspect implementation and license in an isolated sandbox before considering adoption. Verify approval enforcement and tool allowlists behaviorally; do not provide production logs, credentials, or write access. README defaults to an Anthropic model; require supported OpenAI-only configuration before any pilot.",
+    "name": "AIOps Cockpit",
+    "category": "AI agent observability / governance",
+    "summary": "Open-source, self-hosted incident-diagnostics project surfaced in the assistant's Daily AI Intel briefing. Its README describes log/metric investigation, proposed unified diffs, an approval rule preventing requester self-approval, audit logs, and destructive actions disabled by default. These are documented claims, not independently tested controls.",
+    "drprepper": "Reference for read-only PrepShip/client-portal incident triage and evidence-backed repair proposals. Not a replacement for canonical backend ownership, exact-SHA tests, or deployment acceptance.",
+    "toolUrl": "https://github.com/matricphase-dot/aiops",
+    "postUrl": "https://github.com/matricphase-dot/aiops",
+    "firstSeen": "2026-10-18T06:01:20-07:00",
+    "lastReviewed": "2026-10-18T06:01:20-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful for monitoring Aluma lead-gen or project-research agents when they begin reading public pages, drafting CRM changes, or proposing outreach actions.",
     "next": "Pilot with synthetic/internal agent traces first. Verify local OpenTelemetry export, PII redaction, policy blocking, hosted-platform pricing, retention, and alert noise before connecting customer, billing, inventory, or outreach workflows.",
@@ -7060,6 +7073,19 @@
     ],
     "firstSeen": "2026-08-24T06:07:40-07:00",
     "lastReviewed": "2026-08-24T06:07:40-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Potential hands-free capture of contractor call notes and rental quote follow-up drafts.",
+    "next": "Trial with non-sensitive notes; verify Accessibility permissions, local text-history retention, and device compatibility. Review names, SKUs, quantities, and prices before saving to CRM or sending any message; disable history where needed.",
+    "name": "SpeechFast",
+    "category": "Local voice dictation / transcription",
+    "summary": "Mac dictation app whose official site says transcription and text cleanup run on-device. Requires Apple Silicon and macOS 26; cleanup uses Apple Intelligence. Listed at €39.99 once for three Macs with a seven-day trial. Audio is not retained, but dictated text is kept in local history for 30 days by default.",
+    "drprepper": "Could speed up sales call notes, supplier follow-up drafts, and fulfillment exception notes without sending voice recordings to a cloud transcription service. Dictated text is input, not authoritative customer, quantity, or pricing truth.",
+    "toolUrl": "https://speechfast.com",
+    "postUrl": "https://speechfast.com",
+    "firstSeen": "2026-10-18T06:01:20-07:00",
+    "lastReviewed": "2026-10-18T06:01:20-07:00"
   },
   {
     "priority": "Medium",
