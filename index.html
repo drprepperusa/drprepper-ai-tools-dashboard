@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 18, 2026 · 6:01 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 19, 2026 · 6:01 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,8 +276,8 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">436</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">419</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">438</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">421</div><div class="label">categories</div></div>
             <div class="metric"><div class="num">203</div><div class="label">high priority now</div></div>
           </div>
         </section>
@@ -6902,6 +6902,19 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could help review rental invoices and mixed project paperwork after testing representative redacted files.",
+            "next": "Compare extraction against manual review on a few redacted supplier invoices. Verify pricing, retention, deployment boundaries, and error handling before sensitive uploads; require human approval and canonical backend validation before any PO, inventory, ledger, or customer-facing write.",
+            "name": "Nace Document Intelligence",
+            "category": "Document extraction / source-grounded intake",
+            "summary": "Document-processing API and Console with parsing, packet splitting, classification, JSON Schema extraction, and source grounding. The official product page describes found/not-found/ambiguous field statuses and page, cell, or span citations. Public pricing was not verified.",
+            "drprepper": "Candidate for a reviewed supplier-invoice or BOL intake step: extract quantities, costs, and document references with citations for staff comparison. Extraction is proposed input, never authoritative inventory, accounting, or shipping truth.",
+            "toolUrl": "https://www.nace.ai/ndi",
+            "postUrl": "https://news.ycombinator.com/item?id=50014659",
+            "firstSeen": "2026-10-19T06:01:37-07:00",
+            "lastReviewed": "2026-10-19T06:01:37-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Potential fit for professional-looking Aluma proposal/contract signing workflows where templates, branding, and integrations matter more than fastest setup.",
             "next": "Evaluate only after the DocuSeal pilot: compare template builder, mobile signing, signed-PDF output, audit trail, API/webhooks, and hosted-versus-self-hosted cost.",
             "name": "Documenso",
@@ -8849,6 +8862,19 @@
             ],
             "firstSeen": "2026-07-12T06:03:59-07:00",
             "lastReviewed": "2026-07-12T06:03:59-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Indirect use for maintainers of internal dashboards or automation; no direct rental-operations benefit established.",
+            "next": "Evaluate on a disposable repository with synthetic changes and an approved OpenAI endpoint only. Inspect hook permissions, diff transmission, secret exclusions, and bypass behavior before adoption; keep canonical CI and human approval mandatory for money, postage, inventory, or external actions.",
+            "name": "Sphinx — code-understanding Git hook",
+            "category": "Developer workflow / human review gates",
+            "summary": "MIT-licensed Git hook that pauses protected-branch pushes and asks developers questions about agent-written diffs. The official site documents coding-agent integration and logged bypasses. Model usage may incur separate costs; this is not executable acceptance proof.",
+            "drprepper": "Potential training and handoff aid for PrepShip/client portal developers to explain billing, shipping, and retry behavior before changes ship. Does not replace backend source-of-truth review, exact-SHA tests, CI, or deployment verification.",
+            "toolUrl": "https://sphinx-six-theta.vercel.app/",
+            "postUrl": "https://news.ycombinator.com/item?id=50137950",
+            "firstSeen": "2026-10-19T06:01:37-07:00",
+            "lastReviewed": "2026-10-19T06:01:37-07:00"
       },
       {
             "priority": "Watch",
