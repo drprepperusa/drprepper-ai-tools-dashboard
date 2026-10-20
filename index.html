@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 19, 2026 · 6:01 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 20, 2026 · 6:02 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,8 +276,8 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">438</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">421</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">440</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">423</div><div class="label">categories</div></div>
             <div class="metric"><div class="num">203</div><div class="label">high priority now</div></div>
           </div>
         </section>
@@ -7601,6 +7601,25 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could help find contractors and project announcements with traceable public sources; verify geography, contractor role, and project stage before outreach.",
+            "next": "Compare a small public-data shortlist against manual research. Check every qualification and citation, cap usage, and review retention terms before sending any sensitive data. Keep outreach approval and canonical CRM identity/deduplication separate from search results.",
+            "name": "Exa — source-linked prospect research",
+            "category": "Sales research / web search API",
+            "summary": "Web search, page-content retrieval, and deeper research APIs for assistants. The official site supports company research and structured outputs with citations; pricing lists monthly starter credits and usage-based endpoints. Vendor benchmark claims are not independent proof of lead quality.",
+            "drprepper": "Test public-source research on DTC brands with bulky products, keeping each brand website and evidence of fulfillment needs alongside the lead. Research output is not proof of shipping volume or permission to contact a prospect.",
+            "toolUrl": "https://exa.ai/",
+            "postUrl": "https://exa.ai/",
+            "extraLinks": [
+                  {
+                        "label": "Official pricing",
+                        "url": "https://exa.ai/pricing"
+                  }
+            ],
+            "firstSeen": "2026-10-20T06:02:09-07:00",
+            "lastReviewed": "2026-10-20T06:02:09-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Could support shared bid/vendor/project-inquiry inboxes if permission boundaries, retention, and export are acceptable.",
             "next": "Try only with a low-risk alias or test inbox; verify Google Workspace connection, export/retention, approval-before-send behavior, and privacy terms before connecting production email.",
             "name": "Banger Mail",
@@ -8975,6 +8994,25 @@
             "postUrl": "https://news.ycombinator.com/item?id=49516118",
             "firstSeen": "2026-09-01T06:08:49-07:00",
             "lastReviewed": "2026-09-01T06:08:49-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Could support approved rental-vendor availability inquiries; quoted availability and terms still require staff confirmation before any commitment.",
+            "next": "Before any purchase or call, verify recording-consent rules, disclosure, retention, and vendor permissions. Disable default reload, cap spend and call duration, approve the exact number and brief, and prohibit bookings, cancellations, purchases, account changes, or cold prospecting without explicit authorization. Do not connect customer records or credentials for a pilot.",
+            "name": "call4me — approval-gated business calls via MCP",
+            "category": "Operations / phone assistant",
+            "summary": "MCP-connected calling service that can contact businesses, navigate phone menus, and return results. Official terms describe prepaid credits, default monthly reload, recorded calls, and restrictions against telemarketing and unexpected calls. Not a cold-outreach tool.",
+            "drprepper": "Potential fit for an approved information-only call to an existing vendor or carrier support line when the answer is unavailable online. A returned transcript must not automatically change orders, billing, fulfillment status, or supplier commitments.",
+            "toolUrl": "https://call4.me/",
+            "postUrl": "https://www.producthunt.com/r/p/1285764?app_id=339",
+            "extraLinks": [
+                  {
+                        "label": "Official product and calling restrictions",
+                        "url": "https://call4.me/"
+                  }
+            ],
+            "firstSeen": "2026-10-20T06:02:09-07:00",
+            "lastReviewed": "2026-10-20T06:02:09-07:00"
       },
       {
             "priority": "Watch",

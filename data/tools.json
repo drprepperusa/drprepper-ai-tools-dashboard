@@ -7487,6 +7487,25 @@
   },
   {
     "priority": "Watch",
+    "aluma": "Could support approved rental-vendor availability inquiries; quoted availability and terms still require staff confirmation before any commitment.",
+    "next": "Before any purchase or call, verify recording-consent rules, disclosure, retention, and vendor permissions. Disable default reload, cap spend and call duration, approve the exact number and brief, and prohibit bookings, cancellations, purchases, account changes, or cold prospecting without explicit authorization. Do not connect customer records or credentials for a pilot.",
+    "name": "call4me — approval-gated business calls via MCP",
+    "category": "Operations / phone assistant",
+    "summary": "MCP-connected calling service that can contact businesses, navigate phone menus, and return results. Official terms describe prepaid credits, default monthly reload, recorded calls, and restrictions against telemarketing and unexpected calls. Not a cold-outreach tool.",
+    "drprepper": "Potential fit for an approved information-only call to an existing vendor or carrier support line when the answer is unavailable online. A returned transcript must not automatically change orders, billing, fulfillment status, or supplier commitments.",
+    "toolUrl": "https://call4.me/",
+    "postUrl": "https://www.producthunt.com/r/p/1285764?app_id=339",
+    "extraLinks": [
+      {
+        "label": "Official product and calling restrictions",
+        "url": "https://call4.me/"
+      }
+    ],
+    "firstSeen": "2026-10-20T06:02:09-07:00",
+    "lastReviewed": "2026-10-20T06:02:09-07:00"
+  },
+  {
+    "priority": "Watch",
     "aluma": "Possible fit for proposal, billing, and AR follow-up once Aluma lead/project data is structured, but only after verifying source-of-truth integrations and approval controls.",
     "next": "Verification needed: identify the official product site/pricing from Product Hunt, then test only on sample/non-sensitive invoice workflows. Require grounded source reads and human approval before any customer/vendor communication.",
     "name": "Rex",
@@ -7912,6 +7931,25 @@
     "postUrl": "https://pancake.ai",
     "firstSeen": "2026-10-16T06:02:03-07:00",
     "lastReviewed": "2026-10-16T06:02:03-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could help find contractors and project announcements with traceable public sources; verify geography, contractor role, and project stage before outreach.",
+    "next": "Compare a small public-data shortlist against manual research. Check every qualification and citation, cap usage, and review retention terms before sending any sensitive data. Keep outreach approval and canonical CRM identity/deduplication separate from search results.",
+    "name": "Exa — source-linked prospect research",
+    "category": "Sales research / web search API",
+    "summary": "Web search, page-content retrieval, and deeper research APIs for assistants. The official site supports company research and structured outputs with citations; pricing lists monthly starter credits and usage-based endpoints. Vendor benchmark claims are not independent proof of lead quality.",
+    "drprepper": "Test public-source research on DTC brands with bulky products, keeping each brand website and evidence of fulfillment needs alongside the lead. Research output is not proof of shipping volume or permission to contact a prospect.",
+    "toolUrl": "https://exa.ai/",
+    "postUrl": "https://exa.ai/",
+    "extraLinks": [
+      {
+        "label": "Official pricing",
+        "url": "https://exa.ai/pricing"
+      }
+    ],
+    "firstSeen": "2026-10-20T06:02:09-07:00",
+    "lastReviewed": "2026-10-20T06:02:09-07:00"
   },
   {
     "priority": "High",
