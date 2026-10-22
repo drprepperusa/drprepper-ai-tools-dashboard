@@ -3523,6 +3523,19 @@
     "lastReviewed": "2026-08-12T06:06:25-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Possible public construction and regional project-news triage feed for prospect research, with original articles checked before adding leads.",
+    "next": "Evaluate a small set of public carrier and marketplace feeds against the current digest workflow; measure missed material changes and duplicate reduction before paying. Do not connect private Telegram channels or upload sensitive business content without a privacy and permission review. Product Hunt redirect was verified in the source session; direct recheck returned 403, while the official homepage was verified live.",
+    "name": "Radaric",
+    "category": "AI news digest / business monitoring",
+    "summary": "Feed-curation service that filters posts using approval/rejection feedback and groups duplicate coverage while retaining original source links. Official site lists RSS, Telegram, YouTube and other feeds; Lite is $9/month and X parsing requires $59/month Pro. Surfaced in the October 22 assistant briefing; filtering accuracy has not been tested.",
+    "drprepper": "Could reduce duplicate reading across carrier-policy, marketplace, and ecommerce operations feeds used for daily briefs. Summaries remain discovery aids: verify fees, deadlines, and policy changes at original sources before operational action.",
+    "toolUrl": "https://radaric.pro",
+    "postUrl": "https://www.producthunt.com/r/p/1288419?app_id=339",
+    "firstSeen": "2026-10-22T06:02:01-07:00",
+    "lastReviewed": "2026-10-22T06:02:01-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful template for Aluma construction-project, contractor, bid-timing, and permitting/news watchlists where the value is a concise daily source-linked brief instead of another broad scrape dump.",
     "next": "Fork or test locally in dry-run mode with no email send first. Start with read-only topics, verify source quality and dedupe behavior, keep secrets in GitHub Actions only if approved, and require human review before forwarding summaries externally.",
@@ -3795,6 +3808,19 @@
     ],
     "firstSeen": "2026-09-12T06:07:37-07:00",
     "lastReviewed": "2026-09-12T06:07:37-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could research concrete contractors or developers using public project and hiring evidence; keep this prospect list separate from 3PL outreach.",
+    "next": "Try 10 public-source US DTC prospects without connecting an inbox. Manually verify company fit, source dates, contact roles, and duplicates before approved CRM import; require human approval before any outreach. Review MCP permissions and privacy before connecting business systems. Product Hunt redirect was verified in the source session; direct recheck returned 403, while the official homepage was verified live.",
+    "name": "Causo",
+    "category": "AI sales lead research / qualification",
+    "summary": "Prospecting service that researches companies against niche criteria using public sources, supplies source-linked fit explanations, and offers contact discovery and outreach drafts. Official site lists 50 one-time free action tokens and paid plans from $19/month; research, contacts, questions, and sending are separately metered actions. Surfaced in the October 22 assistant briefing, not independently performance-tested.",
+    "drprepper": "Potential research-only lane for DR PREPPER USA DTC fulfillment prospects showing wholesale expansion or logistics hiring. Compare evidence quality and cost per qualified company with existing lead research rather than treating vendor match scores as sales truth.",
+    "toolUrl": "https://causo.ai",
+    "postUrl": "https://www.producthunt.com/r/p/1285696?app_id=339",
+    "firstSeen": "2026-10-22T06:02:01-07:00",
+    "lastReviewed": "2026-10-22T06:02:01-07:00"
   },
   {
     "priority": "High",
