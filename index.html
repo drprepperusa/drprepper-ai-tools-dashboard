@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 22, 2026 · 6:02 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 23, 2026 · 6:02 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,8 +276,8 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">444</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">425</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">446</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">427</div><div class="label">categories</div></div>
             <div class="metric"><div class="num">203</div><div class="label">high priority now</div></div>
           </div>
         </section>
@@ -5605,6 +5605,25 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could reserve Codex capacity for internal development; no direct construction or rental workflow automation.",
+            "next": "Review the source and test Codex hooks on a disposable session before changing developer setup. Verify pause/resume, stale-reading behavior, and hook coverage; do not assume Hermes API calls are covered or change production cron configuration. Keep existing approval and billing controls authoritative.",
+            "name": "Peras",
+            "category": "AI coding-agent usage / quota guardrails",
+            "summary": "Local, MIT-licensed CLI that watches Claude Code and Codex plan usage and can warn or pause supported tool calls at configured limits. Optional ready-made macOS app costs €4.99 once; CLI and hooks remain free. Stale readings, in-flight requests, and uncovered clients limit enforcement.",
+            "drprepper": "Evaluate the Codex lane to reserve coding allowance for PrepShip/client portal fixes instead of letting background development consume the full weekly window. This is a supported-client usage guard, not a Hermes-wide budget cap or accounting source.",
+            "toolUrl": "https://peras.vertias.eu/",
+            "postUrl": "https://www.producthunt.com/r/p/1289607?app_id=339",
+            "extraLinks": [
+                  {
+                        "label": "MIT source and enforcement limits",
+                        "url": "https://github.com/Vertias3u/Peras"
+                  }
+            ],
+            "firstSeen": "2026-10-23T06:02:10-07:00",
+            "lastReviewed": "2026-10-23T06:02:10-07:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Could support rental/project inquiry triage or FAQ intake if Aluma has repeat customer questions, but only after data boundaries and escalation rules are defined.",
             "next": "Evaluate only in a sandbox with canned FAQs and non-customer data. Require no-send/human-approval defaults for billing, refunds, shipment promises, rate quotes, inventory claims, and customer communications.",
             "name": "Ticketdesk AI",
@@ -8689,6 +8708,19 @@
             "postUrl": "https://www.producthunt.com/products/reso",
             "firstSeen": "2026-10-12T06:02:35-07:00",
             "lastReviewed": "2026-10-12T06:02:35-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Could help prioritize prospect follow-ups and quote preparation without introducing another authoritative project tracker.",
+            "next": "Try the no-signup demo with five invented or non-sensitive tasks and compare its picks with revenue impact and blocked work. Verify privacy and deletion terms before real business use; keep customer data out, avoid duplicating Trello, and review any email/account permissions before connecting services. Do not start a paid trial automatically.",
+            "name": "3 & Done",
+            "category": "AI task prioritization / daily planning",
+            "summary": "Turns spoken or typed task capture into three daily priorities delivered by email, with a reason for each selection. Offers a no-signup interactive demo; paid service is $9.99/month or $99/year after a 14-day trial requiring a card.",
+            "drprepper": "Potential personal planning aid for choosing between sales follow-ups, fulfillment exceptions, and internal improvements. Recommendations must not replace Trello ownership, order queues, deadlines, or operational acceptance decisions.",
+            "toolUrl": "https://3anddoneapp.com/",
+            "postUrl": "https://3anddoneapp.com/",
+            "firstSeen": "2026-10-23T06:02:10-07:00",
+            "lastReviewed": "2026-10-23T06:02:10-07:00"
       },
       {
             "priority": "Watch",

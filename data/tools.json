@@ -2424,6 +2424,25 @@
     "lastReviewed": "2026-08-23T06:05:04-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could reserve Codex capacity for internal development; no direct construction or rental workflow automation.",
+    "next": "Review the source and test Codex hooks on a disposable session before changing developer setup. Verify pause/resume, stale-reading behavior, and hook coverage; do not assume Hermes API calls are covered or change production cron configuration. Keep existing approval and billing controls authoritative.",
+    "name": "Peras",
+    "category": "AI coding-agent usage / quota guardrails",
+    "summary": "Local, MIT-licensed CLI that watches Claude Code and Codex plan usage and can warn or pause supported tool calls at configured limits. Optional ready-made macOS app costs €4.99 once; CLI and hooks remain free. Stale readings, in-flight requests, and uncovered clients limit enforcement.",
+    "drprepper": "Evaluate the Codex lane to reserve coding allowance for PrepShip/client portal fixes instead of letting background development consume the full weekly window. This is a supported-client usage guard, not a Hermes-wide budget cap or accounting source.",
+    "toolUrl": "https://peras.vertias.eu/",
+    "postUrl": "https://www.producthunt.com/r/p/1289607?app_id=339",
+    "extraLinks": [
+      {
+        "label": "MIT source and enforcement limits",
+        "url": "https://github.com/Vertias3u/Peras"
+      }
+    ],
+    "firstSeen": "2026-10-23T06:02:10-07:00",
+    "lastReviewed": "2026-10-23T06:02:10-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful for preserving Aluma lead-gen/project decisions across Claude, ChatGPT, Cursor, and human review so the next pass can inherit evidence, open questions, and approval status instead of restarting.",
     "next": "Evaluate with non-sensitive developer-review or lead-research cases first. Verify export/retention, access control, pricing, source evidence handling, and whether Auto Review complements rather than replaces exact-source tests and human acceptance.",
@@ -4119,6 +4138,19 @@
     ],
     "firstSeen": "2026-09-15T06:04:28-07:00",
     "lastReviewed": "2026-09-15T06:04:28-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Could help prioritize prospect follow-ups and quote preparation without introducing another authoritative project tracker.",
+    "next": "Try the no-signup demo with five invented or non-sensitive tasks and compare its picks with revenue impact and blocked work. Verify privacy and deletion terms before real business use; keep customer data out, avoid duplicating Trello, and review any email/account permissions before connecting services. Do not start a paid trial automatically.",
+    "name": "3 & Done",
+    "category": "AI task prioritization / daily planning",
+    "summary": "Turns spoken or typed task capture into three daily priorities delivered by email, with a reason for each selection. Offers a no-signup interactive demo; paid service is $9.99/month or $99/year after a 14-day trial requiring a card.",
+    "drprepper": "Potential personal planning aid for choosing between sales follow-ups, fulfillment exceptions, and internal improvements. Recommendations must not replace Trello ownership, order queues, deadlines, or operational acceptance decisions.",
+    "toolUrl": "https://3anddoneapp.com/",
+    "postUrl": "https://3anddoneapp.com/",
+    "firstSeen": "2026-10-23T06:02:10-07:00",
+    "lastReviewed": "2026-10-23T06:02:10-07:00"
   },
   {
     "priority": "Medium",
