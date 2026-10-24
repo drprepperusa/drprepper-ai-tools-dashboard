@@ -7391,6 +7391,19 @@
     "lastReviewed": "2026-09-11T06:06:51-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Could capture field-visit notes and draft rental follow-ups; obtain recording consent and review names, quantities, and commitments before sharing.",
+    "next": "Evaluate with synthetic notes first, without enabling local model APIs. Verify permission scope, retention, cloud routing, and OpenAI model support before connecting business apps. Require human review before any email, customer message, CRM write, or operational action; do not permit autonomous postage, billing, or inventory changes.",
+    "name": "sideOS.ai",
+    "category": "Mac voice assistant / meeting notes",
+    "summary": "Mac assistant for voice-driven app actions, dictation, background research, and meeting transcription. The official site lists a one-time $89.90 purchase and on-device speech options; agent mode can send text and relevant screen context to the selected model provider, so local transcription does not imply fully local agent processing.",
+    "drprepper": "Potential way to turn dictated warehouse observations and sales-call notes into draft follow-ups and internal checklists without retyping. Evaluate as a staff productivity aid, not an authority for shipping, inventory, or billing decisions.",
+    "toolUrl": "https://sideos.ai",
+    "postUrl": "https://www.producthunt.com/products/sideos-ai",
+    "firstSeen": "2026-10-24T06:03:36-07:00",
+    "lastReviewed": "2026-10-24T06:03:36-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Could support Aluma lead-gen campaign reporting if paid ads or outreach dashboards become active, but only from read-only reporting credentials.",
     "next": "Pilot read-only with non-sensitive marketing data first. Confirm supported connectors, MCP auth boundaries, retention, pricing, and approval gates before connecting live ad accounts or letting agents change campaigns.",
