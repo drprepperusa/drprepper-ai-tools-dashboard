@@ -494,6 +494,19 @@
     "lastReviewed": "2026-07-17T06:04:24-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Could explore generic fixture concepts, but do not use generated parts for load-bearing formwork or shoring without qualified engineering approval.",
+    "next": "Try a fictional, non-sensitive bracket on the free tier. Verify dimensions, fits, export quality, and commercial/private-plan rights before using business designs; require professional review before fabrication.",
+    "name": "zCAD AI",
+    "category": "AI CAD / warehouse fixture prototyping",
+    "summary": "Generates editable CAD parts and assemblies from text and optional reference images, with STEP export. The free tier is public, non-commercial, and uses generation data for training; paid plans offer private models. Generated geometry is not manufacturing approval.",
+    "drprepper": "Potential way to prototype packing-station brackets, scanner mounts, or small workflow fixtures before engineering review; not a replacement for verified dimensions, load ratings, or warehouse safety approval.",
+    "postUrl": "https://zcad.ai/products/ai",
+    "toolUrl": "https://zcad.ai/products/ai",
+    "firstSeen": "2026-10-25T06:01:45-07:00",
+    "lastReviewed": "2026-10-25T06:01:45-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful for construction-project and contractor relationship follow-up if meeting/email/calendar access is scoped and every outreach action remains human-approved.",
     "next": "Pilot only with internal or non-sensitive sales notes first. Verify email/calendar permissions, action logging, follow-up draft quality, data export/delete behavior, and pricing before connecting real prospect/customer history.",
@@ -8146,6 +8159,19 @@
     ],
     "firstSeen": "2026-09-06T06:05:28-07:00",
     "lastReviewed": "2026-09-06T06:05:28-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Conditional fit for an active X outreach account; this is not a currently available new-account LinkedIn analytics solution.",
+    "next": "First confirm X is worth measuring. Review connection permissions, retention/deletion, and trial billing before any signup. Use approved account data only, compare draft tests against qualified inquiries, and keep human approval before publishing or outreach.",
+    "name": "LinkIntel",
+    "category": "Social content analytics / MCP",
+    "summary": "Read-only MCP service supplying an existing assistant with daily snapshots of the user's X post performance and cited X ranking-code references. It does not publish or schedule. Official pricing is $39/month after a seven-day card-required trial; LinkedIn is closed to new accounts.",
+    "drprepper": "Could inform DR PREPPER USA or KF Goodies social drafts using the account's actual audience response if X becomes a meaningful acquisition channel; engagement alone is not evidence of qualified leads or sales.",
+    "postUrl": "https://www.getlinkintel.com/",
+    "toolUrl": "https://www.getlinkintel.com/",
+    "firstSeen": "2026-10-25T06:01:45-07:00",
+    "lastReviewed": "2026-10-25T06:01:45-07:00"
   },
   {
     "priority": "Medium",
