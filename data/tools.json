@@ -2767,6 +2767,19 @@
     "lastReviewed": "2026-10-08T06:04:11-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Indirect fit for keeping the shared automation workstation responsive during research or dashboard builds.",
+    "next": "Verify publisher, notarization, permissions, and privacy before installation. Compare agent/process attribution against Activity Monitor on a non-production build; keep cooling manual until runtime trade-offs are measured, and never terminate gateway, cron, or production-facing processes automatically.",
+    "name": "WhoIsCooking",
+    "category": "AI development / workstation resource monitoring",
+    "summary": "Mac menu-bar/notch utility that groups AI-agent sessions with their child builds, tests, and servers to identify CPU and heat sources. The vendor offers an efficiency-core cooling mode and runaway-work alerts. Listed at $5 one-time for Apple Silicon Macs on macOS 14 or later; performance and cooling claims are not independently benchmarked.",
+    "drprepper": "Could help diagnose overlapping Codex builds and abandoned dev servers on the workstation supporting PrepShip, Client Portal, and internal automation. It is a resource monitor, not proof a coding job completed successfully.",
+    "toolUrl": "https://whoiscooking.site",
+    "postUrl": "https://www.producthunt.com/r/p/1292664",
+    "firstSeen": "2026-10-26T06:01:56-07:00",
+    "lastReviewed": "2026-10-26T06:01:56-07:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could help capture jobsite-call notes, estimator observations, or follow-up drafts, but only after checking privacy controls and where recordings/transcripts are stored.",
     "next": "Trial with non-sensitive notes first; keep human review before sending customer/vendor messages and confirm pricing/privacy before using it for real customer details.",
@@ -8313,6 +8326,19 @@
     "postUrl": "https://wisprflow.ai/",
     "firstSeen": "2026-09-01T06:08:49-07:00",
     "lastReviewed": "2026-09-01T06:08:49-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Potential fit for drafting rental follow-ups and jobsite notes from speech; verify technical vocabulary before using externally.",
+    "next": "Trial the free quota with non-sensitive sample messages. Review microphone/accessibility permissions and provider retention, disable optional text donation, and require human review before sending any message or saving order/inventory changes. Obtain participant consent before recording meetings.",
+    "name": "Loqui",
+    "category": "Voice dictation / staff productivity",
+    "summary": "Mac and Windows dictation tool that inserts formatted speech into the active app, with app-aware tone, reusable voice shortcuts, and shared terminology. Official pricing lists a free weekly quota and Pro at $8/month. Audio is processed through cloud servers; external-provider retention has separate terms.",
+    "drprepper": "Could speed draft supplier follow-ups, warehouse handoff notes, and sales replies without introducing another customer-record source of truth. Dictated quantities, prices, and delivery dates still need review.",
+    "toolUrl": "https://loquime.com/en/",
+    "postUrl": "https://www.producthunt.com/r/p/1291345",
+    "firstSeen": "2026-10-26T06:01:56-07:00",
+    "lastReviewed": "2026-10-26T06:01:56-07:00"
   },
   {
     "priority": "Medium",
