@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 26, 2026 · 6:01 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 27, 2026 · 6:01 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,9 +276,9 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">451</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">432</div><div class="label">categories</div></div>
-            <div class="metric"><div class="num">203</div><div class="label">high priority now</div></div>
+            <div class="metric"><div class="num">453</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">434</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">204</div><div class="label">high priority now</div></div>
           </div>
         </section>
         <section class="panel note" aria-label="Operating rule">
@@ -3610,6 +3610,25 @@
             ],
             "firstSeen": "2026-08-19T04:01:40-07:00",
             "lastReviewed": "2026-08-20T06:08:27-07:00"
+      },
+      {
+            "priority": "High",
+            "aluma": "Could extract rental terms, dates, and quote line items with source references for estimator review; accuracy on Aluma paperwork remains untested.",
+            "next": "Benchmark redacted invoices/BOLs against manually verified fields, including unreadable quantities, missing prices, and conflicting dates. Confirm document/OCR requirements and privacy; use only approved OpenAI connections, not automatic alternate-provider routing. Route uncertainty to staff and keep all ERP, inventory, accounting, and external messaging actions human-gated.",
+            "name": "ContextGem 1.0",
+            "category": "Document extraction / source-linked structured data",
+            "summary": "Open-source framework for extracting typed document fields with paragraph/sentence references and optional reasoning. Version 1.0 adds decision-model support alongside LLMs. Framework software is free; model usage and developer setup are separate costs.",
+            "drprepper": "Candidate for auditable supplier-invoice, BOL, and fulfillment-document intake: show staff the source passage behind each proposed field rather than silently accepting generated quantities or charges. Canonical backend services must continue to validate and own purchasing, inventory, and billing writes.",
+            "toolUrl": "https://github.com/shcherbak-ai/contextgem",
+            "postUrl": "https://www.producthunt.com/products/contextgem",
+            "extraLinks": [
+                  {
+                        "label": "Official documentation",
+                        "url": "https://contextgem.shcherbak.ai/"
+                  }
+            ],
+            "firstSeen": "2026-10-27T06:01:57-07:00",
+            "lastReviewed": "2026-10-27T06:01:57-07:00"
       },
       {
             "priority": "High",
@@ -9055,6 +9074,25 @@
             ],
             "firstSeen": "2026-07-14T06:20:12-07:00",
             "lastReviewed": "2026-07-14T06:20:12-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Possible vendor-invoice and expense-review aid; confirm document fit and accounting-service coverage before considering a subscription.",
+            "next": "Use redacted sample invoices to assess extraction and reconciliation accuracy. Verify US/California entity and filing support, privacy, bank permissions, exportability, and total pricing. Require human approval before financial writes or customer follow-ups; do not connect production banking or enable automated sends during evaluation.",
+            "name": "Nuvio 5.0",
+            "category": "Finance / invoice and expense automation",
+            "summary": "Finance software offering invoice and receipt scanning, expense categorization, transaction reconciliation, cash-flow views, and payment follow-ups. Official pricing lists the app at $55/month with separate bookkeeping and tax bundles; country/entity/filing coverage is not clearly published.",
+            "drprepper": "Potential back-office comparison for DR PREPPER USA invoice intake and expense review. Evaluate against existing accounting workflows, not as a replacement authority for PrepShip Billing, inventory valuation, or accounting ledgers.",
+            "toolUrl": "https://www.nuvio.io/",
+            "postUrl": "https://www.producthunt.com/products/nuvio",
+            "extraLinks": [
+                  {
+                        "label": "Official pricing and service-scope caveats",
+                        "url": "https://www.nuvio.io/pricing"
+                  }
+            ],
+            "firstSeen": "2026-10-27T06:01:57-07:00",
+            "lastReviewed": "2026-10-27T06:01:57-07:00"
       },
       {
             "priority": "Watch",
