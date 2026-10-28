@@ -8011,6 +8011,19 @@
     "lastReviewed": "2026-07-24T06:08:02-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Potential fit for construction-buyer outreach where human calling may complement targeted prospect research.",
+    "next": "Request scope and pricing, validate target-market coverage and sample lead quality, and compare against internal qualified-meeting costs. Require approved messaging, suppression/opt-out handling, compliant calling practices and explicit campaign approval before any customer contact.",
+    "name": "throxy — managed outbound for traditional industries",
+    "category": "Sales / outbound prospecting",
+    "summary": "Managed outbound provider combining its prospecting technology with email and human cold calling for traditional industries, including logistics, manufacturing and construction. Official site offers a strategy call; no public price was observed in the reviewed material.",
+    "drprepper": "Possible outsourced prospecting option for reaching logistics decision-makers; evaluate buyer targeting, qualified-meeting definitions and economics before sharing lead data or authorizing outreach.",
+    "toolUrl": "https://throxy.com/",
+    "postUrl": "https://throxy.com/",
+    "firstSeen": "2026-10-28T06:02:40-07:00",
+    "lastReviewed": "2026-10-28T06:02:40-07:00"
+  },
+  {
     "priority": "High",
     "aluma": "Could be tested as an Aluma contractor/project outreach workspace where agents draft research notes and follow-ups against live account records, with final send and CRM writes approval-gated.",
     "next": "Trial only with a sandbox prospect list. Verify MCP permissions, export controls, email/calendar access, audit logs, pricing, and no-auto-send rules before moving live lead or customer workflows.",
@@ -8269,6 +8282,38 @@
     ],
     "firstSeen": "2026-08-20T04:02:23-07:00",
     "lastReviewed": "2026-08-20T06:08:27-07:00"
+  },
+  {
+    "priority": "High",
+    "aluma": "Could attach research and outreach hours to specific prospecting assignments for cost visibility.",
+    "next": "Pilot with one or two team members for one week, with clear notice and screenshots off initially. Review applicable monitoring/pay requirements, minimize captured customer data, define access and retention, and require human review against deliverables before payroll or performance decisions.",
+    "name": "Hubstaff — transparent VA project-time tracking",
+    "category": "Team operations / time tracking",
+    "summary": "Desktop project/task time tracking with timesheets, app/URL activity and optional configurable screenshots. Screenshot controls include blur, disabling capture, access permissions and retention settings; activity signals are not proof of productive output.",
+    "drprepper": "Evaluate project-coded time records for remote sales, research and development work alongside submitted deliverables and task progress, rather than relying on commit counts or mouse activity alone.",
+    "toolUrl": "https://hubstaff.com/",
+    "postUrl": "https://hubstaff.com/features",
+    "extraLinks": [
+      {
+        "label": "Screenshot controls",
+        "url": "https://hubstaff.com/time-tracker-with-screenshots"
+      }
+    ],
+    "firstSeen": "2026-10-28T06:02:40-07:00",
+    "lastReviewed": "2026-10-28T06:02:40-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could improve visibility into research and sales-support project effort without treating general browser time as completed lead work.",
+    "next": "Pilot automatic capture for two weeks using disclosed tracking and low-sensitivity projects. Verify manager visibility, sharing controls, project-matching accuracy and corrections; compare with accepted deliverables before any payroll use. Do not deploy covert monitoring or connect sensitive systems without review.",
+    "name": "Timely — automatic project-time capture",
+    "category": "Team operations / time tracking",
+    "summary": "Automatic desktop time capture through Memory Tracker, with project budgeting and timesheet workflows. The official product page emphasizes user control over sharing recorded activity; manager visibility and project allocation need pilot verification.",
+    "drprepper": "Potential alternative to manual timers for attributing remote operations and development effort to projects. App activity and inferred allocations should remain reviewable inputs, not authoritative proof of output or pay owed.",
+    "toolUrl": "https://www.timely.com/",
+    "postUrl": "https://www.timely.com/feature/automatic-time-tracking/",
+    "firstSeen": "2026-10-28T06:02:40-07:00",
+    "lastReviewed": "2026-10-28T06:02:40-07:00"
   },
   {
     "priority": "High",
