@@ -7591,26 +7591,30 @@
   },
   {
     "priority": "Medium",
-    "aluma": "Could support construction-lead monitoring and reminders by wiring public RSS/news/forms/sheets into simple alerts, but should not become the source of truth for CRM or bid data.",
-    "next": "Pilot only read-only alerts first, such as Google News/RSS to Slack/Discord/Sheets; avoid customer data, order writes, or account-changing applets until permissions and failure modes are documented.",
+    "aluma": "Could route public project/news changes into construction-lead review queues without becoming CRM or bid-data truth.",
+    "next": "Pilot one public RSS-to-internal-alert workflow. Verify credit limits, polling latency, failure handling, and least-privilege permissions first. Do not authorize order writes, postage, account changes, or customer sends; review any drafted outreach before sending.",
     "name": "IFTTT — New AI tools",
     "category": "No-code AI automation / alerts",
-    "summary": "Product Hunt-listed IFTTT update for automations involving AI services such as Grok, Gemini, and Perplexity, on top of IFTTT's existing no-code applet/integration platform.",
-    "drprepper": "Useful low-code layer for low-risk alerts and summaries: competitor/news monitoring, lead-source notifications, calendar/reminder handoffs, and lightweight newsletter or dashboard triggers.",
-    "toolUrl": "https://ifttt.com/explore",
+    "summary": "IFTTT.ai combines its trigger/action Applets across 1,000+ services with prompt-built automations, AI drafting/summaries, website-change alerts, and an MCP connection. Official homepage confirms these offerings; this refresh updates the existing IFTTT entry rather than adding a duplicate.",
+    "drprepper": "Evaluate read-only lead-source notifications, competitor/restock monitoring, and newsletter summaries routed to an internal review queue. Keep PrepShip and Client Portal backend owners authoritative for shipping, billing, and inventory.",
+    "toolUrl": "https://ifttt.ai/",
     "postUrl": "https://www.producthunt.com/products/ifttt",
     "extraLinks": [
       {
-        "label": "Product Hunt source",
+        "label": "Product Hunt source (existing entry)",
         "url": "https://www.producthunt.com/products/ifttt"
       },
       {
-        "label": "IFTTT explore",
-        "url": "https://ifttt.com/explore"
+        "label": "Official IFTTT.ai automation platform",
+        "url": "https://ifttt.ai/"
+      },
+      {
+        "label": "Plans and credit limits",
+        "url": "https://ifttt.com/plans"
       }
     ],
     "firstSeen": "2026-07-15T06:04:53-07:00",
-    "lastReviewed": "2026-07-15T06:04:53-07:00"
+    "lastReviewed": "2026-10-29T06:02:15-07:00"
   },
   {
     "priority": "High",
@@ -8373,6 +8377,25 @@
     ],
     "firstSeen": "2026-08-22T04:02:00-07:00",
     "lastReviewed": "2026-08-22T06:05:53-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Could turn jobsite notes into rental follow-up drafts and office handoffs; use verified project facts rather than generated estimates.",
+    "next": "Compare a sanitized voice-note-to-draft task with the existing assistant workflow before buying. Verify privacy, retention, model provider, integration permissions, and the exact renewal offer. Do not upload customer records or connect inboxes until approved; require human review before any send or publish.",
+    "name": "Empacer",
+    "category": "Voice AI / business administration",
+    "summary": "Voice/text business assistant that advertises business memory, customer-reply drafts, marketing content, documents, and report summaries. Official pricing is a paid subscription with offer-specific billing and renewal terms, not a fixed public monthly rate; capabilities have not been independently exercised.",
+    "drprepper": "Potential way to turn warehouse-floor voice notes into reviewed 3PL inquiry replies, follow-up drafts, or internal task briefs without starting at a desk. It must not become the authority for quotes, invoice figures, inventory, or shipping decisions.",
+    "toolUrl": "https://www.empacer.com/",
+    "postUrl": "https://www.empacer.com/",
+    "extraLinks": [
+      {
+        "label": "Official subscription terms and pricing explanation",
+        "url": "https://www.empacer.com/pricing"
+      }
+    ],
+    "firstSeen": "2026-10-29T06:02:15-07:00",
+    "lastReviewed": "2026-10-29T06:02:15-07:00"
   },
   {
     "priority": "Medium",
