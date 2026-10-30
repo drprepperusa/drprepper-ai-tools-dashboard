@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 29, 2026 · 6:02 AM PDT</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Oct 30, 2026 · 6:02 AM PDT</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,8 +276,8 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">457</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">437</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">458</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">438</div><div class="label">categories</div></div>
             <div class="metric"><div class="num">205</div><div class="label">high priority now</div></div>
           </div>
         </section>
@@ -2489,18 +2489,26 @@
       },
       {
             "priority": "High",
-            "aluma": "Useful for contractor lead tracking, project pipelines, bid/status dashboards, and repeatable estimator/vendor research workflows if ownership and permissions are kept clear.",
-            "next": "Sandbox with non-sensitive lead/vendor data first. Compare against Airtable/Sheets for import/export, permissions, self-host/cloud tradeoffs, and whether AI-generated workflows stay reviewable before using it for customer, pricing, or order truth.",
-            "name": "Teable 3.0",
+            "aluma": "Could support mobile contractor-lead and project-pipeline updates, with clear record ownership and role permissions.",
+            "next": "Pilot non-sensitive prospect records and test mobile permissions, voice-transcription review, import/export and self-host compatibility. Review AI data handling: prompts, attachments, voice and accessed project data can be sent to AI. Do not connect inboxes or enable sends/production writes without approval.",
+            "name": "Teable 3.0 / Mobile",
             "category": "AI spreadsheet / operations database",
-            "summary": "AI spreadsheet for business that combines spreadsheet-style data work with app/workflow building. Verified official site describes turning business data into AI workflows and custom apps; GitHub repo describes it as an AI Spreadsheet for Business.",
-            "drprepper": "Strong fit for prospect lists, vendor trackers, 3PL ops dashboards, lightweight inventory/order review sheets, and internal admin workflows that need more structure than plain Google Sheets but less overhead than a custom app.",
-            "toolUrl": "https://teable.io/",
+            "summary": "AI spreadsheet/database workspace with app and workflow building. The verified mobile page adds iPhone, iPad and Android access to the same workspace and permissions, hold-to-talk transcription, record updates, dashboards and automation-run review. Changes need connectivity; the app uses the web account's plan and AI credits.",
+            "drprepper": "Evaluate a mobile prospect/vendor tracker and internal task dashboard for warehouse-floor follow-ups. Keep PrepShip/client portal inventory, orders, billing and shipping truth in their canonical backend rather than creating a second operational ledger.",
+            "toolUrl": "https://teable.ai/mobile",
             "postUrl": "https://www.producthunt.com/products/teable-4",
             "extraLinks": [
                   {
+                        "label": "Mobile capabilities and privacy FAQ",
+                        "url": "https://teable.ai/mobile"
+                  },
+                  {
                         "label": "GitHub repo",
                         "url": "https://github.com/teableio/teable"
+                  },
+                  {
+                        "label": "Pricing",
+                        "url": "https://teable.ai/pricing"
                   },
                   {
                         "label": "Product Hunt source",
@@ -2508,7 +2516,7 @@
                   }
             ],
             "firstSeen": "2026-07-24T06:08:02-07:00",
-            "lastReviewed": "2026-07-24T06:08:02-07:00"
+            "lastReviewed": "2026-10-30T06:02:25-07:00"
       },
       {
             "priority": "High",
@@ -9046,6 +9054,25 @@
             "postUrl": "https://www.producthunt.com/products/coasty",
             "firstSeen": "2026-07-09T06:04:14-07:00",
             "lastReviewed": "2026-07-09T06:04:14-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Could organize rental-service campaign briefs and approved project-photo concepts without mixing internal customer/job records into creative AI context.",
+            "next": "Try one non-sensitive campaign brief and compare collaboration/export quality against the current workflow. Verify privacy, asset rights, provider costs and license restrictions before adoption; do not assume source-available means unrestricted public hosting or fully on-premises processing. Keep publishing and spend human-approved.",
+            "name": "Breatic",
+            "category": "Creative collaboration / AI canvas",
+            "summary": "Source-available creative workspace combining shared documents, visual canvases and a contextual AI agent. The verified repository documents real-time collaboration, a hosted free Starter plan and separately purchased AI generation credits. Timeline editing is not available; final video assembly requires another editor. Self-hosting still depends on Cloudflare services and configured AI providers.",
+            "drprepper": "Potential planning space for DR PREPPER USA service promos or KF Goodies campaigns: keep the brief, scene references, candidate visuals and review decisions together before production.",
+            "toolUrl": "https://github.com/orime-org/breatic",
+            "postUrl": "https://news.ycombinator.com/item?id=50299847",
+            "extraLinks": [
+                  {
+                        "label": "HN source metadata",
+                        "url": "https://hn.algolia.com/api/v1/items/50299847"
+                  }
+            ],
+            "firstSeen": "2026-10-30T06:02:25-07:00",
+            "lastReviewed": "2026-10-30T06:02:25-07:00"
       },
       {
             "priority": "Watch",
