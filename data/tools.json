@@ -5678,6 +5678,19 @@
     "lastReviewed": "2026-07-05T06:03:39-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Potential fit for capturing reproducible problems in internal quote and rental dashboards without lengthy technical follow-up.",
+    "next": "Pilot on a staging-only bug with synthetic data. Verify cookie/header/body redaction, permissions, retention, and MCP access before uploading anything. Keep customer records and credentials out of shared captures; require reviewed code and workflow tests before deployment.",
+    "name": "Faylee",
+    "category": "Bug reporting / agent debugging",
+    "summary": "Browser bug reports combine screen recordings, console errors, network requests, and reproduction steps in one shareable timeline. An MCP server exposes report evidence to coding agents. The official site describes client-side redaction and local replay before sharing; these safeguards still need testing.",
+    "drprepper": "Could improve PrepShip, Client Portal, and internal dashboard issue handoffs by giving developers the failed request and reproduction context instead of a screenshot alone. Evidence capture does not replace backend source-of-truth diagnosis or exact-SHA acceptance tests.",
+    "toolUrl": "https://faylee.app/",
+    "postUrl": "https://www.producthunt.com/products/faylee",
+    "firstSeen": "2026-10-31T06:02:21-07:00",
+    "lastReviewed": "2026-10-31T06:02:21-07:00"
+  },
+  {
     "priority": "Watch",
     "aluma": "Potential planning reference for testing a new rental-service offer, although the vendor primarily targets product-based businesses.",
     "next": "Try the free workshops with a non-confidential offer brief. Independently check market evidence and unit economics; require approval before publishing a site, collecting customer data, launching ads, or buying inventory.",
@@ -8446,6 +8459,19 @@
     ],
     "firstSeen": "2026-07-21T06:07:22-07:00",
     "lastReviewed": "2026-07-21T06:07:22-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Possible rental-inquiry intake and callback routing, subject to local phone coverage and accuracy testing.",
+    "next": "Verify US phone-number support, total per-minute pricing, recording consent, privacy/retention, and human-transfer behavior before a synthetic-call pilot. Start inbound-only; no outbound dialing or customer-data integrations without explicit review and compliance approval.",
+    "name": "Vaani Developer Platform",
+    "category": "Voice agents / inbound lead qualification",
+    "summary": "Voice-agent platform with plain-language agent configuration, multilingual calls, connected knowledge/tools, call context, and human handoffs. Official examples include qualifying inbound product inquiries and transferring interested callers to people; US deployment suitability is not yet established.",
+    "drprepper": "Potential inbound DR PREPPER USA inquiry triage: collect order volume, SKU count, service needs, and callback preference for a human sales follow-up. It should not set binding fulfillment rates or modify orders, billing, or inventory.",
+    "toolUrl": "https://www.vaani.dev/",
+    "postUrl": "https://www.producthunt.com/products/vaani-developer-platfrom",
+    "firstSeen": "2026-10-31T06:02:21-07:00",
+    "lastReviewed": "2026-10-31T06:02:21-07:00"
   },
   {
     "priority": "Medium",
