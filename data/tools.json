@@ -3646,6 +3646,19 @@
     "lastReviewed": "2026-08-30T06:04:05-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could flag model/API changes affecting public lead-research and project-monitoring automations before scheduled work breaks.",
+    "next": "Watch only the approved OpenAI models and tools actually in use. Verify each actionable alert against official provider docs/status and the exact installed configuration; keep changes human-reviewed and regression-tested. Check alert pricing and privacy before signup; do not upload credentials, customer records, or internal logs.",
+    "name": "Modelpeers",
+    "category": "AI operations / change monitoring",
+    "summary": "Independent public tracker for AI agents and models, with release, retirement, pricing/limit, incident, and breaking-change categories plus weekly follow alerts. Official homepage verified; individual feed claims require checking the linked vendor source.",
+    "drprepper": "Useful discovery layer for changes that could interrupt internal OpenAI-powered automations, research jobs, or developer tooling. It is not authoritative provider status or permission to change models/configuration.",
+    "toolUrl": "https://modelpeers.com/",
+    "postUrl": "https://www.producthunt.com/products/modelpeers",
+    "firstSeen": "2026-11-01T06:02:20-08:00",
+    "lastReviewed": "2026-11-01T06:02:20-08:00"
+  },
+  {
     "priority": "Watch",
     "aluma": "Could become a daily pipeline recap for Aluma leads, estimates, job status, and follow-up gaps if connected only to approved systems.",
     "next": "Compare against the existing Hermes cron brief before adopting; if tested, connect only low-risk sources first and document exactly which inboxes, repos, and analytics feeds it reads.",
@@ -4401,6 +4414,19 @@
     ],
     "firstSeen": "2026-08-12T04:04:50-07:00",
     "lastReviewed": "2026-08-12T04:04:50-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could repurpose equipment demonstrations and approved project walkthroughs into contractor-facing explainers.",
+    "next": "Trial one non-sensitive warehouse recording and compare editing time and output quality with the existing workflow. Check current plan limits and AI credits before purchase. Obtain recording consent, exclude customer labels/screens and private pricing, and require human approval before publishing or sending content.",
+    "name": "Riverside Agents",
+    "category": "AI video / sales content",
+    "summary": "Recording and editing platform with AI-assisted clips, transcripts, show notes, and promotional assets. The official homepage verifies the content-repurposing workflow; surfaced in the November 1 Daily AI Intel briefing.",
+    "drprepper": "Could turn an approved DR PREPPER USA warehouse walkthrough or fulfillment explainer into short sales clips and website content; also useful for KF Goodies product demonstrations.",
+    "toolUrl": "https://riverside.com",
+    "postUrl": "https://www.producthunt.com/products/riverside-fm",
+    "firstSeen": "2026-11-01T06:02:20-08:00",
+    "lastReviewed": "2026-11-01T06:02:20-08:00"
   },
   {
     "priority": "Medium",
