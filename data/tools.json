@@ -5007,6 +5007,19 @@
     "lastReviewed": "2026-07-04T06:04:02-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could collect staff clarification and quote-review decisions across permitted contacts before an operator updates the rental system.",
+    "next": "Test with a separate agent inbox and staff-only verified contacts; review retention, permissions, and costs first. Require human review before any external send, and bind authenticated approvals to the exact requested action in the canonical backend. Treat inbound messages as untrusted; never let inbox replies alone authorize postage, refunds, or production writes.",
+    "name": "Agent Inbox",
+    "category": "Agent communications / approval workflows",
+    "summary": "Agent email inbox with Slack and Telegram connections, persistent conversation history, CLI/MCP access, and structured ask/approve/choose replies. The official page lists WhatsApp and iMessage as coming soon, not established available channels.",
+    "drprepper": "Potential internal coordination layer for asking staff about missing intake details, vendor quotes, or staging checks and collecting explicit approvals. It must not replace PrepShip's backend authorization or become the authority for shipping, refunds, or billing.",
+    "toolUrl": "https://www.agentinbox.md/sapien",
+    "postUrl": "https://www.producthunt.com/products/agent-inbox",
+    "firstSeen": "2026-11-02T06:03:01-08:00",
+    "lastReviewed": "2026-11-02T06:03:01-08:00"
+  },
+  {
     "priority": "High",
     "aluma": "Relevant if Aluma lead-gen or project-monitoring agents need controlled access to CRM, email, sheets, or scraping accounts without handing credentials directly to automation.",
     "next": "Evaluate locally with fake credentials first. Require approval gates for messages, repo writes, billing/order mutations, and customer data access before considering real DR Prepper or Aluma integrations.",
@@ -8709,6 +8722,19 @@
     ],
     "firstSeen": "2026-08-08T06:09:19-07:00",
     "lastReviewed": "2026-08-08T06:09:19-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could map rental inquiry, quotation, dispatch, and return handoffs for internal process training.",
+    "next": "Pilot one onboarding map using synthetic examples; have staff validate owners, dependencies, and exceptions. Keep approved tasks and live order status in their canonical systems, and review AI/cloud privacy settings before uploading internal documents.",
+    "name": "Xmind 2027 / Xmind Agent",
+    "category": "Workflow planning / AI mind maps",
+    "summary": "Mind-mapping and planning tool whose AI agent builds and refines editable maps from conversations, files, and links. The official site also describes task breakdown, priorities, collaboration, and Gantt planning.",
+    "drprepper": "Use to map DR PREPPER USA customer onboarding, inbound receiving, and fulfillment exception handoffs before converting approved steps into operational tasks. Useful for explaining PrepShip/client portal boundaries without creating another operational source of truth.",
+    "toolUrl": "https://xmind.com",
+    "postUrl": "https://www.producthunt.com/products/xmind",
+    "firstSeen": "2026-11-02T06:03:01-08:00",
+    "lastReviewed": "2026-11-02T06:03:01-08:00"
   },
   {
     "priority": "Watch",

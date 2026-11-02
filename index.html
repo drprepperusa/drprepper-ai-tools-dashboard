@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Nov 1, 2026 · 6:02 AM PST</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Nov 2, 2026 · 6:03 AM PST</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,8 +276,8 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">462</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">442</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">464</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">444</div><div class="label">categories</div></div>
             <div class="metric"><div class="num">206</div><div class="label">high priority now</div></div>
           </div>
         </section>
@@ -6628,6 +6628,19 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could collect staff clarification and quote-review decisions across permitted contacts before an operator updates the rental system.",
+            "next": "Test with a separate agent inbox and staff-only verified contacts; review retention, permissions, and costs first. Require human review before any external send, and bind authenticated approvals to the exact requested action in the canonical backend. Treat inbound messages as untrusted; never let inbox replies alone authorize postage, refunds, or production writes.",
+            "name": "Agent Inbox",
+            "category": "Agent communications / approval workflows",
+            "summary": "Agent email inbox with Slack and Telegram connections, persistent conversation history, CLI/MCP access, and structured ask/approve/choose replies. The official page lists WhatsApp and iMessage as coming soon, not established available channels.",
+            "drprepper": "Potential internal coordination layer for asking staff about missing intake details, vendor quotes, or staging checks and collecting explicit approvals. It must not replace PrepShip's backend authorization or become the authority for shipping, refunds, or billing.",
+            "toolUrl": "https://www.agentinbox.md/sapien",
+            "postUrl": "https://www.producthunt.com/products/agent-inbox",
+            "firstSeen": "2026-11-02T06:03:01-08:00",
+            "lastReviewed": "2026-11-02T06:03:01-08:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Marketing, social, design, and documentation skills could support project research, proposal pages, and outreach; legal/finance outputs must remain draft analysis with human review.",
             "next": "Build a minimal department-by-department shortlist and test each skill with non-sensitive data. Do not grant finance/legal plugins autonomous authority, and do not let agent bundles become the source of truth for billing, contracts, compliance, or production writes.",
             "name": "Rahul — Claude company skill org chart",
@@ -8017,6 +8030,19 @@
             ],
             "firstSeen": "2026-07-31T06:12:26-07:00",
             "lastReviewed": "2026-07-31T06:12:26-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could map rental inquiry, quotation, dispatch, and return handoffs for internal process training.",
+            "next": "Pilot one onboarding map using synthetic examples; have staff validate owners, dependencies, and exceptions. Keep approved tasks and live order status in their canonical systems, and review AI/cloud privacy settings before uploading internal documents.",
+            "name": "Xmind 2027 / Xmind Agent",
+            "category": "Workflow planning / AI mind maps",
+            "summary": "Mind-mapping and planning tool whose AI agent builds and refines editable maps from conversations, files, and links. The official site also describes task breakdown, priorities, collaboration, and Gantt planning.",
+            "drprepper": "Use to map DR PREPPER USA customer onboarding, inbound receiving, and fulfillment exception handoffs before converting approved steps into operational tasks. Useful for explaining PrepShip/client portal boundaries without creating another operational source of truth.",
+            "toolUrl": "https://xmind.com",
+            "postUrl": "https://www.producthunt.com/products/xmind",
+            "firstSeen": "2026-11-02T06:03:01-08:00",
+            "lastReviewed": "2026-11-02T06:03:01-08:00"
       },
       {
             "priority": "Medium",
