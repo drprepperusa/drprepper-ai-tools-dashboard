@@ -7566,6 +7566,19 @@
     "lastReviewed": "2026-10-24T06:03:36-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could repurpose approved rental demonstrations or project footage into short sales explainers; technical and safety claims still require review.",
+    "next": "Pilot one approved, non-sensitive video and compare editing time, caption accuracy and export quality. Remove customer labels and private screens; verify asset and music rights. Require human approval before publishing and do not enable automatic posting or purchase a plan during evaluation.",
+    "name": "OpusClip 4.0",
+    "category": "Marketing / video repurposing",
+    "summary": "AI video editing and clipping service with captions, reframing and social scheduling. The official site now lists raw-footage production, speech enhancement and dubbing. Free plan includes watermarks and a three-day export window; Starter is listed at $15 monthly. Vendor capabilities verified, not independently benchmarked.",
+    "drprepper": "Turn approved DR PREPPER USA warehouse footage and KF Goodies product demonstrations into short marketing clips without filming a separate asset for every channel.",
+    "toolUrl": "https://www.opus.pro/pricing",
+    "postUrl": "https://www.producthunt.com/products/opusclip",
+    "firstSeen": "2026-11-04T06:03:05-08:00",
+    "lastReviewed": "2026-11-04T06:03:05-08:00"
+  },
+  {
     "priority": "High",
     "aluma": "Could support Aluma lead-gen campaign reporting if paid ads or outreach dashboards become active, but only from read-only reporting credentials.",
     "next": "Pilot read-only with non-sensitive marketing data first. Confirm supported connectors, MCP auth boundaries, retention, pricing, and approval gates before connecting live ad accounts or letting agents change campaigns.",
@@ -8111,6 +8124,19 @@
     ],
     "firstSeen": "2026-07-24T06:08:02-07:00",
     "lastReviewed": "2026-07-24T06:08:02-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Could draft follow-up notes after rental prospect calls while staff verify equipment availability, quote terms and technical statements.",
+    "next": "Verify AI providers, retention, document permissions, consent requirements and approved OpenAI-only model compatibility before installation or customer use. Test only with synthetic calls and sanitized documents after approval; local transcription alone is not a privacy guarantee. Keep all messages as drafts and require review before any send or CRM write.",
+    "name": "TellPip",
+    "category": "Sales / call assistance",
+    "summary": "Mac call assistant advertising local audio transcription and client-memory storage, document-grounded suggestions, notes and follow-up drafts. Answer generation sends relevant conversation and document text to AI, so it is not an entirely local/private workflow. Requires Apple Silicon and macOS 14.2 or later; official site offers five free ten-minute trial sessions without a card.",
+    "drprepper": "Potential aid for remembering 3PL prospect commitments and drafting sales follow-ups from approved service documents; it must not become authority for pricing, capacity or contractual promises.",
+    "toolUrl": "https://tellpip.eu",
+    "postUrl": "https://www.producthunt.com/products/tellpip",
+    "firstSeen": "2026-11-04T06:03:05-08:00",
+    "lastReviewed": "2026-11-04T06:03:05-08:00"
   },
   {
     "priority": "Watch",
