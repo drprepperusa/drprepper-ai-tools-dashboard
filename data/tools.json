@@ -5075,6 +5075,19 @@
     "lastReviewed": "2026-10-15T06:02:20-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could support remote approval of internal automation changes without granting unattended authority to send outreach or alter records.",
+    "next": "Evaluate with a harmless approval/deny test and fail-closed timeout only. Inspect the Hermes plugin, authentication, audit retention and command/diff/transcript data handling before installation; disable unnecessary transcript sync and keep secrets/customer data out of payloads. Do not enable automatic deployment, spending or destructive-action approval.",
+    "name": "Pushary — mobile AI-agent approval control",
+    "category": "Agent governance / mobile approvals",
+    "summary": "Approval-routing service with phone, desktop, Slack and web delivery plus a decision ledger. The official site lists Codex and Hermes support, configurable timeout behavior and per-tool policies. Listed plans start at $9.99/month after a three-day trial; this is vendor documentation, not an installed integration test.",
+    "drprepper": "Potential way for DJ to approve bounded developer-agent actions away from the desk without enabling blanket auto-approval for deployments, billing, customer messages or destructive changes.",
+    "postUrl": "https://pushary.com",
+    "toolUrl": "https://pushary.com",
+    "firstSeen": "2026-11-06T06:02:28-08:00",
+    "lastReviewed": "2026-11-06T06:02:28-08:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful for construction prospecting or project-intel agents if memory is scoped to non-sensitive lead metadata and reviewed source notes.",
     "next": "Evaluate privacy, retention, export, and access controls with non-sensitive sample memory only; do not store customer, pricing, or credential data until security is reviewed.",
@@ -5744,6 +5757,19 @@
   },
   {
     "priority": "Watch",
+    "aluma": "Possible isolated trial for public contractor research and a human-reviewed prospect shortlist, with no automatic outreach or CRM mutations.",
+    "next": "First verify privacy, retention, permission boundaries, approval enforcement and total usage cost with public/sample data. Use only an approved direct OpenAI GPT connection; do not route work through OpenRouter or other model providers. Keep messages, purchases, production access and authoritative order/inventory changes disconnected during evaluation.",
+    "name": "Rerun — scheduled AI coworker workspace",
+    "category": "Business automation / supervised agents",
+    "summary": "Hosted workspace for scheduled or triggered AI coworkers with a live activity board, computer-use workflows and approval pauses. Its official site lists $29/month for five coworkers with a five-day trial; model and tool/data usage may add charges. Capabilities and isolation are vendor claims, not independently tested.",
+    "drprepper": "Compare against existing Hermes routines using one draft-only 3PL prospect shortlist or weekly internal report; avoid duplicating the current scheduler or connecting live fulfillment/billing writes.",
+    "postUrl": "https://rerun.build",
+    "toolUrl": "https://rerun.build",
+    "firstSeen": "2026-11-06T06:02:28-08:00",
+    "lastReviewed": "2026-11-06T06:02:28-08:00"
+  },
+  {
+    "priority": "Watch",
     "aluma": "Potential planning reference for testing a new rental-service offer, although the vendor primarily targets product-based businesses.",
     "next": "Try the free workshops with a non-confidential offer brief. Independently check market evidence and unit economics; require approval before publishing a site, collecting customer data, launching ads, or buying inventory.",
     "name": "Draper",
@@ -6272,6 +6298,25 @@
     ],
     "firstSeen": "2026-07-14T18:57:44-07:00",
     "lastReviewed": "2026-07-14T18:57:44-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Optional landing-page composition prototype and interaction references for rental/project pages; prioritize clear service information and quote requests over decorative motion.",
+    "next": "Pick a few reference interactions, not a wholesale redesign. Before adopting Studio verify code export, framework compatibility, asset rights, accessibility, mobile performance and hosting. UI animations must never imply saved orders, successful payments or changed shipments before backend confirmation; the post's cheaper-than-Lovable claim needs verification.",
+    "name": "MotionSites Studio + 60fps — prototype and interaction references",
+    "category": "Design prototyping / interaction references",
+    "summary": "User-shared design-resource bundle distinguishes MotionSites Studio's AI website generation/restyling and code offering from MotionSites' separate prompt products. 60fps provides mobile/web interaction and animation references. Both official sites were checked; comparative pricing and production readiness are not established.",
+    "drprepper": "Use Studio for a disposable DR PREPPER USA landing-page prototype and 60fps to research clearer PrepShip/client portal drawers, loading states and confirmation feedback. Preserve the approved operational interface and backend-owned state.",
+    "postUrl": "https://x.com/i_am_aiabir/status/2118180756698923263?a=fBcwh0R-QBo7ZqxnVjU&s=46",
+    "toolUrl": "https://studio.motionsites.ai/",
+    "extraLinks": [
+      {
+        "label": "60fps interaction references",
+        "url": "https://60fps.design/"
+      }
+    ],
+    "firstSeen": "2026-11-06T06:02:28-08:00",
+    "lastReviewed": "2026-11-06T06:02:28-08:00"
   },
   {
     "name": "RoundtableSpace — AI landing pages look the same",
