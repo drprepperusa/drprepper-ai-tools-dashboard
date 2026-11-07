@@ -5088,6 +5088,19 @@
     "lastReviewed": "2026-11-06T06:02:28-08:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could support staff-authorized CRM and project research without sharing a single broad service account.",
+    "next": "Evaluate a read-only connector with synthetic data first. Verify per-user and tenant isolation, revocation, log redaction, retention, and actual free-tier limits. Require review before emails, CRM writes, financial actions, or production access; keep secrets outside model context and do not subscribe automatically.",
+    "name": "Scalekit AgentKit",
+    "category": "Agent integrations / delegated access",
+    "summary": "Managed agent connectors and MCP access using per-user authorization, role-scoped tool sets, credential storage, and tool-call logs. Official pricing lists a free tier and Growth at $99 per month; confirm current limits because the pricing page contains inconsistent free-tier call counts.",
+    "drprepper": "Potential connection layer for internal CRM, project, and inbox research assistants that need each staff member's authorized access. It does not replace PrepShip or Client Portal backend authorization, tenant scoping, or canonical business rules.",
+    "toolUrl": "https://www.scalekit.com/agentkit",
+    "postUrl": "https://www.scalekit.com/pricing",
+    "firstSeen": "2026-11-07T06:02:22-08:00",
+    "lastReviewed": "2026-11-07T06:02:22-08:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful for construction prospecting or project-intel agents if memory is scoped to non-sensitive lead metadata and reviewed source notes.",
     "next": "Evaluate privacy, retention, export, and access controls with non-sensitive sample memory only; do not store customer, pricing, or credential data until security is reviewed.",
@@ -7638,6 +7651,19 @@
   },
   {
     "priority": "Medium",
+    "aluma": "Possible short equipment or service explainers using approved reference imagery, with review for misleading jobsite or safety details.",
+    "next": "Verify account availability and current quota, then use approved non-sensitive images for one draft. Review packaging, labels, generated text, narration, usage rights, and factual claims; keep human approval before publishing or ad spend.",
+    "name": "Google Vids — short product-promo pilot",
+    "category": "Marketing / AI video creation",
+    "summary": "Google's November 5 announcement says Google Vids supports up to three free 15-second generated videos per month for Google-account or Workspace users, using Omni 1.2 Flash, reference images, and speech narration. The creation link resolves to Google's sign-in flow; no account-level generation was tested.",
+    "drprepper": "Try one short KF Goodies product promo or DR PREPPER USA service explainer before adding another paid video subscription. Use approved product images and real operational claims.",
+    "toolUrl": "https://vids.new",
+    "postUrl": "https://blog.google/products-and-platforms/products/workspace/omni-1-2-flash-google-vids/",
+    "firstSeen": "2026-11-07T06:02:22-08:00",
+    "lastReviewed": "2026-11-07T06:02:22-08:00"
+  },
+  {
+    "priority": "Medium",
     "aluma": "Could repurpose approved rental demonstrations or project footage into short sales explainers; technical and safety claims still require review.",
     "next": "Pilot one approved, non-sensitive video and compare editing time, caption accuracy and export quality. Remove customer labels and private screens; verify asset and music rights. Require human approval before publishing and do not enable automatic posting or purchase a plan during evaluation.",
     "name": "OpusClip 4.0",
@@ -8313,22 +8339,26 @@
   },
   {
     "priority": "Medium",
-    "aluma": "Could help find contractors and project announcements with traceable public sources; verify geography, contractor role, and project stage before outreach.",
-    "next": "Compare a small public-data shortlist against manual research. Check every qualification and citation, cap usage, and review retention terms before sending any sensitive data. Keep outreach approval and canonical CRM identity/deduplication separate from search results.",
+    "aluma": "Monitor contractor and project announcements with public citations; verify geography, contractor role, and project stage before outreach.",
+    "next": "Compare a small public-data shortlist against manual research. For a Monitors pilot, verify webhook signatures, deduplicate delivery events, cap usage, and inspect failed runs. Check citations and retention terms; keep CRM identity and qualification backend-owned, with no automatic outreach or sensitive-data uploads.",
     "name": "Exa — source-linked prospect research",
     "category": "Sales research / web search API",
-    "summary": "Web search, page-content retrieval, and deeper research APIs for assistants. The official site supports company research and structured outputs with citations; pricing lists monthly starter credits and usage-based endpoints. Vendor benchmark claims are not independent proof of lead quality.",
-    "drprepper": "Test public-source research on DTC brands with bulky products, keeping each brand website and evidence of fulfillment needs alongside the lead. Research output is not proof of shipping volume or permission to contact a prospect.",
+    "summary": "Web search, page-content retrieval, and research APIs for assistants. Monitors adds recurring searches that remove previously returned findings and deliver new results, structured output, and grounding to an HTTPS webhook. Official documentation describes signature verification and run-status inspection; this is discovery evidence, not independent lead qualification.",
+    "drprepper": "Research DTC brands with bulky products and monitor public funding or expansion announcements for new 3PL sales signals. Preserve original sources and verify fulfillment needs rather than treating a synthesized finding as proof of shipping volume.",
     "toolUrl": "https://exa.ai/",
     "postUrl": "https://exa.ai/",
     "extraLinks": [
       {
         "label": "Official pricing",
         "url": "https://exa.ai/pricing"
+      },
+      {
+        "label": "Monitors API quickstart",
+        "url": "https://exa.ai/docs/monitors/quickstart"
       }
     ],
     "firstSeen": "2026-10-20T06:02:09-07:00",
-    "lastReviewed": "2026-10-20T06:02:09-07:00"
+    "lastReviewed": "2026-11-07T06:02:22-08:00"
   },
   {
     "priority": "Medium",
