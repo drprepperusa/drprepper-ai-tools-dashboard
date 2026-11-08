@@ -7952,6 +7952,19 @@
     "lastReviewed": "2026-09-06T06:05:28-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Secondary fit only if rental operations develop a comparable database/code/log support workload.",
+    "next": "Watch only: verify OpenAI model support, pricing, data retention, tenant scoping, and connector permissions before any trial beyond public demo material. If compatible, use synthetic staging data and least-privilege read-only access; require human review of PRs and drafted replies. Never grant production writes or trigger billing, postage, refunds, or outbound messages.",
+    "name": "TraceX — evidence-led production issue investigation",
+    "category": "Production diagnostics / support triage",
+    "summary": "Private-beta investigation tool that connects databases, code, logs, and support sources to produce cited root-cause findings and proposed pull requests. The vendor advertises read-only production investigation and 50 free beta investigations; its current homepage names Anthropic or Gemini bring-your-own model accounts, not verified OpenAI support.",
+    "drprepper": "Useful workflow reference for PrepShip/client-portal support escalations: correlate the customer symptom with canonical backend records, exact code changes, and logs before proposing a fix. Model-provider compatibility is an adoption blocker under the current OpenAI-only policy.",
+    "toolUrl": "https://tracexpro.com",
+    "postUrl": "https://www.producthunt.com/products/tracex?launch=tracex",
+    "firstSeen": "2026-11-08T06:02:02-08:00",
+    "lastReviewed": "2026-11-08T06:02:02-08:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "make.design and Selected can help produce quick proposal/landing-page visuals; Aside may help project/prospect research; Mac productivity tools are optional personal workflow improvements.",
     "next": "Do not install everything. Shortlist make.design for DR Prepper landing-page mockups and Supaste only if local clipboard history would save operator time; treat Aside as sandbox-only until privacy/data access behavior is reviewed.",
@@ -8670,6 +8683,19 @@
     "postUrl": "https://www.producthunt.com/products/vaani-developer-platfrom",
     "firstSeen": "2026-10-31T06:02:21-07:00",
     "lastReviewed": "2026-10-31T06:02:21-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Potential fit for dictating rental inquiry notes and proposal follow-up drafts on a Mac; not a replacement for approved CRM records.",
+    "next": "Trial with non-sensitive sample notes, verify microphone permissions and offline processing, and compare accuracy for SKU names and quantities. Keep dictated text as a draft requiring review before customer messages or system updates; do not install or purchase automatically.",
+    "name": "seam — on-device Mac voice transcription",
+    "category": "Voice dictation / Mac productivity",
+    "summary": "Mac top-of-screen utility with voice transcription and translation, calendar, music, and focus controls. The vendor states voice processing stays on-device; the official site lists $19.90 once for two Macs and a 48-hour no-card trial.",
+    "drprepper": "Could shorten drafting of sales follow-ups, warehouse SOP notes, and internal task handoffs without uploading voice recordings, subject to verifying the vendor's local-processing claim.",
+    "toolUrl": "https://getseam.app",
+    "postUrl": "https://getseam.app",
+    "firstSeen": "2026-11-08T06:02:02-08:00",
+    "lastReviewed": "2026-11-08T06:02:02-08:00"
   },
   {
     "priority": "Medium",
