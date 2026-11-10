@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Nov 8, 2026 · 6:02 AM PST</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Nov 10, 2026 · 6:04 AM PST</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,8 +276,8 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">477</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">457</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">481</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">461</div><div class="label">categories</div></div>
             <div class="metric"><div class="num">206</div><div class="label">high priority now</div></div>
           </div>
         </section>
@@ -7135,6 +7135,19 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Potential fit for approved rental FAQs and equipment onboarding guides, separate from customer/project confidential records.",
+            "next": "Test ten public, approved FAQs and inspect citation accuracy plus review/publish controls. Verify authentication, tenant isolation, retention and MCP scope before private content; no credentials, customer records, autonomous publishing or paid signup in the pilot.",
+            "name": "DocsAlot — hosted docs and agent-readable knowledge",
+            "category": "Documentation / support knowledge",
+            "summary": "Hosted docs-as-code platform offering human-readable docs, markdown, llms.txt, skill.md and hosted MCP retrieval from maintained documentation. Official pricing lists Startup at $79/month for a public site and Team at $149/month including private authenticated docs.",
+            "drprepper": "Could consolidate approved PrepShip/client portal onboarding and recurring fulfillment FAQs into one maintained documentation source. Documentation and retrieval must not become alternate authorities for live order status, rates or client-specific data.",
+            "toolUrl": "https://docsalot.dev/",
+            "postUrl": "https://docsalot.dev/",
+            "firstSeen": "2026-11-10T06:04:04-08:00",
+            "lastReviewed": "2026-11-10T06:04:04-08:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "No direct Aluma fit; treat it as an e-commerce operations benchmark rather than a construction lead-gen tool.",
             "next": "Use as product-intelligence input only. Compare Doba Pilot's fulfillment/order-follow-up language against PrepShip/Client Portal roadmap ideas; do not rely on dropshipping automation for DR PREPPER operational truth.",
             "name": "Doba Pilot",
@@ -7291,6 +7304,19 @@
             ],
             "firstSeen": "2026-09-11T04:00:55-07:00",
             "lastReviewed": "2026-09-11T06:06:51-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could organize project rental terms and compare successive quote documents in a bounded review folder.",
+            "next": "Pilot on copied, non-sensitive documents; inspect agent context, provider retention, permissions and file-write behavior before granting access. Keep human approval before edits, sends or system-of-record updates; do not purchase the supporter pass.",
+            "name": "Voyager — agent-enabled Mac file browser",
+            "category": "Internal automation / document workflows",
+            "summary": "Mac file browser that connects existing AI agents to selected local files, saved searches and project tabs. Free version is available for macOS 13+; bring your own agent. Plus and Pro are listed as not yet available. Local file storage does not by itself prove that connected agents process data locally.",
+            "drprepper": "Potentially useful for comparing redacted supplier renewals, organizing invoice research and checking PDFs against spreadsheets without repeatedly attaching files. Does not replace canonical order, inventory or accounting records.",
+            "toolUrl": "https://voyager.fm/",
+            "postUrl": "https://voyager.fm/",
+            "firstSeen": "2026-11-10T06:04:04-08:00",
+            "lastReviewed": "2026-11-10T06:04:04-08:00"
       },
       {
             "priority": "Medium",
@@ -9319,6 +9345,19 @@
       },
       {
             "priority": "Watch",
+            "aluma": "Possible fit for prioritizing incoming rental inquiries for staff review after evaluation on representative examples.",
+            "next": "Verify current API documentation, pricing, retention and provider compatibility before any integration. Benchmark redacted examples with an explicit abstain/manual-review path; keep deterministic backend permissions and business rules authoritative.",
+            "name": "Sage — Levanto Labs decision model API",
+            "category": "Developer tooling / semantic classification",
+            "summary": "Developer API for semantic decisions at runtime. The official example returns a yes/no answer with probability and routes an uncertain result to human review. Current homepage verification supports the decision-model concept, not the earlier session's broader conversation-extraction or pricing claims.",
+            "drprepper": "Could assist with non-authoritative document triage or flagging sensitive content in intake. Model output must not decide tenant access, inventory adjustments, billing amounts or shipping authorization.",
+            "toolUrl": "https://levanto.ai/",
+            "postUrl": "https://levanto.ai/",
+            "firstSeen": "2026-11-10T06:04:04-08:00",
+            "lastReviewed": "2026-11-10T06:04:04-08:00"
+      },
+      {
+            "priority": "Watch",
             "aluma": "Indirect use for maintainers of internal dashboards or automation; no direct rental-operations benefit established.",
             "next": "Evaluate on a disposable repository with synthetic changes and an approved OpenAI endpoint only. Inspect hook permissions, diff transmission, secret exclusions, and bypass behavior before adoption; keep canonical CI and human approval mandatory for money, postage, inventory, or external actions.",
             "name": "Sphinx — code-understanding Git hook",
@@ -9435,6 +9474,19 @@
             "postUrl": "https://www.producthunt.com/products/sideos-ai",
             "firstSeen": "2026-10-24T06:03:36-07:00",
             "lastReviewed": "2026-10-24T06:03:36-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Could compare local formwork/shoring supplier discovery against competitors using a small regional prompt set.",
+            "next": "Define five buyer-intent queries and manually check cited answers before considering a trial. Confirm quota calculation and current pricing; no paid subscription or automatic website publishing is authorized.",
+            "name": "Dageno AI — brand visibility monitoring",
+            "category": "Marketing / AI search visibility",
+            "summary": "Tracks brand mentions, competitor visibility, original AI answers and citations across AI platforms and regions. Official Starter pricing is $49/month with 50 prompt quota and 1,500 monthly prompt runs; platform/region combinations count separately. Marketing claims are not independently validated.",
+            "drprepper": "Could establish whether prospective 3PL buyers find DR PREPPER USA in AI search and identify cited pages worth improving. Use observed citations and qualified inquiries, not visibility scores alone, to judge value.",
+            "toolUrl": "https://www.dageno.ai/",
+            "postUrl": "https://www.dageno.ai/pricing",
+            "firstSeen": "2026-11-10T06:04:04-08:00",
+            "lastReviewed": "2026-11-10T06:04:04-08:00"
       },
       {
             "priority": "Watch",
