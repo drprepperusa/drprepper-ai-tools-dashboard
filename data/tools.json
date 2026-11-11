@@ -4885,6 +4885,19 @@
     "lastReviewed": "2026-06-27T06:04:50-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Could assist recurring statement collection or reconciliation workpapers after access and exception-handling validation.",
+    "next": "Assess privacy, retention, sandbox permissions, and pricing before recording any finance process. Pilot on redacted historical invoices with read-only sources and separately reviewed outputs; no automatic disputes, payments, refunds, or ledger edits. Validate every discrepancy manually.",
+    "name": "Latch — demonstrated accounting workflows",
+    "category": "Accounting operations / reviewed automation",
+    "summary": "Demonstrate a recurring accounting process through screen and voice capture, then review the generated sidekick steps and results. The official site describes scoped connections, previews, and human review of uncertain items; suitability for freight auditing is a proposed use, not a verified native feature.",
+    "drprepper": "Potential aid for collecting carrier statements and preparing invoice-exception workpapers against agreed rates and shipment evidence. Keep official billing and ledger calculations in their canonical backend owners.",
+    "toolUrl": "https://www.latch.ai/",
+    "postUrl": "https://www.latch.ai/",
+    "firstSeen": "2026-11-11T06:04:17-08:00",
+    "lastReviewed": "2026-11-11T06:04:17-08:00"
+  },
+  {
     "priority": "High",
     "aluma": "Secondary fit for Aluma outreach ads or rental landing-page copy if paid campaigns expand; treat it as a creative-risk screen, not a replacement for local-market judgment.",
     "next": "Test with a small batch of non-sensitive historical ad headlines/descriptions. Compare verdicts against actual CTR/CVR or operator judgment before wiring it into any live ad workflow.",
@@ -8098,6 +8111,25 @@
     "lastReviewed": "2026-08-01T06:12:17-07:00"
   },
   {
+    "priority": "High",
+    "aluma": "Possible quote-form and rental-inquiry usability checks on a staging site.",
+    "next": "Pilot a staging-only workflow with synthetic accounts and records. Disable postage purchases, refunds, real messages, and production writes. Compare recordings against exact-SHA acceptance tests; exploratory success is not money-path certification. Verify data retention before sharing access.",
+    "name": "Wren by Seldon",
+    "category": "QA / behavioral browser testing",
+    "summary": "Plain-English website tests run browser agents and return recorded steps and failure evidence. Official pricing offers the first 10 completed runs free per workspace, then $3 per completed run including model and browser usage.",
+    "drprepper": "Supplement deterministic PrepShip/client portal tests with exploratory coverage of confusing feedback, repeated clicks, and unexpected navigation; recordings can make developer handoffs more reproducible.",
+    "toolUrl": "https://www.seldon.com/products/wren",
+    "postUrl": "https://www.seldon.com/products/wren",
+    "extraLinks": [
+      {
+        "label": "Discovery: November 10 Product Hunt leaderboard",
+        "url": "https://www.producthunt.com/leaderboard/daily/2026/11/10"
+      }
+    ],
+    "firstSeen": "2026-11-11T06:04:17-08:00",
+    "lastReviewed": "2026-11-11T06:04:17-08:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Secondary fit for quick QA on Aluma web forms, CRM flows, or lead-capture pages before turning repeat checks into durable tests.",
     "next": "Try one non-sensitive staging workflow first, compare its output against a normal Playwright test, and do not give it production credentials or customer data until reliability and logging are proven.",
@@ -8247,6 +8279,25 @@
   },
   {
     "priority": "High",
+    "aluma": "Audit genuine formwork/shoring rental capabilities and service coverage using real project evidence; route technical and safety claims through internal review.",
+    "next": "Produce a small evidence-linked audit before proposing repairs. Check real crawler access, redirects, canonical URLs, sitemap, WAF, and page content; a spoofed user-agent HTTP 200 is not sufficient proof. Separate search crawling from training controls. Review linked skills before installation and require approval for publishing or indexability changes.",
+    "name": "TheoAGI SEO/GEO playbook — evidence-first site audit",
+    "category": "SEO / AI-search visibility workflow",
+    "summary": "User-shared article analyzed by the assistant as a reference for live crawl/indexability checks, evidence-backed content, and approval-gated publishing. Google says AI Overviews/AI Mode need no special schema or extra technical requirements beyond ordinary search eligibility; article-specific numeric formulas are heuristics, not platform rules.",
+    "drprepper": "Apply a read-only audit to fulfillment, prep, storage, kitting, returns, and onboarding pages. Connect search visibility to qualified quote requests rather than treating AI mentions as customers.",
+    "toolUrl": "https://developers.google.com/search/docs/appearance/ai-features",
+    "postUrl": "https://x.com/theoagi/status/2120163220312699025",
+    "extraLinks": [
+      {
+        "label": "Official OpenAI crawler controls",
+        "url": "https://developers.openai.com/api/docs/bots"
+      }
+    ],
+    "firstSeen": "2026-11-11T06:04:17-08:00",
+    "lastReviewed": "2026-11-11T06:04:17-08:00"
+  },
+  {
+    "priority": "High",
     "aluma": "Useful for monitoring Aluma landing pages, contractor/rental SEO pages, and project-lead content after publishing; keep it read-only and use findings to decide which pages need human content updates.",
     "next": "Install only with a read-only Google service account, grant access to the intended Search Console properties, and start with weekly assistant summaries of pages/queries that need attention. Do not give agents Search Console write/admin permissions.",
     "name": "Google Search Console MCP",
@@ -8352,6 +8403,25 @@
     "postUrl": "https://livedemo.ai/",
     "firstSeen": "2026-07-27T06:13:42-07:00",
     "lastReviewed": "2026-07-27T06:13:42-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Potential prospect timing aid for contractor accounts, subject to validating construction-specific signals and regional coverage.",
+    "next": "Review a small prospect sample before connecting accounts. Keep message approval on, CRM writes off until mapped, and verify consent, opt-outs, platform terms, and deliverability. No subscription purchase or automatic sending without approval.",
+    "name": "Alsona",
+    "category": "Sales intelligence / approval-gated outreach",
+    "summary": "Buying-signal prospecting and contextual LinkedIn/email outreach with a unified inbox and approval mode. Official pricing lists Starter at $99/month with a seven-day trial; vendor effectiveness claims still need a controlled pilot.",
+    "drprepper": "Evaluate whether hiring, funding, or other concrete intent signals find better-fit DR PREPPER USA fulfillment prospects than static contact lists. Keep 3PL and wholesale campaigns separate.",
+    "toolUrl": "https://alsona.com/pricing",
+    "postUrl": "https://alsona.com/pricing",
+    "extraLinks": [
+      {
+        "label": "Discovery: November 10 Product Hunt leaderboard",
+        "url": "https://www.producthunt.com/leaderboard/daily/2026/11/10"
+      }
+    ],
+    "firstSeen": "2026-11-11T06:04:17-08:00",
+    "lastReviewed": "2026-11-11T06:04:17-08:00"
   },
   {
     "priority": "Medium",
