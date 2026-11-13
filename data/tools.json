@@ -3198,6 +3198,19 @@
     "lastReviewed": "2026-09-23T06:05:53-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Possible guided onboarding for contractor-facing quote or rental portals if those workflows are implemented and explicitly registered first.",
+    "next": "Prototype one read-only walkthrough with synthetic data. Verify SDK behavior, pricing, tenant isolation, retention, and accessibility; keep permissions in the backend and require explicit approval for order edits, postage, billing, or outbound messages.",
+    "name": "Aven App Agent",
+    "category": "AI in-app guidance / product onboarding",
+    "summary": "Embedded AI assistant for contextual questions and developer-registered pages, UI elements, and workflows. The verified official site says the host application retains navigation and UI control; numeric pricing was not verified.",
+    "drprepper": "Potential client-portal onboarding aid for helping customers find approved order, shipment, and billing screens. Guidance must consume canonical backend facts, not become an alternate shipping or billing authority.",
+    "postUrl": "https://www.producthunt.com/products/aven-app-agent",
+    "toolUrl": "https://www.avenappagent.com/",
+    "firstSeen": "2026-11-13T06:03:03-08:00",
+    "lastReviewed": "2026-11-13T06:03:03-08:00"
+  },
+  {
     "priority": "High",
     "aluma": "Could help Aluma internal dashboards or client-facing intake flows explain which jobsite/project fields matter, but only after the workflow source of truth is stable.",
     "next": "Prototype on one low-risk internal screen first. Verify React/app integration, what UI data is sent to Frigade, permission boundaries, pricing, logs, and human approval for any action-taking workflow before exposing it to customers.",
@@ -4381,6 +4394,19 @@
     ],
     "firstSeen": "2026-09-22T06:06:50-07:00",
     "lastReviewed": "2026-09-22T06:06:50-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could turn reviewed rental-system walkthroughs and estimator process notes into onboarding articles and training modules without exposing private project details.",
+    "next": "Pilot one redacted portal walkthrough and manually check every instruction against current behavior. Verify plan limits, pricing, retention, recording consent, and connector permissions; use approved OpenAI tooling, keep outputs as drafts, and require human publishing review.",
+    "name": "Trainn MCP",
+    "category": "AI video / SOP and training automation",
+    "summary": "MCP integration for creating and updating product videos, help articles, and training courses through AI chat. Its verified official page says generated content remains draft until published; new recording and guide-building still happen inside Trainn.",
+    "drprepper": "Could turn approved PrepShip/client-portal walkthroughs and warehouse SOP recordings into reusable customer onboarding and staff training, with updates tied to verified software behavior rather than AI guesses.",
+    "postUrl": "https://www.producthunt.com/products/trainn?launch=trainn-mcp",
+    "toolUrl": "https://trainn.co/mcp/",
+    "firstSeen": "2026-11-13T06:03:03-08:00",
+    "lastReviewed": "2026-11-13T06:03:03-08:00"
   },
   {
     "priority": "Medium",

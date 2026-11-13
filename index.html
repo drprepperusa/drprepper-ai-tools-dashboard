@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Nov 12, 2026 · 6:02 AM PST</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Nov 13, 2026 · 6:03 AM PST</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,7 +276,7 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">487</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">489</div><div class="label">tracked entries</div></div>
             <div class="metric"><div class="num">467</div><div class="label">categories</div></div>
             <div class="metric"><div class="num">208</div><div class="label">high priority now</div></div>
           </div>
@@ -5966,6 +5966,19 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Possible guided onboarding for contractor-facing quote or rental portals if those workflows are implemented and explicitly registered first.",
+            "next": "Prototype one read-only walkthrough with synthetic data. Verify SDK behavior, pricing, tenant isolation, retention, and accessibility; keep permissions in the backend and require explicit approval for order edits, postage, billing, or outbound messages.",
+            "name": "Aven App Agent",
+            "category": "AI in-app guidance / product onboarding",
+            "summary": "Embedded AI assistant for contextual questions and developer-registered pages, UI elements, and workflows. The verified official site says the host application retains navigation and UI control; numeric pricing was not verified.",
+            "drprepper": "Potential client-portal onboarding aid for helping customers find approved order, shipment, and billing screens. Guidance must consume canonical backend facts, not become an alternate shipping or billing authority.",
+            "postUrl": "https://www.producthunt.com/products/aven-app-agent",
+            "toolUrl": "https://www.avenappagent.com/",
+            "firstSeen": "2026-11-13T06:03:03-08:00",
+            "lastReviewed": "2026-11-13T06:03:03-08:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Could reduce costs for Aluma lead scraping/classification or proposal-drafting agents if those workflows become high-volume, but only after provider behavior and latency are tested on non-critical jobs.",
             "next": "Run a small sandbox with non-sensitive prompts and compare cost, latency, model output, logging, and failure behavior against direct provider calls before routing any production/customer-impacting agent traffic.",
             "name": "FlexInference",
@@ -6414,6 +6427,19 @@
             ],
             "firstSeen": "2026-08-31T06:04:36-07:00",
             "lastReviewed": "2026-08-31T06:06:46-07:00"
+      },
+      {
+            "priority": "Medium",
+            "aluma": "Could turn reviewed rental-system walkthroughs and estimator process notes into onboarding articles and training modules without exposing private project details.",
+            "next": "Pilot one redacted portal walkthrough and manually check every instruction against current behavior. Verify plan limits, pricing, retention, recording consent, and connector permissions; use approved OpenAI tooling, keep outputs as drafts, and require human publishing review.",
+            "name": "Trainn MCP",
+            "category": "AI video / SOP and training automation",
+            "summary": "MCP integration for creating and updating product videos, help articles, and training courses through AI chat. Its verified official page says generated content remains draft until published; new recording and guide-building still happen inside Trainn.",
+            "drprepper": "Could turn approved PrepShip/client-portal walkthroughs and warehouse SOP recordings into reusable customer onboarding and staff training, with updates tied to verified software behavior rather than AI guesses.",
+            "postUrl": "https://www.producthunt.com/products/trainn?launch=trainn-mcp",
+            "toolUrl": "https://trainn.co/mcp/",
+            "firstSeen": "2026-11-13T06:03:03-08:00",
+            "lastReviewed": "2026-11-13T06:03:03-08:00"
       },
       {
             "priority": "Medium",
