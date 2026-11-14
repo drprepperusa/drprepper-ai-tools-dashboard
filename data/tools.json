@@ -3430,6 +3430,19 @@
   },
   {
     "priority": "Medium",
+    "aluma": "Could help recover prior project decisions and draft follow-up actions from internal coordination calls, subject to recording consent and document-access controls.",
+    "next": "Pilot a consented internal test call using non-sensitive documents. Verify cloud model processing, retention, connector scopes, deletion/export and monthly limits; local transcript storage does not prove all processing is local. Review every action before creating tasks or sending follow-ups; no customer data or production credentials during evaluation.",
+    "name": "Tacie",
+    "category": "AI meeting notes / source-backed decision recall",
+    "summary": "Mac meeting assistant that captures decisions and to-dos without a bot joining the call, and surfaces source-backed answers from connected team material during meetings. Official site lists Apple Silicon/macOS 14+ and a free beta with monthly limits; a subscription is planned.",
+    "drprepper": "Could reduce repeated decision hunting in developer and operations meetings by recovering prior discussions and drafting owner/action summaries. Generated notes require review and do not override Trello acceptance, backend rules or order records.",
+    "toolUrl": "https://tacie.app/en/",
+    "postUrl": "https://www.producthunt.com/products/tacie",
+    "firstSeen": "2026-11-14T06:02:43-08:00",
+    "lastReviewed": "2026-11-14T06:02:43-08:00"
+  },
+  {
+    "priority": "Medium",
     "aluma": "Could turn contractor, GC, and project calls into follow-up tasks and deadline lists, especially when details are easy to lose after site calls.",
     "next": "Run a low-risk trial on internal calls. Verify recording consent, retention/deletion, export format, encryption limits, and whether tasks can be moved into the real tracker without exposing customer or credential data.",
     "name": "Jottoo",
@@ -4279,6 +4292,19 @@
     ],
     "firstSeen": "2026-08-30T06:04:05-07:00",
     "lastReviewed": "2026-08-30T06:04:05-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Could help coordinate team outings or planning polls without building a dedicated internal app.",
+    "next": "Watch waitlist access; if admitted, test a staff poll with dummy information. Verify sharing permissions, retention, export and pricing before uploading business files. Keep order, inventory, money and customer decisions in their canonical systems.",
+    "name": "Tabletop by Google Labs",
+    "category": "AI team planning / collaborative mini-apps",
+    "summary": "Google Labs experiment that turns prompts, links and files into shared interactive spaces such as itineraries, polls and expense splitters. The official announcement describes real-time collaboration and a U.S. 18+ waitlist; no price is stated.",
+    "drprepper": "Potential lightweight option for team-event planning, staff polls and coordinating non-sensitive internal activities. Not a replacement for PrepShip, the client portal, order records or billing truth.",
+    "toolUrl": "https://tabletop.google/",
+    "postUrl": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/",
+    "firstSeen": "2026-11-14T06:02:43-08:00",
+    "lastReviewed": "2026-11-14T06:02:43-08:00"
   },
   {
     "priority": "Medium",
