@@ -5079,6 +5079,19 @@
     "lastReviewed": "2026-06-29T06:04:16-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Possible collaboration space for proposal drafts and equipment-workflow documentation with explicit editor and publishing permissions.",
+    "next": "Test a public or synthetic SOP with one scoped agent. Verify retention, data residency, permission enforcement, rollback, export and pricing before private uploads; retain canonical business records in existing backends and require approval before publishing or external sends.",
+    "name": "AgentGrid.io",
+    "category": "Agent collaboration / shared artifacts",
+    "summary": "Shared workspace for human and AI-agent collaboration on documents, reports, designs and apps. The official site describes scoped agent permissions, shared context and revision history; operational security and pricing still need evaluation.",
+    "drprepper": "Potential shared home for internal SOP drafts, review reports and dashboard design artifacts, reducing duplicate handoff files. It must not become a competing source of truth for PrepShip orders, inventory, billing or customer data.",
+    "postUrl": "https://agentgrid.io/",
+    "toolUrl": "https://agentgrid.io/",
+    "firstSeen": "2026-11-15T06:02:27-08:00",
+    "lastReviewed": "2026-11-15T06:02:27-08:00"
+  },
+  {
     "priority": "Medium",
     "aluma": "Could support lead follow-up and appointment-confirmation experiments for Aluma, but only with tight approval and logging around every outbound touch.",
     "next": "Run only in a sandbox or approved pilot first; require human review before any outbound call/text/email, keep audit logs, and verify compliance/consent before connecting real customers or vendors.",
@@ -7863,6 +7876,19 @@
     ],
     "firstSeen": "2026-06-30T06:06:36-07:00",
     "lastReviewed": "2026-06-30T06:06:36-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could capture consented rental and jobsite coordination meetings for human-reviewed action lists.",
+    "next": "Pilot one non-sensitive meeting with recording consent. Verify retention, AI processing, pricing, and export accuracy before business recordings; require human review before CRM changes or outgoing follow-ups.",
+    "name": "Spiik",
+    "category": "Meeting notes / voice transcription",
+    "summary": "AI voice recorder for iPhone, iPad and Mac with speaker-labeled transcripts, structured notes, transcript questions, and text/PDF/subtitle exports. Recording is free; full transcription and AI tools require Spiik Pro.",
+    "drprepper": "Candidate for turning consented supplier and sales meetings into searchable notes and draft follow-up tasks, without treating transcripts as approved order or freight instructions.",
+    "postUrl": "https://spiik.io/",
+    "toolUrl": "https://spiik.io/",
+    "firstSeen": "2026-11-15T06:02:27-08:00",
+    "lastReviewed": "2026-11-15T06:02:27-08:00"
   },
   {
     "priority": "Medium",
