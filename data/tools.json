@@ -2475,6 +2475,19 @@
     "lastReviewed": "2026-09-20T06:04:17-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Secondary fit for enriching equipment catalog descriptions, but commerce-specific value should be established before considering a paid pilot.",
+    "next": "Request a fixed-scope demo using synthetic catalog data and confirm full recurring costs, permissions, retention, and export ownership before any purchase. Require reviewed draft diffs; no automatic price, stock, publication, marketplace, or customer-message writes.",
+    "name": "Boost.space Bob — product catalog agent",
+    "category": "AI commerce / catalog operations",
+    "summary": "Vendor-managed catalog agent marketed for product enrichment, competitor research, marketplace listing preparation, and pricing within margin rules. Official site lists a $2,500 one-time launch including the first AgentOS month, with ongoing monthly services plus separate AI usage and hosting. Revenue claims are vendor claims, not verified results.",
+    "drprepper": "Possible KF Goodies or wholesale catalog enrichment pilot using incomplete supplier descriptions and channel listing requirements. Canonical product IDs, publication state, prices, inventory, and financial truth must stay in the existing backend.",
+    "postUrl": "https://boost.space",
+    "toolUrl": "https://boost.space",
+    "firstSeen": "2026-11-16T06:02:34-08:00",
+    "lastReviewed": "2026-11-16T06:02:34-08:00"
+  },
+  {
     "priority": "High",
     "aluma": "No direct Aluma fit, but the preview-before-change pattern is useful for any future project/order ops agent that proposes mutations against business records.",
     "next": "Track as a pattern, not a source of truth. If Shoplazza storefront work appears, test only in a sandbox store first and require backend-owned approvals/audit logs before product, discount, shipping, or order changes.",
@@ -3427,6 +3440,19 @@
     ],
     "firstSeen": "2026-09-19T06:04:16-07:00",
     "lastReviewed": "2026-09-19T06:04:16-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Potential draft notes for rental coordination or internal project handoffs, subject to recording consent and approved data handling.",
+    "next": "Try a five-minute nonconfidential recording with participant consent. Verify speaker identity and every operational commitment, review retention/privacy before sensitive use, and keep task assignment or outbound messages human-approved.",
+    "name": "Sum — audio transcription and handoff summaries",
+    "category": "AI meeting notes / operational handoffs",
+    "summary": "Browser audio/video transcription with timestamped speaker labels, summaries, action items, and text exports. Official site offers one free file per day up to 30 minutes without an account. Speaker labels are automatic, not verified identities; files/results have limited retention.",
+    "drprepper": "Could turn nonconfidential warehouse handoff recordings and supplier calls into draft decisions, owners, and follow-ups. Check names, quantities, and deadlines against the audio before assigning work.",
+    "postUrl": "https://news.ycombinator.com/item?id=50516207",
+    "toolUrl": "https://sumtranscribe.com",
+    "firstSeen": "2026-11-16T06:02:34-08:00",
+    "lastReviewed": "2026-11-16T06:02:34-08:00"
   },
   {
     "priority": "Medium",
