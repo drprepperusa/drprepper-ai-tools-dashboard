@@ -769,17 +769,21 @@
   {
     "priority": "Watch",
     "aluma": "Possible fit for low-budget creative tests around concrete-contractor outreach or retargeting, but only after offer, audience, and compliance rules are clear.",
-    "next": "Do not connect ad accounts yet; review pricing and run a small non-production creative test first, then compare output against current Amazon/DTC ad workflows and approval requirements.",
-    "name": "Creatify AI Media Buyer",
+    "next": "Test non-sensitive product assets without connecting ad accounts. Verify current plan limits and required channel integrations; check factual product claims and usage rights. Require explicit human approval before publishing, changing campaigns or spending ad budget.",
+    "name": "Creatify AI Media Buyer / Max",
     "category": "AI ads / creative testing",
-    "summary": "AI ad creative and media-buying workflow from Creatify with video/image ad generation, AI Media Buyer features, competitor ad tracking, and Meta/TikTok/AppLovin ad-launch support.",
-    "drprepper": "Worth watching for KF Goodies, DR Prepper DTC, and Amazon/PPC creative testing because it moves beyond ad generation into competitor tracking and campaign-launch workflow.",
+    "summary": "Creatify now markets Max as an AI ad teammate for research, creative generation, campaign launch and optimization. Its official pricing lists Max in Standard at $15/month or $10/month billed yearly, with credit and feature limits. Ad-account connections, routines and competitor tracking vary by plan.",
+    "drprepper": "Potential KF Goodies and DR PREPPER USA creative-testing workflow: draft product videos and compare campaign angles before human review. Support for product URLs from Amazon is not proof of Amazon PPC account integration or campaign-management support.",
     "toolUrl": "https://creatify.ai/",
     "postUrl": "https://www.producthunt.com/products/creatify",
     "extraLinks": [
       {
-        "label": "Pricing",
+        "label": "Official pricing / Max plan limits",
         "url": "https://creatify.ai/pricing"
+      },
+      {
+        "label": "Official platform",
+        "url": "https://creatify.ai/"
       },
       {
         "label": "Product Hunt",
@@ -787,7 +791,7 @@
       }
     ],
     "firstSeen": "2026-07-13T06:04:37-07:00",
-    "lastReviewed": "2026-07-13T06:04:37-07:00"
+    "lastReviewed": "2026-11-17T06:02:11-08:00"
   },
   {
     "priority": "High",
@@ -8393,6 +8397,19 @@
     ],
     "firstSeen": "2026-07-03T16:06:55-07:00",
     "lastReviewed": "2026-07-03T16:06:55-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could compare cited sources for local formwork and shoring-rental searches before deciding which contractor-facing pages need improvement.",
+    "next": "Pilot five buyer questions in research-only mode; review the returned citations manually. Do not connect a mailbox or grant publishing access; require approval for paid actions, outreach and website changes, and verify permission scope before adding its MCP connection.",
+    "name": "RankSpot",
+    "category": "SEO / AI search visibility",
+    "summary": "SEO execution layer for connected AI assistants, including AI visibility checks, keyword/backlink updates, content and outreach actions. Official pricing is pay-per-action with $1 welcome credit, a $10 minimum top-up, and separate AI-plan costs; AI visibility checks are listed at $0.004 each.",
+    "drprepper": "Research which companies and cited pages appear for Southern California Amazon-prep and 3PL buyer questions, then identify missing DR PREPPER USA service pages or directory listings. Treat results as sampled answers, not stable rankings or proven lead demand.",
+    "toolUrl": "https://www.rankspot.ai/",
+    "postUrl": "https://www.rankspot.ai/pricing",
+    "firstSeen": "2026-11-17T06:02:11-08:00",
+    "lastReviewed": "2026-11-17T06:02:11-08:00"
   },
   {
     "priority": "High",
