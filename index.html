@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Nov 17, 2026 · 6:02 AM PST</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Nov 18, 2026 · 6:02 AM PST</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,8 +276,8 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">496</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">474</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">498</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">476</div><div class="label">categories</div></div>
             <div class="metric"><div class="num">208</div><div class="label">high priority now</div></div>
           </div>
         </section>
@@ -7811,6 +7811,25 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could turn generic equipment dispatch, return and inspection notes into reviewable process diagrams for staff training.",
+            "next": "Test a generic receiving workflow including shortage, damage and over-delivery branches. Have the warehouse lead validate every decision and arrow. Verify private visibility, retention and plan limits before uploading internal material; exclude customer data, credentials and private system details.",
+            "name": "Diagramly 2.0",
+            "category": "Process documentation / editable diagrams",
+            "summary": "Turns text, screenshots or whiteboard photos into editable diagrams, with Mermaid, ZenUML, PlantUML and visual-canvas options. Official guidance treats generated output as a draft requiring review of labels, ordering and connections.",
+            "drprepper": "Useful for drafting receiving, shortage, damaged-goods and returns SOP diagrams, plus PrepShip/client portal system handoffs. Diagrams document the workflow; backend domain owners remain authoritative.",
+            "toolUrl": "https://diagramly.ai/",
+            "postUrl": "https://www.producthunt.com/products/diagramly-2",
+            "extraLinks": [
+                  {
+                        "label": "Official pricing and limits",
+                        "url": "https://diagramly.ai/pricing"
+                  }
+            ],
+            "firstSeen": "2026-11-18T06:02:13-08:00",
+            "lastReviewed": "2026-11-18T06:02:13-08:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Lower direct fit for Aluma unless custom lead-gen or dashboard services grow enough to need production incident debugging; still relevant for safer internal automation uptime.",
             "next": "Treat as developer infrastructure, not a routine ops tool. Test on a non-sensitive staging service first, confirm probes are truly read-only, scrub captured values for secrets/customer data, and require incident approval before any production install.",
             "name": "HyperProbe",
@@ -9403,6 +9422,19 @@
             ],
             "firstSeen": "2026-07-05T06:03:39-07:00",
             "lastReviewed": "2026-07-05T06:03:39-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Could help organize rental-quote commitments and draft contractor follow-ups, subject to permissions and human approval.",
+            "next": "Compare against the existing assistant workflow using synthetic commitments first. Verify paid pricing, OAuth scopes, retention and approval enforcement before connecting any mailbox or calendar; do not send messages, change records or chase invoices without operator review.",
+            "name": "readywhen",
+            "category": "Business assistant / follow-up drafting",
+            "summary": "Business-owner assistant whose site describes commitment tracking, daily priorities, follow-up drafts and invoice chasers. The vendor says replies and changes wait for approval. Free-start offer is advertised; paid pricing and integration permissions need verification.",
+            "drprepper": "Potential reference for a sales follow-up queue that surfaces promised quotes, unanswered prospects and overdue invoice reminders without replacing the CRM or accounting source of truth.",
+            "toolUrl": "https://readywhen.ai/",
+            "postUrl": "https://readywhen.ai/",
+            "firstSeen": "2026-11-18T06:02:13-08:00",
+            "lastReviewed": "2026-11-18T06:02:13-08:00"
       },
       {
             "priority": "Watch",

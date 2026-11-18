@@ -5891,6 +5891,19 @@
   },
   {
     "priority": "Watch",
+    "aluma": "Could help organize rental-quote commitments and draft contractor follow-ups, subject to permissions and human approval.",
+    "next": "Compare against the existing assistant workflow using synthetic commitments first. Verify paid pricing, OAuth scopes, retention and approval enforcement before connecting any mailbox or calendar; do not send messages, change records or chase invoices without operator review.",
+    "name": "readywhen",
+    "category": "Business assistant / follow-up drafting",
+    "summary": "Business-owner assistant whose site describes commitment tracking, daily priorities, follow-up drafts and invoice chasers. The vendor says replies and changes wait for approval. Free-start offer is advertised; paid pricing and integration permissions need verification.",
+    "drprepper": "Potential reference for a sales follow-up queue that surfaces promised quotes, unanswered prospects and overdue invoice reminders without replacing the CRM or accounting source of truth.",
+    "toolUrl": "https://readywhen.ai/",
+    "postUrl": "https://readywhen.ai/",
+    "firstSeen": "2026-11-18T06:02:13-08:00",
+    "lastReviewed": "2026-11-18T06:02:13-08:00"
+  },
+  {
+    "priority": "Watch",
     "aluma": "Possible isolated trial for public contractor research and a human-reviewed prospect shortlist, with no automatic outreach or CRM mutations.",
     "next": "First verify privacy, retention, permission boundaries, approval enforcement and total usage cost with public/sample data. Use only an approved direct OpenAI GPT connection; do not route work through OpenRouter or other model providers. Keep messages, purchases, production access and authoritative order/inventory changes disconnected during evaluation.",
     "name": "Rerun — scheduled AI coworker workspace",
@@ -8126,6 +8139,25 @@
     "postUrl": "https://news.ycombinator.com/item?id=48521236",
     "firstSeen": "2026-06-17T06:03:58-07:00",
     "lastReviewed": "2026-06-17T06:03:58-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could turn generic equipment dispatch, return and inspection notes into reviewable process diagrams for staff training.",
+    "next": "Test a generic receiving workflow including shortage, damage and over-delivery branches. Have the warehouse lead validate every decision and arrow. Verify private visibility, retention and plan limits before uploading internal material; exclude customer data, credentials and private system details.",
+    "name": "Diagramly 2.0",
+    "category": "Process documentation / editable diagrams",
+    "summary": "Turns text, screenshots or whiteboard photos into editable diagrams, with Mermaid, ZenUML, PlantUML and visual-canvas options. Official guidance treats generated output as a draft requiring review of labels, ordering and connections.",
+    "drprepper": "Useful for drafting receiving, shortage, damaged-goods and returns SOP diagrams, plus PrepShip/client portal system handoffs. Diagrams document the workflow; backend domain owners remain authoritative.",
+    "toolUrl": "https://diagramly.ai/",
+    "postUrl": "https://www.producthunt.com/products/diagramly-2",
+    "extraLinks": [
+      {
+        "label": "Official pricing and limits",
+        "url": "https://diagramly.ai/pricing"
+      }
+    ],
+    "firstSeen": "2026-11-18T06:02:13-08:00",
+    "lastReviewed": "2026-11-18T06:02:13-08:00"
   },
   {
     "priority": "Medium",
