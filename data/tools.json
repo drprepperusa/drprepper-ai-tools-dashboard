@@ -920,6 +920,19 @@
     "lastReviewed": "2026-08-25T06:05:47-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Could consolidate nonconfidential project handoff notes across staff, if room membership and connected-agent data access are controlled.",
+    "next": "Evaluate with synthetic data and an OpenAI-backed agent only. Verify connector compatibility, room membership, provider data flow, retention, and total tool costs. Messages and shared documents are cloud-stored; keep private customer data out and require explicit approval for messages, merges, deletion, or operational writes.",
+    "name": "S.Space — shared rooms for people and agents",
+    "category": "AI agent collaboration / shared-state coordination",
+    "summary": "Shared rooms and collaborative documents for teams and their connected agents. Official site describes room-level access and agent-owner permissions. Joining includes a 30-day Max trial without a card; afterward the Free plan includes no usage credits, and cloud tools or managed voice require paid access or credits.",
+    "drprepper": "Possible internal handoff workspace for sales follow-up drafts and engineering/support coordination. Shared documents must remain references to canonical PrepShip/client-portal records, not a second order, billing, or inventory authority.",
+    "postUrl": "https://s.space/welcome",
+    "toolUrl": "https://s.space/welcome",
+    "firstSeen": "2026-11-19T06:03:31-08:00",
+    "lastReviewed": "2026-11-19T06:03:31-08:00"
+  },
+  {
     "priority": "High",
     "aluma": "Useful for Aluma lead-gen and project-status channels where an agent can watch context and prepare research or tracker updates, while actual outreach or CRM/sheet writes remain human-approved.",
     "next": "Pilot only in a non-sensitive internal Discord/Slack room first. Verify self-hosting, bot permissions, transcript retention, MCP/tool access, logs, and approval gates before connecting customer, order, billing, or outreach workflows.",
@@ -3444,6 +3457,25 @@
     ],
     "firstSeen": "2026-09-19T06:04:16-07:00",
     "lastReviewed": "2026-09-19T06:04:16-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Potential draft notes for rental inquiries and delivery coordination, subject to participant consent and approved recording retention.",
+    "next": "Try the homepage demo or one consented nonconfidential call. Check every price and commitment, review retention and access controls, and keep CRM writes and outbound follow-ups human-approved. Do not connect business accounts before permission review.",
+    "name": "Bluedot Phone Calls — sales follow-up notes",
+    "category": "AI meeting notes / operational handoffs",
+    "summary": "Records, transcribes, and summarizes meetings and phone calls, with mobile apps and calls using an existing phone number. Official pricing lists five free meetings lifetime; Basic is $18/user/month or $14/month billed annually. MCP and webhooks are listed on Basic; CRM integrations are on Business.",
+    "drprepper": "Could turn consented 3PL prospect and supplier calls into draft follow-ups, with exact quantities, rates, owners, and deadlines checked against the recording rather than inferred from a summary.",
+    "postUrl": "https://www.bluedothq.com/",
+    "toolUrl": "https://www.bluedothq.com/",
+    "extraLinks": [
+      {
+        "label": "Official pricing",
+        "url": "https://www.bluedothq.com/pricing"
+      }
+    ],
+    "firstSeen": "2026-11-19T06:03:31-08:00",
+    "lastReviewed": "2026-11-19T06:03:31-08:00"
   },
   {
     "priority": "Medium",
@@ -6445,6 +6477,19 @@
     ],
     "firstSeen": "2026-07-14T18:57:44-07:00",
     "lastReviewed": "2026-07-14T18:57:44-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Potential reference for an active equipment pickup or delivery window, not permanent advertising or a rental-balance display.",
+    "next": "Keep as a design reference, not an implementation commitment. Verify the source article and current ActivityKit limits before use; compare real loading, stale, offline, cancelled, and ended states. Require native-device tests, lock-screen privacy, authorized backend updates, and duplicate-action protection before release.",
+    "name": "Design-first iOS Live Activities / Dynamic Island workflow",
+    "category": "Design prototyping / interaction references",
+    "summary": "Assistant-reviewed source post describes comparing three Dynamic Island design variants, then matching Lock Screen Live Activity and widget designs before native integration. Apple ActivityKit documentation is the implementation reference; browser mockups are not native-device proof, and widgets are a separate feature.",
+    "drprepper": "Future reference for an active picking/packing session or a time-bounded pickup window, only if a native mobile need is established. Status, timestamps, and lifecycle must come from the canonical backend; a shipping event must not be inferred as carrier-confirmed delivery.",
+    "postUrl": "https://x.com/prajwaltomar_/status/2122716476339888199?a=-gH8cj6bxUkSjAxt6IM&s=46",
+    "toolUrl": "https://developer.apple.com/documentation/activitykit/displaying-live-data-with-live-activities",
+    "firstSeen": "2026-11-19T06:03:31-08:00",
+    "lastReviewed": "2026-11-19T06:03:31-08:00"
   },
   {
     "priority": "Medium",
