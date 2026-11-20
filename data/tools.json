@@ -4672,6 +4672,19 @@
     "lastReviewed": "2026-10-21T06:01:46-07:00"
   },
   {
+    "priority": "Watch",
+    "aluma": "Potential rental-inquiry receptionist that captures requested equipment and dates before handing off to staff.",
+    "next": "Review the public demo with a fictional inquiry; verify privacy, recording consent, retention, model providers, transfer failure handling, and complete costs before connecting a business line. No customer uploads, outbound calls, SMS, CRM writes, or automated commercial commitments without approval; enforce consent and opt-out rules.",
+    "name": "AI Call — after-hours inquiry intake",
+    "category": "AI voice / inbound sales intake",
+    "summary": "AI phone service for inbound requests, consented outbound follow-ups, configurable questions, and staff transfers. Official site lists $5/month per number, $0.30 per connected minute, and $0.10 per unanswered call, excluding tax. US/Canada signup and a no-account phone demo are available.",
+    "drprepper": "Possible after-hours 3PL intake for pallet counts, storage needs, target dates, and callback requests. Staff must approve rates, capacity commitments, quotes, returns, and customer-facing operational decisions.",
+    "postUrl": "https://www.producthunt.com/p/ai-call/ai-call",
+    "toolUrl": "https://ai-call.co/",
+    "firstSeen": "2026-11-20T06:02:40-08:00",
+    "lastReviewed": "2026-11-20T06:02:40-08:00"
+  },
+  {
     "priority": "High",
     "aluma": "Could answer missed contractor calls, qualify basic rental/project inquiries, book follow-ups, and hand complex requests to staff, with explicit consent and human control over outbound campaigns.",
     "next": "Run a controlled trial on a dedicated non-critical number using scripted FAQs and human handoff. Verify call recording/consent, TCPA and WhatsApp rules, escalation, transcript retention, opt-out handling, and require DJ approval before any outbound campaign.",
@@ -5718,6 +5731,19 @@
     ],
     "firstSeen": "2026-08-29T23:13:24-07:00",
     "lastReviewed": "2026-08-29T23:13:24-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Use to bound one sourced contractor-research or qualification pilot before expanding automation.",
+    "next": "Apply to one real recurring task: document baseline effort, review and maintenance costs, failure detection, least-privilege access, duplicate prevention, recovery, and acceptance tests. Measure net time saved plus error and unauthorized-action rates. Treat weekly-only and one-month-payback rules as screening suggestions, not hard requirements; enforce approval before sending, publishing, deleting, or paying in tools, not just prompts.",
+    "name": "Startup.snack — smallest-useful-automation scoping workflow",
+    "category": "Automation planning / operational guardrails",
+    "summary": "User-shared carousel and assistant-reviewed screenshots provide an automation-scoping prompt: audit actual work, select one bounded task, define inputs and handoffs, anticipate unattended failures, and measure net time savings. This is a planning reference, not a working agent framework; the full comments prompt was not verified.",
+    "drprepper": "Useful intake checklist for supplier-document review sheets, 3PL inquiry classification, and read-only PrepShip exception reports. Prefer an existing feature or deterministic script before adding agents, and keep order, shipping, billing, and inventory authority in the canonical backend.",
+    "postUrl": "https://www.instagram.com/p/Df4b4ylH-uz/?img_index=2&gwpx=NTc4MTIwNjQ2YQ==",
+    "toolUrl": "https://www.instagram.com/p/Df4b4ylH-uz/?img_index=2&gwpx=NTc4MTIwNjQ2YQ==",
+    "firstSeen": "2026-11-20T06:02:40-08:00",
+    "lastReviewed": "2026-11-20T06:02:40-08:00"
   },
   {
     "priority": "Medium",
@@ -7249,6 +7275,25 @@
     ],
     "firstSeen": "2026-06-29T06:04:16-07:00",
     "lastReviewed": "2026-06-29T06:04:16-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could prepare reviewable supplier-invoice data and flag inconsistent line totals without posting costs automatically.",
+    "next": "Confirm feature pricing, model/provider compatibility, retention, and support enablement before a redacted-document pilot. Compare normal, light, and deep results against manually verified fields and deterministic arithmetic. Keep financial posting and inventory changes human-approved; AI agreement is not independent proof.",
+    "name": "Veryfi Thinking Mode — reviewed invoice extraction",
+    "category": "Invoice processing / document extraction",
+    "summary": "Optional light or deep AI review of receipt and invoice extraction. The official announcement describes field rereading, line-item arithmetic checks, correction, and rechecking; support must enable the feature. Standard pricing includes 100 free documents/month and a $500/month Starter credit plan; Thinking Mode-specific pricing needs confirmation.",
+    "drprepper": "Potential supplier and operating-invoice intake aid for DR PREPPER USA and DJR Foods. Extracted quantities, unit costs, and totals remain proposals checked against source documents and canonical PO/accounting records, never automatic ledger truth.",
+    "postUrl": "https://www.veryfi.com/technology/thinking-mode-agentic-data-extraction/",
+    "toolUrl": "https://www.veryfi.com/",
+    "extraLinks": [
+      {
+        "label": "Official pricing",
+        "url": "https://www.veryfi.com/pricing/"
+      }
+    ],
+    "firstSeen": "2026-11-20T06:02:40-08:00",
+    "lastReviewed": "2026-11-20T06:02:40-08:00"
   },
   {
     "priority": "Medium",
