@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Nov 20, 2026 · 6:02 AM PST</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Nov 21, 2026 · 6:01 AM PST</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,8 +276,8 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">504</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">479</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">506</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">481</div><div class="label">categories</div></div>
             <div class="metric"><div class="num">208</div><div class="label">high priority now</div></div>
           </div>
         </section>
@@ -9421,6 +9421,19 @@
       },
       {
             "priority": "Watch",
+            "aluma": "Potential separation for contractor-research agents and untrusted scraping dependencies, without giving them CRM or outbound-message authority.",
+            "next": "Review threat model, connector coverage, credential substitution, audit access, model routing, and full hourly/storage/inference costs. Require OpenAI-only routing and prove denied writes, approval timeout, revocation, and recovery using a disposable test repository with synthetic data. No production accounts, customer data, provisioning, or spending without approval; never rely on a prompt as the permission barrier.",
+            "name": "Tinfoil Bunkers — isolated agent hosting and access policy",
+            "category": "Agent security / internal automation",
+            "summary": "Persistent cloud computers for agents, announced November 19. Tinfoil describes encrypted enclaves and a separate Perimeter that holds credentials, applies service access policies, and records decisions. The product page lists read-only, ask, allow, and no-access modes; these are vendor security claims, not independently tested guarantees.",
+            "drprepper": "Candidate isolation layer for overnight read-only repository diagnostics and internal exception reports without putting production credentials directly in an agent workspace. This complements rather than replaces canonical backend authorization and business rules.",
+            "postUrl": "https://tinfoil.sh/blog/2026-11-19-introducing-tinfoil-bunkers",
+            "toolUrl": "https://tinfoil.sh/bunkers",
+            "firstSeen": "2026-11-21T06:01:38-08:00",
+            "lastReviewed": "2026-11-21T06:01:38-08:00"
+      },
+      {
+            "priority": "Watch",
             "aluma": "Could support structured construction prospecting notes or proposal outlines if privacy boundaries are clear and no confidential project data is stored there.",
             "next": "Use only with non-sensitive test documents first; verify persistence/privacy behavior and MCP access before making it part of any regular workflow.",
             "name": "ODocs.co",
@@ -9993,6 +10006,25 @@
             "toolUrl": "https://www.getlinkintel.com/",
             "firstSeen": "2026-10-25T06:01:45-07:00",
             "lastReviewed": "2026-10-25T06:01:45-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Could collect rental-inquiry follow-ups and meeting commitments into a staff-reviewed task list.",
+            "next": "Verify privacy, retention, model/provider compatibility, permissions, and the actual send-approval boundary before connecting business accounts. Pilot with fictional or redacted tasks, measure missed and duplicate commitments, and keep outbound messages, purchases, billing, and inventory writes technically blocked until approved. Do not subscribe during evaluation.",
+            "name": "Tecla — approval-led task capture",
+            "category": "Task capture / internal automation",
+            "summary": "Mac assistant that finds tasks in connected email, Slack, meetings, and work apps, presents a plan, and runs selected tasks. The official site says messages in your name wait for approval. Pricing lists 2M one-time free credits, $47/month for 40M credits, or a 5M-credit pack for $8 without a subscription.",
+            "drprepper": "Potential review queue for supplier follow-ups, 3PL inquiries, and meeting commitments that otherwise get lost across inboxes and chats. Treat extracted tasks as proposals; PrepShip and DJR backend records remain operational truth.",
+            "postUrl": "https://usetecla.com/about",
+            "toolUrl": "https://usetecla.com/",
+            "extraLinks": [
+                  {
+                        "label": "Official pricing",
+                        "url": "https://usetecla.com/pricing"
+                  }
+            ],
+            "firstSeen": "2026-11-21T06:01:38-08:00",
+            "lastReviewed": "2026-11-21T06:01:38-08:00"
       },
       {
             "priority": "Watch",
