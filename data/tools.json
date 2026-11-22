@@ -6001,6 +6001,25 @@
   },
   {
     "priority": "Medium",
+    "aluma": "Could capture contractor follow-up promises after calls or site visits without requiring a full meeting recording.",
+    "next": "Try a fictional client voice note and verify name, quantity, deadline and promised action. Before connecting Gmail, Calendar or real contacts, verify permissions, retention, deletion and privacy terms; obtain recording consent and retain human approval before any outgoing message.",
+    "name": "AlterContacts",
+    "category": "CRM / relationship follow-up",
+    "summary": "iPhone client-relationship assistant that organizes voice notes and meetings into client profiles, commitments, reminders and follow-up drafts. Its official site says outgoing messages require user approval. Free plan with paid credit upgrades; surfaced in the November 22 Daily AI Intel briefing.",
+    "drprepper": "Evaluate post-call capture of wholesale buyer and 3PL prospect commitments so quote deadlines and promised next steps are not lost. Keep the existing backend CRM authoritative rather than creating a second customer or order record owner.",
+    "toolUrl": "https://altercontacts.ai/",
+    "postUrl": "https://altercontacts.ai/",
+    "extraLinks": [
+      {
+        "label": "Launch-day Product Hunt board discussed in briefing",
+        "url": "https://www.producthunt.com/leaderboard/daily/2026/11/21"
+      }
+    ],
+    "firstSeen": "2026-11-22T06:01:41-08:00",
+    "lastReviewed": "2026-11-22T06:01:41-08:00"
+  },
+  {
+    "priority": "Medium",
     "aluma": "Could support future estimator/vendor messaging consoles or lead-reply dashboards if messaging channels are backend-owned and sends stay approval-gated.",
     "next": "Prototype only the UI shell first. Keep Apple Business Messages/SMS/email transport, consent, audit logs, and send permissions in backend-owned services; never let the component library become the messaging source of truth.",
     "name": "Chatscope Chat UI Kit React",
@@ -9051,6 +9070,19 @@
     ],
     "firstSeen": "2026-08-22T04:02:00-07:00",
     "lastReviewed": "2026-08-22T06:05:53-07:00"
+  },
+  {
+    "priority": "Medium",
+    "aluma": "Could turn approved rental-service or project-process explanations into short landscape and vertical sales videos.",
+    "next": "Inspect the installer and dependencies before running anything. Trial one short explainer with public assets and an approved OpenAI model only; do not route through OpenRouter. Verify checkout price, music/commercial rights and AI usage costs. Human-review claims, branding, legibility and both aspect ratios before publishing; no production credentials or private repo/customer content.",
+    "name": "TeaserKit",
+    "category": "Video / promotional motion graphics",
+    "summary": "Local video-direction toolkit and Studio app for turning a website or brief into coded motion-graphics videos using an existing coding-agent plan or API key. Official site describes landscape and vertical MP4 output and a one-time license. Surfaced in the November 22 Daily AI Intel briefing; launch-price availability needs checkout verification.",
+    "drprepper": "Potential workflow for DR PREPPER USA service explainers, PrepShip/client-portal walkthroughs and KF Goodies promotional clips using approved public copy and demonstration screens, not real customer records.",
+    "toolUrl": "https://teaserkit.com/",
+    "postUrl": "https://teaserkit.com/",
+    "firstSeen": "2026-11-22T06:01:41-08:00",
+    "lastReviewed": "2026-11-22T06:01:41-08:00"
   },
   {
     "priority": "Watch",
