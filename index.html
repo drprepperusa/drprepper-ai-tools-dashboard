@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Nov 22, 2026 · 6:01 AM PST</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Nov 23, 2026 · 6:01 AM PST</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,7 +276,7 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">508</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">510</div><div class="label">tracked entries</div></div>
             <div class="metric"><div class="num">483</div><div class="label">categories</div></div>
             <div class="metric"><div class="num">208</div><div class="label">high priority now</div></div>
           </div>
@@ -7663,6 +7663,19 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could turn rental/project call notes into reviewed follow-up drafts and internal action lists without a meeting bot.",
+            "next": "Test with fictional names, quantities and corrected deadlines first. Verify installer safety, microphone/Accessibility permissions, local retention and offline behavior before business use. Obtain required recording consent; review every outbound draft and never auto-send or treat a transcript as an approved order.",
+            "name": "Zapyso",
+            "category": "Local voice dictation / transcription",
+            "summary": "Mac dictation and bot-free call recording with on-device transcription and meeting summaries. Official site lists a free Mac beta, Apple silicon/macOS 15+ requirements, and 16 GB RAM for formatted dictation. Initial model downloads require internet; offline/privacy claims are vendor statements, not independently tested here.",
+            "drprepper": "Could capture warehouse operator notes and sales-call commitments, then draft follow-ups without uploading raw audio to a transcription service. Names, case quantities, dates and promises still need human review; this is input capture, not order or CRM authority.",
+            "toolUrl": "https://zapyso.app/en",
+            "postUrl": "https://www.producthunt.com/products/zapyso",
+            "firstSeen": "2026-11-23T06:01:46-08:00",
+            "lastReviewed": "2026-11-23T06:01:46-08:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Could help structure repeatable Aluma research or proposal workflows if each lane, source, approval gate, and output artifact is explicit instead of buried in terminal logs.",
             "next": "Evaluate only in a local non-production workflow first. Confirm macOS setup, repo safety, policy enforcement, log retention, model/API routing, and whether it complements Hermes rather than creating a parallel uncontrolled source of truth.",
             "name": "RondoFlow",
@@ -9256,6 +9269,19 @@
             ],
             "firstSeen": "2026-09-14T06:06:51-07:00",
             "lastReviewed": "2026-09-14T06:06:51-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Could collect project location, rental scope and timing before routing an inquiry to a human estimator; it should not promise availability or binding prices.",
+            "next": "Use a sandbox with approved public FAQs and fictional inquiries to test qualification, unknown-answer handling and human handoff. Verify privacy, CRM permissions, action overages and exact billing terms; prove sufficient inbound volume before any paid commitment. Do not enable autonomous quotes, customer messages or operational writes without approval.",
+            "name": "Webless Agents",
+            "category": "AI sales demos / lead qualification",
+            "summary": "Website agents for answering questions, qualifying leads, booking meetings and handing conversations to staff. Official pricing lists Small at $599/month billed annually with 150 completed agent actions/month, unlimited conversations and five handoff users; first 100 chats are offered for testing. Agent actions, not ordinary chats, consume the allowance.",
+            "drprepper": "Potential front-door qualification for DR PREPPER USA 3PL inquiries: collect shipment volume, channels and service needs, then hand off to sales. Keep fulfillment promises, quotes, inventory and customer/order data behind canonical backend APIs and staff approval.",
+            "toolUrl": "https://www.webless.ai/pricing",
+            "postUrl": "https://www.producthunt.com/products/webless/launches/webless-agents",
+            "firstSeen": "2026-11-23T06:01:46-08:00",
+            "lastReviewed": "2026-11-23T06:01:46-08:00"
       },
       {
             "priority": "Watch",
