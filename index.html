@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Nov 23, 2026 · 6:01 AM PST</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Nov 24, 2026 · 6:01 AM PST</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,8 +276,8 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">510</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">483</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">512</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">485</div><div class="label">categories</div></div>
             <div class="metric"><div class="num">208</div><div class="label">high priority now</div></div>
           </div>
         </section>
@@ -7913,6 +7913,19 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could document internal rental or quoting screens for staff training if a repeatable demo environment exists.",
+            "next": "Pilot one Codex-driven walkthrough against a throwaway local database and test-only integrations. Inspect every frame and narration before upload; verify secret scanning and outbound controls rather than trusting vendor claims. Keep production credentials, customer records, label purchases, payments, and real emails out of the recording; require human approval before publishing.",
+            "name": "tday.com",
+            "category": "Product demos / training automation",
+            "summary": "MCP-connected coding agents record an app locally; tday.com turns the recording into a narrated, branded demonstration with captions. Paid plans flag demos potentially made stale by merged changes. Official pricing lists five saved demos free and Pro at $39/month, with version and voiceover limits.",
+            "drprepper": "Candidate for repeatable PrepShip and client-portal onboarding clips, using seeded test orders to explain existing workflows without exposing customer data.",
+            "toolUrl": "https://tday.com/",
+            "postUrl": "https://tday.com/pricing",
+            "firstSeen": "2026-11-24T06:01:36-08:00",
+            "lastReviewed": "2026-11-24T06:01:36-08:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Lower direct fit for Aluma unless custom lead-gen or dashboard services grow enough to need production incident debugging; still relevant for safer internal automation uptime.",
             "next": "Treat as developer infrastructure, not a routine ops tool. Test on a non-sensitive staging service first, confirm probes are truly read-only, scrub captured values for secrets/customer data, and require incident approval before any production install.",
             "name": "HyperProbe",
@@ -9713,6 +9726,19 @@
             ],
             "firstSeen": "2026-07-12T06:03:59-07:00",
             "lastReviewed": "2026-07-12T06:03:59-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Could group recurring quoting and rental-service questions from approved support channels if volume justifies another service.",
+            "next": "Verify privacy, retention, permissions, and supported model routing before any connection: the pricing FAQ says its agent uses Anthropic models, so it is not approved under the current OpenAI-only automation policy. Evaluate only with sanitized samples unless that constraint is explicitly resolved. Require reliable customer IDs and source review before linking records; no automated sends, refunds, ticket mutations, or production changes without approval.",
+            "name": "Modem",
+            "category": "Customer feedback / issue intelligence",
+            "summary": "Groups customer concerns across connected conversations and support channels, attaches source evidence, and links topics to issues and pull requests. Offers MCP and API access. Official pricing lists a free tier with 2,500 events and 1,000 agent credits monthly; Startup is $80/month.",
+            "drprepper": "Potential read-side index of repeated PrepShip and client-portal complaints, helping staff identify affected users and draft follow-ups without replacing canonical customer, billing, order, or task records.",
+            "toolUrl": "https://modem.ai/",
+            "postUrl": "https://modem.ai/pricing",
+            "firstSeen": "2026-11-24T06:01:36-08:00",
+            "lastReviewed": "2026-11-24T06:01:36-08:00"
       },
       {
             "priority": "Watch",
