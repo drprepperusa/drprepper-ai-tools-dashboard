@@ -267,7 +267,7 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Nov 24, 2026 · 6:01 AM PST</div>
+      <div class="eyebrow"><span class="pulse"></span>Living ops reference · last updated Nov 25, 2026 · 6:02 AM PST</div>
       <h1>AI tools worth tracking for DR Prepper operations.</h1>
       <p class="subhead">A lightweight dashboard for tools, prompts, courses, repos, and source posts shared in chat — organized by how they could help fulfillment, landing pages, lead gen, client portal work, and internal automation.</p>
 
@@ -276,8 +276,8 @@
           <h2>Status</h2>
           <p>This dashboard is now generated from <code>data/tools.json</code> and refreshed by a scheduled Hermes job. Use this page as the living reference point.</p>
           <div class="status-row">
-            <div class="metric"><div class="num">512</div><div class="label">tracked entries</div></div>
-            <div class="metric"><div class="num">485</div><div class="label">categories</div></div>
+            <div class="metric"><div class="num">514</div><div class="label">tracked entries</div></div>
+            <div class="metric"><div class="num">487</div><div class="label">categories</div></div>
             <div class="metric"><div class="num">208</div><div class="label">high priority now</div></div>
           </div>
         </section>
@@ -5767,6 +5767,19 @@
       },
       {
             "priority": "Medium",
+            "aluma": "Could prototype equipment-rental landing pages using public copy and sample assets.",
+            "next": "Try one disposable landing-page repo with Codex/OpenAI only; do not enable OpenRouter or local-model routes. Compare review time and output quality against the existing workflow. Keep production credentials disconnected, business logic in canonical backends, and deployment behind human review.",
+            "name": "Granular.Build",
+            "category": "AI development / visual workspace",
+            "summary": "Mac and Windows desktop workspace combining AI-agent terminals, project files, shared context and live previews. Official site lists a free tier and Pro at $12.99/month; model access is separate through existing subscriptions or an optional add-on. Surfaced in the November 25 assistant AI briefing.",
+            "drprepper": "Candidate for isolated DR PREPPER USA landing-page and internal dashboard prototypes with visible previews, not a replacement for PrepShip or Client Portal backend ownership.",
+            "toolUrl": "https://granular.build/",
+            "postUrl": "https://granular.build/",
+            "firstSeen": "2026-11-25T06:02:13-08:00",
+            "lastReviewed": "2026-11-25T06:02:13-08:00"
+      },
+      {
+            "priority": "Medium",
             "aluma": "Could help capture jobsite-call notes, estimator observations, or follow-up drafts, but only after checking privacy controls and where recordings/transcripts are stored.",
             "next": "Trial with non-sensitive notes first; keep human review before sending customer/vendor messages and confirm pricing/privacy before using it for real customer details.",
             "name": "Willow Frontier Pro",
@@ -9823,6 +9836,19 @@
             ],
             "firstSeen": "2026-07-14T06:20:12-07:00",
             "lastReviewed": "2026-07-14T06:20:12-07:00"
+      },
+      {
+            "priority": "Watch",
+            "aluma": "Possible quote-inquiry triage and draft-only follow-up assistance for a narrowly scoped test mailbox.",
+            "next": "Verify beta access, pricing, OAuth scopes, retention and revocation before connecting anything. Use a non-sensitive test mailbox; explicitly deny sending, forwarding and deleting. Exercise forbidden-read and send-denial tests and inspect audit logs. Keep every outbound message human-reviewed; do not connect the main business inbox yet.",
+            "name": "Clam AI",
+            "category": "Email automation / agent permissions",
+            "summary": "Gmail MCP access layer whose official site describes per-agent inbox scopes, plain-English rules compiled to Cedar policies, per-request checks and action logs. Gmail is described as an invitation-based capped beta; Outlook and business-wide controls are roadmap items, not verified current features. Public pricing was not verified.",
+            "drprepper": "Potential restricted intake and draft-assistance layer for supplier, sales and shipment-status email without granting agents unrestricted mailbox access. Vendor security claims still need independent validation.",
+            "toolUrl": "https://useclam.ai/",
+            "postUrl": "https://useclam.ai/",
+            "firstSeen": "2026-11-25T06:02:13-08:00",
+            "lastReviewed": "2026-11-25T06:02:13-08:00"
       },
       {
             "priority": "Watch",
