@@ -6517,6 +6517,19 @@
     "lastReviewed": "2026-07-21T06:07:22-07:00"
   },
   {
+    "priority": "Medium",
+    "aluma": "Could adapt approved equipment-rental flyers and project presentation templates into different formats without rebuilding each layout manually.",
+    "next": "Pilot one generic 3PL service flyer through an OpenAI-compatible assistant. Verify current MCP setup, permissions, plan limits, pricing and asset rights first. Use only approved copy and public assets, exclude customer information, and require human review of claims, layout and exports before publishing; no automatic posting or ad spend.",
+    "name": "Canva MCP — editable marketing design workflow",
+    "category": "Design automation / editable marketing assets",
+    "summary": "Canva's official announcement describes generally available MCP developer access without a waitlist, plus tools for generating editable designs, retrieving templates, resizing and exporting creative. Official indexed article content was verified; direct page retrieval returned HTTP 403. Account eligibility and feature limits need checking before use.",
+    "drprepper": "Potential fit for drafting DR PREPPER USA service flyers and KF Goodies campaign variants from approved templates, keeping designs editable for staff review rather than publishing unreviewed AI images.",
+    "postUrl": "https://www.canva.com/newsroom/news/canva-mcp-update/",
+    "toolUrl": "https://www.canva.com/",
+    "firstSeen": "2026-11-26T06:01:27-08:00",
+    "lastReviewed": "2026-11-26T06:01:27-08:00"
+  },
+  {
     "priority": "High",
     "aluma": "Design-polish and accessibility skills can improve Aluma proposal/lead-gen pages; testing tools are useful if those surfaces become maintained applications rather than one-off mockups.",
     "next": "Do not install all ten blindly. Prioritize fixing-accessibility, vercel-react-best-practices, react-doctor, vitest, and playwright-cli for production QA; add make-interfaces-feel-better and animation guidance when polishing the DR Prepper landing page.",
