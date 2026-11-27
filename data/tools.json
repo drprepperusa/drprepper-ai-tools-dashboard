@@ -6412,6 +6412,19 @@
   },
   {
     "priority": "Watch",
+    "aluma": "Possible secondary use for an equipment-rental education guide built from approved public materials.",
+    "next": "Test an outline using owned, published content only. Verify current pricing, MCP permissions, retention, and source attribution before a paid assembly. Require human review of all policy, pricing, and service claims; never auto-publish or upload private customer records.",
+    "name": "Prosed AI + MCP",
+    "category": "Content repurposing / educational guides",
+    "summary": "Assembles existing published material into book drafts through an MCP workflow. The official site describes chapter source mapping and a review packet for connecting passages; output still needs editorial approval.",
+    "drprepper": "Potential way to turn approved public 3PL educational articles and transcripts into a prospect onboarding guide, rather than generating unsupported fulfillment-policy claims.",
+    "toolUrl": "https://tryprosed.com/",
+    "postUrl": "https://tryprosed.com/mcp",
+    "firstSeen": "2026-11-27T06:01:48-08:00",
+    "lastReviewed": "2026-11-27T06:01:48-08:00"
+  },
+  {
+    "priority": "Watch",
     "aluma": "Could organize rental-service campaign briefs and approved project-photo concepts without mixing internal customer/job records into creative AI context.",
     "next": "Try one non-sensitive campaign brief and compare collaboration/export quality against the current workflow. Verify privacy, asset rights, provider costs and license restrictions before adoption; do not assume source-available means unrestricted public hosting or fully on-premises processing. Keep publishing and spend human-approved.",
     "name": "Breatic",
@@ -8592,6 +8605,25 @@
     ],
     "firstSeen": "2026-08-12T04:11:27-07:00",
     "lastReviewed": "2026-08-12T04:11:27-07:00"
+  },
+  {
+    "priority": "Watch",
+    "aluma": "Could organize public contractor and project research snippets for later prospect qualification.",
+    "next": "Trial public research snippets only. Verify storage, sync, and AI-provider data handling before capturing sensitive information; enable only an approved OpenAI provider if AI is needed. Product Hunt discovery was discussed in the briefing, but direct access is blocked; official site and pricing are reachable/indexed.",
+    "name": "Snibl",
+    "category": "Research capture / local knowledge",
+    "summary": "Desktop snippet capture and search with a local library and optional AI. Official documentation describes free capture/search and opt-in AI; confirm current licensing and provider costs before buying.",
+    "drprepper": "Collect public supplier, carrier, and competitor research into a searchable reference library without immediately connecting business systems or enabling AI.",
+    "toolUrl": "https://snibl.app/",
+    "postUrl": "https://www.producthunt.com/products/snibl",
+    "extraLinks": [
+      {
+        "label": "Official pricing",
+        "url": "https://snibl.app/pricing"
+      }
+    ],
+    "firstSeen": "2026-11-27T06:01:48-08:00",
+    "lastReviewed": "2026-11-27T06:01:48-08:00"
   },
   {
     "priority": "High",
